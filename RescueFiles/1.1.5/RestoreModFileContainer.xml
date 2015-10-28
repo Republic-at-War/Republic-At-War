@@ -54777,10 +54777,10 @@
   </File>
   <File>
     <Name>MasterTextFile_GERMAN.dat</Name>
-    <TargetPath>\Data\Texts\MasterTextFile_GERMAN.dat\</TargetPath>
+    <TargetPath>\Data\Text\MasterTextFile_GERMAN.dat\</TargetPath>
     <TargetType>Mod</TargetType>
     <Hash>086af23c104457d307829213e7cc98d8</Hash>
-    <SourcePath>\1.1.5\Data\Texts\MasterTextFile_GERMAN.dat\</SourcePath>
+    <SourcePath>\1.1.5\Data\Text\MasterTextFile_GERMAN.dat\</SourcePath>
   </File>
   <File>
     <Name>Animationsfxmaps.txt</Name>

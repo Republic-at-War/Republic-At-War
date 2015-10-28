@@ -121,7 +121,7 @@
     <Count>0</Count>
   </Folder>
   <Folder>
-    <TargetPath>\Data\Texts\</TargetPath>
+    <TargetPath>\Data\Text\</TargetPath>
     <TargetType>Mod</TargetType>
     <Hash>9e8160092b365eca0753486bcc67950b</Hash>
     <Count>1</Count>
