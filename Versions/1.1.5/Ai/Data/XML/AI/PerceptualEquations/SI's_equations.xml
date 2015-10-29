@@ -1,0 +1,301 @@
+<?xml version="1.0" ?>
+
+<Equations>
+
+	<Conquer_Capital_Planet>
+		(40 # 70)
+		*
+		Variable_Target.Type.IsType {Parameter_Type = "KUAT", Parameter_Type = "FONDOR", Parameter_Type = "SULLUST", Parameter_Type = "MONCALIMARI", Parameter_Type = "MANDALORE", Parameter_Type = "HYPORI"}
+		*
+		Variable_Target.IsHumanControlled
+		*
+		(Variable_Target.TimeSinceConversion > 60.0)
+		*
+		Function_Is_Connected_To_Me.Evaluate
+		*
+		Function_First_Attack_Allowed.Evaluate
+	</Conquer_Capital_Planet>
+
+	<Conquer_Developed_Planet>
+		(40 # 70)
+		*
+		(Function_Current_Planet_Structure_Count.Evaluate > 3)
+		*
+		Variable_Target.IsHumanControlled
+		*
+		Function_Is_Connected_To_Me.Evaluate
+		*
+		Function_First_Attack_Allowed.Evaluate
+	</Conquer_Developed_Planet>
+
+	<Conquer_Planet_Tech_4>
+		(23 # 35)
+		*
+		Variable_Target.IsHumanControlled
+		*
+		(Variable_Target.TimeSinceConversion > 240.0)
+		*
+		(Variable_Self.TechLevel == 4)
+		*
+		Function_Is_Connected_To_Me.Evaluate
+		*
+		(1.0 - Variable_Target.Type.IsType {Parameter_Type = "KUAT", Parameter_Type = "FONDOR", Parameter_Type = "SULLUST", Parameter_Type = "MONCALIMARI", Parameter_Type = "MANDALORE", Parameter_Type = "HYPORI"})
+
+	</Conquer_Planet_Tech_4>
+
+	<Conquer_Planet_Tech_5>
+		(33 # 70)
+		*
+		Variable_Target.IsHumanControlled
+		*
+		(Variable_Target.TimeSinceConversion > 180.0)
+		*
+		(Variable_Self.TechLevel == 5)
+		*
+		Function_Is_Connected_To_Me.Evaluate
+		*
+		(1.0 - Variable_Target.Type.IsType {Parameter_Type = "KUAT", Parameter_Type = "FONDOR", Parameter_Type = "SULLUST", Parameter_Type = "MONCALIMARI", Parameter_Type = "MANDALORE", Parameter_Type = "HYPORI"})
+
+	</Conquer_Planet_Tech_5>
+
+	<Enemy_Fleet_Massing>
+		(75 # 100)
+		*
+		(Variable_Target.EnemyForce.SpaceTotalUnnormalized > 18000)
+		*
+		(Variable_Self.TechLevel >= 4)
+		*
+		Function_Is_Connected_To_Me.Evaluate
+	</Enemy_Fleet_Massing>
+
+	<Conquer_Hero_Space>
+		(75 # 100)
+		*
+		(Variable_Self.TechLevel >= 2)
+		*
+		(Variable_Target.EnemyForce.HasSpaceUnitsBitfield {Parameter_Category = GameObjectCategoryType[SpaceHero]} > 0)		
+		*
+		Function_Is_Connected_To_Me.Evaluate
+		*
+		Function_First_Attack_Allowed.Evaluate
+	</Conquer_Hero_Space>
+
+	<Kill_The_Malevolence>
+		(80 # 110)
+		*
+		(Variable_Target.EnemyForce.HasSpaceUnitsBitfield {Parameter_Category = GameObjectCategoryType[Super]} > 0)
+	</Kill_The_Malevolence>
+
+	<Conquer_Hero_Ground>
+		(75 # 100)
+		*
+		(Variable_Self.TechLevel >= 3)
+		*
+		(Variable_Target.EnemyForce.HasGroundUnitsBitfield {Parameter_Category = GameObjectCategoryType[LandHero]} > 0)		
+		*
+		Function_Is_Connected_To_Me.Evaluate
+		*
+		Function_First_Attack_Allowed.Evaluate
+	</Conquer_Hero_Ground>
+
+	<Current_Planet_Has_Barracks>
+		Variable_Target.HasStructure {Parameter_Type = "E_Ground_Barracks", Parameter_Type = "R_Ground_Barracks"}
+	</Current_Planet_Has_Barracks>
+
+	<Global_Has_Enough_Barracks>
+		(0.75 - (Variable_Self.StructureCount {Parameter_Type = "E_Ground_Barracks", Parameter_Type = "R_Ground_Barracks"} / Variable_Self.PlanetsControlledUnnormalized))
+	</Global_Has_Enough_Barracks>
+
+	<Current_Planet_Has_Light_Vehicle_Factory>
+		Variable_Target.HasStructure {Parameter_Type = "E_Ground_Light_Vehicle_Factory", Parameter_Type = "R_Ground_Light_Vehicle_Factory"}
+	</Current_Planet_Has_Light_Vehicle_Factory>
+
+	<Current_Planet_Supports_Light_Vehicle_Factory>
+		Variable_Target.Type.IsType {Parameter_Type = "ABREGADO_RAE", Parameter_Type = "ALDERAAN", Parameter_Type = "ANAXES", Parameter_Type = "BAKURA", Parameter_Type = "BESPIN", Parameter_Type = "BONADAN", Parameter_Type = "BOTHAWUI", Parameter_Type = "CARIDA", Parameter_Type = "CATO_NEIMOIDIA", Parameter_Type = "JABIIM", Parameter_Type = "KORRIBAN", Parameter_Type = "CORELLIA", Parameter_Type = "CORULAG", Parameter_Type = "CORUSCANT", Parameter_Type = "DURO", Parameter_Type = "ERIADU", Parameter_Type = "FOEROST", Parameter_Type = "FONDOR", Parameter_Type = "GEONOSIS", Parameter_Type = "HYPORI", Parameter_Type = "KASHYYK", Parameter_Type = "KUAT", Parameter_Type = "MECHIS", Parameter_Type = "MINNTOOINE", Parameter_Type = "MONCALIMARI", Parameter_Type = "MUUNILINST", Parameter_Type = "MUSTAFAR", Parameter_Type = "MYGEETO", Parameter_Type = "RENDILI", Parameter_Type = "RODIA", Parameter_Type = "SLUIS_VAN", Parameter_Type = "SULLUST", Parameter_Type = "TARIS", Parameter_Type = "UTAPAU"}
+	</Current_Planet_Supports_Light_Vehicle_Factory>
+
+	<Current_Planet_Has_Heavy_Vehicle_Factory>
+		Variable_Target.HasStructure {Parameter_Type = "E_Ground_Heavy_Vehicle_Factory", Parameter_Type = "R_Ground_Heavy_Vehicle_Factory"}
+	</Current_Planet_Has_Heavy_Vehicle_Factory>
+
+	<Current_Planet_Supports_Heavy_Vehicle_Factory>
+		Variable_Target.Type.IsType {Parameter_Type = "BAKURA", Parameter_Type = "CARIDA", Parameter_Type = "CORUSCANT", Parameter_Type = "GEONOSIS", Parameter_Type = "HYPORI", Parameter_Type = "MECHIS", Parameter_Type = "MUSTAFAR", Parameter_Type = "ROTHANA"}
+	</Current_Planet_Supports_Heavy_Vehicle_Factory>
+
+	<Current_Planet_Has_Adv_Vehicle_Factory>
+		Variable_Target.HasStructure {Parameter_Type = "Ground_Arc_Facility"}
+	</Current_Planet_Has_Adv_Vehicle_Factory>
+
+	<Current_Planet_Supports_Adv_Vehicle_Factory>
+		Variable_Target.Type.IsType {Parameter_Type = "ANAXES", Parameter_Type = "CARIDA"}
+	</Current_Planet_Supports_Adv_Vehicle_Factory>
+
+	<Current_Planet_Has_Officer_Academy>
+		Variable_Target.HasStructure {Parameter_Type = "Republic_Ground_Outpost", Parameter_Type = "Cis_Ground_Outpost"}
+	</Current_Planet_Has_Officer_Academy>
+
+	<Current_Planet_Supports_Officer_Academy>
+		Variable_Target.Type.IsType {Parameter_Type = "AETENII", Parameter_Type = "ALZOCIII", Parameter_Type = "ATZERRI", Parameter_Type = "BOZ_PITY", Parameter_Type = "DATHOMIR", Parameter_Type = "ENDOR", Parameter_Type = "FELUCIA", Parameter_Type = "HONOGHR", Parameter_Type = "ILUM", Parameter_Type = "JABIIM", Parameter_Type = "KORRIBAN", Parameter_Type = "MANDALORE", Parameter_Type = "ORD_MANTELL", Parameter_Type = "RATTATAK", Parameter_Type = "RAXUS_PRIME", Parameter_Type = "RHEN_VAR", Parameter_Type = "SALEUCAMI", Parameter_Type = "TATTOOINE", Parameter_Type = "YAVIN"}
+	</Current_Planet_Supports_Officer_Academy>
+
+	<Current_Planet_Has_Research_Center>
+		Variable_Target.HasStructure {Parameter_Type = "E_Ground_Research_Facility", Parameter_Type = "R_Ground_Research_Facility"}
+	</Current_Planet_Has_Research_Center>
+
+	<Current_Planet_Supports_Research_Center>
+		Variable_Target.Type.IsType {Parameter_Type = "ALDERAAN", Parameter_Type = "ANAXES", Parameter_Type = "BOTHAWUI", Parameter_Type = "CATO_NEIMOIDIA", Parameter_Type = "CORULAG", Parameter_Type = "CORUSCANT", Parameter_Type = "ITHOR", Parameter_Type = "MUUNILINST", Parameter_Type = "NABOO"}
+	</Current_Planet_Supports_Research_Center>
+
+	<Current_Planet_Has_Cantina>
+		Variable_Target.HasStructure {Parameter_Type = "Ground_Cantina_E", Parameter_Type = "Ground_Cantina_R"}
+	</Current_Planet_Has_Cantina>
+
+	<Current_Planet_Supports_Cantina>
+		Variable_Target.Type.IsType {Parameter_Type = "ABREGADO_RAE", Parameter_Type = "ATZERRI", Parameter_Type = "CORELLIA", Parameter_Type = "NALHUTTA", Parameter_Type = "RYLOTH", Parameter_Type = "TATOOINE"}
+	</Current_Planet_Supports_Cantina>
+
+	<Current_Planet_Supports_Palace>
+		Variable_Target.Type.IsType {Parameter_Type = "NALHUTTA", Parameter_Type = "RYLOTH" , Parameter_Type = "TATOOINE"}
+	</Current_Planet_Supports_Palace>
+
+	<Current_Planet_Has_Hutt_Palace>
+		Variable_Target.HasStructure {Parameter_Type = "Ground_Hutt_Palace_E", Parameter_Type = "Ground_Hutt_Palace_R"}
+	</Current_Planet_Has_Hutt_Palace>
+
+	<Current_Planet_Has_Mines>
+		Variable_Target.HasStructure {Parameter_Type = "Empire_Ground_Mining_Facility", Parameter_Type = "Rebel_Ground_Mining_Facility"} 
+	</Current_Planet_Has_Mines>
+
+	<Current_Planet_Supports_Mines>
+		Variable_Target.Type.IsType {Parameter_Type = "ABREGADO_RAE", Parameter_Type = "AETENII", Parameter_Type = "ALZOCIII", Parameter_Type = "ATZERRI", Parameter_Type = "GEONOSIS", Parameter_Type = "ILUM", Parameter_Type = "MUSTAFAR", Parameter_Type = "MYGEETO", Parameter_Type = "RATTATAK", Parameter_Type = "ROTHANA", Parameter_Type = "RYLOTH"}
+	</Current_Planet_Supports_Mines>
+
+	<Current_Planet_Base_Shield_Built>
+		Variable_Target.StructureCount {Parameter_Type = "E_Ground_Base_Shield", Parameter_Type = "R_Ground_Base_Shield"} 
+	</Current_Planet_Base_Shield_Built>
+
+	<Global_Has_Enough_Base_Shield>
+		(0.35 - (Variable_Self.StructureCount {Parameter_Type = "E_Ground_Base_Shield", Parameter_Type = "R_Ground_Base_Shield"} / Variable_Self.PlanetsControlledUnnormalized))
+	</Global_Has_Enough_Base_Shield>
+
+	<Current_Planet_Turbolaser_Built>
+		Variable_Target.StructureCount {Parameter_Type = "E_Galactic_Turbolaser_Tower_Defenses", Parameter_Type = "R_Galactic_Turbolaser_Tower_Defenses"} 
+	</Current_Planet_Turbolaser_Built>
+
+	<Global_Has_Enough_Turbolaser>
+		(0.35 - (Variable_Self.StructureCount {Parameter_Type = "E_Galactic_Turbolaser_Tower_Defenses", Parameter_Type = "R_Galactic_Turbolaser_Tower_Defenses"} / Variable_Self.PlanetsControlledUnnormalized))
+	</Global_Has_Enough_Turbolaser>
+
+	<Current_Planet_Has_Hypervelocity>
+		Variable_Target.HasStructure {Parameter_Type = "Ground_Empire_Hypervelocity_Gun", Parameter_Type = "Ground_Ion_Cannon"} 
+	</Current_Planet_Has_Hypervelocity>
+
+	<Current_Planet_Supports_Hypervelocity>
+		Variable_Target.Type.IsType {Parameter_Type = "BESTINE", Parameter_Type = "CORELLIA", Parameter_Type = "CORUSCANT", Parameter_Type = "DURO", Parameter_Type = "FOEROST", Parameter_Type = "FONDOR", Parameter_Type = "GEONOSIS", Parameter_Type = "HYPORI", Parameter_Type = "KAMINO", Parameter_Type = "KUAT", Parameter_Type = "MECHIS", Parameter_Type = "MINNTOOINE", Parameter_Type = "MONCALIMARI", Parameter_Type = "RENDILI", Parameter_Type = "SLUIS_VAN"}
+	</Current_Planet_Supports_Hypervelocity>
+
+	<Current_Planet_Has_Magnapulse>
+		Variable_Target.HasStructure {Parameter_Type = "Republic_Listening_Post"} 
+	</Current_Planet_Has_Magnapulse>
+
+	<Current_Planet_Supports_Magnapulse>
+		Variable_Target.Type.IsType {Parameter_Type = "AETENII", Parameter_Type = "ALZOCIII", Parameter_Type = "BOZ_PITY", Parameter_Type = "DATHOMIR", Parameter_Type = "ENDOR", Parameter_Type = "FELUCIA", Parameter_Type = "HONOGHR", Parameter_Type = "JABIIM", Parameter_Type = "KORRIBAN", Parameter_Type = "MANDALORE", Parameter_Type = "ORD_MANTELL", Parameter_Type = "RATTATAK", Parameter_Type = "RAXUS_PRIME", Parameter_Type = "SALEUCAMI", Parameter_Type = "TATTOOINE", Parameter_Type = "THYFERRA", Parameter_Type = "YAVIN"}
+	</Current_Planet_Supports_Magnapulse>
+
+	<Current_Planet_Planet_Has_Shutter_Shield>
+		Variable_Target.HasStructure {Parameter_Type = "Republic_Ground_Farm", Parameter_Type = "Confederacy_Ground_Farm"} 
+	</Current_Planet_Planet_Has_Shutter_Shield>
+
+	<Current_Planet_Supports_Shutter_Shield>
+		Variable_Target.Type.IsType {Parameter_Type = "ABREGADO_RAE", Parameter_Type = "CARIDA", Parameter_Type = "CORELLIA", Parameter_Type = "DANTOOINE", Parameter_Type = "SALEUCAMI"}
+	</Current_Planet_Supports_Shutter_Shield>
+
+	<Current_Planet_Orbital_Jammer_Built>
+		Variable_Target.StructureCount {Parameter_Type = "E_Orbital_Jamming_Station", Parameter_Type = "E_Orbital_Jamming_Station"} 
+	</Current_Planet_Orbital_Jammer_Built>
+
+	<Global_Has_Enough_Orbital_Jammer>
+		(0.33 - (Variable_Self.StructureCount {Parameter_Type = "E_Orbital_Jamming_Station", Parameter_Type = "E_Orbital_Jamming_Station"} / Variable_Self.PlanetsControlledUnnormalized))
+	</Global_Has_Enough_Orbital_Jammer>
+
+	<Current_Planet_Orbital_Scanner_Built>
+		Variable_Target.StructureCount {Parameter_Type = "Empire_Orbital_Long_Range_Scanner", Parameter_Type = "Rebel_Orbital_Long_Range_Scanner"} 
+	</Current_Planet_Orbital_Scanner_Built>
+
+	<Global_Has_Enough_Orbital_Scanner>
+		(0.34 - (Variable_Self.StructureCount {Parameter_Type = "Empire_Orbital_Long_Range_Scanner", Parameter_Type = "Rebel_Orbital_Long_Range_Scanner"} / Variable_Self.PlanetsControlledUnnormalized))
+	</Global_Has_Enough_Orbital_Scanner>
+
+	<Current_Planet_Gravity_Well_Built>
+		Variable_Target.StructureCount {Parameter_Type = "E_Gravity_Well_Station"} 
+	</Current_Planet_Gravity_Well_Built>
+
+	<Global_Has_Enough_Gravity_Well>
+		(0.33 - (Variable_Self.StructureCount {Parameter_Type = "E_Gravity_Well_Station"} / Variable_Self.PlanetsControlledUnnormalized))
+	</Global_Has_Enough_Gravity_Well>
+
+	
+
+	<Current_Planet_Space_Structure_Count>
+		Variable_Target.StructureCount {	 Parameter_Type = "E_Orbital_Jamming_Station"
+						,Parameter_Type = "Empire_Orbital_Long_Range_Scanner"
+						,Parameter_Type = "R_Orbital_Jamming_Station"
+						,Parameter_Type = "Rebel_Orbital_Long_Range_Scanner"
+						,Parameter_Type = "E_Gravity_Well_Station"} 
+	</Current_Planet_Space_Structure_Count>
+
+	<Current_Planet_Structure_Count>
+		Variable_Target.StructureCount {	Parameter_Type = "Empire_Ground_Mining_Facility"
+						,Parameter_Type = "Rebel_Ground_Mining_Facility"
+						,Parameter_Type = "E_Ground_Barracks"
+						,Parameter_Type = "R_Ground_Barracks"
+						,Parameter_Type = "Ground_Arc_Facility"
+						,Parameter_Type = "E_Ground_Heavy_Vehicle_Factory"
+						,Parameter_Type = "R_Ground_Heavy_Vehicle_Factory"
+						,Parameter_Type = "E_Galactic_Turbolaser_Tower_Defenses"
+						,Parameter_Type = "R_Galactic_Turbolaser_Tower_Defenses"
+						,Parameter_Type = "E_Ground_Light_Vehicle_Factory"
+						,Parameter_Type = "R_Ground_Light_Vehicle_Factory"
+						,Parameter_Type = "Republic_Ground_Outpost"
+						,Parameter_Type = "Cis_Ground_Outpost"
+						,Parameter_Type = "Ground_Empire_Hypervelocity_Gun"
+						,Parameter_Type = "Ground_Ion_Cannon"
+						,Parameter_Type = "E_Ground_Research_Facility"
+						,Parameter_Type = "R_Ground_Research_Facility"
+						,Parameter_Type = "Republic_Listening_Post"
+						,Parameter_Type = "Republic_Ground_Farm"
+						,Parameter_Type = "Confederacy_Ground_Farm"
+						,Parameter_Type = "Ground_Hutt_Palace_E"
+						,Parameter_Type = "Ground_Hutt_Palace_R"
+						,Parameter_Type = "Ground_Cantina_E"
+						,Parameter_Type = "Ground_Cantina_R"
+						,Parameter_Type = "E_Ground_Base_Shield"
+						,Parameter_Type = "R_Ground_Base_Shield"
+													} 
+	</Current_Planet_Structure_Count>
+
+	<Current_Planet_Open_Structure_Slots>
+		Variable_Target.OpenStructureSlotsUnnormalized
+	</Current_Planet_Open_Structure_Slots>
+
+	<Enemy_Front_Line_Planet>
+		Function_Is_Connected_To_Enemy.Evaluate
+	</Enemy_Front_Line_Planet>
+
+	<Human_Player_Is_Empire>
+		Variable_Human.IsFaction {Parameter_Faction = "Empire"}
+	</Human_Player_Is_Empire>
+
+	<Human_Player_Is_Rebel>
+		Variable_Human.IsFaction {Parameter_Faction = "Rebel"}
+	</Human_Player_Is_Rebel>
+	
+	<Tactical_Multiplayer_Should_Build_Hero_Space>
+		70.0
+		*
+		(Variable_Self.BaseLevel > 0.0)
+		*
+		(2000.0 > Variable_Self.CreditsUnnormalized)
+	</Tactical_Multiplayer_Should_Build_Hero_Space>
+
+</Equations>

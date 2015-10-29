@@ -1,0 +1,1233 @@
+<?xml version="1.0" ?>
+
+<Equations>
+
+	<!-- Certain plans are disallowed as a defender.  These plans are allowed if
+	It's a skirmish game
+	OR
+	It's a campaign game
+	AND
+	Offense time delay is over
+	AND
+		We're the attacker
+		OR
+		We're the defender without a base
+		OR
+		We're the defender with a base
+			AND
+			We have units to spare-significantly more units than the enemy has (landed or not)
+
+	UNUSED PARTS
+		* 
+		(Script_EvaluateInGalacticContext.Evaluate{Parameter_Script_String = "Offense_Delay_Ground_Expired"})
+	  
+	-->
+	<Allowed_As_Defender_Land>
+		(Game.IsCampaignGame == 0)
+		+
+		(Game.IsCampaignGame == 1)	
+		*
+		(
+			(1 - Variable_Self.IsDefender)
+			+
+			(Variable_Self.IsDefender) * (Variable_Self.BaseLevel == 0)
+			+
+			(Variable_Self.IsDefender) * (Variable_Self.BaseLevel > 0)
+			*
+			(
+				(
+					(Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Infantry | Vehicle | Air]} 
+					>= (3.0 * (Variable_Enemy.FriendlyForceUnnormalized + Variable_Enemy.ReinforcementsUnnormalized)))
+				)
+				> 0
+			)
+		)
+	</Allowed_As_Defender_Land>
+
+
+	<!-- UNUSED and was having problems
+	<Offense_Delay_Ground_Expired>
+		Game.Age > Variable_Target.Hints.OffenseDelayGround
+	</Offense_Delay_Ground_Expired>
+	-->
+
+
+	<!-- 	
+		Zero if it's disallowed
+
+			The notion is that when ever enemy weaknesses are presented, we capitolize upon them.  Therefore,
+			Targets are prioritized for destruction first by
+			
+			nearness to greater friendly forces than enemies then by
+			isolation from allies then by
+			whether their shields are in poor shape then by
+			how relatively weakened the target is then by
+			big boost for being nearly dead
+			how relatively weak to the rest of the enemy units it is.
+			Add a constant at the end to make sure that we always have at least some desire to destroy everything.
+
+			+
+			2.0 * (Variable_Target.ContainsHero)
+
+		-->
+	<Should_Destroy_Land_Unit>
+		Function_Allowed_As_Defender_Land.Evaluate
+		*
+		(
+			4.0 * ((Variable_Target.Location.FriendlyForce - Variable_Target.Location.EnemyForce) > 0.0)
+			+
+			3.0 * (1.0 - Variable_Target.Location.EnemyForce)
+			+
+			2.0 * (1.0 - (Variable_Target.Shield > 0.86))
+			+
+			2.0 * (1.0 - Variable_Target.Health)
+			+
+			5.0 * (1.0 - (Variable_Target.Health > 0.8))
+			+ 
+			(1.0 - Variable_Target.ForceNBTD)
+			+
+			1.0
+		)
+	</Should_Destroy_Land_Unit>
+
+	<!--
+	-->
+	<Should_Clear_Infantry>
+		Function_Allowed_As_Defender_Land.Evaluate
+		*
+		100.0
+		*
+		Variable_Target.EnemyUnitConcentrationNBTD {Parameter_Category = GameObjectCategoryType[Infantry]} -
+		Function_Should_Clear_Vehicles.Evaluate
+	</Should_Clear_Infantry>
+
+	<Should_Clear_Vehicles>
+		Function_Allowed_As_Defender_Land.Evaluate
+		*
+		5.0
+ 		*
+		Variable_Target.EnemyUnitConcentrationNBTD {Parameter_Category = GameObjectCategoryType[Vehicle]}
+	</Should_Clear_Vehicles>
+
+	<Is_Strong_Position>
+		Function_ReallySmall.Evaluate
+		* 
+		Variable_Target.Hints.High_Ground
+	</Is_Strong_Position>
+
+
+	<!-- 
+	Low base desire 
+	Cut desire for structures not belonging to the primary enemy
+	More desire for certain structures
+	High desire to destroy tactically active structures
+	Very high desire for unprotected structures
+
+	Don't attack turbolasers, there is a special plan for that
+	Ignore this when we may lose a land control game
+	-->
+	<Should_Destroy_Structure>
+		Function_Allowed_As_Defender_Land.Evaluate
+		*
+		(
+			(0.1 * (1 - Variable_Target.Owner.IsFaction {Parameter_Faction = "Empire", Parameter_Faction = "Rebel", Parameter_Faction = "Underworld"}))
+			+
+			(1.0 * (Variable_Target.Owner.IsFaction {Parameter_Faction = "Empire", Parameter_Faction = "Rebel", Parameter_Faction = "Underworld"}))
+		)
+		*
+		(
+			0.001
+			+
+			(2 * Variable_Target.Type.IsType {Parameter_Type = "Ground_Ion_Cannon",
+															Parameter_Type = "Empire_Ground_Shutter_Shield",
+															Parameter_Type = "Rebel_Ground_Shutter_Shield",
+															Parameter_Type = "Ground_Empire_Hypervelocity_Gun",
+															Parameter_Type = "Ground_Magnepulse_Cannon"})
+			+
+			(5.0 * Variable_Target.Type.IsType {Parameter_Type = "Empire_Anti_Infantry_Turret",
+															Parameter_Type = "Rebel_Anti_Infantry_Turret",
+															Parameter_Type = "Empire_Anti_Aircraft_Turret",
+															Parameter_Type = "Rebel_Anti_Aircraft_Turret",
+															Parameter_Type = "Empire_Anti_Vehicle_Turret",
+															Parameter_Type = "Rebel_Anti_Vehicle_Turret",
+															Parameter_Type = "Empire_Buildable_Bacta_Tank",
+															Parameter_Type = "Rebel_Buildable_Bacta_Tank",
+															Parameter_Type = "Underworld_Buildable_Bacta_Tank",
+															Parameter_Type = "Empire_Buildable_Repair_Facility",
+															Parameter_Type = "Rebel_Buildable_Repair_Facility",
+															Parameter_Type = "Underworld_Buildable_Repair_Facility",
+															Parameter_Type = "Underworld_Mass_Driver_Turret",
+															Parameter_Type = "Underworld_Torpedo_Turret"})
+			+
+			(10 * Variable_Target.Type.IsType { Parameter_Type = "E_Ground_Base_Shield",
+												Parameter_Type = "R_Ground_Base_Shield",
+												Parameter_Type = "Power_Generator_E",
+												Parameter_Type = "Power_Generator_R"})
+			+
+			(20 * Variable_Target.Type.IsType { Parameter_Type = "Empire_Mineral_Processor"
+												,Parameter_Type = "Rebel_Mineral_Processor"
+												,Parameter_Type = "Underworld_Mineral_Processor"
+												,Parameter_Type = "Skirmish_Ground_Mining_Facility_E"
+												,Parameter_Type = "Skirmish_Ground_Mining_Facility_R"
+												,Parameter_Type = "Skirmish_Ground_Mining_Facility_U" })
+			+
+			(15.0 * (1 - Variable_Target.Location.EnemyForce))
+		)
+		*
+		(1 - (Variable_Target.Type.IsType {	Parameter_Type = "E_Ground_Turbolaser_Tower",
+											Parameter_Type = "R_Ground_Turbolaser_Tower"}))
+		*
+		(1.0 - Function_May_Lose_Land_Control_Game.Evaluate)
+	</Should_Destroy_Structure>
+
+	<Should_Destroy_Turbolaser>
+		Function_Allowed_As_Defender_Land.Evaluate
+		*
+		(
+			(0.1 * (1 - Variable_Target.Owner.IsFaction {Parameter_Faction = "Empire", Parameter_Faction = "Rebel", Parameter_Faction = "Underworld"}))
+			+
+			(1.0 * (Variable_Target.Owner.IsFaction {Parameter_Faction = "Empire", Parameter_Faction = "Rebel", Parameter_Faction = "Underworld"}))
+		)
+		*
+		(1 - Variable_Target.Location.EnemyForce)
+		*
+		(Variable_Target.Type.IsType {	Parameter_Type = "E_Ground_Turbolaser_Tower",
+										Parameter_Type = "R_Ground_Turbolaser_Tower"})
+		*
+		50
+		*
+		(1.0 - Function_May_Lose_Land_Control_Game.Evaluate)
+	</Should_Destroy_Turbolaser>
+	
+	<Land_Unit_Needs_Escort>
+		Variable_Target.Force
+	</Land_Unit_Needs_Escort>	
+
+	<Vehicle_Needs_Escort>
+		Variable_Target.Force{Parameter_Category = GameObjectCategoryType[Vehicle]}
+	</Vehicle_Needs_Escort>
+
+	<Area_Needs_Han_Solo_Assist>
+		Variable_Target.EnemyForce{Parameter_Category = GameObjectCategoryType[Vehicle]}
+		*
+		Variable_Target.FriendlyForce
+	</Area_Needs_Han_Solo_Assist>
+
+	<!-- 
+		ignore obiwan himself
+		unit must be at least slightly damaged
+		unit must be close to the enemy
+		assist things with the most force
+
+	UNUSED
+		assist things with a lot of force that are damaged
+		(Variable_Target.Force - Variable_Target.Force{Parameter_Attenuator = 1.0})
+	-->
+		
+	<Needs_ObiWan_Assist>
+		(1 - Variable_Target.Type.IsType {Parameter_Type = "Obi_Wan_Kenobi"})
+		*
+		(((0.9 > Variable_Target.Health) + (0.9 > Variable_Target.Shield)) > 0)
+		*
+		(1000 > Variable_Target.DistanceToNearestEnemy)
+		*
+		Variable_Target.Force
+	</Needs_ObiWan_Assist>
+
+	<Needs_Vader_Assist>
+		(1 - Variable_Target.Type.IsType {Parameter_Type = "Darth_Vader", Parameter_Type = "Darth_Vader_Expansion"})
+		*
+		(((0.9 > Variable_Target.Health) + (0.9 > Variable_Target.Shield)) > 0)
+		*
+		(1000 > Variable_Target.DistanceToNearestEnemy)
+		*
+		Variable_Target.Force
+	</Needs_Vader_Assist>
+
+	<!-- Desire to uncover the fog of war in a zone depends on:
+	Not being pinned to the base
+	AND
+		Scout near the base if we haven't seen it in a while or it's early game
+		Scout away from the base and the enemy base if we haven't seen it in a while or it's early to mid game
+		Scout near the enemy base or start location if it's a campaign game or it's not early game or it hasn't been seen in a while
+
+	-->
+	<Land_Area_Needs_Scouting>
+		(1 - Function_Should_Burn_Units_Land.Evaluate)
+		*
+		(0.5 + 0.5 * Game.IsCampaignGame)
+		*
+		(
+			15 * (500 > Variable_Target.DistanceToNearestFriendly{Parameter_Category = GameObjectCategoryType[Structure]}) 
+				* (((Variable_Target.TimeLastSeenUnnormalized > 120) + (20 > Game.Age)) > 0)
+			+
+			10	* (Variable_Target.DistanceToNearestFriendly{Parameter_Category = GameObjectCategoryType[Structure]} > 500)
+				* (Variable_Target.DistanceToNearestEnemy{Parameter_Category = GameObjectCategoryType[Structure]} > 500)
+				* (((Variable_Target.TimeLastSeenUnnormalized > 400) + (200 > Game.Age)) > 0)
+				* Variable_Target.TimeLastSeen
+			+
+			5 	* (Variable_Target.IsEnemyStartLocation + (500 > Variable_Target.DistanceToNearestEnemy{Parameter_Category = GameObjectCategoryType[Structure]} ))
+				* (((Variable_Target.TimeLastSeenUnnormalized > 600) + (Game.Age > 400) + (Game.IsCampaignGame)) > 0)
+				* Variable_Target.TimeLastSeen
+		)
+	</Land_Area_Needs_Scouting>
+
+
+	<!--
+		Has enough time passed
+		Are we outnumbered Nx (by landed forces + reinforcements, and over-attenuated by health) if attacking
+		Are we outnumbered Nx (by landed forces, and over-attenuated by health) if defending 
+			AND
+			we don't have a base left 
+			OR the base is small and without enough turrets to defend it
+
+	-->
+	<Want_To_Retreat_From_Land>
+		(1 - Game.IsSetupPhase)
+		*
+		(Game.Age > 30)
+		*
+		(
+			(
+				(1.0 - Variable_Self.IsDefender) 
+				* 
+				(
+					Variable_Enemy.LandedForceUnnormalized{Parameter_Attenuator = 1.0} >= (2.0 * Variable_Self.FriendlyForceUnnormalized{Parameter_Attenuator = 1.0} + Variable_Self.ReinforcementsUnnormalized)
+				)
+			)
+			+
+			(
+				Variable_Self.IsDefender 
+				* 
+				(Variable_Enemy.LandedForceUnnormalized{Parameter_Attenuator = 1.0} >= (2.5 * Variable_Self.FriendlyForceUnnormalized{Parameter_Attenuator = 1.0})) 
+				*
+				(
+					((Variable_Self.BaseLevel == 0)
+					+
+					(1 > Variable_Self.BaseLevel) *
+					(Variable_Enemy.LandedForceUnnormalized >= (5.0 * Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Structure]})))
+					>
+					0
+				)
+			)
+			
+		)
+	</Want_To_Retreat_From_Land>
+
+	<!-- 
+			Is this a campaign game (the AI doesn't retreat in skirmish)
+			AND
+			Are we capable of retreat
+			AND
+			Are we not pirates
+	-->
+	<Allowed_To_Retreat_From_Land>
+		Game.IsCampaignGame
+		*
+		Variable_Self.CanRetreat
+		*
+		(1.0 - Variable_Self.IsFaction {Parameter_Faction = "Pirates"})
+	</Allowed_To_Retreat_From_Land>
+
+	<!--
+	-->
+	<Should_Retreat_From_Land>
+		Function_Want_To_Retreat_From_Land.Evaluate
+		*
+		Function_Allowed_To_Retreat_From_Land.Evaluate
+	</Should_Retreat_From_Land>
+
+	<Game_Age>
+		Game.Age
+	</Game_Age>
+
+	<!-- 
+		Variable_Self.ReinforcementsUnnormalized
+	-->
+	<Debug_Land_1>
+		Variable_Self.FriendlyForceUnnormalized
+		+
+		Variable_Self.FriendlyForceUnnormalized{Parameter_Type = "Heavy_Artillery_Gun"}
+		+
+		Variable_Self.FriendlyForceUnnormalized{Parameter_Type = "AAT_Tank"}
+		+
+		Variable_Self.FriendlyForceUnnormalized{Parameter_Type = "Jango_Fett"}
+		+
+		Variable_Self.FriendlyForceUnnormalized{Parameter_Type = "Asajj_Ventress"}
+		+
+		Variable_Self.FriendlyForceUnnormalized{Parameter_Type = "Aurra_Sing"}
+		+
+		Variable_Self.FriendlyForceUnnormalized{Parameter_Type = "Count_Dooku"}
+	</Debug_Land_1>
+
+	<Debug_Land_2>
+		Variable_Self.CanRetreat *
+		((1.0 - Variable_Self.IsDefender) *
+		(Variable_Self.EnemyForce >= (2.0 * Variable_Self.FriendlyForce)) +
+		Variable_Self.IsDefender *
+		(Variable_Self.EnemyForce >= (3.0 * Variable_Self.FriendlyForce)))
+	</Debug_Land_2>
+
+	<!--
+		Can we start a bombing run?
+		Is our target an antiair unit?
+		Is our target surrounded by too much antiair threat?
+		Is there too much enemy antiair threat across the entire map?
+		Are there plenty of enemy units near the target?
+	-->
+	<Should_Bomb>
+		(1 - Variable_Self.IsDifficulty{Parameter_Difficulty_Level_Type = DifficultyLevelType[Easy]})	*
+		50.0 *
+		Variable_Self.IsBombingRunAvailable *
+		(Variable_Target.ForceUnnormalized {Parameter_Category = GameObjectCategoryType[AntiAir]} == 0.0) *
+		(1.0 - (Variable_Target.Location.EnemyForceUnnormalized {Parameter_Category = GameObjectCategoryType[AntiAir]} > 500.0)) *
+		(1.0 - (Variable_Self.EnemyForceUnnormalized {Parameter_Category = GameObjectCategoryType[AntiAir]} > 3000.0)) *
+		Variable_Target.Location.EnemyUnitConcentration *
+		Variable_Target.IsValidBombingTarget
+	</Should_Bomb>
+
+	<Is_Friendly_Start>
+		Variable_Target.IsFriendlyStartLocation
+	</Is_Friendly_Start>
+
+	<!-- 
+		Scale up by the normalized landed enemy presence of the appropriate category.
+		Big boost if we don't have at least one of these.
+		Scale down as the ratio of this type of turret increases
+		Scale down if we're close to another 
+
+		UNUSED
+	-->
+	<Need_AntiVehicle_Turret>
+		Variable_Target.Type.IsType {Parameter_Type = "Skirmish_Build_Pad"
+										,Parameter_Type = "Rebel_Build_Pad" 
+										,Parameter_Type = "Empire_Build_Pad"
+										,Parameter_Type = "Underworld_Build_Pad"
+										,Parameter_Type = "Rebel_Build_Pad_Offensive"
+										,Parameter_Type = "Empire_Build_Pad_Offensive"		
+										,Parameter_Type = "Underworld_Build_Pad_Offensive" }
+		*
+		(1 - Variable_Target.HasBuiltObject)
+		*
+		Function_Is_Allowed_To_Build.Evaluate
+		*
+		20
+		*
+		(Game.Age > 60)
+		*
+		(1 - Function_Is_Saving_For_Refineries_Land.Evaluate)
+		*
+		(
+			(1 - Function_Skirmish_Upgrade_Tech.Evaluate)
+			+
+			(Variable_Target.Location.EnemyForce {Parameter_Category = GameObjectCategoryType[Vehicle]} > 0)
+		)
+		*
+		(0.5 + (Variable_Enemy.LandedForceUnnormalized {Parameter_Category = GameObjectCategoryType[Vehicle]} /
+		(Variable_Enemy.LandedForceUnnormalized + 0.00001)))
+		*
+		(
+			50 * (0 == Variable_Self.TacticalBuiltStructureCount {Parameter_Type = "Empire_Anti_Vehicle_Turret",
+																	Parameter_Type = "Rebel_Anti_Vehicle_Turret",
+																	Parameter_Type = "Pirate_Anti_Vehicle_Turret",
+																	Parameter_Type = "Underworld_Torpedo_Turret",
+																	Parameter_Type = "Hutt_Grenade_Mortar"})
+			+
+			5 * (0.7 - Variable_Self.TacticalBuiltStructureCount {Parameter_Type = "Empire_Anti_Vehicle_Turret",
+																	Parameter_Type = "Rebel_Anti_Vehicle_Turret",
+																	Parameter_Type = "Pirate_Anti_Vehicle_Turret",
+																	Parameter_Type = "Underworld_Torpedo_Turret",
+																	Parameter_Type = "Hutt_Grenade_Mortar"} / Function_Build_Pad_Count.Evaluate)
+			+
+			2 * (200 > Variable_Target.DistanceToNearestFriendly {Parameter_Category = GameObjectCategoryType[Structure]})
+		)
+	</Need_AntiVehicle_Turret>
+
+
+
+	<!-- 
+	-->
+	<Need_AntiAir_Turret>
+		Variable_Target.Type.IsType {Parameter_Type = "Skirmish_Build_Pad"
+										,Parameter_Type = "Rebel_Build_Pad" 
+										,Parameter_Type = "Empire_Build_Pad"
+										,Parameter_Type = "Underworld_Build_Pad"
+										,Parameter_Type = "Rebel_Build_Pad_Offensive"
+										,Parameter_Type = "Empire_Build_Pad_Offensive"		
+										,Parameter_Type = "Underworld_Build_Pad_Offensive" }
+		*
+		(1 - Variable_Target.HasBuiltObject)
+		*
+		Function_Is_Allowed_To_Build.Evaluate
+		*
+		20
+		*
+		(1 - Function_Is_Saving_For_Refineries_Land.Evaluate)
+		*
+		(1 - Function_Skirmish_Upgrade_Tech.Evaluate)
+		*
+		(0.25 + (Variable_Enemy.LandedForceUnnormalized {Parameter_Category = GameObjectCategoryType[Air]} /
+		(Variable_Enemy.LandedForceUnnormalized + 0.00001)))
+		*
+		(
+			10 * (0 == Variable_Self.TacticalBuiltStructureCount {Parameter_Type = "Empire_Anti_Aircraft_Turret",
+																	Parameter_Type = "Rebel_Anti_Aircraft_Turret",
+																	Parameter_Type = "Underworld_Mass_Driver_Turret",
+																	Parameter_Type = "Hutt_Anti_Aircraft_Turret"})
+			+
+			5 * (0.3 - Variable_Self.TacticalBuiltStructureCount {Parameter_Type = "Empire_Anti_Aircraft_Turret",
+																	Parameter_Type = "Rebel_Anti_Aircraft_Turret",
+																	Parameter_Type = "Underworld_Mass_Driver_Turret",
+																	Parameter_Type = "Hutt_Anti_Aircraft_Turret"} / Function_Build_Pad_Count.Evaluate)
+			+
+			2 * (200 > Variable_Target.DistanceToNearestFriendly {Parameter_Category = GameObjectCategoryType[Structure]})
+		)
+	</Need_AntiAir_Turret>
+
+
+	<!-- 
+	-->
+	<Need_AntiInfantry_Turret>
+		Variable_Target.Type.IsType {Parameter_Type = "SKIRMISH_BUILD_PAD"
+												,Parameter_Type = "REBEL_BUILD_PAD"
+												,Parameter_Type = "EMPIRE_BUILD_PAD"
+												,Parameter_Type = "Rebel_Build_Pad_Offensive"
+												,Parameter_Type = "Empire_Build_Pad_Offensive"		}
+		*
+		(1 - Variable_Target.HasBuiltObject)
+		*
+		Function_Is_Allowed_To_Build.Evaluate
+		*
+		10
+		*
+		(Game.Age > 60)
+		*
+		(
+			(1 - Function_Is_Saving_For_Refineries_Land.Evaluate)
+			+
+			(Function_Is_Saving_For_Refineries_Land.Evaluate)
+			* 
+			(300 > Variable_Target.DistanceToNearestEnemy {Parameter_Type = "Skirmish_Mineral_Processor_Pad"
+																			,Parameter_Type = "N_Ground_Mining_Facility_Build_Pad"
+																			,Parameter_Type = "Empire_Ground_Mining_Facility_Build_Pad"
+																			,Parameter_Type = "Rebel_Ground_Mining_Facility_Build_Pad"
+																			,Parameter_Type = "Skirmish_Outpost_Pad"})
+		)
+		*
+		(
+			(1 - Function_Skirmish_Upgrade_Tech.Evaluate)
+			+
+			(Variable_Target.Location.EnemyForce {Parameter_Category = GameObjectCategoryType[Infantry]} > 0)
+		)
+		*
+		(0.5 + (Variable_Enemy.LandedForceUnnormalized {Parameter_Category = GameObjectCategoryType[Infantry]} /
+		(Variable_Enemy.LandedForceUnnormalized + 0.00001)))
+		*
+		(
+			10 * (0 == Variable_Self.TacticalBuiltStructureCount {Parameter_Type = "Empire_Anti_Infantry_Turret",
+																					Parameter_Type = "Rebel_Anti_Infantry_Turret",
+																					Parameter_Type = "Pirate_Anti_Infantry_Turret",
+																					Parameter_Type = "Hutt_Rapid_Fire_Laser_Turret"})
+			+
+			5 * (0.7 - Variable_Self.TacticalBuiltStructureCount {Parameter_Type = "Empire_Anti_Infantry_Turret",
+																					Parameter_Type = "Rebel_Anti_Infantry_Turret",
+																					Parameter_Type = "Pirate_Anti_Infantry_Turret",
+																					Parameter_Type = "Hutt_Rapid_Fire_Laser_Turret"}
+																					/ Function_Build_Pad_Count.Evaluate)
+			+
+			2 * (200 > Variable_Target.DistanceToNearestFriendly {Parameter_Category = GameObjectCategoryType[Structure]})
+		)
+	</Need_AntiInfantry_Turret>
+
+	<!-- 
+	Do we have a use for this
+	AND
+	Scale up big if we have none
+	Scale up less the more we get
+	Scale down if we're close to another 
+	
+	UNUSED
+	-->
+	<Need_Bacta_Tank>
+		Variable_Target.Type.IsType {Parameter_Type = "Skirmish_Build_Pad"
+												,Parameter_Type = "Rebel_Build_Pad" 
+												,Parameter_Type = "Empire_Build_Pad"
+												,Parameter_Type = "Underworld_Build_Pad"
+												,Parameter_Type = "Rebel_Build_Pad_Defensive"
+												,Parameter_Type = "Empire_Build_Pad_Defensive"		
+												,Parameter_Type = "Underworld_Build_Pad_Defensive" }
+		*
+		(1 - Variable_Target.HasBuiltObject)
+		*
+		Function_Is_Allowed_To_Build.Evaluate
+		*
+		(1 - Function_Is_Saving_For_Refineries_Land.Evaluate)
+		*
+		(1 - Function_Skirmish_Upgrade_Tech.Evaluate)
+		*
+		(Game.Age > 60)
+		*
+		(
+			Function_Has_Infantry_Hero.Evaluate
+			+
+			Variable_Self.FriendlyForce {Parameter_Category = GameObjectCategoryType[Infantry]}
+		)
+		*
+		(
+			10 * (0 == Variable_Self.TacticalBuiltStructureCount {Parameter_Type = "Empire_Buildable_Bacta_Tank",
+																	Parameter_Type = "Rebel_Buildable_Bacta_Tank",
+																	Parameter_Type = "Pirate_Buildable_Bacta_Tank",
+																	Parameter_Type = "Underworld_Buildable_Bacta_Tank",
+																	Parameter_Type = "Hutt_Buildable_Bacta_Tank"})
+			+
+			5 * (0.1 - Variable_Self.TacticalBuiltStructureCount {Parameter_Type = "Empire_Buildable_Bacta_Tank",
+																					Parameter_Type = "Rebel_Buildable_Bacta_Tank",
+																					Parameter_Type = "Pirate_Buildable_Bacta_Tank",
+																					Parameter_Type = "Underworld_Buildable_Bacta_Tank",
+																					Parameter_Type = "Hutt_Buildable_Bacta_Tank"} / Function_Build_Pad_Count.Evaluate)
+			-
+			2 * (800 > Variable_Target.DistanceToNearestFriendly {	Parameter_Type = "Empire_Buildable_Bacta_Tank",
+																					Parameter_Type = "Rebel_Buildable_Bacta_Tank",
+																					Parameter_Type = "Pirate_Buildable_Bacta_Tank",
+																					Parameter_Type = "Underworld_Buildable_Bacta_Tank",
+																					Parameter_Type = "Hutt_Buildable_Bacta_Tank"})
+		)
+	</Need_Bacta_Tank>
+
+	<Has_Infantry_Hero>
+		Variable_Self.HasUnit{ Parameter_Type = "Yoda"
+								,Parameter_Type = "Jango_Fett"
+								,Parameter_Type = "Aurra_Sing"
+								,Parameter_Type = "Asajj_Ventress"
+								,Parameter_Type = "Aayla_Secura"
+								,Parameter_Type = "Anakin_Skywalker"
+								,Parameter_Type = "Barris_Offee"
+								,Parameter_Type = "Luminara_Unduli"
+								,Parameter_Type = "Mace_Windu"
+								,Parameter_Type = "Plokoon"
+								,Parameter_Type = "Commander_Cody"
+								,Parameter_Type = "Cad_Bane"
+								,Parameter_Type = "Bossk"
+								,Parameter_Type = "Durge"
+								,Parameter_Type = "General_Grievous"}
+	</Has_Infantry_Hero>
+
+	<Has_Vehicle_Hero>
+		Variable_Self.HasUnit { Parameter_Type = "General_Veers"
+								,Parameter_Type = "Deltasquad_Team" }
+	</Has_Vehicle_Hero>
+	<!-- 
+	Do we have a use for this
+	AND
+	Scale up big if we have none
+	Scale up less the more we get
+	Scale down if we're close to another 
+
+	UNUSED
+	-->
+	<Need_Repair_Bay>
+		Variable_Target.Type.IsType {Parameter_Type = "Skirmish_Build_Pad"
+												,Parameter_Type = "Rebel_Build_Pad" 
+												,Parameter_Type = "Empire_Build_Pad"
+												,Parameter_Type = "Underworld_Build_Pad"
+												,Parameter_Type = "Rebel_Build_Pad_Defensive"
+												,Parameter_Type = "Empire_Build_Pad_Defensive"		
+												,Parameter_Type = "Underworld_Build_Pad_Defensive" }
+		*
+		(1 - Variable_Target.HasBuiltObject)
+		*
+		Function_Is_Allowed_To_Build.Evaluate
+		*
+		(1 - Function_Is_Saving_For_Refineries_Land.Evaluate)
+		*
+		(1 - Function_Skirmish_Upgrade_Tech.Evaluate)
+		*
+		(Game.Age > 60)
+		*
+		(
+			Function_Has_Vehicle_Hero.Evaluate
+			+
+			Variable_Self.FriendlyForce {Parameter_Category = GameObjectCategoryType[Vehicle]}
+		)
+		*
+		(
+			10 * (0 == Variable_Self.TacticalBuiltStructureCount {Parameter_Type = "Empire_Buildable_Repair_Facility",
+																	Parameter_Type = "Rebel_Buildable_Repair_Facility",
+																	Parameter_Type = "Pirate_Buildable_Repair_Facility",
+																	Parameter_Type = "Underworld_Buildable_Repair_Facility",
+																	Parameter_Type = "Hutt_Buildable_Repair_Facility"})
+			+
+			5 * (0.1 - Variable_Self.TacticalBuiltStructureCount {Parameter_Type = "Empire_Buildable_Repair_Facility",
+																	Parameter_Type = "Rebel_Buildable_Repair_Facility",
+																	Parameter_Type = "Pirate_Buildable_Repair_Facility",
+																	Parameter_Type = "Underworld_Buildable_Repair_Facility",
+																	Parameter_Type = "Hutt_Buildable_Repair_Facility"} / Function_Build_Pad_Count.Evaluate)
+			-
+			2 * (800 > Variable_Target.DistanceToNearestFriendly { 	Parameter_Type = "Empire_Buildable_Repair_Facility",
+																	Parameter_Type = "Rebel_Buildable_Repair_Facility",
+																	Parameter_Type = "Pirate_Buildable_Repair_Facility",
+																	Parameter_Type = "Underworld_Buildable_Repair_Facility",
+																	Parameter_Type = "Hutt_Buildable_Repair_Facility"})
+		)
+	</Need_Repair_Bay>
+
+	<!-- Defenders are generally allowed to build turrets
+	Attackers should only build if it will assist the front line
+	In skirmish games we must have both a barracks and a command center up before we think of building turrets etc.
+
+		*
+		(Variable_Target.Location.EnemyUnitConcentrationUnnormalized == 0)
+	-->
+	<Is_Allowed_To_Build>
+		Game.IsCampaignGame
+		*
+		(Variable_Self.IsDefender
+		+
+		(1 - Variable_Self.IsDefender)
+		*
+		(Variable_Target.Location.EnemyForce > 0))
+		+
+		Function_Is_Initial_Skirmish_State_Established.Evaluate
+		*
+		(1.0 - Function_May_Lose_Land_Control_Game.Evaluate)		
+	</Is_Allowed_To_Build>
+
+	<!-- 
+	Is this the appropriate context for funding tactical structures?  Only fund if
+
+	It's a campaign game
+	AND
+	We don't have significantly more force than the attacker
+	AND
+	We have more open pads than we've built out
+	(This aspect prevents a land, retreat, land, retreat exploit to get the AI to waste money)
+
+	-->
+	<Need_For_Tactical_Funding>
+		Game.IsCampaignGame
+		*
+		(
+			Variable_Self.IsFaction {Parameter_Faction = "Pirates"}
+			+
+			Variable_Self.IsFaction {Parameter_Faction = "Hutts"}
+			+
+			(
+				(Variable_Self.OpenBuildPadCount > Variable_Self.TacticalBuiltStructureCount)
+				*
+				(
+					(Variable_Enemy.LandedForceUnnormalized > (Variable_Self.FriendlyForceUnnormalized / 2))
+					+
+					(Variable_Enemy.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Air]} > 0)
+				)
+			)
+		)
+	</Need_For_Tactical_Funding>
+
+
+	<!-- The total count, occupied or not 
+	-->
+	<Build_Pad_Count>
+		Variable_Self.TacticalBuiltStructureCount + Variable_Self.OpenBuildPadCount
+	</Build_Pad_Count>
+
+	<!-- always want more, unless the AI is easy and already has a couple of resource structures
+	-->
+	<Want_More_Resource_Structures_Land>
+		(1 - Variable_Self.IsDifficulty{Parameter_Difficulty_Level_Type = DifficultyLevelType[Easy]})
+		+
+		(Variable_Self.IsDifficulty{Parameter_Difficulty_Level_Type = DifficultyLevelType[Easy]})
+		*
+		(2 > Function_Number_Resource_Structures_Land.Evaluate)
+	</Want_More_Resource_Structures_Land>
+
+	<!-- Desire to secure contestable things (build pads for turrets or refineries, cantinas, reinforcement points, etc.
+
+	Don't bother if we're trying to firesale
+	It must be a skirmish game
+	AND
+		We have no refineries yet
+		AND 
+			this is a refinery pad
+			OR
+			half desire if not a refinery pad
+		AND
+			we've reached our initial comfort zone
+			OR
+			this is specifically a mineral processor pad (cheap to build on)
+		OR
+		We have at least one refinery
+	OR
+	It must ba a campaign game
+	AND
+		This is a build pad where we're allowed to build
+		AND
+		We've decided it's worth funding tactical structures
+		OR
+		Big boost, if this is a landing zone and we still have units in space waiting to land
+	AND
+	Make sure this is a contestable structure and desire unguarded contestables more
+	AND
+   Sink desire if we already have enough for this difficulty.
+	OR
+	Flat desire bonus for reinforcement points in land control games
+	OR
+	Huge desire bonus for reinforcement points in land control games if we currently have none
+
+	UNUSED PART
+			* 
+			(Script_EvaluateInGalacticContext.Evaluate{Parameter_Script_String = "Offense_Delay_Ground_Expired"})
+	
+	-->
+	<Need_To_Secure_Contestable_Land>
+		(1 - Function_Should_Firesale_Land.Evaluate)
+		*
+		(
+			(Game.IsCampaignGame == 0)
+			*
+			(
+				(Function_Want_More_Resource_Structures_Land.Evaluate)
+				* 
+				(1.0 + 3.0 * (Function_Num_Refineries.Evaluate == 0.0))
+				*
+				(
+					1.5 * Function_Is_Refinery_Pad.Evaluate
+					+
+					2.0 * Function_Is_Outpost_Pad.Evaluate
+					-
+					1.5 * Variable_Target.HasBuiltObject
+				)
+				+
+				Function_Is_Initial_Skirmish_State_Established.Evaluate 
+				*
+				(
+					1.0
+					+
+					(1.0 + (3 > Variable_Self.UnitSpaceAvailable)) 
+					*
+					Variable_Target.AdditionalPopulationCapacity / 2.0
+				)
+				*
+				(0.5 - Variable_Target.Location.EnemyForce)							
+			)
+			+
+			(Game.IsCampaignGame == 1)	
+			*
+			(
+				Function_Is_Allowed_To_Build.Evaluate
+				*
+				Function_Need_For_Tactical_Funding.Evaluate
+				+
+				2 * Script_TargetHasProperty.Evaluate{Parameter_Script_String = "IsRushTarget"}
+				* (Variable_Self.ReinforcementsUnnormalized > 0)
+			)
+		)
+		*
+		Variable_Target.IsContestable
+		*
+		( 
+			5 * (Variable_Target.Location.EnemyForce == 0)
+			+
+			5 * clamp( (500 / (Variable_Target.DistanceToNearestFriendly + 1)), 0, 1)
+			+
+			5
+		)		
+		*
+		(1.0 - Function_May_Lose_Land_Control_Game.Evaluate)
+	</Need_To_Secure_Contestable_Land>
+
+	<Need_To_Secure_Contestable_Escorted_Land>
+		Function_Need_To_Secure_Contestable_Land.Evaluate * 1.5
+	</Need_To_Secure_Contestable_Escorted_Land>
+
+	<Number_Resource_Structures_Land>
+		Variable_Self.TacticalBuiltStructureCount{Parameter_Type = "Empire_Mineral_Processor"
+													,Parameter_Type = "Rebel_Mineral_Processor"
+													,Parameter_Type = "Underworld_Mineral_Processor"
+													,Parameter_Type = "Skirmish_Ground_Mining_Facility_E"
+													,Parameter_Type = "Skirmish_Ground_Mining_Facility_R"
+													,Parameter_Type = "Skirmish_Ground_Mining_Facility_U" }
+	</Number_Resource_Structures_Land>
+
+	<!-- Boolean.  Global desire to sell off a tactical structure to make room on a build pad for something else.
+	Are we out of build pads or money
+	AND
+	Is there high desire for a new structure 
+	 -->
+	<Need_To_Sell>
+		(	
+			(
+				(Variable_Self.OpenBuildPadCount == 0)
+				+
+				(2000 > Variable_Self.CreditsUnnormalized)
+			)
+			> 0
+		)
+		*
+		(
+			(
+				(Function_Need_Repair_Bay.Evaluate > 20)
+				+
+				(Function_Need_Bacta_Tank.Evaluate > 20)
+				+
+				(Function_Need_AntiInfantry_Turret.Evaluate > 10)
+				+
+				(Function_Need_AntiVehicle_Turret.Evaluate > 20)
+				+
+				(Function_Need_AntiAir_Turret.Evaluate > 20)
+			)
+			> 0
+		)
+	</Need_To_Sell>
+
+
+	<!--	Should this tactical structure be sold?
+	Do we need to sell in general
+	AND
+	Is there low desire for this particular structure	 
+	-->
+	<Need_To_Sell_Tactical_Structure>
+		Function_Need_To_Sell.Evaluate
+		*
+		(
+			Variable_Target.HasBuiltObject {Parameter_Type = "Empire_Anti_Vehicle_Turret", 
+											Parameter_Type = "Rebel_Anti_Vehicle_Turret",
+											Parameter_Type = "Pirate_Anti_Vehicle_Turret",
+											Parameter_Type = "Underworld_Torpedo_Turret"}
+			*
+			(5 > Function_Need_AntiVehicle_Turret.Evaluate)
+			+
+			Variable_Target.HasBuiltObject {Parameter_Type = "Empire_Anti_Infantry_Turret",
+											Parameter_Type = "Rebel_Anti_Infantry_Turret",
+											Parameter_Type = "Pirate_Anti_Infantry_Turret"}
+			*
+			(5 > Function_Need_AntiInfantry_Turret.Evaluate)
+			+
+			Variable_Target.HasBuiltObject {Parameter_Type = "Empire_Anti_Aircraft_Turret",
+											Parameter_Type = "Rebel_Anti_Aircraft_Turret",
+											Parameter_Type = "Underworld_Mass_Driver_Turret"}
+			*
+			(5 > Function_Need_AntiAir_Turret.Evaluate)
+			+
+			Variable_Target.HasBuiltObject {Parameter_Type = "Empire_Buildable_Bacta_Tank",
+											Parameter_Type = "Rebel_Buildable_Bacta_Tank",
+											Parameter_Type = "Pirate_Buildable_Bacta_Tank",
+											Parameter_Type = "Underworld_Buildable_Bacta_Tank"}
+			*
+			(5 > Function_Need_Bacta_Tank.Evaluate)
+			+
+			Variable_Target.HasBuiltObject {Parameter_Type = "Empire_Buildable_Repair_Facility",
+											Parameter_Type = "Rebel_Buildable_Repair_Facility",
+											Parameter_Type = "Pirate_Buildable_Repair_Facility",
+											Parameter_Type = "Underworld_Buildable_Repair_Facility"}
+			*
+			(5 > Function_Need_Repair_Bay.Evaluate)
+		)
+	</Need_To_Sell_Tactical_Structure>
+
+	<!-- A low desire plan to keep otherwise idle defensive units milling around the base.
+	We must be the defender
+	AND
+	Scale down as the zone our structure is in becomes more populated with friendlies
+	AND
+	Scale up as the nearest friendly becomes more distant 
+	(divisor is to keep desirability relatively low, but high enough that the patrols will steal from each other)
+	Ignore this when we may lose a land control game
+	-->
+	<Need_To_Patrol_Land>
+		(1 - Function_Should_Burn_Units_Land.Evaluate)
+		*
+		clamp(	Variable_Self.IsDefender
+					*
+					(1 - Variable_Target.Location.FriendlyForce)
+					*
+					( Variable_Target.DistanceToNearestFriendly / 10 )
+					,0
+					,3
+				)
+		*
+		(1.0 - Function_May_Lose_Land_Control_Game.Evaluate)		
+	</Need_To_Patrol_Land>
+
+	<!-- A high desire emergency response plan for reacting to a structure taking fire.
+		Ignore this when we may lose a land control game
+	-->
+	<Need_To_Defend_Structure>
+		(20 * Variable_Target.HasTakenDamage {Parameter_Time = 5}
+		+
+		10 * (Variable_Target.Location.EnemyForce))
+		*
+		(1.0 - Function_May_Lose_Land_Control_Game.Evaluate)
+	</Need_To_Defend_Structure>
+ 
+
+	<!-- The desire to put appropriate RPS units in place for structure defense increases with
+	The enemy's nearness to a structure of ours (nominal desire begins at 1000 units)
+	AND
+	The amount of enemy force at his location
+
+	Clamped so that Defend_Structure can steal units.
+
+	This is for a globally exclusive plan, 
+	otherwise all units would tend to clump and
+	not at all handle multiple front attacks.
+	-->
+	<Need_To_PreDefend_Structure>
+		Variable_Self.IsDefender
+		*
+		clamp(	3000 / Script_GetDistanceToNearestWithProperty.Evaluate{Parameter_Script_String = "INBASE", Parameter_Script_String = "FRIENDLY"}
+					+
+					Variable_Target.Location.EnemyForce
+					,0
+					,20)	
+
+	</Need_To_PreDefend_Structure>
+
+	<!--
+	Very low desire 
+		if we're the attacker
+		OR
+		if we're the defender and we have overwhelming forces
+	OR
+	very high desire if the opponent is retreating
+	-->
+	<Need_To_Clean_Up>
+		0.01
+		*
+		(
+			(1 - Variable_Self.IsDefender)
+			+
+			(Variable_Self.IsDefender) * 
+			(Variable_Self.LandedForceUnnormalized > (Variable_Self.EnemyForceUnnormalized * 3))
+		)
+		+
+		(50 * Variable_Enemy.IsRetreating)
+	</Need_To_Clean_Up>
+
+
+
+	<!-- send the ewoks out 
+		+
+		(50 * Variable_Enemy.IsRetreating)
+	-->	
+	<Need_To_Ewok_Hunt>
+		Variable_Target.EnemyForce {Parameter_Faction = "Rebel"}
+		*
+		50
+	</Need_To_Ewok_Hunt>
+
+	<!-- 
+	-->
+	<Needs_Magnepulse_Shot>
+		Variable_Target.Force {Parameter_Category = GameObjectCategoryType[Vehicle]}
+		+
+		Variable_Target.Location.EnemyForce {Parameter_Category = GameObjectCategoryType[Vehicle]}
+	</Needs_Magnepulse_Shot>
+
+	<!-- Desire to purchase upgrades
+
+	Try to ensure that resource facilities have been purchased first.
+	
+	Is it not a campaign game
+	We have at least a third of the force the enemy does
+	AND SCALE UP
+		Small base desire
+		We have enough of a force advantage, attenuated for health
+		Randomly, half of the time we get extra desire to build units
+	OR
+	Is it a campaign game (where we're stuck with the units we've got)
+
+	-->
+	<Should_Purchase_Ability_Generic>
+		(Game.Age > 120)
+		*
+		(Variable_Self.FriendlyForce > (0.33 * Variable_Self.EnemyForce))
+		*
+		(
+			(Game.IsCampaignGame == 0)
+			*
+			(6 > Variable_Self.UnitSpaceAvailable)
+			*
+			(
+				1.0
+				+
+				10.0 * (Variable_Self.FriendlyForceUnnormalized{Parameter_Attenuator = 1.0} >= (0.8 * Variable_Enemy.ForceUnnormalized{Parameter_Attenuator = 1.0}))
+				+
+				(5.0 * (0#1>0.5))
+			)
+			+
+			(Game.IsCampaignGame)
+		)
+		*
+		(1.0 - Function_May_Lose_Land_Control_Game.Evaluate)
+	</Should_Purchase_Ability_Generic>
+
+	<Current_Enemy_Location>
+		Variable_Target.EnemyUnitConcentration
+	</Current_Enemy_Location>
+
+
+	<Current_Friendly_Location>
+		Variable_Target.FriendlyUnitConcentration
+	</Current_Friendly_Location>
+
+	<!-- 
+	This will trigger units attacking the enemy base, do or die.
+	
+			Do we want to retreat
+			AND
+			We're not allowed
+
+		OR
+			We're near the pop cap
+			AND We have plenty of units in reserve because
+				We've got at least X% in reinforcements compared to what we have fielded
+				OR
+				We've got more in reinforcements than the enemy has fielded
+
+	-->
+	<Should_Burn_Units_Land>
+		(
+			Function_Want_To_Retreat_From_Land.Evaluate
+			*
+			(1 - Function_Allowed_To_Retreat_From_Land.Evaluate)
+			*
+			(
+				(Game.IsCampaignGame == 1)
+				+
+				(Game.IsCampaignGame == 0)
+				*
+				(Game.Age > 400)
+				*
+				(1 - Function_Is_Saving_For_Refineries_Land.Evaluate)
+			)
+		)
+		+
+		(Game.IsCampaignGame == 0)
+		*
+		(1 > Variable_Self.UnitSpaceAvailable)
+		*
+		(
+			(	
+				(Variable_Self.ReinforcementsUnnormalized > (Variable_Self.FriendlyForceUnnormalized{Parameter_Category = GameObjectCategoryType[Infantry|Vehicle|Air]} * 0.25))
+				+
+				(Variable_Self.ReinforcementsUnnormalized > Variable_Self.EnemyForceUnnormalized{Parameter_Category = GameObjectCategoryType[Infantry|Vehicle|Air]})
+			) 
+			> 0
+		)
+	</Should_Burn_Units_Land>
+
+
+	<Should_Firesale_Land>
+			Function_Want_To_Retreat_From_Land.Evaluate
+			*
+			(1 - Function_Allowed_To_Retreat_From_Land.Evaluate)
+			*
+			(
+				(Game.IsCampaignGame == 1)
+				+
+				(Game.IsCampaignGame == 0)
+				*
+				(Game.Age > 300)
+				*
+				(1 - Function_Is_Saving_For_Refineries_Land.Evaluate)
+				*
+				(Variable_Self.HasUnit {Parameter_Type = "Imperial_Command_Center", 
+										Parameter_Type = "Rebel_Command_Center",
+										Parameter_Type = "U_Ground_Palace"} == 0.0)
+				*
+				(Function_Num_Refineries.Evaluate == 0)
+				*
+				(2000 > Variable_Self.CreditsUnnormalized)
+			)
+	</Should_Firesale_Land>
+
+	<!-- greatly prefer to attack infantry, but be willing to attack anything
+	-->
+	<Need_To_Flame_Infantry>
+		40 * Variable_Target.EnemyForce {Parameter_Category = GameObjectCategoryType[Infantry]}
+		+
+		Variable_Target.EnemyForce
+	</Need_To_Flame_Infantry>
+
+	<!-- steal the most powerful and healthy vehicles
+	big multiplier, to get the desirability for normalized force in a reasonable range
+	make sure we only try to steal vehicles that aren't heroes
+	-->
+	<Need_To_Steal_Vehicle>
+		500 
+		* 
+		(
+			Variable_Target.Force{Parameter_Attenuator = 1.0, Parameter_Category = GameObjectCategoryType[Vehicle]}
+			-
+			Variable_Target.Force{Parameter_Category = GameObjectCategoryType[LandHero]}
+		)
+	</Need_To_Steal_Vehicle>
+
+	<!--
+	If it has less than N health, it needs repair
+	SCALE
+		BIG by how significant the vehicle is
+		SMALL by how much it's damaged
+		SMALL for having low shields
+	-->
+	<Needs_Repair>
+		(0.8 > Variable_Target.Health)
+		*
+		(
+			30 * Variable_Target.Force
+			+
+			10 * (1 - Variable_Target.Health)
+			+
+			5 * (0.3 > Variable_Target.Shield)
+		)
+   </Needs_Repair>
+
+	<Is_Build_Pad>
+		Variable_Target.IsBuildPad
+	</Is_Build_Pad>
+
+	<!--  Defensive rush is the push towards the attacker LZ (reinforcement points)
+
+	UNUSED PARTS
+		* 
+		(Script_EvaluateInGalacticContext.Evaluate{Parameter_Script_String = "Offense_Delay_Ground_Expired"})
+	-->
+	<Should_Defensive_Rush>
+		40
+		*
+		(Game.IsCampaignGame == 1)	
+		*
+		Variable_Self.IsDefender
+		*
+		(Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Infantry | Vehicle | Air]} > 3000)
+	</Should_Defensive_Rush>
+	
+	<Non_Structure_Force_Unnormalized>
+		Variable_Self.FriendlyForceUnnormalized - Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Structure]}
+	</Non_Structure_Force_Unnormalized>
+
+	<Should_Hold_Position>
+		20.0
+		*
+		Game.IsLandControlGame
+		+
+		5.0
+		*
+		Game.IsCampaignGame
+		*
+		Variable_Self.IsDefender
+		*
+		Variable_Target.AdditionalPopulationCapacity
+		+
+		10.0
+		*
+		(Game.IsCampaignGame == 0.0)
+		*
+		(Variable_Target.AdditionalPopulationCapacity > Variable_Self.UnitSpaceAvailable)
+		*
+		Function_Is_Initial_Skirmish_State_Established.Evaluate
+		*
+		(Function_Num_Refineries.Evaluate > 1)
+	</Should_Hold_Position>
+
+</Equations>

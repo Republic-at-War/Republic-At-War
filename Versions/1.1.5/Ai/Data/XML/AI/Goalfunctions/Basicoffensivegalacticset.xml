@@ -1,0 +1,111 @@
+<?xml version="1.0" ?>
+<!--   -->
+<FunctionSet>
+
+	<Flush_MajorItem_Budget>
+		<Goal>Flush_MajorItem_Budget</Goal>
+		<Function>Need_To_Flush_MajorItem_Budget</Function>
+	</Flush_MajorItem_Budget>
+
+	<Build_Space_Forces>
+		<Goal>Build_Space_Forces</Goal>
+		<Function>Allow_Blind_Space_Production</Function>
+	</Build_Space_Forces>
+
+	<Build_Ground_Forces>
+		<Goal>Build_Ground_Forces</Goal>
+		<Function>Allow_Blind_Ground_Production</Function>
+	</Build_Ground_Forces>
+
+	<Reclaim_Excess_MajorItem_Budget>
+		<Goal>Reclaim_Excess_MajorItem_Budget</Goal>
+		<Function>Can_Reclaim_Excess_MajorItem_Budget</Function>
+	</Reclaim_Excess_MajorItem_Budget>
+
+	<Conquer_Pirate>
+		<Goal>Conquer_Pirate</Goal>
+		<Function> Should_Conquer_Pirate_Planet </Function>
+	</Conquer_Pirate>
+
+	<Conquer_To_Reconnect>
+		<Goal>Conquer_To_Reconnect</Goal>
+		<Function>Need_To_Reconnect_Islands</Function>
+	</Conquer_To_Reconnect>
+	
+
+	<GrowTowardDistantSystem>
+		<Goal>Distant_System_Path_Bonus</Goal>
+		<Function>One</Function>
+	</GrowTowardDistantSystem>
+	
+	<WeakenPlanet>
+		<Goal>Weaken_Planet</Goal>
+		<Function>Is_Good_Weaken_Target</Function>
+	</WeakenPlanet>
+	
+	<Conquer_Opponent>
+		<Goal>Conquer_Opponent</Goal>
+		<Function>Should_Conquer_Opponent_Planet</Function>
+	</Conquer_Opponent>
+
+	<Death_Star_Use>
+		<Goal>Death_Star_Use</Goal>
+		<Function>Want_To_Fire_DS</Function>
+	</Death_Star_Use>
+
+	<Raid>
+		<Goal>Raid</Goal>
+		<Function>Is_Good_Raid_Target</Function>
+	</Raid>
+
+	<Unrestricted_Grab_Space>
+		<Goal>Unrestricted_Grab_Space</Goal>
+		<Function>Should_Perform_Unrestricted_Grab_Space</Function>
+	</Unrestricted_Grab_Space>
+	
+	<Unrestricted_Grab_Land>
+		<Goal>Unrestricted_Grab_Land</Goal>
+		<Function>Should_Perform_Unrestricted_Grab_Land</Function>			
+	</Unrestricted_Grab_Land>
+
+	<Conquer_Capital_Planet>
+		<Goal>Conquer_Capital_Planet</Goal>
+		<Function>Conquer_Capital_Planet</Function>			
+	</Conquer_Capital_Planet>
+
+	<Conquer_Developed_Planet>
+		<Goal>Conquer_Developed_Planet</Goal>
+		<Function>Conquer_Developed_Planet</Function>			
+	</Conquer_Developed_Planet>
+
+	<Conquer_Planet_Tech_4>
+		<Goal>Conquer_Planet_Tech_4</Goal>
+		<Function>Conquer_Planet_Tech_4</Function>			
+	</Conquer_Planet_Tech_4>
+
+	<Conquer_Planet_Tech_5>
+		<Goal>Conquer_Planet_Tech_5</Goal>
+		<Function>Conquer_Planet_Tech_5</Function>			
+	</Conquer_Planet_Tech_5>
+
+	<Enemy_Fleet_Massing>
+		<Goal>Enemy_Fleet_Massing</Goal>
+		<Function>Enemy_Fleet_Massing</Function>			
+	</Enemy_Fleet_Massing>
+
+	<Conquer_Hero_Space>
+		<Goal>Conquer_Hero_Space</Goal>
+		<Function>Conquer_Hero_Space</Function>			
+	</Conquer_Hero_Space>
+	
+		<Kill_The_Malevolence>
+		<Goal>Kill_The_Malevolence</Goal>
+		<Function>Kill_The_Malevolence</Function>			
+	</Kill_The_Malevolence>
+
+	<Conquer_Hero_Ground>
+		<Goal>Conquer_Hero_Ground</Goal>
+		<Function>Conquer_Hero_Ground</Function>			
+	</Conquer_Hero_Ground>
+
+</FunctionSet>

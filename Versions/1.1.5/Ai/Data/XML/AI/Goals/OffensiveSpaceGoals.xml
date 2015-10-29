@@ -1,0 +1,283 @@
+<?xml version="1.0" ?>
+
+<Goals>
+
+	<Destroy_Unit>
+		<AIGoalApplicationFlags> Enemy_Unit | Enemy_Structure </AIGoalApplicationFlags>
+		<GameMode> Space </GameMode>
+		<Category> Tactical_Targeted </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 30.0 </Time_Limit>
+		<Activation_Tracking_Duration>20</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-15.0</Per_Activation_Failure_Desire_Adjust>
+	</Destroy_Unit>
+
+	<Destroy_Unit_Minimal>
+		<AIGoalApplicationFlags> Enemy_Unit | Enemy_Structure </AIGoalApplicationFlags>
+		<GameMode> Space </GameMode>
+		<Category> Tactical_Targeted </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 30.0 </Time_Limit>
+		<Activation_Tracking_Duration>20</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-15.0</Per_Activation_Failure_Desire_Adjust>
+	</Destroy_Unit_Minimal>
+
+	<Disable_Unit>
+		<AIGoalApplicationFlags> Enemy_Unit | Enemy_Structure </AIGoalApplicationFlags>
+		<GameMode> Space </GameMode>
+		<Category> Tactical_Targeted </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 30.0 </Time_Limit>
+		<Activation_Tracking_Duration>20</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-15.0</Per_Activation_Failure_Desire_Adjust>
+	</Disable_Unit>
+
+	<Bomb_Unit>
+		<AIGoalApplicationFlags> Enemy_Unit | Enemy_Structure </AIGoalApplicationFlags>
+		<GameMode> Space </GameMode>
+		<Category> Tactical_Targeted </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 30.0 </Time_Limit>
+		<Activation_Tracking_Duration>20</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-15.0</Per_Activation_Failure_Desire_Adjust>
+	</Bomb_Unit>
+
+
+	<Sweep_Area>
+		<AIGoalApplicationFlags> Tactical_Location </AIGoalApplicationFlags>
+		<GameMode> Space </GameMode>
+		<Category> Tactical_Targeted </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 30.0 </Time_Limit>
+		<Activation_Tracking_Duration>20</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-15.0</Per_Activation_Failure_Desire_Adjust>
+	</Sweep_Area>
+	
+	<Space_Scout>
+		<AIGoalApplicationFlags> Tactical_Location </AIGoalApplicationFlags>
+		<GameMode> Space </GameMode>
+		<Category> Tactical_Targeted </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 30.0 </Time_Limit>
+		<Activation_Tracking_Duration>20</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-15.0</Per_Activation_Failure_Desire_Adjust>
+	</Space_Scout> 
+	
+    <Space_Escort_Goal>
+        <AIGoalApplicationFlags> Friendly_Unit </AIGoalApplicationFlags>
+        <GameMode> Space </GameMode>
+        <Category> Defensive </Category>
+        <Reachability> Any </Reachability>
+        <Time_Limit> 240.0 </Time_Limit>		
+		  <Activation_Tracking_Duration>20</Activation_Tracking_Duration>
+		  <Per_Activation_Failure_Desire_Adjust>-15.0</Per_Activation_Failure_Desire_Adjust>
+    </Space_Escort_Goal>
+
+    <Hide_Transports>
+		<AIGoalApplicationFlags> Tactical_Location </AIGoalApplicationFlags>
+		<GameMode> Space </GameMode>
+		<Category> Defensive </Category>
+         <Reachability> Any </Reachability>
+        <Time_Limit> 240.0 </Time_Limit>		
+		  <Activation_Tracking_Duration>20</Activation_Tracking_Duration>
+		  <Per_Activation_Failure_Desire_Adjust>-15.0</Per_Activation_Failure_Desire_Adjust>
+   </Hide_Transports>
+
+
+	<Hide_Surprise_Units>
+	  <AIGoalApplicationFlags> Tactical_Location </AIGoalApplicationFlags>
+	  <GameMode> Space </GameMode>
+	  <Category> Tactical_Targeted </Category>
+		  <Reachability> Any </Reachability>
+		 <Time_Limit> 240.0 </Time_Limit>		
+		 <Activation_Tracking_Duration>20</Activation_Tracking_Duration>
+		 <Per_Activation_Failure_Desire_Adjust>-15.0</Per_Activation_Failure_Desire_Adjust>
+	</Hide_Surprise_Units>
+
+
+	<Return_To_Base>
+		<AIGoalApplicationFlags> Tactical_Location </AIGoalApplicationFlags>
+		<GameMode> Space </GameMode>
+		<Category> Defensive </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 30.0 </Time_Limit>
+		<Activation_Tracking_Duration>20</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-15.0</Per_Activation_Failure_Desire_Adjust>
+	</Return_To_Base>
+
+	<Patrol_Structure_Space>
+		<AIGoalApplicationFlags> Friendly_Structure </AIGoalApplicationFlags>
+		<GameMode> Space </GameMode>
+		<Category> Defensive </Category>
+		<Reachability> Medium_Threat </Reachability>
+		<Time_Limit> 30.0 </Time_Limit>
+		<Activation_Tracking_Duration>20</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-15.0</Per_Activation_Failure_Desire_Adjust>
+	</Patrol_Structure_Space>
+
+	<Debug_Goal_Space>
+		<AIGoalApplicationFlags> Enemy_Unit | Enemy_Structure </AIGoalApplicationFlags>
+		<GameMode> Space </GameMode>
+		<Category> NoBudget </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 0.0 </Time_Limit>
+	</Debug_Goal_Space>
+   
+   <Space_Retreat>
+		<AIGoalApplicationFlags> Global </AIGoalApplicationFlags>
+		<GameMode> Space </GameMode>
+		<Category> Defensive </Category>
+        <Reachability> Any </Reachability>
+        <Time_Limit> 240.0 </Time_Limit>		
+   </Space_Retreat>
+
+	<Ground_To_Space_Damage>
+		<AIGoalApplicationFlags> Enemy_Unit | Enemy_Structure </AIGoalApplicationFlags>
+		<GameMode> Space </GameMode>
+		<Category> Tactical_Targeted </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 0.0 </Time_Limit>
+	</Ground_To_Space_Damage>
+
+	<Ground_To_Space_Disable>
+		<AIGoalApplicationFlags> Enemy_Unit | Enemy_Structure </AIGoalApplicationFlags>
+		<GameMode> Space </GameMode>
+		<Category> Tactical_Targeted </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 0.0 </Time_Limit>
+	</Ground_To_Space_Disable>
+
+	<Fire_Death_Star>
+		<AIGoalApplicationFlags> Global </AIGoalApplicationFlags>
+		<GameMode> Space </GameMode>
+		<Category> Tactical_Untargeted </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 0.0 </Time_Limit>
+	</Fire_Death_Star>
+
+	<Turbo_Attack_Location>
+		<AIGoalApplicationFlags> Tactical_Location </AIGoalApplicationFlags>
+		<GameMode> Space </GameMode>
+		<Category> Med_Priority </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 30.0 </Time_Limit>
+		<Activation_Tracking_Duration>20</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-15.0</Per_Activation_Failure_Desire_Adjust>
+	</Turbo_Attack_Location>
+
+	<Turbo_Attack_Unit>
+		<AIGoalApplicationFlags> Enemy_Unit </AIGoalApplicationFlags>
+		<GameMode> Space </GameMode>
+		<Category> Med_Priority </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 30.0 </Time_Limit>
+		<Activation_Tracking_Duration>20</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-15.0</Per_Activation_Failure_Desire_Adjust>
+	</Turbo_Attack_Unit>
+
+	<Space_Artillery>
+		<AIGoalApplicationFlags> Tactical_Location </AIGoalApplicationFlags>
+		<GameMode> Space </GameMode>
+		<Category> Med_Priority </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 30.0 </Time_Limit>
+		<Activation_Tracking_Duration>20</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-15.0</Per_Activation_Failure_Desire_Adjust>
+	</Space_Artillery>
+
+	<Tactical_Multiplayer_Build_Space_Units_Generic>
+		<AIGoalApplicationFlags>Global</AIGoalApplicationFlags>
+		<GameMode>Space</GameMode>
+		<Category>High_Priority</Category>
+		<Reachability>Any_Threat</Reachability>
+		<Time_Limit>0.0</Time_Limit>
+		<Activation_Tracking_Duration>20</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-15.0</Per_Activation_Failure_Desire_Adjust>
+	</Tactical_Multiplayer_Build_Space_Units_Generic>
+
+	<Purchase_Space_Upgrades_Generic>
+		<AIGoalApplicationFlags>Global</AIGoalApplicationFlags>
+		<GameMode>Space</GameMode>
+		<Category>High_Priority</Category>
+		<Reachability>Any_Threat</Reachability>
+		<Time_Limit>0.0</Time_Limit>
+		<Activation_Tracking_Duration>20</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-15.0</Per_Activation_Failure_Desire_Adjust>
+	</Purchase_Space_Upgrades_Generic>
+
+	<!-- This plan is for claiming contestable build pads (enemy includes neutral pads).
+	Separate plans handle the destruction of enemy structures that may be on a build pad.
+	-->
+	<Secure_Build_Pad_Space>
+		<AIGoalApplicationFlags> Enemy_Build_Pad </AIGoalApplicationFlags>
+		<GameMode> Space </GameMode>
+		<Category> Map_Control </Category>
+		<Reachability> Any_Threat </Reachability>
+		<Time_Limit> 30.0 </Time_Limit>
+		<Activation_Tracking_Duration>20</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-15.0</Per_Activation_Failure_Desire_Adjust>
+	</Secure_Build_Pad_Space>
+
+	<Build_Structure_Space>
+		<AIGoalApplicationFlags> Friendly_Build_Pad </AIGoalApplicationFlags>
+		<GameMode>Space</GameMode>
+		<Category>Med_Priority</Category>
+		<Reachability>Any_Threat</Reachability>
+		<Time_Limit>0.0</Time_Limit>
+		<Activation_Tracking_Duration>60</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-15.0</Per_Activation_Failure_Desire_Adjust>
+	</Build_Structure_Space>
+
+	<Build_Refinery_Space>
+		<AIGoalApplicationFlags> Friendly_Build_Pad </AIGoalApplicationFlags>
+		<GameMode>Space</GameMode>
+		<Category>High_Priority</Category>
+		<Reachability>Any_Threat</Reachability>
+		<Time_Limit>0.0</Time_Limit>
+		<Activation_Tracking_Duration>60</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-15.0</Per_Activation_Failure_Desire_Adjust>
+	</Build_Refinery_Space>
+
+	<Burn_Units_Space>
+		<AIGoalApplicationFlags>Global</AIGoalApplicationFlags>
+		<GameMode>Space</GameMode>
+		<Category>High_Priority</Category>
+		<Reachability>Any_Threat</Reachability>
+		<Time_Limit>0.0</Time_Limit>
+	</Burn_Units_Space>
+
+	<Skirmish_Upgrade_Space_Station>
+		<AIGoalApplicationFlags>Global</AIGoalApplicationFlags>
+		<GameMode>Space</GameMode>
+		<Category>High_Priority</Category>
+		<Reachability>Any_Threat</Reachability>
+		<Time_Limit>0.0</Time_Limit>		
+	</Skirmish_Upgrade_Space_Station>
+	
+	<Skirmish_Generate_Magic_Cash_Drop_Space>
+		<AIGoalApplicationFlags>Global</AIGoalApplicationFlags>
+		<GameMode>Space</GameMode>
+		<Category>High_Priority</Category>
+		<Reachability>Any_Threat</Reachability>
+		<Time_Limit>0.0</Time_Limit>		
+	</Skirmish_Generate_Magic_Cash_Drop_Space>
+	
+	<Defend_Space_Station>
+		<AIGoalApplicationFlags>Friendly_Structure</AIGoalApplicationFlags>
+		<GameMode>Space</GameMode>
+		<Category>High_Priority</Category>
+		<Reachability>Any_Threat</Reachability>
+		<Time_Limit>0.0</Time_Limit>
+	</Defend_Space_Station>
+	
+	<Tactical_Multiplayer_Build_Space_Heroes_Generic>
+		<AIGoalApplicationFlags>Global</AIGoalApplicationFlags>
+		<GameMode>Space</GameMode>
+		<Category>High_Priority</Category>
+		<Reachability>Any_Threat</Reachability>
+		<Time_Limit>0.0</Time_Limit>
+		<Activation_Tracking_Duration>20</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-15.0</Per_Activation_Failure_Desire_Adjust>
+	</Tactical_Multiplayer_Build_Space_Heroes_Generic>
+
+</Goals>
