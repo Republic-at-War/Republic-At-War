@@ -3667,7 +3667,7 @@
 	
 	<Battle_Pending_Timeout_Seconds> 15 </Battle_Pending_Timeout_Seconds>
 	
-	<Message_Of_The_Day_URL>http://www.petroglyphgames.com/eawmotd</Message_Of_The_Day_URL>
+	<Message_Of_The_Day_URL>http://216.120.238.87/EAWMOTD</Message_Of_The_Day_URL>
 	
 	<Skirmish_Buy_Credits>2000</Skirmish_Buy_Credits>
 	<Skirmish_Reinforcement_Delay_Frames>90</Skirmish_Reinforcement_Delay_Frames>
