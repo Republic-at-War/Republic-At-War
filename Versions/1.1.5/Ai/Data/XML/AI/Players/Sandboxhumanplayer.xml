@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<AIPlayerType>
+
+	<Name>SandboxHuman</Name>
+
+	<Personality>
+		<Focus> 0 </Focus>
+		<Aggressiveness> 0 </Aggressiveness>
+	</Personality>
+	
+	<GoalSetExtensionSize>1</GoalSetExtensionSize>
+	
+	<GoalProposalFunctionSets>
+		InterventionsGoalSet
+		Sandboxeventsset
+	</GoalProposalFunctionSets>
+    <Templates>
+        <Space>
+            All_Interventions_Template
+        </Space>
+        <Land>
+            All_Interventions_Template
+        </Land>
+        <Galactic>
+            All_Interventions_Template
+        </Galactic>
+    </Templates>
+	
+</AIPlayerType>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GraphicDetailSettings>
+
+	<GraphicDetailLevelEnumeration>
+
+        <!--                                                        -->
+        <!--  Default Detail sets                                   -->
+        <!--                                                        -->
+
+        <!-- Lowest default detail, de-res the textures, use fixed function pipe and crappy water -->
+		<GraphicDetailLevel name="Default_0">
+			<ScreenResolutionWidth>800</ScreenResolutionWidth>
+			<ScreenResolutionHeight>600</ScreenResolutionHeight>
+			<ScreenAALevel>0</ScreenAALevel>
+			<TextureMipLevel>2</TextureMipLevel>	
+			<ShaderDetailLevel>0</ShaderDetailLevel>
+			<WaterDetailLevel>0</WaterDetailLevel>
+			<ShadowDetail>0</ShadowDetail>	
+			<ShadowVolumes>No</ShadowVolumes>
+			<SoftShadows>No</SoftShadows>
+			<HeatDistortions>No</HeatDistortions>
+			<Bloom>No</Bloom>
+			<DynamicLighting>No</DynamicLighting>
+			<ParticleDetail>0.4</ParticleDetail>
+			<MeshDetail>0.0</MeshDetail>
+			<EnvironmentDetail>0.0</EnvironmentDetail>
+		</GraphicDetailLevel>
+		
+		<!-- Medium default detail -->
+		<GraphicDetailLevel name="Default_1">
+			<ScreenResolutionWidth>1024</ScreenResolutionWidth>
+			<ScreenResolutionHeight>768</ScreenResolutionHeight>
+			<ScreenAALevel>0</ScreenAALevel>
+			<TextureMipLevel>1</TextureMipLevel>
+			<ShaderDetailLevel>1</ShaderDetailLevel>
+			<WaterDetailLevel>1</WaterDetailLevel>
+			<ShadowDetail>1</ShadowDetail>	
+			<ShadowVolumes>Yes</ShadowVolumes>
+			<SoftShadows>No</SoftShadows>
+			<HeatDistortions>No</HeatDistortions>
+			<Bloom>No</Bloom>
+			<DynamicLighting>No</DynamicLighting>
+			<ParticleDetail>0.6</ParticleDetail>
+			<MeshDetail>0.5</MeshDetail>
+			<EnvironmentDetail>0.2</EnvironmentDetail>
+		</GraphicDetailLevel>
+
+		<!-- High default detail -->
+		<GraphicDetailLevel name="Default_2">
+			<Based_On>Default_1</Based_On>	
+            <TextureMipLevel>0</TextureMipLevel>
+            <ShaderDetailLevel>2</ShaderDetailLevel>
+            <WaterDetailLevel>1</WaterDetailLevel>
+			<ShadowDetail>2</ShadowDetail>	
+			<HeatDistortions>Yes</HeatDistortions>
+			<Bloom>Yes</Bloom>
+			<DynamicLighting>No</DynamicLighting>
+			<ParticleDetail>0.8</ParticleDetail>
+			<MeshDetail>1.0</MeshDetail>
+			<EnvironmentDetail>0.6</EnvironmentDetail>
+		</GraphicDetailLevel>
+		
+		<!-- Highest default detail -->
+		<GraphicDetailLevel name="Default_3">
+			<ScreenResolutionWidth>1280</ScreenResolutionWidth>
+			<ScreenResolutionHeight>1024</ScreenResolutionHeight>
+			<ScreenAALevel>1</ScreenAALevel>
+			<TextureMipLevel>0</TextureMipLevel>
+			<ShaderDetailLevel>3</ShaderDetailLevel>
+			<WaterDetailLevel>2</WaterDetailLevel>
+			<ShadowDetail>3</ShadowDetail>	
+			<ShadowVolumes>Yes</ShadowVolumes>
+			<SoftShadows>Yes</SoftShadows>
+			<HeatDistortions>Yes</HeatDistortions>
+			<Bloom>Yes</Bloom>
+			<DynamicLighting>No</DynamicLighting>
+			<ParticleDetail>1.0</ParticleDetail>
+			<MeshDetail>1.0</MeshDetail>
+			<EnvironmentDetail>1.0</EnvironmentDetail>
+		</GraphicDetailLevel>
+
+
+        <!--                                                        -->
+        <!--  Detail sets that only use the FIXED FUNCTION pipeline -->
+        <!--                                                        -->
+        <GraphicDetailLevel name="FF_0">
+            <Based_On>Default_0</Based_On>	
+            <ScreenResolutionWidth>800</ScreenResolutionWidth>
+            <ScreenResolutionHeight>600</ScreenResolutionHeight>
+            <TextureMipLevel>2</TextureMipLevel>
+            <ShaderDetailLevel>0</ShaderDetailLevel>
+            <WaterDetailLevel>0</WaterDetailLevel>
+            <ShadowVolumes>No</ShadowVolumes>
+            <SoftShadows>No</SoftShadows>
+            <HeatDistortions>No</HeatDistortions>
+            <Bloom>No</Bloom>
+        </GraphicDetailLevel>
+
+        <GraphicDetailLevel name="FF_1">
+            <Based_On>Default_1</Based_On>	
+            <ScreenResolutionWidth>800</ScreenResolutionWidth>
+            <ScreenResolutionHeight>600</ScreenResolutionHeight>
+            <TextureMipLevel>1</TextureMipLevel>
+            <ShaderDetailLevel>0</ShaderDetailLevel>
+            <WaterDetailLevel>0</WaterDetailLevel>
+            <ShadowVolumes>No</ShadowVolumes>
+            <SoftShadows>No</SoftShadows>
+            <HeatDistortions>No</HeatDistortions>
+            <Bloom>No</Bloom>
+        </GraphicDetailLevel>
+
+        <GraphicDetailLevel name="FF_2">
+            <Based_On>Default_2</Based_On>	
+            <ScreenResolutionWidth>1024</ScreenResolutionWidth>
+            <ScreenResolutionHeight>768</ScreenResolutionHeight>
+            <ShaderDetailLevel>0</ShaderDetailLevel>
+            <WaterDetailLevel>0</WaterDetailLevel>
+            <ShadowVolumes>No</ShadowVolumes>
+            <SoftShadows>No</SoftShadows>
+            <HeatDistortions>No</HeatDistortions>
+            <Bloom>No</Bloom>
+        </GraphicDetailLevel>
+
+        <GraphicDetailLevel name="FF_3">
+            <Based_On>Default_3</Based_On>	
+            <ScreenResolutionWidth>1024</ScreenResolutionWidth>
+            <ScreenResolutionHeight>768</ScreenResolutionHeight>
+            <ShaderDetailLevel>0</ShaderDetailLevel>
+            <WaterDetailLevel>0</WaterDetailLevel>
+            <ShadowVolumes>No</ShadowVolumes>
+            <SoftShadows>No</SoftShadows>
+            <HeatDistortions>No</HeatDistortions>
+            <Bloom>No</Bloom>
+        </GraphicDetailLevel>
+
+
+	</GraphicDetailLevelEnumeration>
+
+
+<!-- Specify hardware-graphic settings relationship here, highest to lowest, specific VendorID before generic -->
+<!-- <GraphicDetailSettingName>:   Specify reference to detail setting lowest to highest IN ORDER!
+								   This corresponds to GraphicDetail slider in the game. Therefore, the
+								   number of these settings has to agree with the number of ticks on the slider. -->
+		
+<!-- <DefaultGraphicDetailLevel>: Specifies which setting to choose by default from the list above -->
+			
+<!-- <VendorIDHEX>,	<VendorIDHEX>: entries with these should go BEFORE any generic entries so they can be matched first -->
+<!-- 64Mb GF4MX reported 141Mb, so empirically anything below 200Mb is "low" for us -->
+			
+	<HardwareConfigurations>
+
+
+        <!--                                                                                                       --> 
+        <!--                                                                                                       --> 
+        <!-- Intel special cases, all Intel HW gets fixed function due to the lack of hardware vertex shaders      -->
+        <!--                                                                                                       --> 
+        <!--                                                                                                       -->
+        <HardwareConfiguration name="Config_Intel_Fast">
+                <GraphicDetailSettingName>	FF_0	FF_1	FF_2	FF_3</GraphicDetailSettingName>
+                <DefaultGraphicDetailLevel>2</DefaultGraphicDetailLevel>
+                <PixelShaderVersionHEX>0x0000</PixelShaderVersionHEX>
+                <VertexShaderVersionHEX>0x0000</VertexShaderVersionHEX>
+                <TextureMemory>200.0</TextureMemory>	
+                <CPUSpeed>2.25</CPUSpeed>			
+
+                <VendorIDHEX>0x8086</VendorIDHEX> 
+        </HardwareConfiguration>	
+
+        <HardwareConfiguration name="Config_Intel_Slow">
+                <GraphicDetailSettingName>	FF_0	FF_1	FF_2	FF_3</GraphicDetailSettingName>
+                <DefaultGraphicDetailLevel>1</DefaultGraphicDetailLevel>
+                <PixelShaderVersionHEX>0x0000</PixelShaderVersionHEX>
+                <VertexShaderVersionHEX>0x0000</VertexShaderVersionHEX>
+                <TextureMemory>200.0</TextureMemory>	
+                <CPUSpeed>0.0</CPUSpeed>			
+
+                <VendorIDHEX>0x8086</VendorIDHEX> 
+        </HardwareConfiguration>	
+
+        <!--                                                                                                       --> 
+        <!--                                                                                                       --> 
+        <!-- Generic Hardware Configs, based on cpu-speed, texture-ram, and reported shader versions               -->
+        <!--                                                                                                       --> 
+        <!--                                                                                                       --> 
+
+        <!-- Highest detail setting, we want 6800's, X800's and above (primarily filtered by fill-rate) -->
+        <HardwareConfiguration name="Config_Highest">
+				<GraphicDetailSettingName>	Default_0	Default_1	Default_2	Default_3</GraphicDetailSettingName>
+				<DefaultGraphicDetailLevel>3</DefaultGraphicDetailLevel>
+				<TextureMemory>200.0</TextureMemory>	
+				<CPUSpeed>2.2</CPUSpeed>
+				
+                <!-- <FillRateGPs>2800.0</FillRateGPs> -->
+                <FillRateMpsPS13>0.0</FillRateMpsPS13>
+                <FillRateMpsPS14>0.0</FillRateMpsPS14>
+                <FillRateMpsPS20>300.0</FillRateMpsPS20>
+                <VertexRateMvsVS11>5.0</VertexRateMvsVS11>
+				
+				<PixelShaderVersionHEX>0x0200</PixelShaderVersionHEX>
+				<VertexShaderVersionHEX>0x0101</VertexShaderVersionHEX>
+		</HardwareConfiguration>
+
+        <!-- FX5900, Radeon 9800, etc -->
+		<HardwareConfiguration name="Config_High">
+				<GraphicDetailSettingName>	Default_0	Default_1	Default_2	Default_3</GraphicDetailSettingName>
+				<DefaultGraphicDetailLevel>2</DefaultGraphicDetailLevel>
+				<TextureMemory>200.0</TextureMemory>	
+                <CPUSpeed>1.7</CPUSpeed>
+                
+                <!-- <FillRateGPs>1200.0</FillRateGPs> -->
+                <FillRateMpsPS13>0.0</FillRateMpsPS13>
+                <FillRateMpsPS14>200.0</FillRateMpsPS14>
+                <FillRateMpsPS20>0.0</FillRateMpsPS20>
+                <VertexRateMvsVS11>5.0</VertexRateMvsVS11>
+
+				<PixelShaderVersionHEX>0x0104</PixelShaderVersionHEX>
+				<VertexShaderVersionHEX>0x0101</VertexShaderVersionHEX>
+		</HardwareConfiguration>
+
+        <!-- Lower end dx8 and dx9 hardware -->
+        <HardwareConfiguration name="Config_Medium">
+                <GraphicDetailSettingName>	Default_0	Default_1	Default_2	Default_3</GraphicDetailSettingName>
+                <DefaultGraphicDetailLevel>1</DefaultGraphicDetailLevel>
+                <TextureMemory>100.0</TextureMemory>	
+                <CPUSpeed>0.0</CPUSpeed>			
+                <FillRateGPs>750.0</FillRateGPs>
+
+                <FillRateMpsPS13>200.0</FillRateMpsPS13>
+                <FillRateMpsPS14>0.0</FillRateMpsPS14>
+                <FillRateMpsPS20>0.0</FillRateMpsPS20>
+                <VertexRateMvsVS11>3.0</VertexRateMvsVS11>
+
+                <PixelShaderVersionHEX>0x0100</PixelShaderVersionHEX>
+                <VertexShaderVersionHEX>0x0101</VertexShaderVersionHEX>
+        </HardwareConfiguration>
+		
+		<!-- All others! -->
+		<HardwareConfiguration name="Config_Low">
+				<GraphicDetailSettingName>	Default_0	Default_1	Default_2	Default_3</GraphicDetailSettingName>
+				<DefaultGraphicDetailLevel>0</DefaultGraphicDetailLevel>
+				<TextureMemory>-2200000000.0</TextureMemory>	
+				<CPUSpeed>0.0</CPUSpeed>			
+				<PixelShaderVersionHEX>0x0000</PixelShaderVersionHEX>
+				<VertexShaderVersionHEX>0x0000</VertexShaderVersionHEX>
+		</HardwareConfiguration>
+	
+	</HardwareConfigurations>
+        
+	<EOF>
+		<Value>00000YBT;H</Value>
+	</EOF>
+</GraphicDetailSettings>
+
+
+

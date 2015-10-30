@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<Galactic_Markup>
+
+	<Planets HintSet="Galactic_Hints">
+		<Anaxes>
+			<Chokepoint>1.0</Chokepoint>
+		</Anaxes>
+		
+		<Alderann>
+			<Chokepoint>1.0</Chokepoint>
+		</Alderann>
+		
+		<Tatooine>
+			<Chokepoint>1.0</Chokepoint>
+		</Tatooine>
+	
+		<Kuat>
+			<PriorityTarget>3.0</PriorityTarget>
+		</Kuat>
+	
+		<Carida>
+			<Chokepoint>1.0</Chokepoint>
+		</Carida>
+		
+		<Corellia>
+			<Chokepoint>1.0</Chokepoint>
+		</Corellia>
+		
+			<Coruscant>
+			<PriorityTarget>15.0</PriorityTarget>
+		</Coruscant>
+		
+			<Geonosis>
+			<PriorityTarget>7.0</PriorityTarget>
+		</Geonosis>
+		
+			<Foerost>
+			<PriorityTarget>3.0</PriorityTarget>
+		</Foerost>
+		
+	
+	</Planets>
+</Galactic_Markup>

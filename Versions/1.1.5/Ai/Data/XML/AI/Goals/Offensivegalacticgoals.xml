@@ -1,0 +1,278 @@
+<?xml version="1.0" ?>
+
+<Goals>
+
+	<!-- Take control of a planet
+	Learning: if the goal failed on a given target within duration, increase contrast (in the plan)
+	but don't decrease desirability.
+	-->
+	<Conquer_Pirate>
+		<AIGoalApplicationFlags> Enemy | Neutral </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Enemy_destination </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.3</Build_Time_Delay_Tolerance>
+		<Is_Like>Conquer_To_Reconnect, Raid</Is_Like> 
+		<Tracking_Duration>600</Tracking_Duration>
+		<Per_Failure_Desire_Adjust>1.0</Per_Failure_Desire_Adjust>
+		<Activation_Tracking_Duration>60</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-5.0</Per_Activation_Failure_Desire_Adjust>
+	</Conquer_Pirate>
+
+	<!-- Take control of a planet that is dividing our connectivity
+	Learning: if the goal failed on a given target within duration, increase contrast (in the plan)
+	and slightly decrease desirability.
+		<Reachability> Enemy_destination </Reachability>
+	-->
+	<Conquer_To_Reconnect>
+		<AIGoalApplicationFlags> Enemy | Neutral </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Single_Hop_Disconnected </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.5</Build_Time_Delay_Tolerance>
+		<Is_Like>Conquer_Pirate</Is_Like> 
+		<Tracking_Duration>300</Tracking_Duration>
+		<Per_Failure_Desire_Adjust>-5.0</Per_Failure_Desire_Adjust>
+		<Activation_Tracking_Duration>120</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-8.0</Per_Activation_Failure_Desire_Adjust>
+		<Global_Exclusions>Conquer_Opponent, Raid, Conquer_To_Reconnect, Death_Star_Use</Global_Exclusions>
+		<Tracking_Duration>300</Tracking_Duration>
+	</Conquer_To_Reconnect>
+
+
+	<!-- Markup with a bonus systems which on the way toward a juicy target
+	-->
+	<Distant_System_Path_Bonus>
+		<AIGoalApplicationFlags> Global </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Always </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 0.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>0.0</Build_Time_Delay_Tolerance>
+	</Distant_System_Path_Bonus>
+
+	<!-- Use stealth units to harass a planet
+	Learning: if the stealth unit failed in their plan (was killed) within the last 10 minutes,
+	the AI won't try that target again.
+	-->
+	<Weaken_Planet>
+		<AIGoalApplicationFlags> Enemy </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Any </Reachability>
+		<Build_Time_Delay_Tolerance>1.1</Build_Time_Delay_Tolerance>
+		<Time_Limit> 60.0 </Time_Limit>		
+
+		<Tracking_Duration>600</Tracking_Duration>
+		<Per_Failure_Desire_Adjust>-10.0</Per_Failure_Desire_Adjust>
+	</Weaken_Planet>
+	
+	<!-- Take control of a planet that is NOT pirate or neutral -->
+	<Conquer_Opponent>
+		<AIGoalApplicationFlags> Enemy </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Enemy_destination </Reachability>
+		<Time_Limit> 240.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.3</Build_Time_Delay_Tolerance>
+		<Activation_Tracking_Duration>120</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-8.0</Per_Activation_Failure_Desire_Adjust>
+		<Is_Like>Conquer_Opponent, Raid, Conquer_To_Reconnect, Death_Star_Use</Is_Like>
+		<Tracking_Duration>300</Tracking_Duration>
+	</Conquer_Opponent>
+
+	<!-- Grow one's force when there's nothing else to do -->
+	<!-- It's a safe bet because the units we produce will go -->
+	<!-- into the free-store for future offensive goals, so we're -->
+	<!-- not throwing money away on things we might not need -->
+	<Build_Ground_Forces>
+		<AIGoalApplicationFlags> Global </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 200.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>2.0</Build_Time_Delay_Tolerance>
+	</Build_Ground_Forces>
+	
+	<Build_Space_Forces>
+		<AIGoalApplicationFlags> Global </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 200.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>2.0</Build_Time_Delay_Tolerance>
+	</Build_Space_Forces>
+
+	<!-- Because it's in the Hero category, the Death Star never receives any budget.
+	It must be built by other means than chance affordability.  Currently this is done via MajorItem purchasing.
+		<Tracking_Duration>900</Tracking_Duration>
+		<Per_Failure_Desire_Adjust>-50.0</Per_Failure_Desire_Adjust>
+	-->
+	<Death_Star_Use>
+		<AIGoalApplicationFlags> Enemy </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Enemy_destination </Reachability>
+		<Time_Limit> 240.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.3</Build_Time_Delay_Tolerance>
+		<Is_Like>Conquer_To_Reconnect, Conquer_Opponent</Is_Like>			
+		<Global_Exclusions>Conquer_Opponent, Raid, Conquer_To_Reconnect, Death_Star_Use</Global_Exclusions>
+	</Death_Star_Use>
+	
+	<Raid>
+		<AIGoalApplicationFlags> Enemy | Neutral </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Enemy_Undefended </Reachability>
+		<Time_Limit> 180.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>2.0</Build_Time_Delay_Tolerance>
+		<Is_Like>Conquer_Pirate</Is_Like> 
+		<Global_Exclusions>Conquer_Opponent, Raid, Conquer_To_Reconnect</Global_Exclusions>
+		<Activation_Tracking_Duration>120</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-8.0</Per_Activation_Failure_Desire_Adjust>
+		<Global_Exclusions>Conquer_Opponent, Raid, Conquer_To_Reconnect</Global_Exclusions>
+		<Tracking_Duration>300</Tracking_Duration>
+	</Raid>
+
+	<Unrestricted_Grab_Space>
+		<AIGoalApplicationFlags> Enemy </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Enemy_destination </Reachability>
+		<Time_Limit> 240.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.3</Build_Time_Delay_Tolerance>
+		<Activation_Tracking_Duration>120</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-8.0</Per_Activation_Failure_Desire_Adjust>
+		<Is_Like>Conquer_Opponent, Raid, Conquer_To_Reconnect, Death_Star_Use</Is_Like>
+		<Tracking_Duration>300</Tracking_Duration>
+	</Unrestricted_Grab_Space>
+
+	<Unrestricted_Grab_Land>
+		<AIGoalApplicationFlags> Enemy </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Enemy_destination </Reachability>
+		<Time_Limit> 240.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.3</Build_Time_Delay_Tolerance>
+		<Activation_Tracking_Duration>120</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-8.0</Per_Activation_Failure_Desire_Adjust>
+		<Is_Like>Conquer_Opponent, Raid, Conquer_To_Reconnect, Death_Star_Use</Is_Like>
+		<Tracking_Duration>300</Tracking_Duration>		
+	</Unrestricted_Grab_Land>
+
+	<Conquer_Capital_Planet>
+		<AIGoalApplicationFlags> Enemy </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Enemy_destination </Reachability>
+		<Time_Limit> 240.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.3</Build_Time_Delay_Tolerance>
+		<Activation_Tracking_Duration>120</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-8.0</Per_Activation_Failure_Desire_Adjust>
+		<Is_Like></Is_Like>
+		<Tracking_Duration>300</Tracking_Duration>
+		<Per_Failure_Desire_Adjust>3.0</Per_Failure_Desire_Adjust>		
+	</Conquer_Capital_Planet>
+
+	<Conquer_Developed_Planet>
+		<AIGoalApplicationFlags> Enemy </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Enemy_destination </Reachability>
+		<Time_Limit> 240.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.3</Build_Time_Delay_Tolerance>
+		<Activation_Tracking_Duration>120</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-8.0</Per_Activation_Failure_Desire_Adjust>
+		<Is_Like></Is_Like>
+		<Tracking_Duration>300</Tracking_Duration>
+		<Per_Failure_Desire_Adjust>3.0</Per_Failure_Desire_Adjust>		
+	</Conquer_Developed_Planet>
+
+	<Conquer_Planet_Tech_4>
+		<AIGoalApplicationFlags> Enemy </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Enemy_destination </Reachability>
+		<Time_Limit> 240.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.3</Build_Time_Delay_Tolerance>
+		<Activation_Tracking_Duration>120</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-8.0</Per_Activation_Failure_Desire_Adjust>
+		<Is_Like>Conquer_Planet_Tech_4, Conquer_Capital_Planet, Enemy_Fleet_Massing, Conquer_Hero_Space, Conquer_Hero_Ground</Is_Like>
+		<Tracking_Duration>300</Tracking_Duration>
+		<Per_Failure_Desire_Adjust>-5.0</Per_Failure_Desire_Adjust>		
+	</Conquer_Planet_Tech_4>
+
+	<Conquer_Planet_Tech_5>
+		<AIGoalApplicationFlags> Enemy </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Enemy_destination </Reachability>
+		<Time_Limit> 240.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.3</Build_Time_Delay_Tolerance>
+		<Activation_Tracking_Duration>120</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-8.0</Per_Activation_Failure_Desire_Adjust>
+		<Is_Like>Conquer_Planet_Tech_5, Conquer_Capital_Planet, Enemy_Fleet_Massing, Conquer_Hero_Space, Conquer_Hero_Ground</Is_Like>
+		<Tracking_Duration>300</Tracking_Duration>
+		<Per_Failure_Desire_Adjust>-5.0</Per_Failure_Desire_Adjust>		
+	</Conquer_Planet_Tech_5>
+
+	<Enemy_Fleet_Massing>
+		<AIGoalApplicationFlags> Enemy </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Enemy_destination </Reachability>
+		<Time_Limit> 240.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.3</Build_Time_Delay_Tolerance>
+		<Activation_Tracking_Duration>120</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-8.0</Per_Activation_Failure_Desire_Adjust>
+		<Is_Like>Enemy_Fleet_Massing</Is_Like>
+		<Tracking_Duration>300</Tracking_Duration>
+		<Per_Failure_Desire_Adjust>2.0</Per_Failure_Desire_Adjust>		
+	</Enemy_Fleet_Massing>
+
+	<Conquer_Hero_Space>
+		<AIGoalApplicationFlags> Enemy </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Enemy_destination </Reachability>
+		<Time_Limit> 240.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.3</Build_Time_Delay_Tolerance>
+		<Activation_Tracking_Duration>120</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-8.0</Per_Activation_Failure_Desire_Adjust>
+		<Is_Like>Conquer_Hero_Space, Conquer_Hero_Ground</Is_Like>
+		<Tracking_Duration>300</Tracking_Duration>
+		<Per_Failure_Desire_Adjust>2.0</Per_Failure_Desire_Adjust>		
+	</Conquer_Hero_Space>
+	
+	<Kill_The_Malevolence>
+		<AIGoalApplicationFlags> Enemy </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Enemy_destination </Reachability>
+		<Time_Limit> 240.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.3</Build_Time_Delay_Tolerance>
+		<Activation_Tracking_Duration>120</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-8.0</Per_Activation_Failure_Desire_Adjust>
+		<Is_Like>Conquer_Hero_Space, Conquer_Hero_Ground</Is_Like>
+		<Tracking_Duration>300</Tracking_Duration>
+		<Per_Failure_Desire_Adjust>2.0</Per_Failure_Desire_Adjust>		
+	</Kill_The_Malevolence>
+
+	<Conquer_Hero_Ground>
+		<AIGoalApplicationFlags> Enemy </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Enemy_destination </Reachability>
+		<Time_Limit> 240.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.3</Build_Time_Delay_Tolerance>
+		<Activation_Tracking_Duration>120</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-8.0</Per_Activation_Failure_Desire_Adjust>
+		<Is_Like>Conquer_Hero_Ground, Conquer_Hero_Space</Is_Like>
+		<Tracking_Duration>300</Tracking_Duration>
+		<Per_Failure_Desire_Adjust>2.0</Per_Failure_Desire_Adjust>		
+	</Conquer_Hero_Ground>
+
+
+</Goals>

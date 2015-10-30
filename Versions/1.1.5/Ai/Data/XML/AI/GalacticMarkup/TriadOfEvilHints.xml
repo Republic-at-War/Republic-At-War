@@ -1,0 +1,98 @@
+<?xml version="1.0" ?>
+<Galactic_Markup>
+
+	<Planets HintSet="Galactic_Hints">
+			
+		<Felucia>
+			<PriorityTarget>7.0</PriorityTarget>
+		</Felucia>
+	
+	
+	<Mygeeto>
+			<PriorityTarget>7.0</PriorityTarget>
+		</Mygeeto>
+
+	
+	<Saleucami>
+			<PriorityTarget>7.0</PriorityTarget>
+	</Saleucami>
+	
+	<Coruscant>
+			<PriorityTarget>7.0</PriorityTarget>
+		</Coruscant>
+		
+		<Kamino>
+			<PriorityTarget>7.0</PriorityTarget>
+		</Kamino>
+		
+		<Geonosis>
+			<PriorityTarget>7.0</PriorityTarget>
+		</Geonosis>
+		
+		<Bestine>
+			<PriorityTarget>5.0</PriorityTarget>
+		</Bestine>
+		
+		<Bestine>
+			<PriorityTarget>5.0</PriorityTarget>
+		</Bestine>
+		
+			<Corellia>
+			<PriorityTarget>5.0</PriorityTarget>
+		</Corellia>
+		
+			<Duro>
+			<PriorityTarget>5.0</PriorityTarget>
+		</Duro>
+		
+			<Foerost>
+			<PriorityTarget>5.0</PriorityTarget>
+		</Foerost>
+		
+			<Fondor>
+			<PriorityTarget>5.0</PriorityTarget>
+		</Fondor>
+		
+				<Hypori>
+			<PriorityTarget>5.0</PriorityTarget>
+		</Hypori>
+		
+				<Kuat>
+			<PriorityTarget>5.0</PriorityTarget>
+		</Kuat>
+		
+				<Mandalore>
+			<PriorityTarget>5.0</PriorityTarget>
+		</Mandalore>
+		
+			<Minntooine>
+			<PriorityTarget>5.0</PriorityTarget>
+		</Minntooine>
+		
+			<MonCalimari>
+			<PriorityTarget>5.0</PriorityTarget>
+		</MonCalimari>
+		
+			<Rendili>
+			<PriorityTarget>5.0</PriorityTarget>
+		</Rendili>
+		
+			<Mechis>
+			<PriorityTarget>5.0</PriorityTarget>
+		</Mechis>
+		
+		<Rothana>
+			<PriorityTarget>5.0</PriorityTarget>
+		</Rothana>
+		
+		<Sluis_Van>
+			<PriorityTarget>5.0</PriorityTarget>
+		</Sluis_Van>
+		
+		<Utapau>
+			<PriorityTarget>5.0</PriorityTarget>
+		</Utapau>
+	
+	</Planets>
+	
+</Galactic_Markup>
