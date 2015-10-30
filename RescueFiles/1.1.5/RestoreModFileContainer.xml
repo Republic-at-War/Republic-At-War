@@ -1,18 +1,18 @@
 <FileContainer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Version>1.1.5</Version>
   <File>
-    <Name>CloneWarsHints.xml</Name>
-    <TargetPath>\Data\XML\AI\GalacticMarkup\CloneWarsHints.xml</TargetPath>
+    <Name>CoreAssaultHints.xml</Name>
+    <TargetPath>\Data\XML\AI\GalacticMarkup\CoreAssaultHints.xml</TargetPath>
     <TargetType>Ai</TargetType>
-    <Hash>b3c0870ad02a25c4d9bfd3ea91d8ff48</Hash>
-    <SourcePath>\1.1.5\Ai\Data\XML\AI\GalacticMarkup\CloneWarsHints.xml</SourcePath>
+    <Hash>fb30066e3a19a759f5aa900a03133df6</Hash>
+    <SourcePath>\1.1.5\Ai\Data\XML\AI\GalacticMarkup\CoreAssaultHints.xml</SourcePath>
   </File>
   <File>
-    <Name>DefaultGalacticHints.xml</Name>
-    <TargetPath>\Data\XML\AI\GalacticMarkup\DefaultGalacticHints.xml</TargetPath>
+    <Name>OuterRimSiegesHints.xml</Name>
+    <TargetPath>\Data\XML\AI\GalacticMarkup\OuterRimSiegesHints.xml</TargetPath>
     <TargetType>Ai</TargetType>
-    <Hash>6b783e006cee1254da6e2e8195285d9e</Hash>
-    <SourcePath>\1.1.5\Ai\Data\XML\AI\GalacticMarkup\DefaultGalacticHints.xml</SourcePath>
+    <Hash>31ca7ec58d66ad5d293ad02d9907de23</Hash>
+    <SourcePath>\1.1.5\Ai\Data\XML\AI\GalacticMarkup\OuterRimSiegesHints.xml</SourcePath>
   </File>
   <File>
     <Name>TriadOfEvilHints.xml</Name>
@@ -141,18 +141,18 @@
     <SourcePath>\1.1.5\Ai\Data\XML\AI\Templates\BasicRebelTemplates.xml</SourcePath>
   </File>
   <File>
-    <Name>CoreAssaultHints.xml</Name>
-    <TargetPath>\Data\XML\AI\GalacticMarkup\CoreAssaultHints.xml</TargetPath>
+    <Name>DefaultGalacticHints.xml</Name>
+    <TargetPath>\Data\XML\AI\GalacticMarkup\DefaultGalacticHints.xml</TargetPath>
     <TargetType>Ai</TargetType>
-    <Hash>fb30066e3a19a759f5aa900a03133df6</Hash>
-    <SourcePath>\1.1.5\Ai\Data\XML\AI\GalacticMarkup\CoreAssaultHints.xml</SourcePath>
+    <Hash>6b783e006cee1254da6e2e8195285d9e</Hash>
+    <SourcePath>\1.1.5\Ai\Data\XML\AI\GalacticMarkup\DefaultGalacticHints.xml</SourcePath>
   </File>
   <File>
-    <Name>OuterRimSiegesHints.xml</Name>
-    <TargetPath>\Data\XML\AI\GalacticMarkup\OuterRimSiegesHints.xml</TargetPath>
+    <Name>GRAPHICDETAILS.XML</Name>
+    <TargetPath>\Data\XML\GRAPHICDETAILS.XML</TargetPath>
     <TargetType>Ai</TargetType>
-    <Hash>31ca7ec58d66ad5d293ad02d9907de23</Hash>
-    <SourcePath>\1.1.5\Ai\Data\XML\AI\GalacticMarkup\OuterRimSiegesHints.xml</SourcePath>
+    <Hash>4d7e140887fc1dd52f47790a6e20b5c5</Hash>
+    <SourcePath>\1.1.5\Ai\Data\XML\GRAPHICDETAILS.XML</SourcePath>
   </File>
   <File>
     <Name>GAMECONSTANTS.XML</Name>
@@ -162,11 +162,11 @@
     <SourcePath>\1.1.5\Ai\Data\XML\GAMECONSTANTS.XML</SourcePath>
   </File>
   <File>
-    <Name>GRAPHICDETAILS.XML</Name>
-    <TargetPath>\Data\XML\GRAPHICDETAILS.XML</TargetPath>
+    <Name>CloneWarsHints.xml</Name>
+    <TargetPath>\Data\XML\AI\GalacticMarkup\CloneWarsHints.xml</TargetPath>
     <TargetType>Ai</TargetType>
-    <Hash>4d7e140887fc1dd52f47790a6e20b5c5</Hash>
-    <SourcePath>\1.1.5\Ai\Data\XML\GRAPHICDETAILS.XML</SourcePath>
+    <Hash>b3c0870ad02a25c4d9bfd3ea91d8ff48</Hash>
+    <SourcePath>\1.1.5\Ai\Data\XML\AI\GalacticMarkup\CloneWarsHints.xml</SourcePath>
   </File>
   <File>
     <Name>BuildBaseComponentAdvancedVehicleFactory.lua</Name>
@@ -188,6 +188,13 @@
     <TargetType>Ai</TargetType>
     <Hash>05ba70bb2adf648aa87ee133d18b18bb</Hash>
     <SourcePath>\1.1.5\Ai\Data\Scripts\AI\BuildGroundForcesPlan.lua.bak</SourcePath>
+  </File>
+  <File>
+    <Name>BuildScannerPlan.lua.bak</Name>
+    <TargetPath>\Data\Scripts\AI\BuildScannerPlan.lua.bak</TargetPath>
+    <TargetType>Ai</TargetType>
+    <Hash>a1253b041de64e01957fdb094ef2c6e3</Hash>
+    <SourcePath>\1.1.5\Ai\Data\Scripts\AI\BuildScannerPlan.lua.bak</SourcePath>
   </File>
   <File>
     <Name>BuildSpaceDefensiveStructurePlan.lua.bak</Name>
@@ -1177,11 +1184,18 @@
     <SourcePath>\1.1.5\Ai\Data\Scripts\Story\Story_Sandbox_21U_Empire.lua</SourcePath>
   </File>
   <File>
-    <Name>BuildBaseComponentResearchFacility.lua</Name>
-    <TargetPath>\Data\Scripts\AI\BuildBaseComponentResearchFacility.lua</TargetPath>
+    <Name>BuildEconomicStructurePlan.lua</Name>
+    <TargetPath>\Data\Scripts\AI\BuildEconomicStructurePlan.lua</TargetPath>
     <TargetType>Ai</TargetType>
-    <Hash>7a38c653d0fc8ef87d1b7d050dc29bd8</Hash>
-    <SourcePath>\1.1.5\Ai\Data\Scripts\AI\BuildBaseComponentResearchFacility.lua</SourcePath>
+    <Hash>34a9c347d330089aa0bafe04bffaef39</Hash>
+    <SourcePath>\1.1.5\Ai\Data\Scripts\AI\BuildEconomicStructurePlan.lua</SourcePath>
+  </File>
+  <File>
+    <Name>BuildGroundDefensiveStructurePlan.lua</Name>
+    <TargetPath>\Data\Scripts\AI\BuildGroundDefensiveStructurePlan.lua</TargetPath>
+    <TargetType>Ai</TargetType>
+    <Hash>66b439adf19fe421a23fc4af5444860a</Hash>
+    <SourcePath>\1.1.5\Ai\Data\Scripts\AI\BuildGroundDefensiveStructurePlan.lua</SourcePath>
   </File>
   <File>
     <Name>BuildBaseComponentOfficerAcademy.lua</Name>
@@ -1191,11 +1205,11 @@
     <SourcePath>\1.1.5\Ai\Data\Scripts\AI\BuildBaseComponentOfficerAcademy.lua</SourcePath>
   </File>
   <File>
-    <Name>BuildScannerPlan.lua.bak</Name>
-    <TargetPath>\Data\Scripts\AI\BuildScannerPlan.lua.bak</TargetPath>
+    <Name>BuildBaseComponentResearchFacility.lua</Name>
+    <TargetPath>\Data\Scripts\AI\BuildBaseComponentResearchFacility.lua</TargetPath>
     <TargetType>Ai</TargetType>
-    <Hash>a1253b041de64e01957fdb094ef2c6e3</Hash>
-    <SourcePath>\1.1.5\Ai\Data\Scripts\AI\BuildScannerPlan.lua.bak</SourcePath>
+    <Hash>7a38c653d0fc8ef87d1b7d050dc29bd8</Hash>
+    <SourcePath>\1.1.5\Ai\Data\Scripts\AI\BuildBaseComponentResearchFacility.lua</SourcePath>
   </File>
   <File>
     <Name>_mp_land_alderaan.ted</Name>
@@ -1203,6 +1217,13 @@
     <TargetType>Ai</TargetType>
     <Hash>8b47e0f1970dd7dd0f946021f90ac074</Hash>
     <SourcePath>\1.1.5\Ai\Data\CustomMaps\_mp_land_alderaan.ted</SourcePath>
+  </File>
+  <File>
+    <Name>_mp_land_dagobah.ted</Name>
+    <TargetPath>\Data\CustomMaps\_mp_land_dagobah.ted</TargetPath>
+    <TargetType>Ai</TargetType>
+    <Hash>0a4b8f5253c8a7783e38ecd69ef827f1</Hash>
+    <SourcePath>\1.1.5\Ai\Data\CustomMaps\_mp_land_dagobah.ted</SourcePath>
   </File>
   <File>
     <Name>_mp_land_dantooine.ted</Name>
@@ -1506,18 +1527,18 @@
     <SourcePath>\1.1.5\Ai\Data\CustomMaps\_mp_land_christophsis.ted</SourcePath>
   </File>
   <File>
+    <Name>_mp_land_bothawui.ted</Name>
+    <TargetPath>\Data\CustomMaps\_mp_land_bothawui.ted</TargetPath>
+    <TargetType>Ai</TargetType>
+    <Hash>2bb8e557adb8ed24fdd00d5374bffedd</Hash>
+    <SourcePath>\1.1.5\Ai\Data\CustomMaps\_mp_land_bothawui.ted</SourcePath>
+  </File>
+  <File>
     <Name>_mp_land_corellia.ted</Name>
     <TargetPath>\Data\CustomMaps\_mp_land_corellia.ted</TargetPath>
     <TargetType>Ai</TargetType>
     <Hash>87e44a993cadf7b2a5a1af6cd87297d8</Hash>
     <SourcePath>\1.1.5\Ai\Data\CustomMaps\_mp_land_corellia.ted</SourcePath>
-  </File>
-  <File>
-    <Name>_mp_land_dagobah.ted</Name>
-    <TargetPath>\Data\CustomMaps\_mp_land_dagobah.ted</TargetPath>
-    <TargetType>Ai</TargetType>
-    <Hash>0a4b8f5253c8a7783e38ecd69ef827f1</Hash>
-    <SourcePath>\1.1.5\Ai\Data\CustomMaps\_mp_land_dagobah.ted</SourcePath>
   </File>
   <File>
     <Name>EnglishSpeech.meg</Name>
@@ -10459,6 +10480,13 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Models\REI_arc_trooper_capt_idle_00.ala</SourcePath>
   </File>
   <File>
+    <Name>REI_arc_trooper_capt_idle_01.ala</Name>
+    <TargetPath>\Data\Art\Models\REI_arc_trooper_capt_idle_01.ala</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>0147819a773e0d8e66b330fb790e485d</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Models\REI_arc_trooper_capt_idle_01.ala</SourcePath>
+  </File>
+  <File>
     <Name>REI_arc_trooper_capt_idle_02.ala</Name>
     <TargetPath>\Data\Art\Models\REI_arc_trooper_capt_idle_02.ala</TargetPath>
     <TargetType>Mod</TargetType>
@@ -16724,13 +16752,6 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Models\REI_cody_flinchb_00.ala</SourcePath>
   </File>
   <File>
-    <Name>REI_cody_flinchf_00.ala</Name>
-    <TargetPath>\Data\Art\Models\REI_cody_flinchf_00.ala</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>f111410a3d1cea524f91fe3ff4851abb</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Models\REI_cody_flinchf_00.ala</SourcePath>
-  </File>
-  <File>
     <Name>REI_cody_flinchf_01.ala</Name>
     <TargetPath>\Data\Art\Models\REI_cody_flinchf_01.ala</TargetPath>
     <TargetType>Mod</TargetType>
@@ -21211,6 +21232,13 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Models\SEB_Lightvehicle_Factory_build_00.ala</SourcePath>
   </File>
   <File>
+    <Name>SEB_Lightvehicle_Factory_close_00.ala</Name>
+    <TargetPath>\Data\Art\Models\SEB_Lightvehicle_Factory_close_00.ala</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>16b0006ded07638ada3b0cf58fa2bb29</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Models\SEB_Lightvehicle_Factory_close_00.ala</SourcePath>
+  </File>
+  <File>
     <Name>SEB_Lightvehicle_Factory_hold_00.ala</Name>
     <TargetPath>\Data\Art\Models\SEB_Lightvehicle_Factory_hold_00.ala</TargetPath>
     <TargetType>Mod</TargetType>
@@ -22098,13 +22126,6 @@
     <TargetType>Mod</TargetType>
     <Hash>a68811137c65dd75d222168d083f1993</Hash>
     <SourcePath>\1.1.5\Mod\Data\Art\Models\SeI_battledroid_oom_CRUSHED_00.ala</SourcePath>
-  </File>
-  <File>
-    <Name>SeI_battledroid_oom_DIE_00.ala</Name>
-    <TargetPath>\Data\Art\Models\SeI_battledroid_oom_DIE_00.ala</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>c672044fc0d4ab0b08d2a8d197a8cd96</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Models\SeI_battledroid_oom_DIE_00.ala</SourcePath>
   </File>
   <File>
     <Name>SeI_battledroid_oom_DIE_01.ala</Name>
@@ -24795,6 +24816,13 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Models\W_conc_missile.ALO</SourcePath>
   </File>
   <File>
+    <Name>W_Coruscant_Backdrop1.ALO</Name>
+    <TargetPath>\Data\Art\Models\W_Coruscant_Backdrop1.ALO</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>cef1ddbe99e1e07931f0013eff32e5a4</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Models\W_Coruscant_Backdrop1.ALO</SourcePath>
+  </File>
+  <File>
     <Name>W_Coruscant_Backdrop2.ALO</Name>
     <TargetPath>\Data\Art\Models\W_Coruscant_Backdrop2.ALO</TargetPath>
     <TargetType>Mod</TargetType>
@@ -26578,13 +26606,6 @@
     <TargetType>Mod</TargetType>
     <Hash>466f6a298ab534ad0e7212ff8aa965a9</Hash>
     <SourcePath>\1.1.5\Mod\Data\Art\Models\W_planet_coruscant_surface.ALO</SourcePath>
-  </File>
-  <File>
-    <Name>W_planet_dantooine_high.alo</Name>
-    <TargetPath>\Data\Art\Models\W_planet_dantooine_high.alo</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>26ad85243e03f97d287875f677719f70</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Models\W_planet_dantooine_high.alo</SourcePath>
   </File>
   <File>
     <Name>W_planet_dantooine_high_idle_00.ala</Name>
@@ -28379,6 +28400,13 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Movies\Binked\order66.bik</SourcePath>
   </File>
   <File>
+    <Name>republic_win.bik</Name>
+    <TargetPath>\Data\Art\Movies\Binked\republic_win.bik</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>f447b63f8acd0df86b92a2bd3dac84e3</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Movies\Binked\republic_win.bik</SourcePath>
+  </File>
+  <File>
     <Name>Alamoengine.fxo</Name>
     <TargetPath>\Data\Art\Shaders\Alamoengine.fxo</TargetPath>
     <TargetType>Mod</TargetType>
@@ -29266,13 +29294,6 @@
     <TargetType>Mod</TargetType>
     <Hash>4fb30b59b5927dc9a379e9244a939ce9</Hash>
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\Av_police_speeder_interior.dds</SourcePath>
-  </File>
-  <File>
-    <Name>Av_shuttle_glass.dds</Name>
-    <TargetPath>\Data\Art\Textures\Av_shuttle_glass.dds</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>d1deeffc13de9ebb64f31924dba389a3</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\Av_shuttle_glass.dds</SourcePath>
   </File>
   <File>
     <Name>Av_shuttle_hull_a.dds</Name>
@@ -31963,6 +31984,13 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\ReI_bacara.dds</SourcePath>
   </File>
   <File>
+    <Name>ReI_bacara_helmet.dds</Name>
+    <TargetPath>\Data\Art\Textures\ReI_bacara_helmet.dds</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>e77a7853ec66ce3981c44397bd2c0189</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\ReI_bacara_helmet.dds</SourcePath>
+  </File>
+  <File>
     <Name>ReI_bacara_kilt.dds</Name>
     <TargetPath>\Data\Art\Textures\ReI_bacara_kilt.dds</TargetPath>
     <TargetType>Mod</TargetType>
@@ -32850,13 +32878,6 @@
     <TargetType>Mod</TargetType>
     <Hash>4464cc9e4fdd563ec5ebece6521526fa</Hash>
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\ReI_shaaktor.dds</SourcePath>
-  </File>
-  <File>
-    <Name>ReI_shaak_e.dds</Name>
-    <TargetPath>\Data\Art\Textures\ReI_shaak_e.dds</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>347d6e43a106949cd887ed202de95593</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\ReI_shaak_e.dds</SourcePath>
   </File>
   <File>
     <Name>ReI_shaak_ha.dds</Name>
@@ -34651,6 +34672,13 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\SeV_picket_b.dds</SourcePath>
   </File>
   <File>
+    <Name>Sev_providence.dds</Name>
+    <TargetPath>\Data\Art\Textures\Sev_providence.dds</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>f3e578cd2da4462eda55751e0a9feb4b</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\Sev_providence.dds</SourcePath>
+  </File>
+  <File>
     <Name>SeV_providence_b.dds</Name>
     <TargetPath>\Data\Art\Textures\SeV_providence_b.dds</TargetPath>
     <TargetType>Mod</TargetType>
@@ -35538,13 +35566,6 @@
     <TargetType>Mod</TargetType>
     <Hash>3b3d08c4021f09e94b1945ea17907198</Hash>
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_cloudcity_base_b.dds</SourcePath>
-  </File>
-  <File>
-    <Name>w_clouds02.dds</Name>
-    <TargetPath>\Data\Art\Textures\w_clouds02.dds</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>5c33bc70a1d899e567db88ae0de28c63</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\w_clouds02.dds</SourcePath>
   </File>
   <File>
     <Name>w_clouds02_b.dds</Name>
@@ -38235,6 +38256,13 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_planet_fresi_low_bc.dds</SourcePath>
   </File>
   <File>
+    <Name>W_planet_gas.dds</Name>
+    <TargetPath>\Data\Art\Textures\W_planet_gas.dds</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>8385e4673bee4901f9663a1bb2b46f15</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_planet_gas.dds</SourcePath>
+  </File>
+  <File>
     <Name>W_planet_gasred.dds</Name>
     <TargetPath>\Data\Art\Textures\W_planet_gasred.dds</TargetPath>
     <TargetType>Mod</TargetType>
@@ -39124,11 +39152,11 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\w_shed.dds</SourcePath>
   </File>
   <File>
-    <Name>w_shed_d3.dds</Name>
-    <TargetPath>\Data\Art\Textures\w_shed_d3.dds</TargetPath>
+    <Name>W_Silo.dds</Name>
+    <TargetPath>\Data\Art\Textures\W_Silo.dds</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>2a3ee9c0b66780cf67a6432850d46bea</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\w_shed_d3.dds</SourcePath>
+    <Hash>4601e998cec40e317bf38f9722d7fbac</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_Silo.dds</SourcePath>
   </File>
   <File>
     <Name>W_Silo_bc.dds</Name>
@@ -40020,11 +40048,11 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_tatooine_metal_trims.dds</SourcePath>
   </File>
   <File>
-    <Name>W_tatooine_metal_trims_b.dds</Name>
-    <TargetPath>\Data\Art\Textures\W_tatooine_metal_trims_b.dds</TargetPath>
+    <Name>W_tatooine_starport_door_b.dds</Name>
+    <TargetPath>\Data\Art\Textures\W_tatooine_starport_door_b.dds</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>97bd1466a92b8b1b9f1fa74bd0337caf</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_tatooine_metal_trims_b.dds</SourcePath>
+    <Hash>daba2c75ed30659a5eb0bff3f446b1e9</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_tatooine_starport_door_b.dds</SourcePath>
   </File>
   <File>
     <Name>W_tatooine_starport_trim_horizontal.dds</Name>
@@ -40923,6 +40951,13 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\w_turbolaser_red.dds</SourcePath>
   </File>
   <File>
+    <Name>W_uplinkfacility.dds</Name>
+    <TargetPath>\Data\Art\Textures\W_uplinkfacility.dds</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>6fcc95bf9a897eb39b8c8ab31eda8918</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_uplinkfacility.dds</SourcePath>
+  </File>
+  <File>
     <Name>W_uplinkfacility_bc.dds</Name>
     <TargetPath>\Data\Art\Textures\W_uplinkfacility_bc.dds</TargetPath>
     <TargetType>Mod</TargetType>
@@ -41819,6 +41854,13 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\_space_planet_saleucami_01.dds</SourcePath>
   </File>
   <File>
+    <Name>_Space_planet_sluis_van_01.dds</Name>
+    <TargetPath>\Data\Art\Textures\_Space_planet_sluis_van_01.dds</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>aa3230777255eb22c7c1a3b1084be536</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\_Space_planet_sluis_van_01.dds</SourcePath>
+  </File>
+  <File>
     <Name>_space_planet_sullust_01.dds</Name>
     <TargetPath>\Data\Art\Textures\_space_planet_sullust_01.dds</TargetPath>
     <TargetType>Mod</TargetType>
@@ -42694,13 +42736,6 @@
     <SourcePath>\1.1.5\Mod\Data\Audio\Anakin_sense00.wav</SourcePath>
   </File>
   <File>
-    <Name>Asajj_attack_1.wav</Name>
-    <TargetPath>\Data\Audio\Asajj_attack_1.wav</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>eec869468d78320c88034e0a227971a9</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\Asajj_attack_1.wav</SourcePath>
-  </File>
-  <File>
     <Name>Asajj_attack_10.wav</Name>
     <TargetPath>\Data\Audio\Asajj_attack_10.wav</TargetPath>
     <TargetType>Mod</TargetType>
@@ -42713,6 +42748,13 @@
     <TargetType>Mod</TargetType>
     <Hash>1b12cf3ac4647f8712629cb1e0e384bf</Hash>
     <SourcePath>\1.1.5\Mod\Data\Audio\Asajj_attack_11.wav</SourcePath>
+  </File>
+  <File>
+    <Name>Asajj_attack_12.wav</Name>
+    <TargetPath>\Data\Audio\Asajj_attack_12.wav</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>329a1ee3458fc57274ca5e67357297ce</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\Asajj_attack_12.wav</SourcePath>
   </File>
   <File>
     <Name>Asajj_attack_13.wav</Name>
@@ -44486,13 +44528,6 @@
     <SourcePath>\1.1.5\Mod\Data\Audio\boss_no_problem.wav</SourcePath>
   </File>
   <File>
-    <Name>Boss_on_my_way.wav</Name>
-    <TargetPath>\Data\Audio\Boss_on_my_way.wav</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>cd96572f258187b7b686a15f98d75721</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\Boss_on_my_way.wav</SourcePath>
-  </File>
-  <File>
     <Name>boss_on_the_move.wav</Name>
     <TargetPath>\Data\Audio\boss_on_the_move.wav</TargetPath>
     <TargetType>Mod</TargetType>
@@ -44505,6 +44540,13 @@
     <TargetType>Mod</TargetType>
     <Hash>8b604bdd44bc986808c4f52ee5db6ed7</Hash>
     <SourcePath>\1.1.5\Mod\Data\Audio\boss_ready.wav</SourcePath>
+  </File>
+  <File>
+    <Name>Boss_ready_to_engage.wav</Name>
+    <TargetPath>\Data\Audio\Boss_ready_to_engage.wav</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>bb6534f28a46000b7544361af1e54525</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\Boss_ready_to_engage.wav</SourcePath>
   </File>
   <File>
     <Name>boss_right.wav</Name>
@@ -46278,13 +46320,6 @@
     <SourcePath>\1.1.5\Mod\Data\Audio\Clone_fighter_enemy_low02.wav</SourcePath>
   </File>
   <File>
-    <Name>Clone_fighter_enemy_low03.wav</Name>
-    <TargetPath>\Data\Audio\Clone_fighter_enemy_low03.wav</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>92c1da87e41c7bd608dab3bb459880f0</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\Clone_fighter_enemy_low03.wav</SourcePath>
-  </File>
-  <File>
     <Name>Clone_fighter_enemy_low04.wav</Name>
     <TargetPath>\Data\Audio\Clone_fighter_enemy_low04.wav</TargetPath>
     <TargetType>Mod</TargetType>
@@ -46297,6 +46332,13 @@
     <TargetType>Mod</TargetType>
     <Hash>1a3d89b589287111753f1fe7b051b368</Hash>
     <SourcePath>\1.1.5\Mod\Data\Audio\Clone_fighter_enemy_low05.wav</SourcePath>
+  </File>
+  <File>
+    <Name>Clone_fighter_enemy_low06.wav</Name>
+    <TargetPath>\Data\Audio\Clone_fighter_enemy_low06.wav</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>8c4941926a93b1c4a86105380f6d937d</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\Clone_fighter_enemy_low06.wav</SourcePath>
   </File>
   <File>
     <Name>Clone_fighter_enemy_low07.wav</Name>
@@ -48091,6 +48133,13 @@
     <SourcePath>\1.1.5\Mod\Data\Audio\Crab_attack1.wav</SourcePath>
   </File>
   <File>
+    <Name>Crab_attack2.wav</Name>
+    <TargetPath>\Data\Audio\Crab_attack2.wav</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>8bb32815a13b1c537658202318c24778</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\Crab_attack2.wav</SourcePath>
+  </File>
+  <File>
     <Name>Crab_complete1.wav</Name>
     <TargetPath>\Data\Audio\Crab_complete1.wav</TargetPath>
     <TargetType>Mod</TargetType>
@@ -48957,13 +49006,6 @@
     <TargetType>Mod</TargetType>
     <Hash>bbfb6980c3912b504396a50714dd9c7f</Hash>
     <SourcePath>\1.1.5\Mod\Data\Audio\grievous_move5.wav</SourcePath>
-  </File>
-  <File>
-    <Name>grievous_move6.wav</Name>
-    <TargetPath>\Data\Audio\grievous_move6.wav</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>6ee9a85ddf4d8d66af1a4c41a8d2478c</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\grievous_move6.wav</SourcePath>
   </File>
   <File>
     <Name>grievous_move7.wav</Name>
@@ -49883,6 +49925,13 @@
     <SourcePath>\1.1.5\Mod\Data\Audio\Kitfisto_enemy_low4.wav</SourcePath>
   </File>
   <File>
+    <Name>Kitfisto_enemy_low5.wav</Name>
+    <TargetPath>\Data\Audio\Kitfisto_enemy_low5.wav</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>686275d8dcc806db6755a5ba00f3ba60</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\Kitfisto_enemy_low5.wav</SourcePath>
+  </File>
+  <File>
     <Name>Kitfisto_move1.wav</Name>
     <TargetPath>\Data\Audio\Kitfisto_move1.wav</TargetPath>
     <TargetType>Mod</TargetType>
@@ -50749,13 +50798,6 @@
     <TargetType>Mod</TargetType>
     <Hash>10ef3f32915e7e28c4e358be441369e6</Hash>
     <SourcePath>\1.1.5\Mod\Data\Audio\Mace_move_13.wav</SourcePath>
-  </File>
-  <File>
-    <Name>Mace_move_14.wav</Name>
-    <TargetPath>\Data\Audio\Mace_move_14.wav</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>af2e7dfed6a39f9138602a5e6a7f937c</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\Mace_move_14.wav</SourcePath>
   </File>
   <File>
     <Name>Mace_move_15.wav</Name>
@@ -51675,6 +51717,13 @@
     <SourcePath>\1.1.5\Mod\Data\Audio\obiwan_guard00.wav</SourcePath>
   </File>
   <File>
+    <Name>obiwan_guard01.wav</Name>
+    <TargetPath>\Data\Audio\obiwan_guard01.wav</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>0aac3ba0ec636922b840fb335838e9f3</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\obiwan_guard01.wav</SourcePath>
+  </File>
+  <File>
     <Name>obiwan_guard02.wav</Name>
     <TargetPath>\Data\Audio\obiwan_guard02.wav</TargetPath>
     <TargetType>Mod</TargetType>
@@ -52543,13 +52592,6 @@
     <SourcePath>\1.1.5\Mod\Data\Audio\Sev_Im_hit.wav</SourcePath>
   </File>
   <File>
-    <Name>Sev_im_in_motion.wav</Name>
-    <TargetPath>\Data\Audio\Sev_im_in_motion.wav</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>b9fcc7e2a7bfb1e2348ae92494b9015f</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\Sev_im_in_motion.wav</SourcePath>
-  </File>
-  <File>
     <Name>Sev_im_on_it.wav</Name>
     <TargetPath>\Data\Audio\Sev_im_on_it.wav</TargetPath>
     <TargetType>Mod</TargetType>
@@ -52569,6 +52611,13 @@
     <TargetType>Mod</TargetType>
     <Hash>84bd2497c387473c41d42611785ac2f3</Hash>
     <SourcePath>\1.1.5\Mod\Data\Audio\Sev_I_hear_ya.wav</SourcePath>
+  </File>
+  <File>
+    <Name>Sev_lousy_clanker.wav</Name>
+    <TargetPath>\Data\Audio\Sev_lousy_clanker.wav</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>9e41e920c72890416fe380a14a5118a3</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\Sev_lousy_clanker.wav</SourcePath>
   </File>
   <File>
     <Name>Sev_Moving_On.wav</Name>
@@ -53467,6 +53516,13 @@
     <SourcePath>\1.1.5\Mod\Data\Audio\Vulture_move2.wav</SourcePath>
   </File>
   <File>
+    <Name>Vulture_move3.wav</Name>
+    <TargetPath>\Data\Audio\Vulture_move3.wav</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>119010584e796fda680db7464025b1c3</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\Vulture_move3.wav</SourcePath>
+  </File>
+  <File>
     <Name>Vulture_select1.wav</Name>
     <TargetPath>\Data\Audio\Vulture_select1.wav</TargetPath>
     <TargetType>Mod</TargetType>
@@ -54328,20 +54384,6 @@
     <SourcePath>\1.1.5\Mod\Data\Audio\Music\TPM_Core_Edit.mp3</SourcePath>
   </File>
   <File>
-    <Name>TPM_He_Is_the_Chosen_One.mp3</Name>
-    <TargetPath>\Data\Audio\Music\TPM_He_Is_the_Chosen_One.mp3</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>fb0b03bf54b53f84ce78be29bf97d44d</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\Music\TPM_He_Is_the_Chosen_One.mp3</SourcePath>
-  </File>
-  <File>
-    <Name>TPM_Jar_Jars_ Introduction.mp3</Name>
-    <TargetPath>\Data\Audio\Music\TPM_Jar_Jars_ Introduction.mp3</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>4c70337aa5fbb7c591de8a7c3a3a4b94</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\Music\TPM_Jar_Jars_ Introduction.mp3</SourcePath>
-  </File>
-  <File>
     <Name>TPM_Passage_Through_the_Planet_Core_Edit.mp3</Name>
     <TargetPath>\Data\Audio\Music\TPM_Passage_Through_the_Planet_Core_Edit.mp3</TargetPath>
     <TargetType>Mod</TargetType>
@@ -54361,6 +54403,20 @@
     <TargetType>Mod</TargetType>
     <Hash>e70081fc9f72d8b31791ea272d9aaf18</Hash>
     <SourcePath>\1.1.5\Mod\Data\Audio\Music\TPM_The_High_Council_ Meeting.mp3</SourcePath>
+  </File>
+  <File>
+    <Name>TPM_The_Trip_to_the_Naboo_Temple_and.mp3</Name>
+    <TargetPath>\Data\Audio\Music\TPM_The_Trip_to_the_Naboo_Temple_and.mp3</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>831fe073a00c18e612d29b360b0ed981</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\Music\TPM_The_Trip_to_the_Naboo_Temple_and.mp3</SourcePath>
+  </File>
+  <File>
+    <Name>urban_ambient1.mp3</Name>
+    <TargetPath>\Data\Audio\Music\urban_ambient1.mp3</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>e74c08113d5113971859a19b3decfd87</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\Music\urban_ambient1.mp3</SourcePath>
   </File>
   <File>
     <Name>urban_ambient2.mp3</Name>
@@ -55224,20 +55280,6 @@
     <SourcePath>\1.1.5\Mod\Data\XML\Minor_heroes_expansion.xml</SourcePath>
   </File>
   <File>
-    <Name>MiscObjects.xml</Name>
-    <TargetPath>\Data\XML\MiscObjects.xml</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>7630ebbf07d658b5f9b5b16c32e6b826</Hash>
-    <SourcePath>\1.1.5\Mod\Data\XML\MiscObjects.xml</SourcePath>
-  </File>
-  <File>
-    <Name>Movies.xml</Name>
-    <TargetPath>\Data\XML\Movies.xml</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>92a8e74de0328394b3ff94502da50d06</Hash>
-    <SourcePath>\1.1.5\Mod\Data\XML\Movies.xml</SourcePath>
-  </File>
-  <File>
     <Name>Multiplayer_structure_markers.xml</Name>
     <TargetPath>\Data\XML\Multiplayer_structure_markers.xml</TargetPath>
     <TargetType>Mod</TargetType>
@@ -55257,6 +55299,20 @@
     <TargetType>Mod</TargetType>
     <Hash>debe68aa96abffe14907bff96c794b8e</Hash>
     <SourcePath>\1.1.5\Mod\Data\XML\Naboo_faction_units.xml</SourcePath>
+  </File>
+  <File>
+    <Name>Namedherounits.xml</Name>
+    <TargetPath>\Data\XML\Namedherounits.xml</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>a74a4e1ebc9a63100466adf41af2afdc</Hash>
+    <SourcePath>\1.1.5\Mod\Data\XML\Namedherounits.xml</SourcePath>
+  </File>
+  <File>
+    <Name>Particles.xml</Name>
+    <TargetPath>\Data\XML\Particles.xml</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>5a8a1a0558bdadcc5347273ab749066e</Hash>
+    <SourcePath>\1.1.5\Mod\Data\XML\Particles.xml</SourcePath>
   </File>
   <File>
     <Name>Planets.xml</Name>
@@ -56827,13 +56883,6 @@
     <SourcePath>\1.1.5\Mod\Data\XML\Enum\Surfacefxtriggertype.xml</SourcePath>
   </File>
   <File>
-    <Name>_land_planet_alderaan_02.ted</Name>
-    <TargetPath>\Data\Art\Maps\_land_planet_alderaan_02.ted</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>5b10e67c8b6433fbeea73ed82a84dfcb</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Maps\_land_planet_alderaan_02.ted</SourcePath>
-  </File>
-  <File>
     <Name>Demo_attract_kamino.ted</Name>
     <TargetPath>\Data\Art\Maps\Demo_attract_kamino.ted</TargetPath>
     <TargetType>Mod</TargetType>
@@ -56855,11 +56904,18 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Maps\_land_planet_abregadorae_02.ted</SourcePath>
   </File>
   <File>
-    <Name>_land_planet_kashyyyk_02.ted</Name>
-    <TargetPath>\Data\Art\Maps\_land_planet_kashyyyk_02.ted</TargetPath>
+    <Name>_land_planet_alderaan_02.ted</Name>
+    <TargetPath>\Data\Art\Maps\_land_planet_alderaan_02.ted</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>94d6849706833fd256f960fb40b44f32</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Maps\_land_planet_kashyyyk_02.ted</SourcePath>
+    <Hash>5b10e67c8b6433fbeea73ed82a84dfcb</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Maps\_land_planet_alderaan_02.ted</SourcePath>
+  </File>
+  <File>
+    <Name>REI_cody_flinchf_00.ala</Name>
+    <TargetPath>\Data\Art\Models\REI_cody_flinchf_00.ala</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>f111410a3d1cea524f91fe3ff4851abb</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Models\REI_cody_flinchf_00.ala</SourcePath>
   </File>
   <File>
     <Name>Ni_munn_A_land_00.ala</Name>
@@ -56869,60 +56925,60 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Models\Ni_munn_A_land_00.ala</SourcePath>
   </File>
   <File>
-    <Name>REI_arc_trooper_capt_idle_01.ala</Name>
-    <TargetPath>\Data\Art\Models\REI_arc_trooper_capt_idle_01.ala</TargetPath>
+    <Name>_land_planet_kashyyyk_02.ted</Name>
+    <TargetPath>\Data\Art\Maps\_land_planet_kashyyyk_02.ted</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>0147819a773e0d8e66b330fb790e485d</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Models\REI_arc_trooper_capt_idle_01.ala</SourcePath>
+    <Hash>94d6849706833fd256f960fb40b44f32</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Maps\_land_planet_kashyyyk_02.ted</SourcePath>
   </File>
   <File>
-    <Name>SEB_Lightvehicle_Factory_close_00.ala</Name>
-    <TargetPath>\Data\Art\Models\SEB_Lightvehicle_Factory_close_00.ala</TargetPath>
+    <Name>SeI_battledroid_oom_DIE_00.ala</Name>
+    <TargetPath>\Data\Art\Models\SeI_battledroid_oom_DIE_00.ala</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>16b0006ded07638ada3b0cf58fa2bb29</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Models\SEB_Lightvehicle_Factory_close_00.ala</SourcePath>
+    <Hash>c672044fc0d4ab0b08d2a8d197a8cd96</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Models\SeI_battledroid_oom_DIE_00.ala</SourcePath>
   </File>
   <File>
-    <Name>W_Coruscant_Backdrop1.ALO</Name>
-    <TargetPath>\Data\Art\Models\W_Coruscant_Backdrop1.ALO</TargetPath>
+    <Name>W_planet_dantooine_high.alo</Name>
+    <TargetPath>\Data\Art\Models\W_planet_dantooine_high.alo</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>cef1ddbe99e1e07931f0013eff32e5a4</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Models\W_Coruscant_Backdrop1.ALO</SourcePath>
+    <Hash>26ad85243e03f97d287875f677719f70</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Models\W_planet_dantooine_high.alo</SourcePath>
   </File>
   <File>
-    <Name>republic_win.bik</Name>
-    <TargetPath>\Data\Art\Movies\Binked\republic_win.bik</TargetPath>
+    <Name>Av_shuttle_glass.dds</Name>
+    <TargetPath>\Data\Art\Textures\Av_shuttle_glass.dds</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>f447b63f8acd0df86b92a2bd3dac84e3</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Movies\Binked\republic_win.bik</SourcePath>
+    <Hash>d1deeffc13de9ebb64f31924dba389a3</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\Av_shuttle_glass.dds</SourcePath>
   </File>
   <File>
-    <Name>ReI_bacara_helmet.dds</Name>
-    <TargetPath>\Data\Art\Textures\ReI_bacara_helmet.dds</TargetPath>
+    <Name>ReI_shaak_e.dds</Name>
+    <TargetPath>\Data\Art\Textures\ReI_shaak_e.dds</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>e77a7853ec66ce3981c44397bd2c0189</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\ReI_bacara_helmet.dds</SourcePath>
+    <Hash>347d6e43a106949cd887ed202de95593</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\ReI_shaak_e.dds</SourcePath>
   </File>
   <File>
-    <Name>Sev_providence.dds</Name>
-    <TargetPath>\Data\Art\Textures\Sev_providence.dds</TargetPath>
+    <Name>w_clouds02.dds</Name>
+    <TargetPath>\Data\Art\Textures\w_clouds02.dds</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>f3e578cd2da4462eda55751e0a9feb4b</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\Sev_providence.dds</SourcePath>
+    <Hash>5c33bc70a1d899e567db88ae0de28c63</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\w_clouds02.dds</SourcePath>
   </File>
   <File>
-    <Name>W_planet_gas.dds</Name>
-    <TargetPath>\Data\Art\Textures\W_planet_gas.dds</TargetPath>
+    <Name>w_shed_d3.dds</Name>
+    <TargetPath>\Data\Art\Textures\w_shed_d3.dds</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>8385e4673bee4901f9663a1bb2b46f15</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_planet_gas.dds</SourcePath>
+    <Hash>2a3ee9c0b66780cf67a6432850d46bea</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\w_shed_d3.dds</SourcePath>
   </File>
   <File>
-    <Name>W_Silo.dds</Name>
-    <TargetPath>\Data\Art\Textures\W_Silo.dds</TargetPath>
+    <Name>W_tatooine_metal_trims_b.dds</Name>
+    <TargetPath>\Data\Art\Textures\W_tatooine_metal_trims_b.dds</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>4601e998cec40e317bf38f9722d7fbac</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_Silo.dds</SourcePath>
+    <Hash>97bd1466a92b8b1b9f1fa74bd0337caf</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_tatooine_metal_trims_b.dds</SourcePath>
   </File>
   <File>
     <Name>W_tatooine_starport_door.dds</Name>
@@ -56932,108 +56988,73 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_tatooine_starport_door.dds</SourcePath>
   </File>
   <File>
-    <Name>W_tatooine_starport_door_b.dds</Name>
-    <TargetPath>\Data\Art\Textures\W_tatooine_starport_door_b.dds</TargetPath>
+    <Name>Asajj_attack_1.wav</Name>
+    <TargetPath>\Data\Audio\Asajj_attack_1.wav</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>daba2c75ed30659a5eb0bff3f446b1e9</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_tatooine_starport_door_b.dds</SourcePath>
+    <Hash>eec869468d78320c88034e0a227971a9</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\Asajj_attack_1.wav</SourcePath>
   </File>
   <File>
-    <Name>W_uplinkfacility.dds</Name>
-    <TargetPath>\Data\Art\Textures\W_uplinkfacility.dds</TargetPath>
+    <Name>Boss_on_my_way.wav</Name>
+    <TargetPath>\Data\Audio\Boss_on_my_way.wav</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>6fcc95bf9a897eb39b8c8ab31eda8918</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_uplinkfacility.dds</SourcePath>
+    <Hash>cd96572f258187b7b686a15f98d75721</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\Boss_on_my_way.wav</SourcePath>
   </File>
   <File>
-    <Name>_Space_planet_sluis_van_01.dds</Name>
-    <TargetPath>\Data\Art\Textures\_Space_planet_sluis_van_01.dds</TargetPath>
+    <Name>Clone_fighter_enemy_low03.wav</Name>
+    <TargetPath>\Data\Audio\Clone_fighter_enemy_low03.wav</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>aa3230777255eb22c7c1a3b1084be536</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\_Space_planet_sluis_van_01.dds</SourcePath>
+    <Hash>92c1da87e41c7bd608dab3bb459880f0</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\Clone_fighter_enemy_low03.wav</SourcePath>
   </File>
   <File>
-    <Name>Asajj_attack_12.wav</Name>
-    <TargetPath>\Data\Audio\Asajj_attack_12.wav</TargetPath>
+    <Name>grievous_move6.wav</Name>
+    <TargetPath>\Data\Audio\grievous_move6.wav</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>329a1ee3458fc57274ca5e67357297ce</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\Asajj_attack_12.wav</SourcePath>
+    <Hash>6ee9a85ddf4d8d66af1a4c41a8d2478c</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\grievous_move6.wav</SourcePath>
   </File>
   <File>
-    <Name>Boss_ready_to_engage.wav</Name>
-    <TargetPath>\Data\Audio\Boss_ready_to_engage.wav</TargetPath>
+    <Name>Mace_move_14.wav</Name>
+    <TargetPath>\Data\Audio\Mace_move_14.wav</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>bb6534f28a46000b7544361af1e54525</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\Boss_ready_to_engage.wav</SourcePath>
+    <Hash>af2e7dfed6a39f9138602a5e6a7f937c</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\Mace_move_14.wav</SourcePath>
   </File>
   <File>
-    <Name>Clone_fighter_enemy_low06.wav</Name>
-    <TargetPath>\Data\Audio\Clone_fighter_enemy_low06.wav</TargetPath>
+    <Name>Sev_im_in_motion.wav</Name>
+    <TargetPath>\Data\Audio\Sev_im_in_motion.wav</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>8c4941926a93b1c4a86105380f6d937d</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\Clone_fighter_enemy_low06.wav</SourcePath>
+    <Hash>b9fcc7e2a7bfb1e2348ae92494b9015f</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\Sev_im_in_motion.wav</SourcePath>
   </File>
   <File>
-    <Name>Crab_attack2.wav</Name>
-    <TargetPath>\Data\Audio\Crab_attack2.wav</TargetPath>
+    <Name>TPM_He_Is_the_Chosen_One.mp3</Name>
+    <TargetPath>\Data\Audio\Music\TPM_He_Is_the_Chosen_One.mp3</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>8bb32815a13b1c537658202318c24778</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\Crab_attack2.wav</SourcePath>
+    <Hash>fb0b03bf54b53f84ce78be29bf97d44d</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\Music\TPM_He_Is_the_Chosen_One.mp3</SourcePath>
   </File>
   <File>
-    <Name>Kitfisto_enemy_low5.wav</Name>
-    <TargetPath>\Data\Audio\Kitfisto_enemy_low5.wav</TargetPath>
+    <Name>TPM_Jar_Jars_ Introduction.mp3</Name>
+    <TargetPath>\Data\Audio\Music\TPM_Jar_Jars_ Introduction.mp3</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>686275d8dcc806db6755a5ba00f3ba60</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\Kitfisto_enemy_low5.wav</SourcePath>
+    <Hash>4c70337aa5fbb7c591de8a7c3a3a4b94</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\Music\TPM_Jar_Jars_ Introduction.mp3</SourcePath>
   </File>
   <File>
-    <Name>obiwan_guard01.wav</Name>
-    <TargetPath>\Data\Audio\obiwan_guard01.wav</TargetPath>
+    <Name>MiscObjects.xml</Name>
+    <TargetPath>\Data\XML\MiscObjects.xml</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>0aac3ba0ec636922b840fb335838e9f3</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\obiwan_guard01.wav</SourcePath>
+    <Hash>7630ebbf07d658b5f9b5b16c32e6b826</Hash>
+    <SourcePath>\1.1.5\Mod\Data\XML\MiscObjects.xml</SourcePath>
   </File>
   <File>
-    <Name>Sev_lousy_clanker.wav</Name>
-    <TargetPath>\Data\Audio\Sev_lousy_clanker.wav</TargetPath>
+    <Name>Movies.xml</Name>
+    <TargetPath>\Data\XML\Movies.xml</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>9e41e920c72890416fe380a14a5118a3</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\Sev_lousy_clanker.wav</SourcePath>
-  </File>
-  <File>
-    <Name>Vulture_move3.wav</Name>
-    <TargetPath>\Data\Audio\Vulture_move3.wav</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>119010584e796fda680db7464025b1c3</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\Vulture_move3.wav</SourcePath>
-  </File>
-  <File>
-    <Name>TPM_The_Trip_to_the_Naboo_Temple_and.mp3</Name>
-    <TargetPath>\Data\Audio\Music\TPM_The_Trip_to_the_Naboo_Temple_and.mp3</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>831fe073a00c18e612d29b360b0ed981</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\Music\TPM_The_Trip_to_the_Naboo_Temple_and.mp3</SourcePath>
-  </File>
-  <File>
-    <Name>urban_ambient1.mp3</Name>
-    <TargetPath>\Data\Audio\Music\urban_ambient1.mp3</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>e74c08113d5113971859a19b3decfd87</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\Music\urban_ambient1.mp3</SourcePath>
-  </File>
-  <File>
-    <Name>Namedherounits.xml</Name>
-    <TargetPath>\Data\XML\Namedherounits.xml</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>a74a4e1ebc9a63100466adf41af2afdc</Hash>
-    <SourcePath>\1.1.5\Mod\Data\XML\Namedherounits.xml</SourcePath>
-  </File>
-  <File>
-    <Name>Particles.xml</Name>
-    <TargetPath>\Data\XML\Particles.xml</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>5a8a1a0558bdadcc5347273ab749066e</Hash>
-    <SourcePath>\1.1.5\Mod\Data\XML\Particles.xml</SourcePath>
+    <Hash>92a8e74de0328394b3ff94502da50d06</Hash>
+    <SourcePath>\1.1.5\Mod\Data\XML\Movies.xml</SourcePath>
   </File>
 </FileContainer>
