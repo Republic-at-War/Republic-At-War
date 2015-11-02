@@ -1,0 +1,22 @@
+1.2
+
+Changelog for Republic at War
+
+
+Verison 1.1.6:
+
+- added support for new game launcher
+
+Version 1.1.5
+
+- fixing of many bugs
+- tweaking AI
+
+Version 1.1
+
+- Public release
+
+Version 1.0
+
+- Internal Beta
+
