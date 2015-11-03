@@ -1,0 +1,150 @@
+<?xml version="1.0" ?>
+<FunctionSet>
+	<Destroy_Unit>
+		<Goal>Destroy_Unit</Goal>
+		<Function>Unit_Needs_To_Be_Destroyed</Function>
+	</Destroy_Unit>
+
+	<Destroy_Unit_Minimal>
+		<Goal>Destroy_Unit_Minimal</Goal>
+		<Function>Unit_Needs_To_Be_Destroyed_Low_Desire</Function>
+	</Destroy_Unit_Minimal>
+
+	<Disable_Unit>
+		<Goal>Disable_Unit</Goal>
+		<Function>Unit_Needs_To_Be_Disabled</Function>
+	</Disable_Unit>
+
+	<Bomb_Unit>
+		<Goal>Bomb_Unit</Goal>
+		<Function>Unit_Needs_To_Be_Bombed</Function>
+	</Bomb_Unit>
+
+	<Sweep_Area>
+		<Goal>Sweep_Area</Goal>
+		<Function>Area_Needs_Sweeping</Function> 
+	</Sweep_Area>
+  
+	<Space_Escort_Goal>
+		<Goal>Space_Escort_Goal</Goal>
+		<Function>Unit_Needs_Escort</Function>
+	</Space_Escort_Goal>
+
+	<Space_Scout>
+		<Goal>Space_Scout</Goal>
+		<Function>Space_Area_Needs_Scouting</Function>
+	</Space_Scout>
+	
+	<Hide_Transports>
+		<Goal>Hide_Transports</Goal>
+		<Function>Need_To_Hide_Units</Function>
+	</Hide_Transports>
+
+	<Hide_Surprise_Units>
+		<Goal>Hide_Surprise_Units</Goal>
+		<Function>Desire_To_Hide_At_Location</Function>
+	</Hide_Surprise_Units>
+
+	<Return_To_Base>
+		<Goal>Return_To_Base</Goal>
+		<Function>Should_Return_To_Base</Function>
+	</Return_To_Base>
+
+	<Patrol_Structure_Space>
+		<Goal>Patrol_Structure_Space</Goal>
+		<Function>Need_To_Patrol_Space</Function>
+	</Patrol_Structure_Space>
+
+	<Debug_Goal_Space>
+		<Goal>Debug_Goal_Space</Goal>
+		<Function>Want_To_Retreat_From_Space</Function>
+	</Debug_Goal_Space>
+
+	<Space_Retreat>
+		<Goal>Space_Retreat</Goal>
+		<Function>Should_Retreat_From_Space</Function>
+	</Space_Retreat>
+
+	<Ground_To_Space_Damage>
+		<Goal>Ground_To_Space_Damage</Goal>
+		<Function>Needs_Ion_Shot</Function>
+	</Ground_To_Space_Damage>
+
+	<!-- The Ion Cannon has a self-attachment script, but currently this custom goal 
+	is the best tactic -->
+	<Ground_To_Space_Disable>
+		<Goal>Ground_To_Space_Disable</Goal>
+		<Function>Needs_Hypervelocity_Shot</Function>
+	</Ground_To_Space_Disable>
+
+	<Fire_Death_Star>
+		<Goal>Fire_Death_Star</Goal>
+		<Function>ReallyBig</Function>
+	</Fire_Death_Star>
+
+	<Turbo_Attack_Location>
+		<Goal>Turbo_Attack_Location</Goal>
+		<Function>Good_Turbo_Attack_Location_Opportunity</Function>
+	</Turbo_Attack_Location>
+
+	<Turbo_Attack_Unit>
+		<Goal>Turbo_Attack_Unit</Goal>
+		<Function>Good_Turbo_Attack_Unit_Opportunity</Function>
+	</Turbo_Attack_Unit>
+
+	<Space_Artillery>
+		<Goal>Space_Artillery</Goal>
+		<Function>Good_Space_Artillery_Area</Function>
+	</Space_Artillery>
+
+	<Tactical_Multiplayer_Build_Space_Units_Generic>
+		<Goal>Tactical_Multiplayer_Build_Space_Units_Generic</Goal>
+		<Function>Tactical_Multiplayer_Should_Build_Generic_Space</Function>
+	</Tactical_Multiplayer_Build_Space_Units_Generic>
+
+	<Purchase_Space_Upgrades_Generic>
+		<Goal>Purchase_Space_Upgrades_Generic</Goal>
+		<Function>Should_Purchase_Ability_Generic_Space</Function>
+	</Purchase_Space_Upgrades_Generic>
+
+	<Secure_Build_Pad_Space>
+		<Goal>Secure_Build_Pad_Space</Goal>
+		<Function>Need_To_Secure_Contestable_Space</Function>
+	</Secure_Build_Pad_Space>
+
+	<Build_Structure_Space>
+		<Goal>Build_Structure_Space</Goal>
+		<Function>Need_To_Build_Structure_Space</Function>
+	</Build_Structure_Space>
+
+	<Build_Refinery_Space>
+		<Goal>Build_Refinery_Space</Goal>
+		<Function>Need_To_Build_Refinery_Space</Function>
+	</Build_Refinery_Space>
+
+	<Burn_Units_Space>
+		<Goal>Burn_Units_Space</Goal>
+		<Function>Should_Burn_Units_Space</Function>
+	</Burn_Units_Space>
+
+	<Skirmish_Upgrade_Space_Station>
+		<Goal>Skirmish_Upgrade_Space_Station</Goal>
+		<Function>Skirmish_Needs_New_Space_Station_With_Multiplier</Function>
+	</Skirmish_Upgrade_Space_Station>
+
+	<Skirmish_Generate_Magic_Cash_Drop_Space>
+		<Goal>Skirmish_Generate_Magic_Cash_Drop_Space</Goal>
+		<Function>Skirmish_Needs_Magic_Cash_Drop_Space</Function>
+	</Skirmish_Generate_Magic_Cash_Drop_Space>
+
+	<Defend_Space_Station>
+		<Goal>Defend_Space_Station</Goal>
+		<Function>Need_To_Defend_Space_Station</Function>
+	</Defend_Space_Station>
+	
+	<Tactical_Multiplayer_Build_Space_Heroes_Generic>
+		<Goal>Tactical_Multiplayer_Build_Space_Heroes_Generic</Goal>
+		<Function>Tactical_Multiplayer_Should_Build_Hero_Space</Function>
+	</Tactical_Multiplayer_Build_Space_Heroes_Generic>
+
+</FunctionSet>

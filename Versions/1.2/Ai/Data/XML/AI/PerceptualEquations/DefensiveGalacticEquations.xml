@@ -1,0 +1,313 @@
+<?xml version="1.0" ?>
+
+<Equations>
+
+	<!-- High priority whenever a friendly planet has an enemy force in orbit
+			... consider how valuable this planet is 
+			... and if we don't own much space, this is even more important
+			and don't use this coventional goal/plan on systems disconnected by one planet
+
+			-->
+	<Needs_Blockade_Lifted>
+		(Variable_Target.EnemyForce.HasSpaceForce)
+		*
+		Function_First_Attack_Allowed.Evaluate
+		*
+		(Variable_Target.EnemyForce.SpaceTotalUnnormalized > 0)
+		*
+		(30 +
+		(10.0 * Function_GenericPlanetValue.Evaluate) +
+		(10.0 * Function_More_Planets_Needed.Evaluate))
+		*
+		((Function_Need_To_Reconnect_Islands.Evaluate == 0.0) +
+		Variable_Target.ConnectsLargestIslands)
+		*
+		(Variable_Target.TimeSinceSpaceConflict > Function_Blockade_Wait_Time.Evaluate)
+	</Needs_Blockade_Lifted>
+
+	<Blockade_Wait_Time>
+		Variable_Self.IsDifficulty{Parameter_Difficulty_Level_Type = DifficultyLevelType[Easy]}
+		* 90.0
+		+
+		Variable_Self.IsDifficulty{Parameter_Difficulty_Level_Type = DifficultyLevelType[Normal]}
+		* 90.0
+		+
+		Variable_Self.IsDifficulty{Parameter_Difficulty_Level_Type = DifficultyLevelType[Hard]}
+		* 20.0			
+	</Blockade_Wait_Time>
+
+	<Has_Friendly_Ground_Force>
+		Variable_Target.FriendlyForce.HasGroundForce
+	</Has_Friendly_Ground_Force>
+	
+	<!-- Is there space? -->
+	<!-- Are the groundbase and defensive force worth protecting? -->
+	<!-- Is the planet worth protecting -->
+	<Needs_Ground_Defensive_Structure>
+		5.0 *
+		Variable_Target.OpenStructureSlots *
+		Variable_Target.GroundbaseLevel *
+		Variable_Target.FriendlyForce.GroundTotalNBTD *
+		Function_DefensiveValue.Evaluate
+	</Needs_Ground_Defensive_Structure>
+	
+	<!-- Is there space? -->
+	<!-- Are the starbase and defensive force worth protecting? -->
+	<!-- Is the planet worth protecting -->
+	<Needs_Space_Defensive_Structure>
+		5.0 *
+		Variable_Target.OpenStructureSlots *
+		Variable_Target.StarbaseLevel *
+		Variable_Target.FriendlyForce.SpaceTotalNBTD *
+		Function_DefensiveValue.Evaluate
+	</Needs_Space_Defensive_Structure>
+	
+	<!-- Don't defend planets with enemy forces blockading (handled by Lift_Blockade) -->
+	<!-- How valuable is the planet? -->
+	<!-- How many trade routes do I also control the other end for? -->
+	<!-- How strong is the enemy around here? -->
+	<!-- Is this planet already well-defended -->
+	<DefensiveValue>
+		(1.0 - Variable_Target.EnemyForce.SpaceTotalNBTT) *
+		(Function_GenericPlanetValue.Evaluate + 
+		Variable_Target.ActiveTradeRoutes + 
+		Variable_Target.EnemyForce.NearbyGroundTotal + Variable_Target.EnemyForce.NearbySpaceTotal -
+		Variable_Target.FriendlyForce.GroundTotal - Variable_Target.FriendlyForce.SpaceTotal)
+		+
+		Variable_Target.Hints.Chokepoint
+		+ 
+		Variable_Target.Hints.PriorityTarget			
+	</DefensiveValue>
+
+    <GroundDefensiveValue>
+		(Variable_Target.EnemyForce.HasSpaceForce == 0.0)
+		*
+		(1.1 - Variable_Target.FriendlyForce.GroundTotalNBTD)
+		*
+		(
+			5.0 * Variable_Target.Hints.Chokepoint
+			+
+			5.0 * Function_Is_Connected_To_Enemy.Evaluate
+			+
+			5.0 * (Variable_Target.FriendlyForce.HasGroundUnitsBitfield {Parameter_Type = "MON_MOTHMA", Parameter_Type = "Emperor_Palpatine"} > 0)
+			+ 
+			Function_Defense_Level.Evaluate
+		)
+    </GroundDefensiveValue>
+
+    <SpaceDefensiveValue>
+		(1.1 - Variable_Target.FriendlyForce.SpaceTotalNBTD)
+		*
+		(
+			5.0 * Variable_Target.Hints.Chokepoint
+			+
+			5.0 * Function_Is_Connected_To_Enemy.Evaluate
+			+ 
+			Function_Defense_Level.Evaluate
+		)
+    </SpaceDefensiveValue>
+
+	<Needs_Weapon>
+		2.0 * Variable_Target.StarbaseLevelUnnormalized
+		+
+		2.0 * Variable_Target.GroundbaseLevelUnnormalized
+		+
+		8.0 * Variable_Target.Hints.Chokepoint
+		+
+		2.0 * Function_DefensiveValue.Evaluate
+		+
+		8.0 * Function_Is_Connected_To_Enemy.Evaluate
+		+
+		Variable_Target.FriendlyForce.SpaceTotalUnnormalized / 5000.0 
+		+ 
+		Variable_Target.FriendlyForce.GroundTotalUnnormalized / 2500.0
+	</Needs_Weapon>
+
+
+
+	<!-- Regular in base shield.
+		The desire to have a ground shield depends upon:
+		investment in ground base
+		bonus for defensive value (including chokepoint markup)
+		bonus for having force here
+		-->
+	<Needs_Base_Shield>
+		2.0 * Variable_Target.GroundbaseLevelUnnormalized
+		+
+		8.0 * Variable_Target.Hints.Chokepoint
+		+
+		2.0 * Function_DefensiveValue.Evaluate
+		+
+		8.0 * Function_Is_Connected_To_Enemy.Evaluate
+		+
+		Variable_Target.FriendlyForce.GroundTotalUnnormalized / 2500.0
+	</Needs_Base_Shield>
+
+	<!--
+	Just like the need for a shield, but add a flat modifier rather than a force dependent one
+	since turbolaser effectiveness isn't very dependent on other units being present.
+	-->
+	<Needs_Turbolasers>
+		2.0 * Variable_Target.GroundbaseLevelUnnormalized
+		+
+		8.0 * Variable_Target.Hints.Chokepoint
+		+
+		2.0 * Function_DefensiveValue.Evaluate
+		+
+		8.0 * Function_Is_Connected_To_Enemy.Evaluate
+		+
+		10.0
+	</Needs_Turbolasers>
+
+	<!--
+
+		-->
+	<Needs_Jamming_Station>
+		Variable_Target.OpenStructureSlots 
+		*
+		Function_Has_Enough_Bases_For_Tech.Evaluate
+		*
+		(Function_Defense_Level.Evaluate > 5)
+	</Needs_Jamming_Station>
+
+
+	<Defense_Level>
+		Variable_Target.StarbaseLevelUnnormalized 
+		+ Variable_Target.HasStructure {Parameter_Type = "Ground_Ion_Cannon", Parameter_Count = 1}
+		+ Variable_Target.HasStructure {Parameter_Type = "Ground_Empire_Hypervelocity_Gun", Parameter_Count = 1}
+		+ Variable_Target.HasStructure {Parameter_Type = "E_Ground_Base_Shield", Parameter_Count = 1}
+		+ Variable_Target.HasStructure {Parameter_Type = "R_Ground_Base_Shield", Parameter_Count = 1}
+		+ Variable_Target.HasStructure {Parameter_Type = "E_Galactic_Turbolaser_Tower_Defenses", Parameter_Count = 1}
+		+ Variable_Target.HasStructure {Parameter_Type = "R_Galactic_Turbolaser_Tower_Defenses", Parameter_Count = 1}
+		+ Variable_Target.HasStructure {Parameter_Type = "Ground_Magnepulse_Cannon", Parameter_Count = 1}		
+		+ Variable_Target.HasStructure {Parameter_Type = "Ground_Gravity_Generator", Parameter_Count = 1}
+	</Defense_Level>
+
+	<Can_Park_Ground_Unit>
+		(Variable_Target.EnemyForce.HasSpaceForce == 0.0) 
+		*
+		(Variable_Target.OpenGroundCompanySlots > 0)
+		*
+		Variable_Target.IsSurfaceAccessible
+	</Can_Park_Ground_Unit>
+	
+	<Low_Ground_Defense_Score>
+		1.0 - Variable_Target.FriendlyForce.GroundTotalNBTD
+	</Low_Ground_Defense_Score>
+
+	<Low_Space_Defense_Score>
+		1.0 - Variable_Target.FriendlyForce.SpaceTotalNBTD		
+	</Low_Space_Defense_Score>
+
+	<Ground_Priority_Defense_Score>
+		Variable_Target.Hints.Chokepoint
+		+
+		2.0 * Function_Is_Connected_To_Enemy.Evaluate
+		+
+		Variable_Target.HasStructure {Parameter_Type = "E_Ground_Base_Shield", Parameter_Type = "R_Ground_Base_Shield",
+										Parameter_Type = "E_Galactic_Turbolaser_Tower_Defenses", Parameter_Type = "R_Galactic_Turbolaser_Tower_Defenses",
+										Parameter_Type = "Ground_Magnepulse_Cannon", Parameter_Type = "Ground_Gravity_Generator"}
+	</Ground_Priority_Defense_Score>
+
+	<Space_Priority_Defense_Score>
+		Variable_Target.Hints.Chokepoint
+		+
+		2.0 * Function_Is_Connected_To_Enemy.Evaluate
+		+
+		Variable_Target.HasStructure {Parameter_Type = "Ground_Ion_Cannon", Parameter_Type = "Ground_Empire_Hypervelocity_Gun"}
+	</Space_Priority_Defense_Score>
+
+	<Friendly_Space_Unit_Raw_Total>
+		Variable_Target.FriendlyForce.SpaceTotalUnnormalized - Variable_Target.FriendlyForce.SpaceTotalUnnormalized {Parameter_Category = GameObjectCategoryType[SpaceHero]}
+	</Friendly_Space_Unit_Raw_Total>
+
+	<Friendly_Global_Space_Unit_Raw_Total>
+		Variable_Self.SpaceTotalUnnormalized - Variable_Self.SpaceTotalUnnormalized {Parameter_Category = GameObjectCategoryType[SpaceHero]}
+	</Friendly_Global_Space_Unit_Raw_Total>
+
+	<Friendly_Land_Unit_Raw_Total>
+		Variable_Target.FriendlyForce.GroundTotalUnnormalized - Variable_Target.FriendlyForce.GroundTotalUnnormalized {Parameter_Category = GameObjectCategoryType[LandHero]}
+	</Friendly_Land_Unit_Raw_Total>
+
+	<Friendly_Global_Land_Unit_Raw_Total>
+		Variable_Self.GroundTotalUnnormalized - Variable_Self.GroundTotalUnnormalized {Parameter_Category = GameObjectCategoryType[LandHero]}
+	</Friendly_Global_Land_Unit_Raw_Total>
+	
+	<Enemy_Global_Space_Unit_Raw_Total>
+		Game.EnemyForce.SpaceTotalUnnormalized - Game.EnemyForce.SpaceTotalUnnormalized {Parameter_Category = GameObjectCategoryType[SpaceHero]}
+	</Enemy_Global_Space_Unit_Raw_Total>
+
+	<Enemy_Global_Land_Unit_Raw_Total>
+		Game.EnemyForce.GroundTotalUnnormalized - Game.EnemyForce.GroundTotalUnnormalized {Parameter_Category = GameObjectCategoryType[LandHero]}
+	</Enemy_Global_Land_Unit_Raw_Total>
+	
+	<Needs_Magic_Ground_Defense>
+		(Variable_Target.OpenGroundCompanySlots > 5) *
+		Function_Is_Connected_To_Enemy.Evaluate *
+		Function_Is_Connected_To_Me.Evaluate *
+		Variable_Self.IsDifficulty {Parameter_Difficulty_Level_Type = DifficultyLevelType[Normal]} *
+		Variable_Target.IsSurfaceAccessible
+	</Needs_Magic_Ground_Defense>
+	
+	<Needs_Magic_Space_Defense>
+		(6000 > Function_Friendly_Space_Unit_Raw_Total.Evaluate) *
+		Function_Is_Connected_To_Enemy.Evaluate *
+		Function_Is_Connected_To_Me.Evaluate *
+		(Variable_Target.EnemyForce.HasSpaceForce == 0.0) *
+		Variable_Self.IsDifficulty {Parameter_Difficulty_Level_Type = DifficultyLevelType[Normal]}	
+	</Needs_Magic_Space_Defense>
+		
+	<Needs_Magic_Ground_Defense_Easy>
+		(Variable_Target.OpenGroundCompanySlots > 6) *
+		Function_Is_Connected_To_Enemy.Evaluate *
+		Function_Is_Connected_To_Me.Evaluate *
+		Variable_Self.IsDifficulty {Parameter_Difficulty_Level_Type = DifficultyLevelType[Easy]} *
+		Variable_Target.IsSurfaceAccessible
+	</Needs_Magic_Ground_Defense_Easy>
+	
+	<Needs_Magic_Space_Defense_Easy>
+		(4000 > Function_Friendly_Space_Unit_Raw_Total.Evaluate) *
+		Function_Is_Connected_To_Enemy.Evaluate *
+		Function_Is_Connected_To_Me.Evaluate *
+		(Variable_Target.EnemyForce.HasSpaceForce == 0.0) *
+		Variable_Self.IsDifficulty {Parameter_Difficulty_Level_Type = DifficultyLevelType[Easy]}	
+	</Needs_Magic_Space_Defense_Easy>
+	
+	<Needs_Magic_Ground_Defense_Hard>
+		(Variable_Target.OpenGroundCompanySlots > 4) *
+		Function_Is_Connected_To_Enemy.Evaluate *
+		Function_Is_Connected_To_Me.Evaluate *
+		Variable_Self.IsDifficulty {Parameter_Difficulty_Level_Type = DifficultyLevelType[Hard]} *
+		Variable_Target.IsSurfaceAccessible
+	</Needs_Magic_Ground_Defense_Hard>
+	
+	<Needs_Magic_Space_Defense_Hard>
+		(9000 > Function_Friendly_Space_Unit_Raw_Total.Evaluate) *
+		Function_Is_Connected_To_Enemy.Evaluate *
+		Function_Is_Connected_To_Me.Evaluate *
+		(Variable_Target.EnemyForce.HasSpaceForce == 0.0) *
+		Variable_Self.IsDifficulty {Parameter_Difficulty_Level_Type = DifficultyLevelType[Hard]}
+	</Needs_Magic_Space_Defense_Hard>			
+	
+	<Needs_Magic_Ground_Structure>
+		Function_Is_Connected_To_Enemy.Evaluate *
+		(Variable_Target.OpenGroundCompanySlots > 0) *		
+		(
+			(Variable_Self.IsDifficulty {Parameter_Difficulty_Level_Type = DifficultyLevelType[Hard]}) *
+			(Variable_Target.OpenStructureSlotsUnnormalized > 1) +
+			(Variable_Self.IsDifficulty {Parameter_Difficulty_Level_Type = DifficultyLevelType[Normal]}) *
+			(Variable_Target.OpenStructureSlotsUnnormalized > 2) +
+			(Variable_Self.IsDifficulty {Parameter_Difficulty_Level_Type = DifficultyLevelType[Easy]}) *
+			(Variable_Target.OpenStructureSlotsUnnormalized > 3)
+		)	
+	</Needs_Magic_Ground_Structure>
+
+	<Needs_Magic_Cash_Drop>
+		(Game.Age > 300)
+		*
+		(2000 > Variable_Self.CreditsUnnormalized)
+		*
+		(Function_Am_I_In_Winning_Position.Evaluate == 0.0)
+	</Needs_Magic_Cash_Drop>
+		
+</Equations>

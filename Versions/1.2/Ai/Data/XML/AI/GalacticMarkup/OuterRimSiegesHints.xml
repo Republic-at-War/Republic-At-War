@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<Galactic_Markup>
+
+	<Planets HintSet="Galactic_Hints">
+		<The_Wheel>
+			<Chokepoint>1.0</Chokepoint>
+		</The_Wheel>
+		
+		<Dathomir>
+			<Chokepoint>1.0</Chokepoint>
+		</Dathomir>
+		
+		<Sullust>
+			<Chokepoint>2.0</Chokepoint>
+		</Sullust>
+	
+		<Mygeeto>
+			<PriorityTarget>5.0</PriorityTarget>
+		</Mygeeto>
+	
+		<Geonosis>
+			<PriorityTarget>5.0</PriorityTarget>
+		</Geonosis>
+		
+		<MonCalimari>
+			<PriorityTarget>5.0</PriorityTarget>
+		</MonCalimari>
+		
+			<Kamino>
+			<PriorityTarget>5.0</PriorityTarget>
+		</Kamino>
+		
+			<Rothana>
+			<PriorityTarget>3.0</PriorityTarget>
+		</Rothana>
+	
+	</Planets>
+</Galactic_Markup>
