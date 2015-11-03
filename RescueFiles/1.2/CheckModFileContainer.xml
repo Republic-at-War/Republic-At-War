@@ -1,5 +1,5 @@
 <FileContainer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>1.1.5</Version>
+  <Version>1.2</Version>
   <Folder>
     <TargetPath>\Data\XML\</TargetPath>
     <TargetType>Ai</TargetType>
