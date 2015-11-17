@@ -19,12 +19,6 @@
     <Count>2</Count>
   </Folder>
   <Folder>
-    <TargetPath>\Data\XML\AI\GalacticMarkup\</TargetPath>
-    <TargetType>Ai</TargetType>
-    <Hash>f7e1c48cc081614a5cd740d6c663f88d</Hash>
-    <Count>5</Count>
-  </Folder>
-  <Folder>
     <TargetPath>\Data\XML\AI\Templates\</TargetPath>
     <TargetType>Ai</TargetType>
     <Hash>e318cd4566a0a2de1a20b381b7241443</Hash>
@@ -43,9 +37,15 @@
     <Count>2</Count>
   </Folder>
   <Folder>
+    <TargetPath>\Data\XML\AI\GalacticMarkup\</TargetPath>
+    <TargetType>Ai</TargetType>
+    <Hash>f7e1c48cc081614a5cd740d6c663f88d</Hash>
+    <Count>5</Count>
+  </Folder>
+  <Folder>
     <TargetPath>\Data\XML\AI\PerceptualEquations\</TargetPath>
     <TargetType>Ai</TargetType>
-    <Hash>66e03b91780515278537b1df57084910</Hash>
+    <Hash>9cffffc89d31ac7fedd9e92bc3bf42cf</Hash>
     <Count>8</Count>
   </Folder>
   <Folder>
@@ -99,14 +99,14 @@
   <Folder>
     <TargetPath>\Data\CustomMaps\</TargetPath>
     <TargetType>Ai</TargetType>
-    <Hash>0445c9d30aeef40fb916a174ae460233</Hash>
+    <Hash>39582862c093339466932d818e80c5ee</Hash>
     <Count>47</Count>
   </Folder>
   <Folder>
     <TargetPath>\\</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>noHash</Hash>
-    <Count>0</Count>
+    <Hash>41883f468444fc57a24332f8704ab66f</Hash>
+    <Count>5</Count>
   </Folder>
   <Folder>
     <TargetPath>\Data\Art\</TargetPath>
@@ -121,34 +121,16 @@
     <Count>0</Count>
   </Folder>
   <Folder>
-    <TargetPath>\Data\Text\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>9a304c5b8c0571da80ac70cbc2d337d0</Hash>
-    <Count>3</Count>
-  </Folder>
-  <Folder>
-    <TargetPath>\Data\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>03021cd3c59d91802b633afd74fe15de</Hash>
-    <Count>1</Count>
-  </Folder>
-  <Folder>
     <TargetPath>\Data\Art\Movies\</TargetPath>
     <TargetType>Mod</TargetType>
     <Hash>noHash</Hash>
     <Count>0</Count>
   </Folder>
   <Folder>
-    <TargetPath>\Data\Art\Shaders\</TargetPath>
+    <TargetPath>\Data\Text\</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>265e646b88e26639800c150e9c9ce123</Hash>
-    <Count>42</Count>
-  </Folder>
-  <Folder>
-    <TargetPath>\Data\Art\Shaders\Engine\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>48841b7ff6d4647dd8558e859e5b5b32</Hash>
-    <Count>31</Count>
+    <Hash>9a304c5b8c0571da80ac70cbc2d337d0</Hash>
+    <Count>3</Count>
   </Folder>
   <Folder>
     <TargetPath>\Data\Art\Shaders\Terrain\</TargetPath>
@@ -157,16 +139,16 @@
     <Count>10</Count>
   </Folder>
   <Folder>
-    <TargetPath>\Data\Art\Maps\</TargetPath>
+    <TargetPath>\Data\Art\Shaders\</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>d761235dd89933c7ca7e1fd0e335eacb</Hash>
-    <Count>137</Count>
+    <Hash>265e646b88e26639800c150e9c9ce123</Hash>
+    <Count>42</Count>
   </Folder>
   <Folder>
-    <TargetPath>\Data\XML\</TargetPath>
+    <TargetPath>\Data\</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>908db8bd5c353bc583f65d2ece1ed8bd</Hash>
-    <Count>269</Count>
+    <Hash>767dce7f470205d732c98ebd0074dfce</Hash>
+    <Count>10</Count>
   </Folder>
   <Folder>
     <TargetPath>\Data\Audio\Speech\</TargetPath>
@@ -175,10 +157,10 @@
     <Count>0</Count>
   </Folder>
   <Folder>
-    <TargetPath>\Data\Audio\SFX\</TargetPath>
+    <TargetPath>\Data\Audio\Speech\English\</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>79184c6e936a6ea22030d9cd8000ff2a</Hash>
-    <Count>25</Count>
+    <Hash>f2959e4deae6797f973169549979d2eb</Hash>
+    <Count>37</Count>
   </Folder>
   <Folder>
     <TargetPath>\Data\Resources\Guidialog\</TargetPath>
@@ -193,10 +175,34 @@
     <Count>1</Count>
   </Folder>
   <Folder>
-    <TargetPath>\Data\Audio\Speech\English\</TargetPath>
+    <TargetPath>\Data\Audio\SFX\</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>f2959e4deae6797f973169549979d2eb</Hash>
-    <Count>37</Count>
+    <Hash>79184c6e936a6ea22030d9cd8000ff2a</Hash>
+    <Count>25</Count>
+  </Folder>
+  <Folder>
+    <TargetPath>\Data\Art\Movies\Binked\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>794c8dff8a72c3ab16c043f9f2f3aaf8</Hash>
+    <Count>7</Count>
+  </Folder>
+  <Folder>
+    <TargetPath>\Data\Art\Shaders\Engine\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>48841b7ff6d4647dd8558e859e5b5b32</Hash>
+    <Count>31</Count>
+  </Folder>
+  <Folder>
+    <TargetPath>\Data\XML\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>908db8bd5c353bc583f65d2ece1ed8bd</Hash>
+    <Count>269</Count>
+  </Folder>
+  <Folder>
+    <TargetPath>\Data\Art\Maps\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>d761235dd89933c7ca7e1fd0e335eacb</Hash>
+    <Count>137</Count>
   </Folder>
   <Folder>
     <TargetPath>\Data\Audio\Music\</TargetPath>
@@ -215,12 +221,6 @@
     <TargetType>Mod</TargetType>
     <Hash>827803aa2096ed4de0180880724a233a</Hash>
     <Count>1855</Count>
-  </Folder>
-  <Folder>
-    <TargetPath>\Data\Art\Movies\Binked\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>794c8dff8a72c3ab16c043f9f2f3aaf8</Hash>
-    <Count>7</Count>
   </Folder>
   <Folder>
     <TargetPath>\Data\Art\Models\</TargetPath>
