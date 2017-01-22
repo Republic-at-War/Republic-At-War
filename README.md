@@ -6,7 +6,7 @@ All the code of the current and previeous versions (from 1.1.5) will be publishe
 which can be downloaded from [Moddb.com](http://www.moddb.com/mods/republic-at-war).
 
 Based on the code published here everyone is welcome to share new ideas, report bugs and commit pull requests. 
-If you are unfamiliar with GitHub we would suggest to read [How to post issues](http://www.moddb.com/mods/republic-at-war) first.
+If you are unfamiliar with GitHub we would suggest to read [How to post issues](https://github.com/Republic-at-War/Republic-At-War/wiki#how-to-post-issues) first.
 
 Beside code you have to options to read through the [Wiki](https://github.com/Republic-at-War/Republic-At-War/wiki). The Wiki contains many
 additional information about the mod, including news articles, a small development blog and a FAQ.
