@@ -1,0 +1,1391 @@
+<?xml version="1.0" ?>
+<HeroCompanies>
+	<!--			  -->
+	<!-- Minor Heroes -->
+	<!--			  -->
+
+	<HeroCompany Name="Smuggler_Team_E">
+		<Text_ID>TEXT_HERO_UNIT_SMUGGLER</Text_ID>
+		<Icon_Name>i_button_smuggler.tga</Icon_Name>
+		<GUI_Row>1</GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Heroes>Yes</Build_Tab_Heroes>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>Ground_Cantina_E</Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Shuttle_Tyderium</Company_Transport_Unit>
+		<Company_Units>Generic_Smuggler_E</Company_Units>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Is_Stealth_Company>Yes</Is_Stealth_Company>
+		<SFXEvent_Build_Complete>Unit_Galactic_Announce_Smuggler</SFXEvent_Build_Complete>
+		<SFXEvent_Build_Started>RHD_Build_Smuggler</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> TEXT_TOOLTIP_SMUGGLER </Encyclopedia_Text>
+		<CategoryMask>NonCombatHero</CategoryMask>
+		<Population_Value>1</Population_Value>
+	</HeroCompany>
+
+	<HeroCompany Name="Smuggler_Team_R">
+		<Text_ID>TEXT_HERO_UNIT_SMUGGLER</Text_ID>
+		<Icon_Name>i_button_smuggler.tga</Icon_Name>
+		<GUI_Row>1</GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Heroes>Yes</Build_Tab_Heroes>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>Ground_Cantina_R</Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+		<Company_Units>Generic_Smuggler_R</Company_Units>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Is_Stealth_Company>Yes</Is_Stealth_Company>
+		<SFXEvent_Build_Complete>Unit_Galactic_Announce_Smuggler</SFXEvent_Build_Complete>
+		<SFXEvent_Build_Started>UHD_Build_Smuggler</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+
+		<Encyclopedia_Text> TEXT_TOOLTIP_SMUGGLER </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR </Encyclopedia_Unit_Class>
+		<CategoryMask>NonCombatHero</CategoryMask>
+		<Population_Value>1</Population_Value>
+	</HeroCompany>
+
+
+	<HeroCompany Name="Smuggler_Team_R_Tutorial">
+		<Text_ID>TEXT_HERO_UNIT_SMUGGLER</Text_ID>
+		<Icon_Name>i_button_smuggler.tga</Icon_Name>
+		<GUI_Row>1</GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Heroes>Yes</Build_Tab_Heroes>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>Ground_Cantina_R</Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+		<Company_Units>Generic_Smuggler_R_Tutorial</Company_Units>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Is_Stealth_Company>Yes</Is_Stealth_Company>
+		<SFXEvent_Build_Complete>Unit_Galactic_Announce_Smuggler</SFXEvent_Build_Complete>
+		<SFXEvent_Build_Started>RHD_Build_Smuggler</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+
+		<Encyclopedia_Text> TEXT_TOOLTIP_SMUGGLER </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR </Encyclopedia_Unit_Class>
+		<CategoryMask>NonCombatHero</CategoryMask>
+	</HeroCompany>
+
+	<HeroCompany Name="Probe_Droid_Team">
+		<GUI_Row>1</GUI_Row>
+		<Text_ID>TEXT_HERO_UNIT_PROBE_DROID</Text_ID>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>30</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Build_Tab_Heroes>No</Build_Tab_Heroes>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+		<Company_Units>Generic_Probe_Droid</Company_Units>
+		<Icon_Name>i_button_scout_droid.tga</Icon_Name>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Is_Stealth_Company>Yes</Is_Stealth_Company>
+		<SFXEvent_Build_Complete>Unit_Galactic_Announce_Probot</SFXEvent_Build_Complete>
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Move>Unit_Galactic_Move_Probot</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Galactic_Move_Probot</SFXEvent_Fleet_Move>
+
+		<Encyclopedia_Text>TEXT_TOOLTIP_PROBE_DROID</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<CategoryMask>NonCombatHero</CategoryMask>
+		<Population_Value>1</Population_Value>
+	</HeroCompany>
+
+
+	<HeroCompany Name="Bounty_Hunter_Team_E">
+		<GUI_Row>1</GUI_Row>
+		<Text_ID>TEXT_HERO_UNIT_BOUNTY_HUNTER</Text_ID>
+		<Icon_Name>i_button_bounty_hunter.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<Build_Time_Seconds>90</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Heroes>Yes</Build_Tab_Heroes>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>Ground_Hutt_Palace_E</Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Shuttle_Tyderium</Company_Transport_Unit>
+		<Company_Units>Generic_Bounty_Hunter_E</Company_Units>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Is_Stealth_Company>Yes</Is_Stealth_Company>
+		<SFXEvent_Hero_Respawned>Unit_Galactic_Announce_Bounty_Hunter</SFXEvent_Hero_Respawned>
+		<SFXEvent_Build_Complete>Unit_Galactic_Announce_Bounty_Hunter</SFXEvent_Build_Complete>
+		<SFXEvent_Build_Started>RHD_Build_Bounty_Hunter</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>	
+		<Lua_Script>GenericBountyHunter</Lua_Script>
+
+		<Encyclopedia_Text> TEXT_TOOLTIP_BOUNTYHUNTER </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR </Encyclopedia_Unit_Class>
+		<CategoryMask>NonCombatHero</CategoryMask>
+		<Population_Value>1</Population_Value>
+	</HeroCompany>
+
+
+	<HeroCompany Name="Bounty_Hunter_Team_R">
+		<GUI_Row>1</GUI_Row>
+		<Text_ID>TEXT_HERO_UNIT_BOUNTY_HUNTER</Text_ID>
+		<Icon_Name>i_button_bounty_hunter.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<Build_Time_Seconds>90</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Heroes>Yes</Build_Tab_Heroes>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>Ground_Hutt_Palace_R</Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+		<Company_Units>Generic_Bounty_Hunter_R</Company_Units>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Is_Stealth_Company>Yes</Is_Stealth_Company>
+		<SFXEvent_Hero_Respawned>Unit_Galactic_Announce_Bounty_Hunter</SFXEvent_Hero_Respawned>
+		<SFXEvent_Build_Complete>Unit_Galactic_Announce_Bounty_Hunter</SFXEvent_Build_Complete>
+		<SFXEvent_Build_Started>UHD_Build_Bounty_Hunter</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>	
+		<Lua_Script>GenericBountyHunter</Lua_Script>
+
+		<Encyclopedia_Text> TEXT_TOOLTIP_BOUNTYHUNTER </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR </Encyclopedia_Unit_Class>
+		<CategoryMask>NonCombatHero</CategoryMask>
+		<Population_Value>1</Population_Value>
+	</HeroCompany>
+
+
+
+	<HeroCompany Name="Fleet_Com_Rebel_Team">
+		<GUI_Row>1</GUI_Row>
+		<Text_ID>TEXT_HERO_UNIT_FLEET_REBEL</Text_ID>
+		<Icon_Name>i_button_RI_fleet_commander.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<Build_Time_Seconds>90</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Heroes>No</Build_Tab_Heroes>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>5</Required_Star_Base_Level>
+		<Required_Special_Structures>R_Ground_Officer_Academy_R</Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+		<Company_Units>Generic_Fleet_Commander_Rebel</Company_Units>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<SFXEvent_Build_Complete>GUI_R_Fleet_Commander_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Build_Started>RHD_Build_Commander</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>	
+
+		<Encyclopedia_Text>TEXT_TOOLTIP_FLEET_COMMANDER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR</Encyclopedia_Unit_Class>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+		<Tactical_Build_Cost_Multiplayer>2500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		<CategoryMask>SpaceHero</CategoryMask>
+		<Population_Value>1</Population_Value>
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+	</HeroCompany>
+
+
+	<HeroCompany Name="Fleet_Com_Empire_Team">
+		<GUI_Row>1</GUI_Row>
+		<Text_ID>TEXT_HERO_UNIT_FLEET_EMPIRE</Text_ID>
+		<Icon_Name>i_button_EI_fleet_commander.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<Build_Time_Seconds>90</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Heroes>Yes</Build_Tab_Heroes>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures>E_Ground_Officer_Academy</Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Shuttle_Tyderium</Company_Transport_Unit>
+		<Company_Units>Generic_Fleet_Commander_Empire</Company_Units>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<SFXEvent_Build_Complete>GUI_E_Fleet_Commander_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Build_Started>EHD_Build_Commander</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>	
+
+		<Encyclopedia_Text>TEXT_TOOLTIP_FLEET_COMMANDER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR</Encyclopedia_Unit_Class>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+		<Tactical_Build_Cost_Multiplayer>2500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+		<CategoryMask>SpaceHero</CategoryMask>
+		<Population_Value>1</Population_Value>
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+	</HeroCompany>
+
+	<HeroCompany Name="Field_Com_Rebel_Team">
+		<GUI_Row>1</GUI_Row>
+		<Text_ID>TEXT_HERO_UNIT_FIELD_REBEL</Text_ID>
+		<Icon_Name>i_button_RI_field_commander.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<Build_Time_Seconds>90</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Heroes>Yes</Build_Tab_Heroes>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>R_Ground_Officer_Academy, R_Ground_Barracks</Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+		<Company_Units> Squad_Generic_Field_Commander_Rebel, Squad_R_Field_Commander_Guard, Squad_R_Field_Commander_Guard, Squad_R_Field_Commander_Guard, Squad_R_Field_Commander_Guard</Company_Units>
+		<Is_Homogeneous>No</Is_Homogeneous>
+		<Max_Squad_Size> 5 </Max_Squad_Size>
+		<Create_Team_Type> Rebel_Field_Commander_Team </Create_Team_Type>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<SFXEvent_Build_Complete>GUI_R_Field_Commander_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Build_Started>RHD_Build_Commander</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Rebel_Field</SFXEvent_Fleet_Move>
+
+
+		<Encyclopedia_Text>TEXT_TOOLTIP_FIELD_COMMANDER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR</Encyclopedia_Unit_Class>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+		<Tactical_Build_Cost_Multiplayer>550</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>RC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		<Population_Value>1</Population_Value>
+		<CategoryMask>LandHero</CategoryMask>
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+	</HeroCompany>
+
+	<HeroCompany Name="Field_Com_Empire_Team">
+		<GUI_Row>1</GUI_Row>
+		<Text_ID>TEXT_HERO_UNIT_FIELD_EMPIRE</Text_ID>
+		<Icon_Name>i_button_EI_field_commander.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<Build_Time_Seconds>90</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Heroes>Yes</Build_Tab_Heroes>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>E_Ground_Officer_Academy</Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Shuttle_Tyderium</Company_Transport_Unit>
+		<Company_Units> Squad_Generic_Field_Commander_Empire, Squad_E_Field_Commander_Guard, Squad_E_Field_Commander_Guard, Squad_E_Field_Commander_Guard, Squad_E_Field_Commander_Guard</Company_Units>
+		<Is_Homogeneous>No</Is_Homogeneous>
+		<Max_Squad_Size> 5 </Max_Squad_Size>
+		<Create_Team_Type> Empire_Field_Commander_Team </Create_Team_Type>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<SFXEvent_Build_Complete>GUI_E_Field_Commander_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Build_Started>EHD_Build_Commander</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Empire_Field</SFXEvent_Fleet_Move>
+
+
+		<Encyclopedia_Text>TEXT_TOOLTIP_FIELD_COMMANDER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR</Encyclopedia_Unit_Class>
+
+
+		<Tactical_Build_Cost_Multiplayer>550</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+
+		<Population_Value>1</Population_Value>
+		<CategoryMask>LandHero</CategoryMask>
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+	</HeroCompany>
+
+
+	<!--			         -->
+	<!-- Empire Major Heroes -->
+	<!--			         -->
+
+
+	<HeroCompany Name="Jango_Fett_Team">
+		<Text_ID>TEXT_HERO_JANGO_FETT_TEAM</Text_ID>
+		<Icon_Name>i_button_jango_fett.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>80</Damage>
+		<Affiliation>Rebel</Affiliation>
+		<!-- <Build_Cost_Credits>-1</Build_Cost_Credits> -->
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>4</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Slave_I</Company_Transport_Unit>
+		<Company_Units>Jango_Fett</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Stealth_Company>Yes</Is_Stealth_Company>
+		<Available_In_Skirmish>yes</Available_In_Skirmish>
+		<Can_Be_Only_One>true</Can_Be_Only_One>
+
+		<SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Respawn_Boba_Fett</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Respawn_Boba_Fett</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Boba_Fett</SFXEvent_Fleet_Move>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+		<Tactical_Build_Cost_Multiplayer>1500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+		<!--<Tactical_Build_Prerequisites>RC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>-->
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>FLAME_THROWER</Type>
+				<Recharge_Seconds>28.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Jango_Fett_Flame_Thrower </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+			</Unit_Ability>
+
+			<!-- Secondary ability -->
+			<Unit_Ability>
+				<Type>JET_PACK</Type>
+				<Recharge_Seconds>45.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+
+				<!-- Disabling these, since we now want Boba to be able to fly anywhere on the map, even into FOW -->
+				<!-- <Area_Effect_Decal_Distance> 50.0 </Area_Effect_Decal_Distance> -->
+				<!-- <Effective_Radius> 300.0 </Effective_Radius> -->
+				<Effective_Radius> -1.0 </Effective_Radius> <!-- For the Jet Pack jump, the effect radius of -1.0 means unlimited range -->
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
+		<Encyclopedia_Text> TEXT_TOOLTIP_JANGO_FETT </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_BOUNTY_HUNTER </Encyclopedia_Unit_Class>	
+		<CategoryMask> LandHero | SpaceHero </CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+		<Population_Value>1</Population_Value>
+	</HeroCompany>
+
+	<HeroCompany Name="Boba_Fett_Team_NoStealth">
+		<Variant_Of_Existing_Type>Boba_Fett_Team</Variant_Of_Existing_Type>
+		<Company_Units>Boba_Fett_NoStealth</Company_Units>
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+	</HeroCompany>	
+
+	<HeroCompany Name="Jango_Fett_Team_Land_MP">
+		<Variant_Of_Existing_Type>Jango_Fett_Team</Variant_Of_Existing_Type>
+
+		<Tactical_Build_Cost_Multiplayer>1800</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+	</HeroCompany>
+
+	<HeroCompany Name="Jango_Fett_Team_Space_MP">
+		<Variant_Of_Existing_Type>Jango_Fett_Team</Variant_Of_Existing_Type>
+		<Encyclopedia_Good_Against> V19_Fighter NTB630 Arc_170</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Rep_Acclamator_Assault_Ship Rep_Centax_Heavy_Frigate Dreadnaught_Cruiser </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text> TEXT_TOOLTIP_SLAVE_ONE </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR </Encyclopedia_Unit_Class>
+
+		<Tactical_Build_Cost_Multiplayer>1337</Tactical_Build_Cost_Multiplayer> <!-- From 1900 CHECK 2 C if it changed!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+		<Tactical_Build_Time_Seconds>28</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+	</HeroCompany>
+
+	<HeroCompany Name="Boba_Fett_Team_Land_MP">
+		<Variant_Of_Existing_Type>Boba_Fett_Team</Variant_Of_Existing_Type>
+
+		<Tactical_Build_Cost_Multiplayer>1450</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>23</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+	</HeroCompany>
+
+	<HeroCompany Name="Boba_Fett_Team_Space_MP">
+		<Variant_Of_Existing_Type>Boba_Fett_Team</Variant_Of_Existing_Type>
+		<Encyclopedia_Good_Against> X-wing Y-Wing Z-95_Headhunter_Rebel </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Corellian_Corvette A-Wing </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text> TEXT_TOOLTIP_SLAVE_ONE </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR </Encyclopedia_Unit_Class>
+
+		<Tactical_Build_Cost_Multiplayer>1700</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>28</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+	</HeroCompany>
+
+
+	<HeroCompany Name="Piet_Team">
+		<Text_ID>TEXT_HERO_PIET_TEAM</Text_ID>
+		<Icon_Name>i_button_captain_firmus_piett.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Empire</Affiliation>
+		<!-- <Build_Cost_Credits>-1</Build_Cost_Credits> -->
+		<Damage>100</Damage>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>4</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Shuttle_Tyderium</Company_Transport_Unit>
+		<Company_Units>Captain_Piet</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>	
+		<Encyclopedia_Text> TEXT_TOOLTIP_PIET </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER </Encyclopedia_Unit_Class>
+
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>		
+		<SFXEvent_Build_Complete>Unit_Respawn_Piett</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Respawn_Piett</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Piett</SFXEvent_Fleet_Move>
+
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>TRACTOR_BEAM</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 0.8f</Mod_Multiplier>
+				<GUI_Activated_Ability_Name> Piet_Tractor_Beam_Attack_Ability </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+				<Recharge_Seconds>20</Recharge_Seconds>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>ENERGY_WEAPON</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 0.8f</Mod_Multiplier>
+				<GUI_Activated_Ability_Name> Piet_Energy_Weapon_Attack_Ability </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+				<Recharge_Seconds>20</Recharge_Seconds>
+				<Expiration_Seconds>10</Expiration_Seconds>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		<CategoryMask>SpaceHero</CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+	</HeroCompany>
+
+	<HeroCompany Name="Darth_Team">
+		<Text_ID>TEXT_HERO_VADER_TEAM</Text_ID>
+		<Icon_Name>i_button_darth_vader.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Empire</Affiliation>
+		<Damage>100</Damage>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>1</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Shuttle_Tyderium</Company_Transport_Unit>
+		<Company_Units>Darth_Vader</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Force_Sensitive>Yes</Is_Force_Sensitive>
+		<Available_In_Skirmish>yes</Available_In_Skirmish>
+		<Can_Be_Only_One>true</Can_Be_Only_One>
+
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Respawn_Vader</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Respawn_Vader</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Vader</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>FORCE_TELEKINESIS</Type>
+				<Recharge_Seconds>30.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Vader_Force_Telekinesis </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+			</Unit_Ability>
+
+			<!-- Secondary ability -->
+			<Unit_Ability>
+				<Type>FORCE_WHIRLWIND</Type>
+				<Recharge_Seconds>25.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Vader_Force_Whirlwind </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+				<Effective_Radius> 500.0 </Effective_Radius>
+				<Spawned_Object_Type> Force_Whirlwind_Particles </Spawned_Object_Type>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>REPLENISH_WINGMEN</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Encyclopedia_Text> TEXT_TOOLTIP_DARTH_VADER </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SITH_LORD </Encyclopedia_Unit_Class>
+		<CategoryMask>LandHero | SpaceHero</CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+		<Population_Value>1</Population_Value>
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
+	</HeroCompany>
+
+
+	<HeroCompany Name="Darth_Team_Land_Bounty_Hunter_Immune">
+		<Variant_Of_Existing_Type>Darth_Team</Variant_Of_Existing_Type>
+		<Company_Units>Darth_Vader_Bounty_Hunter_Immune</Company_Units>
+		<Available_In_Skirmish>No</Available_In_Skirmish>
+	</HeroCompany>
+
+	<HeroCompany Name="Darth_Team_Land_MP">
+		<Variant_Of_Existing_Type>Darth_Team</Variant_Of_Existing_Type>
+		<Tactical_Build_Cost_Multiplayer>2500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>33</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+	</HeroCompany>
+
+	<HeroCompany Name="Darth_Team_Space_MP">
+		<Variant_Of_Existing_Type>Darth_Team</Variant_Of_Existing_Type>
+		<Encyclopedia_Good_Against> Y-Wing Z-95_Headhunter_Rebel </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Corellian_Corvette X-wing A-Wing </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR </Encyclopedia_Unit_Class>
+		<Tactical_Build_Cost_Multiplayer>2500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>38</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+	</HeroCompany>
+
+
+
+
+
+
+	<HeroCompany Name="General_Veers_Team">
+		<Text_ID>TEXT_HERO_VEERS_TEAM</Text_ID>
+		<Icon_Name>i_button_general_maximillian_veers.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Empire</Affiliation>
+		<!-- <Build_Cost_Credits>-1</Build_Cost_Credits> -->
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>2</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Imperial_ATAT_Barge</Company_Transport_Unit>
+		<Company_Units>General_Veers</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>LandHero</CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+		<Score_Cost_Credits> 18000 </Score_Cost_Credits>
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>		
+		<SFXEvent_Build_Complete>Unit_Respawn_Veers</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Respawn_Veers</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Veers</SFXEvent_Fleet_Move>
+
+		<Population_Value>1</Population_Value>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>MAXIMUM_FIREPOWER</Type>
+				<Expiration_Seconds>4</Expiration_Seconds>
+				<Recharge_Seconds>30</Recharge_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.3f</Mod_Multiplier>
+				<GUI_Activated_Ability_Name>AT_AT_Maximum_Firepower_Attack</GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+				<Projectile_Types_Override>Proj_Veers_AT_AT_Max_Power_Laser_Red</Projectile_Types_Override>
+				<Mod_Flag>ALLOW_TARGET_DIMINISHING_FIREPOWER, false</Mod_Flag>
+			</Unit_Ability>
+
+			<!-- Secondary ability -->
+			<Unit_Ability>
+				<Type>DEPLOY_TROOPERS</Type>
+				<Recharge_Seconds>20</Recharge_Seconds>
+				<Spawned_Object_Type>Veers_Deployed_Imperial_Stormtrooper_Squad</Spawned_Object_Type>
+				<Max_Num_Spawned_Objects>2</Max_Num_Spawned_Objects>
+				<Owner_Attachment_Bone>B_Trooper_00, B_Trooper_01, B_Trooper_02 </Owner_Attachment_Bone>
+
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+		<Tactical_Build_Cost_Multiplayer>4000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+		<Encyclopedia_Text>TEXT_TOOLTIP_VEERS_01</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FIELD_COMMANDER </Encyclopedia_Unit_Class>
+		<Population_Value>1</Population_Value>
+	</HeroCompany>
+
+
+	<HeroCompany Name="Grand_Moff_Tarkin_Team">
+		<Text_ID>TEXT_HERO_TARKIN_TEAM</Text_ID>
+		<Icon_Name>I_BUTTON_GRAND_MOFF_TARKIN.TGA</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>60</Damage>
+		<Affiliation>Empire</Affiliation>
+		<!-- <Build_Cost_Credits>-1</Build_Cost_Credits> -->
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>1</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Shuttle_Tyderium</Company_Transport_Unit>
+		<Company_Units>Grand_Moff_Tarkin</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Encyclopedia_Text>TEXT_TOOLTIP_TARKIN_01</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER </Encyclopedia_Unit_Class>
+
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>		
+		<SFXEvent_Build_Complete>Unit_Respawn_Tarkin</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Respawn_Tarkin</SFXEvent_Hero_Respawned>
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
+		<CategoryMask>NonCombatHero</CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+		<Population_Value>1</Population_Value>
+	</HeroCompany>
+
+
+	<HeroCompany Name="Mara_Jade_Team">
+		<Text_ID>TEXT_HERO_MARA_JADE_TEAM</Text_ID>
+		<Icon_Name>i_button_mara_jade.tga</Icon_Name>
+		<Icon_Name></Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>50</Damage>
+		<Affiliation>Empire</Affiliation>
+		<!-- <Build_Cost_Credits>-1</Build_Cost_Credits> -->
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>4</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Shuttle_Tyderium</Company_Transport_Unit>
+		<Company_Units>Mara_Jade</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Force_Sensitive>Yes</Is_Force_Sensitive>
+		<Is_Stealth_Company>Yes</Is_Stealth_Company>
+		<Available_In_Skirmish>yes</Available_In_Skirmish>
+		<Can_Be_Only_One>true</Can_Be_Only_One>
+
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Respawn_Mara_Jade</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Respawn_Mara_Jade</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Mara_Jade</SFXEvent_Fleet_Move>
+		<Population_Value>1</Population_Value>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+		<Tactical_Build_Cost_Multiplayer>1500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>16</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+		<Encyclopedia_Text> TEXT_TOOLTIP_MARA_JADE </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR </Encyclopedia_Unit_Class>
+		<CategoryMask>LandHero</CategoryMask>
+		<Ranking_In_Category> 5 </Ranking_In_Category>
+		<Score_Cost_Credits> 9000 </Score_Cost_Credits>
+	</HeroCompany>
+
+
+	<HeroCompany Name="Emperor_Palpatine_Team">
+		<Text_ID>TEXT_HERO_EMPEROR_PALPATINE</Text_ID>
+		<Icon_Name>I_BUTTON_EMPEROR_PALPATINE.TGA</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>100</Damage>
+		<Affiliation>Empire</Affiliation>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Shuttle_Tyderium</Company_Transport_Unit>
+		<Company_Units>Emperor_Palpatine</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Force_Sensitive>Yes</Is_Force_Sensitive>
+		<Available_In_Skirmish>yes</Available_In_Skirmish>
+		<Can_Be_Only_One>true</Can_Be_Only_One>
+		<Score_Cost_Credits> 25000 </Score_Cost_Credits>
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>		
+		<SFXEvent_Build_Complete>Unit_Respawn_Emperor</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Respawn_Emperor</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Emperor</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>FORCE_LIGHTNING</Type>
+				<Recharge_Seconds>20.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Emperor_Force_Lightning </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+			</Unit_Ability>
+
+			<!-- Secondary ability -->
+			<Unit_Ability>
+				<Type>AREA_EFFECT_CONVERT</Type>
+				<Recharge_Seconds>70.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+				<Spawned_Object_Type> Proj_Special_Emperor_Instant_Dark_Side_Corrupt_Blast </Spawned_Object_Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+		<Tactical_Build_Cost_Multiplayer>5800</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>45</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+		<Encyclopedia_Text>TEXT_TOOLTIP_PALPATINE_01</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SITH_LORD </Encyclopedia_Unit_Class>
+		<CategoryMask>LandHero</CategoryMask>
+		<Ranking_In_Category> 1 </Ranking_In_Category>
+		<Population_Value>1</Population_Value>
+	</HeroCompany>
+
+
+
+	<!--			            -->
+	<!-- Rebellion Major Heroes -->
+	<!--			            -->
+
+
+	<HeroCompany Name="Commander_Akbar_Team">
+		<Text_ID>TEXT_HERO_AKBAR_TEAM</Text_ID>
+		<Icon_Name>i_button_admiral_akbar.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Rebel</Affiliation>
+		<!-- <Build_Cost_Credits>-1</Build_Cost_Credits> -->
+		<Damage>100</Damage>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>3</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+		<Company_Units>Commander_Akbar</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Encyclopedia_Text> TEXT_TOOLTIP_AKBAR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER </Encyclopedia_Unit_Class>
+		<CategoryMask>SpaceHero</CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>		
+		<SFXEvent_Build_Complete>Unit_Respawn_Ackbar</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Respawn_Ackbar</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Ackbar</SFXEvent_Fleet_Move>
+
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>CONCENTRATE_FIRE</Type>
+				<Effective_Radius>6000</Effective_Radius>
+				<Recharge_Seconds>20</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Particle_Effect>Home_One_Target_Particles</Particle_Effect>
+				<GUI_Activated_Ability_Name>Akbar_Home_One_Ability</GUI_Activated_Ability_Name>
+			</Unit_Ability>
+
+			<!-- Secondary ability -->
+			<Unit_Ability>
+				<Type>DEFEND</Type>
+				<Expiration_Seconds>20</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	5.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,	0.10f</Mod_Multiplier> <!-- make it faster to recharge -->
+				<Mod_Multiplier>ENERGY_REGEN_INTERVAL_MULTIPLIER,	0.10f</Mod_Multiplier> <!-- make it faster to recharge -->
+				<Mod_Multiplier>SPEED_MULTIPLIER,			0.8f</Mod_Multiplier>
+				<Recharge_Seconds>20</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+	</HeroCompany>
+
+
+	<HeroCompany Name="Han_Solo_Team">
+		<Text_ID>TEXT_HERO_HAN_SOLO_TEAM</Text_ID>
+		<Icon_Name>i_button_han_solo_chewbacca.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>50</Damage>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>2</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Millennium_Falcon</Company_Transport_Unit>
+		<Company_Units>Han_Solo, Chewbacca</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Homogeneous>No</Is_Homogeneous>
+		<Is_Stealth_Company>Yes</Is_Stealth_Company>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Formation_Priority>2</Formation_Priority>
+		<Available_In_Skirmish>yes</Available_In_Skirmish>
+		<Can_Be_Only_One>true</Can_Be_Only_One>
+		<Lua_Script>HanSoloPlan</Lua_Script>
+		<Idle_Chase_Range>100.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Population_Value>1</Population_Value>
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>		
+		<SFXEvent_Build_Complete>Unit_Respawn_Han_Solo</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Respawn_Han_Solo</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Han_Solo</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>AREA_EFFECT_STUN</Type>
+				<Recharge_Seconds>20.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+				<Spawned_Object_Type> Proj_Special_Han_Solo_Stun_Blast </Spawned_Object_Type>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Expiration_Seconds> 10.0 </Expiration_Seconds>
+				<Recharge_Seconds> 30.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 2.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>CAPTURE_VEHICLE</Type>
+				<Recharge_Seconds> 20.0 </Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Chewbacca_Vehicle_Thief </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Encyclopedia_Text> TEXT_TOOLTIP_HAN_AND_CHEWIE </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SMUGGLER </Encyclopedia_Unit_Class>
+		<CategoryMask>LandHero | SpaceHero</CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
+	</HeroCompany>
+
+	<HeroCompany Name="Han_Solo_Team_Land_MP">
+		<Variant_Of_Existing_Type>Han_Solo_Team</Variant_Of_Existing_Type>
+
+		<Tactical_Build_Cost_Multiplayer>1800</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>RC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+	</HeroCompany>
+
+	<HeroCompany Name="Han_Solo_Team_Space_MP">
+		<Variant_Of_Existing_Type>Han_Solo_Team</Variant_Of_Existing_Type>
+		<Encyclopedia_Good_Against> TIE_Fighter TIE_Scout </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Tartan_Patrol_Cruiser </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text> TEXT_TOOLTIP_MILLENNIUM_FALCON </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR </Encyclopedia_Unit_Class>
+
+		<Tactical_Build_Cost_Multiplayer>1800</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>33</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+	</HeroCompany>
+
+
+	<HeroCompany Name="Katarn_Team">
+		<Text_ID>TEXT_HERO_KYLE_KATARN</Text_ID>
+		<Icon_Name>i_button_kyle_katarn.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>50</Damage>
+		<Affiliation>Rebel</Affiliation>
+		<!-- <Build_Cost_Credits>-1</Build_Cost_Credits> -->
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>3</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Moldy_Crow</Company_Transport_Unit>
+		<Company_Units>Kyle_Katarn</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Force_Sensitive>Yes</Is_Force_Sensitive>
+		<Is_Stealth_Company>Yes</Is_Stealth_Company>
+		<Available_In_Skirmish>yes</Available_In_Skirmish>
+		<Can_Be_Only_One>true</Can_Be_Only_One>
+
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>		
+		<SFXEvent_Build_Complete>Unit_Respawn_Katarn</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Respawn_Katarn</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Katarn</SFXEvent_Fleet_Move>
+		<Population_Value>1</Population_Value>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+		<Tactical_Build_Cost_Multiplayer>1300</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+		<Encyclopedia_Text> TEXT_TOOLTIP_KYLE_KATARN </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR </Encyclopedia_Unit_Class>
+		<CategoryMask>LandHero</CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+		<Score_Cost_Credits> 9000 </Score_Cost_Credits>
+	</HeroCompany>
+
+
+
+	<HeroCompany Name="Luke_Team">
+		<Text_ID>TEXT_HERO_LUKE_TEAM</Text_ID>
+		<Icon_Name>i_button_luke_skywalker.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>100</Damage>
+		<Affiliation>Rebel</Affiliation>
+		<!-- <Build_Cost_Credits>-1</Build_Cost_Credits> -->
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>5</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Luke_XWing</Company_Transport_Unit>
+		<Company_Units>Luke_Skywalker</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Force_Sensitive>Yes</Is_Force_Sensitive>
+		<Encyclopedia_Text> TEXT_TOOLTIP_LUKE </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR </Encyclopedia_Unit_Class>
+
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>		
+		<SFXEvent_Build_Complete>Unit_Respawn_Luke</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Respawn_Luke</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Luke</SFXEvent_Fleet_Move>
+
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Someone commented this out. This is needed on ALL Red Squadron units! -Oksana -->
+			<Unit_Ability>
+				<Type>LUCKY_SHOT</Type>
+			</Unit_Ability> 
+
+
+			<Unit_Ability>
+				<Type>SPOILER_LOCK</Type>
+
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		2</Mod_Multiplier>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<CategoryMask>SpaceHero</CategoryMask>
+		<Ranking_In_Category> 2 </Ranking_In_Category>
+	</HeroCompany>
+
+
+	<HeroCompany Name="Mon_Mothma_Team">
+		<Text_ID>TEXT_HERO_MON_MOTHMA_TEAM</Text_ID>
+		<Icon_Name>i_button_mon_mothma.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+		<Company_Units>Mon_Mothma</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Encyclopedia_Text>TEXT_TOOLTIP_MON_MOTHMA_01</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR </Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 25000 </Score_Cost_Credits>
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Respawn_Mothma</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Respawn_Mothma</SFXEvent_Hero_Respawned>
+
+		<CategoryMask>NonCombatHero</CategoryMask>
+		<Ranking_In_Category> 1 </Ranking_In_Category>
+		<Population_Value>1</Population_Value>
+	</HeroCompany>
+
+
+	<HeroCompany Name="Obi_Wan_Team">
+		<Text_ID>TEXT_HERO_OBI_WAN_TEAM</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_OBI_WAN_01 TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_JEDI_MASTER </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_obi_wan_kenobi.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>100</Damage>
+		<Affiliation>Rebel</Affiliation>
+		<!-- <Build_Cost_Credits>-1</Build_Cost_Credits> -->
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>5</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+		<Company_Units>Obi_Wan_Kenobi</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Force_Sensitive>Yes</Is_Force_Sensitive>
+		<Available_In_Skirmish>yes</Available_In_Skirmish>
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
+		<Can_Be_Only_One>true</Can_Be_Only_One>
+
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>		
+		<SFXEvent_Build_Complete>Unit_Respawn_Obi_Wan</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Respawn_Obi_Wan</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Obi_Wan</SFXEvent_Fleet_Move>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+		<Tactical_Build_Cost_Multiplayer>2700</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>28</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>RC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+
+			<Unit_Ability>
+				<Type>FORCE_CONFUSE</Type>
+				<Recharge_Seconds>40.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> ObiWan_Confuse </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+				<Effective_Radius> 500.0 </Effective_Radius>
+				<SFXEvent_GUI_Unit_Ability_Activated> Unit_Confuse_Silri </SFXEvent_GUI_Unit_Ability_Activated>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+
+			<!-- Secondary ability -->
+			<Unit_Ability>
+				<Type>TARGETED_INVULNERABILITY</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> </GUI_Activated_Ability_Name>
+				<Spawned_Object_Type> Proj_Special_Obiwan_Instant_Invulnerability_Blast </Spawned_Object_Type>
+				<Effective_Radius>400</Effective_Radius>
+				<Friendly_Ability> true </Friendly_Ability>
+				<Supports_Autofire>True</Supports_Autofire>				
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+		<CategoryMask>LandHero</CategoryMask>
+		<Ranking_In_Category> 2 </Ranking_In_Category>
+		<Population_Value>1</Population_Value>
+	</HeroCompany>
+
+
+
+
+	<!-- NOTE: There are 4 game object XML entries to support the R2 & 3PO team and R2's special abilities (Galactic and Tactical) -->
+	<!-- "Droid_R2D2" in NamedHeroUnits.xml - the idivudual unit -->
+	<!-- "Droid_C3P0" in NamedHeroUnits.xml - the idivudual unit -->
+	<!-- "Droids_Team" in HeroCompnaies.xml -->
+	<!-- "Tactical_R2_3PO_Team" in Containers.xml (has actual framework for tactical special abilities) -->
+
+	<HeroCompany Name="Droids_Team">
+		<Text_ID>TEXT_HERO_DROIDS_TEAM</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DROID </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> TEXT_TOOLTIP_R2D2_AND_C3P0 </Encyclopedia_Text>
+		<Icon_Name>i_button_c3po_r2d2.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>2</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+
+		<!-- IMPORTANT FOR THE TEAM -->
+		<Behavior> DUMMY_GROUND_COMPANY </Behavior>
+
+		<!-- IMPORTANT FOR THE TEAM -->
+		<Create_Team_Type> Tactical_R2_3PO_Team </Create_Team_Type>
+
+		<!-- IMPORTANT FOR THE TEAM -->
+		<Company_Units> Droid_R2D2, Droid_C3P0 </Company_Units>
+
+		<Company_Transport_Unit>Non_Combat_Gallofree</Company_Transport_Unit>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Homogeneous>No</Is_Homogeneous>
+		<Is_Stealth_Company>Yes</Is_Stealth_Company>
+		<Max_Squad_Size> 2 </Max_Squad_Size>
+		<Formation_Priority>2</Formation_Priority>
+		<Available_In_Skirmish>no</Available_In_Skirmish>
+		<Can_Be_Only_One>true</Can_Be_Only_One>
+		<Lua_Script></Lua_Script>
+		<Idle_Chase_Range>100.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Score_Cost_Credits> 7000 </Score_Cost_Credits>
+
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>		
+		<SFXEvent_Build_Complete>Unit_Respawn_C3PO</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Respawn_C3PO</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_C3PO</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>TARGETED_HACK</Type>
+				<Recharge_Seconds>45.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> R2D2_Hack_Ability </GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability> Unit_Hack_Turret_C3PO </SFXEvent_Target_Ability> 
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>TARGETED_REPAIR</Type>
+				<Recharge_Seconds>40.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> R2D2_Repair_Ability </GUI_Activated_Ability_Name>
+				<Friendly_Ability> Yes </Friendly_Ability> <!-- Targeted ability to friendly units -->
+				<SFXEvent_Target_Ability> Unit_Hack_Turret_C3PO </SFXEvent_Target_Ability> 
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+		<Tactical_Build_Cost_Multiplayer>850</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->		
+
+		<CategoryMask>LandHero</CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+	</HeroCompany>
+
+	<HeroCompany Name="Rebel_Refugee_Team">
+		<GUI_Row>1</GUI_Row>
+		<Text_ID>TEXT_UNIT_REBEL_REFUGEE</Text_ID>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Rebel</Affiliation>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+		<Company_Units>Rebel_Refugee</Company_Units>
+		<Icon_Name>i_button_field_commander.tga</Icon_Name>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Is_Stealth_Company>Yes</Is_Stealth_Company>
+
+		<Encyclopedia_Text>TEXT_TOOLTIP_REBEL_REFUGEE</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS</Encyclopedia_Unit_Class>
+
+		<CategoryMask>NonCombatHero</CategoryMask>
+	</HeroCompany>
+
+
+
+	<HeroCompany Name="Dodonna_Team">
+		<Text_ID>TEXT_HERO_DODONNA_TEAM</Text_ID>
+		<Icon_Name>i_button_general_dodonna.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>2</Tech_Level>
+		<Required_Timeline>1</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures/>
+		<Required_Planets/>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+		<Company_Units>General_Dodonna</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Encyclopedia_Text>TEXT_TOOLTIP_DODONNA</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR </Encyclopedia_Unit_Class>
+		<Score_Cost_Credits>10000 </Score_Cost_Credits>
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete/>
+		<SFXEvent_Hero_Respawned/>
+		<CategoryMask> SpaceHero </CategoryMask>
+		<Ranking_In_Category>3</Ranking_In_Category>
+		<Population_Value>1</Population_Value>
+	</HeroCompany>
+
+
+
+
+
+</HeroCompanies>
+

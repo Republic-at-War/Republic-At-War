@@ -1,0 +1,274 @@
+<?xml version="1.0"?>
+
+
+<Sabaoth_Fighter_Data>
+
+
+
+
+	<SpaceUnit Name="Sabaoth_Fighter">
+		<Text_ID>TEXT_UNIT_SABAOTH_FIGHTER</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_SABAOTH_FIGHTER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FIGHTER </Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against> Ntb_630 V19_Fighter </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Republic_light_frigate Republic_Vwing_Fighter Republic_light_assault_cruiser </Encyclopedia_Vulnerable_To>
+		<Icon_Name>i_button_Sabaoth_Fighter.tga</Icon_Name>
+
+		<Space_Model_Name>NV_Sabaoth_Fighter.ALO</Space_Model_Name>
+		<Scale_Factor>0.09</Scale_Factor> <!-- From 0.18 -->
+		<Select_Box_Scale>395</Select_Box_Scale>
+		<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
+		<Mass>0.98</Mass>
+
+		<Mouse_Collide_Override_Sphere_Radius> 50.0 </Mouse_Collide_Override_Sphere_Radius>
+
+		<Max_Speed>5.8</Max_Speed>
+		<Min_Speed>3.5</Min_Speed>
+		<Max_Rate_Of_Turn>2.0</Max_Rate_Of_Turn>
+		<Max_Thrust>0.7</Max_Thrust>
+		<Max_Rate_Of_Roll>3.0</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>40</Bank_Turn_Angle>
+		<Max_Lift>2.67</Max_Lift>
+		<Begin_Turn_Towards_Distance>300.0</Begin_Turn_Towards_Distance>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+
+		<Affiliation>Rebel</Affiliation>
+		<Shield_Points>40</Shield_Points>
+		<Tactical_Health>60</Tactical_Health>
+		<Autoresolve_Health>160</Autoresolve_Health>
+		<Damage>12</Damage>
+		<Shield_Refresh_Rate>4</Shield_Refresh_Rate>
+		<Energy_Capacity>9999</Energy_Capacity>
+		<Energy_Refresh_Rate>180</Energy_Refresh_Rate>
+		<Ship_Class>fighter</Ship_Class>
+
+		<Armor_Type> Armor_Fighter </Armor_Type>
+		<Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+		<Damage_Type>Damage_Fighter</Damage_Type>
+
+		<Is_Escort>yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Squadron_Capacity>0</Squadron_Capacity>
+		<Number_per_Squadron>5</Number_per_Squadron>
+		<Size_Value>5</Size_Value>
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA, HUNT</SpaceBehavior>
+
+		<Projectile_Types>Proj_Ship_Small_Laser_Cannon_Red</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>2</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.3</Projectile_Fire_Pulse_Delay_Seconds>
+
+		<Turret_Rotate_Extent_Degrees>45</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>45</Turret_Elevate_Extent_Degrees>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range>600.0</Space_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Targeting_Max_Attack_Distance>500.0</Targeting_Max_Attack_Distance>
+		<Death_Explosions>Medium_Explosion_Space_Empire</Death_Explosions>
+		<Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
+
+		<Fire_Inaccuracy_Distance> Fighter, 2.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 2.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Transport, 2.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 30.0 </Fire_Inaccuracy_Distance>
+
+		<SFXEvent_Fire>Unit_Sabaoth_Laser</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Star_Viper</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Star_Viper</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Star_Viper</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Star_Viper</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Star_Viper</SFXEvent_Guard>
+		<SFXEvent_Move_Into_Nebula> Unit_Nebula_Star_Viper </SFXEvent_Move_Into_Nebula>
+		<Death_SFXEvent_Start_Die>Unit_A_Wing_Death_SFX</Death_SFXEvent_Start_Die>
+
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Star_Viper </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Star_Viper </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Star_Viper </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Star_Viper </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Star_Viper </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Star_Viper </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_GRAV_Star_Viper </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Star_Viper </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Star_Viper </SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning> Unit_Enemy_Health_Low_Star_Viper </SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning> Unit_Enemy_Health_Critical_Star_Viper </SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<SFXEvent_Ambient_Moving> Unit_Star_Viper_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 10 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Star_Viper_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Property_Flags> SmallShip </Property_Flags>
+		<MovementClass> Space </MovementClass>
+		<CategoryMask> Fighter | AntiBomber</CategoryMask>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Hover_Offset>30.0</Hover_Offset>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Custom_Footprint_Radius> 7.0 </Custom_Footprint_Radius>
+		<FormationOrder>1</FormationOrder>
+		<Out_Of_Combat_Defense_Adjustment>-1.0</Out_Of_Combat_Defense_Adjustment>
+		<Minimum_Follow_Distance>25.0</Minimum_Follow_Distance>
+		<Create_Team>Yes</Create_Team>
+		<AI_Combat_Power>80</AI_Combat_Power>
+		<Collision_Box_Modifier>2.0</Collision_Box_Modifier>
+		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+
+		<Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+		<Spin_Away_On_Death_Chance>0.2</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Time>2.0f</Spin_Away_On_Death_Time>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space</Spin_Away_On_Death_Explosion>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_A_Wing_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<Strafe_Distance>500.0</Strafe_Distance>
+		<Population_Value>0</Population_Value>
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+
+	</SpaceUnit>
+
+
+
+
+
+
+
+
+
+
+
+	<!-- **** SQUADRON INFORMATION **** -->
+
+
+
+
+	<Squadron Name="Sabaoth_Fighter_Squadron">
+		<Text_ID>TEXT_UNIT_SABAOTH_FIGHTER_SQUADRON</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_SABAOTH_FIGHTER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FIGHTER </Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against> Ntb_630 V19_Fighter </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Republic_light_frigate Republic_Vwing_Fighter Republic_light_assault_cruiser </Encyclopedia_Vulnerable_To>
+		<Icon_Name>i_button_Sabaoth_Fighter.tga</Icon_Name>
+
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Formation_Priority>2</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Autoresolve_Health>200</Autoresolve_Health>
+		<Damage>15</Damage>
+		<Affiliation>Rebel</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>250</Build_Cost_Credits>
+		<Build_Time_Seconds>8</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline />
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures>Ground_Hutt_Palace_R</Required_Special_Structures>
+		<Build_Limit_Current_Per_Player>14</Build_Limit_Current_Per_Player>
+
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
+		<Cheap_Bribe_Cost>10</Cheap_Bribe_Cost>
+		<Expensive_Bribe_Cost>20</Expensive_Bribe_Cost>
+		<Tactical_Bribe_Cost>100</Tactical_Bribe_Cost>
+
+		<Squadron_Units>Sabaoth_Fighter, Sabaoth_Fighter, Sabaoth_Fighter, Sabaoth_Fighter, Sabaoth_Fighter</Squadron_Units>
+		<Squadron_Offsets>30.0,0.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,20.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-20.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-45.0,45.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-45.0,-45.0,0.0</Squadron_Offsets>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Star_Viper</SFXEvent_Build_Complete>
+
+		<FormationOrder>2</FormationOrder>
+		<Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>2000.0</Guard_Chase_Range> <!-- From 1000 -->
+		<Idle_Chase_Range>1000.0</Idle_Chase_Range> <!-- From 200 -->
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>300.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Property_Flags> SmallShip </Property_Flags>
+
+		<Population_Value>1</Population_Value>
+		<Score_Cost_Credits> 900</Score_Cost_Credits>
+
+
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>675</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>13</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+	</Squadron>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Sabaoth_Fighter_Data>

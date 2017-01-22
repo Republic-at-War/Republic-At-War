@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arc_Troopers_Data>
+  <GroundInfantry Name="Arc_Trooper">
+    <Text_ID>TEXT_UNIT_ARCTROOPER</Text_ID>
+    <No_Colorization_Color> 237, 78, 78, 255 </No_Colorization_Color>
+    <Encyclopedia_Good_Against> Battledroids Stap Super_Battledroids </Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To> Droideka_Mk1 Hailfire_Tank AAT_Tank </Encyclopedia_Vulnerable_To>
+    <Encyclopedia_Text>TEXT_TOOLTIP_ARC_TROOPER TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDOS</Encyclopedia_Unit_Class>
+    <Land_Model_Name>REI_ARC_TROOPER.ALO</Land_Model_Name>
+    <Garrison_Category> Infantry </Garrison_Category>
+    <Behavior>SELECTABLE</Behavior>
+    <LandBehavior>SURFACE_FX,WALK_LOCOMOTOR,IDLE,TARGETING,WEAPON, STUNNABLE, REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING, GARRISON_UNIT, ABILITY_COUNTDOWN</LandBehavior>
+    <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+    <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+    <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+    <CanCellStack>yes</CanCellStack>
+    <Mass>1.0</Mass>
+    <Icon_Name>I_BUTTON_ARC_TROOPER.tga</Icon_Name>
+    <SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier, High_Ground</SurfaceFX_Name>
+    <Movement_Animation_Speed> 0.8 </Movement_Animation_Speed>
+    <Rotation_Animation_Speed> 20.0 </Rotation_Animation_Speed>
+    <Walk_Animation_Speed> .366 </Walk_Animation_Speed>
+    <Crouch_Animation_Speed> .537 </Crouch_Animation_Speed>
+    <Max_Speed> 1.4 </Max_Speed>
+    <Max_Rate_Of_Turn> 25.0 </Max_Rate_Of_Turn>
+    <Custom_Soft_Footprint_Radius> 5.0 </Custom_Soft_Footprint_Radius>
+    <Custom_Hard_XExtent> 3.0 </Custom_Hard_XExtent>
+    <Custom_Hard_YExtent> 3.0 </Custom_Hard_YExtent>
+    <Space_Layer> Land </Space_Layer>
+    <UnitCollisionClass> Infantry </UnitCollisionClass>
+    <FormationSpacing> .5 </FormationSpacing>
+    <MinimumPushReturnDistance> 10 </MinimumPushReturnDistance>
+    <OverrideAcceleration> .125 </OverrideAcceleration>
+    <OverrideDeceleration> .125 </OverrideDeceleration>
+    <FormationOrder> 2 </FormationOrder>
+    <Scale_Factor> 1.7 </Scale_Factor>
+    <!-- Temp scale change for scale test - change back once models resized -->
+    <!--<Is_Sprite>No</Is_Sprite>-->
+    <Type>Walk</Type>
+    <Deploys>No</Deploys>
+    <Affiliation>Empire</Affiliation>
+    <!--<Is_Sprite>No</Is_Sprite>-->
+    <Political_Control>0</Political_Control>
+    <Size_Value>10</Size_Value>
+    <Damage>8</Damage>
+    <Sensor_Range>60</Sensor_Range>
+    <Shield_Points>0</Shield_Points>
+    <Tactical_Health>125</Tactical_Health> <!-- From 80 -->
+    <Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+    <Energy_Capacity>0</Energy_Capacity>
+    <Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+    <Stealth_Capable>No</Stealth_Capable>
+    <Armor_Type> Armor_Infantry </Armor_Type>
+    <Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+    <Blob_Shadow_Scale>10.0, 10.0</Blob_Shadow_Scale>
+    <Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+    <Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+    <Victory_Relevant>yes</Victory_Relevant>
+    <Projectile_Types>Proj_Hand_Blaster_Blue</Projectile_Types>
+    <Projectile_Fire_Recharge_Seconds>0.3</Projectile_Fire_Recharge_Seconds> <!-- From 0.5 -->
+    <Projectile_Fire_Pulse_Count>6</Projectile_Fire_Pulse_Count>
+    <Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds> <!-- From 0.2 -->
+    <Land_FOW_Reveal_Range>170.0</Land_FOW_Reveal_Range>
+    <Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+    <Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+    <Targeting_Fire_Inaccuracy> Infantry, 1.0 </Targeting_Fire_Inaccuracy>
+    <Targeting_Fire_Inaccuracy> Vehicle, 2.0 </Targeting_Fire_Inaccuracy>
+    <Targeting_Fire_Inaccuracy> Air, 20.0 </Targeting_Fire_Inaccuracy>
+    <Targeting_Fire_Inaccuracy> Structure, 5.0 </Targeting_Fire_Inaccuracy>
+    <SFXEvent_Select>Unit_Select_Clone_Trooper</SFXEvent_Select>
+    <SFXEvent_Move>Unit_Move_Clone_Trooper</SFXEvent_Move>
+    <SFXEvent_Fleet_Move>Unit_Fleet_Move_Clone_Trooper</SFXEvent_Fleet_Move>
+    <SFXEvent_Attack>Unit_Attack_Clone_Trooper</SFXEvent_Attack>
+    <SFXEvent_Guard>Unit_Guard_Clone_Trooper</SFXEvent_Guard>
+    <SFXEvent_Fire>Unit_Storm_Trooper_Fire</SFXEvent_Fire>
+    <Death_SFXEvent_Start_Die>Unit_Stormtrooper_Death</Death_SFXEvent_Start_Die>
+    <SFXEvent_Assist_Move> Unit_Assist_Move_Clone_Trooper </SFXEvent_Assist_Move>
+    <SFXEvent_Assist_Attack> Unit_Assist_Attack_Clone_Trooper </SFXEvent_Assist_Attack>
+    <SFXEvent_Tactical_Build_Started> RHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
+    <SFXEvent_Tactical_Build_Complete> RHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
+    <SFXEvent_Tactical_Build_Cancelled> RHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+    <CategoryMask> LandHero </CategoryMask>
+    <MovementClass> Infantry </MovementClass>
+    <Property_Flags>Fodder</Property_Flags>
+    <OccupationStyle>1x1</OccupationStyle>
+    <No_Reflection_Below_Detail_Level>99</No_Reflection_Below_Detail_Level>
+    <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+    <Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+    <Is_Squashable> Yes </Is_Squashable>
+    <Create_Team>Yes</Create_Team>
+    <AI_Combat_Power>10</AI_Combat_Power>
+    <Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+    <Targeting_Priority_Set>AvoidAntiInfantryTurrets</Targeting_Priority_Set>
+    <Targeting_Max_Attack_Distance>160.0</Targeting_Max_Attack_Distance>
+    <Idle_Chase_Range>60.0</Idle_Chase_Range>
+    <Guard_Chase_Range>220.0</Guard_Chase_Range>
+    <Attack_Move_Response_Range>170.0</Attack_Move_Response_Range>
+    <Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+    <Surface_Type_Cover_Damage_Shield>.5</Surface_Type_Cover_Damage_Shield>
+    <Weather_Category>Infantry</Weather_Category>
+    <Death_Clone>Damage_Force_Whirlwind, Arc_Trooper_Force_Whirlwind_Death_Clone</Death_Clone>
+    <Death_Clone>Damage_Crush, Arc_Trooper_Crush_Death_Clone</Death_Clone>
+    <Death_Fade_Time>0.25</Death_Fade_Time>
+    <Death_Persistence_Duration>0.0</Death_Persistence_Duration>
+    <Presence_Induced_Animations>
+			Attention, 
+				Commander_Cody,
+				Yoda,
+		</Presence_Induced_Animations>
+    <!-- Non-Hero unit abilities description -->
+    <Unit_Abilities_Data SubObjectList="Yes">
+      <!-- Primary ability -->
+      <Unit_Ability>
+        <Type>PROXIMITY_MINES</Type>
+        <Recharge_Seconds>80.0</Recharge_Seconds>
+        <GUI_Activated_Ability_Name> Arc_Proximity </GUI_Activated_Ability_Name>
+        <Effective_Radius> 500.0 </Effective_Radius>
+        <SFXEvent_Target_Ability />
+        <Area_Effect_Decal_Distance> 50.0 </Area_Effect_Decal_Distance>
+        <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+      </Unit_Ability>
+      <Unit_Ability>
+        <Type>AREA_EFFECT_STUN</Type>
+        <Recharge_Seconds>40.0</Recharge_Seconds>
+        <GUI_Activated_Ability_Name></GUI_Activated_Ability_Name>
+        <!-- GUI Command Bar support -->
+        <Spawned_Object_Type> Proj_Special_Han_Solo_Stun_Blast </Spawned_Object_Type>
+        <Supports_Autofire>True</Supports_Autofire>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+    <Abilities SubObjectList="Yes">
+      <Proximity_Mines_Ability Name="Arc_Proximity">
+        <Activation_Style> User_Input </Activation_Style>
+        <Activation_Min_Range>0.0</Activation_Min_Range>
+        <Activation_Max_Range>70.0</Activation_Max_Range>
+        <Mine_Type>Proximity_Mine</Mine_Type>
+        <Trigger_Radius>30</Trigger_Radius>
+        <Number_Of_Mines>8</Number_Of_Mines>
+        <Activation_Time_In_Seconds>3</Activation_Time_In_Seconds>
+        <Activate_SFX>Unit_Lightsaber_Projectile_Block</Activate_SFX>
+        <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+      </Proximity_Mines_Ability>
+      <System_Spy_Ability Name="Arc_System_Spy">
+        <Initially_Enabled>Yes</Initially_Enabled>
+        <Activation_Style>Galactic_Automatic</Activation_Style>
+        <Causes_Despawn>No</Causes_Despawn>
+        <Duration_In_Secs>-1.0</Duration_In_Secs>
+        <See_Force_Sensitive_Heroes>Yes</See_Force_Sensitive_Heroes>
+        <See_Super_Weapons>Yes</See_Super_Weapons>
+      </System_Spy_Ability>
+      <Galactic_Stealth_Ability Name="Arc_Galactic_Stealth">
+        <Initially_Enabled>Yes</Initially_Enabled>
+        <Activation_Style>Galactic_Automatic</Activation_Style>
+        <Causes_Despawn>No</Causes_Despawn>
+        <Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+      </Galactic_Stealth_Ability>
+    </Abilities>
+    <Movie_Object>false</Movie_Object>
+  </GroundInfantry>
+  <GroundInfantry Name="Arc_Trooper_Force_Whirlwind_Death_Clone">
+    <Variant_Of_Existing_Type>Arc_Trooper</Variant_Of_Existing_Type>
+    <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+    <Specific_Death_Anim_Index />
+  </GroundInfantry>
+  <GroundInfantry Name="Arc_Trooper_Crush_Death_Clone">
+    <Variant_Of_Existing_Type>Arc_Trooper</Variant_Of_Existing_Type>
+    <Specific_Death_Anim_Type>Crushed</Specific_Death_Anim_Type>
+    <Specific_Death_Anim_Index />
+  </GroundInfantry>
+  <GroundInfantry Name="Arc_Trooper_Lt">
+    <Variant_Of_Existing_Type>Arc_Trooper</Variant_Of_Existing_Type>
+    <Text_ID>
+      <Text_ID>TEXT_UNIT_ARCTROOPER</Text_ID>
+    </Text_ID>
+    <LandBehavior>LANDING, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR,IDLE,WEAPON, STUNNABLE, REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING, ABILITY_COUNTDOWN</LandBehavior>
+    <Is_Squashable> Yes </Is_Squashable>
+    <Space_Layer> None </Space_Layer>
+  </GroundInfantry>
+  <GroundInfantry Name="Arc_Trooper_Captain">
+    <Variant_Of_Existing_Type>Arc_Trooper</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_UNIT_ARCTROOPER_CAPTAIN</Text_ID>
+    <Land_Model_Name>REI_ARC_TROOPER_CAPT.ALO</Land_Model_Name>
+    <LandBehavior>LANDING, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR,IDLE,WEAPON, STUNNABLE, REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING, ABILITY_COUNTDOWN</LandBehavior>
+    <Tactical_Health>150</Tactical_Health> <!-- From 85 -->
+    <Is_Squashable> Yes </Is_Squashable>
+    <Space_Layer> None </Space_Layer>
+    <Death_Clone>Damage_Force_Whirlwind, Arc_Trooper_Captain_Force_Whirlwind_Death_Clone</Death_Clone>
+    <Death_Clone>Damage_Crush, Arc_Trooper_Captain_Crush_Death_Clone</Death_Clone>
+  </GroundInfantry>
+  <GroundInfantry Name="Arc_Trooper_Captain_Force_Whirlwind_Death_Clone">
+    <Variant_Of_Existing_Type>Arc_Trooper_Captain</Variant_Of_Existing_Type>
+    <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+    <Specific_Death_Anim_Index />
+  </GroundInfantry>
+  <GroundInfantry Name="Arc_Trooper_Captain_Crush_Death_Clone">
+    <Variant_Of_Existing_Type>Arc_Trooper_Captain</Variant_Of_Existing_Type>
+    <Specific_Death_Anim_Type>Crushed</Specific_Death_Anim_Type>
+    <Specific_Death_Anim_Index />
+  </GroundInfantry>
+  <GroundInfantry Name="Arc_Trooper_Z6">
+    <Variant_Of_Existing_Type>Arc_Trooper</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_UNIT_ARCTROOPER</Text_ID>
+    <Land_Model_Name>REI_ARC_TROOPER_Z6.ALO</Land_Model_Name>
+    <LandBehavior>LANDING, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR,IDLE,WEAPON, STUNNABLE, REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING, ABILITY_COUNTDOWN</LandBehavior>
+    <Scale_Factor> 1.5 </Scale_Factor>
+    <Max_Rate_Of_Turn> 20.0 </Max_Rate_Of_Turn>
+    <Movement_Animation_Speed> 1.0 </Movement_Animation_Speed>
+    <Projectile_Types>Proj_Hand_Blaster_Blue_Z6</Projectile_Types>
+    <Projectile_Fire_Recharge_Seconds>1.2</Projectile_Fire_Recharge_Seconds>
+    <Projectile_Fire_Pulse_Count>60</Projectile_Fire_Pulse_Count>
+    <Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+    <SFXEvent_Fire>Unit_Z6_Fire</SFXEvent_Fire>
+    <Is_Squashable> Yes </Is_Squashable>
+    <Space_Layer> None </Space_Layer>
+    <Death_Clone>Damage_Force_Whirlwind, Arc_Trooper_Z6_Force_Whirlwind_Death_Clone</Death_Clone>
+    <Death_Clone>Damage_Crush, Arc_Trooper_Z6_Crush_Death_Clone</Death_Clone>
+  </GroundInfantry>
+  <GroundInfantry Name="Arc_Trooper_Z6_Force_Whirlwind_Death_Clone">
+    <Variant_Of_Existing_Type>Arc_Trooper_Z6</Variant_Of_Existing_Type>
+    <Specific_Death_Anim_Type>DIE_00</Specific_Death_Anim_Type>
+    <Specific_Death_Anim_Index />
+  </GroundInfantry>
+  <GroundInfantry Name="Arc_Trooper_Z6_Crush_Death_Clone">
+    <Variant_Of_Existing_Type>Arc_Trooper_Z6</Variant_Of_Existing_Type>
+    <Specific_Death_Anim_Type>DIE_00</Specific_Death_Anim_Type>
+    <Specific_Death_Anim_Index />
+  </GroundInfantry>
+  <GroundCompany Name="Republic_Arc_Trooper_Squad">
+    <Text_ID>TEXT_UNIT_ARCTROOPER_SQUAD</Text_ID>
+    <Encyclopedia_Good_Against> Battledroids Stap Super_Battledroids </Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To> Destroyer_Droid Hailfire_Tank AAT_Tank </Encyclopedia_Vulnerable_To>
+    <Encyclopedia_Text>TEXT_TOOLTIP_ARC_TROOPER TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDOS</Encyclopedia_Unit_Class>
+    <GUI_Row> 1 </GUI_Row>
+    <Is_Dummy>Yes</Is_Dummy>
+    <Damage>8</Damage>
+    <Autoresolve_Health>100</Autoresolve_Health>
+    <!-- changed to reflect the real health of the units-->
+    <Affiliation>Empire</Affiliation>
+    <Build_Cost_Credits>125</Build_Cost_Credits> <!-- From 175 -->
+    <Build_Time_Seconds>20</Build_Time_Seconds>
+    <!--<Build_Time_Seconds>15</Build_Time_Seconds>-->
+    <Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+    <Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+    <Tech_Level>3</Tech_Level>
+    <Required_Timeline>0</Required_Timeline>
+    <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>0</Required_Star_Base_Level>
+    <Required_Special_Structures>Ground_Arc_Facility</Required_Special_Structures>
+    <!--<Required_Planets>Carida</Required_Planets>-->
+    <Behavior>DUMMY_GROUND_COMPANY</Behavior>
+    <Formation_Priority>1</Formation_Priority>
+    <Is_Escort>yes</Is_Escort>
+    <Ship_Class>infantry</Ship_Class>
+    <Company_Transport_Unit>Republic_Nu_Shuttle</Company_Transport_Unit>
+    <Create_Team_Type>Arctrooper_Team </Create_Team_Type>
+    <!-- AI  Changed to 18 troopers in squads of 9 -->
+    <Company_Units>
+		Arc_Trooper_Lt,
+		Arc_Trooper_Lt,
+		Arc_Trooper_Lt,
+		Arc_Trooper_Captain,
+		Arc_Trooper_Z6
+		</Company_Units>
+    <Max_Squad_Size> 5 </Max_Squad_Size>
+    <Icon_Name>I_BUTTON_ARC_TROOPER.tga</Icon_Name>
+    <SFXEvent_Build_Started>RHD_Build_Troops</SFXEvent_Build_Started>
+    <SFXEvent_Build_Cancelled>RHD_Training_Canceled</SFXEvent_Build_Cancelled>
+    <SFXEvent_Build_Complete>Unit_Complete_Clone_Trooper</SFXEvent_Build_Complete>
+    <SFXEvent_Fleet_Move>Unit_Fleet_Move_Clone_Trooper</SFXEvent_Fleet_Move>
+    <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+    <Tactical_Build_Cost_Multiplayer>125</Tactical_Build_Cost_Multiplayer> <!-- From 350 -->
+    <Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+    <Tactical_Build_Prerequisites />
+    <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+    <!--<Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>-->
+    <!--<MULTIPLAYER SKIRMISH VALUES END>-->
+    <!-- Non-Hero unit abilities description -->
+    <Unit_Abilities_Data SubObjectList="Yes">
+      <!-- Primary ability -->
+      <Unit_Ability>
+        <Type>PROXIMITY_MINES</Type>
+        <Recharge_Seconds>80.0</Recharge_Seconds>
+        <GUI_Activated_Ability_Name> Arc_Proximity </GUI_Activated_Ability_Name>
+        <Effective_Radius> 500.0 </Effective_Radius>
+        <SFXEvent_Target_Ability />
+        <Area_Effect_Decal_Distance> 50.0 </Area_Effect_Decal_Distance>
+        <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+      </Unit_Ability>
+      <Unit_Ability>
+        <Type>AREA_EFFECT_STUN</Type>
+        <Recharge_Seconds>40.0</Recharge_Seconds>
+        <GUI_Activated_Ability_Name></GUI_Activated_Ability_Name>
+        <!-- GUI Command Bar support -->
+        <Spawned_Object_Type> Proj_Special_Han_Solo_Stun_Blast </Spawned_Object_Type>
+        <Supports_Autofire>True</Supports_Autofire>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+    <Abilities SubObjectList="Yes">
+      <Proximity_Mines_Ability Name="Arc_Proximity">
+        <Activation_Style> User_Input </Activation_Style>
+        <Activation_Min_Range>0.0</Activation_Min_Range>
+        <Activation_Max_Range>70.0</Activation_Max_Range>
+        <Mine_Type>Proximity_Mine</Mine_Type>
+        <Trigger_Radius>30</Trigger_Radius>
+        <Number_Of_Mines>8</Number_Of_Mines>
+        <Activation_Time_In_Seconds>3</Activation_Time_In_Seconds>
+        <Activate_SFX>Unit_Lightsaber_Projectile_Block</Activate_SFX>
+        <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+      </Proximity_Mines_Ability>
+    </Abilities>
+    <Maintenance_Cost>0.05</Maintenance_Cost>
+    <Population_Value>1</Population_Value>
+    <Score_Cost_Credits>54</Score_Cost_Credits>
+  </GroundCompany>
+  <GroundCompany Name="LAAT_Deployed_Arctrooper_Squad">
+    <Text_ID>TEXT_UNIT_ARCTROOPER_SQUAD</Text_ID>
+    <Encyclopedia_Good_Against> Battledroids Stap Super_Battledroids </Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To> Destroyer_Droid Hailfire_Tank AAT_Tank </Encyclopedia_Vulnerable_To>
+    <Encyclopedia_Text>TEXT_TOOLTIP_ARC_TROOPER TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDOS</Encyclopedia_Unit_Class>
+    <GUI_Row> 1 </GUI_Row>
+    <Is_Dummy>Yes</Is_Dummy>
+    <Damage>50</Damage>
+    <Autoresolve_Health>250</Autoresolve_Health>
+    <!-- changed to reflect the real health of the units-->
+    <Affiliation>Empire</Affiliation>
+    <Build_Cost_Credits>50</Build_Cost_Credits>
+    <Build_Time_Seconds>1</Build_Time_Seconds>
+    <!--<Build_Time_Seconds>15</Build_Time_Seconds>-->
+    <Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+    <Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+    <Tech_Level>99</Tech_Level>
+    <Required_Timeline>0</Required_Timeline>
+    <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>0</Required_Star_Base_Level>
+    <Required_Special_Structures />
+    <!--<Required_Planets>Carida</Required_Planets>-->
+    <Behavior>DUMMY_GROUND_COMPANY</Behavior>
+    <Formation_Priority>1</Formation_Priority>
+    <Is_Escort>yes</Is_Escort>
+    <Is_Homogeneous>No</Is_Homogeneous>
+    <Ship_Class>infantry</Ship_Class>
+    <Company_Transport_Unit>Republic_Nu_Shuttle</Company_Transport_Unit>
+    <Create_Team_Type>Arctrooper_Team </Create_Team_Type>
+    <!-- AI  Changed to 18 troopers in squads of 9 -->
+    <Company_Units>
+		Arc_Trooper_Lt,
+		Arc_Trooper_Lt,
+		Arc_Trooper_Captain,
+		Arc_Trooper_Z6
+		</Company_Units>
+    <Max_Squad_Size> 5 </Max_Squad_Size>
+    <Icon_Name>I_BUTTON_ARC_TROOPER.tga</Icon_Name>
+    <SFXEvent_Build_Started>RHD_Build_Troops</SFXEvent_Build_Started>
+    <SFXEvent_Build_Cancelled>RHD_Training_Canceled</SFXEvent_Build_Cancelled>
+    <SFXEvent_Build_Complete>Unit_Complete_Clone_Trooper</SFXEvent_Build_Complete>
+    <SFXEvent_Fleet_Move>Unit_Fleet_Move_Clone_Trooper</SFXEvent_Fleet_Move>
+    <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+    <Tactical_Build_Cost_Multiplayer>125</Tactical_Build_Cost_Multiplayer> <!-- From 500 -->
+    <Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+    <Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+    <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+    <!--<Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>-->
+    <!--<MULTIPLAYER SKIRMISH VALUES END>-->
+    <!-- Non-Hero unit abilities description -->
+    <Unit_Abilities_Data SubObjectList="Yes">
+      <!-- Primary ability -->
+      <Unit_Ability>
+        <Type>PROXIMITY_MINES</Type>
+        <Recharge_Seconds>80.0</Recharge_Seconds>
+        <GUI_Activated_Ability_Name> Arc_Proximity </GUI_Activated_Ability_Name>
+        <Effective_Radius> 500.0 </Effective_Radius>
+        <SFXEvent_Target_Ability />
+        <Area_Effect_Decal_Distance> 50.0 </Area_Effect_Decal_Distance>
+        <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+      </Unit_Ability>
+      <Unit_Ability>
+        <Type>AREA_EFFECT_STUN</Type>
+        <Recharge_Seconds>40.0</Recharge_Seconds>
+        <GUI_Activated_Ability_Name></GUI_Activated_Ability_Name>
+        <!-- GUI Command Bar support -->
+        <Spawned_Object_Type> Proj_Special_Han_Solo_Stun_Blast </Spawned_Object_Type>
+        <Supports_Autofire>True</Supports_Autofire>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+    <Abilities SubObjectList="Yes">
+      <Proximity_Mines_Ability Name="Arc_Proximity">
+        <Activation_Style> User_Input </Activation_Style>
+        <Activation_Min_Range>0.0</Activation_Min_Range>
+        <Activation_Max_Range>70.0</Activation_Max_Range>
+        <Mine_Type>Proximity_Mine</Mine_Type>
+        <Trigger_Radius>30</Trigger_Radius>
+        <Number_Of_Mines>8</Number_Of_Mines>
+        <Activation_Time_In_Seconds>3</Activation_Time_In_Seconds>
+        <Activate_SFX>Unit_Lightsaber_Projectile_Block</Activate_SFX>
+        <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+      </Proximity_Mines_Ability>
+    </Abilities>
+    <Maintenance_Cost>0.05</Maintenance_Cost>
+    <Population_Value>1</Population_Value>
+    <Score_Cost_Credits>54</Score_Cost_Credits>
+  </GroundCompany>
+  <Container Name="Arctrooper_Team">
+    <Select_Box_Scale>75</Select_Box_Scale>
+    <Text_ID>TEXT_UNIT_ARCTROOPER_SQUAD</Text_ID>
+    <Encyclopedia_Good_Against> Battledroids Stap Super_Battledroids </Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To> Destroyer_Droid Hailfire_Tank AAT_Tank </Encyclopedia_Vulnerable_To>
+    <Encyclopedia_Text>TEXT_TOOLTIP_ARC_TROOPER TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDOS</Encyclopedia_Unit_Class>
+    <Show_Name>No</Show_Name>
+    <Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+    <LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+    <SpaceBehavior>REVEAL</SpaceBehavior>
+    <Garrison_Category> Infantry </Garrison_Category>
+    <Land_FOW_Reveal_Range>270.0</Land_FOW_Reveal_Range>
+    <Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+    <MovementClass>Infantry</MovementClass>
+    <Max_Speed> 1.4 </Max_Speed>
+    <Max_Rate_Of_Turn>180.0</Max_Rate_Of_Turn>
+    <Space_Layer> Land </Space_Layer>
+    <UnitCollisionClass> Infantry </UnitCollisionClass>
+    <FormationSpacing> .5 </FormationSpacing>
+    <MovementClass> Infantry </MovementClass>
+    <OccupationStyle>1x1</OccupationStyle>
+    <Is_Squashable> true </Is_Squashable>
+    <MovementPredictionInterval> 2.5 </MovementPredictionInterval>
+    <ContainerArrangement> Dartboard </ContainerArrangement>
+    <FormationOrder> 2 </FormationOrder>
+    <OverrideAcceleration> .1 </OverrideAcceleration>
+    <OverrideDeceleration> .1 </OverrideDeceleration>
+    <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+    <Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+    <Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+    <Icon_Name>I_BUTTON_ARC_TROOPER.tga</Icon_Name>
+    <Targeting_Max_Attack_Distance>180.0</Targeting_Max_Attack_Distance>
+    <Idle_Chase_Range>50.0</Idle_Chase_Range>
+    <Guard_Chase_Range>200.0</Guard_Chase_Range>
+    <Attack_Move_Response_Range>130.0</Attack_Move_Response_Range>
+    <Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+    <!-- Non-Hero unit abilities description -->
+    <Unit_Abilities_Data SubObjectList="Yes">
+      <!-- Primary ability -->
+      <Unit_Ability>
+        <Type>PROXIMITY_MINES</Type>
+        <Recharge_Seconds>80.0</Recharge_Seconds>
+        <GUI_Activated_Ability_Name> Arc_Proximity </GUI_Activated_Ability_Name>
+        <Effective_Radius> 500.0 </Effective_Radius>
+        <SFXEvent_Target_Ability />
+        <Area_Effect_Decal_Distance> 50.0 </Area_Effect_Decal_Distance>
+        <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+      </Unit_Ability>
+      <Unit_Ability>
+        <Type>AREA_EFFECT_STUN</Type>
+        <Recharge_Seconds>40.0</Recharge_Seconds>
+        <GUI_Activated_Ability_Name></GUI_Activated_Ability_Name>
+        <!-- GUI Command Bar support -->
+        <Spawned_Object_Type> Proj_Special_Han_Solo_Stun_Blast </Spawned_Object_Type>
+        <Supports_Autofire>True</Supports_Autofire>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+    <Abilities SubObjectList="Yes">
+      <Proximity_Mines_Ability Name="Arc_Proximity">
+        <Activation_Style> User_Input </Activation_Style>
+        <Activation_Min_Range>0.0</Activation_Min_Range>
+        <Activation_Max_Range>70.0</Activation_Max_Range>
+        <Mine_Type>Proximity_Mine</Mine_Type>
+        <Trigger_Radius>30</Trigger_Radius>
+        <Number_Of_Mines>8</Number_Of_Mines>
+        <Activation_Time_In_Seconds>3</Activation_Time_In_Seconds>
+        <Activate_SFX>Unit_Lightsaber_Projectile_Block</Activate_SFX>
+        <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+      </Proximity_Mines_Ability>
+    </Abilities>
+    <CategoryMask>LandHero</CategoryMask>
+  </Container>
+</Arc_Troopers_Data>

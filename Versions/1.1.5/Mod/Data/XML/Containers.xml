@@ -1,0 +1,2055 @@
+<?xml version="1.0"?>
+<Containers>
+
+	<Container Name="Galactic_Fleet">
+		<Text_ID>TEXT_OBJECT_GALACTIC_FLEET</Text_ID>
+		<Galactic_Model_Name>w_planet_fleet.alo</Galactic_Model_Name>
+        <Pre_Lit>Yes</Pre_Lit>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Show_Name>No</Show_Name>
+		<Name_Adjust>-20, -12, 0.1</Name_Adjust>
+		<Behavior>SELECTABLE, FLEET, FLEET_LOCOMOTOR</Behavior>
+		<!--<Political_Control>1</Political_Control>-->
+		<Political_Faction>Empire</Political_Faction>
+		<Pre_Lit>yes</Pre_Lit>
+		<Layer_Z_Adjust>0.5</Layer_Z_Adjust>
+		 <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+	
+		 <!-- "Scale" for containers' icons is the worls-space ACTUAL SIZE of these icons. -->
+		 <!--  This is done because containers don't have constant size/radius and -->
+		 <!-- change constantly, whereas supposed to be shown on Radar as one constant-sized blip -->
+		 <Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		 <Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+		 
+	</Container>
+
+	<Container Name="Galactic_Squadron">
+		<Text_ID>TEXT_OBJECT_GALACTIC_SQUADRON</Text_ID>
+        <Pre_Lit>Yes</Pre_Lit>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Show_Name>No</Show_Name>
+		<Name_Adjust>-20, -12, 0.1</Name_Adjust>
+		
+		 <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		 <Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+		 
+		<Behavior>FLEET</Behavior>
+	</Container>
+
+	<Container Name="Team">
+		<Text_ID>TEXT_OBJECT_TEAM</Text_ID>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI,TEAM_LOCOMOTOR</Behavior>
+		<LandBehavior>REVEAL</LandBehavior>
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<MovementClass>Space</MovementClass>
+		 <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		 <Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		 <Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+		 
+		 
+	</Container>
+
+	
+	<Container Name="Red_Squadron_Container">
+		<Text_ID>TEXT_HERO_RED_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_RED_SQUADRON </Encyclopedia_Unit_Class>		
+		<Encyclopedia_Good_Against> TIE_Fighter TIE_Bomber Death_Star </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Tartan_Patrol_Cruiser </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_RED_SQUADRON</Encyclopedia_Text>
+		<Show_Name>No</Show_Name>
+		<Icon_Name>i_button_luke_skywalker.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Autoresolve_Health>1600</Autoresolve_Health>
+		<Damage>50</Damage>
+		<Affiliation>Rebel</Affiliation>
+		<AI_Combat_Power>3000</AI_Combat_Power>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>5</Tech_Level>
+		<Hyperspace>yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		
+		<Behavior>TEAM, TEAM_LOCOMOTOR, SELECTABLE, TARGETING, UNIT_AI</Behavior>
+		<SpaceBehavior> REVEAL, ABILITY_COUNTDOWN</SpaceBehavior>
+	
+		<Max_Speed>5.0</Max_Speed>
+		<Min_Speed>1.5</Min_Speed>
+		
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<MovementClass>Space</MovementClass>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+	 			
+	 	<CategoryMask>SpaceHero | Fighter | AntiCapital | AntiSuper</CategoryMask>
+		<FormationOrder>2</FormationOrder>
+		<Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>200.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>300.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Space_FOW_Reveal_Range>1000.0</Space_FOW_Reveal_Range>
+		
+		<Targeting_Max_Attack_Distance>1000.0</Targeting_Max_Attack_Distance>
+		
+		<Squadron_Offsets>60.0,0.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,60.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,-60.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,0.0,0.0</Squadron_Offsets>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>15000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>120</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+		
+		<!-- Unit abilities description-->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				 <Type>LUCKY_SHOT</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 600</Mod_Multiplier>
+				<Projectile_Types_Override>Proj_Ship_Lucky_Shot_Medium_Laser_Cannon_Red</Projectile_Types_Override>
+				<GUI_Activated_Ability_Name> Red_Squadron_Lucky_Shot </GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability> Unit_Lucky_Shot_Luke </SFXEvent_Target_Ability>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		
+		<Unit_Ability>
+				<Type>SPOILER_LOCK</Type>
+			
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		2</Mod_Multiplier>
+		</Unit_Ability>
+			
+		</Unit_Abilities_Data> 
+		
+		<Abilities SubObjectList="Yes">
+			<Lucky_Shot_Attack_Ability Name="Red_Squadron_Lucky_Shot">
+				<Activation_Style> User_Input </Activation_Style>
+				<!-- We only consider the following unit types "valid targets": -->
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<!-- <SFXEvent_Activate>Unit_Flamethrower_Fire</SFXEvent_Activate> -->
+			</Lucky_Shot_Attack_Ability>
+		</Abilities>
+			
+	</Container>
+
+	
+	<Container Name="Y_Wing_Squadron_Container">
+		<Variant_Of_Existing_Type>Darth_Vader_TIE_Fighter_Container</Variant_Of_Existing_Type>
+		<Encyclopedia_Good_Against> Star_Destroyer Victory_Destroyer Acclamator_Assault_Ship </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> TIE_Fighter Tartan_Patrol_Cruiser Pirate_Fighter </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text>TEXT_TOOLTIP_Y_WING</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_BOMBER </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_Y_WING_SQUADRON</Text_ID>
+		<Icon_Name>i_button_y_wing.tga</Icon_Name>
+		<GUI_Model_Name>RV_ywing.ALO</GUI_Model_Name>
+		<GUI_Distance>120</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		
+		<Behavior>TEAM, TEAM_LOCOMOTOR, SELECTABLE, TARGETING, UNIT_AI</Behavior>
+		<SpaceBehavior> REVEAL, ABILITY_COUNTDOWN</SpaceBehavior>
+	
+		<Icon_Name />
+		
+		<CategoryMask>Bomber | AntiFrigate | AntiCapital</CategoryMask>
+		<Max_Speed>5.0</Max_Speed>
+		<Min_Speed>1.5</Min_Speed>
+		<Hyperspace>yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+
+		<!-- Unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>ION_CANNON_SHOT</Type>
+				<Recharge_Seconds>20.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name>Y_Wing_Container_Ion_Cannon_Shot</GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+				<Projectile_Types_Override>Proj_Ion_Cannon_Medium_Laser_Blue</Projectile_Types_Override>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		<Abilities SubObjectList="Yes">
+			<Ion_Cannon_Shot_Attack_Ability Name="Y_Wing_Container_Ion_Cannon_Shot">
+				<Activation_Style> User_Input </Activation_Style>
+				<!-- We only consider the following unit types "valid targets": -->
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+			</Ion_Cannon_Shot_Attack_Ability>
+		</Abilities>
+		
+	</Container>
+	
+	<Container Name="Darth_Vader_TIE_Fighter_Container">
+		<Text_ID> TEXT_HERO_DARTH_VADER </Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_TIE_ADVANCED </Encyclopedia_Text>
+		<Encyclopedia_Text> TEXT_TOOLTIP_DARTH_VADER </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR </Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against> Vulture_Droid_Fighter Tri_Droid_Fighter </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Cis_Patrol_Frigate </Encyclopedia_Vulnerable_To>
+		<Show_Name>No</Show_Name>
+		<Icon_Name>i_button_darth_vader.tga</Icon_Name>
+		
+		<!-- AJA 3/18/2005 - Vader's fighting isn't a hero, but it does contain a hero. If
+		you specifically need this flag set, come talk to Andre before re-enabling it. No
+		other hero transport claims to be a hero, so this seemed like a strange exception case. -->
+		<!--<Is_Named_Hero>Yes</Is_Named_Hero>-->
+				
+		
+		<Formation_Priority>1</Formation_Priority>
+		<Autoresolve_Health>1600</Autoresolve_Health>
+		<Damage>50</Damage>
+		<Affiliation>Rebel</Affiliation>
+		<AI_Combat_Power>3000</AI_Combat_Power>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>5</Tech_Level>
+		
+		<Behavior>TEAM,SELECTABLE,UNIT_AI,TEAM_LOCOMOTOR, TARGETING</Behavior>
+		<SpaceBehavior> REVEAL</SpaceBehavior>
+	
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<MovementClass>Space</MovementClass>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+	 			
+	 	<CategoryMask>SpaceHero | Fighter </CategoryMask>
+		<FormationOrder>2</FormationOrder>
+		<Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>200.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>300.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Space_FOW_Reveal_Range>1000.0</Space_FOW_Reveal_Range>
+		
+		<Targeting_Max_Attack_Distance>1000.0</Targeting_Max_Attack_Distance>
+		
+		<Squadron_Offsets>50.0,0.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>10.0,40.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>10.0,-40.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-50.0,20.0,10.0</Squadron_Offsets>
+		<Squadron_Offsets>-50.0,-20.0,10.0</Squadron_Offsets>
+		<Squadron_Offsets>-95.0,60.0,-10.0</Squadron_Offsets>
+		<Squadron_Offsets>-95.0,-60.0,-10.0</Squadron_Offsets>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>15000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>120</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+		<Max_Speed>5.0</Max_Speed>
+		<Min_Speed>1.5</Min_Speed>
+	
+		<Lua_Script>ObjectScript_VaderTIESquadron</Lua_Script>
+		
+		<!-- Unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>REPLENISH_WINGMEN</Type>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+
+	<Container Name="Stormtrooper_Team">
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Text_ID>TEXT_IMPERIAL_STORMTROOPER_SQUAD</Text_ID>
+		<Encyclopedia_Good_Against> Rebel_Trooper Plex_Soldier </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> MPTL Rebel_Infiltrator UC_Rebel_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text>TEXT_TOOLTIP_STORMTROOPER TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+
+		<Max_Speed> .8 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> 1 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Rows </ContainerArrangement>
+		<FormationOrder> 2 </FormationOrder>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+		
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Icon_Name>i_button_storm_trooper.tga</Icon_Name>
+
+		<Targeting_Max_Attack_Distance>140.0</Targeting_Max_Attack_Distance>
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>130.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>		
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+
+	</Container>
+
+	<Container Name="Empire_Field_Commander_Team">
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Text_ID>TEXT_HERO_UNIT_FIELD_EMPIRE</Text_ID>
+		<Encyclopedia_Good_Against> Rebel_Trooper </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> MPTL UC_Rebel_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text>TEXT_TOOLTIP_FIELD_COMMANDER TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR</Encyclopedia_Unit_Class>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Garrison_Category> Infantry </Garrison_Category>
+
+		<Max_Speed> .8 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> 1 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Rows </ContainerArrangement>
+		<FormationOrder> 2 </FormationOrder>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+		
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Icon_Name>i_button_EI_field_commander.tga</Icon_Name>
+
+		<Targeting_Max_Attack_Distance>140.0</Targeting_Max_Attack_Distance>
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>130.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Tactical_Bribe_Cost>150</Tactical_Bribe_Cost>
+		
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		
+	
+		<CategoryMask>Infantry</CategoryMask>
+	</Container>
+
+	<Container Name="Rebel_Trooper_Team">
+		<Text_ID>TEXT_REBEL_INFANTRY_SQUAD</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_REBELSOLDIER TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against> Stormtrooper </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> TIE_Crawler Scout_Trooper UC_Empire_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Garrison_Category> Infantry </Garrison_Category>
+
+		<Max_Speed> 1.1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing>
+		<FormationOrder> 2 </FormationOrder>
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .08 </Override_Acceleration>
+		<Override_Deceleration> .08 </Override_Deceleration>
+		
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Icon_Name>i_button_rebel_soldier.tga</Icon_Name>
+
+		<Targeting_Max_Attack_Distance>150.0</Targeting_Max_Attack_Distance>
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>130.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
+		
+        <Select_Box_Scale>65</Select_Box_Scale>
+        <Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+        <!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+				 
+		<CategoryMask>Infantry</CategoryMask>
+	</Container>
+
+	<Container Name="Pirate_Trooper_Team">
+		<Text_ID>TEXT_PIRATE_SOLDIER_SQUAD</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_REBELSOLDIER TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_TOOLTIP_PIRATE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against> Stormtrooper Rebel_Trooper </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> TIE_Crawler UC_Empire_Buildable_Anti_Infantry_Turret UC_Rebel_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Garrison_Category> Infantry </Garrison_Category>
+
+		<Max_Speed> 1.1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing>
+		<FormationOrder> 2 </FormationOrder>
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .08 </Override_Acceleration>
+		<Override_Deceleration> .08 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Icon_Name>i_button_pirate_soldier.tga</Icon_Name>
+
+		<Targeting_Max_Attack_Distance>150.0</Targeting_Max_Attack_Distance>
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>130.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
+		
+        <Select_Box_Scale>65</Select_Box_Scale>
+        <Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+        <!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+				 
+		<CategoryMask>Infantry</CategoryMask>
+	</Container>
+	
+	<Container Name="Pirate_Plex_Soldier_Team">
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Text_ID>TEXT_PIRATE_PLEX_SQUAD</Text_ID>
+		<Encyclopedia_Good_Against> M1_Repulsor_Tank T2B_Tank </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> TIE_Crawler Scout_Trooper Rebel_Trooper </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text>TEXT_TOOLTIP_PIRATEPLEX TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Garrison_Category> Infantry </Garrison_Category>
+
+		<Max_Speed> .8 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<FormationOrder> 3 </FormationOrder>
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Icon_Name>i_button_plex_soldier.tga</Icon_Name>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>210.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
+		 
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		
+		<CategoryMask>Infantry | AntiVehicle</CategoryMask>
+	</Container>
+
+	<Container Name="Plex_Soldier_Team">
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Text_ID>TEXT_REBEL_TANK_BUSTER_SQUAD</Text_ID>
+		<Encyclopedia_Good_Against> M1_Repulsor_Tank TIE_Crawler AT_AT_Walker </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> TIE_Crawler Stormtrooper UC_Empire_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text>TEXT_TOOLTIP_PLEX TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Garrison_Category> Infantry </Garrison_Category>
+
+		<Max_Speed> .8 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<FormationOrder> 3 </FormationOrder>
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Icon_Name>i_button_plex_soldier.tga</Icon_Name>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>210.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
+		<CategoryMask>Infantry | AntiVehicle</CategoryMask>
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+	</Container>
+
+	<Container Name="Rebel_Field_Commander_Team">
+		<Text_ID>TEXT_HERO_UNIT_FIELD_REBEL</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_FIELD_COMMANDER TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR</Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against> Stormtrooper </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> TIE_Crawler UC_Empire_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Garrison_Category> Infantry </Garrison_Category>
+
+		<Max_Speed> 1.1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing>
+		<FormationOrder> 2 </FormationOrder>
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .08 </Override_Acceleration>
+		<Override_Deceleration> .08 </Override_Deceleration>
+		
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Icon_Name>i_button_field_commander.tga</Icon_Name>
+
+		<Targeting_Max_Attack_Distance>150.0</Targeting_Max_Attack_Distance>
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>130.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>150</Tactical_Bribe_Cost>
+		
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+        <!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+	</Container>
+
+
+
+
+
+<!-- ****************************************************** -->
+<!-- **********  INDIGENOUS CIVILIAN CONTAINERS  ********** -->
+<!-- ****************************************************** -->
+
+
+
+	<Container Name="Ewok_Team">
+		<Text_ID>TEXT_INDIGENOUS_EWOK_PARTY</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>i_button_Ewok.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>50</Select_Box_Scale>
+		<Max_Speed> 1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>15</Tactical_Bribe_Cost>	
+	</Container>	
+
+	<Container Name="Wookie_Team">
+		<Text_ID>TEXT_INDIGENOUS_WOOKIE_PARTY</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>i_button_generic_wookie.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>65</Select_Box_Scale>
+
+		<Max_Speed> 1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>30</Tactical_Bribe_Cost>	
+	</Container>	
+
+	<Container Name="Gungan_Team">
+		<Text_ID>TEXT_INDIGENOUS_GUNGAN_SQUAD</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>i_button_gungan.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Max_Speed> 1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>20</Tactical_Bribe_Cost>	
+	</Container>
+
+	<Container Name="Jawa_Team">
+		<Text_ID>TEXT_INDIG_JAWA</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>i_button_jawa.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>50</Select_Box_Scale>
+		<Max_Speed> 1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .4 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>15</Tactical_Bribe_Cost>	
+	</Container>
+
+	<Container Name="MonCal_Team">
+		<Text_ID>TEXT_INDIG_MONCAL_CIV</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>i_button_moncalciv.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>50</Select_Box_Scale>
+		<Max_Speed> 1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>35</Tactical_Bribe_Cost>	
+	</Container>
+
+	<Container Name="Bothan_Team">
+		<Text_ID>TEXT_INDIG_BOTHAN_CIV</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>i_button_bothan_civilian.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>50</Select_Box_Scale>
+		<Max_Speed> 1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>50</Tactical_Bribe_Cost>	
+	</Container>
+
+	<Container Name="Imp_Guard_Team">
+		<Text_ID>TEXT_INDIG_ELITE_GUARD</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>i_button_imperial_guard.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Max_Speed> .8 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> 1.5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>150.0</Idle_Chase_Range>
+		<Guard_Chase_Range>300.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>250.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>25.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Is_Indigenous_Unit_Corruptible>false</Is_Indigenous_Unit_Corruptible>
+		<CategoryMask>Infantry</CategoryMask>
+	</Container>
+
+
+	<Container Name="Geonosian_Team">
+		<Text_ID>TEXT_INDIG_GEONOSIAN</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>i_button_geonosian.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Max_Speed> 2 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> 1.5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>	
+	</Container>
+
+	<Container Name="Sullustan_Team">
+		<Text_ID>TEXT_INDIG_SULLUSTAN</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>i_button_sullustan.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>50</Select_Box_Scale>
+		<Max_Speed> 1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>30</Tactical_Bribe_Cost>	
+	</Container>
+
+	<Container Name="Sandpeople_Team">
+		<Text_ID>TEXT_INDIG_TUSCAN_RAIDER</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>i_button_sandpeople.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>40</Select_Box_Scale>
+		<Max_Speed> 1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>15</Tactical_Bribe_Cost>	
+	</Container>
+
+	<Container Name="Twilek_Team">
+		<Text_ID>TEXT_INDIG_TWILEK_CIV</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>i_button_Twilek.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>50</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<Max_Speed> 1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>15</Tactical_Bribe_Cost>	
+	</Container>
+
+	<Container Name="Swamp_Human_Civ_Team">
+		<Text_ID>TEXT_INDIG_HUMAN_CIV</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>i_button_gmale_swamp.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>50</Select_Box_Scale>
+		<Max_Speed> 1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>	
+	</Container>
+
+	<Container Name="Urban_Human_Civ_Team">
+		<Text_ID>TEXT_INDIG_HUMAN_CIV</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>i_button_gmale_urban.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>50</Select_Box_Scale>
+		<Max_Speed> 1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>	
+	</Container>
+
+	<Container Name="Desert_Human_Civ_Team">
+		<Icon_Name>i_button_gmale_desert.tga</Icon_Name>
+		<Text_ID>TEXT_INDIG_HUMAN_CIV</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>50</Select_Box_Scale>
+		<Max_Speed> 1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>	
+	</Container>
+
+	<Container Name="Arctic_Human_Civ_Team">
+		<Text_ID>TEXT_INDIG_HUMAN_CIV</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>i_button_gmale_snow.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>50</Select_Box_Scale>
+		<Max_Speed> 1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>	
+	</Container>
+
+	<Container Name="Nightsister_Indig_Team">
+		<LOD_Bias>1</LOD_Bias>
+		<Text_ID>TEXT_UNIT_NIGHT_SISTER</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>i_button_ui_night_sister.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>40</Select_Box_Scale>
+		<Max_Speed> 1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>50</Tactical_Bribe_Cost>	
+	</Container>
+
+	<Container Name="Noghri_Indig_Team">
+		<Text_ID>TEXT_INDIG_NOGHRI</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>i_button_gmale_snow.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>40</Select_Box_Scale>
+		<Max_Speed> 1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<FormationOrder> 2 </FormationOrder>
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .08 </Override_Acceleration>
+		<Override_Deceleration> .08 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>50</Tactical_Bribe_Cost>	
+	</Container>
+
+	<Container Name="Mustafarian_Container">
+		<Text_ID>TEXT_INDIG_MUSTAFARIAN</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>i_button_gmale_snow.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>40</Select_Box_Scale>
+		<Max_Speed> 1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<FormationOrder> 2 </FormationOrder>
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .08 </Override_Acceleration>
+		<Override_Deceleration> .08 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>	
+	</Container>
+
+	<Container Name="Mandalorian_Container">
+		<Text_ID>TEXT_INDIG_MANDALORIAN</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>i_button_gmale_snow.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>40</Select_Box_Scale>
+		<Max_Speed> 1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<FormationOrder> 2 </FormationOrder>
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .08 </Override_Acceleration>
+		<Override_Deceleration> .08 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>60</Tactical_Bribe_Cost>	
+	</Container>
+
+
+
+
+
+
+
+
+
+
+	<Container Name="Civilian_Independent_AI_Team">
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Text_ID>TEXT_INDIG_HUMAN_CIV</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		
+		<Max_Speed> .8 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+	</Container>	
+
+	<Container Name="Civilian_Urban_Usable_Team">
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Text_ID>TEXT_INDIG_HUMAN_CIV</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		
+		<Max_Speed> .8 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+	</Container>
+
+
+	<!-- NOTE: There are 4 game object XML entries to support the R2 & 3PO team and R2's special abilities (Galactic and Tactical) -->
+	<!-- "Droid_R2D2" in NamedHeroUnits.xml - the idivudual unit -->
+	<!-- "Droid_C3P0" in NamedHeroUnits.xml - the idivudual unit -->
+	<!-- "Droids_Team" in HeroCompnaies.xml -->
+	<!-- "Tactical_R2_3PO_Team" in Containers.xml (has actual framework for tactical special abilities) -->
+
+	<Container Name="Tactical_R2_3PO_Team">
+		<Select_Box_Scale>0</Select_Box_Scale>
+		<Text_ID>TEXT_HERO_DROIDS_TEAM</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DROID </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Show_Name>No</Show_Name>
+
+		<Behavior> TEAM, UNIT_AI </Behavior>
+		<LandBehavior> SELECTABLE,  REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, ABILITY_COUNTDOWN, GARRISON_UNIT </LandBehavior>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		
+		<Max_Speed> .8 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> 1 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Rows </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+		<FormationOrder> 1 </FormationOrder>
+		
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+
+		<Icon_Name>i_button_c3po_r2d2.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Targeting_Max_Attack_Distance>150.0</Targeting_Max_Attack_Distance>
+
+		<CategoryMask>LandHero</CategoryMask>
+
+		<Abilities SubObjectList="Yes">
+
+         <!-- REQUIRED HERE FOR TEAM -->
+			<Hack_Ability Name="R2D2_Hack_Ability">
+				<Team_Member_With_Ability> Droid_R2D2 </Team_Member_With_Ability>	<!-- REQUIRED: One team member -->
+				<Activation_Style> User_Input </Activation_Style>
+				<Activation_Min_Range> 5.0 </Activation_Min_Range>
+				<Activation_Max_Range> 30.0 </Activation_Max_Range>
+				<Applicable_Unit_Categories> </Applicable_Unit_Categories>
+			
+				<Applicable_Unit_Types>  
+					E_Ground_Turbolaser_Tower,
+					Empire_Anti_Aircraft_Turret,
+					Empire_Anti_Infantry_Turret,
+					Empire_Anti_Vehicle_Turret,
+					Pirate_Anti_Infantry_Turret,
+					Pirate_Anti_Vehicle_Turret,
+					Rebel_Anti_Aircraft_Turret,
+					Rebel_Anti_Infantry_Turret,
+					Rebel_Anti_Vehicle_Turret,
+					Underworld_Mass_Driver_Turret,
+					Underworld_Torpedo_Turret,
+					Underworld_Rocket_Pod,
+					Empire_Grenade_Mortar,
+					Rebel_Rapid_Fire_Laser_Turret
+				</Applicable_Unit_Types>
+				
+<!--	  		<Damage_Amount> 0.0 </Damage_Amount> -->
+<!--	  		<Damage_Application_Time_In_Secs> 2.3893 </Damage_Application_Time_In_Secs> -->
+				<Lightning_Effect_Name> Hack_Electicity_Zaps </Lightning_Effect_Name>
+				<Lightning_Source_Bone_Name> </Lightning_Source_Bone_Name>
+				<Lightning_Target_Bone_Name> B_Turret </Lightning_Target_Bone_Name>
+				<Lightning_Max_Targets> 1 </Lightning_Max_Targets> 					
+				<Lightning_Targets_Radius> 0.0 </Lightning_Targets_Radius>		
+				<SFXEvent_Activate> Unit_Force_Lightning </SFXEvent_Activate> 					<!-- STUB PLACEHOLDER for Frank -->
+				<SFXEvent_Target_Affected />
+				<Target_Particle_Effect> Force_Lightning_Smoke </Target_Particle_Effect> 	<!-- STUB PLACEHOLDER for Gary -->
+				<Target_Particle_Bone_Name> B_Turret </Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type> Linear_Pulse </Target_Light_Effect_Type>
+				<Target_Light_Effect_Color> 0.3, 0.3, 0.8 </Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration> 2.3893 </Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count> 25 </Target_Light_Effect_Pulse_Count>
+			</Hack_Ability>
+
+         <!-- REQUIRED HERE FOR TEAM -->
+			<Repair_Ability Name="R2D2_Repair_Ability">
+				<Team_Member_With_Ability> Droid_R2D2 </Team_Member_With_Ability>  <!-- REQUIRED: One team member -->
+				<Activation_Style> User_Input </Activation_Style>
+				<Activation_Min_Range> 5.0 </Activation_Min_Range>
+				<Activation_Max_Range> 30.0 </Activation_Max_Range>
+				<Applicable_Unit_Categories> </Applicable_Unit_Categories>
+	
+				<!-- NOTE: we'll specify Empire units here since we want them be repaired when they are hacked -->
+				<!-- NOTE: allso add captured clones of empire vehicles (vehicle thief ability) -->
+				<Applicable_Unit_Types>  
+					MPTL
+					T2B_Tank
+					T4B_Tank
+					Rebel_Anti_Aircraft_Turret
+					Rebel_Anti_Infantry_Turret
+					Rebel_Anti_Vehicle_Turret
+					Empire_Anti_Aircraft_Turret     
+					Empire_Anti_Infantry_Turret 
+					Empire_Anti_Vehicle_Turret 		
+					Pirate_Skiff_Captured
+					M1_Repulsor_Tank_00_Captured
+					M1_Repulsor_Tank_Captured
+					TIE_Crawler_Captured
+					SPMAT_Walker_Captured
+					AT_AA_Walker_Captured
+					AT_AT_Walker_Captured		
+					AT_ST_Walker_Captured	
+					Swamp_Speeder_Captured	
+				</Applicable_Unit_Types>
+				
+<!--				<Damage_Amount> 0.0 </Damage_Amount> -->
+<!--				<Damage_Application_Time_In_Secs> 2.3893 </Damage_Application_Time_In_Secs> -->
+				<Lightning_Effect_Name> Repair_Electicity_Zaps </Lightning_Effect_Name>
+				<Lightning_Source_Bone_Name> </Lightning_Source_Bone_Name>
+				<Lightning_Target_Bone_Name> B_Turret </Lightning_Target_Bone_Name>
+				<Lightning_Max_Targets> 1 </Lightning_Max_Targets> 					
+				<Lightning_Targets_Radius> 0.0 </Lightning_Targets_Radius>		
+				<SFXEvent_Activate> Unit_Force_Lightning </SFXEvent_Activate> 					<!-- STUB PLACEHOLDER for Frank -->
+				<SFXEvent_Target_Affected />
+				<Target_Particle_Effect> Force_Lightning_Smoke </Target_Particle_Effect> 	<!-- STUB PLACEHOLDER for Gary -->
+				<Target_Particle_Bone_Name> </Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type> Linear_Pulse </Target_Light_Effect_Type>
+				<Target_Light_Effect_Color> 0.3, 0.3, 0.8 </Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration> 2.3893 </Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count> 25 </Target_Light_Effect_Pulse_Count>
+			</Repair_Ability>
+		</Abilities>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+
+		<!-- Do not remove - talk to me first! -Oksana -->
+         <!-- REQUIRED HERE FOR TEAM -->
+			<Unit_Ability>
+				<Type>TARGETED_HACK</Type>
+				<Recharge_Seconds>45.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> R2D2_Hack_Ability </GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability> Unit_Hack_Turret_C3PO </SFXEvent_Target_Ability> 
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+
+         <!-- REQUIRED HERE FOR TEAM -->
+			<Unit_Ability>
+				<Type>TARGETED_REPAIR</Type>
+				<Recharge_Seconds>50.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> R2D2_Repair_Ability </GUI_Activated_Ability_Name>
+				<Friendly_Ability> Yes </Friendly_Ability> <!-- Targeted ability to friendly units -->
+				<SFXEvent_Target_Ability> Unit_Hack_Turret_C3PO </SFXEvent_Target_Ability> 
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+	</Container>
+
+<!--RAW-->
+
+<Container Name="Rodian_Civ_Team">
+		<Text_ID>TEXT_INDIG_RODIAN_CIV</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_RODIAN.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>50</Select_Box_Scale>
+		<Max_Speed> 1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>	
+	</Container>
+
+<Container Name="Duros_Container">
+		<Text_ID>TEXT_INDIG_DUROS_CIV</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_DUROS.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>50</Select_Box_Scale>
+		<Max_Speed> 1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>	
+	</Container>
+
+<Container Name="Ithorian_Container">
+		<Text_ID>TEXT_INDIG_ITHORIAN_CIV</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_ITHORIAN.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>50</Select_Box_Scale>
+		<Max_Speed> 1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>	
+	</Container>
+
+<Container Name="Neimodian_Container">
+		<Text_ID>TEXT_INDIG_NEIMODIAN_CIV</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_NEIMODIAN.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>50</Select_Box_Scale>
+		<Max_Speed> 1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>	
+	</Container>
+
+<Container Name="Muun_Container">
+		<Text_ID>TEXT_INDIG_MUUN_CIV</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_MUUN.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>50</Select_Box_Scale>
+		<Max_Speed> 1.1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>	
+	</Container>
+
+<Container Name="Trandoshan_Civ_Team">
+		<Text_ID>TEXT_INDIG_TRANDOSHAN_CIV</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_TRANDOSHAN.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>50</Select_Box_Scale>
+		<Max_Speed> 1.0 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>	
+	</Container>
+
+<Container Name="Clone_Guard_Team">
+		<Text_ID>TEXT_UNIT_CLONETROOPER_SHOCK</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_CLONETROOPER_P2 TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_CLONETROOPER_P2_SHOCK.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Max_Speed>0.8</Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> 1.5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>150.0</Idle_Chase_Range>
+		<Guard_Chase_Range>300.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>250.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>25.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Is_Indigenous_Unit_Corruptible>false</Is_Indigenous_Unit_Corruptible>
+		<CategoryMask>Infantry</CategoryMask>
+	</Container>
+
+<Container Name="Senate_Guard_Team">
+		<Text_ID>TEXT_UNIT_SENATE_COMMANDO</Text_ID>
+		<Encyclopedia_Good_Against> Battledroids Stap Super_Battledroids </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Droideka_Mk1 Hailfire_Tank AAT_Tank </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text>TEXT_TOOLTIP_SENATE_COMMANDO TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_CLONETROOPER_P1_SENATE.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Max_Speed>0.8</Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> 1.5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>150.0</Idle_Chase_Range>
+		<Guard_Chase_Range>300.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>250.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>25.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Is_Indigenous_Unit_Corruptible>false</Is_Indigenous_Unit_Corruptible>
+		<CategoryMask>Infantry</CategoryMask>
+	</Container>
+
+<Container Name="Naboo_Security_Forces_Civ_Team">
+		<Text_ID>TEXT_UNIT_NABOO_SECURITY</Text_ID>
+			<Encyclopedia_Text>TEXT_TOOLTIP_NABOO_SECURITY TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_NABOO_SECURITY.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>50</Select_Box_Scale>
+		<Max_Speed> 1.0 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>	
+	</Container>
+
+<Container Name="Ishi_Tib_Team">
+		<Text_ID>TEXT_INDIG_ISHI_TIB_CIV</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_ISHITIB_CIVILIAN.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>50</Select_Box_Scale>
+		<Max_Speed> 1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>50</Tactical_Bribe_Cost>	
+	</Container>
+
+</Containers>

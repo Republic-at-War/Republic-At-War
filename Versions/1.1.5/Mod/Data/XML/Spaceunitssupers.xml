@@ -1,0 +1,206 @@
+<?xml version="1.0" ?>
+<SpaceUnitsSupers>
+	<SpaceUnit Name="Death_Star">
+		<Text_ID>TEXT_UNIT_DEATH_STAR</Text_ID>
+		<GUI_Row> 1 </GUI_Row>
+		<Space_Model_Name>w_planet_deathstar02.alo</Space_Model_Name>
+		<Galactic_Fleet_Override_Model_Name> w_planet_fleet_ds.alo </Galactic_Fleet_Override_Model_Name> <!-- Override for seeing DS icon as fleet icon in Galactic mode -->
+		<Galactic_Fleet_Override_Icon_Index> 4 </Galactic_Fleet_Override_Icon_Index> <!-- Override for seeing DS icon as fleet icon in Galactic mode -->
+		<Ranking_In_Category> 0 </Ranking_In_Category>
+		<Prevents_Story_Campaign_Autoresolve>yes</Prevents_Story_Campaign_Autoresolve>
+		<Mass>0.9995</Mass>
+		<Scale_Factor>2.5</Scale_Factor>
+		<Max_Speed> 0.75 </Max_Speed> <!-- Move speed used by Death Star to get into range in tactical space -->
+		<Max_Thrust> 0.02 </Max_Thrust> <!-- Acceleration from stop (moving into attack range) and decelceration to stop (in attack range) for Death Star -->
+		<Max_Rate_Of_Turn>0.3</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>0.25</Hyperspace_Speed>
+		<Maintenance_Cost>0.3</Maintenance_Cost>
+		<Collision_Box_Modifier>250.0</Collision_Box_Modifier>
+		<Affiliation>Empire</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>5</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets>Endor</Required_Planets>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Cost_Credits>20000</Build_Cost_Credits>
+		<Build_Time_Seconds>310</Build_Time_Seconds> <!-- 310 = 5 minutes 10 seconds (to hear 5 minutes until complete V/O -->
+		<Build_Tab_Special_Structures>No</Build_Tab_Special_Structures>
+		<Autoresolve_Health>5</Autoresolve_Health>
+		<Damage>50000</Damage>
+		<Shield_Points>5</Shield_Points>
+		<Tactical_Health>50000</Tactical_Health>
+		<Shield_Refresh_Rate>100</Shield_Refresh_Rate>
+		<Energy_Capacity>50000</Energy_Capacity>
+		<Energy_Refresh_Rate>100</Energy_Refresh_Rate>
+		<Ship_Class>super</Ship_Class>
+		<Formation_Priority>6</Formation_Priority>
+		<Is_Escort>no</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Political_Faction>Empire</Political_Faction>
+		<Squadron_Capacity>100</Squadron_Capacity>
+		<Transport_Capacity>100</Transport_Capacity>
+		<Number_per_Squadron>1</Number_per_Squadron>
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Size_Value>200</Size_Value>
+		<Space_Escort_Unit_Types>
+				TIE_Scout_Squadron,
+				Tartan_Patrol_Cruiser,
+				Tartan_Patrol_Cruiser,
+				Victory_Destroyer,
+				Victory_Destroyer
+		</Space_Escort_Unit_Types>
+		<Behavior> DUMMY_STARSHIP DUMMY_CANT_PATHFIND</Behavior>
+		<GalacticBehavior> SELECTABLE </GalacticBehavior>
+		<!-- Death Star needs IDLE so that it can play it's attack anim for some strange reason -->
+		<!-- The Death Star does not use SIMPLE_SPACE_LOCOMOTOR to move into range, but rather TACTICAL_SUPER_WEAPON. The SSL is required so Design cas override max speed through scripts -->
+		<!-- MBL 11.21.2005: Removing SIMPLE_SPACE_LOCOMOTOR so the AI does not mess with the Death Star. We'll give it it's own, inert locomotor data so the max speed override can still be done -->
+		<SpaceBehavior> TACTICAL_SUPER_WEAPON, IDLE </SpaceBehavior>
+		<In_Background>Yes</In_Background>
+		<!-- The SFXEvent for the Death Star firing it's super weapon -->
+		<SFXEvent_Fire> Unit_Superlaser_Fire </SFXEvent_Fire>
+		<!-- Tactical Super Weapon specifics: Death Star attacking a planet prop (super weapon target) -->
+		<!-- Scale with 300x prop = 6500, 4000 -->
+		<TSW_Start_Distance_From_Target> 8000.0 </TSW_Start_Distance_From_Target>
+		<TSW_Start_Pos_Match_Targets_Z> Yes </TSW_Start_Pos_Match_Targets_Z>
+		<TSW_Attack_Distance_From_Target> 5800.0 </TSW_Attack_Distance_From_Target>
+		<TSW_Power_Up_Countdown_Seconds> 9.0 </TSW_Power_Up_Countdown_Seconds>
+		<TSW_Attack_Anim_Duration_Seconds> 2.5 </TSW_Attack_Anim_Duration_Seconds>
+		<TSW_Explosion_Debris_Creation_Frame_Delay> 33 </TSW_Explosion_Debris_Creation_Frame_Delay>
+		<TSW_SFXEvent_GUI_Bttton_Press> GUI_Death_Star_Button_Press </TSW_SFXEvent_GUI_Bttton_Press>
+		<TSW_SFXEvent_Activate_Voice> EHD_Death_Star_Activate </TSW_SFXEvent_Activate_Voice>
+		<TSW_SFXEvent_Weapon_Power_Up> GUI_Death_Star_Activate </TSW_SFXEvent_Weapon_Power_Up>
+		<TSW_MusicEvent_Activation_Start> Space_Map_Activate_Death_Star_Music_Event </TSW_MusicEvent_Activation_Start>
+		<TSW_Post_Music_Wait_Frames> 1 </TSW_Post_Music_Wait_Frames> <!-- Now unused -->
+		<TSW_Post_Destruction_Wait_Frames> 350 </TSW_Post_Destruction_Wait_Frames> <!-- Music is 19.15 seconds: 19.15 * 30 FPS = 575 -->
+		<TSW_Z_Adjust_Relative_To_Target_Pos> 1200.0 </TSW_Z_Adjust_Relative_To_Target_Pos>
+		<Icon_Name>i_button_death_star_complete.tga</Icon_Name>
+		<Build_Countdown_Timer> Yes </Build_Countdown_Timer>
+		<Build_Countdown_Text_ID> TEXT_DEATH_STAR_COUNTDOWN_TIMER </Build_Countdown_Text_ID>
+		<Build_Countdown_Text_RGBA> 64, 128, 255, 255 </Build_Countdown_Text_RGBA>
+		<Build_Speech_Underway> Speech_Death_Star_Build_Underway </Build_Speech_Underway>
+		<Build_Speech_Completed> Speech_Death_Star_Build_Complete </Build_Speech_Completed>
+		<Build_Speech_Stopped> Speech_Death_Star_Build_Stopped </Build_Speech_Stopped>
+		<!-- Intentially called "Speech_Death_Star_Build_" (with trailing underscore)  for varied countdown references in SpeechEvents.xml -->
+		<Build_Speech_Countdowns> Speech_Death_Star_Build_ </Build_Speech_Countdowns>
+		<Build_Music_Completed> Galactic_Death_Star_Complete_Music_Event </Build_Music_Completed>
+		<Victory_Relevant>No</Victory_Relevant>
+		<CategoryMask> Super </CategoryMask>
+		<Encyclopedia_Text>TEXT_TOOLTIP_DEATH_STAR</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BATTLE_STATION</Encyclopedia_Unit_Class>
+		<Targeting_Max_Attack_Distance>20000.0</Targeting_Max_Attack_Distance>
+		<Unit_Abilities_Data SubObjectList="Yes"></Unit_Abilities_Data>
+		<Abilities SubObjectList="Yes">
+			<Planet_Destruction_Ability Name="Death_Star_Planet_Destruction">
+				<Activation_Style>Ground_Activated</Activation_Style>
+				<SFXEvent_Target_Affected>Planet_Death_SFX</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Planet_Explosion_Galactic</Target_Particle_Effect>
+				<Target_Particle_Bone_Name />
+			</Planet_Destruction_Ability>
+		</Abilities>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Name>i_radar_death_star.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.2  0.2</Radar_Icon_Size>
+		<Radar_Register_As_Foreground_Object>Yes</Radar_Register_As_Foreground_Object>
+		<Radar_Clip_To_Visible_Region>Yes</Radar_Clip_To_Visible_Region>
+		<Population_Value>15</Population_Value>
+		<!-- It's important that the Death Star doesn't have a population value in space mode since -->
+		<!-- it's kind of a special case and we don't want to limit the number of 'real' space units -->
+		<!-- based on its presence in the background.  -->
+		<Space_Override_Population_Value>0</Space_Override_Population_Value>
+	</SpaceUnit>
+	
+	
+	
+	
+	<SpaceUnit Name="Death_Star_II">
+	
+		<Variant_Of_Existing_Type>Death_Star</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_DEATH_STAR_II</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_DEATH_STAR_II</Encyclopedia_Text>
+		
+		<Tech_Level>5</Tech_Level>
+		<Space_Model_Name>w_planet_deathstar02_II.alo</Space_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+
+		<Space_Escort_Unit_Types>
+				TIE_Interceptor_Squadron,
+				TIE_Interceptor_Squadron,
+				TIE_Defender_Squadron,
+				Tartan_Patrol_Cruiser,
+				Tartan_Patrol_Cruiser,
+				Victory_Destroyer,
+				Victory_Destroyer,
+				Star_Destroyer
+		</Space_Escort_Unit_Types>
+		
+		<!-- DSII is tactically relevant above and beyond its escort (can fire laser at ships) -->
+		<AI_Combat_Power>3000</AI_Combat_Power>
+		
+		<Behavior> DUMMY_STARSHIP </Behavior>
+		<GalacticBehavior> SELECTABLE  </GalacticBehavior>
+		<SpaceBehavior> TACTICAL_SUPER_WEAPON, IDLE, ABILITY_COUNTDOWN, TARGETING </SpaceBehavior>
+	
+		<Unit_Abilities_Data SubObjectList="Yes">
+		
+			<Unit_Ability>
+				<Type>SUPER_LASER</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 0.8f</Mod_Multiplier>
+				<GUI_Activated_Ability_Name> Death_Star_Super_Laser_Attack_Ability </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+				<Recharge_Seconds>30</Recharge_Seconds>
+				<Expiration_Seconds>10</Expiration_Seconds>
+				<SFXEvent_Target_Ability> EHD_Death_Star_2_Activate </SFXEvent_Target_Ability>
+				<SFXEvent_Special_Ability_Loop> Unit_Death_Star_2_Fire </SFXEvent_Special_Ability_Loop>
+			</Unit_Ability>
+			
+		</Unit_Abilities_Data>
+		
+		<Abilities SubObjectList="Yes">
+
+			<Planet_Destruction_Ability Name="Death_Star_Planet_Destruction">
+				<Activation_Style>Ground_Activated</Activation_Style>
+				<SFXEvent_Target_Affected>Planet_Death_SFX</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Planet_Explosion_Galactic</Target_Particle_Effect>
+				<Target_Particle_Bone_Name />
+			</Planet_Destruction_Ability>
+
+			<Super_Laser_Ability Name="Death_Star_Super_Laser_Attack_Ability">
+				<Activation_Style> User_Input </Activation_Style>
+				<Applicable_Unit_Categories> Capital | Frigate </Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+                <!-- <Owner_Particle_Effect>Piet_Powerup_Particle_Effect</Owner_Particle_Effect> -->
+                <Owner_Particle_Bone_Name>MuzzleA_00</Owner_Particle_Bone_Name>
+				<Activation_Min_Range>0</Activation_Min_Range>
+	            <Activation_Max_Range>20000</Activation_Max_Range>
+
+				<!-- Modifiers. If 0 - no modifier is applied, 1 - "100% increase or decrease" -->
+				<Damage_Per_Frame>500</Damage_Per_Frame>			
+				<Fire_Frame>60</Fire_Frame>
+				<Attack_Anim_Sub_Index>1</Attack_Anim_Sub_Index>
+				<Beam_Texture_Name>tractor_beam01.tga</Beam_Texture_Name>
+				<Num_Anim_Frames>5</Num_Anim_Frames>
+				<Line_Width>35</Line_Width>
+				<Line_Color>0 237 119 255</Line_Color>
+				<Face_Target>true</Face_Target>
+				<Turn_Rate>-1.0f</Turn_Rate>
+				<Firing_Cone>10.0f</Firing_Cone>
+            <Fire_Delay>0</Fire_Delay>
+            <Fire_Continuation>0.01</Fire_Continuation>
+			</Super_Laser_Ability>
+
+		</Abilities>
+		
+	</SpaceUnit>
+	
+	
+	
+	
+	
+</SpaceUnitsSupers>
+

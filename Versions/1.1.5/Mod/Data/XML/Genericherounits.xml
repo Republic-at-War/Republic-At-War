@@ -1,0 +1,1057 @@
+<?xml version="1.0"?>
+<GenericHeroUnits>
+	<GenericHeroUnit Name="Generic_Probe_Droid">
+		<Text_ID>TEXT_HERO_UNIT_PROBE_DROID</Text_ID>
+		<GUI_Row> 1 </GUI_Row>
+		<Icon_Name>i_button_scout_droid.tga</Icon_Name>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Sprite>No</Is_Sprite>
+		<Type>Walk</Type>
+		<Affiliation>Empire</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Size_Value>75</Size_Value>
+		<!--  <Damage>2</Damage> -->
+		<Autoresolve_Health>30</Autoresolve_Health>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>Yes</Stay_In_Transport_During_Ground_Battle>
+		<Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+
+		<SFXEvent_Move>Unit_Galactic_Report_Probot</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Galactic_Report_Probot</SFXEvent_Fleet_Move>
+
+		<Neutralization_Cost>20.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+		
+		<!-- When a probe droid is moved by itself, it must activate its Spy ability at its destination. -->
+		<Can_Hyperspace_Without_Activating_Ability>No</Can_Hyperspace_Without_Activating_Ability>
+
+		<Encyclopedia_Text>TEXT_TOOLTIP_PROBE_DROID</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+
+		<CategoryMask> NonCombatHero </CategoryMask>
+		<Ranking_In_Category> 22 </Ranking_In_Category>
+
+		<Abilities SubObjectList="Yes">
+			<Galactic_Stealth_Ability Name="Probe_Droid_Galactic_Stealth">
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+			<System_Spy_Ability Name="Probe_Droid_System_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Activated</Activation_Style>
+				<Causes_Despawn>Yes</Causes_Despawn>
+				<Duration_In_Secs>60.0</Duration_In_Secs>
+				<See_Base_Levels>Yes</See_Base_Levels>
+				<See_Credit_Income>No</See_Credit_Income>
+				<See_Credit_Income_Breakdown>No</See_Credit_Income_Breakdown>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+				<See_Fleet_Contents>Yes</See_Fleet_Contents>
+				<See_Num_Ground_Companies>Yes</See_Num_Ground_Companies>
+				<See_Ground_Company_Contents>Yes</See_Ground_Company_Contents>
+				<See_Special_Structures>Yes</See_Special_Structures>
+				<See_Political_Control>Yes</See_Political_Control>
+				<See_Political_Control_Breakdown>No</See_Political_Control_Breakdown>
+				<See_Current_Production>No</See_Current_Production>
+				<See_Minor_Stealth_Heroes>No</See_Minor_Stealth_Heroes>
+				<See_Major_Stealth_Heroes>No</See_Major_Stealth_Heroes>
+			</System_Spy_Ability>
+		</Abilities>
+	</GenericHeroUnit>
+    
+	<GenericHeroUnit Name="Generic_Smuggler_E">
+		<Text_ID>TEXT_HERO_UNIT_SMUGGLER</Text_ID>
+		<GUI_Row> 1 </GUI_Row>
+		<Icon_Name>i_button_smuggler.tga</Icon_Name>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Sprite>No</Is_Sprite>
+		<Type>Walk</Type>
+		<Affiliation>Empire</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Size_Value>75</Size_Value>
+		<!--  <Damage>2</Damage> -->
+		<Autoresolve_Health>30</Autoresolve_Health>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>Yes</Stay_In_Transport_During_Ground_Battle>
+		<Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+
+		<Neutralization_Cost>50.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+
+		<CategoryMask> NonCombatHero </CategoryMask>
+		<Ranking_In_Category> 24 </Ranking_In_Category>
+
+		<Encyclopedia_Text>TEXT_TOOLTIP_SMUGGLER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR</Encyclopedia_Unit_Class>
+
+		<Death_SFXEvent_Start_Die>RHD_Smuggler_Lost</Death_SFXEvent_Start_Die>
+
+
+		<Abilities SubObjectList="Yes">
+
+			<Galactic_Stealth_Ability Name="Smuggler_Galactic_Stealth">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+
+			<Siphon_Credits_Ability Name="Smuggler_Siphon_Credits">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Activated</Activation_Style>
+				<Causes_Despawn>Yes</Causes_Despawn>
+				<Min_Siphon_Percentage>0.5</Min_Siphon_Percentage>
+				<Max_Siphon_Percentage>0.5</Max_Siphon_Percentage>
+				<Siphon_Duration_In_Cycles>5</Siphon_Duration_In_Cycles>
+				<SFXEvent_Activate> Unit_Galactic_Siphon_Smuggler</SFXEvent_Activate>
+			</Siphon_Credits_Ability>
+
+			<System_Spy_Ability Name="Smuggler_Limited_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+			</System_Spy_Ability>
+		</Abilities>
+	</GenericHeroUnit>
+	
+	<GenericHeroUnit Name="Generic_Smuggler_R">
+		<Text_ID>TEXT_HERO_UNIT_SMUGGLER</Text_ID>
+		<GUI_Row> 1 </GUI_Row>
+		<Icon_Name>i_button_smuggler.tga</Icon_Name>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Sprite>No</Is_Sprite>
+		<Type>Walk</Type>
+		<Affiliation>Rebel</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Size_Value>75</Size_Value>
+		<!--  <Damage>2</Damage> -->
+		<Autoresolve_Health>30</Autoresolve_Health>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>Yes</Stay_In_Transport_During_Ground_Battle>
+		<Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+
+		<Neutralization_Cost>50.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+
+		<CategoryMask> NonCombatHero </CategoryMask>
+		<Ranking_In_Category> 24 </Ranking_In_Category>
+
+		<Death_SFXEvent_Start_Die>UHD_Smuggler_Lost</Death_SFXEvent_Start_Die>
+		
+		<Encyclopedia_Text>TEXT_TOOLTIP_SMUGGLER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR</Encyclopedia_Unit_Class>
+
+
+		<Abilities SubObjectList="Yes">
+
+			<Galactic_Stealth_Ability Name="Smuggler_Galactic_Stealth">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+
+			<Siphon_Credits_Ability Name="Smuggler_Siphon_Credits">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Activated</Activation_Style>
+				<Causes_Despawn>Yes</Causes_Despawn>
+				<Min_Siphon_Percentage>0.5</Min_Siphon_Percentage>
+				<Max_Siphon_Percentage>0.5</Max_Siphon_Percentage>
+				<Siphon_Duration_In_Cycles>5</Siphon_Duration_In_Cycles>
+				<SFXEvent_Activate> Unit_Galactic_Siphon_Smuggler </SFXEvent_Activate>
+			</Siphon_Credits_Ability>
+
+			<System_Spy_Ability Name="Smuggler_Limited_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+			</System_Spy_Ability>
+		</Abilities>
+	</GenericHeroUnit>
+	
+	<GenericHeroUnit Name="Generic_Smuggler_R_Tutorial">
+		<Text_ID>TEXT_HERO_UNIT_SMUGGLER</Text_ID>
+		<GUI_Row> 1 </GUI_Row>
+		<Icon_Name>i_button_smuggler.tga</Icon_Name>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Sprite>No</Is_Sprite>
+		<Type>Walk</Type>
+		<Affiliation>Rebel</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Size_Value>75</Size_Value>
+		<!--  <Damage>2</Damage> -->
+		<Autoresolve_Health>30</Autoresolve_Health>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>Yes</Stay_In_Transport_During_Ground_Battle>
+		<Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+
+		<Neutralization_Cost>50.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+
+		<CategoryMask> NonCombatHero </CategoryMask>
+		<Ranking_In_Category> 24 </Ranking_In_Category>
+
+		<Death_SFXEvent_Start_Die>RHD_Smuggler_Lost</Death_SFXEvent_Start_Die>
+
+		<Abilities SubObjectList="Yes">
+
+			<Galactic_Stealth_Ability Name="Smuggler_Galactic_Stealth">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+
+			<Siphon_Credits_Ability Name="Smuggler_Siphon_Credits">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Activated</Activation_Style>
+				<Causes_Despawn>Yes</Causes_Despawn>
+				<Min_Siphon_Percentage>0.35</Min_Siphon_Percentage>
+				<Max_Siphon_Percentage>0.75</Max_Siphon_Percentage>
+				<Siphon_Duration_In_Cycles>10000</Siphon_Duration_In_Cycles>
+				<SFXEvent_Activate> Unit_Galactic_Siphon_Smuggler </SFXEvent_Activate>
+			</Siphon_Credits_Ability>
+
+			<System_Spy_Ability Name="Smuggler_Limited_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+			</System_Spy_Ability>
+		</Abilities>
+	</GenericHeroUnit>
+
+
+	<GenericHeroUnit Name="Generic_Bounty_Hunter_E">
+		<Text_ID>TEXT_HERO_UNIT_BOUNTY_HUNTER</Text_ID>
+		<GUI_Row> 1 </GUI_Row>
+		<Icon_Name>i_button_bounty_hunter.tga</Icon_Name>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Sprite>No</Is_Sprite>
+		<Type>Walk</Type>
+		<Affiliation>Empire</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Size_Value>75</Size_Value>
+		<Autoresolve_Health>30</Autoresolve_Health>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>Yes</Stay_In_Transport_During_Ground_Battle>
+		<Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+
+		<Neutralization_Cost>50.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+		<!--AJA 11/28/2005 - Since these are manually buildable now it makes no sense to tie their respawn to the cantina <Respawn_Tied_To_Structure>Ground_Cantina_E</Respawn_Tied_To_Structure>-->
+
+		<Encyclopedia_Text>TEXT_TOOLTIP_BOUNTYHUNTER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR</Encyclopedia_Unit_Class>
+
+		<CategoryMask> NonCombatHero </CategoryMask>
+		<Ranking_In_Category> 23 </Ranking_In_Category>
+
+		<Death_SFXEvent_Start_Die>EHD_Bounty_Hunter_Lost</Death_SFXEvent_Start_Die>
+
+		<Abilities SubObjectList="Yes">
+			<Galactic_Stealth_Ability Name="Bounty_Hunter_Galactic_Stealth">
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+			<Neutralize_Hero_Ability Name="Bounty_Hunter_Neutralize_Hero">
+				<Cost_Mod_By_Base_Level>0.0,0.0, 5.0,1.0</Cost_Mod_By_Base_Level>
+				<Cost_Mod_By_Previous_Neutralizations>0.0,0.0, 1000.0,750.0</Cost_Mod_By_Previous_Neutralizations>
+				<Cost_Mod_By_Planetary_Corruption_Level>0.0,0.0, 1.0,0.25</Cost_Mod_By_Planetary_Corruption_Level>
+				<General_Minor_Hero_Cost_Mod>1.0</General_Minor_Hero_Cost_Mod>
+				<General_Major_Hero_Cost_Mod>2.0</General_Major_Hero_Cost_Mod>
+				<Owner_Respawn_Time_In_Secs>240.0, 300.0</Owner_Respawn_Time_In_Secs>
+				<Target_Respawn_Time_In_Secs>240.0, 300.0</Target_Respawn_Time_In_Secs>
+				<Can_Neutralize_Minor_Heroes>Yes</Can_Neutralize_Minor_Heroes>
+				<Can_Neutralize_Major_Heroes>No</Can_Neutralize_Major_Heroes> <!-- AJA 11/28/2005 - Joe says generic bounty hunters cannot neutralize major heroes -->
+				<SFXEvent_Activate> Unit_Galactic_Eliminate_Bounty_Hunter </SFXEvent_Activate>
+			</Neutralize_Hero_Ability>
+			<System_Spy_Ability Name="Bounty_Hunter_Limited_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+				<See_Minor_Stealth_Heroes>Yes</See_Minor_Stealth_Heroes>
+				<See_Major_Stealth_Heroes>Yes</See_Major_Stealth_Heroes>
+			</System_Spy_Ability>
+		</Abilities>
+	</GenericHeroUnit>
+	
+	
+	<GenericHeroUnit Name="Generic_Bounty_Hunter_R">
+		<Text_ID>TEXT_HERO_UNIT_BOUNTY_HUNTER</Text_ID>
+		<GUI_Row> 1 </GUI_Row>
+		<Icon_Name>i_button_bounty_hunter.tga</Icon_Name>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Sprite>No</Is_Sprite>
+		<Type>Walk</Type>
+		<Affiliation>Rebel</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Size_Value>75</Size_Value>
+		<Autoresolve_Health>30</Autoresolve_Health>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>Yes</Stay_In_Transport_During_Ground_Battle>
+		<Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+
+		<Neutralization_Cost>50.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+		<!--AJA 11/28/2005 - Since these are manually buildable now it makes no sense to tie their respawn to the cantina <Respawn_Tied_To_Structure>Ground_Cantina_R</Respawn_Tied_To_Structure>-->
+
+		<Encyclopedia_Text>TEXT_TOOLTIP_BOUNTYHUNTER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR</Encyclopedia_Unit_Class>
+
+		<CategoryMask> NonCombatHero </CategoryMask>
+		<Ranking_In_Category> 23 </Ranking_In_Category>
+
+		<Death_SFXEvent_Start_Die>RHD_Bounty_Hunter_Lost</Death_SFXEvent_Start_Die>
+
+		<Abilities SubObjectList="Yes">
+			<Galactic_Stealth_Ability Name="Bounty_Hunter_Galactic_Stealth">
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+			<Neutralize_Hero_Ability Name="Bounty_Hunter_Neutralize_Hero">
+				<Cost_Mod_By_Base_Level>0.0,0.0, 5.0,1.0</Cost_Mod_By_Base_Level>
+				<Cost_Mod_By_Previous_Neutralizations>0.0,0.0, 1000.0,750.0</Cost_Mod_By_Previous_Neutralizations>
+				<Cost_Mod_By_Planetary_Corruption_Level>0.0,0.0, 1.0,0.25</Cost_Mod_By_Planetary_Corruption_Level>
+				<General_Minor_Hero_Cost_Mod>1.0</General_Minor_Hero_Cost_Mod>
+				<General_Major_Hero_Cost_Mod>2.0</General_Major_Hero_Cost_Mod>
+				<Owner_Respawn_Time_In_Secs>240.0, 300.0</Owner_Respawn_Time_In_Secs>
+				<Target_Respawn_Time_In_Secs>240.0, 300.0</Target_Respawn_Time_In_Secs>
+				<Can_Neutralize_Minor_Heroes>Yes</Can_Neutralize_Minor_Heroes>
+				<Can_Neutralize_Major_Heroes>No</Can_Neutralize_Major_Heroes> <!-- AJA 11/28/2005 - Joe says generic bounty hunters cannot neutralize major heroes -->
+				<SFXEvent_Activate> Unit_Galactic_Eliminate_Bounty_Hunter </SFXEvent_Activate>
+			</Neutralize_Hero_Ability>
+			<System_Spy_Ability Name="Bounty_Hunter_Limited_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+				<See_Minor_Stealth_Heroes>Yes</See_Minor_Stealth_Heroes>
+				<See_Major_Stealth_Heroes>Yes</See_Major_Stealth_Heroes>
+			</System_Spy_Ability>
+		</Abilities>
+	</GenericHeroUnit>
+	
+	
+	<GenericHeroUnit Name="Generic_Field_Commander_Rebel">
+		<Text_ID>TEXT_HERO_UNIT_FIELD_REBEL</Text_ID>
+		<!-- AJA 11/28/2005 - These are NOT named heroes. If you need some functionality that this flag provides, add a new flag. <Is_Named_Hero>Yes</Is_Named_Hero>-->
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+		<GUI_Row> 1 </GUI_Row>
+		<Land_Model_Name>RI_Fieldcommander.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>RI_INFANTRY.ALO</Land_Model_Anim_Override_Name>
+		
+		<Icon_Name>i_button_RI_field_commander_bust.tga</Icon_Name>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Sprite>No</Is_Sprite>
+
+		<Affiliation>Rebel</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Size_Value>75</Size_Value>
+
+		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>SURFACE_FX,WALK_LOCOMOTOR,IDLE,TARGETING,WEAPON,REVEAL,HIDE_WHEN_FOGGED</LandBehavior>
+		<SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<CanCellStack>yes</CanCellStack>
+		<Mass>1.0</Mass>
+		<Armor_Type> Armor_Hero </Armor_Type>
+		
+		<Movement_Animation_Speed> 0.65 </Movement_Animation_Speed>
+		<Walk_Animation_Speed> .366 </Walk_Animation_Speed>
+		<Crouch_Animation_Speed> .537 </Crouch_Animation_Speed>
+		<Max_Speed>1.1</Max_Speed>
+		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+		<Custom_Soft_Footprint_Radius> 3.5 </Custom_Soft_Footprint_Radius>
+		<Custom_Hard_XExtent> 2.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 2.0 </Custom_Hard_YExtent>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> 0.3 </FormationSpacing>
+		<OverrideAcceleration> .07 </OverrideAcceleration>
+		<OverrideDeceleration> .07 </OverrideDeceleration>
+		<FormationOrder> 2 </FormationOrder>
+
+		<Scale_Factor>1.5</Scale_Factor>
+		<Is_Sprite>No</Is_Sprite>
+		<Shield_Points>0</Shield_Points>
+		<Autoresolve_Health>30</Autoresolve_Health>
+		<Tactical_Health>30</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Victory_Relevant>yes</Victory_Relevant>
+
+		<Damage>4</Damage>
+		<Projectile_Types>Proj_Infiltrator_Blaster</Projectile_Types>
+		<Land_FOW_Reveal_Range>75.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>150.0</Targeting_Max_Attack_Distance>
+		<Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+		<Projectile_Fire_Recharge_Seconds>1.5</Projectile_Fire_Recharge_Seconds>
+
+		<Targeting_Fire_Inaccuracy> Infantry, 3.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 10.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 10.0 </Targeting_Fire_Inaccuracy>
+
+		<SFXEvent_Select>Unit_Select_Rebel_Field</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Rebel_Field</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Field</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Rebel_Field</SFXEvent_Guard>
+		<SFXEvent_Group_Move>Unit_Group_Move_Rebel_Field</SFXEvent_Group_Move>
+		<SFXEvent_Group_Attack>Unit_Group_Attack_Rebel_Field</SFXEvent_Group_Attack>
+		<SFXEvent_Fire>Unit_Rebel_Infantry_Fire</SFXEvent_Fire>
+
+		<CategoryMask> LandHero </CategoryMask>
+		<Ranking_In_Category> 21 </Ranking_In_Category>
+		<MovementClass> Infantry </MovementClass>
+
+		<OccupationStyle>1x1</OccupationStyle>
+		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+		<No_Reflection_Below_Detail_Level>2</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>2</No_Refraction_Below_Detail_Level>
+		<Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+		<Is_Squashable> Yes </Is_Squashable>
+		<Create_Team>No</Create_Team>
+
+		<Select_Box_Scale>27</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Execute_Script_On_Type>true</Execute_Script_On_Type>
+		<Lua_Script>FieldCommander</Lua_Script>
+		<Attach_To_Flagship_During_Space_Battle>No</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>
+		<AI_Combat_Power>50</AI_Combat_Power>
+		
+		<Encyclopedia_Text>TEXT_TOOLTIP_FIELD_COMMANDER TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR</Encyclopedia_Unit_Class>
+
+		<Neutralization_Cost>100.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+
+		<Death_Clone>Damage_Disruptor_Hand, Infantry_Disruptor_Death_Clone_00</Death_Clone>
+		<Death_Clone>Damage_Disruptor_Hand, Infantry_Disruptor_Death_Clone_01</Death_Clone>
+		<Death_Clone>Damage_Infection, Infantry_Melt_Death_Clone_00</Death_Clone>
+
+		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+
+		<Death_Fade_Time>0.25</Death_Fade_Time>
+		<Death_Persistence_Duration>0.0</Death_Persistence_Duration>
+
+		<Abilities SubObjectList="Yes">
+			<Enhance_Defense_Ability Name="Rebel_Field_Commander_Enhance_Defense">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Enhancement_Percentage>0.25</Enhancement_Percentage>
+				<Apply_To_All_Allies>No</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+				<Unit_Strength_Category>Vehicle | Air | Infantry</Unit_Strength_Category>
+			</Enhance_Defense_Ability>
+			<Battlefield_Modifier_Ability Name="Rebel_Field_Commander_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.5</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</GenericHeroUnit>
+
+	<GenericHeroUnit Name="Squad_Generic_Field_Commander_Rebel">
+		<Variant_Of_Existing_Type>Generic_Field_Commander_Rebel</Variant_Of_Existing_Type>
+		<LandBehavior>LANDING, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR,IDLE,WEAPON, STUNNABLE, REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING</LandBehavior>
+		<Is_Squashable> Yes </Is_Squashable>
+		<Max_Speed> 1.1 </Max_Speed>
+		<Space_Layer> None </Space_Layer>
+		<Custom_Soft_Footprint_Radius> 3.0 </Custom_Soft_Footprint_Radius>
+		<Max_Rate_Of_Turn>8.0</Max_Rate_Of_Turn>
+		<FormationRaggedness> .2 </FormationRaggedness>
+		<MaxJiggleDistance> 2 </MaxJiggleDistance>
+		<Create_Team>Yes</Create_Team>
+		<Select_Box_Scale>0</Select_Box_Scale>
+		
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+	</GenericHeroUnit>
+
+    <GenericHeroUnit Name="Generic_Commander_00">
+       <Armor_Type> Armor_Infantry</Armor_Type>
+       <Tactical_Health>60</Tactical_Health>
+	   <Text_ID>TEXT_HERO_UNIT_FIELD_EMPIRE</Text_ID>
+	   <GUI_Row> 1 </GUI_Row>
+	   <Land_Model_Name>RI_Fieldcommander.ALO</Land_Model_Name>
+	   <Icon_Name>i_button_field_commander.tga</Icon_Name>
+	   <Mass>1.0</Mass>
+	   <Scale_Factor>1.0</Scale_Factor>
+	   <Is_Sprite>No</Is_Sprite>
+
+	   <Affiliation>Empire</Affiliation>
+	   <Political_Control>0</Political_Control>
+	   <Size_Value>75</Size_Value>
+
+	   <Behavior>SELECTABLE</Behavior>
+	   <LandBehavior>SURFACE_FX,WALK_LOCOMOTOR,IDLE,TARGETING,WEAPON,REVEAL,HIDE_WHEN_FOGGED</LandBehavior>
+	   <SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
+	   <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+	   <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+	   <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+	   <CanCellStack>yes</CanCellStack>
+	   <Mass>1.0</Mass>
+	   <Movement_Animation_Speed> 0.8 </Movement_Animation_Speed>
+	   <Rotation_Animation_Speed> 20.0 </Rotation_Animation_Speed>
+
+	   <Max_Speed>0.8</Max_Speed>
+	   <Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+	   <Custom_Soft_Footprint_Radius> 3.5 </Custom_Soft_Footprint_Radius>
+	   <Custom_Hard_XExtent> 2.0 </Custom_Hard_XExtent>
+	   <Custom_Hard_YExtent> 2.0 </Custom_Hard_YExtent>
+	   <Space_Layer> Land </Space_Layer>
+	   <UnitCollisionClass> Infantry </UnitCollisionClass>
+	   <FormationSpacing> 0.5 </FormationSpacing>
+
+	   <Scale_Factor>1.5</Scale_Factor>
+	   <Is_Sprite>No</Is_Sprite>
+	   <Shield_Points>0</Shield_Points>
+	   <Autoresolve_Health>30</Autoresolve_Health>
+	   <Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+	   <Energy_Capacity>0</Energy_Capacity>
+	   <Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+	   <Victory_Relevant>yes</Victory_Relevant>
+
+	   <Damage>4</Damage>
+	   <Projectile_Types>Proj_Infiltrator_Blaster</Projectile_Types>
+	   <Land_FOW_Reveal_Range>75.0</Land_FOW_Reveal_Range>
+	   <Targeting_Max_Attack_Distance>150.0</Targeting_Max_Attack_Distance>
+	   <Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+	   <Projectile_Fire_Recharge_Seconds>1.5</Projectile_Fire_Recharge_Seconds>
+
+	   <Targeting_Fire_Inaccuracy> Infantry, 3.0 </Targeting_Fire_Inaccuracy>
+	   <Targeting_Fire_Inaccuracy> Vehicle, 10.0 </Targeting_Fire_Inaccuracy>
+	   <Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
+	   <Targeting_Fire_Inaccuracy> Structure, 10.0 </Targeting_Fire_Inaccuracy>
+
+	   <SFXEvent_Select>Unit_Select_Storm_Trooper</SFXEvent_Select>
+	   <SFXEvent_Move>Unit_Move_Storm_Trooper</SFXEvent_Move>
+	   <SFXEvent_Attack>Unit_Attack_Storm_Trooper</SFXEvent_Attack>
+	   <SFXEvent_Guard>Unit_Guard_Storm_Trooper</SFXEvent_Guard>
+	   <SFXEvent_Fire>Unit_Storm_Trooper_Fire</SFXEvent_Fire>
+
+	   <CategoryMask> LandHero </CategoryMask>
+	   <Ranking_In_Category> 25 </Ranking_In_Category>
+	   <MovementClass> Infantry </MovementClass>
+
+	   <OccupationStyle>1x1</OccupationStyle>
+	   <Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+	   <Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+	   <Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+	   <Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+	   <No_Reflection_Below_Detail_Level>2</No_Reflection_Below_Detail_Level>
+	   <No_Refraction_Below_Detail_Level>2</No_Refraction_Below_Detail_Level>
+	   <Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+	   <Is_Squashable> Yes </Is_Squashable>
+	   <Create_Team>No</Create_Team>
+
+	   <Select_Box_Scale>27</Select_Box_Scale>
+	   <Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+	   <Is_Generic_Hero>Yes</Is_Generic_Hero>
+	   <Attach_To_Flagship_During_Space_Battle>No</Attach_To_Flagship_During_Space_Battle>
+	   <Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>
+	   <AI_Combat_Power>50</AI_Combat_Power>
+
+		<Encyclopedia_Text>TEXT_TOOLTIP_FIELD_COMMANDER TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR</Encyclopedia_Unit_Class>
+
+	   <Neutralization_Cost>100.0</Neutralization_Cost>
+	   <Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+	   <Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+
+	   <Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+
+		<Death_Fade_Time>0.25</Death_Fade_Time>
+		<Death_Persistence_Duration>0.0</Death_Persistence_Duration>
+
+	   <Abilities SubObjectList="Yes">
+		   <Enhance_Defense_Ability Name="Empire_Field_Commander_Enhance_Defense">
+			   <Activation_Style>Ground_Automatic</Activation_Style>
+			   <Enhancement_Percentage>0.25</Enhancement_Percentage>
+			   <Apply_To_All_Allies>No</Apply_To_All_Allies>
+			   <Stacking_Category>0</Stacking_Category>
+			   <Unit_Strength_Category>Vehicle | Air | Infantry</Unit_Strength_Category>
+		   </Enhance_Defense_Ability>
+		   <Battlefield_Modifier_Ability Name="Empire_Field_Commander_FOW_Increase">
+			   <Initially_Enabled>Yes</Initially_Enabled>
+			   <Activation_Style>Ground_Automatic</Activation_Style>
+			   <FOW_Reveal_Range_Multiplier>1.5</FOW_Reveal_Range_Multiplier>
+			   <Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+			   <Stacking_Category>0</Stacking_Category>
+		   </Battlefield_Modifier_Ability>
+	   </Abilities>
+    </GenericHeroUnit>
+
+	<GenericHeroUnit Name="Generic_Field_Commander_Empire">
+		<No_Colorization_Color>33, 33, 33, 255</No_Colorization_Color>
+		<Text_ID>TEXT_HERO_UNIT_FIELD_EMPIRE</Text_ID>
+		<!-- AJA 11/28/2005 - These are NOT named heroes. If you need some functionality that this flag provides, add a new flag. <Is_Named_Hero>Yes</Is_Named_Hero>-->
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+		<GUI_Row> 1 </GUI_Row>
+		<Land_Model_Name>
+			EI_FieldCommander.alo</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>EI_TROOPER.ALO</Land_Model_Anim_Override_Name>
+		<Icon_Name>i_button_ei_field_commander_bust.tga</Icon_Name>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Sprite>No</Is_Sprite>
+
+		<Affiliation>Empire</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Size_Value>75</Size_Value>
+
+		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>SURFACE_FX,WALK_LOCOMOTOR,IDLE,TARGETING,WEAPON,REVEAL,HIDE_WHEN_FOGGED</LandBehavior>
+		<SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<CanCellStack>yes</CanCellStack>
+		<Mass>1.0</Mass>
+		<Armor_Type> Armor_Hero </Armor_Type>
+
+		<Movement_Animation_Speed> 0.8 </Movement_Animation_Speed>
+		<Rotation_Animation_Speed> 20.0 </Rotation_Animation_Speed>
+		<Crouch_Animation_Speed> .537 </Crouch_Animation_Speed>
+		<Max_Speed>0.8</Max_Speed>
+		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+		<Custom_Soft_Footprint_Radius> 3.5 </Custom_Soft_Footprint_Radius>
+		<Custom_Hard_XExtent> 2.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 2.0 </Custom_Hard_YExtent>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> 0.3 </FormationSpacing>
+		<OverrideAcceleration> .05 </OverrideAcceleration>
+		<OverrideDeceleration> .05 </OverrideDeceleration>
+		<FormationOrder> 2 </FormationOrder>
+
+		<Scale_Factor>1.5</Scale_Factor>
+		<Is_Sprite>No</Is_Sprite>
+		<Shield_Points>0</Shield_Points>
+		<Autoresolve_Health>30</Autoresolve_Health>
+		<Tactical_Health>30</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Victory_Relevant>yes</Victory_Relevant>
+
+		<Damage>4</Damage>
+		<Projectile_Types>Proj_Infiltrator_Blaster</Projectile_Types>
+		<Land_FOW_Reveal_Range>75.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>150.0</Targeting_Max_Attack_Distance>
+		<Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+		<Projectile_Fire_Recharge_Seconds>1.5</Projectile_Fire_Recharge_Seconds>
+
+		<Targeting_Fire_Inaccuracy> Infantry, 3.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 10.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 10.0 </Targeting_Fire_Inaccuracy>
+
+		<SFXEvent_Select>Unit_Select_Empire_Field</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Empire_Field</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_Empire_Field</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Empire_Field</SFXEvent_Guard>
+		<SFXEvent_Group_Move>Unit_Group_Move_Empire_Field</SFXEvent_Group_Move>
+		<SFXEvent_Group_Attack>Unit_Group_Attack_Empire_Field</SFXEvent_Group_Attack>
+		<SFXEvent_Fire>Unit_Storm_Trooper_Fire</SFXEvent_Fire>
+
+		<CategoryMask> LandHero </CategoryMask>
+		<Ranking_In_Category> 21 </Ranking_In_Category>
+		<MovementClass> Infantry </MovementClass>
+
+		<OccupationStyle>1x1</OccupationStyle>
+		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+		<No_Reflection_Below_Detail_Level>2</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>2</No_Refraction_Below_Detail_Level>
+		<Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+		<Is_Squashable> Yes </Is_Squashable>
+		<Create_Team>No</Create_Team>
+
+		<Select_Box_Scale>27</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Execute_Script_On_Type>true</Execute_Script_On_Type>
+		<Lua_Script>FieldCommander</Lua_Script>
+		<Attach_To_Flagship_During_Space_Battle>No</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>
+		<AI_Combat_Power>50</AI_Combat_Power>
+
+		<Encyclopedia_Text>TEXT_TOOLTIP_FIELD_COMMANDER TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR</Encyclopedia_Unit_Class>
+
+		<Neutralization_Cost>100.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+
+		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
+
+		<Death_Clone>Damage_Disruptor_Hand, Infantry_Disruptor_Death_Clone_00</Death_Clone>
+		<Death_Clone>Damage_Disruptor_Hand, Infantry_Disruptor_Death_Clone_01</Death_Clone>
+		<Death_Clone>Damage_Infection, Infantry_Melt_Death_Clone_00</Death_Clone>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+
+		<Death_Fade_Time>0.25</Death_Fade_Time>
+		<Death_Persistence_Duration>0.0</Death_Persistence_Duration>
+
+		<Abilities SubObjectList="Yes">
+			<Enhance_Defense_Ability Name="Empire_Field_Commander_Enhance_Defense">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Enhancement_Percentage>0.25</Enhancement_Percentage>
+				<Apply_To_All_Allies>No</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+				<Unit_Strength_Category>Vehicle | Air | Infantry</Unit_Strength_Category>
+			</Enhance_Defense_Ability>
+			<Battlefield_Modifier_Ability Name="Empire_Field_Commander_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.5</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</GenericHeroUnit>
+	
+	<GenericHeroUnit Name="Squad_Generic_Field_Commander_Empire">
+		<Variant_Of_Existing_Type>Generic_Field_Commander_Empire</Variant_Of_Existing_Type>
+		<LandBehavior>LANDING, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR,IDLE,WEAPON, STUNNABLE, REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING</LandBehavior>
+		<Is_Squashable> Yes </Is_Squashable>
+		<Max_Speed> 1.1 </Max_Speed>
+		<Space_Layer> None </Space_Layer>
+		<Custom_Soft_Footprint_Radius> 3.0 </Custom_Soft_Footprint_Radius>
+		<Max_Rate_Of_Turn>8.0</Max_Rate_Of_Turn>
+		<FormationRaggedness> .2 </FormationRaggedness>
+		<MaxJiggleDistance> 2 </MaxJiggleDistance>
+		<Create_Team>Yes</Create_Team>
+		<Select_Box_Scale>0</Select_Box_Scale>
+		
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+	</GenericHeroUnit>
+
+	<GenericHeroUnit Name="Generic_Fleet_Commander_Rebel">
+		<Text_ID>TEXT_HERO_UNIT_FLEET_REBEL</Text_ID>
+		<!-- AJA 11/28/2005 - These are NOT named heroes. If you need some functionality that this flag provides, add a new flag. <Is_Named_Hero>Yes</Is_Named_Hero>-->
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+		<GUI_Row> 1 </GUI_Row>
+		<Icon_Name>i_button_RI_fleet_commander_bust.tga</Icon_Name>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Sprite>No</Is_Sprite>
+		<Type>Walk</Type>
+		<Affiliation>Rebel</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Size_Value>75</Size_Value>
+		<!--		<Damage>2</Damage> -->
+		<Autoresolve_Health>30</Autoresolve_Health>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Execute_Script_On_Type>true</Execute_Script_On_Type>
+		<Lua_Script>FleetCommander</Lua_Script>
+		<Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>Yes</Stay_In_Transport_During_Ground_Battle>
+		<Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+
+		<Encyclopedia_Text>TEXT_TOOLTIP_FLEET_COMMANDER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR</Encyclopedia_Unit_Class>
+
+		<Neutralization_Cost>100.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+
+		<CategoryMask> SpaceHero </CategoryMask>
+		<Ranking_In_Category> 21 </Ranking_In_Category>
+
+		<Abilities SubObjectList="Yes">
+			<Enhance_Defense_Ability Name="Rebel_Fleet_Commander_Enhance_Defense">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Enhancement_Percentage>0.25</Enhancement_Percentage>
+				<Apply_To_All_Allies>No</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+				<Unit_Strength_Category>Capital | Corvette | Frigate | Fighter</Unit_Strength_Category>
+			</Enhance_Defense_Ability>
+			<Battlefield_Modifier_Ability Name="Rebel_Fleet_Commander_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.5</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</GenericHeroUnit>
+
+	<GenericHeroUnit Name="Generic_Fleet_Commander_Empire">
+		<Text_ID>TEXT_HERO_UNIT_FLEET_EMPIRE</Text_ID>
+		<!-- AJA 11/28/2005 - These are NOT named heroes. If you need some functionality that this flag provides, add a new flag. <Is_Named_Hero>Yes</Is_Named_Hero>-->
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+		<GUI_Row> 1 </GUI_Row>
+		<Icon_Name>i_button_ei_fleet_commander_bust.tga</Icon_Name>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Sprite>No</Is_Sprite>
+		<Type>Walk</Type>
+		<Affiliation>Empire</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Size_Value>75</Size_Value>
+		<!--		<Damage>2</Damage> -->
+		<Autoresolve_Health>30</Autoresolve_Health>
+		<Execute_Script_On_Type>true</Execute_Script_On_Type>
+		<Lua_Script>FleetCommander</Lua_Script>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>Yes</Stay_In_Transport_During_Ground_Battle>
+		<Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+
+		<Encyclopedia_Text>TEXT_TOOLTIP_FLEET_COMMANDER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR</Encyclopedia_Unit_Class>
+
+		<Neutralization_Cost>100.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+
+		<CategoryMask> SpaceHero </CategoryMask>
+		<Ranking_In_Category> 21 </Ranking_In_Category>
+
+		<Abilities SubObjectList="Yes">
+			<Enhance_Defense_Ability Name="Empire_Fleet_Commander_Enhance_Defense">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Enhancement_Percentage>0.25</Enhancement_Percentage>
+				<Apply_To_All_Allies>No</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+				<Unit_Strength_Category>Capital | Corvette | Frigate | Fighter</Unit_Strength_Category>
+			</Enhance_Defense_Ability>
+			<Battlefield_Modifier_Ability Name="Empire_Fleet_Commander_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.5</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</GenericHeroUnit>
+	
+	<GenericHeroUnit Name="Rebel_Refugee">
+		<Text_ID>TEXT_UNIT_REBEL_REFUGEE</Text_ID>
+		<GUI_Row> 1 </GUI_Row>
+		<Icon_Name>i_button_field_commander.tga</Icon_Name>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Sprite>No</Is_Sprite>
+		<Type>Walk</Type>
+		<Affiliation>Rebel</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Size_Value>75</Size_Value>
+		<!--  <Damage>2</Damage> -->
+		<Autoresolve_Health>30</Autoresolve_Health>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Attach_To_Flagship_During_Space_Battle>No</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>Yes</Stay_In_Transport_During_Ground_Battle>
+		<Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+
+		<Neutralization_Cost>100.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+		
+		<!-- When a probe droid is moved by itself, it must activate its Spy ability at its destination. -->
+		<Can_Hyperspace_Without_Activating_Ability>No</Can_Hyperspace_Without_Activating_Ability>
+		
+		<Abilities SubObjectList="Yes">
+			<Galactic_Stealth_Ability Name="Rebel_Refugee_Galactic_Stealth">
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+		</Abilities>
+		
+		<Encyclopedia_Text>TEXT_TOOLTIP_REBEL_REFUGEE</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS</Encyclopedia_Unit_Class>
+
+		<Death_Fade_Time>0.25</Death_Fade_Time>
+		<Death_Persistence_Duration>0.0</Death_Persistence_Duration>		
+
+	</GenericHeroUnit>
+
+	<GenericHeroUnit Name="R_General_Rieekan_Commander">
+		<Text_ID>TEXT_APRIL25DEMO_06</Text_ID>
+		<GUI_Row> 1 </GUI_Row>
+		<Land_Model_Name>RI_Fieldcommander.ALO</Land_Model_Name>
+		<Icon_Name>i_button_field_commander.tga</Icon_Name>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Is_Sprite>No</Is_Sprite>
+
+		<Affiliation>Rebel</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Size_Value>75</Size_Value>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+
+		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>SURFACE_FX,WALK_LOCOMOTOR,IDLE,TARGETING,WEAPON,REVEAL,HIDE_WHEN_FOGGED</LandBehavior>
+		<SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<CanCellStack>yes</CanCellStack>
+		<Mass>1.0</Mass>
+		<Movement_Animation_Speed> 0.8 </Movement_Animation_Speed>
+		<Rotation_Animation_Speed> 20.0 </Rotation_Animation_Speed>
+
+		<Armor_Type> Armor_Hero </Armor_Type>
+		<Max_Speed>0.8</Max_Speed>
+		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+		<Custom_Soft_Footprint_Radius> 3.5 </Custom_Soft_Footprint_Radius>
+		<Custom_Hard_XExtent> 2.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 2.0 </Custom_Hard_YExtent>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> 0.5 </FormationSpacing>
+
+		<Scale_Factor>1.5</Scale_Factor>
+		<Is_Sprite>No</Is_Sprite>
+		<Shield_Points>0</Shield_Points>
+		<Autoresolve_Health>30</Autoresolve_Health>
+		<Tactical_Health>100</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Victory_Relevant>yes</Victory_Relevant>
+
+		<Damage>4</Damage>
+		<Projectile_Types>Proj_Infiltrator_Blaster</Projectile_Types>
+		<Land_FOW_Reveal_Range>75.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>150.0</Targeting_Max_Attack_Distance>
+		<Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+		<Projectile_Fire_Recharge_Seconds>1.5</Projectile_Fire_Recharge_Seconds>
+
+		<Targeting_Fire_Inaccuracy> Infantry, 3.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 10.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 10.0 </Targeting_Fire_Inaccuracy>
+
+		<SFXEvent_Select>Unit_Select_Plex_Soldier</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Plex_Soldier</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_Plex_Soldier</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Plex_Soldier</SFXEvent_Guard>
+		<SFXEvent_Fire>Unit_Plex_Soldier_Fire</SFXEvent_Fire>
+
+		<CategoryMask> LandHero </CategoryMask>
+		<MovementClass> Infantry </MovementClass>
+
+		<OccupationStyle>1x1</OccupationStyle>
+		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+		<No_Reflection_Below_Detail_Level>2</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>2</No_Refraction_Below_Detail_Level>
+		<Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+		<Is_Squashable> Yes </Is_Squashable>
+		<Create_Team>No</Create_Team>
+
+		<Select_Box_Scale>27</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Execute_Script_On_Type>true</Execute_Script_On_Type>
+		<Lua_Script>FieldCommander</Lua_Script>
+		<Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>
+		<AI_Combat_Power>50</AI_Combat_Power>
+
+		<Neutralization_Cost>100.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Abilities SubObjectList="Yes">
+			<Enhance_Defense_Ability Name="Rieekan_Enhance_Defense">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Enhancement_Percentage>0.25</Enhancement_Percentage>
+				<Apply_To_All_Allies>No</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+				<Unit_Strength_Category>Vehicle | Air | Infantry</Unit_Strength_Category>
+			</Enhance_Defense_Ability>
+			<Battlefield_Modifier_Ability Name="Rieekan_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.5</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</GenericHeroUnit>
+
+
+
+
+</GenericHeroUnits>

@@ -1,0 +1,531 @@
+<?xml version="1.0"?>
+<Movies>
+
+	<Movie Name="Logo1">
+		<Movie_File>Data\Art\Movies\Binked\LucasArtsLogo.bik</Movie_File>
+        <Cannot_Skip>false</Cannot_Skip>
+	</Movie>
+	
+	<Movie Name="Logo2">
+		<Movie_File>Data\Art\Movies\Binked\intro1.bik</Movie_File>
+        <Cannot_Skip>false</Cannot_Skip>
+	</Movie>
+
+
+		<!-- GameSpy Logo removed by request from Jim Ward -->
+	<Movie Name="Logo3">
+		<Movie_File>Data\Art\Movies\Binked\logo.bik</Movie_File>
+		<Cannot_Skip>false</Cannot_Skip>
+	</Movie>
+	
+
+	
+	<Movie Name="Default_Incoming_Transmission">
+		<Movie_File>Data\Art\Movies\Binked\incoming_transmission.bik</Movie_File>
+ 	     <Commandbar_Offset>0 -235</Commandbar_Offset>
+	</Movie>
+
+	<Movie Name="Light_Loop">
+		<Movie_File>Data\Art\Movies\Binked\Light_loop.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Pirate_Loop">
+		<Movie_File>Data\Art\Movies\Binked\pirate_loop2.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Pirate2_Loop">
+		<Movie_File>Data\Art\Movies\Binked\pirate_loop3.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Antillies_Loop">
+		<Movie_File>Data\Art\Movies\Binked\antillies_loop2.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Rebel_Trooper_Loop">
+		<Movie_File>Data\Art\Movies\Binked\rebel_trooper_loop2.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Rebel_Trooper2_Loop">
+		<Movie_File>Data\Art\Movies\Binked\rebel_trooper_loop3.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Rebel_Trooper3_Loop">
+		<Movie_File>Data\Art\Movies\Binked\rebel_trooper_loop4.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Chewie_Loop">
+		<Movie_File>Data\Art\Movies\Binked\chewy_loop2.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Obi_Wan_Loop">
+		<Movie_File>Data\Art\Movies\Binked\obi_loop2.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="R2D2_Loop">
+		<Movie_File>Data\Art\Movies\Binked\r2d2_loop2.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Han_Loop">
+		<Movie_File>Data\Art\Movies\Binked\han_loop2.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="C3PO_Loop">
+		<Movie_File>Data\Art\Movies\Binked\c3po_loop2.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Luke_Loop">
+		<Movie_File>Data\Art\Movies\Binked\rebel_pilot_loop2.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Rebel_Pilot_Loop">
+		<Movie_File>Data\Art\Movies\Binked\rebel_pilot_loop2.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Biggs_Loop">
+		<Movie_File>Data\Art\Movies\Binked\rebel_pilot_loop2.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Wedge_Loop">
+		<Movie_File>Data\Art\Movies\Binked\rebel_pilot_loop2.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Porkins_Loop">
+		<Movie_File>Data\Art\Movies\Binked\rebel_pilot_loop2.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Commander_Moff_Loop">
+		<Movie_File>Data\Art\Movies\Binked\moff_loop2.bik</Movie_File>
+  	    <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Commander_Moff2_Loop">
+		<Movie_File>Data\Art\Movies\Binked\moff_loop1.bik</Movie_File>
+  	    <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Boba_Fett_Loop">
+		<Movie_File>Data\Art\Movies\Binked\boba_fett_loop2.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Stormtrooper_Loop">
+		<Movie_File>Data\Art\Movies\Binked\stormtrooper_loop2.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Vader_Loop">
+		<Movie_File>Data\Art\Movies\Binked\vader_loop2.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Tarkin_Loop">
+		<Movie_File>Data\Art\Movies\Binked\tarkin_loop2.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Veers_Loop">
+		<Movie_File>Data\Art\Movies\Binked\veers_loop2.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Piett_Loop">
+		<Movie_File>Data\Art\Movies\Binked\moff_loop1.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Emperor_Loop">
+		<Movie_File>Data\Art\Movies\Binked\emperor_loop2.bik</Movie_File>
+		<Halt_Game_Music> Yes </Halt_Game_Music>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Leia_Loop">
+		<Movie_File>Data\Art\Movies\Binked\leia_loop2.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Akbar_Loop">
+		<Movie_File>Data\Art\Movies\Binked\akbar_loop2.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Mon_Mothma_Loop">
+		<Movie_File>Data\Art\Movies\Binked\mon_mothma_loop2.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Tyber_Loop">
+		<Movie_File>Data\Art\Movies\Binked\tyber_zann.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Silri_Loop">
+		<Movie_File>Data\Art\Movies\Binked\Silri_loop.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Urai_Loop">
+		<Movie_File>Data\Art\Movies\Binked\Urai_loop.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Bossk_Loop">
+		<Movie_File>Data\Art\Movies\Binked\bossk_loop.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Saboteur_Loop">
+		<Movie_File>Data\Art\Movies\Binked\saboteur_loop.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="IG-88_Loop">
+		<Movie_File>Data\Art\Movies\Binked\ig-88_loop.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Xizor_Loop">
+		<Movie_File>Data\Art\Movies\Binked\xizor_loop.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Thrawn_Loop">
+		<Movie_File>Data\Art\Movies\Binked\thrawn_loop.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Jabba_Loop">
+		<Movie_File>Data\Art\Movies\Binked\jabba_loop.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Underworld_soldier_Loop">
+		<Movie_File>Data\Art\Movies\Binked\underworld_soldier_loop.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Garm_Loop">
+		<Movie_File>Data\Art\Movies\Binked\garm_loop.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Generic_Sith_Loop">
+		<Movie_File>Data\Art\Movies\Binked\generic_sith.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<Movie Name="Collector_Droid_Loop">
+		<Movie_File>Data\Art\Movies\Binked\collector_droid.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+<Movie Name="Clone_Captain_Loop">
+		<Movie_File>Data\Art\Movies\Binked\capt_holo2.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+<Movie Name="Count_Dooku_Loop">
+		<Movie_File>Data\Art\Movies\Binked\dooku0.bik</Movie_File>
+ 	     <Alpha>true</Alpha>
+	</Movie>
+
+	<!-- Generic movies for Story Arc -->
+
+
+
+	<!-- BEGIN WIN MOVIES -->
+
+   <Movie Name="Empire_Win_Land">
+
+      <Movie_File>Data\Art\Movies\Binked\empire_win_land.bik</Movie_File>
+
+		<Halt_Game_Music> Yes </Halt_Game_Music>
+
+      <SFXEvent_Frame> Empire_Land_Win_Line_1, 60  </SFXEvent_Frame>
+		<Caption_Frame> TEXT_SFX_GES_SEE_ENEMY_2, 60 </Caption_Frame>
+		<Caption_Duration> TEXT_SFX_GES_SEE_ENEMY_2, 150 </Caption_Duration>
+		
+		<SFXEvent_Frame> Empire_Land_Win_Line_2, 99  </SFXEvent_Frame>
+		<Caption_Frame> TEXT_SFX_ATT_TANKS_1, 99 </Caption_Frame>
+		<Caption_Duration> TEXT_SFX_ATT_TANKS_1, 150 </Caption_Duration>
+		
+		<SpeechEvent_Frame> Empire_Land_Win_Line_3, 159  </SpeechEvent_Frame>
+		<Caption_Frame> TEXT_SPEECH_TUTORIAL_EMPIRE_ACT05_16, 159 </Caption_Frame>
+		<Caption_Duration> TEXT_SPEECH_TUTORIAL_EMPIRE_ACT05_16, 150 </Caption_Duration>
+		
+		<SFXEvent_Frame> Empire_Land_Win_Line_4, 444  </SFXEvent_Frame>
+		<Caption_Frame> TEXT_SFX_GRS_SEE_ENEMY_18, 444 </Caption_Frame>
+		<Caption_Duration> TEXT_SFX_GRS_SEE_ENEMY_18, 150 </Caption_Duration>
+		
+		<SFXEvent_Frame> Empire_Land_Win_Line_5, 603  </SFXEvent_Frame>
+		<Caption_Frame> TEXT_SFX_GES_ENEMY_RETREAT_3, 603 </Caption_Frame>
+		<Caption_Duration> TEXT_SFX_GES_ENEMY_RETREAT_3, 150 </Caption_Duration>
+		
+		<SFXEvent_Frame> Empire_Land_Win_Line_6, 699  </SFXEvent_Frame>
+		<Caption_Frame> TEXT_SFX_AW5_CHATTER_3, 699 </Caption_Frame>
+		<Caption_Duration> TEXT_SFX_AW5_CHATTER_3, 150 </Caption_Duration>
+		
+		<SFXEvent_Frame> Empire_Land_Win_Line_7, 738  </SFXEvent_Frame>
+		<Caption_Frame> TEXT_SFX_GRS_SEE_ENEMY_15, 738 </Caption_Frame>
+		<Caption_Duration> TEXT_SFX_GRS_SEE_ENEMY_15, 150 </Caption_Duration>
+		
+		<SpeechEvent_Frame> Empire_Land_Win_Line_8, 798  </SpeechEvent_Frame>
+		<Caption_Frame> TEXT_SPEECH_EMPIRE_ACT01_MISSION_FOUR_19, 798 </Caption_Frame>
+		<Caption_Duration> TEXT_SPEECH_EMPIRE_ACT01_MISSION_FOUR_19, 150 </Caption_Duration>
+		
+		<SFXEvent_Frame> Empire_Land_Win_Line_9, 968  </SFXEvent_Frame>
+		<Caption_Frame> TEXT_SFX_VAD_INTERACT_3, 968 </Caption_Frame>
+		<Caption_Duration> TEXT_SFX_VAD_INTERACT_3, 150 </Caption_Duration>
+		
+		<SFXEvent_Frame> Empire_Land_Win_Line_10, 1028  </SFXEvent_Frame>
+		<Caption_Frame> TEXT_SFX_VAD_INTERACT_6, 1028 </Caption_Frame>
+		<Caption_Duration> TEXT_SFX_VAD_INTERACT_6, 150 </Caption_Duration>
+
+      <Overlay>true</Overlay>
+   </Movie>
+
+   <Movie Name="Empire_Win_Space">
+
+      <Movie_File>Data\Art\Movies\Binked\empire_win_space.bik</Movie_File>
+
+		<Halt_Game_Music> Yes </Halt_Game_Music>
+
+		<SpeechEvent_Frame> Empire_Space_Win_Line_1, 1376  </SpeechEvent_Frame>
+		<Caption_Frame> TEXT_SPEECH_EMPIRE_SPACE_WIN_01, 1376 </Caption_Frame>
+		<Caption_Duration> TEXT_SPEECH_EMPIRE_SPACE_WIN_01, 300 </Caption_Duration>
+		
+		<SpeechEvent_Frame> Empire_Space_Win_Line_2, 1638  </SpeechEvent_Frame>
+		<Caption_Frame> TEXT_SPEECH_EMPIRE_SPACE_WIN_02, 1638 </Caption_Frame>
+		<Caption_Duration> TEXT_SPEECH_EMPIRE_SPACE_WIN_02, 150 </Caption_Duration>
+		
+		<SpeechEvent_Frame> Empire_Space_Win_Line_3, 1743  </SpeechEvent_Frame>
+		<Caption_Frame> TEXT_SPEECH_EMPIRE_SPACE_WIN_03, 1743 </Caption_Frame>
+		<Caption_Duration> TEXT_SPEECH_EMPIRE_SPACE_WIN_03, 150 </Caption_Duration>
+		
+		<SpeechEvent_Frame> Empire_Space_Win_Line_4, 1854  </SpeechEvent_Frame>
+		<Caption_Frame> TEXT_SPEECH_EMPIRE_SPACE_WIN_04, 1854 </Caption_Frame>
+		<Caption_Duration> TEXT_SPEECH_EMPIRE_SPACE_WIN_04, 150 </Caption_Duration>
+
+      <Overlay>true</Overlay>
+   </Movie>
+
+   <Movie Name="Empire_Win_Deathstar">
+
+      <Movie_File>Data\Art\Movies\Binked\Empire_Win_Deathstar.bik</Movie_File>
+
+		<Halt_Game_Music> Yes </Halt_Game_Music>
+
+      <Overlay>true</Overlay>
+   </Movie>
+
+   <Movie Name="Rebel_Win_Deathstar">
+
+      <Movie_File>Data\Art\Movies\Binked\rebels_win_deathstar.bik</Movie_File>
+
+		<Halt_Game_Music> Yes </Halt_Game_Music>
+
+      <Overlay>true</Overlay>
+   </Movie>
+
+   <Movie Name="Rebel_Win_Land">
+
+      <Movie_File>Data\Art\Movies\Binked\rebels_win_land.bik</Movie_File>
+
+		<Halt_Game_Music> Yes </Halt_Game_Music>
+
+      <Overlay>true</Overlay>
+   </Movie>
+
+   <Movie Name="Rebel_Win_Space">
+
+      <Movie_File>Data\Art\Movies\Binked\rebels_win_space.bik</Movie_File>
+
+		<Halt_Game_Music> Yes </Halt_Game_Music>
+
+		<SFXEvent_Frame> Rebel_Space_Win_Line_1, 345  </SFXEvent_Frame>
+		<Caption_Frame> TEXT_SFX_GRS_NEAR_VICTORY_4, 345 </Caption_Frame>
+		<Caption_Duration> TEXT_SFX_GRS_NEAR_VICTORY_4, 150 </Caption_Duration>
+		
+		<SFXEvent_Frame> Rebel_Space_Win_Line_2, 390  </SFXEvent_Frame>
+		<Caption_Frame> TEXT_SFX_GRS_NEAR_VICTORY_5, 390 </Caption_Frame>
+		<Caption_Duration> TEXT_SFX_GRS_NEAR_VICTORY_5, 150 </Caption_Duration>
+		
+		<SFXEvent_Frame> Rebel_Space_Win_Line_3, 435  </SFXEvent_Frame>
+		<Caption_Frame> TEXT_SFX_NEB_BARRAGE_1, 435 </Caption_Frame>
+		<Caption_Duration> TEXT_SFX_NEB_BARRAGE_1, 150 </Caption_Duration>
+		
+		<SFXEvent_Frame> Rebel_Space_Win_Line_4, 543  </SFXEvent_Frame>
+		<Caption_Frame> TEXT_SFX_VAD_PUSH_6, 543 </Caption_Frame>
+		<Caption_Duration> TEXT_SFX_VAD_PUSH_6, 150 </Caption_Duration>
+		
+		<SpeechEvent_Frame> Rebel_Space_Win_Line_5, 585  </SpeechEvent_Frame>
+		<Caption_Frame> TEXT_SPEECH_EMPIRE_ACT04_MISSION_TEN_27, 585 </Caption_Frame>
+		<Caption_Duration> TEXT_SPEECH_EMPIRE_ACT04_MISSION_TEN_27, 150 </Caption_Duration>
+		
+		<SFXEvent_Frame> Rebel_Space_Win_Line_6, 822  </SFXEvent_Frame>
+		<Caption_Frame> TEXT_SFX_XW5_CHATTER_3, 822 </Caption_Frame>
+		<Caption_Duration> TEXT_SFX_XW5_CHATTER_3, 150 </Caption_Duration>
+		
+		<SFXEvent_Frame> Rebel_Space_Win_Line_7, 921  </SFXEvent_Frame>
+		<Caption_Frame> TEXT_SFX_AAF_BARRAGE_1, 921 </Caption_Frame>
+		<Caption_Duration> TEXT_SFX_AAF_BARRAGE_1, 150 </Caption_Duration>
+
+      <Overlay>true</Overlay>
+   </Movie>
+
+
+   <Movie Name="Underworld_Win_Story_Campaign">
+
+      <Movie_File>Data\Art\Movies\Binked\Underworld_Win1.bik</Movie_File>
+
+      <Cannot_Skip>true</Cannot_Skip>
+		<Halt_Game_Music> Yes </Halt_Game_Music>
+
+		<SpeechEvent_Frame> UW_END_CINEMATIC_00, 235  </SpeechEvent_Frame>
+		<Caption_Frame> TEXT_SPEECH_UW_END_CINEMATIC_00, 235 </Caption_Frame>
+		<Caption_Duration> TEXT_SPEECH_UW_END_CINEMATIC_00, 360 </Caption_Duration>
+
+		<SpeechEvent_Frame> UW_END_CINEMATIC_01, 623  </SpeechEvent_Frame>
+		<Caption_Frame> TEXT_SPEECH_UW_END_CINEMATIC_01, 623 </Caption_Frame>
+		<Caption_Duration> TEXT_SPEECH_UW_END_CINEMATIC_01, 180 </Caption_Duration>
+
+		<SpeechEvent_Frame> UW_END_CINEMATIC_02, 829  </SpeechEvent_Frame>
+		<Caption_Frame> TEXT_SPEECH_UW_END_CINEMATIC_02, 829 </Caption_Frame>
+		<Caption_Duration> TEXT_SPEECH_UW_END_CINEMATIC_02, 500 </Caption_Duration>
+
+		<SpeechEvent_Frame> UW_END_CINEMATIC_03, 1440  </SpeechEvent_Frame>
+		<Caption_Frame> TEXT_SPEECH_UW_END_CINEMATIC_03, 1440 </Caption_Frame>
+		<Caption_Duration> TEXT_SPEECH_UW_END_CINEMATIC_03, 150 </Caption_Duration>
+
+
+      <Overlay>true</Overlay>
+   </Movie>
+
+
+   <Movie Name="Underworld_Win_Story_Campaign_Part2">
+
+      <Movie_File>Data\Art\Movies\Binked\Underworld_Win2.bik</Movie_File>
+
+      <Cannot_Skip>true</Cannot_Skip>
+		<Halt_Game_Music> Yes </Halt_Game_Music>
+
+		<SpeechEvent_Frame> UW_END_CINEMATIC_04, 955  </SpeechEvent_Frame>
+		<Caption_Frame> TEXT_SPEECH_UW_END_CINEMATIC_04, 955 </Caption_Frame>
+		<Caption_Duration> TEXT_SPEECH_UW_END_CINEMATIC_04, 150 </Caption_Duration>
+
+      <Overlay>true</Overlay>
+   </Movie>
+
+
+
+
+
+
+
+	<!-- END WIN MOVIES -->
+	
+
+
+
+
+   <Movie Name="Credits">
+		<Movie_File>Data\Art\Movies\Binked\credits_loop.bik</Movie_File>
+        <Has_Credits>true</Has_Credits>
+        <Overlay>true</Overlay>
+        <Movie_Start_Frame>1</Movie_Start_Frame>	
+	</Movie>
+
+   <Movie Name="AlphaTest">
+		<Movie_File>Data\Art\Movies\Binked\Text_Scroll_Intro.bik</Movie_File>
+        <Has_Credits>false</Has_Credits>
+        <Alpha>true</Alpha>
+	</Movie>
+	
+	 <Movie Name="Star_Wars_Intro_Short">
+		<Movie_File>Data\Art\Movies\Binked\Text_Scroll_Intro_short.bik</Movie_File>
+		<Text_Crawl_Name>EMPIRE_ACT_1</Text_Crawl_Name>
+		<Text_Crawl_Start_Frame>250</Text_Crawl_Start_Frame>
+        <Has_Credits>false</Has_Credits>
+        <Alpha>true</Alpha>
+		<Pause_Game_While_Playing>true</Pause_Game_While_Playing>
+	</Movie>
+	
+	 <Movie Name="Star_Wars_Intro">
+		<Movie_File>Data\Art\Movies\Binked\Text_Intro.bik</Movie_File>
+		<Text_Crawl_Name>A_Long_Time_Ago</Text_Crawl_Name>
+		<Text_Crawl_Start_Frame>0</Text_Crawl_Start_Frame>
+        <Has_Credits>false</Has_Credits>
+        <Alpha>true</Alpha>
+		<Pause_Game_While_Playing>true</Pause_Game_While_Playing>
+	</Movie>
+	
+	<!-- Oksana: commenting out - will use Star_Wars_Intro and Star_Wars_Intro_Short instead. -->
+	
+	<Movie Name="Star_Wars_Intro_Rebel">
+		<Movie_File>Data\Art\Movies\Binked\Text_Scroll_Intro_short.bik</Movie_File>
+		<Text_Crawl_Name>REBEL_PROLOGE_1</Text_Crawl_Name>
+		<Text_Crawl_Start_Frame>250</Text_Crawl_Start_Frame>
+        <Has_Credits>false</Has_Credits>
+        <Alpha>true</Alpha>
+		<Pause_Game_While_Playing>true</Pause_Game_While_Playing>
+	</Movie>
+	
+	
+
+	<!-- Underworld Text Crawl Movie -->
+	 <Movie Name="Star_Wars_Intro_Underworld">
+		<Movie_File>Data\Art\Movies\Binked\Text_Scroll_Intro_short.bik</Movie_File>
+		<Text_Crawl_Name>UNDERWORLD_TEXT_CRAWL</Text_Crawl_Name>
+		<Text_Crawl_Start_Frame>250</Text_Crawl_Start_Frame>
+        <Has_Credits>false</Has_Credits>
+        <Alpha>true</Alpha>
+		<Pause_Game_While_Playing>true</Pause_Game_While_Playing>
+	</Movie>
+
+	 <Movie Name="Underworld_Prolog_Text"> <!-- Text says "Five years before the Battle of Yavin...." -->
+		<Movie_File>Data\Art\Movies\Binked\Text_Intro.bik</Movie_File>
+		<Text_Crawl_Name>Underworld_Prolog</Text_Crawl_Name>
+		<Text_Crawl_Start_Frame>0</Text_Crawl_Start_Frame>
+        <Has_Credits>false</Has_Credits>
+        <Alpha>true</Alpha>
+		<Pause_Game_While_Playing>true</Pause_Game_While_Playing>
+	</Movie>
+	
+		<Movie Name="Order66_Montage">
+		<Movie_File>Data\Art\Movies\Binked\Order66.bik</Movie_File>
+		<Halt_Game_Music> Yes </Halt_Game_Music>
+ 	     <Commandbar_Offset>-37 -301</Commandbar_Offset>
+ 	     </Movie>
+
+
+ <Movie Name="Clone_Wars_End_Win">
+
+      <Movie_File>Data\Art\Movies\Binked\republic_win.bik</Movie_File>
+
+      <Cannot_Skip>true</Cannot_Skip>
+		<Halt_Game_Music> Yes </Halt_Game_Music>
+		<Has_Credits>false</Has_Credits>
+		 <Movie_Start_Frame>1</Movie_Start_Frame>	
+
+      <Commandbar_Offset>-37 -301</Commandbar_Offset>
+ </Movie>
+
+
+</Movies>

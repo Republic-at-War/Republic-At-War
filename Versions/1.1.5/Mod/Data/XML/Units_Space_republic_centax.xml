@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+
+
+<Centax_Heavy_Frigate_Data>
+
+
+<SpaceUnit Name="Rep_Centax_Heavy_Frigate">
+		<Text_ID>TEXT_UNIT_CENTAX</Text_ID>
+		<Encyclopedia_Good_Against> CiS_Carrier Cis_Patrol_Frigate  Munificent_Frigate  </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Providence_Class_Carrier Lucrehulk_Battleship CIS_Bomber </Encyclopedia_Vulnerable_To>
+		<GUI_Row> 1 </GUI_Row>
+		<Space_Model_Name>ReV_centax_frigate.ALO</Space_Model_Name>
+		<Select_Box_Scale>450</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Mass>0.9995</Mass>
+		<Scale_Factor>0.4</Scale_Factor>
+<No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+        <Ranking_In_Category>6</Ranking_In_Category>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Max_Speed>2.2</Max_Speed>
+		<Max_Rate_Of_Turn>0.5</Max_Rate_Of_Turn>
+		<MovementClass> Space </MovementClass>
+		<Space_Layer> Frigate </Space_Layer>
+		<Layer_Z_Adjust>-130.0</Layer_Z_Adjust>
+		<Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>20</Bank_Turn_Angle>
+		<OverrideAcceleration> .04 </OverrideAcceleration>
+		<OverrideDeceleration> .04 </OverrideDeceleration>
+		
+		<Max_Thrust>1.5</Max_Thrust>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		<Maintenance_Cost>0.1</Maintenance_Cost>
+
+		<Armor_Type> Armor_Victory_Class </Armor_Type>
+    <Shield_Armor_Type>Shield_Frigate</Shield_Armor_Type>
+		<Damage>50</Damage>
+		<Autoresolve_Health>2400</Autoresolve_Health>
+		<Shield_Points>1300</Shield_Points>
+		<Tactical_Health>2000</Tactical_Health>
+		<Shield_Refresh_Rate>62</Shield_Refresh_Rate> <!-- was 50 -->
+		<Energy_Capacity>3000</Energy_Capacity>
+		<Energy_Refresh_Rate>400</Energy_Refresh_Rate>
+
+		<Affiliation>Empire</Affiliation>
+		<Tech_Level>3</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>3</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Ship_Class>frigate</Ship_Class>
+		<Formation_Priority>3</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Political_Control>0</Political_Control>
+		<Squadron_Capacity>10</Squadron_Capacity>
+		<Transport_Capacity>8</Transport_Capacity>
+		<Number_per_Squadron>1</Number_per_Squadron>
+		<Build_Cost_Credits>2500</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<AI_Combat_Power>2700</AI_Combat_Power>
+		<Build_Time_Seconds>25</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Size_Value>8</Size_Value>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+		<SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space_Empire</Death_Explosions>
+
+		<Death_Clone>Damage_Normal, Rep_Centax_Death_Clone</Death_Clone>
+		<Space_FOW_Reveal_Range>1200.0</Space_FOW_Reveal_Range>
+
+		<Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
+		<Targeting_Max_Attack_Distance>1400.0</Targeting_Max_Attack_Distance>
+		
+			
+		<HardPoints>
+			HP_Centax_Weapon_Center_Front,
+			HP_Centax_Weapon_Left_00,
+			HP_Centax_Weapon_Right_00,
+			HP_Centax_Weapon_Center_00,
+			HP_Centax_Weapon_Left_01,
+			HP_Centax_Weapon_Right_01,
+			HP_Centax_Weapon_Left_02,
+			HP_Centax_Weapon_Right_02,
+			HP_Centax_Weapon_Center_01,
+			HP_Centax_Weapon_Right_03,
+			HP_Centax_Weapon_Left_03,
+			HP_Centax_Shield_Generator,
+			HP_Centax_Engines,
+		</HardPoints>
+
+		<CategoryMask> Frigate | AntiCorvette</CategoryMask>
+		<Icon_Name>I_BUTTON_CENTAX_FRIGATE.tga</Icon_Name>
+		<GUI_Model_Name>ReV_centax_frigate.ALO</GUI_Model_Name>
+		<GUI_Distance>1100</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Rep_Frigate</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Acclamator_Moving_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Select>Unit_Select_Rep_Frigate</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Rep_Frigate</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleetmove_Rep_Ship</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Rep_Ship</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Move_Rep_Frigate</SFXEvent_Guard>
+		<SFXEvent_Stop />
+		<SFXEvent_Barrage />
+		<SFXEvent_Move_Into_Asteroid_Field />
+		<SFXEvent_Move_Into_Nebula /> 
+		<SFXEvent_Damaged_By_Asteroid> SFX_Asteroid_Detonation </SFXEvent_Damaged_By_Asteroid>
+		<SFXEvent_Bombard_Select_Target>	RHD_Bombard_Select_Target </SFXEvent_Bombard_Select_Target>
+		<SFXEvent_Bombard_Incoming> RHD_Bombard_Incoming  </SFXEvent_Bombard_Incoming>
+
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_HP_Rep_Ship </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_HP_Rep_Ship </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_HP_Rep_Ship </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_HP_Rep_Ship </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_HP_Rep_Ship </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_HP_Rep_Ship </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_HP_Rep_Ship </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Special_Ship_Lost_HP </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Special_Ship_Lost_HP </SFXEvent_Hardpoint_Destroyed>
+		
+
+		<SFXEvent_Engine_Idle_Loop> Unit_Acclamator_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Acclamator_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Acclamator_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		
+		<Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Space_Full_Stop_Command> Yes </Space_Full_Stop_Command>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>1.0</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>1.0</Radar_Icon_Scale_Space>
+
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>0.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>400.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+		<Lua_Script>ObjectScript_MissileShield</Lua_Script>
+
+
+		<Tactical_Bribe_Cost>1500</Tactical_Bribe_Cost>
+		
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>power_to_weapons</Type>
+				<Expiration_Seconds>20</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.5f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	-3f</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Special_Weapons_Rep_Ship</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+			
+				<Unit_Ability>
+				<Type>MISSILE_SHIELD</Type>
+				<Disable_Movement>Yes</Disable_Movement>
+
+				<Effective_Radius>850</Effective_Radius>
+				<Recharge_Seconds>15</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Special_Sensors_Rep_Ship</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+				<Supports_Autofire>True</Supports_Autofire>
+		</Unit_Ability>
+			
+		</Unit_Abilities_Data>
+		
+		<Encyclopedia_Text> TEXT_TOOLTIP_CENTAX</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FRIGATE </Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 1800</Score_Cost_Credits>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>2500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		<Population_Value>2</Population_Value>
+	</SpaceUnit>
+
+     <SpaceUnit Name="Rep_Centax_Death_Clone">
+		<Text_ID>TEXT_UNIT_CENTAX</Text_ID>
+		<Space_Model_Name>ReV_centax_frigate_d.ALO</Space_Model_Name>
+		<xxxSpace_Model_Name>ReV_centax_frigate.ALO</xxxSpace_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Death_Explosions>Large_Explosion_Space_Empire</Death_Explosions>
+		<Scale_Factor>0.4</Scale_Factor>
+		<Layer_Z_Adjust>-130.0</Layer_Z_Adjust>
+		<Max_Speed>1.2</Max_Speed>
+		<Max_Rate_Of_Turn>0.03</Max_Rate_Of_Turn>
+		<Max_Thrust>1</Max_Thrust>
+		<Max_Rate_Of_Roll>0.1</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>0</Bank_Turn_Angle>
+		<Affiliation>Rebel</Affiliation>
+		<Ship_Class>frigate</Ship_Class>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceUnit>
+
+
+
+
+
+	
+</Centax_Heavy_Frigate_Data>

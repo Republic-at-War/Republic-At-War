@@ -1,0 +1,1455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SpecialStructures_Defense>
+  <!--             NEW STRUCTURES FOR RAW/IA2 BELOW                           -->
+  <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+  <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+  <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+  <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+  <SpecialStructure Name="E_Ground_Base_Shield">
+    <Text_ID>TEXT_GROUND_BASE_SHIELD</Text_ID>
+    <GUI_Row> 0 </GUI_Row>
+    <Land_Model_Name>NB_BASESHIELDGEN.ALO</Land_Model_Name>
+    <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+    <SFXEvent_Ambient_Loop>Structure_Barracks_Loop</SFXEvent_Ambient_Loop>
+    <Behavior>DUMMY_GROUND_STRUCTURE, SELECTABLE</Behavior>
+    <LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,BASE_SHIELD,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI, EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+    <Obstacle_Proxy_Type> E_Ground_Base_Shield_Build_Pad </Obstacle_Proxy_Type>
+    <Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>
+    <Terrain_Texture_Modifier_Join_Distance>1.0</Terrain_Texture_Modifier_Join_Distance>
+    <Terrain_Texture_Modifier_Square>true</Terrain_Texture_Modifier_Square>
+    <Shield_On_Anim>SHIELD_ON</Shield_On_Anim>
+    <Shield_Off_Anim>SHIELD_OFF</Shield_Off_Anim>
+    <Base_Shield_Radius>740</Base_Shield_Radius>
+    <Base_Shield_Always_Off> False </Base_Shield_Always_Off>
+    <SecondaryOccupationPassability> Shield </SecondaryOccupationPassability>
+    <Influences_Capture_Point>False</Influences_Capture_Point>
+    <Is_Community_Property>Yes</Is_Community_Property>
+    <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+    <Death_Explosions>Large_Explosion_Land</Death_Explosions>
+    <Ranged_Target_Z_Adjust>30.0</Ranged_Target_Z_Adjust>
+    <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+    <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+    <Select_Box_Scale>180</Select_Box_Scale>
+    <Mass>1.0</Mass>
+    <Scale_Factor>0.75</Scale_Factor>
+    <!--<Is_Sprite>No</Is_Sprite>-->
+    <GUI_Bracket_Size>2</GUI_Bracket_Size>
+    <GUI_Bounds_Scale>0.05</GUI_Bounds_Scale>
+    <Is_Dummy>No</Is_Dummy>
+    <Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+    <Obstacle_Width>40.0</Obstacle_Width>
+    <Obstacle_Height>40.0</Obstacle_Height>
+    <Obstacle_X_Offset>-20.0</Obstacle_X_Offset>
+    <Obstacle_Y_Offset>-20.0</Obstacle_Y_Offset>
+    <Fine_Tune_Occupied_Passability> false </Fine_Tune_Occupied_Passability>
+    <GUI_Bracket_Size>2</GUI_Bracket_Size>
+    <Custom_Hard_XExtent> 50.0 </Custom_Hard_XExtent>
+    <Custom_Hard_YExtent> 50.0 </Custom_Hard_YExtent>
+    <Custom_Soft_Footprint_Radius> 40.0 </Custom_Soft_Footprint_Radius>
+    <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+    <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+    <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+    <Armor_Type> Armor_Structure </Armor_Type>
+    <Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+    <Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+    <Reinforcement_Prevention_Radius>775</Reinforcement_Prevention_Radius>
+    <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+    <Shield_Normal_Color>0.2, 0.2, 0.8, 1.0</Shield_Normal_Color>
+    <Shield_Upgraded_Color>0.2, 0.7, 0.8, 1.0</Shield_Upgraded_Color>
+    <Affiliation>Empire</Affiliation>
+    <Political_Control>0</Political_Control>
+    <Build_Cost_Credits>2000</Build_Cost_Credits>
+    <Build_Time_Seconds>60</Build_Time_Seconds>
+    <Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+    <Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+    <Size_Value>50</Size_Value>
+    <Base_Position>In_Base</Base_Position>
+    <Tech_Level>2</Tech_Level>
+    <Required_Timeline>0</Required_Timeline>
+    <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>0</Required_Star_Base_Level>
+    <Required_Special_Structures>e_ground_barracks</Required_Special_Structures>
+    <Required_Planets />
+    <Tactical_Additional_Structure_Type>Power_Generator_E</Tactical_Additional_Structure_Type>
+    <Tactical_Health>650</Tactical_Health>
+    <Icon_Name>i_button_base_shield_generator.tga</Icon_Name>
+    <Victory_Relevant>yes</Victory_Relevant>
+    <No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+    <No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+    <Sabotage_Cost_Credits>4000</Sabotage_Cost_Credits>
+    <SFXEvent_Build_Started>RHD_Shield_Generator_Build</SFXEvent_Build_Started>
+    <SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+    <SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+    <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+    <SFXEvent_Unit_Under_Attack> RHD_Shield_Generator_Under_Attack </SFXEvent_Unit_Under_Attack>
+    <SFXEvent_Unit_Lost> RHD_Shield_Generator_Destroyed </SFXEvent_Unit_Lost>
+    <SFXEvent_Select> Structure_Shield_Gen_Select_SFX </SFXEvent_Select>
+    <SFXEvent_Powered_Active_Loop> Structure_Shutter_Shield_Generator_Loop </SFXEvent_Powered_Active_Loop>
+    <Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+    <CategoryMask> Structure </CategoryMask>
+    <!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+    <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+    <Space_Layer> Corvette </Space_Layer>
+    <Has_Land_Evaluator>True</Has_Land_Evaluator>
+    <Tactical_Buildable_Objects_Campaign> 
+			Empire,
+				RL_Enhanced_Base_Shield_Upgrade_NoPre,
+		</Tactical_Buildable_Objects_Campaign>
+    <Tactical_Buildable_Objects_Multiplayer> 
+			Empire,
+				RL_Enhanced_Base_Shield_Upgrade,
+		</Tactical_Buildable_Objects_Multiplayer>
+    <Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BASE_SHIELD_00  </Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+    <Score_Cost_Credits> 20000 </Score_Cost_Credits>
+    <Property_Flags>InBase</Property_Flags>
+    <Movie_Object>false</Movie_Object>
+    <Abilities SubObjectList="Yes">
+      <Force_Healing_Ability Name="E_Base_Shield_Self_Repair">
+        <Activation_Style>Skirmish_Automatic</Activation_Style>
+        <Heal_Range>0.0</Heal_Range>
+        <Heal_Percent>0.025</Heal_Percent>
+        <Heal_Amount>0.0</Heal_Amount>
+        <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+        <Single_Target_Heal>Yes</Single_Target_Heal>
+        <Applicable_Unit_Categories />
+        <Applicable_Unit_Types />
+        <SFXEvent_Target_Affected />
+        <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+        <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+        <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+        <Owner_Light_Effect_Color2 />
+        <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+        <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+      </Force_Healing_Ability>
+    </Abilities>
+    <Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+    <Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+    <Radar_Range_Icon_Name>i_radar_shield.tga</Radar_Range_Icon_Name>
+    <!-- icon for when the shield's up -->
+  </SpecialStructure>
+  <SpecialStructure Name="R_Ground_Base_Shield">
+    <Text_ID>TEXT_GROUND_BASE_SHIELD</Text_ID>
+    <GUI_Row> 0 </GUI_Row>
+    <Land_Model_Name>NB_BASESHIELDGEN.ALO</Land_Model_Name>
+    <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+    <SFXEvent_Ambient_Loop>Structure_Barracks_Loop</SFXEvent_Ambient_Loop>
+    <Behavior>DUMMY_GROUND_STRUCTURE, SELECTABLE</Behavior>
+    <LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,BASE_SHIELD,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI, EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+    <Obstacle_Proxy_Type> R_Ground_Base_Shield_Build_Pad </Obstacle_Proxy_Type>
+    <Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>
+    <Terrain_Texture_Modifier_Join_Distance>1.0</Terrain_Texture_Modifier_Join_Distance>
+    <Terrain_Texture_Modifier_Square>true</Terrain_Texture_Modifier_Square>
+    <Shield_On_Anim>SHIELD_ON</Shield_On_Anim>
+    <Shield_Off_Anim>SHIELD_OFF</Shield_Off_Anim>
+    <Base_Shield_Radius>740</Base_Shield_Radius>
+    <Base_Shield_Always_Off> False </Base_Shield_Always_Off>
+    <SecondaryOccupationPassability> Shield </SecondaryOccupationPassability>
+    <Influences_Capture_Point>False</Influences_Capture_Point>
+    <Is_Community_Property>Yes</Is_Community_Property>
+    <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+    <Death_Explosions>Large_Explosion_Land</Death_Explosions>
+    <Ranged_Target_Z_Adjust>30.0</Ranged_Target_Z_Adjust>
+    <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+    <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+    <Radar_Range_Icon_Name>i_radar_shield.tga</Radar_Range_Icon_Name>
+    <Select_Box_Scale>180</Select_Box_Scale>
+    <Mass>1.0</Mass>
+    <Scale_Factor>0.75</Scale_Factor>
+    <!--<Is_Sprite>No</Is_Sprite>-->
+    <GUI_Bracket_Size>2</GUI_Bracket_Size>
+    <GUI_Bounds_Scale>0.05</GUI_Bounds_Scale>
+    <Is_Dummy>No</Is_Dummy>
+    <Armor_Type> Armor_Structure </Armor_Type>
+    <Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+    <Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+    <Reinforcement_Prevention_Radius>775</Reinforcement_Prevention_Radius>
+    <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+    <Obstacle_Width>40.0</Obstacle_Width>
+    <Obstacle_Height>40.0</Obstacle_Height>
+    <Obstacle_X_Offset>-20.0</Obstacle_X_Offset>
+    <Obstacle_Y_Offset>-20.0</Obstacle_Y_Offset>
+    <Fine_Tune_Occupied_Passability> false </Fine_Tune_Occupied_Passability>
+    <Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+    <GUI_Bracket_Size>2</GUI_Bracket_Size>
+    <Custom_Hard_XExtent> 50.0 </Custom_Hard_XExtent>
+    <Custom_Hard_YExtent> 50.0 </Custom_Hard_YExtent>
+    <Custom_Soft_Footprint_Radius> 40.0 </Custom_Soft_Footprint_Radius>
+    <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+    <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+    <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+    <Shield_Normal_Color>0.2, 0.2, 0.8, 1.0</Shield_Normal_Color>
+    <Shield_Upgraded_Color>0.2, 0.7, 0.8, 1.0</Shield_Upgraded_Color>
+    <Affiliation>Rebel</Affiliation>
+    <Political_Control>0</Political_Control>
+    <Build_Cost_Credits>2000</Build_Cost_Credits>
+    <Build_Time_Seconds>60</Build_Time_Seconds>
+    <Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+    <Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+    <Size_Value>50</Size_Value>
+    <Build_Initially_Locked>Yes</Build_Initially_Locked>
+    <Build_Can_Be_Unlocked_By_Slicer>Yes</Build_Can_Be_Unlocked_By_Slicer>
+    <Slice_Cost_Credits>400</Slice_Cost_Credits>
+    <Base_Position>In_Base</Base_Position>
+    <Tech_Level>0</Tech_Level>
+    <Required_Timeline>1</Required_Timeline>
+    <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>0</Required_Star_Base_Level>
+    <Required_Special_Structures />
+    <Required_Planets />
+    <Tactical_Additional_Structure_Type>Power_Generator_R</Tactical_Additional_Structure_Type>
+    <Tactical_Health>650</Tactical_Health>
+    <Icon_Name>i_button_base_shield_generator.tga</Icon_Name>
+    <Victory_Relevant>yes</Victory_Relevant>
+    <No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+    <No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+    <Sabotage_Cost_Credits>4000</Sabotage_Cost_Credits>
+    <Tutorial_Sabotage_Cost_Credits>100000</Tutorial_Sabotage_Cost_Credits>
+    <SFXEvent_Build_Started>UHD_Shield_Generator_Build</SFXEvent_Build_Started>
+    <SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+    <SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+    <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+    <SFXEvent_Unit_Under_Attack> UHD_Shield_Generator_Under_Attack </SFXEvent_Unit_Under_Attack>
+    <SFXEvent_Unit_Lost> UHD_Shield_Generator_Destroyed </SFXEvent_Unit_Lost>
+    <SFXEvent_Select> Structure_Shield_Gen_Select_SFX </SFXEvent_Select>
+    <SFXEvent_Powered_Active_Loop> Structure_Shutter_Shield_Generator_Loop </SFXEvent_Powered_Active_Loop>
+    <Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+    <CategoryMask> Structure </CategoryMask>
+    <!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+    <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+    <Space_Layer> Corvette </Space_Layer>
+    <Has_Land_Evaluator>True</Has_Land_Evaluator>
+    <Tactical_Buildable_Objects_Campaign> 
+			Rebel,
+				CL_Enhanced_Base_Shield_Upgrade_NoPre,
+		</Tactical_Buildable_Objects_Campaign>
+    <Tactical_Buildable_Objects_Multiplayer> 
+			Rebel,
+				CL_Enhanced_Base_Shield_Upgrade,
+		</Tactical_Buildable_Objects_Multiplayer>
+    <Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BASE_SHIELD_00  </Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+    <Score_Cost_Credits> 20000 </Score_Cost_Credits>
+    <Property_Flags>InBase</Property_Flags>
+    <Abilities SubObjectList="Yes">
+      <Force_Healing_Ability Name="R_Base_Shield_Self_Repair">
+        <Activation_Style>Skirmish_Automatic</Activation_Style>
+        <Heal_Range>0.0</Heal_Range>
+        <Heal_Percent>0.025</Heal_Percent>
+        <Heal_Amount>0.0</Heal_Amount>
+        <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+        <Single_Target_Heal>Yes</Single_Target_Heal>
+        <Applicable_Unit_Categories />
+        <Applicable_Unit_Types />
+        <SFXEvent_Target_Affected />
+        <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+        <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+        <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+        <Owner_Light_Effect_Color2 />
+        <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+        <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+      </Force_Healing_Ability>
+    </Abilities>
+    <Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+    <Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+  </SpecialStructure>
+  <SpecialStructure Name="Ground_Empire_Hypervelocity_Gun">
+    <GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
+    <Text_ID>TEXT_GROUND_HYPERVELOCITY</Text_ID>
+    <GUI_Row> 0 </GUI_Row>
+    <Land_Model_Name>RB_HyperVelocityGun.alo</Land_Model_Name>
+    <Is_Dummy>Yes</Is_Dummy>
+    <Affiliation>Rebel </Affiliation>
+    <Political_Control>0</Political_Control>
+    <Build_Cost_Credits>15000</Build_Cost_Credits> <!-- From 50000 -->
+    <Build_Time_Seconds>60</Build_Time_Seconds>
+    <Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+    <Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+    <Size_Value>50</Size_Value>
+    <Build_Initially_Locked>No</Build_Initially_Locked>
+    <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+    <Base_Position>Out_Base</Base_Position>
+    <Tech_Level>3</Tech_Level>
+    <SpaceAutoResolveHitRate>3</SpaceAutoResolveHitRate>
+    <Damage>50</Damage>
+    <Required_Timeline>0</Required_Timeline>
+    <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>0</Required_Star_Base_Level>
+    <Required_Special_Structures />
+    <Required_Planets>Bestine, Corellia, Coruscant, Duro, Foerost, Fondor, Geonosis, Hypori, Kamino, Kuat, Mechis, Minntooine, MonCalimari, Rendili, Sluis_Van</Required_Planets>
+    <!--<Build_Countdown_Timer> Yes </Build_Countdown_Timer>
+		<Build_Countdown_Text_ID> TEXT_HYPER_COUNTDOWN_TIMER </Build_Countdown_Text_ID>
+		<Build_Countdown_Text_RGBA> 64, 128, 255, 255 </Build_Countdown_Text_RGBA>-->
+    <Build_Music_Completed> Galactic_Ground_Defense_Complete_Music_Event </Build_Music_Completed>
+    <Shield_Points>200</Shield_Points>
+    <Tactical_Health>1800</Tactical_Health>
+    <Shield_Refresh_Rate>15</Shield_Refresh_Rate>
+    <Energy_Capacity>1000</Energy_Capacity>
+    <Energy_Refresh_Rate>6</Energy_Refresh_Rate>
+    <Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+    <LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE, SHIELDED, POWERED, REVEAL, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+    <SpaceBehavior>SPECIAL_WEAPON</SpaceBehavior>
+    <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+    <Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+    <Is_Special_Weapon_In_Space>Yes</Is_Special_Weapon_In_Space>
+    <Special_Weapon_Index>0</Special_Weapon_Index>
+    <Special_Weapon_Target_Action_Index> 0 </Special_Weapon_Target_Action_Index>
+    <!-- HV Gun = 0, Ion Cannon = 1, Magnepulse Cannon = 2 -->
+    <Special_Weapon_Valid_Targets>Frigate | Capital | Super</Special_Weapon_Valid_Targets>
+    <Projectile_Fire_Recharge_Seconds>45.0</Projectile_Fire_Recharge_Seconds>
+    <Projectile_Fire_Pulse_Count>10</Projectile_Fire_Pulse_Count>
+    <Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+    <Projectile_Types>Proj_Hypervelocity_Gun</Projectile_Types>
+    <Icon_Name>i_button_hypervelocity_gun.tga</Icon_Name>
+    <Space_Victory_Relevant>No</Space_Victory_Relevant>
+    <Land_Victory_Relevant>Yes</Land_Victory_Relevant>
+    <No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+    <No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+    <Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+    <GUI_Bracket_Size>2</GUI_Bracket_Size>
+    <Armor_Type> Armor_Structure </Armor_Type>
+    <Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+    <Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+    <Sabotage_Cost_Credits>10000</Sabotage_Cost_Credits>
+    <Destruction_Survivors> 
+			BattleDroid_Squad, 1.0
+		</Destruction_Survivors>
+    <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+    <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+    <Influences_Capture_Point>False</Influences_Capture_Point>
+    <!--
+		<Obstacle_Width>140.0</Obstacle_Width>
+		<Obstacle_Height>80.0</Obstacle_Height>
+		<Obstacle_X_Offset>-70.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-40.0</Obstacle_Y_Offset>
+		-->
+    <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+    <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+    <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+    <SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+    <SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+    <SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+    <SFXEvent_Fire>Unit_Hyper_Velocity_Fire</SFXEvent_Fire>
+    <SFXEvent_Special_Weapon_Ready>EHD_Hypervelocity_Available</SFXEvent_Special_Weapon_Ready>
+    <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+    <SFXEvent_Unit_Under_Attack> UHD_Hypervelocity_Under_Attack </SFXEvent_Unit_Under_Attack>
+    <SFXEvent_Unit_Lost> UHD_Hypervelocity_Destroyed </SFXEvent_Unit_Lost>
+    <SFXEvent_Select>Structure_Hyper_Select_SFX</SFXEvent_Select>
+    <Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+    <CategoryMask> Structure </CategoryMask>
+    <Is_Community_Property>Yes</Is_Community_Property>
+    <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+    <!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+    <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+    <Space_Layer> Corvette </Space_Layer>
+    <Has_Land_Evaluator>True</Has_Land_Evaluator>
+    <Encyclopedia_Text> TEXT_ENCYCLOPEDIA_HYPERVELOCITY_00  </Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+    <Score_Cost_Credits> 30000 </Score_Cost_Credits>
+    <Abilities SubObjectList="Yes">
+      <Force_Healing_Ability Name="E_Hypervelocity_Gun_Self_Repair">
+        <Activation_Style>Skirmish_Automatic</Activation_Style>
+        <Heal_Range>0.0</Heal_Range>
+        <Heal_Percent>0.025</Heal_Percent>
+        <Heal_Amount>0.0</Heal_Amount>
+        <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+        <Single_Target_Heal>Yes</Single_Target_Heal>
+        <Applicable_Unit_Categories />
+        <Applicable_Unit_Types />
+        <SFXEvent_Target_Affected />
+        <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+        <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+        <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+        <Owner_Light_Effect_Color2 />
+        <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+        <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+      </Force_Healing_Ability>
+    </Abilities>
+  </SpecialStructure>
+  <SpecialStructure Name="Ground_Ion_Cannon">
+    <GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
+    <Text_ID>TEXT_GROUND_KDY_LASER</Text_ID>
+    <Land_Model_Name>ReB_w165_turbolaser.ALO</Land_Model_Name>
+    <GUI_Row> 0 </GUI_Row>
+    <Is_Dummy>No</Is_Dummy>
+    <Scale_Factor>1.0</Scale_Factor>
+    <Icon_Name>i_button_magnepulse_cannon.tga</Icon_Name>
+    <Encyclopedia_Text> TEXT_ENCYCLOPEDIA_KDY_LASER  </Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+    <Behavior>DUMMY_GROUND_STRUCTURE</Behavior>
+    <SpaceBehavior>SPECIAL_WEAPON</SpaceBehavior>
+    <LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,SELECTABLE,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+    <Affiliation>Empire</Affiliation>
+    <Political_Control>0</Political_Control>
+    <Build_Cost_Credits>20000</Build_Cost_Credits> <!-- From 50000 -->
+    <Build_Time_Seconds>70</Build_Time_Seconds>
+    <Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+    <!--<Build_Countdown_Timer> Yes </Build_Countdown_Timer>
+		<Build_Countdown_Text_ID> TEXT_W165_COUNTDOWN_TIMER </Build_Countdown_Text_ID>
+		<Build_Countdown_Text_RGBA> 252, 4, 4, 255 </Build_Countdown_Text_RGBA>-->
+    <Build_Music_Completed> Galactic_Ground_Defense_Complete_Music_Event </Build_Music_Completed>
+    <Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+    <Size_Value>100</Size_Value>
+    <Build_Initially_Locked>No</Build_Initially_Locked>
+    <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+    <Slice_Cost_Credits>800</Slice_Cost_Credits>
+    <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>0</Required_Star_Base_Level>
+    <Required_Special_Structures />
+    <Required_Planets>Bestine, Corellia, Coruscant, Duro, Foerost, Fondor, Geonosis, Hypori, Kamino, Kuat, Mechis, Minntooine, MonCalimari, Rendili, Sluis_Van</Required_Planets>
+    <Base_Position>Out_Base</Base_Position>
+    <Tech_Level>1</Tech_Level>
+    <Required_Timeline>0</Required_Timeline>
+    <GUI_Bracket_Size>2</GUI_Bracket_Size>
+    <Is_Community_Property>Yes</Is_Community_Property>
+    <Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+    <Tactical_Additional_Structure_Type>Power_Generator_E</Tactical_Additional_Structure_Type>
+    <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+    <Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+    <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+    <Sabotage_Cost_Credits>10000</Sabotage_Cost_Credits>
+    <Tutorial_Sabotage_Cost_Credits>4000</Tutorial_Sabotage_Cost_Credits>
+    <Is_Special_Weapon_In_Space>Yes</Is_Special_Weapon_In_Space>
+    <Special_Weapon_Index>1</Special_Weapon_Index>
+    <Special_Weapon_Target_Action_Index> 1 </Special_Weapon_Target_Action_Index>
+    <!-- HV Gun = 0, Ion Cannon = 1, Magnepulse Cannon = 2 -->
+    <Special_Weapon_Valid_Targets>Frigate | Capital | Super</Special_Weapon_Valid_Targets>
+    <Tactical_Health>1800</Tactical_Health>
+    <Projectile_Fire_Recharge_Seconds>15.0</Projectile_Fire_Recharge_Seconds>
+    <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+    <Projectile_Fire_Pulse_Delay_Seconds>0.5</Projectile_Fire_Pulse_Delay_Seconds>
+    <Projectile_Types>Proj_KDY_Planetary</Projectile_Types>
+    <Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+    <Destruction_Survivors> 
+			Republic_Clonetrooper_P1_Squad, 1.0
+		</Destruction_Survivors>
+    <Armor_Type> Armor_Structure </Armor_Type>
+    <Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+    <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+    <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+    <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+    <Is_Special_Weapon_In_Space>Yes</Is_Special_Weapon_In_Space>
+    <Special_Weapon_Index>0</Special_Weapon_Index>
+    <Special_Weapon_Target_Action_Index> 1 </Special_Weapon_Target_Action_Index>
+    <!-- HV Gun = 0, Ion Cannon = 1, Magnepulse Cannon = 2 -->
+    <Space_Victory_Relevant>No</Space_Victory_Relevant>
+    <Land_Victory_Relevant>Yes</Land_Victory_Relevant>
+    <No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+    <No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+    <SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+    <SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+    <SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+    <SFXEvent_Fire>Unit_Magnepulse_Fire</SFXEvent_Fire>
+    <!--<SFXEvent_Special_Weapon_Ready>RHD_Ion_Cannon_Available</SFXEvent_Special_Weapon_Ready>-->
+    <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+    <!--<SFXEvent_Unit_Under_Attack> RHD_Ion_Cannon_Under_Attack </SFXEvent_Unit_Under_Attack>-->
+    <!--<SFXEvent_Unit_Lost> RHD_Ion_Cannon_Destroyed </SFXEvent_Unit_Lost>-->
+    <SFXEvent_Select>Structure_Ion_Select_SFX</SFXEvent_Select>
+    <Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+    <CategoryMask> Structure </CategoryMask>
+    <Prevents_Blockade_Run_Attrition>True</Prevents_Blockade_Run_Attrition>
+    <Influences_Capture_Point>False</Influences_Capture_Point>
+    <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+    <Space_Layer> Corvette </Space_Layer>
+    <Has_Land_Evaluator>True</Has_Land_Evaluator>
+    <Score_Cost_Credits> 20000 </Score_Cost_Credits>
+    <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+    <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+    <Abilities SubObjectList="Yes">
+      <Force_Healing_Ability Name="Ion_Cannon_Self_Repair">
+        <Activation_Style>Skirmish_Automatic</Activation_Style>
+        <Heal_Range>0.0</Heal_Range>
+        <Heal_Percent>0.025</Heal_Percent>
+        <Heal_Amount>0.0</Heal_Amount>
+        <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+        <Single_Target_Heal>Yes</Single_Target_Heal>
+        <Applicable_Unit_Categories />
+        <Applicable_Unit_Types />
+        <SFXEvent_Target_Affected />
+        <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+        <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+        <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+        <Owner_Light_Effect_Color2 />
+        <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+        <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+      </Force_Healing_Ability>
+    </Abilities>
+  </SpecialStructure>
+  <!-- Template for Turbolaser Towers as they exist in land tactical battles. -->
+  <SpecialStructure Name="Template_Ground_Turbolaser_Tower">
+    <Text_ID>TEXT_GROUND_TURBOLASER_TOWER</Text_ID>
+    <Encyclopedia_Text> TEXT_ENCYCLOPEDIA_TURBOLASER_00  </Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET</Encyclopedia_Unit_Class>
+    <GUI_Row> 0 </GUI_Row>
+    <Affiliation />
+    <Land_Model_Name>EB_TLTower.ALO</Land_Model_Name>
+    <Is_Dummy>No</Is_Dummy>
+    <Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+    <LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,TURRET,TARGETING,WEAPON,POWERED,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI, STUNNABLE,EARTHQUAKE_TARGET,ION_STUN_EFFECT </LandBehavior>
+    <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+    <Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+    <Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+    <Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>
+    <Terrain_Texture_Modifier_Join_Distance>1.0</Terrain_Texture_Modifier_Join_Distance>
+    <Terrain_Texture_Modifier_Square>true</Terrain_Texture_Modifier_Square>
+    <Select_Box_Scale>140</Select_Box_Scale>
+    <Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+    <Is_Community_Property>No</Is_Community_Property>
+    <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+    <GUI_Bracket_Size>2</GUI_Bracket_Size>
+    <GUI_Bounds_Scale>0.7</GUI_Bounds_Scale>
+    <AI_Combat_Power>300</AI_Combat_Power>
+    <Influences_Capture_Point>False</Influences_Capture_Point>
+    <Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+    <Damage>300</Damage>
+    <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+    <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+    <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+    <Armor_Type> Armor_Structure </Armor_Type>
+    <Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+    <Mass>1.0</Mass>
+    <Scale_Factor>0.75</Scale_Factor>
+    <Shield_Points>0</Shield_Points>
+    <Tactical_Health>600</Tactical_Health>
+    <Energy_Capacity>500</Energy_Capacity>
+    <Energy_Refresh_Rate>40</Energy_Refresh_Rate>
+    <Land_FOW_Reveal_Range>500.0</Land_FOW_Reveal_Range> <!-- From 400 -->
+	<Targeting_Max_Attack_Distance>650.0</Targeting_Max_Attack_Distance> <!-- From 500 -->
+    <Targeting_Min_Attack_Distance> 100 </Targeting_Min_Attack_Distance>
+    <Ranged_Target_Z_Adjust>20.0</Ranged_Target_Z_Adjust>
+    <Projectile_Damage>125.0</Projectile_Damage>
+    <Projectile_Fire_Recharge_Seconds>2.0</Projectile_Fire_Recharge_Seconds>
+    <Projectile_Fire_Pulse_Count>4</Projectile_Fire_Pulse_Count>
+    <Projectile_Fire_Pulse_Delay_Seconds>0.3</Projectile_Fire_Pulse_Delay_Seconds>
+    <Death_Explosions>Large_Explosion_Land</Death_Explosions>
+    <SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+    <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+    <SFXEvent_Fire>Unit_Turbo_Tower_Fire</SFXEvent_Fire>
+    <SFXEvent_Select> Structure_Turret_Select_SFX </SFXEvent_Select>
+    <Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+    <Obstacle_Width>60.0</Obstacle_Width>
+    <Obstacle_Height>60.0</Obstacle_Height>
+    <Obstacle_X_Offset>-30.0</Obstacle_X_Offset>
+    <Obstacle_Y_Offset>-30.0</Obstacle_Y_Offset>
+    <Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+    <Turret_Elevate_Extent_Degrees>45</Turret_Elevate_Extent_Degrees>
+    <Turret_Rotate_Speed>4.0</Turret_Rotate_Speed>
+    <Turret_Bone_Name>B_Turret_00</Turret_Bone_Name>
+    <Barrel_Bone_Name>B_Barrel_00</Barrel_Bone_Name>
+    <Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+    <Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+    <!-- Ground infantry priority 1, ground vehicles priority 1, air vehicles N/A (9999) -->
+    <Turret_Targets_Ground_Infantry> 3 </Turret_Targets_Ground_Infantry>
+    <Turret_Targets_Ground_Vehicles> 1 </Turret_Targets_Ground_Vehicles>
+    <Turret_Targets_Air_Vehicles> 2 </Turret_Targets_Air_Vehicles>
+    <Turret_Targets_Anything_Else> 9999 </Turret_Targets_Anything_Else>
+    <!-- 9999 = won't target -->
+    <Targeting_Fire_Inaccuracy> Infantry, 30.0 </Targeting_Fire_Inaccuracy>
+    <Targeting_Fire_Inaccuracy> LandHero, 30.0 </Targeting_Fire_Inaccuracy>
+    <Targeting_Fire_Inaccuracy> Vehicle, 5.0 </Targeting_Fire_Inaccuracy>
+    <Targeting_Fire_Inaccuracy> Air, 10.0 </Targeting_Fire_Inaccuracy>
+    <Targeting_Fire_Inaccuracy> Structure, 1.0 </Targeting_Fire_Inaccuracy>
+    <Political_Control>0</Political_Control>
+    <Build_Cost_Credits>2000</Build_Cost_Credits>
+    <Build_Time_Seconds>30</Build_Time_Seconds>
+    <Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+    <Build_Max_Instances_Per_Planet> -1 </Build_Max_Instances_Per_Planet>
+    <Size_Value>50</Size_Value>
+    <Build_Initially_Locked>Yes</Build_Initially_Locked>
+    <Base_Position>In_Base</Base_Position>
+    <Tech_Level>99</Tech_Level>
+    <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+    <Required_Timeline>0</Required_Timeline>
+    <Required_Star_Base_Level>0</Required_Star_Base_Level>
+    <Required_Planets />
+    <Icon_Name>i_button_turbolaser_tower.tga</Icon_Name>
+    <Victory_Relevant>No</Victory_Relevant>
+    <No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+    <No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+    <!-- Turn the turbolaser off when base power goes out -->
+    <Requires_Base_Power>True</Requires_Base_Power>
+    <CategoryMask> Structure | AntiVehicle</CategoryMask>
+    <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+    <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+    <!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+    <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+    <Space_Layer> Corvette </Space_Layer>
+    <Has_Land_Evaluator>True</Has_Land_Evaluator>
+    <Score_Cost_Credits> 20000 </Score_Cost_Credits>
+    <Property_Flags>InBase | Turret</Property_Flags>
+    <Abilities SubObjectList="Yes">
+      <Force_Healing_Ability Name="Ground_Turbolaser_Tower_Self_Repair">
+        <Activation_Style>Skirmish_Automatic</Activation_Style>
+        <Heal_Range>0.0</Heal_Range>
+        <Heal_Percent>0.025</Heal_Percent>
+        <Heal_Amount>0.0</Heal_Amount>
+        <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+        <Single_Target_Heal>Yes</Single_Target_Heal>
+        <Applicable_Unit_Categories />
+        <Applicable_Unit_Types />
+        <SFXEvent_Target_Affected />
+        <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+        <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+        <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+        <Owner_Light_Effect_Color2 />
+        <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+        <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+      </Force_Healing_Ability>
+    </Abilities>
+    <Targeting_Priority_Set>AntiVehicle</Targeting_Priority_Set>
+  </SpecialStructure>
+  <SpecialStructure Name="E_Ground_Turbolaser_Tower">
+    <Variant_Of_Existing_Type>Template_Ground_Turbolaser_Tower</Variant_Of_Existing_Type>
+    <Tactical_Additional_Structure_Type>Power_Generator_E</Tactical_Additional_Structure_Type>
+    <Obstacle_Proxy_Type> E_Ground_Turbolaser_Tower_Build_Pad </Obstacle_Proxy_Type>
+    <Affiliation>Empire</Affiliation>
+    <Projectile_Types>Proj_Ground_Turbolaser_Green</Projectile_Types>
+    <SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+    <SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+    <SFXEvent_Special_Weapon_Ready>RHD_Turbo_Tower_Available</SFXEvent_Special_Weapon_Ready>
+    <SFXEvent_Unit_Under_Attack> RHD_Turbo_Tower_Under_Attack </SFXEvent_Unit_Under_Attack>
+    <SFXEvent_Unit_Lost> RHD_Turbo_Tower_Destroyed </SFXEvent_Unit_Lost>
+    <SFXEvent_Select> Structure_Turret_Select_SFX </SFXEvent_Select>
+    <SFXEvent_Turret_Rotating_Loop> Structure_Turret_Motor_Turbo </SFXEvent_Turret_Rotating_Loop>
+    <!-- Event for turret while rotating to fire  -->
+  </SpecialStructure>
+  <!--<SpecialStructure Name="R_Ground_Turbolaser_Tower">
+		<Variant_Of_Existing_Type>Template_Ground_Turbolaser_Tower</Variant_Of_Existing_Type>
+		<Tactical_Additional_Structure_Type>Power_Generator_R</Tactical_Additional_Structure_Type>
+		<Obstacle_Proxy_Type> R_Ground_Turbolaser_Tower_Build_Pad </Obstacle_Proxy_Type>
+
+		<Affiliation>Rebel</Affiliation>
+		<Projectile_Types>Proj_Ground_Turbolaser_Red</Projectile_Types>
+
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Special_Weapon_Ready>RHD_Turbo_Tower_Available</SFXEvent_Special_Weapon_Ready>
+		<SFXEvent_Unit_Under_Attack> RHD_Turbo_Tower_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> RHD_Turbo_Tower_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select> Structure_Turret_Select_SFX </SFXEvent_Select>
+		<SFXEvent_Turret_Rotating_Loop> Structure_Turret_Motor_Turbo </SFXEvent_Turret_Rotating_Loop>
+	</SpecialStructure>-->
+  <!--<SpecialStructure Name="U_Ground_Turbolaser_Tower">
+		<Variant_Of_Existing_Type>Template_Ground_Turbolaser_Tower</Variant_Of_Existing_Type>
+		<Tactical_Additional_Structure_Type>U_Ground_Palace</Tactical_Additional_Structure_Type>
+		<Obstacle_Proxy_Type> U_Ground_Turbolaser_Tower_Build_Pad </Obstacle_Proxy_Type>
+
+		<Affiliation>Underworld</Affiliation>
+		<Projectile_Types>Proj_Ground_Turbolaser_Red</Projectile_Types>
+
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Special_Weapon_Ready>RHD_Turbo_Tower_Available</SFXEvent_Special_Weapon_Ready>
+		<SFXEvent_Unit_Under_Attack> RHD_Turbo_Tower_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> RHD_Turbo_Tower_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select> Structure_Turret_Select_SFX </SFXEvent_Select>
+		<SFXEvent_Turret_Rotating_Loop> Structure_Turret_Motor_Turbo </SFXEvent_Turret_Rotating_Loop>	
+	</SpecialStructure>-->
+  <!-- Template for the Turbolaser Defenses galactic base enhancement.  -->
+  <SpecialStructure Name="Template_Galactic_Turbolaser_Tower_Defenses">
+    <Text_ID>TEXT_TURBOLASER_DEFENSE_UPGRADE</Text_ID>
+    <Encyclopedia_Text> TEXT_ENCYCLOPEDIA_TURBOLASER_DEFENSE  </Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET</Encyclopedia_Unit_Class>
+    <GUI_Row> 0 </GUI_Row>
+    <Affiliation />
+    <Land_Model_Name>EB_TLTower.ALO</Land_Model_Name>
+    <Is_Dummy>No</Is_Dummy>
+    <Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+    <GUI_Bracket_Size>2</GUI_Bracket_Size>
+    <GUI_Bounds_Scale>0.7</GUI_Bounds_Scale>
+    <AI_Combat_Power>1500</AI_Combat_Power>
+    <!-- All derived types need to specify a value for this entry that corresponds to the correct tactical Turbolaser Tower type for that faction. -->
+    <!--<Place_Other_Type_At_Every_Specific_Marker_Position>Template_Ground_Turbolaser_Tower</Place_Other_Type_At_Every_Specific_Marker_Position>-->
+    <Tactical_Additional_Structure_Type>Power_Generator_E</Tactical_Additional_Structure_Type>
+    <Damage>300</Damage>
+    <Mass>1.0</Mass>
+    <SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+    <Political_Control>0</Political_Control>
+    <Build_Cost_Credits>4000</Build_Cost_Credits>
+    <!--<Build_Time_Seconds>60</Build_Time_Seconds>-->
+    <Build_Time_Seconds>40</Build_Time_Seconds>
+    <Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+    <Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+    <Size_Value>50</Size_Value>
+    <Build_Initially_Locked>Yes</Build_Initially_Locked>
+    <Base_Position>In_Base</Base_Position>
+    <Tech_Level>99</Tech_Level>
+    <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+    <Required_Timeline>0</Required_Timeline>
+    <Required_Star_Base_Level>0</Required_Star_Base_Level>
+    <Required_Planets />
+    <Icon_Name>i_button_turbolaser_tower.tga</Icon_Name>
+    <Sabotage_Cost_Credits>9000</Sabotage_Cost_Credits>
+    <CategoryMask> Structure | AntiVehicle</CategoryMask>
+    <Score_Cost_Credits> 20000 </Score_Cost_Credits>
+    <Property_Flags>InBase</Property_Flags>
+  </SpecialStructure>
+  <SpecialStructure Name="E_Galactic_Turbolaser_Tower_Defenses">
+    <Variant_Of_Existing_Type>Template_Galactic_Turbolaser_Tower_Defenses</Variant_Of_Existing_Type>
+    <Affiliation>Empire</Affiliation>
+    <Build_Initially_Locked>No</Build_Initially_Locked>
+    <Tech_Level>2</Tech_Level>
+    <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>0</Required_Star_Base_Level>
+    <Tactical_Additional_Structure_Type>Power_Generator_E</Tactical_Additional_Structure_Type>
+    <!-- When one of these objects is created in galactic mode, we will populate every marker in land mode
+		that is a specific marker for E_Ground_Turbolaser_Tower. The galactic object will persist unless all
+		instances of those tactical objects have been destroyed. -->
+    <Place_Other_Type_At_Every_Specific_Marker_Position>E_Ground_Turbolaser_Tower</Place_Other_Type_At_Every_Specific_Marker_Position>
+    <SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+    <SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+  </SpecialStructure>
+  <!--<SpecialStructure Name="R_Galactic_Turbolaser_Tower_Defenses">
+		<Variant_Of_Existing_Type>Template_Galactic_Turbolaser_Tower_Defenses</Variant_Of_Existing_Type>
+
+		<Affiliation>Rebel</Affiliation>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Slice_Cost_Credits>800</Slice_Cost_Credits>
+		<Tech_Level>1</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Tactical_Additional_Structure_Type>Power_Generator_R</Tactical_Additional_Structure_Type>-->
+  <!-- When one of these objects is created in galactic mode, we will populate every marker in land mode
+		that is a specific marker for R_Ground_Turbolaser_Tower. The galactic object will persist unless all
+		instances of those tactical objects have been destroyed. -->
+  <!--<Place_Other_Type_At_Every_Specific_Marker_Position>R_Ground_Turbolaser_Tower</Place_Other_Type_At_Every_Specific_Marker_Position>
+	
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpecialStructure>-->
+  <SpecialStructure Name="Power_Generator_E">
+    <GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+    <Text_ID>TEXT_STRUCTURE_POWER_GENERATOR</Text_ID>
+    <GUI_Row> 0 </GUI_Row>
+    <Land_Model_Name>RB_SHIELD-GENERATOR.ALO</Land_Model_Name>
+    <Is_Community_Property>Yes</Is_Community_Property>
+    <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+    <Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+    <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+    <Ranged_Target_Z_Adjust>20.0</Ranged_Target_Z_Adjust>
+    <Behavior>DUMMY_GROUND_STRUCTURE,SELECTABLE</Behavior>
+    <LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,SELECTABLE, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+    <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+    <Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+    <Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+    <Influences_Capture_Point>False</Influences_Capture_Point>
+    <Build_Cost_Credits>200</Build_Cost_Credits>
+    <Build_Time_Seconds>30</Build_Time_Seconds>
+    <Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+    <Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+    <Size_Value>50</Size_Value>
+    <Base_Position>Out_Base</Base_Position>
+    <Tech_Level>99</Tech_Level>
+    <Required_Timeline>0</Required_Timeline>
+    <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>0</Required_Star_Base_Level>
+    <Required_Special_Structures />
+    <Required_Planets />
+    <Icon_Name>i_button_power_generator.tga</Icon_Name>
+    <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+    <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+    <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+    <Obstacle_Proxy_Type> Power_Generator_E_Build_Pad </Obstacle_Proxy_Type>
+    <Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+    <Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+    <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+    <Radar_Icon_Size>0.2  0.1</Radar_Icon_Size>
+    <Armor_Type> Armor_Structure </Armor_Type>
+    <Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+    <Select_Box_Scale>180</Select_Box_Scale>
+    <Mass>1.0</Mass>
+    <Scale_Factor>0.75</Scale_Factor>
+    <!--<Is_Sprite>No</Is_Sprite>-->
+    <Shield_Points>0</Shield_Points>
+    <Tactical_Health>800</Tactical_Health>
+    <Autoresolve_Health>500</Autoresolve_Health>
+    <Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+    <Energy_Capacity>1000</Energy_Capacity>
+    <Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+    <Affiliation>Empire</Affiliation>
+    <Base_Level_Available>1</Base_Level_Available>
+    <Victory_Relevant>No</Victory_Relevant>
+    <No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+    <No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+    <CategoryMask>Structure</CategoryMask>
+    <Abilities SubObjectList="Yes">
+      <Combat_Bonus_Ability Name="E_Power_Plant_Combat_Bonus">
+        <Activation_Style>Ground_Automatic</Activation_Style>
+        <Applicable_Unit_Categories />
+        <Applicable_Unit_Types>Empire_Anti_Infantry_Turret, Empire_Anti_Vehicle_Turret, E_Ground_Turbolaser_Tower</Applicable_Unit_Types>
+        <Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+        <Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+        <Energy_Pool_Bonus_Percentage>1.0</Energy_Pool_Bonus_Percentage>
+        <Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+        <Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+        <Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+        <Stacking_Category>1</Stacking_Category>
+      </Combat_Bonus_Ability>
+      <Base_Power_Ability Name="E_Power_Plant_Base_Power">
+        <Activation_Style>Ground_Automatic</Activation_Style>
+      </Base_Power_Ability>
+      <Income_Stream_Mod_Ability Name="E_Power_Plant_Income_Penalty">
+        <Income_Multiplier>0.80</Income_Multiplier>
+        <Income_Additive_Value>0.0</Income_Additive_Value>
+        <Interval_Multiplier>2.0</Interval_Multiplier>
+        <Stacking_Category>0</Stacking_Category>
+        <Target_Stream_Source>Empire_Ground_Mining_Facility</Target_Stream_Source>
+        <Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+        <Reverse_Application_Logic>Yes</Reverse_Application_Logic>
+      </Income_Stream_Mod_Ability>
+      <Force_Healing_Ability Name="E_Power_Plant_Self_Repair">
+        <Activation_Style>Skirmish_Automatic</Activation_Style>
+        <Heal_Range>0.0</Heal_Range>
+        <Heal_Percent>0.025</Heal_Percent>
+        <Heal_Amount>0.0</Heal_Amount>
+        <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+        <Single_Target_Heal>Yes</Single_Target_Heal>
+        <Applicable_Unit_Categories />
+        <Applicable_Unit_Types />
+        <SFXEvent_Target_Affected />
+        <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+        <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+        <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+        <Owner_Light_Effect_Color2 />
+        <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+        <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+      </Force_Healing_Ability>
+      <Redirect_Blaster_Ability Name="E_Magnetically_Sealed_Structure">
+        <Initially_Enabled> No </Initially_Enabled>
+        <Activation_Style>Take_Damage</Activation_Style>
+        <Redirect_Chance>0.0</Redirect_Chance>
+        <Block_Chance>0.30</Block_Chance>
+        <Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+        <Max_Projectile_Redirection_Angle_In_Degrees> 30.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+        <Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+        <!-- We can block/redirect shots from the following units types: -->
+        <Applicable_Unit_Categories>Hero | Infantry | Vehicle | Structure</Applicable_Unit_Categories>
+        <Applicable_Unit_Types />
+        <SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+      </Redirect_Blaster_Ability>
+    </Abilities>
+    <GUI_Bracket_Size>2</GUI_Bracket_Size>
+    <Has_Land_Evaluator>True</Has_Land_Evaluator>
+    <!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+    <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+    <Space_Layer> Corvette </Space_Layer>
+    <Has_Land_Evaluator>True</Has_Land_Evaluator>
+    <SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+    <SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+    <SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+    <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+    <SFXEvent_Unit_Under_Attack> RHD_Power_Generator_Under_Attack </SFXEvent_Unit_Under_Attack>
+    <SFXEvent_Unit_Lost> RHD_Power_Generator_Destroyed </SFXEvent_Unit_Lost>
+    <SFXEvent_Select> Structure_Power_Gen_Select_SFX </SFXEvent_Select>
+    <SFXEvent_Engine_Cinematic_Focus_Loop> Structure_Power_Generator_Cinematic_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+    <Encyclopedia_Text> TEXT_ENCYCLOPEDIA_POWER_GENERATOR_00 </Encyclopedia_Text>
+    <MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_POWER_GENERATOR_00 </MP_Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+    <Score_Cost_Credits> 2000 </Score_Cost_Credits>
+  </SpecialStructure>
+  <SpecialStructure Name="Power_Generator_E_Multiplayer">
+    <Variant_Of_Existing_Type>Power_Generator_E</Variant_Of_Existing_Type>
+    <Victory_Relevant>Yes</Victory_Relevant>
+  </SpecialStructure>
+  <SpecialStructure Name="Power_Generator_R">
+    <GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+    <Text_ID>TEXT_STRUCTURE_POWER_GENERATOR</Text_ID>
+    <GUI_Row> 0 </GUI_Row>
+    <Land_Model_Name>SeB_power_generator.ALO</Land_Model_Name>
+    <Is_Community_Property>Yes</Is_Community_Property>
+    <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+    <Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+    <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+    <Ranged_Target_Z_Adjust>20.0</Ranged_Target_Z_Adjust>
+    <Behavior>DUMMY_GROUND_STRUCTURE,SELECTABLE</Behavior>
+    <LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,SELECTABLE, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+    <Obstacle_Proxy_Type> Power_Generator_R_Build_Pad </Obstacle_Proxy_Type>
+    <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+    <Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+    <Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+    <Influences_Capture_Point>False</Influences_Capture_Point>
+    <Build_Cost_Credits>200</Build_Cost_Credits>
+    <Build_Time_Seconds>25</Build_Time_Seconds>
+    <Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+    <Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+    <Size_Value>50</Size_Value>
+    <Base_Position>Out_Base</Base_Position>
+    <Tech_Level>99</Tech_Level>
+    <Required_Timeline>0</Required_Timeline>
+    <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>0</Required_Star_Base_Level>
+    <Required_Special_Structures />
+    <Required_Planets />
+    <Icon_Name>I_BUTTON_CIS_POWER_GENERATOR.TGA</Icon_Name>
+    <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+    <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+    <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+    <Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+    <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+    <Radar_Icon_Size>0.2  0.1</Radar_Icon_Size>
+    <Armor_Type> Armor_Structure </Armor_Type>
+    <Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+    <Select_Box_Scale>180</Select_Box_Scale>
+    <Mass>1.0</Mass>
+    <Scale_Factor>1.0</Scale_Factor>
+    <!--<Is_Sprite>No</Is_Sprite>-->
+    <Shield_Points>0</Shield_Points>
+    <Tactical_Health>800</Tactical_Health>
+    <Autoresolve_Health>500</Autoresolve_Health>
+    <Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+    <Energy_Capacity>1000</Energy_Capacity>
+    <Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+    <Affiliation>Rebel</Affiliation>
+    <Base_Level_Available>1</Base_Level_Available>
+    <Victory_Relevant>No</Victory_Relevant>
+    <No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+    <No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+    <CategoryMask>Structure</CategoryMask>
+    <Abilities SubObjectList="Yes">
+      <Combat_Bonus_Ability Name="R_Power_Plant_Combat_Bonus">
+        <Activation_Style>Ground_Automatic</Activation_Style>
+        <Applicable_Unit_Categories />
+        <Applicable_Unit_Types>Rebel_Anti_Infantry_Turret, Rebel_Anti_Vehicle_Turret, R_Ground_Turbolaser_Tower</Applicable_Unit_Types>
+        <Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+        <Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+        <Energy_Pool_Bonus_Percentage>1.0</Energy_Pool_Bonus_Percentage>
+        <Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+        <Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+        <Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+        <Stacking_Category>1</Stacking_Category>
+      </Combat_Bonus_Ability>
+      <Base_Power_Ability Name="R_Power_Plant_Base_Power">
+        <Activation_Style>Ground_Automatic</Activation_Style>
+      </Base_Power_Ability>
+      <Income_Stream_Mod_Ability Name="R_Power_Plant_Income_Penalty">
+        <Income_Multiplier>0.80</Income_Multiplier>
+        <Income_Additive_Value>0.0</Income_Additive_Value>
+        <Interval_Multiplier>2.0</Interval_Multiplier>
+        <Stacking_Category>0</Stacking_Category>
+        <Target_Stream_Source>Rebel_Ground_Mining_Facility</Target_Stream_Source>
+        <Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+        <Reverse_Application_Logic>Yes</Reverse_Application_Logic>
+      </Income_Stream_Mod_Ability>
+      <Force_Healing_Ability Name="R_Power_Plant_Self_Repair">
+        <Activation_Style>Skirmish_Automatic</Activation_Style>
+        <Heal_Range>0.0</Heal_Range>
+        <Heal_Percent>0.025</Heal_Percent>
+        <Heal_Amount>0.0</Heal_Amount>
+        <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+        <Single_Target_Heal>Yes</Single_Target_Heal>
+        <Applicable_Unit_Categories />
+        <Applicable_Unit_Types />
+        <SFXEvent_Target_Affected />
+        <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+        <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+        <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+        <Owner_Light_Effect_Color2 />
+        <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+        <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+      </Force_Healing_Ability>
+      <Redirect_Blaster_Ability Name="R_Magnetically_Sealed_Structure">
+        <Initially_Enabled> No </Initially_Enabled>
+        <Activation_Style>Take_Damage</Activation_Style>
+        <Redirect_Chance>0.0</Redirect_Chance>
+        <Block_Chance>0.30</Block_Chance>
+        <Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+        <Max_Projectile_Redirection_Angle_In_Degrees> 30.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+        <Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+        <!-- We can block/redirect shots from the following units types: -->
+        <Applicable_Unit_Categories>Hero | Infantry | Vehicle | Structure</Applicable_Unit_Categories>
+        <Applicable_Unit_Types />
+        <SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+      </Redirect_Blaster_Ability>
+    </Abilities>
+    <Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+    <GUI_Bracket_Size>2</GUI_Bracket_Size>
+    <Has_Land_Evaluator>True</Has_Land_Evaluator>
+    <!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+    <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+    <Space_Layer> Corvette </Space_Layer>
+    <Has_Land_Evaluator>True</Has_Land_Evaluator>
+    <SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+    <SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+    <SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+    <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+    <SFXEvent_Unit_Under_Attack> UHD_Power_Generator_Under_Attack </SFXEvent_Unit_Under_Attack>
+    <SFXEvent_Unit_Lost> UHD_Power_Generator_Destroyed </SFXEvent_Unit_Lost>
+    <SFXEvent_Select> Structure_Power_Gen_Select_SFX </SFXEvent_Select>
+    <SFXEvent_Engine_Cinematic_Focus_Loop> Structure_Power_Generator_Cinematic_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+    <Encyclopedia_Text> TEXT_ENCYCLOPEDIA_POWER_GENERATOR_00 </Encyclopedia_Text>
+    <MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_POWER_GENERATOR_00 </MP_Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+    <Score_Cost_Credits> 2000 </Score_Cost_Credits>
+  </SpecialStructure>
+  <SpecialStructure Name="Power_Generator_R_Multiplayer">
+    <Variant_Of_Existing_Type>Power_Generator_R</Variant_Of_Existing_Type>
+    <Victory_Relevant>Yes</Victory_Relevant>
+  </SpecialStructure>
+  <SpecialStructure Name="Power_Generator_R_M1">
+    <Variant_Of_Existing_Type>Power_Generator_R</Variant_Of_Existing_Type>
+    <Tactical_Health>10</Tactical_Health>
+    <Build_Initially_Locked>Yes</Build_Initially_Locked>
+    <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+    <Victory_Relevant>Yes</Victory_Relevant>
+  </SpecialStructure>
+  <SpecialStructure Name="Power_Generator_R_E3">
+    <Variant_Of_Existing_Type>Power_Generator_R</Variant_Of_Existing_Type>
+    <Tactical_Health>125</Tactical_Health>
+    <Build_Initially_Locked>Yes</Build_Initially_Locked>
+    <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+  </SpecialStructure>
+  <SpecialStructure Name="Power_Generator_P">
+    <Variant_Of_Existing_Type>Power_Generator_R</Variant_Of_Existing_Type>
+    <Affiliation>Pirates</Affiliation>
+  </SpecialStructure>
+  <SpecialStructure Name="Confederacy_Ground_Gravity_Generator">
+    <Text_ID>TEXT_GROUND_GRAVITY_GEN</Text_ID>
+    <Encyclopedia_Text> TEXT_ENCYCLOPEDIA_GRAV_GEN_01  </Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+    <GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+    <GUI_Row> 0 </GUI_Row>
+    <Land_Model_Name>UB_GRAVCONTROLGEN.ALO</Land_Model_Name>
+    <Scale_Factor>0.82</Scale_Factor>
+    <Is_Dummy>Yes</Is_Dummy>
+    <Affiliation>Rebel</Affiliation>
+    <Political_Control>0</Political_Control>
+    <Build_Cost_Credits>2200</Build_Cost_Credits>
+    <Build_Time_Seconds>45</Build_Time_Seconds>
+    <Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+    <Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+    <Size_Value>50</Size_Value>
+    <Base_Position>Out_Base</Base_Position>
+    <Tech_Level>0</Tech_Level>
+    <Required_Timeline>0</Required_Timeline>
+    <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>0</Required_Star_Base_Level>
+    <Required_Special_Structures> R_Ground_Barracks </Required_Special_Structures>
+    <Required_Planets />
+    <!--<Tactical_Additional_Structure_Type>U_Ground_Palace</Tactical_Additional_Structure_Type>-->
+    <Tactical_Health>900</Tactical_Health>
+    <GUI_Bracket_Size>2</GUI_Bracket_Size>
+    <Obstacle_Width>220.0</Obstacle_Width>
+    <Obstacle_Height>220.0</Obstacle_Height>
+    <Obstacle_X_Offset>-110.0</Obstacle_X_Offset>
+    <Obstacle_Y_Offset>-110.0</Obstacle_Y_Offset>
+    <Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+    <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+    <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+    <Influences_Capture_Point>False</Influences_Capture_Point>
+    <Armor_Type> Armor_Structure </Armor_Type>
+    <Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+    <Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+    <Behavior> DUMMY_GROUND_STRUCTURE </Behavior>
+    <LandBehavior> SPACE_OBSTACLE, LAND_OBSTACLE, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED, GRAVITY_CONTROL_FIELD ,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+    <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+    <Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+    <Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+    <Gravity_Control_Field_Range> 8000.0 </Gravity_Control_Field_Range>
+    <!-- Large range to cover entire map -->
+    <Gravity_Control_Field_Slow_Fraction>1.0</Gravity_Control_Field_Slow_Fraction>
+    <Gravity_Control_Field_Effect>Repulsor_Jammer_Effect</Gravity_Control_Field_Effect>
+    <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+    <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+    <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+    <Icon_Name>i_button_repulsorlift.tga</Icon_Name>
+    <Victory_Relevant>yes</Victory_Relevant>
+    <No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+    <No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+    <SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+    <SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+    <SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+    <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+    <SFXEvent_Unit_Under_Attack> UHD_GravGen_Under_Attack </SFXEvent_Unit_Under_Attack>
+    <SFXEvent_Unit_Lost> UHD_GravGen_Destroyed </SFXEvent_Unit_Lost>
+    <SFXEvent_Select> Structure_Power_Gen_Select_SFX </SFXEvent_Select>
+    <Is_Community_Property>Yes</Is_Community_Property>
+    <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+    <Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+    <CategoryMask> Structure </CategoryMask>
+    <!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+    <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+    <Space_Layer> Corvette </Space_Layer>
+    <Has_Land_Evaluator>True</Has_Land_Evaluator>
+    <Score_Cost_Credits> 22000 </Score_Cost_Credits>
+    <Abilities SubObjectList="Yes">
+      <Force_Healing_Ability Name="Cis_Gravity_Generator_Self_Repair">
+        <Activation_Style>Skirmish_Automatic</Activation_Style>
+        <Heal_Range>0.0</Heal_Range>
+        <Heal_Percent>0.03</Heal_Percent>
+        <Heal_Amount>0.0</Heal_Amount>
+        <Heal_Interval_In_Secs>3.0</Heal_Interval_In_Secs>
+        <Single_Target_Heal>Yes</Single_Target_Heal>
+        <Applicable_Unit_Categories />
+        <Applicable_Unit_Types />
+        <SFXEvent_Target_Affected />
+        <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+        <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+        <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+        <Owner_Light_Effect_Color2 />
+        <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+        <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+      </Force_Healing_Ability>
+    </Abilities>
+  </SpecialStructure>
+  <!-- Template for Turbolaser Towers as they exist in land tactical battles. -->
+  <SpecialStructure Name="Template_Ground_Flak_Gun">
+    <Text_ID>TEXT_GROUND_FLAK_GUN</Text_ID>
+    <Encyclopedia_Text> TEXT_ENCYCLOPEDIA_FLAKGUN_00  </Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET</Encyclopedia_Unit_Class>
+    <GUI_Row> 0 </GUI_Row>
+    <Affiliation />
+    <Land_Model_Name>SeB_flakgun.ALO</Land_Model_Name>
+    <Is_Dummy>No</Is_Dummy>
+    <Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+    <LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,TURRET,TARGETING,WEAPON,POWERED,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI, STUNNABLE,EARTHQUAKE_TARGET,ION_STUN_EFFECT </LandBehavior>
+    <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+    <Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+    <Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+    <Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>
+    <Terrain_Texture_Modifier_Join_Distance>1.0</Terrain_Texture_Modifier_Join_Distance>
+    <Terrain_Texture_Modifier_Square>true</Terrain_Texture_Modifier_Square>
+    <Select_Box_Scale>140</Select_Box_Scale>
+    <Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+    <Is_Community_Property>No</Is_Community_Property>
+    <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+    <GUI_Bracket_Size>2</GUI_Bracket_Size>
+    <GUI_Bounds_Scale>0.7</GUI_Bounds_Scale>
+    <AI_Combat_Power>300</AI_Combat_Power>
+    <Influences_Capture_Point>False</Influences_Capture_Point>
+    <Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+    <Damage>350</Damage>
+    <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+    <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+    <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+    <Armor_Type> Armor_Structure </Armor_Type>
+    <Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+    <Mass>1.0</Mass>
+    <Scale_Factor>1.1</Scale_Factor>
+    <Shield_Points>0</Shield_Points>
+    <Tactical_Health>600</Tactical_Health>
+    <Energy_Capacity>500</Energy_Capacity>
+    <Energy_Refresh_Rate>40</Energy_Refresh_Rate>
+    <Land_FOW_Reveal_Range>500.0</Land_FOW_Reveal_Range> <!-- From 400 -->
+	<Targeting_Max_Attack_Distance>650.0</Targeting_Max_Attack_Distance> <!-- From 500 -->
+    <Targeting_Min_Attack_Distance> 100 </Targeting_Min_Attack_Distance>
+    <Ranged_Target_Z_Adjust>20.0</Ranged_Target_Z_Adjust>
+    <Projectile_Damage>125.0</Projectile_Damage>
+    <Projectile_Fire_Recharge_Seconds>3.0</Projectile_Fire_Recharge_Seconds>
+    <Projectile_Fire_Pulse_Count>2</Projectile_Fire_Pulse_Count>
+    <Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+    <Projectile_Appearance_Delay_Frames> 30 </Projectile_Appearance_Delay_Frames>
+    <Death_Explosions>Large_Explosion_Land</Death_Explosions>
+    <SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+    <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+    <SFXEvent_Fire></SFXEvent_Fire>
+    <SFXEvent_Select> Structure_Turret_Select_SFX </SFXEvent_Select>
+    <Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+    <Obstacle_Width>60.0</Obstacle_Width>
+    <Obstacle_Height>60.0</Obstacle_Height>
+    <Obstacle_X_Offset>-30.0</Obstacle_X_Offset>
+    <Obstacle_Y_Offset>-30.0</Obstacle_Y_Offset>
+    <Turret_Rotate_Extent_Degrees>180</Turret_Rotate_Extent_Degrees>
+    <Turret_Elevate_Extent_Degrees>20</Turret_Elevate_Extent_Degrees>
+    <Turret_Rotate_Speed>4.0</Turret_Rotate_Speed>
+    <Turret_Bone_Name>B_Turret_00</Turret_Bone_Name>
+    <Barrel_Bone_Name>B_Barrel_00</Barrel_Bone_Name>
+    <Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+    <Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+    <!-- Ground infantry priority 1, ground vehicles priority 1, air vehicles N/A (9999) -->
+    <Turret_Targets_Ground_Infantry> 3 </Turret_Targets_Ground_Infantry>
+    <Turret_Targets_Ground_Vehicles> 1 </Turret_Targets_Ground_Vehicles>
+    <Turret_Targets_Air_Vehicles> 9999 </Turret_Targets_Air_Vehicles>
+    <Turret_Targets_Anything_Else> 9999 </Turret_Targets_Anything_Else>
+    <!-- 9999 = won't target -->
+    <Targeting_Fire_Inaccuracy> Infantry, 30.0 </Targeting_Fire_Inaccuracy>
+    <Targeting_Fire_Inaccuracy> LandHero, 30.0 </Targeting_Fire_Inaccuracy>
+    <Targeting_Fire_Inaccuracy> Vehicle, 5.0 </Targeting_Fire_Inaccuracy>
+    <Targeting_Fire_Inaccuracy> Air, 10.0 </Targeting_Fire_Inaccuracy>
+    <Targeting_Fire_Inaccuracy> Structure, 1.0 </Targeting_Fire_Inaccuracy>
+    <Political_Control>0</Political_Control>
+    <Build_Cost_Credits>2000</Build_Cost_Credits>
+    <Build_Time_Seconds>30</Build_Time_Seconds>
+    <Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+    <Build_Max_Instances_Per_Planet> -1 </Build_Max_Instances_Per_Planet>
+    <Size_Value>50</Size_Value>
+    <Build_Initially_Locked>Yes</Build_Initially_Locked>
+    <Base_Position>In_Base</Base_Position>
+    <Tech_Level>99</Tech_Level>
+    <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+    <Required_Timeline>0</Required_Timeline>
+    <Required_Star_Base_Level>0</Required_Star_Base_Level>
+    <Required_Planets />
+    <Icon_Name>I_BUTTON_FLAKGUN.tga</Icon_Name>
+    <Victory_Relevant>No</Victory_Relevant>
+    <No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+    <No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+    <!-- Turn the turbolaser off when base power goes out -->
+    <Requires_Base_Power>True</Requires_Base_Power>
+    <CategoryMask> Structure | AntiVehicle</CategoryMask>
+    <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+    <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+    <!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+    <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+    <Space_Layer> Corvette </Space_Layer>
+    <Has_Land_Evaluator>True</Has_Land_Evaluator>
+    <Score_Cost_Credits> 20000 </Score_Cost_Credits>
+    <Property_Flags>InBase | Turret</Property_Flags>
+    <Abilities SubObjectList="Yes">
+      <Force_Healing_Ability Name="Ground_Flakgun_Self_Repair">
+        <Activation_Style>Skirmish_Automatic</Activation_Style>
+        <Heal_Range>0.0</Heal_Range>
+        <Heal_Percent>0.025</Heal_Percent>
+        <Heal_Amount>0.0</Heal_Amount>
+        <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+        <Single_Target_Heal>Yes</Single_Target_Heal>
+        <Applicable_Unit_Categories />
+        <Applicable_Unit_Types />
+        <SFXEvent_Target_Affected />
+        <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+        <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+        <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+        <Owner_Light_Effect_Color2 />
+        <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+        <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+      </Force_Healing_Ability>
+    </Abilities>
+    <Targeting_Priority_Set>AntiVehicle</Targeting_Priority_Set>
+  </SpecialStructure>
+  <SpecialStructure Name="R_Ground_Flakgun">
+    <Variant_Of_Existing_Type>Template_Ground_Flak_Gun</Variant_Of_Existing_Type>
+    <Tactical_Additional_Structure_Type>Power_Generator_R</Tactical_Additional_Structure_Type>
+    <Obstacle_Proxy_Type> R_Ground_Turbolaser_Tower_Build_Pad </Obstacle_Proxy_Type>
+    <Affiliation>Rebel</Affiliation>
+    <Projectile_Types>Proj_Cis_FLakgun_Mass_Driver</Projectile_Types>
+    <SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+    <SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+    <SFXEvent_Special_Weapon_Ready></SFXEvent_Special_Weapon_Ready>
+    <SFXEvent_Unit_Under_Attack></SFXEvent_Unit_Under_Attack>
+    <SFXEvent_Unit_Lost> UHD_Structure_Destroyed </SFXEvent_Unit_Lost>
+    <SFXEvent_Select> Structure_Turret_Select_SFX </SFXEvent_Select>
+    <SFXEvent_Turret_Rotating_Loop> Structure_Turret_Motor_Turbo </SFXEvent_Turret_Rotating_Loop>
+    <!-- Event for turret while rotating to fire  -->
+  </SpecialStructure>
+  <!--<SpecialStructure Name="R_Ground_Turbolaser_Tower">
+		<Variant_Of_Existing_Type>Template_Ground_Turbolaser_Tower</Variant_Of_Existing_Type>
+		<Tactical_Additional_Structure_Type>Power_Generator_R</Tactical_Additional_Structure_Type>
+		<Obstacle_Proxy_Type> R_Ground_Turbolaser_Tower_Build_Pad </Obstacle_Proxy_Type>
+
+		<Affiliation>Rebel</Affiliation>
+		<Projectile_Types>Proj_Ground_Turbolaser_Red</Projectile_Types>
+
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Special_Weapon_Ready>RHD_Turbo_Tower_Available</SFXEvent_Special_Weapon_Ready>
+		<SFXEvent_Unit_Under_Attack> RHD_Turbo_Tower_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> RHD_Turbo_Tower_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select> Structure_Turret_Select_SFX </SFXEvent_Select>
+		<SFXEvent_Turret_Rotating_Loop> Structure_Turret_Motor_Turbo </SFXEvent_Turret_Rotating_Loop>
+	</SpecialStructure>-->
+  <!--<SpecialStructure Name="U_Ground_Turbolaser_Tower">
+		<Variant_Of_Existing_Type>Template_Ground_Turbolaser_Tower</Variant_Of_Existing_Type>
+		<Tactical_Additional_Structure_Type>U_Ground_Palace</Tactical_Additional_Structure_Type>
+		<Obstacle_Proxy_Type> U_Ground_Turbolaser_Tower_Build_Pad </Obstacle_Proxy_Type>
+
+		<Affiliation>Underworld</Affiliation>
+		<Projectile_Types>Proj_Ground_Turbolaser_Red</Projectile_Types>
+
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Special_Weapon_Ready>RHD_Turbo_Tower_Available</SFXEvent_Special_Weapon_Ready>
+		<SFXEvent_Unit_Under_Attack> RHD_Turbo_Tower_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> RHD_Turbo_Tower_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select> Structure_Turret_Select_SFX </SFXEvent_Select>
+		<SFXEvent_Turret_Rotating_Loop> Structure_Turret_Motor_Turbo </SFXEvent_Turret_Rotating_Loop>	
+	</SpecialStructure>-->
+  <!-- Template for the Turbolaser Defenses galactic base enhancement.  -->
+  <SpecialStructure Name="Template_Galactic_Flakgun_Defenses">
+    <Text_ID>TEXT_FLAKGUN_DEFENSE_UPGRADE</Text_ID>
+    <Encyclopedia_Text> TEXT_ENCYCLOPEDIA_FLAKGUN_DEFENSE  </Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET</Encyclopedia_Unit_Class>
+    <GUI_Row> 0 </GUI_Row>
+    <Affiliation />
+    <Land_Model_Name>SeB_flakgun.ALO</Land_Model_Name>
+    <Is_Dummy>No</Is_Dummy>
+    <Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+    <GUI_Bracket_Size>2</GUI_Bracket_Size>
+    <GUI_Bounds_Scale>0.7</GUI_Bounds_Scale>
+    <AI_Combat_Power>1500</AI_Combat_Power>
+    <!-- All derived types need to specify a value for this entry that corresponds to the correct tactical Turbolaser Tower type for that faction. -->
+    <!--<Place_Other_Type_At_Every_Specific_Marker_Position>Template_Ground_Turbolaser_Tower</Place_Other_Type_At_Every_Specific_Marker_Position>-->
+    <Tactical_Additional_Structure_Type>Power_Generator_R</Tactical_Additional_Structure_Type>
+    <Damage>300</Damage>
+    <Mass>1.0</Mass>
+    <SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+    <Political_Control>0</Political_Control>
+    <Build_Cost_Credits>4000</Build_Cost_Credits>
+    <!--<Build_Time_Seconds>60</Build_Time_Seconds>-->
+    <Build_Time_Seconds>40</Build_Time_Seconds>
+    <Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+    <Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+    <Size_Value>50</Size_Value>
+    <Build_Initially_Locked>Yes</Build_Initially_Locked>
+    <Base_Position>In_Base</Base_Position>
+    <Tech_Level>99</Tech_Level>
+    <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+    <Required_Timeline>0</Required_Timeline>
+    <Required_Star_Base_Level>0</Required_Star_Base_Level>
+    <Required_Planets />
+    <Icon_Name>I_BUTTON_FLAKGUN.tga</Icon_Name>
+    <Sabotage_Cost_Credits>9000</Sabotage_Cost_Credits>
+    <CategoryMask> Structure | AntiVehicle</CategoryMask>
+    <Score_Cost_Credits> 20000 </Score_Cost_Credits>
+    <Property_Flags>InBase</Property_Flags>
+  </SpecialStructure>
+  <SpecialStructure Name="R_Galactic_Turbolaser_Tower_Defenses">
+    <Variant_Of_Existing_Type>Template_Galactic_Flakgun_Defenses</Variant_Of_Existing_Type>
+    <Affiliation>Rebel</Affiliation>
+    <Build_Initially_Locked>No</Build_Initially_Locked>
+    <Tech_Level>1</Tech_Level>
+    <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>0</Required_Star_Base_Level>
+    <Tactical_Additional_Structure_Type>Power_Generator_R</Tactical_Additional_Structure_Type>
+    <!-- When one of these objects is created in galactic mode, we will populate every marker in land mode
+		that is a specific marker for E_Ground_Turbolaser_Tower. The galactic object will persist unless all
+		instances of those tactical objects have been destroyed. -->
+    <Place_Other_Type_At_Every_Specific_Marker_Position>R_Ground_Flakgun</Place_Other_Type_At_Every_Specific_Marker_Position>
+    <SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+    <SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+  </SpecialStructure>
+  <!--<SpecialStructure Name="R_Galactic_Turbolaser_Tower_Defenses">
+		<Variant_Of_Existing_Type>Template_Galactic_Turbolaser_Tower_Defenses</Variant_Of_Existing_Type>
+
+		<Affiliation>Rebel</Affiliation>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Slice_Cost_Credits>800</Slice_Cost_Credits>
+		<Tech_Level>1</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Tactical_Additional_Structure_Type>Power_Generator_R</Tactical_Additional_Structure_Type>-->
+  <!-- When one of these objects is created in galactic mode, we will populate every marker in land mode
+		that is a specific marker for R_Ground_Turbolaser_Tower. The galactic object will persist unless all
+		instances of those tactical objects have been destroyed. -->
+  <!--<Place_Other_Type_At_Every_Specific_Marker_Position>R_Ground_Turbolaser_Tower</Place_Other_Type_At_Every_Specific_Marker_Position>
+	
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpecialStructure>-->
+  <SpecialStructure Name="Garrison_Bunker_Template">
+    <GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
+    <Text_ID>TEXT_GROUND_BUNKER</Text_ID>
+    <Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BUNKER </Encyclopedia_Text>
+    <MP_Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BUNKER </MP_Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+    <Land_Model_Name>NB_Bunker.alo</Land_Model_Name>
+    <Icon_Name>i_button_nb_bunker.tga</Icon_Name>
+    <Space_Layer> Land </Space_Layer>
+    <UnitCollisionClass> Vehicle </UnitCollisionClass>
+    <Custom_Hard_XExtent> 26.0 </Custom_Hard_XExtent>
+    <Custom_Hard_YExtent> 26.0 </Custom_Hard_YExtent>
+    <Select_Box_Scale>110</Select_Box_Scale>
+    <GUI_Row> 0 </GUI_Row>
+    <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+    <SFXEvent_Ambient_Loop>Structure_Barracks_Loop</SFXEvent_Ambient_Loop>
+    <Behavior>DUMMY_GROUND_STRUCTURE</Behavior>
+    <LandBehavior> REVEAL,SELECTABLE, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,EARTHQUAKE_TARGET, GARRISON_STRUCTURE</LandBehavior>
+    <Garrison_Category> Infantry </Garrison_Category>
+    <Garrison_Exit_Dist>50</Garrison_Exit_Dist>
+    <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+    <Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+    <Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+    <Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+    <Is_Community_Property>Yes</Is_Community_Property>
+    <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+    <Death_Explosions>Large_Explosion_Land</Death_Explosions>
+    <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+    <Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+    <Mass>1.0</Mass>
+    <Scale_Factor>1.0</Scale_Factor>
+    <GUI_Bracket_Size>2</GUI_Bracket_Size>
+    <Is_Dummy>No</Is_Dummy>
+    <Influences_Capture_Point>False</Influences_Capture_Point>
+    <Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+    <Armor_Type> Armor_Bunker </Armor_Type>
+    <Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+    <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+    <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+    <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+    <Build_Initially_Locked>Yes</Build_Initially_Locked>
+    <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+    <Tech_Level>0</Tech_Level>
+    <Affiliation>Neutral</Affiliation>
+    <Size_Value>50</Size_Value>
+    <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>0</Required_Star_Base_Level>
+    <Tactical_Health>1000</Tactical_Health>
+    <Victory_Relevant>No</Victory_Relevant>
+    <No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+    <No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+    <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+    <Death_Explosions>Large_Explosion_Land</Death_Explosions>
+    <CategoryMask> Structure </CategoryMask>
+    <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+    <Has_Land_Evaluator>True</Has_Land_Evaluator>
+    <Score_Cost_Credits> 5000 </Score_Cost_Credits>
+    <Num_Garrison_Slots>5</Num_Garrison_Slots>
+    <Garrison_Bone_Names>b_garrison_00, b_garrison_01, b_garrison_02, b_garrison_03</Garrison_Bone_Names>
+    <Garrison_Enter_Dist>0</Garrison_Enter_Dist>
+    <Garrison_Radius>5</Garrison_Radius>
+    <Num_Garrison_Guns>8</Num_Garrison_Guns>
+    <Has_Land_Evaluator>True</Has_Land_Evaluator>
+    <AI_Combat_Power>100</AI_Combat_Power>
+    <Property_Flags>TacticalStructure | CanContainGarrison | GarrisonCanFire </Property_Flags>
+  </SpecialStructure>
+  <SpecialStructure Name="Garrison_Bunker_Empire">
+    <Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+    <Icon_Name>i_button_bunker.tga</Icon_Name>
+    <Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+    <Affiliation>Empire</Affiliation>
+    <Scale_Factor>1.0</Scale_Factor>
+    <Garrison_Radius>10</Garrison_Radius>
+  </SpecialStructure>
+  <SpecialStructure Name="Garrison_Bunker_Rebel">
+    <Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+    <Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+    <Icon_Name>i_button_bunker.tga</Icon_Name>
+    <Scale_Factor>1.0</Scale_Factor>
+    <Affiliation>Rebel</Affiliation>
+  </SpecialStructure>
+  <SpecialStructure Name="Garrison_Bunker_Underworld">
+    <Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+    <Land_Model_Name>UB_Bunker.alo</Land_Model_Name>
+    <Icon_Name>i_button_ui_bunker.tga</Icon_Name>
+    <Affiliation>Underworld</Affiliation>
+    <Scale_Factor>1.0</Scale_Factor>
+  </SpecialStructure>
+  <SpecialStructure Name="Garrison_Bunker_Capturable">
+    <Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+    <LandBehavior>SPACE_OBSTACLE, REVEAL,SELECTABLE, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,EARTHQUAKE_TARGET, GARRISON_STRUCTURE, CAPTURE_POINT</LandBehavior>
+    <Land_Model_Name>NB_Bunker.alo</Land_Model_Name>
+    <Ownership_Sticks>No</Ownership_Sticks>
+    <Capture_Point_Transition_Time_Seconds>3</Capture_Point_Transition_Time_Seconds>
+    <Capture_Point_Radius>220</Capture_Point_Radius>
+    <Affiliation>Rebel, Empire, Underworld, Pirates, Neutral,Hutts</Affiliation>
+    <Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+    <Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
+    <Include_In_UI_Map_Header>True</Include_In_UI_Map_Header>
+  </SpecialStructure>
+</SpecialStructures_Defense>

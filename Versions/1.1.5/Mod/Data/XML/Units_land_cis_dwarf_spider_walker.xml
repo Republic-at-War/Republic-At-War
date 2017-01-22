@@ -1,0 +1,232 @@
+<?xml version="1.0"?>
+<CIS_Dwarf_Spider_Droid_Data> 
+
+	  <GroundVehicle Name="Dwarf_Spider_Droid">
+		<LOD_Bias>4</LOD_Bias>
+		<Blob_Shadow_Below_Detail_Level>99</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>180.0, 100.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Text_ID>TEXT_UNIT_DWARF_SPIDER_DROID</Text_ID>
+		<Encyclopedia_Good_Against> Clone_Trooper_P1 Arc_Trooper AT_RT_Walker </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>AT_AP AT-TE_Walker A6_Juggernaut </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text>TEXT_TOOLTIP_DWARF_SPIDER_DROID</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+
+		<Land_Model_Name>Sev_dwarfspider.ALO</Land_Model_Name>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Type>Walk</Type>
+		<Deploys>No</Deploys>
+		<Affiliation>Rebel</Affiliation>
+		<Political_Control>0</Political_Control>
+
+		<Locomotor_Has_Animation_Priority>yes</Locomotor_Has_Animation_Priority>
+		<Movement_Animation_Speed> 0.25 </Movement_Animation_Speed>
+		<Rotation_Animation_Speed> 1.25 </Rotation_Animation_Speed>
+		<Max_Speed>1.0</Max_Speed>
+		<Max_Rate_Of_Turn>6</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn> 3.5 </Stopped_Rate_Of_Turn>
+		<Walk_Transition>Yes</Walk_Transition>
+		<Has_Pre_Turn_Anim> yes </Has_Pre_Turn_Anim>
+		<Min_Speed_Fraction_For_Turn> .25 </Min_Speed_Fraction_For_Turn>
+        <Ranking_In_Category>5</Ranking_In_Category>
+		<Property_Flags>GoodInfantryCrusher</Property_Flags>
+
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Vehicle </UnitCollisionClass>
+		<OverrideAcceleration> .05 </OverrideAcceleration>
+		<OverrideDeceleration> .05 </OverrideDeceleration>
+		<FormationSpacing> 2.2 </FormationSpacing>
+		<MinimumPushReturnDistance> 100 </MinimumPushReturnDistance>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>		
+		<MovementBoxExpansionFactor> 8.0 </MovementBoxExpansionFactor>
+		<MaxJiggleDistance> 5 </MaxJiggleDistance>
+		<Custom_Hard_XExtent> 14.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 16.0 </Custom_Hard_YExtent>	
+		
+		<Armor_Type> Armor_Vehicle_LT </Armor_Type>
+		<Size_Value>25</Size_Value>
+		<Damage>90</Damage>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>200</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>999</Energy_Capacity>
+		<Energy_Refresh_Rate>999</Energy_Refresh_Rate>
+
+		<Behavior> SELECTABLE </Behavior>
+		<LandBehavior>ABILITY_COUNTDOWN, WALK_LOCOMOTOR,IDLE,TARGETING,WEAPON,TURRET,POWERED,REVEAL,HIDE_WHEN_FOGGED,UNIT_AI,STUNNABLE,DAMAGE_TRACKING,SQUASH,AFFECTED_BY_SHIELD</LandBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		
+
+		<Turret_Rotate_Extent_Degrees>15</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>15</Turret_Elevate_Extent_Degrees>
+		<Barrel_Bone_Name>MuzzleA_00</Barrel_Bone_Name>
+		<Turret_Rotate_Speed>1.5</Turret_Rotate_Speed>
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+		<Turret_Targets_Ground_Vehicles> 1 </Turret_Targets_Ground_Vehicles>
+		<Turret_Targets_Ground_Infantry> 2 </Turret_Targets_Ground_Infantry>
+		<Turret_Targets_Air_Vehicles> 4 </Turret_Targets_Air_Vehicles>
+		<Turret_Targets_Anything_Else> 3 </Turret_Targets_Anything_Else>
+
+		<Projectile_Types>Proj_Blaster_Cannon_Red</Projectile_Types>
+
+		<Land_FOW_Reveal_Range>250.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>200.0</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>50.0</Targeting_Min_Attack_Distance>
+		<Ranged_Target_Z_Adjust>6.0</Ranged_Target_Z_Adjust>
+		<Projectile_Fire_Recharge_Seconds>1.5</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>3</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.25</Projectile_Fire_Pulse_Delay_Seconds>
+
+		<HardPoints>
+		HP_SPIDER_DROID
+		</HardPoints>
+		
+		<Targeting_Fire_Inaccuracy> Infantry, 3.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 10.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 10.0 </Targeting_Fire_Inaccuracy>
+
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+
+		<Death_SFXEvent_Start_Die>Unit_AT_AT_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Select>Unit_Select_Battle_Droid</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Battle_Droid</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Battle_Droid</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Battle_Droid</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Battle_Droid</SFXEvent_Guard>
+		<SFXEvent_Fire>Unit_Scout_Trooper_Fire</SFXEvent_Fire>
+
+        <SFXEvent_Ambient_Loop>Unit_Star_Destroyer_Idle_Engine_Loop</SFXEvent_Ambient_Loop>
+
+		<SFXEvent_Assist_Move> Unit_Assist_Move_Battle_Droid </SFXEvent_Assist_Move>		
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_Battle_Droid</SFXEvent_Assist_Attack>
+
+		<SFXEvent_Unit_Lost> UHD_Unit_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Tactical_Build_Started> UHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>		
+		<SFXEvent_Tactical_Build_Complete> UHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>		
+		<SFXEvent_Tactical_Build_Cancelled> UHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+        	<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<CategoryMask> Vehicle | AntiInfantry </CategoryMask>
+		<MovementClass>Walker</MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Ground_Vehicle_Turret_Target> Yes </Ground_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Tread_Scroll_Rate>0.167</Tread_Scroll_Rate>
+		<Overall_Length>20.0</Overall_Length> <!-- For vehicle pitching up and down on terrain (40 by geometry -->
+		<Overall_Width>25.0</Overall_Width> <!-- For vehicle rolling left and right on terrain (50 by geometry) -->
+		<Has_Land_Evaluator>Yes</Has_Land_Evaluator>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+		
+		<AI_Combat_Power>550</AI_Combat_Power>
+
+		<Idle_Chase_Range>0.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>AntiVehicleStructure</Targeting_Priority_Set>
+		<Autonomous_Move_Extension_Vs_Attacker>100.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Select_Box_Scale>50</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+
+		<Weather_Category>Walker</Weather_Category>
+		<Icon_Name>I_BUTTON_DWARFSPIDER.tga</Icon_Name>
+		
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Vehicle_Thief_Inside_Clone>T4B_Tank_Captured</Vehicle_Thief_Inside_Clone>
+		<Tactical_Bribe_Cost>1600</Tactical_Bribe_Cost>
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+	
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Base_Shield_Penetration_Particle>Shield_Penetration_Effect_Particle</Base_Shield_Penetration_Particle>
+		<Score_Cost_Credits>600</Score_Cost_Credits>
+        	<Converted_To_Enemy_Die_Time_Seconds>60</Converted_To_Enemy_Die_Time_Seconds>
+	</GroundVehicle>
+
+	
+
+	
+
+	<GroundCompany Name="Dwarf_Spider_Droid_Company">
+		<Text_ID>TEXT_UNIT_DWARF_SPIDER_DROID</Text_ID>
+		<Encyclopedia_Good_Against> Clone_Trooper_P1 Arc_Trooper AT_RT_Walker </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>AT_AP AT-TE_Walker A6_Juggernaut </Encyclopedia_Vulnerable_To>
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>80</Damage>
+		<Autoresolve_Health>1000</Autoresolve_Health>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Cost_Credits>200</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>10</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Tech_Level>3</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>R_Ground_Light_Vehicle_Factory</Required_Special_Structures>
+		<Required_Planets/>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>3</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Ship_Class>walker</Ship_Class>
+		<Company_Transport_Unit>Cis_Hardcell_Transport</Company_Transport_Unit>
+		<Company_Units>Dwarf_Spider_Droid, Dwarf_Spider_Droid, Dwarf_Spider_Droid</Company_Units>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Icon_Name>I_BUTTON_DWARFSPIDER.tga</Icon_Name>
+	<!-- !!! --> <SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+	<!-- !!! --> <SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+	<!-- !!! --> <SFXEvent_Build_Complete>Unit_Complete_AT_AA</SFXEvent_Build_Complete>
+	<!-- !!! --> <SFXEvent_Fleet_Move>Unit_Fleet_Move_AT_AT</SFXEvent_Fleet_Move>
+		<Score_Cost_Credits>600</Score_Cost_Credits>
+		
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+	
+			</Unit_Ability>
+		</Unit_Abilities_Data>	
+        
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>900</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>RC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>--> 
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+        
+  		<Encyclopedia_Text>TEXT_TOOLTIP_DWARF_SPIDER_DROID</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+        	<Maintenance_Cost>0.05</Maintenance_Cost>
+		<Population_Value>2</Population_Value>
+	</GroundCompany>
+
+	
+</CIS_Dwarf_Spider_Droid_Data>

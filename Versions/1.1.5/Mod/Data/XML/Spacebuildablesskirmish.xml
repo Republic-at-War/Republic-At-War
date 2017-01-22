@@ -1,0 +1,1850 @@
+<?xml version="1.0"?>
+<SpaceBuildables>
+
+
+	<!--
+		ATTENTION DESIGNERS: Use this laser pad ONLY on maps unless you
+		are making something specific to a scripted mission.
+	-->
+	
+	<SpaceBuildable Name="Defense_Satellite_Laser_Pad">
+		<Behavior> SPACE_OBSTACLE, TACTICAL_BUILD_OBJECTS, REVEAL, HIDE_WHEN_FOGGED, CAPTURE_POINT </Behavior>
+		
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Empire, 
+				UC_Empire_Defense_Satellite_Laser,
+				UC_Empire_Defense_Satellite_Missile,
+				UC_Empire_Defense_Satellite_Repair,
+			Rebel,
+				UC_Rebel_Defense_Satellite_Laser,
+				UC_Rebel_Defense_Satellite_Missile,
+				UC_Rebel_Defense_Satellite_Repair,
+			Underworld,
+				UC_Underworld_Defense_Satellite_Plasma,
+				UC_Underworld_Defense_Satellite_DBM, 
+				UC_Underworld_Defense_Satellite_Sensor
+		</Tactical_Buildable_Objects_Multiplayer>
+		
+		<Tactical_Buildable_Objects_Campaign> 
+			Empire, 
+				UC_Empire_Defense_Satellite_Laser,
+				UC_Empire_Defense_Satellite_Missile, 
+				UC_Empire_Defense_Satellite_Repair,
+			Rebel,
+				UC_Rebel_Defense_Satellite_Laser,
+				UC_Rebel_Defense_Satellite_Missile,
+				UC_Rebel_Defense_Satellite_Repair,
+			Underworld,
+				UC_Underworld_Defense_Satellite_Plasma,
+				UC_Underworld_Defense_Satellite_DBM, 
+				UC_Underworld_Defense_Satellite_Sensor
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Text_ID> TEXT_ORBITAL_DEFENSE_SATELLITE </Text_ID>
+		<Space_Model_Name>NV_LDS_pad.ALO</Space_Model_Name>
+		<Icon_Name>i_button_lds.tga</Icon_Name>
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Select_Box_Scale>330</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Affiliation>Neutral, Rebel, Empire, Underworld</Affiliation>
+		<Size_Value>30</Size_Value>
+		<Tactical_Health>1200</Tactical_Health>
+		
+		<Space_FOW_Reveal_Range>200.0</Space_FOW_Reveal_Range>
+
+		<GUI_Model_Name>NV_LDS_pad.ALO</GUI_Model_Name>
+		<GUI_Distance>1000</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<CategoryMask> Structure </CategoryMask>
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+
+		<Capture_Point_Radius>350</Capture_Point_Radius>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Capture_Point_Transition_Time_Seconds>8.0</Capture_Point_Transition_Time_Seconds>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Hides_When_Built_On>True</Hides_When_Built_On>
+		<Destroy_When_Child_Dies>True</Destroy_When_Child_Dies>
+
+		<Loop_Idle_Anim_00> No </Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living> No </Collidable_By_Projectile_Living>
+		<Is_Visible_On_Radar>True</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
+		<Select_Box_Scale> 50 </Select_Box_Scale>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Victory_Relevant> No </Victory_Relevant>
+		<Custom_Soft_Footprint_Radius> 100 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		
+		<Tactical_Respawn_Time_In_Secs>45</Tactical_Respawn_Time_In_Secs>
+		
+		<Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_PAD_EMPTY_00 TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_PAD_EMPTY_00 TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Victory_Relevant>No</Victory_Relevant>
+	</SpaceBuildable>
+
+
+	<SpaceBuildable Name="Defense_Satellite_Missile_Pad">
+		<Variant_Of_Existing_Type>Defense_Satellite_Laser_Pad</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Objects_Multiplayer>
+			Empire,
+				UC_Empire_Defense_Satellite_Missile,
+			Rebel,
+				UC_Rebel_Defense_Satellite_Missile,
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Space_Model_Name>NV_LDS_Pad.ALO</Space_Model_Name>
+				
+		<Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_MISSILE_00 </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_MISSILE_00 </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Victory_Relevant>No</Victory_Relevant>
+	</SpaceBuildable>
+
+
+
+
+<!--  ***************************************** -->
+<!--  ***** UC VERSIONS OF ALL SATELLITES ***** -->
+<!--  ***************************************** -->
+
+
+	<SpaceBuildable Name="UC_Empire_Defense_Satellite_Laser">
+		<Behavior>SPACE_OBSTACLE, TACTICAL_UNDER_CONSTRUCTION, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED</Behavior>
+		<Tactical_Buildable_Constructed> Empire_Defense_Satellite_Laser </Tactical_Buildable_Constructed>
+		<Tactical_Build_Cost_Multiplayer> 875 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>400</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 25 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Start_Lower_Z> 0.0 </Tactical_Build_Start_Lower_Z>
+		<Victory_Relevant>No</Victory_Relevant>
+
+		<Text_ID>TEXT_ORBITAL_DEFENSE_SATELLITE_LASER</Text_ID>
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Space_Model_Name>NV_LDS_build.ALO</Space_Model_Name>
+		<Icon_Name>i_button_lds.tga</Icon_Name>
+		<Select_Box_Scale>330</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Affiliation>Empire</Affiliation>
+		<Size_Value>30</Size_Value>
+		<Tactical_Health>1200</Tactical_Health>
+		<Space_FOW_Reveal_Range>200.0</Space_FOW_Reveal_Range>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<SFXEvent_Fire>Unit_A_Wing_Fire</SFXEvent_Fire>
+		<Icon_Name>i_button_lds.tga</Icon_Name>
+		<GUI_Model_Name>NV_LDS_build.ALO</GUI_Model_Name>
+		<GUI_Distance>1000</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<CategoryMask> Structure </CategoryMask>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+
+		<Custom_Soft_Footprint_Radius> 100 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		
+		<Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_LASER_PAD_00 </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_LASER_PAD_00 </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Victory_Relevant>No</Victory_Relevant>
+	</SpaceBuildable>		
+	
+	<SpaceBuildable Name="UC_Rebel_Defense_Satellite_Laser">
+		<Variant_Of_Existing_Type>UC_Empire_Defense_Satellite_Laser</Variant_Of_Existing_Type>
+
+		<Tactical_Buildable_Constructed> Rebel_Defense_Satellite_Laser </Tactical_Buildable_Constructed>
+		<Tactical_Build_Cost_Multiplayer> 875 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>400</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 25 </Tactical_Build_Time_Seconds>
+
+		<Affiliation>Rebel</Affiliation>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpaceBuildable>		
+
+
+
+
+
+	<SpaceBuildable Name="UC_Underworld_Defense_Satellite_Plasma">
+		<Text_ID>TEXT_ORBITAL_DEFENSE_SATELLITE_PLASMA</Text_ID>
+		<Encyclopedia_Text> TEXT_ORBITAL_DEFENSE_SATELLITE_PLASMA </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_ORBITAL_DEFENSE_SATELLITE_PLASMA </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+		<Space_Model_Name>NV_LDS_build.ALO</Space_Model_Name>
+		<Icon_Name>i_button_lds.tga</Icon_Name>
+		<Select_Box_Scale>330</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+
+		<Behavior>SPACE_OBSTACLE, TACTICAL_UNDER_CONSTRUCTION, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED</Behavior>
+
+		<Tactical_Buildable_Constructed> Underworld_Defense_Satellite_Plasma </Tactical_Buildable_Constructed>
+		<Tactical_Build_Cost_Multiplayer> 1000 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>750</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 20 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Start_Lower_Z> 0.0 </Tactical_Build_Start_Lower_Z>
+
+		<Affiliation>Underworld</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Size_Value>30</Size_Value>
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<Tactical_Health>1200</Tactical_Health>
+		<Space_FOW_Reveal_Range>200.0</Space_FOW_Reveal_Range>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+				
+		<SFXEvent_Fire>Unit_A_Wing_Fire</SFXEvent_Fire>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<CategoryMask> Structure </CategoryMask>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Custom_Soft_Footprint_Radius> 100 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+
+	</SpaceBuildable>	
+
+
+
+
+	<SpaceBuildable Name="UC_Underworld_Defense_Satellite_Sensor">
+   		<Text_ID>TEXT_STRUCTURE_SENSOR_SCRAMBLER</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_SENSOR_SCRAMBLER</Encyclopedia_Text>
+		<MP_Encyclopedia_Text>TEXT_TOOLTIP_SENSOR_SCRAMBLER</MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+		<Space_Model_Name>NV_LRS_build.alo</Space_Model_Name>
+		<Icon_Name>i_button_lrs.tga</Icon_Name>
+		<Select_Box_Scale>330</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+
+		<Behavior>SPACE_OBSTACLE, TACTICAL_UNDER_CONSTRUCTION, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED</Behavior>
+
+		<Tactical_Buildable_Constructed> Underworld_Defense_Satellite_Sensor </Tactical_Buildable_Constructed>
+		<Tactical_Build_Cost_Multiplayer> 875 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>700</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 18 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Start_Lower_Z> 0.0 </Tactical_Build_Start_Lower_Z>
+
+		<Affiliation>Underworld</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Size_Value>30</Size_Value>
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<Tactical_Health>1200</Tactical_Health>
+		<Space_FOW_Reveal_Range>250.0</Space_FOW_Reveal_Range>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+				
+		<SFXEvent_Fire>Unit_A_Wing_Fire</SFXEvent_Fire>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<CategoryMask> Structure </CategoryMask>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Custom_Soft_Footprint_Radius> 100 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+
+	</SpaceBuildable>	
+
+
+
+	<SpaceBuildable Name="UC_Empire_Defense_Satellite_Tractor">
+   		<Text_ID>TEXT_ORBITAL_DEFENSE_SATELLITE_TRACTOR</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_DEFENSE_SATELLITE_TRACTOR</Encyclopedia_Text>
+		<MP_Encyclopedia_Text>TEXT_TOOLTIP_DEFENSE_SATELLITE_TRACTOR</MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+		<Space_Model_Name>EV_Satallite_TB.alo</Space_Model_Name>
+		<Icon_Name>i_button_tractor_beam.tga</Icon_Name>
+		<Select_Box_Scale>330</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+
+		<Behavior>SPACE_OBSTACLE, TACTICAL_UNDER_CONSTRUCTION, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED</Behavior>
+
+		<Tactical_Buildable_Constructed> Empire_Defense_Satellite_Tractor </Tactical_Buildable_Constructed>
+		<Tactical_Build_Cost_Multiplayer> 800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>600</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 28 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Start_Lower_Z> 0.0 </Tactical_Build_Start_Lower_Z>
+
+		<Affiliation>Empire</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Size_Value>30</Size_Value>
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<Tactical_Health>1200</Tactical_Health>
+		<Space_FOW_Reveal_Range>200.0</Space_FOW_Reveal_Range>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+				
+		<SFXEvent_Fire>Unit_A_Wing_Fire</SFXEvent_Fire>
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<CategoryMask> Structure </CategoryMask>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Custom_Soft_Footprint_Radius> 100 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+
+	</SpaceBuildable>	
+
+
+	<SpaceBuildable Name="UC_Rebel_Defense_Satellite_Repair">
+   		<Text_ID>TEXT_ORBITAL_DEFENSE_SATELLITE_REPAIR</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_REP_TURRET_SPACE</Encyclopedia_Text>
+		<MP_Encyclopedia_Text>TEXT_TOOLTIP_REP_TURRET_SPACE</MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+		<Space_Model_Name>RV_SATALLITE_REPAIR.ALO</Space_Model_Name>
+		<Icon_Name>i_button_repair.tga</Icon_Name>
+		<Select_Box_Scale>330</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+
+		<Behavior>SPACE_OBSTACLE, TACTICAL_UNDER_CONSTRUCTION, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED</Behavior>
+
+		<Tactical_Buildable_Constructed> Rebel_Defense_Satellite_Repair </Tactical_Buildable_Constructed>
+		<Tactical_Build_Cost_Multiplayer> 750 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>500</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 28 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Start_Lower_Z> 0.0 </Tactical_Build_Start_Lower_Z>
+
+		<Affiliation>Rebel</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Size_Value>30</Size_Value>
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<Tactical_Health>1200</Tactical_Health>
+		<Space_FOW_Reveal_Range>200.0</Space_FOW_Reveal_Range>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+				
+		<SFXEvent_Fire>Unit_A_Wing_Fire</SFXEvent_Fire>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<CategoryMask> Structure </CategoryMask>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Custom_Soft_Footprint_Radius> 100 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+
+	</SpaceBuildable>	
+
+
+	<SpaceBuildable Name="UC_Empire_Defense_Satellite_Repair">
+		<Variant_Of_Existing_Type>UC_Rebel_Defense_Satellite_Repair</Variant_Of_Existing_Type>
+
+		<Tactical_Buildable_Constructed> Empire_Defense_Satellite_Repair </Tactical_Buildable_Constructed>
+		<Tactical_Build_Cost_Multiplayer> 750 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>500</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 28 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Start_Lower_Z> 0.0 </Tactical_Build_Start_Lower_Z>
+
+		<Affiliation>Empire</Affiliation>
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpaceBuildable>
+
+
+   	<SpaceBuildable Name="UC_Empire_Defense_Satellite_Missile">
+		<Behavior>SPACE_OBSTACLE, TACTICAL_UNDER_CONSTRUCTION, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED</Behavior>
+		
+		<Tactical_Buildable_Constructed> Empire_Defense_Satellite_Missile </Tactical_Buildable_Constructed>
+		<Tactical_Build_Cost_Multiplayer> 700 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>275</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 28 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Start_Lower_Z> 0.0 </Tactical_Build_Start_Lower_Z>
+
+		<Text_ID>TEXT_ORBITAL_DEFENSE_SATELLITE_MISSILE</Text_ID>
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Space_Model_Name>NV_MDS_build.ALO</Space_Model_Name>
+		<Icon_Name>i_button_mds.tga</Icon_Name>
+		<Select_Box_Scale>330</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Affiliation>Empire</Affiliation>
+		<Size_Value>30</Size_Value>
+		<Tactical_Health>1200</Tactical_Health>
+		<Space_FOW_Reveal_Range>200.0</Space_FOW_Reveal_Range>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<SFXEvent_Fire>Unit_A_Wing_Fire</SFXEvent_Fire>
+		<Victory_Relevant>No</Victory_Relevant>
+		<GUI_Model_Name>NV_MDS_build.ALO</GUI_Model_Name>
+		<GUI_Distance>1000</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		
+		<CategoryMask> Structure </CategoryMask>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Custom_Soft_Footprint_Radius> 100 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		
+		<Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_MISSILE_PAD_00 </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_MISSILE_PAD_00 </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Victory_Relevant>No</Victory_Relevant>
+   </SpaceBuildable>	
+	
+	<SpaceBuildable Name="UC_Rebel_Defense_Satellite_Missile">
+		<Variant_Of_Existing_Type>UC_Empire_Defense_Satellite_Missile</Variant_Of_Existing_Type>
+
+		<Tactical_Buildable_Constructed> Rebel_Defense_Satellite_Missile </Tactical_Buildable_Constructed>
+		<Tactical_Build_Cost_Multiplayer> 700 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>275</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 28 </Tactical_Build_Time_Seconds>
+
+		<Affiliation>Rebel</Affiliation>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Underworld_Defense_Satellite_DBM">
+		<Variant_Of_Existing_Type>UC_Empire_Defense_Satellite_Missile</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_ORBITAL_DEFENSE_SATELLITE_DBM</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_DEFENSE_SATELLITE_DBM </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_DEFENSE_SATELLITE_DBM </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+		<Tactical_Buildable_Constructed> Underworld_Defense_Satellite_DBM </Tactical_Buildable_Constructed>
+		<Tactical_Build_Cost_Multiplayer> 1200 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1000</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 20 </Tactical_Build_Time_Seconds>
+
+		<Affiliation>Underworld</Affiliation>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpaceBuildable>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  ************************************************************ -->
+<!--  ***** CONSTRUCTION COMPLETE VERSIONS OF ALL SATELLITES ***** -->
+<!--  ************************************************************ -->
+
+
+
+	<SpaceBuildable Name="Empire_Defense_Satellite_Laser">
+		
+		<SpaceBehavior> SPACE_OBSTACLE, DUMMY_ORBITAL_STRUCTURE, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TARGETING, WEAPON, POWERED, SHIELDED, DAMAGE_TRACKING, TURRET, TACTICAL_SELL </SpaceBehavior>
+
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>90</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Speed>3.5</Turret_Rotate_Speed>
+		<Turret_Rest_Angle>0.0, 0.0, 0.0</Turret_Rest_Angle>
+		<Turret_Bone_Name>B_Turret</Turret_Bone_Name>
+		<!--<Barrel_Bone_Name>Barrel_00</Barrel_Bone_Name>-->
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+
+		<Text_ID>TEXT_ORBITAL_DEFENSE_SATELLITE_LASER</Text_ID>
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Space_Model_Name>NV_LDS.ALO</Space_Model_Name>
+		<Icon_Name>i_button_lds.tga</Icon_Name>
+		<Select_Box_Scale>330</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Affiliation>Empire</Affiliation>
+		<Size_Value>30</Size_Value>
+		<Shield_Points>800</Shield_Points>
+		<Tactical_Health>1500</Tactical_Health>
+		<Shield_Refresh_Rate>30</Shield_Refresh_Rate>
+		<Energy_Capacity>10000</Energy_Capacity>
+		<Energy_Refresh_Rate>20</Energy_Refresh_Rate>
+		<Damage>12</Damage>
+		<Projectile_Damage>14.0</Projectile_Damage>
+		<Projectile_Types>Proj_Ship_Large_Laser_Cannon_Red</Projectile_Types>
+		<Projectile_Fire_Pulse_Count>10</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.15</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+		<Space_FOW_Reveal_Range>1200.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1000.0</Targeting_Max_Attack_Distance>
+		<Fire_Inaccuracy_Distance> Fighter, 3.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 3.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Transport, 3.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 10.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 10.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 10.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 10.0 </Fire_Inaccuracy_Distance>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<SFXEvent_Fire>Unit_Turret_Fire</SFXEvent_Fire>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Icon_Name>i_button_lds.tga</Icon_Name>
+		<GUI_Model_Name>NV_LDS.ALO</GUI_Model_Name>
+		<GUI_Distance>1000</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		
+		<Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		
+		<CategoryMask> Structure </CategoryMask>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_LASER_00 </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_LASER_00 </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 25000 </Score_Cost_Credits>
+		<Custom_Soft_Footprint_Radius> 100 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Targeting_Priority_Set>Corvette</Targeting_Priority_Set>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Victory_Relevant>No</Victory_Relevant>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Rebel_Defense_Satellite_Laser">
+		<Variant_Of_Existing_Type>Empire_Defense_Satellite_Laser</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</SpaceBuildable>
+
+
+
+
+	<SpaceBuildable Name="Underworld_Defense_Satellite_Plasma">
+		<Text_ID>TEXT_ORBITAL_DEFENSE_SATELLITE_PLASMA</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_DEFENSE_SATELLITE_PLASMA </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_DEFENSE_SATELLITE_PLASMA </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+	
+		<Space_Model_Name>NV_LDS.ALO</Space_Model_Name>
+		<Icon_Name>i_button_lds.tga</Icon_Name>
+		<Select_Box_Scale>330</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<GUI_Row> 0 </GUI_Row>
+
+		<SpaceBehavior> TACTICAL_SELL, SPACE_OBSTACLE, DUMMY_ORBITAL_STRUCTURE, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TARGETING, WEAPON, POWERED, SHIELDED, DAMAGE_TRACKING, TURRET, TACTICAL_SELL </SpaceBehavior>
+
+		<Affiliation>Underworld</Affiliation>
+		<Size_Value>30</Size_Value>
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<Shield_Points>800</Shield_Points>
+		<Tactical_Health>1500</Tactical_Health>
+		<Shield_Refresh_Rate>30</Shield_Refresh_Rate>
+		<Energy_Capacity>10000</Energy_Capacity>
+		<Energy_Refresh_Rate>20</Energy_Refresh_Rate>
+		<Damage>12</Damage>
+
+		<Projectile_Types>Proj_Plasma_Space_Turret_Blast</Projectile_Types>
+		<Projectile_Fire_Pulse_Count>2</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>3.0</Projectile_Fire_Recharge_Seconds>
+		<Space_FOW_Reveal_Range>1200.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1000.0</Targeting_Max_Attack_Distance>
+		
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>90</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Speed>3.5</Turret_Rotate_Speed>
+		<Turret_Rest_Angle>0.0, 0.0, 0.0</Turret_Rest_Angle>
+		<Turret_Bone_Name>B_Turret</Turret_Bone_Name>
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+				
+		<Fire_Inaccuracy_Distance> Fighter, 10.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 10.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Transport, 10.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 5.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 5.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 10.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 10.0 </Fire_Inaccuracy_Distance>
+		
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+
+		<SFXEvent_Fire>Unit_Turret_Fire</SFXEvent_Fire>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		
+		<Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		
+		<CategoryMask> Structure </CategoryMask>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Score_Cost_Credits> 25000 </Score_Cost_Credits>
+		<Custom_Soft_Footprint_Radius> 100 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Victory_Relevant>No</Victory_Relevant>
+	</SpaceBuildable>
+
+
+
+
+	<SpaceBuildable Name="Underworld_Defense_Satellite_Sensor">
+   		<Text_ID>TEXT_STRUCTURE_SENSOR_SCRAMBLER</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_SENSOR_SCRAMBLER</Encyclopedia_Text>
+		<MP_Encyclopedia_Text>TEXT_TOOLTIP_SENSOR_SCRAMBLER</MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+		<Space_Model_Name>NV_LRS.alo</Space_Model_Name>
+		<Icon_Name>i_button_lrs.tga</Icon_Name>
+		<Select_Box_Scale>330</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<GUI_Row> 0 </GUI_Row>
+		<Space_FOW_Reveal_Range>1200.0</Space_FOW_Reveal_Range>
+
+		<SpaceBehavior> TACTICAL_SELL, SPACE_OBSTACLE, DUMMY_ORBITAL_STRUCTURE, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, SHIELDED, DAMAGE_TRACKING, TACTICAL_SELL </SpaceBehavior>
+
+		<Affiliation>Underworld</Affiliation>
+		<Size_Value>30</Size_Value>
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<Shield_Points>800</Shield_Points>
+		<Shield_Refresh_Rate>20</Shield_Refresh_Rate>
+		<Tactical_Health>1000</Tactical_Health>
+		<Energy_Capacity>10000</Energy_Capacity>
+		<Energy_Refresh_Rate>20</Energy_Refresh_Rate>
+		<Damage>12</Damage>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		
+		<Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		
+		<CategoryMask> Structure </CategoryMask>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Score_Cost_Credits> 25000 </Score_Cost_Credits>
+		<Custom_Soft_Footprint_Radius> 100 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Target_Stealth_Units>Yes</Target_Stealth_Units>
+		<Passive_Missile_Shield_Radius> 1000.0 </Passive_Missile_Shield_Radius>
+
+		<Abilities SubObjectList="Yes">
+
+			<Sensor_Jamming_Ability Name="UMDU_Sensor_Jamming">
+				<Activation_Style> COMBAT_AUTOMATIC </Activation_Style>
+				<Duration_In_Secs>60.0</Duration_In_Secs>
+				<Blob_Color>200, 50, 200, 128</Blob_Color>
+				<Blob_Material_Name>Sensor_Jamming_Blob</Blob_Material_Name>
+			</Sensor_Jamming_Ability>
+
+		</Abilities>
+		
+	</SpaceBuildable>
+
+
+	<SpaceBuildable Name="Empire_Defense_Satellite_Tractor">
+   		<Text_ID>TEXT_ORBITAL_DEFENSE_SATELLITE_TRACTOR</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_DEFENSE_SATELLITE_TRACTOR</Encyclopedia_Text>
+		<MP_Encyclopedia_Text>TEXT_TOOLTIP_DEFENSE_SATELLITE_TRACTOR</MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+		<Space_Model_Name>EV_Satallite_TB.alo</Space_Model_Name>
+		<Icon_Name>i_button_tractor_beam.tga</Icon_Name>
+		<Select_Box_Scale>330</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<GUI_Row> 0 </GUI_Row>
+
+		<SpaceBehavior> TACTICAL_SELL, SPACE_OBSTACLE, DUMMY_ORBITAL_STRUCTURE, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, SHIELDED, POWERED, DAMAGE_TRACKING, TACTICAL_SELL, TARGETING, ABILITY_COUNTDOWN </SpaceBehavior>
+
+		<Affiliation>Empire</Affiliation>
+		<Size_Value>30</Size_Value>
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<Shield_Points>800</Shield_Points>
+		<Tactical_Health>1500</Tactical_Health>
+		<Shield_Refresh_Rate>30</Shield_Refresh_Rate>
+		<Energy_Capacity>10000</Energy_Capacity>
+		<Energy_Refresh_Rate>20</Energy_Refresh_Rate>
+		<Damage>12</Damage>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		
+		<Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		
+		<CategoryMask> Structure </CategoryMask>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Score_Cost_Credits> 25000 </Score_Cost_Credits>
+		<Custom_Soft_Footprint_Radius> 100 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<Space_FOW_Reveal_Range>1200.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>12000</Targeting_Max_Attack_Distance>
+
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Victory_Relevant>No</Victory_Relevant>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			
+			<Unit_Ability>
+	            <Type>TRACTOR_BEAM</Type>
+	            <Mod_Multiplier>SPEED_MULTIPLIER, 0.6f</Mod_Multiplier>
+	            <GUI_Activated_Ability_Name>Satellite_Tractor_Beam_Attack_Ability</GUI_Activated_Ability_Name>
+	            <Recharge_Seconds>5</Recharge_Seconds>
+	            <SFXEvent_Target_Ability>Unit_Tractor_Beam_Star_Destroyer</SFXEvent_Target_Ability>
+				<SFXEvent_Special_Ability_Loop> Unit_Star_Destroyer_Tractor_Beam </SFXEvent_Special_Ability_Loop>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+
+			<Tractor_Beam_Attack_Ability Name="Satellite_Tractor_Beam_Attack_Ability">
+				<Activation_Style> User_Input </Activation_Style>
+				<Applicable_Unit_Categories> Corvette | Frigate |Capital </Applicable_Unit_Categories>
+	            <Applicable_Unit_Types>Millennium_Falcon, Sundered_Heart</Applicable_Unit_Types>
+				<Excluded_Unit_Types>Buzz_Droids</Excluded_Unit_Types>
+				<Activation_Min_Range>5</Activation_Min_Range>
+	            <Activation_Max_Range>1200</Activation_Max_Range>
+
+				<!-- Modifiers. If 0 - no modifier is applied, 1 - "100% increase or decrease" -->
+				<Target_Speed_Decrease_Percent>.95</Target_Speed_Decrease_Percent>
+				<Stacking_Category>2</Stacking_Category>			
+			</Tractor_Beam_Attack_Ability>
+
+		</Abilities>		
+
+	</SpaceBuildable>
+
+
+
+
+	<SpaceBuildable Name="Rebel_Defense_Satellite_Repair">
+   		<Text_ID>TEXT_ORBITAL_DEFENSE_SATELLITE_REPAIR</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_REP_TURRET_SPACE</Encyclopedia_Text>
+		<MP_Encyclopedia_Text>TEXT_TOOLTIP_REP_TURRET_SPACE</MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+		<Space_Model_Name>RV_SATALLITE_REPAIR.ALO</Space_Model_Name>
+		<Icon_Name>i_button_repair.tga</Icon_Name>
+		<Select_Box_Scale>330</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<GUI_Row> 0 </GUI_Row>
+
+		<SpaceBehavior> TACTICAL_SELL, SPACE_OBSTACLE, DUMMY_ORBITAL_STRUCTURE, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, SHIELDED, DAMAGE_TRACKING, TACTICAL_SELL </SpaceBehavior>
+
+		<Affiliation>Rebel</Affiliation>
+		<Size_Value>30</Size_Value>
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<Shield_Points>800</Shield_Points>
+		<Tactical_Health>1500</Tactical_Health>
+		<Shield_Refresh_Rate>30</Shield_Refresh_Rate>
+		<Energy_Capacity>10000</Energy_Capacity>
+		<Energy_Refresh_Rate>20</Energy_Refresh_Rate>
+		<Damage>12</Damage>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		
+		<Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		
+		<CategoryMask> Structure </CategoryMask>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Score_Cost_Credits> 25000 </Score_Cost_Credits>
+		<Custom_Soft_Footprint_Radius> 100 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Victory_Relevant>No</Victory_Relevant>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Repair_Facility_Healing">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>700.0</Heal_Range>
+				<Heal_Amount>25.0</Heal_Amount>
+                <Blob_Color>0, 255, 0, 255</Blob_Color>
+				<Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+				<!-- We can heal the following unit types: -->
+				<Applicable_Unit_Categories>Fighter, Transport, Bomber, Corvette, Frigate, Capital, Hero</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Shield_Sparks_Medium</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>B_TURRET, TURRET_00, B_TURRET_BASE, ROOT</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 1.2, 2.0</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 2.0</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+				<Lighting_Effect_Name>Repair_Facility_Effect</Lighting_Effect_Name>
+			</Force_Healing_Ability>
+		</Abilities>	
+
+	</SpaceBuildable>
+
+
+	<SpaceBuildable Name="Empire_Defense_Satellite_Repair">
+		<Variant_Of_Existing_Type>Rebel_Defense_Satellite_Repair</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpaceBuildable>
+
+
+
+
+	<SpaceBuildable Name="Empire_Defense_Satellite_Missile">
+		<SpaceBehavior> TACTICAL_SELL, SPACE_OBSTACLE, DUMMY_ORBITAL_STRUCTURE, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TARGETING, WEAPON, POWERED, SHIELDED, DAMAGE_TRACKING, TURRET, TACTICAL_SELL </SpaceBehavior>
+
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>90</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Speed>3.5</Turret_Rotate_Speed>
+		<Turret_Rest_Angle>0.0, 0.0, 0.0</Turret_Rest_Angle>
+		<Turret_Bone_Name>B_Turret</Turret_Bone_Name>
+		<!--<Barrel_Bone_Name>Barrel_00</Barrel_Bone_Name>-->
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+
+		<Text_ID>TEXT_ORBITAL_DEFENSE_SATELLITE_MISSILE</Text_ID>
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Space_Model_Name>NV_MDS.ALO</Space_Model_Name>
+		<Icon_Name>i_button_mds.tga</Icon_Name>
+		<Select_Box_Scale>330</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Affiliation>Empire</Affiliation>
+		<Size_Value>30</Size_Value>
+		
+		<Shield_Points>800</Shield_Points>
+		<Tactical_Health>1500</Tactical_Health>
+		<Shield_Refresh_Rate>30</Shield_Refresh_Rate>
+		<Energy_Capacity>10000</Energy_Capacity>
+		<Energy_Refresh_Rate>20</Energy_Refresh_Rate>
+		<Damage>13</Damage>
+		
+		<Projectile_Damage>24.0</Projectile_Damage>
+		<Projectile_Types>Proj_Ship_Concussion_Missile</Projectile_Types>
+		<Projectile_Fire_Pulse_Count>4</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.3</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>5.0</Projectile_Fire_Recharge_Seconds>
+		
+		<Space_FOW_Reveal_Range>1750.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1500.0</Targeting_Max_Attack_Distance>
+	
+		<Fire_Inaccuracy_Distance> Fighter, 0.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 0.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Transport, 0.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 0.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 0.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 0.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 0.0 </Fire_Inaccuracy_Distance>
+		
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		
+		<Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		
+		<SFXEvent_Fire>Unit_Missile_Fire</SFXEvent_Fire>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<GUI_Model_Name>NV_MDS.ALO</GUI_Model_Name>
+		<GUI_Distance>1000</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<CategoryMask> Structure </CategoryMask>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_MISSILE_00 </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_MISSILE_00 </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 25000 </Score_Cost_Credits>
+		<Custom_Soft_Footprint_Radius> 100 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Victory_Relevant>No</Victory_Relevant>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Rebel_Defense_Satellite_Missile">
+		<Variant_Of_Existing_Type>Empire_Defense_Satellite_Missile</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</SpaceBuildable>
+
+
+
+	<SpaceBuildable Name="Underworld_Defense_Satellite_DBM">
+		<Text_ID>TEXT_ORBITAL_DEFENSE_SATELLITE_DBM</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_DEFENSE_SATELLITE_DBM </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_DEFENSE_SATELLITE_DBM </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+	
+		<Space_Model_Name>NV_MDS.ALO</Space_Model_Name>
+		<Icon_Name>i_button_mds.tga</Icon_Name>
+		<Select_Box_Scale>330</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<GUI_Row> 0 </GUI_Row>
+
+		<SpaceBehavior> TACTICAL_SELL, SPACE_OBSTACLE, DUMMY_ORBITAL_STRUCTURE, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TARGETING, WEAPON, POWERED, SHIELDED, DAMAGE_TRACKING, TURRET, TACTICAL_SELL </SpaceBehavior>
+
+		<Affiliation>Underworld</Affiliation>
+		<Size_Value>30</Size_Value>
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<Shield_Points>500</Shield_Points>
+		<Shield_Refresh_Rate>20</Shield_Refresh_Rate>
+		<Tactical_Health>1200</Tactical_Health>
+		<Energy_Capacity>10000</Energy_Capacity>
+		<Energy_Refresh_Rate>20</Energy_Refresh_Rate>
+		<Damage>12</Damage>
+
+		<Projectile_Types>Proj_Ship_Diamond_Boron_Missile</Projectile_Types>
+		<Projectile_Fire_Pulse_Count>4</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.5</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>4.0</Projectile_Fire_Recharge_Seconds>
+
+		<Space_FOW_Reveal_Range>1750</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1500</Targeting_Max_Attack_Distance>
+
+		<Targeting_Fire_Inaccuracy_Fixed_Radius> 100 </Targeting_Fire_Inaccuracy_Fixed_Radius>
+		<Targeting_Min_Attack_Distance>200</Targeting_Min_Attack_Distance>
+		
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>90</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Speed>3.5</Turret_Rotate_Speed>
+		<Turret_Rest_Angle>0.0, 0.0, 0.0</Turret_Rest_Angle>
+		<Turret_Bone_Name>B_Turret</Turret_Bone_Name>
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+
+		<SFXEvent_Fire>Unit_Boron_Missile_Fire</SFXEvent_Fire>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		
+		<Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		
+		<CategoryMask> Structure </CategoryMask>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Score_Cost_Credits> 25000 </Score_Cost_Credits>
+		<Custom_Soft_Footprint_Radius> 100 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Victory_Relevant>No</Victory_Relevant>
+	</SpaceBuildable>
+
+
+
+
+
+
+<!--**************** Orbital Construction Pod ************************-->	
+
+	<SpaceBuildable Name="N_Orbital_Construction_Pod">
+		<Select_Box_Scale>600</Select_Box_Scale>
+		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
+		<Variant_Of_Existing_Type>Orbital_Construction_Pod</Variant_Of_Existing_Type>
+		<Behavior>REVEAL, HIDE_WHEN_FOGGED, CAPTURE_POINT, SELECTABLE, DUMMY_ORBITAL_STRUCTURE, SPACE_OBSTACLE</Behavior>
+		<Capture_Point_Transition_Time_Seconds>5</Capture_Point_Transition_Time_Seconds>
+		<Capture_Point_Radius>800</Capture_Point_Radius>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Affiliation>Rebel, Empire, Neutral, Underworld</Affiliation>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Empire,
+				Empire_Pirate_IPV,
+				Empire_Pirate_Frigate,
+				Empire_Pirate_Fighter_Squadron,
+			Rebel,
+				Rebel_Pirate_IPV,
+				Rebel_Pirate_Frigate,
+				Rebel_Pirate_Fighter_Squadron,
+				Z95_Headhunter_Rebel_Squadron,
+			
+		</Tactical_Buildable_Objects_Multiplayer>
+		
+		<Collidable_By_Projectile_Living> No </Collidable_By_Projectile_Living>
+		<Space_Layer> StaticObject </Space_Layer>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+
+		<SFXEvent_Select>Structure_Light_Factory_Select_SFX</SFXEvent_Select>
+		
+        <Ownership_Sticks>Yes</Ownership_Sticks>
+		<Scale_Factor> 1.75 </Scale_Factor>
+		<Tactical_Health> 10000 </Tactical_Health>
+		<Base_Level_Available> 1 </Base_Level_Available>
+		<Required_Ground_Base_Level> 0 </Required_Ground_Base_Level>
+		<Space_FOW_Reveal_Range>850.0</Space_FOW_Reveal_Range>
+		<CategoryMask> Structure </CategoryMask>
+        <Is_Community_Property>Yes</Is_Community_Property>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Text_ID> TEXT_STRUCTURE_MERCHANT_SPACE_DOCK </Text_ID>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_MERCHANT_SPACE_DOCK_00 MP_TEXT_ENCYCLOPEDIA_MERCHANT_SPACE_DOCK_01 </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
+	</SpaceBuildable>
+
+
+
+
+
+
+
+
+
+<!--**************** Mineral Extractors (income sources) ************************-->	
+
+	<SpaceBuildable Name="Mineral_Extractor_Pad">
+		<Select_Box_Scale>600</Select_Box_Scale>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		<Behavior> SPACE_OBSTACLE, TACTICAL_BUILD_OBJECTS, REVEAL, CAPTURE_POINT, HIDE_WHEN_FOGGED </Behavior>
+		
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Empire, 
+				UC_Empire_Mineral_Extractor, 
+			
+			Rebel,
+				UC_Rebel_Mineral_Extractor,
+			
+			Underworld,
+				UC_Underworld_Mineral_Extractor,
+		
+		</Tactical_Buildable_Objects_Multiplayer>
+		
+		<Text_ID> TEXT_ASTEROID_MINING_FACILITY </Text_ID>
+		<Space_Model_Name>NB_AsteroidMining_Pad.ALO</Space_Model_Name>
+		<Icon_Name>i_button_asteroidmining.tga</Icon_Name>
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Select_Box_Scale>330</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Affiliation>Neutral, Rebel, Empire, Underworld</Affiliation>
+		<Size_Value>30</Size_Value>
+		
+		<Space_FOW_Reveal_Range>275</Space_FOW_Reveal_Range>
+		
+		<GUI_Model_Name>NB_AsteroidMining_Pad.ALO</GUI_Model_Name>
+		<GUI_Distance>1000</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<CategoryMask> Structure </CategoryMask>
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+				
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Hides_When_Built_On>True</Hides_When_Built_On>
+		<Destroy_When_Child_Dies>True</Destroy_When_Child_Dies>
+		
+		<Loop_Idle_Anim_00> No </Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living> No </Collidable_By_Projectile_Living>
+		
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Show_Facing>No</Radar_Show_Facing>
+		<Radar_Icon_Name>mini_map_mining_facilities.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		
+		<Select_Box_Scale> 50 </Select_Box_Scale>
+		<Scale_Factor> .75 </Scale_Factor>
+		<Victory_Relevant> No </Victory_Relevant>
+		<Custom_Soft_Footprint_Radius> 275 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+	
+		<Tactical_Respawn_Time_In_Secs>38</Tactical_Respawn_Time_In_Secs>
+		<Tactical_Health>2000</Tactical_Health>
+		<Score_Cost_Credits> 5000 </Score_Cost_Credits>
+		<Capture_Point_Radius>550.0</Capture_Point_Radius>
+		<Capture_Point_Transition_Time_Seconds>10</Capture_Point_Transition_Time_Seconds>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_ASTEROID_MINING_FACILITY_PAD_00 TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_ASTEROID_MINING_FACILITY_PAD_00 TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Empire_Mineral_Extractor">
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		<Select_Box_Scale>600</Select_Box_Scale>
+		<Behavior>SPACE_OBSTACLE, TACTICAL_UNDER_CONSTRUCTION, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED</Behavior>
+		<Tactical_Buildable_Constructed> Empire_Mineral_Extractor </Tactical_Buildable_Constructed>
+		<Tactical_Build_Start_Lower_Z> 0.0 </Tactical_Build_Start_Lower_Z>
+		<Scale_Factor> .75 </Scale_Factor>
+
+		<Text_ID> TEXT_ASTEROID_MINING_FACILITY </Text_ID>
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Space_Model_Name>NB_AsteroidMining.ALO</Space_Model_Name>
+		<Icon_Name>i_button_asteroidmining.tga</Icon_Name>
+		<Select_Box_Scale>330</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Affiliation>Empire</Affiliation>
+		<Size_Value>30</Size_Value>
+		<Space_FOW_Reveal_Range>275</Space_FOW_Reveal_Range>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Victory_Relevant>no</Victory_Relevant>
+		<GUI_Model_Name>NB_AsteroidMining.ALO</GUI_Model_Name>
+		<GUI_Distance>1000</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<CategoryMask> Structure </CategoryMask>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Custom_Soft_Footprint_Radius> 275 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+  
+		<Tactical_Health>1200</Tactical_Health>
+		<Tactical_Build_Cost_Multiplayer> 850 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds> 35 </Tactical_Build_Time_Seconds>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Encyclopedia_Text> TEXT_STRUCTURE_GENERIC_PAD_UC </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_STRUCTURE_GENERIC_PAD_UC </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+  
+	</SpaceBuildable>		
+	
+	<SpaceBuildable Name="UC_Rebel_Mineral_Extractor">
+		<Variant_Of_Existing_Type>UC_Empire_Mineral_Extractor</Variant_Of_Existing_Type>
+
+		<Tactical_Buildable_Constructed> Rebel_Mineral_Extractor </Tactical_Buildable_Constructed>
+		<Tactical_Build_Cost_Multiplayer> 850 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds> 35 </Tactical_Build_Time_Seconds>
+
+		<Affiliation>Rebel</Affiliation>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpaceBuildable>		
+
+	<SpaceBuildable Name="UC_Underworld_Mineral_Extractor">
+		<Variant_Of_Existing_Type>UC_Empire_Mineral_Extractor</Variant_Of_Existing_Type>
+
+		<Tactical_Buildable_Constructed> Underworld_Mineral_Extractor </Tactical_Buildable_Constructed>
+		<Tactical_Build_Cost_Multiplayer> 850 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds> 35 </Tactical_Build_Time_Seconds>
+
+		<Affiliation>Underworld</Affiliation>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpaceBuildable>	
+
+
+
+
+	<SpaceBuildable Name="Empire_Mineral_Extractor">
+		
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		
+		<SpaceBehavior> SPACE_OBSTACLE, DUMMY_ORBITAL_STRUCTURE, SELECTABLE, REVEAL, UNIT_AI, DAMAGE_TRACKING, IDLE, HIDE_WHEN_FOGGED </SpaceBehavior>
+		<Scale_Factor>0.75 </Scale_Factor>
+
+		<Text_ID> TEXT_ASTEROID_MINING_FACILITY </Text_ID>
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Space_Model_Name>NB_AsteroidMining_Full.ALO</Space_Model_Name>
+		<Icon_Name>i_button_asteroidmining.tga</Icon_Name>
+		<Select_Box_Scale>600</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Affiliation>Empire</Affiliation>
+		<Size_Value>30</Size_Value>
+		<Space_FOW_Reveal_Range>400</Space_FOW_Reveal_Range>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Victory_Relevant>no</Victory_Relevant>
+		<GUI_Model_Name>NB_AsteroidMining_Full.ALO</GUI_Model_Name>
+		<GUI_Distance>1000</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<CategoryMask> Structure </CategoryMask>
+		
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Show_Facing>No</Radar_Show_Facing>
+		<Radar_Icon_Name>mini_map_mining_facilities.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Custom_Soft_Footprint_Radius> 275 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="E_Mineral_Extractor_Income_Stream">
+				<Base_Income_Value>200</Base_Income_Value>
+				<Base_Interval_In_Secs>10</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+				<Owner_Income_Percentage />
+			</Income_Stream_Ability>
+				
+			<Force_Healing_Ability Name="E_Mineral_Extractor_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.003</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+	
+		<Tactical_Health>2000</Tactical_Health>
+		<Score_Cost_Credits> 5000 </Score_Cost_Credits>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Empire,
+				RS_Increased_Production_L1_Upgrade,
+				RS_Increased_Production_L2_Upgrade,				
+		</Tactical_Buildable_Objects_Multiplayer>
+	
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_ASTEROID_MINING_FACILITY_00, MP_TEXT_ENCYCLOPEDIA_ASTEROID_MINING_FACILITY_01 </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_ASTEROID_MINING_FACILITY_00, MP_TEXT_ENCYCLOPEDIA_ASTEROID_MINING_FACILITY_01 </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Rebel_Mineral_Extractor">
+		<Variant_Of_Existing_Type>Empire_Mineral_Extractor</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="R_Mineral_Extractor_Income_Stream">
+				<Base_Income_Value>200</Base_Income_Value>
+				<Base_Interval_In_Secs>10</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+				<Owner_Income_Percentage />
+			</Income_Stream_Ability>
+		</Abilities>
+	
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Rebel,
+				CS_Increased_Production_L1_Upgrade,
+				CS_Increased_Production_L2_Upgrade,				
+		</Tactical_Buildable_Objects_Multiplayer>
+	</SpaceBuildable>
+	
+	<SpaceBuildable Name="Underworld_Mineral_Extractor">
+		<Variant_Of_Existing_Type>Empire_Mineral_Extractor</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="U_Mineral_Extractor_Income_Stream">
+				<Base_Income_Value>200</Base_Income_Value>
+				<Base_Interval_In_Secs>10</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+				<Owner_Income_Percentage />
+			</Income_Stream_Ability>
+		</Abilities>
+	
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Underworld,
+				UL_Extort_Cash_L1_Upgrade,
+				UL_Extort_Cash_L2_Upgrade,				
+		</Tactical_Buildable_Objects_Multiplayer>
+		
+	</SpaceBuildable>	
+	
+
+	
+	<SpaceBuildable Name="R_Space_Gun_Platform_Build_Pad">
+		
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		
+		<SpaceBehavior> SPACE_OBSTACLE, DUMMY_ORBITAL_STRUCTURE, SELECTABLE, REVEAL, UNIT_AI, DAMAGE_TRACKING, IDLE, HIDE_WHEN_FOGGED, POWERED, SHIELDED, SPAWN_SQUADRON, ION_STUN_EFFECT </SpaceBehavior>
+		<Scale_Factor>1.0 </Scale_Factor>
+
+		<Text_ID>TEXT_ORBITAL_GUN_PLATFORM</Text_ID>
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Space_Model_Name>SeV_Gun_Platform.ALO</Space_Model_Name>
+		<Icon_Name>I_BUTTON_CIS_GUN_PLATFORM.tga</Icon_Name>
+		<Select_Box_Scale>400</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Affiliation>Rebel</Affiliation>
+		<Size_Value>30</Size_Value>
+		<Space_FOW_Reveal_Range>400</Space_FOW_Reveal_Range>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Victory_Relevant>no</Victory_Relevant>
+		<GUI_Model_Name>SeV_Gun_Platform.ALO</GUI_Model_Name>
+		<GUI_Distance>1000</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack>UHD_Space_Station_Under_Attack</SFXEvent_Unit_Under_Attack>
+			
+		<SFXEvent_Health_Critical_Warning> Unit_Ship_Alarm </SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Hardpoint_All_Weapons_Destroyed>Unit_Ship_Alarm </SFXEvent_Hardpoint_All_Weapons_Destroyed>
+		<CategoryMask> Structure </CategoryMask>
+		
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Show_Facing>No</Radar_Show_Facing>
+		<Radar_Icon_Size>0.2  0.2</Radar_Icon_Size>
+		
+		<HardPoints>
+			HP_CIS_Gun_Platform_HP01,
+			HP_CIS_Gun_Platform_HP02,
+			HP_CIS_Gun_Platform_HP03,
+			HP_CIS_Gun_Platform_HP04,
+			HP_CIS_Gun_Platform_HP05,
+			HP_CIS_Gun_Platform_HP06,
+			HP_CIS_Gun_Platform_HP07,
+			HP_CIS_Gun_Platform_HP08,
+			HP_CIS_Gun_Platform_HP09,
+			HP_CIS_Gun_Platform_HP10,
+			HP_CIS_Gun_Platform_HP11,
+			HP_CIS_Gun_Platform_HP12,
+			HP_CIS_Gun_Platform_HP13,
+			HP_CIS_Gun_Platform_HP14,
+			HP_CIS_Gun_Platform_HP15,
+			HP_CIS_Gun_Platform_HP16,
+			HP_CIS_Gun_Platform_HP17,
+			HP_Gun_Platform_Shield_Generator,
+			HP_Gun_Platform_Fighter_Bay_01
+		</HardPoints>
+		
+		<Armor_Type> Armor_Station </Armor_Type>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Custom_Soft_Footprint_Radius> 275 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		
+	
+		<Autoresolve_Health>5000</Autoresolve_Health>
+		<Shield_Points>5000</Shield_Points>
+		<Tactical_Health>8000</Tactical_Health>
+		<Shield_Refresh_Rate>75</Shield_Refresh_Rate>
+		<Energy_Capacity>9999</Energy_Capacity>
+		<Energy_Refresh_Rate>9999</Energy_Refresh_Rate>
+		<Score_Cost_Credits> 5000 </Score_Cost_Credits>
+			
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+	<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_GUN_PLATFORM  </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STATION</Encyclopedia_Unit_Class>
+		<MP_Encyclopedia_Text> TEXT_ENCYCLOPEDIA_GUN_PLATFORM</MP_Encyclopedia_Text>
+		
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+	</SpaceBuildable>
+	
+	
+	
+	
+	
+	<!--**************** Nova Extractors (income sources) ************************-->	
+
+	<SpaceBuildable Name="Nova_Crystal_Extractor_Pad">
+		<Select_Box_Scale>600</Select_Box_Scale>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		<Behavior> SPACE_OBSTACLE, TACTICAL_BUILD_OBJECTS, REVEAL, CAPTURE_POINT, HIDE_WHEN_FOGGED </Behavior>
+		
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Empire, 
+				UC_Empire_Nova_Crystal_Extractor, 
+			
+			Rebel,
+				UC_Rebel_Nova_Crystal_Extractor,
+								
+		</Tactical_Buildable_Objects_Multiplayer>
+		
+		<Text_ID> TEXT_ASTEROID_NOVA_CRYSTAL_MINING_FACILITY </Text_ID>
+		<Space_Model_Name>Nb_nova_asteroidmine_pad.ALO</Space_Model_Name>
+		<Icon_Name>i_button_asteroidmining.tga</Icon_Name>
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Select_Box_Scale>330</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Affiliation>Neutral, Rebel, Empire</Affiliation>
+		<Size_Value>30</Size_Value>
+		
+		<Space_FOW_Reveal_Range>275</Space_FOW_Reveal_Range>
+		
+		<GUI_Model_Name>Nb_nova_asteroidmine_pad.ALO</GUI_Model_Name>
+		<GUI_Distance>1000</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<CategoryMask> Structure </CategoryMask>
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+				
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Hides_When_Built_On>True</Hides_When_Built_On>
+		<Destroy_When_Child_Dies>True</Destroy_When_Child_Dies>
+		
+		<Loop_Idle_Anim_00> No </Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living> No </Collidable_By_Projectile_Living>
+		
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Show_Facing>No</Radar_Show_Facing>
+		<Radar_Icon_Name>mini_map_mining_facilities.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		
+		<Select_Box_Scale> 50 </Select_Box_Scale>
+		<Scale_Factor> .75 </Scale_Factor>
+		<Victory_Relevant> No </Victory_Relevant>
+		<Custom_Soft_Footprint_Radius> 275 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+	
+		<Tactical_Respawn_Time_In_Secs>38</Tactical_Respawn_Time_In_Secs>
+		<Tactical_Health>2000</Tactical_Health>
+		<Score_Cost_Credits> 5000 </Score_Cost_Credits>
+		<Capture_Point_Radius>550.0</Capture_Point_Radius>
+		<Capture_Point_Transition_Time_Seconds>10</Capture_Point_Transition_Time_Seconds>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_NOVA_CRYSTAL_ASTEROID_MINING_FACILITY_PAD_00 TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_NOVA_CRYSTAL_ASTEROID_MINING_FACILITY_PAD_00 TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Empire_Nova_Crystal_Extractor">
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		<Select_Box_Scale>600</Select_Box_Scale>
+		<Behavior>SPACE_OBSTACLE, TACTICAL_UNDER_CONSTRUCTION, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED</Behavior>
+		<Tactical_Buildable_Constructed> Empire_Nova_Crystal_Extractor </Tactical_Buildable_Constructed>
+		<Tactical_Build_Start_Lower_Z> 0.0 </Tactical_Build_Start_Lower_Z>
+		<Scale_Factor> .75 </Scale_Factor>
+
+		<Text_ID> TEXT_ASTEROID_NOVA_CRYSTAL_MINING_FACILITY </Text_ID>
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Space_Model_Name>Nb_nova_asteroidmine.ALO</Space_Model_Name>
+		<Icon_Name>i_button_asteroidmining.tga</Icon_Name>
+		<Select_Box_Scale>330</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Affiliation>Empire</Affiliation>
+		<Size_Value>30</Size_Value>
+		<Space_FOW_Reveal_Range>275</Space_FOW_Reveal_Range>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Friggin_Huge_Explosion_Space</Death_Explosions>
+		<Victory_Relevant>no</Victory_Relevant>
+		<GUI_Model_Name>Nb_nova_asteroidmine.ALO</GUI_Model_Name>
+		<GUI_Distance>1000</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<CategoryMask> Structure </CategoryMask>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Custom_Soft_Footprint_Radius> 275 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+  
+		<Tactical_Health>2000</Tactical_Health>
+		<Tactical_Build_Cost_Multiplayer> 1500 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds> 35 </Tactical_Build_Time_Seconds>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Encyclopedia_Text> TEXT_STRUCTURE_GENERIC_PAD_UC </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_STRUCTURE_GENERIC_PAD_UC </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+  
+	</SpaceBuildable>		
+	
+	<SpaceBuildable Name="UC_Rebel_Nova_Crystal_Extractor">
+		<Variant_Of_Existing_Type>UC_Empire_Nova_Crystal_Extractor</Variant_Of_Existing_Type>
+
+		<Tactical_Buildable_Constructed> Rebel_Nova_Crystal_Extractor </Tactical_Buildable_Constructed>
+		<Tactical_Build_Cost_Multiplayer> 1500 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds> 35 </Tactical_Build_Time_Seconds>
+
+		<Affiliation>Rebel</Affiliation>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpaceBuildable>		
+	
+	<SpaceBuildable Name="Empire_Nova_Crystal_Extractor">
+		
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		
+		<SpaceBehavior> SPACE_OBSTACLE, DUMMY_ORBITAL_STRUCTURE, SELECTABLE, REVEAL, UNIT_AI, DAMAGE_TRACKING, IDLE, HIDE_WHEN_FOGGED </SpaceBehavior>
+		<Scale_Factor>0.75 </Scale_Factor>
+
+		<Text_ID> TEXT_ASTEROID_NOVA_CRYSTAL_MINING_FACILITY </Text_ID>
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Space_Model_Name>Nb_nova_asteroidmine_full.ALO</Space_Model_Name>
+		<Icon_Name>i_button_asteroidmining.tga</Icon_Name>
+		<Select_Box_Scale>600</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Affiliation>Empire</Affiliation>
+		<Size_Value>30</Size_Value>
+		<Space_FOW_Reveal_Range>400</Space_FOW_Reveal_Range>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Friggin_Huge_Explosion_Space</Death_Explosions>
+		<Victory_Relevant>no</Victory_Relevant>
+		<GUI_Model_Name>Nb_nova_asteroidmine_full.ALO</GUI_Model_Name>
+		<GUI_Distance>1000</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<CategoryMask> Structure </CategoryMask>
+		
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Show_Facing>No</Radar_Show_Facing>
+		<Radar_Icon_Name>mini_map_mining_facilities.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Custom_Soft_Footprint_Radius> 275 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="E_Nova_Crystal_Extractor_Income_Stream">
+				<Base_Income_Value>500</Base_Income_Value> <!-- From 5000 -->
+				<Base_Interval_In_Secs>10</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+				<Owner_Income_Percentage />
+			</Income_Stream_Ability>
+				
+			<Force_Healing_Ability Name="E_Nova_Crystal_Extractor_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.003</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+	
+		<Tactical_Health>2000</Tactical_Health>
+		<Score_Cost_Credits> 5000 </Score_Cost_Credits>
+			
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_NOVA_CRYSTAL_ASTEROID_MINING_FACILITY_PAD_00 </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_NOVA_CRYSTAL_ASTEROID_MINING_FACILITY_PAD_00 </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Rebel_Nova_Crystal_Extractor">
+		<Variant_Of_Existing_Type>Empire_Nova_Crystal_Extractor</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="R_Nova_Crystal_Extractor_Income_Stream">
+				<Base_Income_Value>500</Base_Income_Value> <!-- From 5000 -->
+				<Base_Interval_In_Secs>10</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+				<Owner_Income_Percentage />
+			</Income_Stream_Ability>
+		</Abilities>
+		
+	</SpaceBuildable>
+	
+</SpaceBuildables>

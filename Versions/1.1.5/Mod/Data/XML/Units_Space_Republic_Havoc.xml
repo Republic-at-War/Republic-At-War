@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+
+
+<Havoc_Files>
+
+
+
+
+	<UniqueUnit Name="Havoc">
+		<Text_ID>TEXT_UNIT_HAVOC</Text_ID>
+		<Encyclopedia_Good_Against> Nantex Vulture_Droid_Fighter CIS_Bomber </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Hammer_Class_Picket Tri_Droid_Fighter Cis_Patrol_Frigate</Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text> TEXT_TOOLTIP_HAVOC </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_PIRATE_MERCENARY </Encyclopedia_Unit_Class>
+		<!--<Icon_Name>i_button_havoc.tga</Icon_Name>-->
+		<Icon_Name>I_BUTTON_NYM.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Space_Model_Name>Nv_havoc.ALO</Space_Model_Name>
+		<Scale_Factor>0.07</Scale_Factor> <!-- From 0.3 -->
+		<Select_Box_Scale>400</Select_Box_Scale>
+		<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
+		<Mass>0.98</Mass>
+		<No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+
+		<Ranking_In_Category>2</Ranking_In_Category>
+		<MovementClass> Space </MovementClass>
+		<Ship_Class>fighter</Ship_Class>
+		<Mass>0.98</Mass>
+		<Max_Speed>6.2</Max_Speed>
+		<Min_Speed>4.5</Min_Speed>
+		<Max_Rate_Of_Turn>2.0</Max_Rate_Of_Turn>
+		<Max_Thrust>0.1</Max_Thrust>
+		<Max_Rate_Of_Roll>5.0</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>50</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>300.0</Begin_Turn_Towards_Distance>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Build_Cost_Credits>300</Build_Cost_Credits>
+		<Build_Time_Seconds>15</Build_Time_Seconds>
+		<Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+
+		<AI_Combat_Power>1500</AI_Combat_Power>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>2.0</Hyperspace_Speed>
+		<OverrideAcceleration> .3 </OverrideAcceleration>
+		<OverrideDeceleration> .3 </OverrideDeceleration>
+		<Layer_Z_Adjust> -20 </Layer_Z_Adjust>
+
+		<Armor_Type> Armor_Hero_Transport </Armor_Type>
+
+		<Affiliation>Empire</Affiliation>
+		<Shield_Points>700</Shield_Points> <!-- From 600 -->
+		<Tactical_Health>2000</Tactical_Health> <!-- From 1000 -->
+		<Autoresolve_Health>350</Autoresolve_Health>
+		<Damage>5</Damage>
+		<Shield_Refresh_Rate>50</Shield_Refresh_Rate>
+		<Energy_Capacity>9999</Energy_Capacity>
+		<Energy_Refresh_Rate>9999</Energy_Refresh_Rate>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>yes</Is_Bomber>
+		<Political_Control>0</Political_Control>
+		<Squadron_Capacity>0</Squadron_Capacity>
+		<Number_per_Squadron>1</Number_per_Squadron>
+		<Size_Value>120</Size_Value>
+		<SpaceBehavior>ABILITY_COUNTDOWN, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, UNIT_AI </SpaceBehavior>
+
+
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Damage_Type>Damage_Fighter</Damage_Type>
+		<Death_Explosions>Medium_Explosion_Space</Death_Explosions>
+		<Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
+
+		<Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+		<Spin_Away_On_Death_Chance>0.2</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Time>2.0f</Spin_Away_On_Death_Time>
+		<Spin_Away_On_Death_Explosion>Medium_Explosion_Space</Spin_Away_On_Death_Explosion>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_X_Wing_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<HardPoints>
+			HP_havoc_01,
+			HP_havoc_02
+		</HardPoints>
+
+		<Projectile_Types>Proj_Ship_Laser_Small_Red</Projectile_Types>
+		<Projectile_Fire_Pulse_Count>10</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.5</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>0.3</Projectile_Fire_Recharge_Seconds>
+
+		<Fire_Inaccuracy_Distance> Fighter, 1.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 1.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Transport, 1.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 30.0 </Fire_Inaccuracy_Distance>
+
+		<Turret_Rotate_Extent_Degrees>45</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>45</Turret_Elevate_Extent_Degrees>
+
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range>1000.0</Space_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Targeting_Max_Attack_Distance>1000.0</Targeting_Max_Attack_Distance>
+
+		<SFXEvent_Fire>Unit_Havoc_Laser</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Tyber_Zann_Space</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Tyber_Zann_Space</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Move_Tyber_Zann_Space</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Tyber_Zann_Space</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Pirate_Fighter</SFXEvent_Guard>
+
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Nym_Space </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Nym_Space </SFXEvent_Health_Critical_Warning>
+
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_Tyber_Zann_Space</SFXEvent_Build_Complete>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_Laser_Tyber_Zann_Space </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_Missile_Tyber_Zann_Space </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_Torp_Tyber_Zann_Space </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_Ion_Tyber_Zann_Space </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_Shields_Tyber_Zann_Space </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_Engines_Tyber_Zann_Space </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Tyber_Zann_Space </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Ambient_Moving> Unit_Falcon_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 10 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+
+		<SFXEvent_Engine_Idle_Loop> Unit_Falcon_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Falcon_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Falcon_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Score_Cost_Credits> 1500 </Score_Cost_Credits>
+
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>200.0, 100.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+
+		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
+
+		<MovementClass> Space </MovementClass>
+		<CategoryMask> Fighter | SpaceHero | AntiBomber </CategoryMask>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Hover_Offset>5</Hover_Offset>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+
+		<Guard_Chase_Range>2000</Guard_Chase_Range>
+		<Idle_Chase_Range>1000</Idle_Chase_Range>
+		<Attack_Move_Response_Range>400.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>Corvette</Targeting_Priority_Set>
+		<Autonomous_Move_Extension_Vs_Attacker>300.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>3500</Tactical_Build_Cost_Multiplayer> <!-- From 2200 -->
+		<Tactical_Build_Time_Seconds>35</Tactical_Build_Time_Seconds> <!-- From 25 -->
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+
+		<Population_Value>1</Population_Value>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+
+			<Unit_Ability>
+				<Type>WEAKEN_ENEMY</Type>
+				<Recharge_Seconds>20</Recharge_Seconds> <!-- From 5 -->
+				<!-- This is the radius within which we can "drop" the projectile (targeting radius) -->
+				<!-- The actual radius of ability is in projectile XML -->
+				<Effective_Radius> 1000.0 </Effective_Radius>
+				<Spawned_Object_Type>Space_Havoc_Mine</Spawned_Object_Type>  
+				<SFXEvent_Target_Ability> Unit_Lightsaber_Projectile_Block </SFXEvent_Target_Ability>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Energy_Flux_Antilles</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_DEPLOY_MINES</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_DEPLOY_MINES_DESCR</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_DROP_BOMB.TGA</Alternate_Icon_Name>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+				<!-- Area effect decal size depends on "Antills_Weaken_Enemy_Effect" -->
+				<Area_Effect_Decal_Distance> 400 </Area_Effect_Decal_Distance>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+	</UniqueUnit>
+
+
+</Havoc_Files>

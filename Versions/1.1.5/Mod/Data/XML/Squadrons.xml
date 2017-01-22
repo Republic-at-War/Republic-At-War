@@ -1,0 +1,1189 @@
+<?xml version="1.0"?>
+<Squadrons>
+
+	<Squadron Name="Rebel_X-Wing_Squadron">
+		<LOD_Bias>10</LOD_Bias>
+		<Text_ID>TEXT_X_WING_SQUADRON</Text_ID>
+		<Encyclopedia_Good_Against> TIE_Fighter TIE_Bomber TIE_Prototype </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Tartan_Patrol_Cruiser Broadside_Class_Cruiser IPV1_System_Patrol_Craft </Encyclopedia_Vulnerable_To>
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Autoresolve_Health>300</Autoresolve_Health>
+		<Damage>25</Damage>
+		<Affiliation>Rebel</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>300</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>8</Build_Time_Seconds>
+		<Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline />
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+		<Squadron_Units>X-Wing, X-Wing</Squadron_Units>
+		<Squadron_Units>X-Wing, X-Wing</Squadron_Units>
+		<Squadron_Units>X-Wing, X-Wing</Squadron_Units>
+		<Squadron_Units>X-Wing, X-Wing</Squadron_Units>
+		<Squadron_Units>X-Wing, X-Wing</Squadron_Units>
+		<Squadron_Units>X-Wing, X-Wing</Squadron_Units>
+<Max_Squad_Size>12</Max_Squad_Size>
+<Squadron_Offsets>150.0,0.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>50.0,0.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>100.0,-50.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>100.0,50.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>0.0,150.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>50.0,100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets> -50.0,100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>0.0,50.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>0.0,-150.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>-50.0,-100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets> 50.0,-100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>0.0,-50.0,0.0</Squadron_Offsets>
+		<Icon_Name>i_button_x_wing.tga</Icon_Name>
+		<GUI_Model_Name>RV_xwing.ALO</GUI_Model_Name>
+		<GUI_Distance>95</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_X_Wing</SFXEvent_Build_Complete>
+
+		<FormationOrder>2</FormationOrder>
+		<Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>200.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Property_Flags> SmallShip </Property_Flags>
+		<Autonomous_Move_Extension_Vs_Attacker>500.0</Autonomous_Move_Extension_Vs_Attacker>
+	
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+			<Type>SPOILER_LOCK</Type>
+			
+			<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+			<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+			<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+			<Mod_Multiplier>SPEED_MULTIPLIER,		2</Mod_Multiplier>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		<Encyclopedia_Text>TEXT_TOOLTIP_X_WING</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FIGHTER </Encyclopedia_Unit_Class>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		<Population_Value>1</Population_Value>
+		<Score_Cost_Credits> 600</Score_Cost_Credits>
+	</Squadron>
+
+
+
+	<Squadron Name="Y-Wing_Squadron">
+		<Text_ID>TEXT_Y_WING_SQUADRON</Text_ID>
+		<Encyclopedia_Good_Against> Star_Destroyer Victory_Destroyer Acclamator_Assault_Ship </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> TIE_Fighter Tartan_Patrol_Cruiser Pirate_Fighter </Encyclopedia_Vulnerable_To>
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Formation_Priority>2</Formation_Priority>
+		<Is_Escort>Nos</Is_Escort>
+		<Is_Bomber>yes</Is_Bomber>
+		<Autoresolve_Health>200</Autoresolve_Health>
+		<Damage>15</Damage>
+		<Affiliation>Rebel</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>210</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>10</Build_Time_Seconds>
+		<Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Slice_Cost_Credits>400</Slice_Cost_Credits>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline />
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+			<Squadron_Units>Y-Wing, Y-Wing, Y-Wing</Squadron_Units>
+		<Squadron_Units>Y-Wing, Y-Wing, Y-Wing</Squadron_Units>
+		<Squadron_Units>Y-Wing, Y-Wing, Y-Wing</Squadron_Units>
+		<Squadron_Units>Y-Wing, Y-Wing, Y-Wing</Squadron_Units>
+<Max_Squad_Size>12</Max_Squad_Size>
+<Squadron_Offsets>150.0,0.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>50.0,0.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>100.0,-50.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>100.0,50.0,0.0</Squadron_Offsets>
+
+
+<Squadron_Offsets>0.0,150.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>50.0,100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets> -50.0,100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>0.0,50.0,0.0</Squadron_Offsets>
+
+
+<Squadron_Offsets>0.0,-150.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>-50.0,-100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets> 50.0,-100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>0.0,-50.0,0.0</Squadron_Offsets>
+		<Icon_Name>i_button_y_wing.tga</Icon_Name>
+		<GUI_Model_Name>RV_ywing.ALO</GUI_Model_Name>
+		<GUI_Distance>120</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Y_Wing</SFXEvent_Build_Complete>
+
+		<FormationOrder>3</FormationOrder>
+		<Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>200.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>300.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Property_Flags> SmallShip </Property_Flags>
+		
+		<!-- if we have a targeted ability, we'll need a team object to attach this ability to -->
+		<Create_Team_Type>Y_Wing_Squadron_Container </Create_Team_Type>
+     	<Max_Squad_Size> 6 </Max_Squad_Size>
+			
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>ION_CANNON_SHOT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		<Encyclopedia_Text>TEXT_TOOLTIP_Y_WING</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_BOMBER </Encyclopedia_Unit_Class>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>550</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>17</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		<Population_Value>1</Population_Value>
+		<Score_Cost_Credits> 700</Score_Cost_Credits>
+	</Squadron>
+	
+	
+	<Squadron Name="Y-Wing_Squadron_No_Ability">
+		<Text_ID>TEXT_Y_WING_SQUADRON</Text_ID>
+		<Encyclopedia_Good_Against> Star_Destroyer Victory_Destroyer Acclamator_Assault_Ship </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> TIE_Fighter Tartan_Patrol_Cruiser Pirate_Fighter </Encyclopedia_Vulnerable_To>
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Formation_Priority>2</Formation_Priority>
+		<Is_Escort>Nos</Is_Escort>
+		<Is_Bomber>yes</Is_Bomber>
+		<Autoresolve_Health>200</Autoresolve_Health>
+		<Damage>15</Damage>
+		<Affiliation>Rebel</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline />
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+		<Squadron_Units>Y-Wing_No_Ability, Y-Wing_No_Ability, Y-Wing_No_Ability</Squadron_Units>
+		<Squadron_Offsets>60.0,0.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-30.0,0.0</Squadron_Offsets>
+		<Icon_Name>i_button_y_wing.tga</Icon_Name>
+		<GUI_Model_Name>RV_ywing.ALO</GUI_Model_Name>
+		<GUI_Distance>120</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Y_Wing</SFXEvent_Build_Complete>
+
+		<FormationOrder>3</FormationOrder>
+		<Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>200.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>300.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Property_Flags> SmallShip </Property_Flags>
+		
+		<!-- if we have a targeted ability, we'll need a team object to attach this ability to -->
+		<Create_Team_Type>Y_Wing_Squadron_Container </Create_Team_Type>
+     	<Max_Squad_Size> 6 </Max_Squad_Size>
+			
+		
+		<Encyclopedia_Text>TEXT_TOOLTIP_Y_WING</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_BOMBER </Encyclopedia_Unit_Class>
+		
+		<Population_Value>1</Population_Value>
+		<Score_Cost_Credits> 700</Score_Cost_Credits>
+	</Squadron>
+
+
+
+	<Squadron Name="TIE_Fighter_Squadron">
+		<Text_ID>TEXT_TIE_FIGHTER_2_SQUADRON</Text_ID>
+		<Encyclopedia_Good_Against> Nantex Vulture_Droid_Fighter CIS_Bomber </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Hammer_Class_Picket Tri_Droid_Fighter Cis_Patrol_Frigate </Encyclopedia_Vulnerable_To>
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Autoresolve_Health>300</Autoresolve_Health>
+		<Damage>25</Damage>
+		<Affiliation>Empire</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>300</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>3</Build_Time_Seconds>
+		<Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline />
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+		<Squadron_Units>TIE_Fighter, TIE_Fighter, TIE_Fighter, TIE_Fighter</Squadron_Units>
+		<Squadron_Units>TIE_Fighter, TIE_Fighter, TIE_Fighter, TIE_Fighter</Squadron_Units>
+		<Squadron_Units>TIE_Fighter, TIE_Fighter, TIE_Fighter, TIE_Fighter</Squadron_Units>
+<Max_Squad_Size>12</Max_Squad_Size>
+<Squadron_Offsets>150.0,0.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>50.0,0.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>100.0,-50.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>100.0,50.0,0.0</Squadron_Offsets>
+
+
+<Squadron_Offsets>0.0,150.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>50.0,100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets> -50.0,100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>0.0,50.0,0.0</Squadron_Offsets>
+
+
+<Squadron_Offsets>0.0,-150.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>-50.0,-100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets> 50.0,-100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>0.0,-50.0,0.0</Squadron_Offsets>
+		<Icon_Name>i_button_tie_fighter.tga</Icon_Name>
+		<GUI_Model_Name>EV_TieFighter.ALO</GUI_Model_Name>
+		<GUI_Distance>120</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Fighter</SFXEvent_Build_Complete>
+
+		<FormationOrder>1</FormationOrder>
+		<Squadron_Formation_Error_Tolerance>35.0</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>2000</Guard_Chase_Range> <!-- From 1000 -->
+		<Idle_Chase_Range>1000</Idle_Chase_Range> <!-- From 200 -->
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>500.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Property_Flags> SmallShip </Property_Flags>
+		<Score_Cost_Credits> 420</Score_Cost_Credits>
+		
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+			
+		<Encyclopedia_Text>TEXT_TOOLTIP_TIE_FIGHTER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>900</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>18</Tactical_Build_Time_Seconds> <!-- From 10 -->
+		<Tactical_Build_Prerequisites>RS_Prototype_Level_One_Upgrade</Tactical_Build_Prerequisites> <!-- From RS_Prototype_Level_Two_Upgrade -->
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		<Population_Value>1</Population_Value>
+	</Squadron>
+
+	<Squadron Name="TIE_Bomber_Squadron">
+		<Text_ID>TEXT_TIE_BOMBER_SQUADRON</Text_ID>
+		<Encyclopedia_Good_Against> Providence_Class_Carrier Lucrehulk_Battleship Bulwark </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Vulture_Droid_Fighter Tri_Droid_Fighter Cis_Patrol_Frigate </Encyclopedia_Vulnerable_To>
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Formation_Priority>2</Formation_Priority>
+		<Is_Escort>No</Is_Escort>
+		<Is_Bomber>yes</Is_Bomber>
+		<Autoresolve_Health>150</Autoresolve_Health>
+		<Damage>20</Damage>
+		<Affiliation>Empire</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>150</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>3</Build_Time_Seconds>
+		<Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline />
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+		<Squadron_Units>TIE_Bomber, TIE_Bomber</Squadron_Units>
+		<Squadron_Units>TIE_Bomber, TIE_Bomber</Squadron_Units>
+		<Squadron_Units>TIE_Bomber, TIE_Bomber</Squadron_Units>
+		<Squadron_Units>TIE_Bomber, TIE_Bomber</Squadron_Units>
+		<Squadron_Units>TIE_Bomber, TIE_Bomber</Squadron_Units>
+		<Squadron_Units>TIE_Bomber, TIE_Bomber</Squadron_Units>
+<Max_Squad_Size>12</Max_Squad_Size>
+<Squadron_Offsets>150.0,0.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>50.0,0.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>100.0,-50.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>100.0,50.0,0.0</Squadron_Offsets>
+
+
+<Squadron_Offsets>0.0,150.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>50.0,100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets> -50.0,100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>0.0,50.0,0.0</Squadron_Offsets>
+
+
+<Squadron_Offsets>0.0,-150.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>-50.0,-100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets> 50.0,-100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>0.0,-50.0,0.0</Squadron_Offsets>
+		<Icon_Name>i_button_tie_bomber.tga</Icon_Name>
+		<GUI_Model_Name>EV_TieBomber.ALO</GUI_Model_Name>
+		<GUI_Distance>120</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Bomber</SFXEvent_Build_Complete>
+
+		<FormationOrder>2</FormationOrder>
+		<Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>200.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>300.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Property_Flags> SmallShip </Property_Flags>
+		
+		<Encyclopedia_Text>TEXT_TOOLTIP_TIE_BOMBER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOMBER</Encyclopedia_Unit_Class>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>750</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>17</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>RS_Prototype_Level_Two_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		<Population_Value>1</Population_Value>
+		<Score_Cost_Credits> 370</Score_Cost_Credits>
+	</Squadron>
+
+	<Squadron Name="A_Wing_Squadron">
+		<Text_ID>TEXT_A_WING_SQUADRON</Text_ID>
+		<Encyclopedia_Good_Against> TIE_Fighter TIE_Scout TIE_Bomber </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Tartan_Patrol_Cruiser </Encyclopedia_Vulnerable_To>
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Autoresolve_Health>300</Autoresolve_Health>
+		<Damage>35</Damage>
+		<Affiliation>Rebel</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>300</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>10</Build_Time_Seconds>
+		<Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Slice_Cost_Credits>2000</Slice_Cost_Credits>
+		<Tech_Level>3</Tech_Level>
+		<Required_Timeline>3</Required_Timeline>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+			<Squadron_Units>A-Wing, A-Wing, A-Wing, A-Wing</Squadron_Units>	
+		<Squadron_Units>A-Wing, A-Wing, A-Wing, A-Wing</Squadron_Units>
+		<Squadron_Units>A-Wing, A-Wing, A-Wing, A-Wing</Squadron_Units>
+<Max_Squad_Size>12</Max_Squad_Size>
+<Squadron_Offsets>150.0,0.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>50.0,0.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>100.0,-50.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>100.0,50.0,0.0</Squadron_Offsets>
+
+
+<Squadron_Offsets>0.0,150.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>50.0,100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets> -50.0,100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>0.0,50.0,0.0</Squadron_Offsets>
+
+
+<Squadron_Offsets>0.0,-150.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>-50.0,-100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets> 50.0,-100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>0.0,-50.0,0.0</Squadron_Offsets>
+		<Icon_Name>i_button_a_wing.tga</Icon_Name>
+		<GUI_Model_Name>RV_awing.ALO</GUI_Model_Name>
+		<GUI_Distance>115</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_A_Wing</SFXEvent_Build_Complete>
+		<FormationOrder>1</FormationOrder>
+		<Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>200.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>500.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Property_Flags> SmallShip </Property_Flags>
+		<Score_Cost_Credits> 600</Score_Cost_Credits>
+		<SpaceBehavior>ABILITY_COUNTDOWN</SpaceBehavior>
+		
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>LURE</Type>
+				<!-- details in the unit's XML -->
+			</Unit_Ability>
+			
+		</Unit_Abilities_Data>
+		
+		
+		<Encyclopedia_Text>TEXT_TOOLTIP_A_WING</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>675</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>18</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		<Population_Value>1</Population_Value>
+	</Squadron>
+
+	<Squadron Name="TIE_Scout_Squadron">
+		<Text_ID>TEXT_TIE_SCOUT_SQUADRON</Text_ID>
+		<Encyclopedia_Good_Against> Y-wing Z-95_Headhunter_Rebel </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> A-Wing </Encyclopedia_Vulnerable_To>
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Formation_Priority>3</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Autoresolve_Health>150</Autoresolve_Health>
+		<Damage>9</Damage>
+		<Affiliation>Empire</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>240</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>12</Build_Time_Seconds>
+			<Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Tech_Level>3</Tech_Level>
+		<Required_Timeline />
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+	<Squadron_Units>TIE_Scout, TIE_Scout</Squadron_Units>
+		<Squadron_Units>TIE_Scout, TIE_Scout</Squadron_Units>
+		<Squadron_Units>TIE_Scout, TIE_Scout</Squadron_Units>
+		<Squadron_Units>TIE_Scout, TIE_Scout</Squadron_Units>
+		<Squadron_Units>TIE_Scout, TIE_Scout</Squadron_Units>
+		<Squadron_Units>TIE_Scout, TIE_Scout</Squadron_Units>
+<Max_Squad_Size>12</Max_Squad_Size>
+<Squadron_Offsets>150.0,0.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>50.0,0.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>100.0,-50.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>100.0,50.0,0.0</Squadron_Offsets>
+
+
+<Squadron_Offsets>0.0,150.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>50.0,100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets> -50.0,100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>0.0,50.0,0.0</Squadron_Offsets>
+
+
+<Squadron_Offsets>0.0,-150.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>-50.0,-100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets> 50.0,-100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>0.0,-50.0,0.0</Squadron_Offsets>
+		<Icon_Name>i_button_tie_scout.tga</Icon_Name>
+		<GUI_Model_Name>EV_TieScout.ALO</GUI_Model_Name>
+		<GUI_Distance>115</GUI_Distance>
+		<GUI_Offset>0 0 3</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Scout</SFXEvent_Build_Complete>
+
+		<FormationOrder>2</FormationOrder>
+		<Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>200.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>500.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Property_Flags> SmallShip </Property_Flags>
+		
+		<Encyclopedia_Text>TEXT_TOOLTIP_TIE_SCOUT</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>275</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		<Population_Value>1</Population_Value>
+		<Score_Cost_Credits> 800</Score_Cost_Credits>
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>FOW_REVEAL_PING</Type>
+				<Recharge_Seconds> 30.0 </Recharge_Seconds>
+				<Spawned_Object_Type> Proj_Special_Space_FOW_Reveal_Ping_Blast </Spawned_Object_Type>
+				<Effective_Radius> 0.0 </Effective_Radius> <!-- 0.0 means no distance factor, unlimited to entire map -->
+				<Area_Effect_Decal_Distance> 600.0 </Area_Effect_Decal_Distance> 
+				<GUI_Activated_Ability_Name>  </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+			</Unit_Ability>
+			
+		</Unit_Abilities_Data>
+		
+	</Squadron>
+	
+	<Squadron Name="Z95_Headhunter_Squadron">
+		<Text_ID>TEXT_HEADHUNTER_SQUADRON</Text_ID>
+		<Encyclopedia_Good_Against> TIE_Bomber </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> TIE_Fighter Tartan_Patrol_Cruiser Pirate_Fighter </Encyclopedia_Vulnerable_To>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Autoresolve_Health>300</Autoresolve_Health>
+		<Damage>20</Damage>
+		<Affiliation>Pirates</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>250</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Required_Timeline />
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Tech_Structure />
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+		<Squadron_Units>Z-95_Headhunter, Z-95_Headhunter</Squadron_Units>
+		<Squadron_Units>Z-95_Headhunter, Z-95_Headhunter, Z-95_Headhunter</Squadron_Units>
+		<Squadron_Offsets>60.0,0.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,60.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,-60.0,0.0</Squadron_Offsets>
+		<Icon_Name>i_button_z95_headhunter.tga</Icon_Name>
+		<FormationOrder>1</FormationOrder>
+		<Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>700.0</Guard_Chase_Range>
+		<Idle_Chase_Range>200.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>500.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Property_Flags> SmallShip </Property_Flags>
+		<Score_Cost_Credits> 500</Score_Cost_Credits>
+		<Encyclopedia_Text>TEXT_TOOLTIP_Z95_HEADHUNTER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+	</Squadron>
+
+
+	<Squadron Name="Z95_Headhunter_Rebel_Squadron">
+		<LOD_Bias>10</LOD_Bias>
+		<Text_ID>TEXT_HEADHUNTER_SQUADRON</Text_ID>
+		<Encyclopedia_Good_Against> NTB630 </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Nantex Vulture_Droid_Fighter Tri_Droid_Fighter </Encyclopedia_Vulnerable_To>
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Autoresolve_Health>300</Autoresolve_Health>
+		<Damage>20</Damage>
+		<Affiliation>Rebel</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>250</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>3</Build_Time_Seconds>
+		<Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline />
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+		<Squadron_Units>Z-95_Headhunter_Rebel, Z-95_Headhunter_Rebel</Squadron_Units>
+		<Squadron_Units>Z-95_Headhunter_Rebel, Z-95_Headhunter_Rebel, Z-95_Headhunter_Rebel</Squadron_Units>
+		<Squadron_Offsets>30.0,0.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,15.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-15.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,-30.0,0.0</Squadron_Offsets>
+		<Icon_Name>i_button_z95_headhunter.tga</Icon_Name>
+		<GUI_Model_Name>RV_xwing.ALO</GUI_Model_Name>
+		<GUI_Distance>95</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<Score_Cost_Credits> 500</Score_Cost_Credits>
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_X_Wing</SFXEvent_Build_Complete>
+
+		<FormationOrder>2</FormationOrder>
+		<Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>200.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>500.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Property_Flags> SmallShip </Property_Flags>
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Encyclopedia_Text>TEXT_TOOLTIP_Z95_HEADHUNTER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>125</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>8</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		<Population_Value>1</Population_Value>
+	</Squadron>
+
+	<Squadron Name="Z95_Headhunter_Empire_Squadron">
+		<LOD_Bias>10</LOD_Bias>
+		<Text_ID>TEXT_HEADHUNTER_SQUADRON</Text_ID>
+		<Encyclopedia_Good_Against> CIS_Bomber </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Vulture_Droid_Fighter Tri_Droid_Fighter Cis_Patrol_Frigate </Encyclopedia_Vulnerable_To>
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Autoresolve_Health>300</Autoresolve_Health>
+		<Damage>20</Damage>
+		<Affiliation>Empire</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>250</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>3</Build_Time_Seconds>
+		<Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>9</Tech_Level>
+		<Required_Timeline />
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+		<Squadron_Units>Z-95_Headhunter_Empire, Z-95_Headhunter_Empire</Squadron_Units>
+		<Squadron_Units>Z-95_Headhunter_Empire, Z-95_Headhunter_Empire, Z-95_Headhunter_Empire</Squadron_Units>
+		<Squadron_Offsets>30.0,0.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,15.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-15.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,-30.0,0.0</Squadron_Offsets>
+		<Icon_Name>i_button_z95_headhunter.tga</Icon_Name>
+		<GUI_Model_Name>RV_xwing.ALO</GUI_Model_Name>
+		<GUI_Distance>95</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<Score_Cost_Credits> 500</Score_Cost_Credits>
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_X_Wing</SFXEvent_Build_Complete>
+
+		<FormationOrder>2</FormationOrder>
+		<Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>200.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>500.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Property_Flags> SmallShip </Property_Flags>
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Encyclopedia_Text>TEXT_TOOLTIP_Z95_HEADHUNTER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>125</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>8</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		<Population_Value>1</Population_Value>
+	</Squadron>
+
+	<Squadron Name="Z95_Headhunter_Underworld_Squadron">
+		<Text_ID>TEXT_HEADHUNTER_SQUADRON</Text_ID>
+		<Encyclopedia_Good_Against> Y-wing, TIE_Bomber </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> TIE_Fighter, X-Wing </Encyclopedia_Vulnerable_To>
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Autoresolve_Health>300</Autoresolve_Health>
+		<Damage>20</Damage>
+		<Affiliation>Underworld</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>250</Build_Cost_Credits>
+		<Build_Time_Seconds>3</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>9</Tech_Level>
+		<Required_Timeline />
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+		<Squadron_Units>Z-95_Headhunter_Underworld, Z-95_Headhunter_Underworld</Squadron_Units>
+		<Squadron_Units>Z-95_Headhunter_Underworld, Z-95_Headhunter_Underworld, Z-95_Headhunter_Underworld</Squadron_Units>
+		<Squadron_Offsets>30.0,0.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,15.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-15.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,-30.0,0.0</Squadron_Offsets>
+		<Icon_Name>i_button_z95_headhunter.tga</Icon_Name>
+		<GUI_Model_Name>RV_xwing.ALO</GUI_Model_Name>
+		<GUI_Distance>95</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<Score_Cost_Credits> 500</Score_Cost_Credits>
+		<SFXEvent_Tactical_Build_Started> UHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>		
+		<SFXEvent_Tactical_Build_Complete> UHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>		
+		<SFXEvent_Tactical_Build_Cancelled> UHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+
+		<FormationOrder>2</FormationOrder>
+		<Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>200.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>500.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Property_Flags> SmallShip </Property_Flags>
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Encyclopedia_Text>TEXT_TOOLTIP_Z95_HEADHUNTER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>250</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>5</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		<Population_Value>1</Population_Value>
+	</Squadron>
+
+
+
+
+
+
+
+
+	<Squadron Name="VWing_Squadron_E">
+		<Text_ID>TEXT_VWING_SQUADRON</Text_ID>
+		<Encyclopedia_Good_Against> TIE_Bomber Z-95_Headhunter_Rebel </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> TIE_Fighter A-Wing Tartan_Patrol_Cruiser </Encyclopedia_Vulnerable_To>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Autoresolve_Health>300</Autoresolve_Health>
+		<Damage>20</Damage>
+		<Affiliation>Empire</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Required_Timeline />
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Tech_Structure />
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+		<Squadron_Units>V-wing_Fighter_E, V-wing_Fighter_E</Squadron_Units>
+		<Squadron_Units>V-wing_Fighter_E, V-wing_Fighter_E, V-wing_Fighter_E</Squadron_Units>
+		<Squadron_Offsets>60.0,0.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,60.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,-60.0,0.0</Squadron_Offsets>
+		<Icon_Name>i_button_z95_headhunter.tga</Icon_Name>
+		<FormationOrder>1</FormationOrder>
+		<Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>200.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>500.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Property_Flags> SmallShip </Property_Flags>
+		<Score_Cost_Credits> 300 </Score_Cost_Credits>
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_V_Wing</SFXEvent_Build_Complete>
+
+      
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		
+		
+		<Encyclopedia_Text>TEXT_TOOLTIP_V_WING_01</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		<Population_Value>1</Population_Value>
+	</Squadron>
+
+	<Squadron Name="VWing_Squadron_R">
+		<Text_ID>TEXT_VWING_SQUADRON</Text_ID>
+		<Encyclopedia_Good_Against> TIE_Bomber Z-95_Headhunter_Rebel </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> TIE_Fighter A-Wing Tartan_Patrol_Cruiser </Encyclopedia_Vulnerable_To>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Autoresolve_Health>300</Autoresolve_Health>
+		<Damage>20</Damage>
+		<Affiliation>Rebel</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Required_Timeline />
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Tech_Structure />
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+		<Squadron_Units>V-wing_Fighter_R, V-wing_Fighter_R</Squadron_Units>
+		<Squadron_Units>V-wing_Fighter_R, V-wing_Fighter_R, V-wing_Fighter_R</Squadron_Units>
+		<Squadron_Offsets>60.0,0.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,60.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,-60.0,0.0</Squadron_Offsets>
+		<Icon_Name>i_button_z95_headhunter.tga</Icon_Name>
+		<FormationOrder>1</FormationOrder>
+		<Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>200.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>500.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Property_Flags> SmallShip </Property_Flags>
+		<Score_Cost_Credits> 300 </Score_Cost_Credits>
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_V_Wing</SFXEvent_Build_Complete>
+     
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		
+		
+		<Encyclopedia_Text>TEXT_TOOLTIP_V_WING_01</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		<Population_Value>1</Population_Value>
+	</Squadron>
+
+	
+	<Squadron Name="VWing_Squadron_P">
+		<Text_ID>TEXT_VWING_SQUADRON</Text_ID>
+		<Encyclopedia_Good_Against> TIE_Bomber Z-95_Headhunter_Rebel </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> TIE_Fighter A-Wing Tartan_Patrol_Cruiser </Encyclopedia_Vulnerable_To>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Autoresolve_Health>300</Autoresolve_Health>
+		<Damage>20</Damage>
+		<Affiliation>Pirates</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Required_Timeline />
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Tech_Structure />
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+		<Squadron_Units>V-wing_Fighter_P, V-wing_Fighter_P</Squadron_Units>
+		<Squadron_Units>V-wing_Fighter_P, V-wing_Fighter_P, V-wing_Fighter_P</Squadron_Units>
+		<Squadron_Offsets>60.0,0.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,60.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,-60.0,0.0</Squadron_Offsets>
+		<Icon_Name>i_button_z95_headhunter.tga</Icon_Name>
+		<FormationOrder>1</FormationOrder>
+		<Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>200.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>500.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Property_Flags> SmallShip </Property_Flags>
+		<Score_Cost_Credits> 300 </Score_Cost_Credits>
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		
+		
+		<Encyclopedia_Text>TEXT_TOOLTIP_V_WING_01</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Population_Value>1</Population_Value>
+		
+	</Squadron>
+
+
+
+	<Squadron Name="Pirate_Fighter_Squadron">
+		<Text_ID>TEXT_PIRATE_FIGHTER_SQUADRON</Text_ID>
+		<Encyclopedia_Good_Against> Y-wing TIE_Bomber Z-95_Headhunter_Rebel </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> A-Wing Tartan_Patrol_Cruiser Corellian_Corvette </Encyclopedia_Vulnerable_To>
+		<Icon_Name>i_button_black_sun_fighter.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Autoresolve_Health>300</Autoresolve_Health>
+		<Damage>20</Damage>
+		<Affiliation>Pirates, Empire, Rebel</Affiliation> <!-- Modded by Chris R. for MP-->
+		<Tech_Level>6</Tech_Level> <!-- Modded by Chris R. for MP-->
+		<Political_Control>0</Political_Control>
+		<Override_Bounty_SP>100</Override_Bounty_SP>
+		<Override_Bounty_MP>100</Override_Bounty_MP>
+		<Required_Timeline />
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Tech_Structure />
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+		<Squadron_Units>Pirate_Fighter, Pirate_Fighter</Squadron_Units>
+		<Squadron_Units>Pirate_Fighter, Pirate_Fighter, Pirate_Fighter</Squadron_Units>
+		<Squadron_Offsets>60.0,0.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,60.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,-60.0,0.0</Squadron_Offsets>
+		<FormationOrder>1</FormationOrder>
+		<Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>400.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>400.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>500.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Property_Flags> SmallShip </Property_Flags>
+		<Score_Cost_Credits> 500</Score_Cost_Credits>
+		<Encyclopedia_Text>TEXT_TOOLTIP_PIRATE_FIGHTER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+	
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Pirate_Fighter</SFXEvent_Build_Complete>
+		<Population_Value>1</Population_Value>
+
+	</Squadron>
+
+
+<Squadron Name="Empire_Pirate_Fighter_Squadron"> <!--Multiplayer Only-->
+		<Variant_Of_Existing_Type>Pirate_Fighter_Squadron</Variant_Of_Existing_Type>
+		
+		<Affiliation>Empire</Affiliation>
+		
+		<SFXEvent_Tactical_Build_Started> EHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>		
+		<SFXEvent_Tactical_Build_Complete> EHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>		
+		<SFXEvent_Tactical_Build_Cancelled> EHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>350</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>8</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+	
+	</Squadron>
+	
+	<Squadron Name="Rebel_Pirate_Fighter_Squadron"> <!--Multiplayer Only-->
+		<Variant_Of_Existing_Type>Pirate_Fighter_Squadron</Variant_Of_Existing_Type>
+		
+		<Affiliation>Rebel</Affiliation>
+		
+		<SFXEvent_Tactical_Build_Started> RHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>		
+		<SFXEvent_Tactical_Build_Complete> RHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>		
+		<SFXEvent_Tactical_Build_Cancelled> RHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>350</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>8</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+	
+	</Squadron>
+
+	<Squadron Name="Underworld_Pirate_Fighter_Squadron"> <!--Multiplayer Only-->
+		<Variant_Of_Existing_Type>Pirate_Fighter_Squadron</Variant_Of_Existing_Type>
+		
+		<Affiliation>Underworld</Affiliation>
+		
+		<SFXEvent_Tactical_Build_Started> UHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>		
+		<SFXEvent_Tactical_Build_Complete> UHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>		
+		<SFXEvent_Tactical_Build_Cancelled> UHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>350</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>6</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+	
+	</Squadron>
+
+
+
+	
+
+
+
+	
+	<Squadron Name="Darth_Vader_TIE_Fighter_Squadron">
+		<Variant_Of_Existing_Type>TIE_Fighter_Squadron</Variant_Of_Existing_Type>
+		<Encyclopedia_Text> TEXT_TOOLTIP_TIE_ADVANCED </Encyclopedia_Text>
+		<Squadron_Units>TIE_Prototype, Escort_TIE_Fighter, Escort_TIE_Fighter, Escort_TIE_Fighter</Squadron_Units>
+		<Squadron_Units>Escort_TIE_Fighter, Escort_TIE_Fighter, Escort_TIE_Fighter</Squadron_Units>
+		<Create_Team_Type>Darth_Vader_TIE_Fighter_Container </Create_Team_Type>
+		<Icon_Name>i_button_darth_vader.tga</Icon_Name>
+		<Score_Cost_Credits> 15000 </Score_Cost_Credits>
+     	<Max_Squad_Size> 8 </Max_Squad_Size>
+	</Squadron>
+	
+
+	<Squadron Name="TIE_Fighter_Squadron_E3">
+		<Variant_Of_Existing_Type>TIE_Fighter_Squadron</Variant_Of_Existing_Type>
+		<Squadron_Units>TIE_Fighter_E3, TIE_Fighter_E3, TIE_Fighter_E3,TIE_Fighter_E3</Squadron_Units>
+		<Squadron_Units>TIE_Fighter_E3, TIE_Fighter_E3, TIE_Fighter_E3</Squadron_Units>
+	</Squadron>
+
+
+	<Squadron Name="TIE_Bomber_Squadron_E3">
+		<Variant_Of_Existing_Type>TIE_Bomber_Squadron</Variant_Of_Existing_Type>
+		<Squadron_Units>TIE_Bomber_E3, TIE_Bomber_E3</Squadron_Units>
+		<Squadron_Units>TIE_Bomber_E3, TIE_Bomber_E3</Squadron_Units>
+	</Squadron>
+
+
+
+
+
+</Squadrons>
+

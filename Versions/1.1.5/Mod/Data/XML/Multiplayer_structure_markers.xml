@@ -1,0 +1,817 @@
+<?xml version="1.0"?>
+<Multiplayer_Structure_Markers>
+
+	<MultiplayerStructureMarker Name="Command Center">
+		<Text_ID>TEXT_STRUCTURE_REBEL_COMMAND_CENTER</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> Rebel_Command_Center_Build_Pad, Imperial_Command_Center_Build_Pad, Underworld_Palace_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>RB_CommandCenter.alo</Land_Model_Name>
+		<Scale_Factor>.65</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Barracks">
+		<Text_ID>TEXT_GROUND_BARRACKS</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> E_Ground_Barracks_Build_Pad, R_Ground_Barracks_Build_Pad, U_Ground_Merc_Outpost_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>RB_InfantryBarracks.alo</Land_Model_Name>
+		<Scale_Factor>1.3</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Light Vehicle Factory">
+		<Text_ID>TEXT_GROUND_LIGHT_VEHICLE_FACTORY</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> R_Ground_Light_Vehicle_Factory, E_Ground_Light_Vehicle_Factory, U_Ground_Droid_Works_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>rb_lightvehiclefactory.alo</Land_Model_Name>
+		<Scale_Factor>1.4</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+
+	<MultiplayerStructureMarker Name="Heavy Vehicle Factory">
+		<Text_ID>TEXT_GROUND_HEAVY_VEHICLE_FACTORY</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> R_Ground_Heavy_Vehicle_Factory, E_Ground_Heavy_Vehicle_Factory, U_Ground_Arms_Depot_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>rb_heavyvehiclefactory.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Communications Array">
+		<Text_ID>TEXT_STRUCTURE_COMM_ARRAY</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> Communications_Array_R, Communications_Array_E </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>RB_COMCENTER.ALO</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Research Facility">
+		<Text_ID>TEXT_GROUND_RESEARCH_FACILITY</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> R_Ground_Research_Facility, E_Ground_Research_Facility </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>RB_ResearchFacility.alo</Land_Model_Name>
+		<Scale_Factor>1.40</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Power Generator">
+		<Text_ID>TEXT_STRUCTURE_POWER_GENERATOR</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> Power_Generator_E, Power_Generator_R </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>RB_SHIELD-GENERATOR.ALO</Land_Model_Name>
+		<Scale_Factor>.75</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Base Shield">
+		<Text_ID>TEXT_GROUND_BASE_SHIELD</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> R_Ground_Base_Shield, E_Ground_Base_Shield </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>NB_BASESHIELDGEN.ALO</Land_Model_Name>
+		<Scale_Factor>.75</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+
+
+	<MultiplayerStructureMarker Name="Space Station">
+		<Text_ID>TEXT_ORBITAL_STATION_POSITION</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Marker_For_Specific_Object_Type> Skirmish_Rebel_Star_Base_1, Skirmish_Empire_Star_Base_1, Skirmish_Underworld_Star_Base_1 </Marker_For_Specific_Object_Type>
+		<Space_Model_Name>RB_STATION_01.ALO</Space_Model_Name>
+		<Land_Model_Name />
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+
+
+
+
+
+
+
+
+	<MultiplayerStructureMarker Name="Team_00_Command Center">
+		<Text_ID>TEXT_STRUCTURE_REBEL_COMMAND_CENTER</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> Rebel_Command_Center_Build_Pad, Imperial_Command_Center_Build_Pad, Underworld_Palace_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>RB_CommandCenter.alo</Land_Model_Name>
+		<Scale_Factor>.65</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+		<MultiplayerStructureMarker Name="Team_00_Command Center_Two">
+		<Text_ID>TEXT_STRUCTURE_REBEL_COMMAND_CENTER</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> Rebel_Command_Center_Build_Pad_Two, Imperial_Command_Center_Build_Pad_Two </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>RB_CommandCenter.alo</Land_Model_Name>
+		<Scale_Factor>.65</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_00_Barracks">
+		<Text_ID>TEXT_GROUND_BARRACKS</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> E_Ground_Barracks_Build_Pad, R_Ground_Barracks_Build_Pad, U_Ground_Merc_Outpost_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>RB_InfantryBarracks.alo</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_00_Light_Vehicle_Factory">
+		<Text_ID>TEXT_GROUND_LIGHT_VEHICLE_FACTORY</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> R_Ground_Light_Vehicle_Factory_Build_Pad, E_Ground_Light_Vehicle_Factory_Build_Pad, U_Ground_Droid_Works_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>rb_lightvehiclefactory.alo</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+
+	<MultiplayerStructureMarker Name="Team_00_Heavy_Vehicle_Factory">
+		<Text_ID>TEXT_GROUND_HEAVY_VEHICLE_FACTORY</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> R_Ground_Heavy_Vehicle_Factory_Build_Pad, E_Ground_Heavy_Vehicle_Factory_Build_Pad, U_Ground_Arms_Depot_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>rb_heavyvehiclefactory.alo</Land_Model_Name>
+		<Scale_Factor>1.42</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_00_Communications_Array">
+		<Text_ID>TEXT_STRUCTURE_COMM_ARRAY</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> Communications_Array_R_Build_Pad, Communications_Array_E_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>RB_COMCENTER.ALO</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_00_Research_Facility">
+		<Text_ID>TEXT_GROUND_RESEARCH_FACILITY</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> R_Ground_Research_Facility_Build_Pad, E_Ground_Research_Facility_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>RB_ResearchFacility.alo</Land_Model_Name>
+		<Scale_Factor>1.40</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_00_Power_Generator">
+		<Text_ID>TEXT_STRUCTURE_POWER_GENERATOR</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> Power_Generator_R_Build_Pad, Power_Generator_E_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>RB_SHIELD-GENERATOR.ALO</Land_Model_Name>
+		<Scale_Factor>.75</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_00_Base Shield">
+		<Text_ID>TEXT_GROUND_BASE_SHIELD</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> R_Ground_Base_Shield_Build_Pad, E_Ground_Base_Shield_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>NB_BASESHIELDGEN.ALO</Land_Model_Name>
+		<Scale_Factor>.75</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_00_Base_Shield_Small">
+		<Text_ID>TEXT_GROUND_BASE_SHIELD</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> E_Small_Ground_Base_Shield_Build_Pad, R_Small_Ground_Base_Shield_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>NB_BASESHIELDGEN_small.ALO</Land_Model_Name>
+		<Scale_Factor>.75</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_00_Turbolaser_Structure_Position">
+		<Text_ID>TEXT_GROUND_TURBOLASER_TOWER</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Marker_For_Specific_Object_Type> R_Ground_Turbolaser_Tower_Build_Pad, E_Ground_Turbolaser_Tower_Build_Pad </Marker_For_Specific_Object_Type>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Land_Model_Name>SeB_flakgun.ALO</Land_Model_Name>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>1.1</Scale_Factor>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_00_BuildPads_Position">
+		<Text_ID>TEXT_EMPIRE_BUILD_PAD</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Marker_For_Specific_Object_Type> Rebel_Build_Pad, Empire_Build_Pad, Underworld_Build_Pad </Marker_For_Specific_Object_Type>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Land_Model_Name>NB_BasePad.alo</Land_Model_Name>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>1</Scale_Factor>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+
+<MultiplayerStructureMarker Name="Team_00_BattlePads_Position">
+		<Text_ID>TEXT_EMPIRE_BUILD_PAD</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Marker_For_Specific_Object_Type> Cis_Battlefield_Build_Pad, Republic_Battlefield_Build_Pad </Marker_For_Specific_Object_Type>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Land_Model_Name>W_BuildBaseFOC.alo</Land_Model_Name>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.15</Scale_Factor>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+
+	<MultiplayerStructureMarker Name="Team_00_Space_Station">
+		<Text_ID>TEXT_ORBITAL_STATION_POSITION</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Marker_For_Specific_Object_Type> Skirmish_Rebel_Star_Base_1, Skirmish_Empire_Star_Base_1, Skirmish_Underworld_Star_Base_1 </Marker_For_Specific_Object_Type>
+		<Space_Model_Name>EB_STATION_01.ALO</Space_Model_Name>
+		<Land_Model_Name />
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_00_Space_Special_Buildpad">
+		<Text_ID>TEXT_ORBITAL_BUILDPAD_POSITION</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Marker_For_Specific_Object_Type> Republic_Satellite_Build_Pad</Marker_For_Specific_Object_Type>
+		<Space_Model_Name>NV_LDS_pad.ALO</Space_Model_Name>
+		<Land_Model_Name />
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_00_Orbital_Weapons_Structure_Position">
+		<Text_ID>TEXT_GROUND_TURBOLASER_TOWER</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Marker_For_Specific_Object_Type> R_Space_Gun_Platform_Build_Pad </Marker_For_Specific_Object_Type>
+		<Galactic_Model_Name />
+		<Space_Model_Name>SeV_Gun_Platform.ALO</Space_Model_Name>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>1.3</Scale_Factor>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+
+
+
+	<MultiplayerStructureMarker Name="Team_00_Reinforcement_Point_Plus2_Cap">
+		<Is_Marker>Yes</Is_Marker>
+		<Marker_For_Specific_Object_Type> Reinforcement_Point_Underworld, Reinforcement_Point_Rebel, Reinforcement_Point_Empire </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>W_Pedistal_Rebel.alo</Land_Model_Name>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>1.25</Scale_Factor>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+
+
+
+
+	<MultiplayerStructureMarker Name="Team_01_Command Center">
+		<Text_ID>TEXT_STRUCTURE_REBEL_COMMAND_CENTER</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> Rebel_Command_Center_Build_Pad, Imperial_Command_Center_Build_Pad, Underworld_Palace_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>RB_CommandCenter.alo</Land_Model_Name>
+		<Scale_Factor>.65</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+		<MultiplayerStructureMarker Name="Team_01_Command Center_Two">
+		<Text_ID>TEXT_STRUCTURE_REBEL_COMMAND_CENTER</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> Rebel_Command_Center_Build_Pad_Two, Imperial_Command_Center_Build_Pad_Two </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>RB_CommandCenter.alo</Land_Model_Name>
+		<Scale_Factor>.65</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_01_Barracks">
+		<Text_ID>TEXT_GROUND_BARRACKS</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> E_Ground_Barracks_Build_Pad, R_Ground_Barracks_Build_Pad, U_Ground_Merc_Outpost_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>RB_InfantryBarracks.alo</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_01_Light_Vehicle_Factory">
+		<Text_ID>TEXT_GROUND_LIGHT_VEHICLE_FACTORY</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> R_Ground_Light_Vehicle_Factory_Build_Pad, E_Ground_Light_Vehicle_Factory_Build_Pad, U_Ground_Droid_Works_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>rb_lightvehiclefactory.alo</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+
+	<MultiplayerStructureMarker Name="Team_01_Heavy_Vehicle_Factory">
+		<Text_ID>TEXT_GROUND_HEAVY_VEHICLE_FACTORY</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> R_Ground_Heavy_Vehicle_Factory_Build_Pad, E_Ground_Heavy_Vehicle_Factory_Build_Pad, U_Ground_Arms_Depot_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>rb_heavyvehiclefactory.alo</Land_Model_Name>
+		<Scale_Factor>1.42</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_01_Communications_Array">
+		<Text_ID>TEXT_STRUCTURE_COMM_ARRAY</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> Communications_Array_R_Build_Pad, Communications_Array_E_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>RB_COMCENTER.ALO</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_01_Research_Facility">
+		<Text_ID>TEXT_GROUND_RESEARCH_FACILITY</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> R_Ground_Research_Facility_Build_Pad, E_Ground_Research_Facility_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>RB_ResearchFacility.alo</Land_Model_Name>
+		<Scale_Factor>1.40</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_01_Power_Generator">
+		<Text_ID>TEXT_STRUCTURE_POWER_GENERATOR</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> Power_Generator_R_Build_Pad, Power_Generator_E_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>RB_SHIELD-GENERATOR.ALO</Land_Model_Name>
+		<Scale_Factor>.75</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_01_Base Shield">
+		<Text_ID>TEXT_GROUND_BASE_SHIELD</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> R_Ground_Base_Shield_Build_Pad, E_Ground_Base_Shield_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>NB_BASESHIELDGEN.ALO</Land_Model_Name>
+		<Scale_Factor>.75</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_01_Base_Shield_Small">
+		<Text_ID>TEXT_GROUND_BASE_SHIELD</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> E_Small_Ground_Base_Shield_Build_Pad, R_Small_Ground_Base_Shield_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>NB_BASESHIELDGEN_small.ALO</Land_Model_Name>
+		<Scale_Factor>.75</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_01_Turbolaser_Structure_Position">
+		<Text_ID>TEXT_GROUND_TURBOLASER_TOWER</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Marker_For_Specific_Object_Type> R_Ground_Turbolaser_Tower_Build_Pad, E_Ground_Turbolaser_Tower_Build_Pad </Marker_For_Specific_Object_Type>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Land_Model_Name>EB_TLTower.ALO</Land_Model_Name>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.75</Scale_Factor>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_01_BuildPads_Position">
+		<Text_ID>TEXT_EMPIRE_BUILD_PAD</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Marker_For_Specific_Object_Type> Rebel_Build_Pad, Empire_Build_Pad, Underworld_Build_Pad </Marker_For_Specific_Object_Type>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Land_Model_Name>NB_BasePad.alo</Land_Model_Name>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>1</Scale_Factor>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_01_BattlePads_Position">
+		<Text_ID>TEXT_EMPIRE_BUILD_PAD</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Marker_For_Specific_Object_Type> Cis_Battlefield_Build_Pad, Republic_Battlefield_Build_Pad </Marker_For_Specific_Object_Type>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Land_Model_Name>W_BuildBaseFOC.alo</Land_Model_Name>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.15</Scale_Factor>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+
+	<MultiplayerStructureMarker Name="Team_01_Space_Station">
+		<Text_ID>TEXT_ORBITAL_STATION_POSITION</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Marker_For_Specific_Object_Type> Skirmish_Rebel_Star_Base_1, Skirmish_Empire_Star_Base_1, Skirmish_Underworld_Star_Base_1 </Marker_For_Specific_Object_Type>
+		<Space_Model_Name>EB_STATION_01.ALO</Space_Model_Name>
+		<Land_Model_Name />
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+
+<MultiplayerStructureMarker Name="Team_01_Space_Special_Buildpad">
+		<Text_ID>TEXT_ORBITAL_BUILDPAD_POSITION</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Marker_For_Specific_Object_Type> Republic_Satellite_Build_Pad</Marker_For_Specific_Object_Type>
+		<Space_Model_Name>NV_LDS_pad.ALO</Space_Model_Name>
+		<Land_Model_Name />
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_01_Orbital_Weapons_Structure_Position">
+		<Text_ID>TEXT_GROUND_TURBOLASER_TOWER</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Marker_For_Specific_Object_Type> R_Space_Gun_Platform_Build_Pad </Marker_For_Specific_Object_Type>
+		<Galactic_Model_Name />
+		<Space_Model_Name>SeV_Gun_Platform.ALO</Space_Model_Name>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>1.3</Scale_Factor>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+
+	<MultiplayerStructureMarker Name="Team_01_Reinforcement_Point_Plus2_Cap">
+		<Is_Marker>Yes</Is_Marker>
+		<Marker_For_Specific_Object_Type> Reinforcement_Point_Underworld, Reinforcement_Point_Rebel, Reinforcement_Point_Empire </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>W_Pedistal_Rebel.alo</Land_Model_Name>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>1.25</Scale_Factor>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+
+
+
+
+	<MultiplayerStructureMarker Name="Team_02_Command Center">
+		<Text_ID>TEXT_STRUCTURE_REBEL_COMMAND_CENTER</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> Rebel_Command_Center_Build_Pad, Imperial_Command_Center_Build_Pad, Underworld_Palace_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>RB_CommandCenter.alo</Land_Model_Name>
+		<Scale_Factor>.65</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_02_Barracks">
+		<Text_ID>TEXT_GROUND_BARRACKS</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> E_Ground_Barracks_Build_Pad, R_Ground_Barracks_Build_Pad, U_Ground_Merc_Outpost_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>RB_InfantryBarracks.alo</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_02_Light_Vehicle_Factory">
+		<Text_ID>TEXT_GROUND_LIGHT_VEHICLE_FACTORY</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> R_Ground_Light_Vehicle_Factory_Build_Pad, E_Ground_Light_Vehicle_Factory_Build_Pad, U_Ground_Droid_Works_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>rb_lightvehiclefactory.alo</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+
+	<MultiplayerStructureMarker Name="Team_02_Heavy_Vehicle_Factory">
+		<Text_ID>TEXT_GROUND_HEAVY_VEHICLE_FACTORY</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> R_Ground_Heavy_Vehicle_Factory_Build_Pad, E_Ground_Heavy_Vehicle_Factory_Build_Pad, U_Ground_Arms_Depot_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>rb_heavyvehiclefactory.alo</Land_Model_Name>
+		<Scale_Factor>1.42</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_02_Communications_Array">
+		<Text_ID>TEXT_STRUCTURE_COMM_ARRAY</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> Communications_Array_R_Build_Pad, Communications_Array_E_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>RB_COMCENTER.ALO</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_02_Research_Facility">
+		<Text_ID>TEXT_GROUND_RESEARCH_FACILITY</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> R_Ground_Research_Facility_Build_Pad, E_Ground_Research_Facility_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>RB_ResearchFacility.alo</Land_Model_Name>
+		<Scale_Factor>1.40</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_02_Power_Generator">
+		<Text_ID>TEXT_STRUCTURE_POWER_GENERATOR</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> Power_Generator_R_Build_Pad, Power_Generator_E_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>RB_SHIELD-GENERATOR.ALO</Land_Model_Name>
+		<Scale_Factor>.75</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_02_Base Shield">
+		<Text_ID>TEXT_GROUND_BASE_SHIELD</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> R_Ground_Base_Shield_Build_Pad, E_Ground_Base_Shield_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>NB_BASESHIELDGEN.ALO</Land_Model_Name>
+		<Scale_Factor>.75</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_02_Base_Shield_Small">
+		<Text_ID>TEXT_GROUND_BASE_SHIELD</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Marker_For_Specific_Object_Type> E_Small_Ground_Base_Shield_Build_Pad, R_Small_Ground_Base_Shield_Build_Pad </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>NB_BASESHIELDGEN_small.ALO</Land_Model_Name>
+		<Scale_Factor>.75</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_02_Turbolaser_Structure_Position">
+		<Text_ID>TEXT_GROUND_TURBOLASER_TOWER</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Marker_For_Specific_Object_Type> R_Ground_Turbolaser_Tower_Build_Pad, E_Ground_Turbolaser_Tower_Build_Pad </Marker_For_Specific_Object_Type>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Land_Model_Name>EB_TLTower.ALO</Land_Model_Name>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.75</Scale_Factor>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_02_BuildPads_Position">
+		<Text_ID>TEXT_EMPIRE_BUILD_PAD</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Marker_For_Specific_Object_Type> Rebel_Build_Pad, Empire_Build_Pad, Underworld_Build_Pad </Marker_For_Specific_Object_Type>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Land_Model_Name>NB_BasePad.alo</Land_Model_Name>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>1</Scale_Factor>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+	
+	<MultiplayerStructureMarker Name="Team_02_BattlePads_Position">
+		<Text_ID>TEXT_EMPIRE_BUILD_PAD</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Marker_For_Specific_Object_Type> Cis_Battlefield_Build_Pad, Republic_Battlefield_Build_Pad </Marker_For_Specific_Object_Type>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Land_Model_Name>W_BuildBaseFOC.alo</Land_Model_Name>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.15</Scale_Factor>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+
+	<MultiplayerStructureMarker Name="Team_02_Space_Station">
+		<Text_ID>TEXT_ORBITAL_STATION_POSITION</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Marker_For_Specific_Object_Type> Skirmish_Rebel_Star_Base_1, Skirmish_Empire_Star_Base_1, Skirmish_Underworld_Star_Base_1 </Marker_For_Specific_Object_Type>
+		<Space_Model_Name>EB_STATION_01.ALO</Space_Model_Name>
+		<Land_Model_Name />
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+
+<MultiplayerStructureMarker Name="Team_02_Space_Special_Buildpad">
+		<Text_ID>TEXT_ORBITAL_BUILDPAD_POSITION</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Marker_For_Specific_Object_Type> Republic_Satellite_Build_Pad</Marker_For_Specific_Object_Type>
+		<Space_Model_Name>NV_LDS_pad.ALO</Space_Model_Name>
+		<Land_Model_Name />
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+
+	<MultiplayerStructureMarker Name="Team_02_Reinforcement_Point_Plus2_Cap">
+		<Is_Marker>Yes</Is_Marker>
+		<Marker_For_Specific_Object_Type> Reinforcement_Point_Underworld, Reinforcement_Point_Rebel, Reinforcement_Point_Empire </Marker_For_Specific_Object_Type>
+		<Land_Model_Name>W_Pedistal_Rebel.alo</Land_Model_Name>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>1.25</Scale_Factor>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+
+
+
+
+</Multiplayer_Structure_Markers>

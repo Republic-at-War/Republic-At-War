@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<BlackMarketItems>
+
+
+   <!-- 9/12/06 JAC - Changed rebel tech levels to be of range 1-5 to be consistant with
+         empire tech level range.  Game code will compensate for the fact that rebels really
+         have tech levels 0-4.
+   -->
+
+	<!-- Tech Level One Upgrades -->
+
+
+    <Item Name="Buzz_Droid_Tech">
+        <Uncommon_Price_Multiplier> 5.5 </Uncommon_Price_Multiplier>
+        <Faction> Empire </Faction>
+        <Tech_Level> 1 </Tech_Level>
+        <Ability_Names> Buzz_Droids_Viper </Ability_Names>
+        <Base_Cost_Credits> 1000 </Base_Cost_Credits>
+        <Icon_Name> i_sa_bl_buzz_droids.tga </Icon_Name>
+        <Localized_Name> TEXT_BM_BUZZ_DROID_TECH </Localized_Name>
+        <Localized_Description> TEXT_TOOLTIP_BM_BUZZ_DROID_TECH </Localized_Description>
+        <Used_By_Units> Starviper_Fighter, Vulture_Droid_Fighter </Used_By_Units>
+        <Tutorial_Tech_Level> 0 </Tutorial_Tech_Level>
+        <Tutorial_Base_Cost_Credits>1000</Tutorial_Base_Cost_Credits>
+    </Item>
+
+    <Item Name="Proximity_Mine_Tech">
+        <Uncommon_Price_Multiplier> 5.5 </Uncommon_Price_Multiplier>
+        <Faction> Rebel </Faction>
+        <Tech_Level> 1 </Tech_Level>
+        <Ability_Names> Grenadier_Proximity, Grenadier_Proximity_Solo</Ability_Names>
+        <Base_Cost_Credits> 1000 </Base_Cost_Credits>
+        <Icon_Name> i_sa_bl_proximity_mines.tga </Icon_Name>
+        <Localized_Name> TEXT_BM_DEF_MINES </Localized_Name>
+        <Localized_Description> TEXT_TOOLTIP_BM_DEF_MINES </Localized_Description>
+        <Used_By_Units> Underworld_Merc </Used_By_Units>
+    </Item>
+
+
+	<!-- Tech Level Two Upgrades -->
+
+
+    <Item Name="Disruptor_Tech">
+        <Uncommon_Price_Multiplier> 5.5 </Uncommon_Price_Multiplier>
+        <Faction> Empire </Faction>
+        <Tech_Level> 2 </Tech_Level>
+        <Ability_Names> Disruptor_Permanent_Swap </Ability_Names>
+        <Base_Cost_Credits> 2000 </Base_Cost_Credits>
+        <Icon_Name> i_sa_bl_disruptor.tga </Icon_Name>
+        <Localized_Name> TEXT_BM_DISRUPTOR_TECH </Localized_Name>
+        <Localized_Description> TEXT_TOOLTIP_BM_DISRUPTOR_TECH </Localized_Description>
+        <Used_By_Units> Underworld_Disruptor_Merc </Used_By_Units>
+        <Tutorial_Tech_Level> 0 </Tutorial_Tech_Level>
+        <Tutorial_Base_Cost_Credits>1000</Tutorial_Base_Cost_Credits>
+    </Item>
+
+    <Item Name="Full_Salvo_Sync">
+        <Uncommon_Price_Multiplier> 5.5 </Uncommon_Price_Multiplier>
+        <Faction> Rebel </Faction>
+        <Tech_Level> 2 </Tech_Level>
+        <Ability_Names> Interceptor_Full_Salvo </Ability_Names>
+        <Base_Cost_Credits> 2000 </Base_Cost_Credits>
+        <Icon_Name> i_sa_bl_full_salvo.tga </Icon_Name>
+        <Localized_Name> TEXT_BM_WEAPON_SYNC </Localized_Name>
+        <Localized_Description> TEXT_TOOLTIP_BM_WEAPON_SYNC </Localized_Description>
+        <Used_By_Units> Interceptor4_Frigate, Munificent_Frigate </Used_By_Units>
+    </Item>
+
+
+<!-- Tech Level Three Upgrades -->
+
+
+    <Item Name="Core_Overload_Tech">
+        <Uncommon_Price_Multiplier> 5.5 </Uncommon_Price_Multiplier>
+        <Faction> Empire </Faction>
+        <Tech_Level> 3 </Tech_Level>
+        <Ability_Names> Krayt_Self_Destruct, Pulse_Tank_Self_Destruct, Vengeance_Self_Destruct </Ability_Names>
+        <Base_Cost_Credits> 3000 </Base_Cost_Credits>
+        <Icon_Name> i_sa_bl_self_destruct.tga </Icon_Name>
+        <Localized_Name> TEXT_BM_STRAT_DEMO </Localized_Name>
+        <Localized_Description> TEXT_TOOLTIP_BM_STRAT_DEMO </Localized_Description>
+        <Used_By_Units> Krayt_Class_Destroyer, MZ8_Pulse_Cannon_Tank, Vengeance_Frigate </Used_By_Units>
+        <Tutorial_Tech_Level> 3 </Tutorial_Tech_Level>
+        <Tutorial_Base_Cost_Credits>100000</Tutorial_Base_Cost_Credits>
+    </Item>
+
+    <Item Name="Sensor_Jamming_Tech">
+        <Uncommon_Price_Multiplier> 5.5 </Uncommon_Price_Multiplier>
+        <Faction> Rebel </Faction>
+        <Tech_Level> 3 </Tech_Level>
+        <Ability_Names> Skipray_Sensor_Jamming </Ability_Names>
+        <Base_Cost_Credits> 2800 </Base_Cost_Credits>
+        <Icon_Name> i_sa_bl_sensor_jamming.tga </Icon_Name>
+        <Localized_Name> TEXT_BM_SENSOR_JAMMING </Localized_Name>
+        <Localized_Description> TEXT_TOOLTIP_BM_SENSOR_JAMMING </Localized_Description>
+        <Used_By_Units> Skipray_Blastboat </Used_By_Units>
+    </Item>
+
+
+<!-- Tech Level Four Upgrades -->
+
+
+    <Item Name="Vehicle_Cloaking_Tech">
+        <Uncommon_Price_Multiplier> 5.5 </Uncommon_Price_Multiplier>
+        <Faction> Empire </Faction>
+        <Tech_Level> 4 </Tech_Level>
+        <Ability_Names> Stealth_F9TZ, Stealth_Vengeance, Stealth_Peacebringer </Ability_Names>
+        <Base_Cost_Credits> 3900 </Base_Cost_Credits>
+        <Icon_Name> i_sa_bl_stealth.tga </Icon_Name>
+        <Localized_Name> TEXT_BM_CLOAKING_TECH </Localized_Name>
+        <Localized_Description> TEXT_TOOLTIP_BM_CLOAKING_TECH </Localized_Description>
+        <Used_By_Units> Vengeance_Frigate, F9TZ_Cloaking_Transport, The_Peacebringer </Used_By_Units>
+        <Tutorial_Tech_Level> 4 </Tutorial_Tech_Level>
+        <Tutorial_Base_Cost_Credits>100000</Tutorial_Base_Cost_Credits>
+    </Item>
+
+    <Item Name="Weaponized_Carbonite_Tech">
+        <Uncommon_Price_Multiplier> 5.5 </Uncommon_Price_Multiplier>
+        <Faction> Rebel </Faction>
+        <Tech_Level> 4 </Tech_Level>
+        <Ability_Names> MAL_Swap_Weapon </Ability_Names>
+        <Base_Cost_Credits> 3700 </Base_Cost_Credits>
+        <Icon_Name> i_multi_carbonite_firing1.tga </Icon_Name>
+        <Localized_Name> TEXT_BM_WEAPONIZED_CARBONITE </Localized_Name>
+        <Localized_Description> TEXT_TOOLTIP_BM_WEAPONIZED_CARBONITE </Localized_Description>
+        <Used_By_Units> MAL_Rocket_Vehicle </Used_By_Units>
+    </Item>
+
+
+<!-- Tech Level Five Upgrades -->
+
+
+    <Item Name="Point_Defense_System_Tech">
+        <Uncommon_Price_Multiplier> 5.5 </Uncommon_Price_Multiplier>
+        <Faction> Empire </Faction>
+        <Tech_Level> 5 </Tech_Level>
+        <Ability_Names> Crusader_Laser_Defense </Ability_Names>
+        <Base_Cost_Credits> 4800 </Base_Cost_Credits>
+        <Icon_Name> i_sa_bl_laser_defense.tga </Icon_Name>
+        <Localized_Name> TEXT_BM_POINT_DEFENSE </Localized_Name>
+        <Localized_Description> TEXT_TOOLTIP_BM_POINT_DEFENSE </Localized_Description>
+        <Used_By_Units> Crusader_Gunship, Munificent_Frigate </Used_By_Units>
+        <Tutorial_Tech_Level> 5 </Tutorial_Tech_Level>
+        <Tutorial_Base_Cost_Credits>100000</Tutorial_Base_Cost_Credits>
+    </Item>
+
+    <Item Name="Shield_Leech_Tech">
+        <Uncommon_Price_Multiplier> 5.5 </Uncommon_Price_Multiplier>
+        <Faction> Rebel </Faction>
+        <Tech_Level> 5 </Tech_Level>
+        <Ability_Names> Kadalbe_Leech_Shields </Ability_Names>
+        <Base_Cost_Credits> 4200 </Base_Cost_Credits>
+        <Icon_Name> i_sa_bl_leech_shields.tga </Icon_Name>
+        <Localized_Name> TEXT_BM_SHIELD_REDIST </Localized_Name>
+        <Localized_Description> TEXT_TOOLTIP_BM_SHIELD_REDIST </Localized_Description>
+        <Used_By_Units> Kedalbe_Battleship </Used_By_Units>
+    </Item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</BlackMarketItems>

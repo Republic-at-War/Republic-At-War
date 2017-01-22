@@ -1,0 +1,857 @@
+<?xml version="1.0"?>
+
+<SFXEvents>
+
+
+<!--	<SFXEvent Name="GUI_Start_Rebel_Campaign">
+		<Use_Preset>Preset_GUI</Use_Preset>
+		<Samples>GUI_Audio_Test_1.wav</Samples>     
+		</SFXEvent>      -->
+
+
+<!--	<SFXEvent Name="GUI_Start_Empire_Campaign">
+		<Use_Preset>Preset_GUI</Use_Preset>
+		<Samples>GUI_Audio_Test_1.wav</Samples>  
+			</SFXEvent>         -->
+
+
+	<SFXEvent Name="GUI_Audio_Options_SFX_Test">
+		<Use_Preset>Preset_GUI</Use_Preset>
+		<Samples>GUI_Audio_Test_1.wav</Samples>
+		<Min_Volume>60</Min_Volume>
+		<Max_Volume>60</Max_Volume>
+	</SFXEvent>
+	
+	<SFXEvent Name="GUI_Select_Empire_SFX">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_Select_Empire.wav</Samples>
+			<Min_Volume>80</Min_Volume>
+			<Max_Volume>80</Max_Volume>
+    </SFXEvent>
+	
+	<SFXEvent Name="GUI_Select_Rebel_SFX">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_Select_Rebel.wav</Samples>
+			<Min_Volume>80</Min_Volume>
+			<Max_Volume>80</Max_Volume>
+    </SFXEvent>
+
+	<SFXEvent Name="GUI_Select_Underworld_SFX">
+		<Use_Preset>Preset_UR</Use_Preset>
+		<Samples>U000_TYB3304_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Play_Sequentially> Yes </Play_Sequentially>
+		<Min_Volume>80</Min_Volume>
+		<Max_Volume>80</Max_Volume>
+		<Text_ID>TEXT_SFX_TYB_BRIBE_4</Text_ID>
+		<Overlap_Test> Unit_Tyber_Zann </Overlap_Test>
+	</SFXEvent>
+
+
+
+
+	<SFXEvent Name="GUI_Droid_Hint_SFX">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>Data/Audio/SFX/GUI_Alert_2.wav</Samples>
+			<Min_Volume>80</Min_Volume>
+			<Max_Volume>80</Max_Volume>
+    </SFXEvent>
+
+	<SFXEvent Name="GUI_R2_Urgent_Hint_SFX">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_R2_Urgent_Hint_1.wav</Samples>
+			<Min_Volume>80</Min_Volume>
+			<Max_Volume>80</Max_Volume>
+    </SFXEvent>
+
+	<SFXEvent Name="GUI_Droid_Urgent_Hint_SFX">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_R2_Urgent_Hint_1.wav</Samples>
+			<Min_Volume>80</Min_Volume>
+			<Max_Volume>80</Max_Volume>
+    </SFXEvent>
+
+
+
+
+	<SFXEvent Name="GUI_Text_Hint_SFX">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_Alert_1.wav</Samples>
+			<Min_Volume>80</Min_Volume>
+			<Max_Volume>80</Max_Volume>
+    </SFXEvent>
+
+
+	
+	<SFXEvent Name="GUI_Alert_1_SFX">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_Alert_1.wav</Samples>
+			<Min_Volume>80</Min_Volume>
+			<Max_Volume>80</Max_Volume>
+    </SFXEvent>
+
+	<SFXEvent Name="GUI_Button_Press_2_SFX">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_Button_Press_2.wav</Samples>
+			<Min_Volume>80</Min_Volume>
+			<Max_Volume>80</Max_Volume>
+    </SFXEvent>
+
+	<SFXEvent Name="GUI_Dial_Switch_SFX">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_Dial_Switch_1.wav</Samples>
+			<Min_Volume>80</Min_Volume>
+			<Max_Volume>80</Max_Volume>
+    </SFXEvent>
+
+	<SFXEvent Name="GUI_Unit_Scroll_SFX">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_Unit.wav</Samples>
+			<Min_Volume>70</Min_Volume>
+			<Max_Volume>70</Max_Volume>
+    </SFXEvent>
+
+	<SFXEvent Name="GUI_Weapon_Ready_SFX">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_Weapon_Ready.wav</Samples>
+			<Min_Volume>70</Min_Volume>
+			<Max_Volume>70</Max_Volume>
+    </SFXEvent>
+
+	<SFXEvent Name="GUI_Cancel_SFX">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_Cancel_Click.wav</Samples>
+			<Min_Volume>70</Min_Volume>
+			<Max_Volume>70</Max_Volume>
+    </SFXEvent>
+
+	<SFXEvent Name="GUI_Ability_Recharge_SFX">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_Ability_Recharge_2.wav</Samples>
+			<Min_Volume>100</Min_Volume>
+			<Max_Volume>100</Max_Volume>
+    </SFXEvent>
+
+	<SFXEvent Name="GUI_Text_SFX">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_MO.wav</Samples>
+    </SFXEvent>
+
+	<SFXEvent Name="GUI_Transmission_SFX">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_Transmission_1.wav</Samples>
+			<Min_Volume>70</Min_Volume>
+			<Max_Volume>70</Max_Volume>
+    </SFXEvent>
+
+
+
+	<SFXEvent Name="GUI_Telemetry_Loop_SFX">
+		<Is_2D> Yes </Is_2D>
+		<Is_3D> No </Is_3D>
+		<Samples>GUI_Telem.wav</Samples>
+		<Max_Instances> 1 </Max_Instances>
+		<Play_Count> -1 </Play_Count>
+		<Min_Volume> 40 </Min_Volume>
+		<Max_Volume> 40 </Max_Volume>
+		<Loop_Fade_In_Seconds> 0.50 </Loop_Fade_In_Seconds>
+		<Loop_Fade_Out_Seconds> 1.0 </Loop_Fade_Out_Seconds>
+ </SFXEvent>
+
+
+
+
+
+
+
+
+
+
+   <SFXEvent Name="GUI_Zoom">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_Zoom2.wav</Samples>
+			<Min_Volume>50</Min_Volume>
+			<Max_Volume>50</Max_Volume>
+    </SFXEvent>
+
+
+    	<SFXEvent Name="GUI_Planet_Menu">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_Planet.wav</Samples>
+			<Min_Volume>50</Min_Volume>
+			<Max_Volume>50</Max_Volume>
+        </SFXEvent>
+
+    	<SFXEvent Name="GUI_Planet_Mouse_Over">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_Planet_Highlight_2.wav</Samples>
+			<Min_Volume>100</Min_Volume>
+			<Max_Volume>100</Max_Volume>
+        </SFXEvent>
+
+
+
+    	<SFXEvent Name="GUI_Highlight_Mouse_Over">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_Scroll.wav</Samples>
+			<Min_Volume>30</Min_Volume>
+			<Max_Volume>30</Max_Volume>
+        </SFXEvent>
+
+
+
+	<SFXEvent Name="GUI_Activate_Hyperspace_Button">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_Hyper_Act.wav</Samples>
+			<Min_Volume>65</Min_Volume>
+			<Max_Volume>65</Max_Volume>
+    </SFXEvent>
+
+
+ 	<SFXEvent Name="GUI_Drag_Fleet">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_Drag.wav</Samples>
+			<Min_Volume>47</Min_Volume>
+			<Max_Volume>47</Max_Volume>
+    </SFXEvent>
+
+ 	<SFXEvent Name="GUI_Drop_Fleet">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_Drop.wav</Samples>
+			<Min_Volume>55</Min_Volume>
+			<Max_Volume>55</Max_Volume>
+    </SFXEvent>
+
+
+    <SFXEvent Name="Galactic_Fleet_Hyperspace">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>AC_Short_Hyperspace.wav</Samples>
+            <Min_Volume>60</Min_Volume>
+			<Max_Volume>60</Max_Volume>
+    </SFXEvent>
+
+
+	<SFXEvent Name="GUI_Bad_Sound">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>Bad_Sound.wav</Samples>
+    </SFXEvent>
+
+
+
+	<SFXEvent Name="Planet_Dialog_Appears">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>PM_Planet_Popup.wav</Samples>
+			<Min_Volume>70</Min_Volume>
+			<Max_Volume>70</Max_Volume>
+    </SFXEvent>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+     <SFXEvent Name="GUI_X_Wing_Complete">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_X_Wing_Complete.wav</Samples>
+            <Min_Volume>55</Min_Volume>
+            <Max_Volume>55</Max_Volume>
+				<Overlap_Test> Unit_Complete </Overlap_Test>
+    </SFXEvent>
+
+     <SFXEvent Name="GUI_Y_Wing_Complete">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_Y_Wing_Complete.wav</Samples>
+            <Min_Volume>65</Min_Volume>
+            <Max_Volume>65</Max_Volume>
+				<Overlap_Test> Unit_Complete </Overlap_Test>
+    </SFXEvent>
+
+     <SFXEvent Name="GUI_A_Wing_Complete">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_A_Wing_Complete.wav</Samples>
+            <Min_Volume>65</Min_Volume>
+            <Max_Volume>65</Max_Volume>
+				<Overlap_Test> Unit_Complete </Overlap_Test>
+    </SFXEvent>
+
+     <SFXEvent Name="GUI_Assault_Speeder_Complete">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_Assault_Speeder_Complete.wav</Samples>
+            <Min_Volume>65</Min_Volume>
+            <Max_Volume>65</Max_Volume>
+				<Overlap_Test> Unit_Complete </Overlap_Test>
+    </SFXEvent>
+
+
+
+
+
+
+
+
+
+      <SFXEvent Name="GUI_Tie_Complete">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_Tie_Complete.wav</Samples>
+            <Min_Volume>70</Min_Volume>
+            <Max_Volume>70</Max_Volume>
+				<Overlap_Test> Unit_Complete </Overlap_Test>
+    </SFXEvent>
+
+      <SFXEvent Name="GUI_Scout_Complete">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_Scout_Complete.wav</Samples>
+            <Min_Volume>65</Min_Volume>
+            <Max_Volume>65</Max_Volume>
+				<Overlap_Test> Unit_Complete </Overlap_Test>
+    </SFXEvent>
+
+		<SFXEvent Name="GUI_ATAT_Complete">
+			<Use_Preset>Preset_GUI</Use_Preset>
+			 <Samples>FS_ATAT_1.wav</Samples>
+				 <Min_Volume>100</Min_Volume>
+				 <Max_Volume>100</Max_Volume>
+				 <Overlap_Test> Unit_Complete </Overlap_Test>
+	  </SFXEvent>
+
+		<SFXEvent Name="GUI_ATST_Complete">
+			<Use_Preset>Preset_GUI</Use_Preset>
+			 <Samples>FS_ATST_1.wav</Samples>
+				 <Min_Volume>70</Min_Volume>
+				 <Max_Volume>70</Max_Volume>
+				 <Overlap_Test> Unit_Complete </Overlap_Test>
+	  </SFXEvent>
+
+		<SFXEvent Name="GUI_ATAA_Complete">
+			<Use_Preset>Preset_GUI</Use_Preset>
+			 <Samples>FS_SPMAT_1.wav</Samples>
+				 <Min_Volume>100</Min_Volume>
+				 <Max_Volume>100</Max_Volume>
+				 <Overlap_Test> Unit_Complete </Overlap_Test>
+	  </SFXEvent>
+
+		<SFXEvent Name="GUI_SPMAT_Complete">
+			<Use_Preset>Preset_GUI</Use_Preset>
+			 <Samples>FS_SPMAT_1.wav</Samples>
+				 <Min_Volume>100</Min_Volume>
+				 <Max_Volume>100</Max_Volume>
+				 <Overlap_Test> Unit_Complete </Overlap_Test>
+	  </SFXEvent>
+
+		<SFXEvent Name="GUI_Tank_Complete">
+			<Use_Preset>Preset_GUI</Use_Preset>
+			 <Samples>GUI_Tank_Complete.wav</Samples>
+				 <Min_Volume>80</Min_Volume>
+				 <Max_Volume>80</Max_Volume>
+				 <Overlap_Test> Unit_Complete </Overlap_Test>
+	  </SFXEvent>
+
+		<SFXEvent Name="GUI_Repulsor_Complete">
+			<Use_Preset>Preset_GUI</Use_Preset>
+			 <Samples>GUI_Repulsor_Complete.wav</Samples>
+				 <Min_Volume>80</Min_Volume>
+				 <Max_Volume>80</Max_Volume>
+				 <Overlap_Test> Unit_Complete </Overlap_Test>
+	  </SFXEvent>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <SFXEvent Name="GUI_Rebel_Complete">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>U000_REB0103_ENG.wav</Samples>
+			<Localize>Yes</Localize>
+			<Text_ID>TEXT_SFX_REB_SELECT_3</Text_ID>
+			<Overlap_Test> Unit_Complete </Overlap_Test>
+    </SFXEvent>
+
+      <SFXEvent Name="GUI_Plex_Complete">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>U000_PLX0103_ENG.wav</Samples>
+			<Localize>Yes</Localize>
+			<Text_ID>TEXT_SFX_PLX_SELECT_3</Text_ID>
+			<Overlap_Test> Unit_Complete </Overlap_Test>
+    </SFXEvent>
+
+      <SFXEvent Name="GUI_Infiltrator_Complete">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>U000_INF0103_ENG.wav</Samples>
+			<Localize>Yes</Localize>
+			<Text_ID>TEXT_SFX_INF_SELECT_3</Text_ID>
+			<Overlap_Test> Unit_Complete </Overlap_Test>
+    </SFXEvent>
+
+		<!--  
+		<SFXEvent Name="GUI_Spotter_Complete">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>U000_SPT0103_ENG.wav</Samples>
+			<Localize>Yes</Localize>
+			<Text_ID>TEXT_SFX_SPT_SELECT_3</Text_ID>
+			<Overlap_Test> Unit_Complete </Overlap_Test>
+    </SFXEvent>     -->
+
+
+
+      <SFXEvent Name="GUI_Stormtrooper_Complete">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>U000_TRP0103_ENG.wav</Samples>
+			<Localize>Yes</Localize>
+			<Text_ID>TEXT_SFX_TRP_SELECT_3</Text_ID>
+			<Overlap_Test> Unit_Complete </Overlap_Test>
+    </SFXEvent>
+
+
+      <SFXEvent Name="GUI_Hutt_Palace_Complete">
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_Hutt_Palace_Complete.wav</Samples>
+            <Min_Volume>70</Min_Volume>
+            <Max_Volume>70</Max_Volume>
+				<Overlap_Test> Unit_Complete </Overlap_Test>
+    </SFXEvent>
+
+
+
+
+
+
+
+	<SFXEvent Name="Unit_Galactic_Announce_Probot">
+				<Samples>Probot_Select.wav</Samples>
+				<Max_Instances>1</Max_Instances>
+				<Min_Pitch>100</Min_Pitch>
+				<Max_Pitch>100</Max_Pitch>
+				<Min_Volume>100</Min_Volume>
+				<Max_Volume>100</Max_Volume>
+	 </SFXEvent>
+
+	 <SFXEvent Name="Unit_Galactic_Report_Probot">
+				<Samples>Probot_Move.wav</Samples>
+				<Max_Instances>1</Max_Instances>
+				<Min_Pitch>100</Min_Pitch>
+				<Max_Pitch>100</Max_Pitch>
+				<Min_Volume>100</Min_Volume>
+				<Max_Volume>100</Max_Volume>
+	 </SFXEvent>
+
+
+<SFXEvent Name="Unit_Galactic_Move_Probot">
+		  <Samples>Probot_Launch.wav</Samples>
+		  <Max_Instances>1</Max_Instances>
+		  <Min_Pitch>95</Min_Pitch>
+		  <Max_Pitch>100</Max_Pitch>
+		  <Min_Volume>60</Min_Volume>
+		  <Max_Volume>60</Max_Volume>
+		  <Overlap_Test> Unit_Move </Overlap_Test>
+	 </SFXEvent>
+
+
+
+
+<SFXEvent Name="Unit_Galactic_Announce_Bounty_Hunter">
+	 <Samples>U000_BHT0101_ENG.wav</Samples>
+	 <Localize>Yes</Localize>
+	 <Text_ID>TEXT_SFX_BHT_BUILD_1</Text_ID>
+	 <Max_Instances>1</Max_Instances>
+	 <Min_Pitch>100</Min_Pitch>
+	 <Max_Pitch>100</Max_Pitch>
+</SFXEvent>
+
+  <SFXEvent Name="Unit_Galactic_Move_Bounty_Hunter">
+	 <Samples>U000_BHT0201_ENG.wav U000_BHT0202_ENG.wav U000_BHT0203_ENG.wav U000_BHT0204_ENG.wav</Samples>
+	 <Localize>Yes</Localize>
+	 <Text_ID>TEXT_SFX_BHT_DEPLOY_1, TEXT_SFX_BHT_DEPLOY_2, TEXT_SFX_BHT_DEPLOY_3, TEXT_SFX_BHT_DEPLOY_4</Text_ID>
+	 <Max_Instances>1</Max_Instances>
+	 <Min_Pitch>100</Min_Pitch>
+	 <Max_Pitch>100</Max_Pitch>
+	 <Overlap_Test> Unit_Move </Overlap_Test>
+</SFXEvent>
+
+  <SFXEvent Name="Unit_Galactic_Eliminate_Bounty_Hunter">
+	 <Samples>U000_BHT0301_ENG.wav U000_BHT0302_ENG.wav U000_BHT0303_ENG.wav</Samples>
+	 <Localize>Yes</Localize>
+	 <Text_ID>TEXT_SFX_BHT_SUCCESS_1, TEXT_SFX_BHT_SUCCESS_2, TEXT_SFX_BHT_SUCCESS_3</Text_ID>
+	 <Max_Instances>1</Max_Instances>
+	 <Min_Pitch>100</Min_Pitch>
+	 <Max_Pitch>100</Max_Pitch>
+</SFXEvent>
+
+
+
+
+<SFXEvent Name="Unit_Galactic_Announce_Smuggler">
+	 <Samples>U000_SMG0101_ENG.wav</Samples>
+	 <Localize>Yes</Localize>
+	 <Text_ID>TEXT_SFX_SMG_BUILD_1</Text_ID>
+	 <Max_Instances>1</Max_Instances>
+	 <Min_Pitch>100</Min_Pitch>
+	 <Max_Pitch>100</Max_Pitch>
+</SFXEvent>
+
+<SFXEvent Name="Unit_Galactic_Move_Smuggler">
+	 <Samples>U000_SMG0102_ENG.wav U000_SMG0103_ENG.wav</Samples>
+	 <Localize>Yes</Localize>
+	 <Text_ID>TEXT_SFX_SMG_BUILD_2, TEXT_SFX_SMG_BUILD_3</Text_ID>
+	 <Max_Instances>1</Max_Instances>
+	 <Min_Pitch>100</Min_Pitch>
+	 <Max_Pitch>100</Max_Pitch>
+	 <Overlap_Test> Unit_Move </Overlap_Test>
+</SFXEvent>
+
+  <SFXEvent Name="Unit_Galactic_Siphon_Smuggler">
+	 <Samples>U000_SMG0201_ENG.wav U000_SMG0202_ENG.wav U000_SMG0204_ENG.wav U000_SMG0206_ENG.wav U000_SMG0208_ENG.wav</Samples>
+	 <Localize>Yes</Localize>
+	 <Text_ID>TEXT_SFX_SMG_DEPLOY_1, TEXT_SFX_SMG_DEPLOY_2, TEXT_SFX_SMG_DEPLOY_4, TEXT_SFX_SMG_DEPLOY_6, TEXT_SFX_SMG_DEPLOY_8</Text_ID>
+	 <Max_Instances>1</Max_Instances>
+	 <Min_Pitch>100</Min_Pitch>
+	 <Max_Pitch>100</Max_Pitch>
+</SFXEvent>
+
+
+
+
+
+<SFXEvent Name="GUI_R_Fleet_Commander_Complete">
+	 <Samples>U000_RFC0101_ENG.wav</Samples>
+	 <Localize>Yes</Localize>
+	 <Text_ID>TEXT_SFX_RFC_SELECT_1</Text_ID>
+	 <Max_Instances>1</Max_Instances>
+	 <Min_Pitch>100</Min_Pitch>
+	 <Max_Pitch>100</Max_Pitch>
+	 <Overlap_Test> Unit_Complete </Overlap_Test>
+</SFXEvent>
+
+<SFXEvent Name="GUI_E_Fleet_Commander_Complete">
+	 <Samples>U000_EFC0101_ENG.wav</Samples>
+	 <Localize>Yes</Localize>
+	 <Text_ID>TEXT_SFX_EFC_SELECT_1</Text_ID>
+	 <Max_Instances>1</Max_Instances>
+	 <Min_Pitch>100</Min_Pitch>
+	 <Max_Pitch>100</Max_Pitch>
+	 <Overlap_Test> Unit_Complete </Overlap_Test>
+</SFXEvent>
+
+
+<SFXEvent Name="GUI_R_Field_Commander_Complete">
+	 <Samples>U000_RFC0101_ENG.wav</Samples>
+	 <Localize>Yes</Localize>
+	 <Text_ID>TEXT_SFX_RFC_SELECT_1</Text_ID>
+	 <Max_Instances>1</Max_Instances>
+	 <Min_Pitch>100</Min_Pitch>
+	 <Max_Pitch>100</Max_Pitch>
+	 <Overlap_Test> Unit_Complete </Overlap_Test>
+</SFXEvent>
+
+<SFXEvent Name="GUI_E_Field_Commander_Complete">
+	 <Samples>U000_EFC0101_ENG.wav</Samples>
+	 <Localize>Yes</Localize>
+	 <Text_ID>TEXT_SFX_EFC_SELECT_1</Text_ID>
+	 <Max_Instances>1</Max_Instances>
+	 <Min_Pitch>100</Min_Pitch>
+	 <Max_Pitch>100</Max_Pitch>
+	 <Overlap_Test> Unit_Complete </Overlap_Test>
+</SFXEvent>
+
+
+ 
+
+
+
+    <SFXEvent Name="GUI_Common_Dialog_Button_Hilight">
+        <Use_Preset>Preset_GUI</Use_Preset>
+        <Samples>Mouse_Over_Click1.wav</Samples>
+        <Min_Volume>40</Min_Volume>
+        <Max_Volume>40</Max_Volume>
+    </SFXEvent>
+
+    <SFXEvent Name="GUI_Common_Dialog_Button_Press">
+        <Use_Preset>Preset_GUI</Use_Preset>
+        <Samples>GUI_Org.wav</Samples>
+        <Min_Volume>70</Min_Volume>
+        <Max_Volume>70</Max_Volume>
+    </SFXEvent>
+
+    <SFXEvent Name="GUI_Common_Dialog_Listbox_Entry_Select">
+        <Use_Preset>Preset_GUI</Use_Preset>
+        <Samples>GUI_MO_3.wav</Samples>
+        <Min_Volume>70</Min_Volume>
+        <Max_Volume>70</Max_Volume>
+		  <Max_Instances> 3 </Max_Instances>
+    </SFXEvent>
+
+    <SFXEvent Name="GUI_Common_Chat_Recieve">
+        <Use_Preset>Preset_GUI</Use_Preset>
+        <Samples>GUI_Chat_Recieve_1.wav</Samples>
+        <Min_Volume>70</Min_Volume>
+        <Max_Volume>70</Max_Volume>
+    </SFXEvent>
+
+    <SFXEvent Name="GUI_Common_Chat_Send">
+        <Use_Preset>Preset_GUI</Use_Preset>
+        <Samples>GUI_Chat_Send_2.wav</Samples>
+        <Min_Volume>70</Min_Volume>
+        <Max_Volume>70</Max_Volume>
+    </SFXEvent>
+
+
+
+
+
+
+             
+
+
+
+     <SFXEvent Name="Button_Press">  <!-- Used by Story Arcs -->
+        <Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>DS_Button_Press1.wav</Samples>
+            <Min_Volume>55</Min_Volume>
+            <Max_Volume>55</Max_Volume>
+    </SFXEvent>
+
+
+
+
+
+
+	<SFXEvent Name="GUI_Death_Star_Button_Press">  
+		<Use_Preset>Preset_GUI</Use_Preset>
+		<Samples>DS_Button_Press1.wav</Samples>
+		<Min_Volume>55</Min_Volume>
+		<Max_Volume>55</Max_Volume>
+	</SFXEvent>
+	
+	<SFXEvent Name="GUI_Death_Star_Activate">  
+		<Use_Preset>Preset_GUI</Use_Preset>
+		<Samples>GUI_Death_Star_Sequence_1.wav</Samples>
+		<Min_Volume>100</Min_Volume>
+		<Max_Volume>100</Max_Volume>
+		<Min_Predelay> 2000 </Min_Predelay>	<!-- The Millisecond-based predelay gives the ack voice a chance to play, first -->
+		<Max_Predelay> 2000 </Max_Predelay> 
+	</SFXEvent>
+	
+	<!-- NOTE: This is now called from tactical space when the Death Star superweapon obliterates a planet -->
+	<SFXEvent Name="Planet_Death_SFX">  		
+		<Samples>EXP_Planet.wav</Samples>        
+		<Min_Volume>100</Min_Volume>
+		<Max_Volume>100</Max_Volume>
+	</SFXEvent>
+
+
+
+
+	<SFXEvent Name="GUI_Toggle_Generic">
+		<Use_Preset>Preset_GUI</Use_Preset>
+		<Samples>GUI_Button_Press_2.wav</Samples>
+		<Min_Volume>100</Min_Volume>
+		<Max_Volume>100</Max_Volume>
+	</SFXEvent>
+
+
+	<SFXEvent Name="GUI_Toggle_Shields_On">
+		<Use_Preset>Preset_GUI</Use_Preset>
+		<Samples>GUI_Shields_Up_1.wav</Samples>
+		<Min_Volume>100</Min_Volume>
+		<Max_Volume>100</Max_Volume>
+	</SFXEvent>
+
+	<SFXEvent Name="GUI_Toggle_Shields_Off">
+		<Use_Preset>Preset_GUI</Use_Preset>
+		<Samples>GUI_Shields_Down_1.wav</Samples>
+		<Min_Volume>100</Min_Volume>
+		<Max_Volume>100</Max_Volume>
+	</SFXEvent>
+	
+
+
+	<SFXEvent Name="GUI_Toggle_Grav_On">
+		<Use_Preset>Preset_GUI</Use_Preset>
+		<Samples>GUI_Toggle_4.wav</Samples>
+		<Min_Volume>80</Min_Volume>
+		<Max_Volume>80</Max_Volume>
+	</SFXEvent>
+
+	<SFXEvent Name="GUI_Toggle_Grav_Off">
+		<Use_Preset>Preset_GUI</Use_Preset>
+		<Samples>GUI_Toggle_12.wav</Samples>
+		<Min_Volume>100</Min_Volume>
+		<Max_Volume>100</Max_Volume>
+	</SFXEvent>
+
+
+	<SFXEvent Name="GUI_Toggle_Hunt_On">
+		<Use_Preset>Preset_GUI</Use_Preset>
+		<Samples>GUI_Toggle_13.wav</Samples>
+		<Min_Volume>50</Min_Volume>
+		<Max_Volume>50</Max_Volume>
+	</SFXEvent>
+
+	<SFXEvent Name="GUI_Toggle_Hunt_Off">
+		<Use_Preset>Preset_GUI</Use_Preset>
+		<Samples>GUI_Toggle_14.wav</Samples>
+		<Min_Volume>50</Min_Volume>
+		<Max_Volume>50</Max_Volume>
+	</SFXEvent>
+
+
+	<SFXEvent Name="GUI_Toggle_Lure_On">
+		<Use_Preset>Preset_GUI</Use_Preset>
+		<Samples>GUI_Toggle_15.wav</Samples>
+		<Min_Volume>100</Min_Volume>
+		<Max_Volume>100</Max_Volume>
+	</SFXEvent>
+
+	<SFXEvent Name="GUI_Toggle_Lure_Off">
+		<Use_Preset>Preset_GUI</Use_Preset>
+		<Samples>GUI_Toggle_16.wav</Samples>
+		<Min_Volume>100</Min_Volume>
+		<Max_Volume>100</Max_Volume>
+	</SFXEvent>
+
+
+	<SFXEvent Name="GUI_Toggle_Rocket_Attack_On">
+		<Use_Preset>Preset_GUI</Use_Preset>
+		<Samples>GUI_Toggle_8.wav</Samples>
+		<Min_Volume>100</Min_Volume>
+		<Max_Volume>100</Max_Volume>
+	</SFXEvent>
+
+	<SFXEvent Name="GUI_Toggle_Rocket_Attack_Off">
+		<Use_Preset>Preset_GUI</Use_Preset>
+		<Samples>GUI_Toggle_8.wav</Samples>
+		<Min_Volume>100</Min_Volume>
+		<Max_Volume>100</Max_Volume>
+	</SFXEvent>
+
+
+	<SFXEvent Name="GUI_Toggle_Harass_On">
+		<Use_Preset>Preset_GUI</Use_Preset>
+		<Samples>GUI_Toggle_3.wav</Samples>
+		<Min_Volume>100</Min_Volume>
+		<Max_Volume>100</Max_Volume>
+	</SFXEvent>
+
+	<SFXEvent Name="GUI_Toggle_Harass_Off">
+		<Use_Preset>Preset_GUI</Use_Preset>
+		<Samples>GUI_Toggle_3.wav</Samples>
+		<Min_Volume>100</Min_Volume>
+		<Max_Volume>100</Max_Volume>
+	</SFXEvent>
+
+
+	<SFXEvent Name="GUI_Toggle_Scout_On">
+		<Use_Preset>Preset_GUI</Use_Preset>
+		<Samples>GUI_Toggle_13.wav</Samples>
+		<Min_Volume>40</Min_Volume>
+		<Max_Volume>40</Max_Volume>
+	</SFXEvent>
+
+	<SFXEvent Name="GUI_Toggle_Scout_Off">
+		<Use_Preset>Preset_GUI</Use_Preset>
+		<Samples>GUI_Toggle_14.wav</Samples>
+		<Min_Volume>40</Min_Volume>
+		<Max_Volume>40</Max_Volume>
+	</SFXEvent>
+
+
+	<SFXEvent Name="GUI_Toggle_Deploy_On">
+		<Use_Preset>Preset_GUI</Use_Preset>
+		<Samples>GUI_Toggle_2.wav</Samples>
+		<Min_Volume>100</Min_Volume>
+		<Max_Volume>100</Max_Volume>
+	</SFXEvent>
+
+	<SFXEvent Name="GUI_Toggle_Deploy_Off">
+		<Use_Preset>Preset_GUI</Use_Preset>
+		<Samples>GUI_Toggle_2.wav</Samples>
+		<Min_Volume>100</Min_Volume>
+		<Max_Volume>100</Max_Volume>
+	</SFXEvent>
+
+
+	<SFXEvent Name="GUI_Toggle_Turbo_On">
+		<Use_Preset>Preset_GUI</Use_Preset>
+		<Samples>GUI_Toggle_17.wav</Samples>
+		<Min_Volume>100</Min_Volume>
+		<Max_Volume>100</Max_Volume>
+	</SFXEvent>
+
+	<SFXEvent Name="GUI_Toggle_Turbo_Off">
+		<Use_Preset>Preset_GUI</Use_Preset>
+		<Samples>GUI_Toggle_18.wav</Samples>
+		<Min_Volume>80</Min_Volume>
+		<Max_Volume>80</Max_Volume>
+	</SFXEvent>
+
+
+	<SFXEvent Name="GUI_Toggle_Weaken_On">
+		<Use_Preset>Preset_GUI</Use_Preset>
+		<Samples>GUI_Slider.wav</Samples>
+		<Min_Volume>100</Min_Volume>
+		<Max_Volume>100</Max_Volume>
+	</SFXEvent>
+
+
+
+
+
+
+
+
+
+
+
+	<SFXEvent Name="GUI_Structure_Sold">
+			<Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>Buildable_Structure_Sold_1.wav</Samples>
+			<Min_Volume>80</Min_Volume>
+			<Max_Volume>80</Max_Volume>
+	</SFXEvent>
+
+	<SFXEvent Name="GUI_Credits">
+			<Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_Credits_1.wav</Samples>
+			<Min_Volume>100</Min_Volume>
+			<Max_Volume>100</Max_Volume>
+	</SFXEvent>
+
+
+	<SFXEvent Name="GUI_Enemy_Fleet_Alarm">
+			<Use_Preset>Preset_GUI</Use_Preset>
+			<Samples>GUI_Enemy_Fleet_Alarm_1.wav</Samples>
+			<Min_Volume>100</Min_Volume>
+			<Max_Volume>100</Max_Volume>
+	</SFXEvent>
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+</SFXEvents>
+

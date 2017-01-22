@@ -1,0 +1,3514 @@
+<?xml version="1.0"?>
+
+<SFXEvents>
+
+	<!--    START NEW REBEL HUD LINES      -->  
+
+	<SFXEvent Name="RHD_Bombard_Available">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_RHD7001_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_RHD_BOMBARDMENT_1</Text_ID>
+		<Overlap_Test> Unit_RHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="RHD_Bombard_Ally_Available">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_RHD7002_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_RHD_BOMBARDMENT_2</Text_ID>
+		<Overlap_Test> Unit_RHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="RHD_Bombard_Enemy_Available">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_RHD7003_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_RHD_BOMBARDMENT_3</Text_ID>
+		<Overlap_Test> Unit_RHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="RHD_Bombard_Canceled">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_RHD7004_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_RHD_BOMBARDMENT_4</Text_ID>
+		<Overlap_Test> Unit_RHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="RHD_Bombard_Select_Target">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_RHD7005_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_RHD_BOMBARDMENT_5</Text_ID>
+		<Overlap_Test> Unit_RHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="RHD_Bombard_Incoming">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_RHD7006_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_RHD_BOMBARDMENT_6</Text_ID>
+		<Overlap_Test> Unit_RHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="RHD_Removing_Corruption">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_RHD7101_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_RHD_CORRUPTION_1</Text_ID>
+		<Overlap_Test> Unit_RHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="RHD_Corruption_Removed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_RHD7102_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_RHD_CORRUPTION_2</Text_ID>
+		<Overlap_Test> Unit_RHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="RHD_Enemy_Fleet_Approaching">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_RHD7601_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_RHD_ENEMY_FLEET_APPROACH_1</Text_ID>
+		<Overlap_Test> Unit_RHD </Overlap_Test>
+	</SFXEvent>
+
+	<!--    END NEW REBEL HUD LINES      --> 
+
+
+
+
+
+
+
+
+
+	<!--    START NEW EMPIRE HUD LINES      --> 
+
+	<SFXEvent Name="EHD_Bombard_Available">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_EHD7001_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_EHD_BOMBARDMENT_1</Text_ID>
+		<Overlap_Test> Unit_EHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="EHD_Bombard_Ally_Available">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_EHD7002_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_EHD_BOMBARDMENT_2</Text_ID>
+		<Overlap_Test> Unit_EHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="EHD_Bombard_Enemy_Available">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_EHD7003_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_EHD_BOMBARDMENT_3</Text_ID>
+		<Overlap_Test> Unit_EHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="EHD_Bombard_Canceled">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_EHD7004_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_EHD_BOMBARDMENT_4</Text_ID>
+		<Overlap_Test> Unit_EHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="EHD_Bombard_Select_Target">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_EHD7005_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_EHD_BOMBARDMENT_5</Text_ID>
+		<Overlap_Test> Unit_EHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="EHD_Bombard_Incoming">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_EHD7006_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_EHD_BOMBARDMENT_6</Text_ID>
+		<Overlap_Test> Unit_EHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="EHD_Removing_Corruption">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_EHD7101_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_EHD_CORRUPTION_1</Text_ID>
+		<Overlap_Test> Unit_EHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="EHD_Corruption_Removed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_EHD7102_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_EHD_CORRUPTION_2</Text_ID>
+		<Overlap_Test> Unit_EHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="EHD_Death_Star_2_Activate">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_EHD4727_ENG.wav </Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_EHD_DEATH_STAR_ACTIVATE </Text_ID>
+		<Overlap_Test> Unit_EHD </Overlap_Test>
+  </SFXEvent>
+
+	<SFXEvent Name="EHD_Enemy_Fleet_Approaching">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_EHD7601_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_EHD_ENEMY_FLEET_APPROACH_1</Text_ID>
+		<Overlap_Test> Unit_EHD </Overlap_Test>
+	</SFXEvent>
+
+	<!--    END NEW EMPIRE HUD LINES      --> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!--    START UNDERWORLD HUD LINES      --> 
+
+	<SFXEvent Name="UHD_Space_Station_Under_Attack">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0101_ENG.wav I000_UHD0102_ENG.wav I000_UHD0103_ENG.wav </Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_SPACE_STATION_UNDER_ATTACK_1, TEXT_SFX_UHD_SPACE_STATION_UNDER_ATTACK_2, TEXT_SFX_UHD_SPACE_STATION_UNDER_ATTACK_3 </Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Base_Under_Attack">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0201_ENG.wav I000_UHD0202_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_BASE_UNDER_ATTACK_1, TEXT_SFX_UHD_BASE_UNDER_ATTACK_2</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+
+	<SFXEvent Name="UHD_Reinforcements_Available">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0311_ENG.wav I000_UHD0312_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_REINFORCEMENTS_AVAILABLE_1, TEXT_SFX_UHD_REINFORCEMENTS_AVAILABLE_2</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Unit_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0401_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_UNIT_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+
+
+	<SFXEvent Name="UHD_Hutt_Palace_Under_Attack">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0502_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_HUTT_PALACE_UNDER_ATTACK_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Hutt_Palace_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0503_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_HUTT_PALACE_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Ion_Cannon_Under_Attack">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0504_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_ION_CANNON_UNDER_ATTACK_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Ion_Cannon_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0505_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_ION_CANNON_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Mining_Under_Attack">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0506_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_MINING_UNDER_ATTACK_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Mining_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0507_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_MINING_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>
+
+	<SFXEvent Name="UHD_Cantina_Under_Attack">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0508_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_CANTINA_UNDER_ATTACK_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Cantina_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0509_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_CANTINA_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+
+	<SFXEvent Name="UHD_Shield_Generator_Under_Attack">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0512_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_SHIELD_GENERATOR_UNDER_ATTACK_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Shield_Generator_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0513_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_SHIELD_GENERATOR_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Jamming_Station_Under_Attack">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0514_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_JAMMING_STATION_UNDER_ATTACK_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Jamming_Station_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0515_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_JAMMING_STATION_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Arena_Under_Attack">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0516_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_ARENA_UNDER_ATTACK_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Arena_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0517_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_ARENA_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Infiltrator_Facility_Under_Attack">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0520_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_INFILTRATOR_FACILITY_UNDER_ATTACK_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Infiltrator_Facility_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0521_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_INFILTRATOR_FACILITY_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Scanner_Under_Attack">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0524_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_SCANNER_UNDER_ATTACK_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Scanner_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0525_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_SCANNER_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+
+	<SFXEvent Name="UHD_Turbo_Tower_Under_Attack">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0528_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_TURBO_TOWER_UNDER_ATTACK_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Turbo_Tower_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0529_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_TURBO_TOWER_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Power_Generator_Under_Attack">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0530_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_POWER_GENERATOR_UNDER_ATTACK_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Power_Generator_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0531_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_POWER_GENERATOR_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+
+	<SFXEvent Name="UHD_Comm_Array_Under_Attack">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD5201_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_COMM_ARRAY_UNDER_ATTACK_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Comm_Array_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD5202_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_COMM_ARRAY_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Research_Under_Attack">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD5203_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_RESEARCH_UNDER_ATTACK_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Research_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD5204_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_RESEARCH_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+
+	<SFXEvent Name="UHD_Command_Center_Under_Attack">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD5207_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_COMMAND_CENTER_UNDER_ATTACK_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Command_Center_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD5208_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_COMMAND_CENTER_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+
+	<SFXEvent Name="UHD_Light_Vehicle_Factory_Under_Attack">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD5209_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_LIGHT_VEHICLE_FACTORY_UNDER_ATTACK_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Light_Vehicle_Factory_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD5210_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_LIGHT_VEHICLE_FACTORY_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Heavy_Vehicle_Factory_Under_Attack">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD5211_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_HEAVY_VEHICLE_FACTORY_UNDER_ATTACK_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Heavy_Vehicle_Factory_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD5212_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_HEAVY_VEHICLE_FACTORY_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+
+	<SFXEvent Name="UHD_Academy_Under_Attack">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD5215_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_ACADEMY_UNDER_ATTACK_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Academy_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD5216_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_ACADEMY_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+
+
+	<SFXEvent Name="UHD_Barracks_Under_Attack">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD5217_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_BARRACKS_UNDER_ATTACK_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+
+	<SFXEvent Name="UHD_Barracks_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD5218_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_BARRACKS_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+
+
+
+	<SFXEvent Name="UHD_Base_Shields_Up">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0536_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_BASE_SHIELDS_UP_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Enemy_Base_Shields_Up">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD5302_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_ENEMY_BASE_SHIELDS_UP_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+
+
+
+	 <SFXEvent Name="UHD_Repair_Station_Sold">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		  <Samples> I000_UHD4801_ENG.wav</Samples>
+		  <Localize> Yes </Localize>
+		  <Text_ID> TEXT_SFX_UHD_REPAIR_STATION_SOLD_1</Text_ID>
+		  <Overlap_Test> Unit_UHD </Overlap_Test>
+	  </SFXEvent>
+
+	 <SFXEvent Name="UHD_Bacta_Tank_Sold">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		  <Samples> I000_UHD4802_ENG.wav</Samples>
+		  <Localize> Yes </Localize>
+		  <Text_ID> TEXT_SFX_UHD_BACTA_TANK_SOLD_1</Text_ID>
+		  <Overlap_Test> Unit_UHD </Overlap_Test>
+	  </SFXEvent>      
+
+	 <SFXEvent Name="UHD_Turret_Sold">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		  <Samples> I000_UHD4803_ENG.wav</Samples>
+		  <Localize> Yes </Localize>
+		  <Text_ID> TEXT_SFX_UHD_TURRET_SOLD_1</Text_ID>
+		  <Overlap_Test> Unit_UHD </Overlap_Test>
+	  </SFXEvent>
+
+	 <SFXEvent Name="UHD_Sensor_Node_Sold">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		  <Samples> I000_UHD4804_ENG.wav</Samples>
+		  <Localize> Yes </Localize>
+		  <Text_ID> TEXT_SFX_UHD_SENSOR_NODE_SOLD_1</Text_ID>
+		  <Overlap_Test> Unit_UHD </Overlap_Test>
+	  </SFXEvent>
+
+
+
+
+
+	 <SFXEvent Name="UHD_Battle_End">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD0703_ENG.wav  I000_UHD0705_ENG.wav</Samples>
+		 <Play_Sequentially> Yes </Play_Sequentially>
+		 <Localize> Yes </Localize>
+		 <Text_ID>  TEXT_SFX_UHD_BATTLE_END_3, TEXT_SFX_UHD_BATTLE_END_5</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Retreat_Started_Space">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD0801_ENG.wav I000_UHD0802_ENG.wav I000_UHD0803_ENG.wav I000_UHD0815_ENG.wav</Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_RETREAT_SPACE_1, TEXT_SFX_UHD_RETREAT_SPACE_2, TEXT_SFX_UHD_RETREAT_SPACE_3, TEXT_SFX_UHD_RETREAT_SPACE_4</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+
+	 <SFXEvent Name="UHD_Retreat_Started_Land">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD0813_ENG.wav I000_UHD0814_ENG.wav I000_UHD0816_ENG.wav</Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_RETREAT_LAND_1, TEXT_SFX_UHD_RETREAT_LAND_2, TEXT_SFX_UHD_RETREAT_LAND_3</Text_ID>
+		  <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+ 
+	 <SFXEvent Name="UHD_Retreat_Cancelled">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD0805_ENG.wav</Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_RETREAT_CANCELED_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+
+
+
+	 <SFXEvent Name="UHD_Retreat_Interdictor">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD1101_ENG.wav</Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_RETREAT_INTERDICTOR_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Retreat_Not_Allowed">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD1203_ENG.wav</Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_RETREAT_TARKIN_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+
+	 <SFXEvent Name="UHD_Construction_Complete">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD1302_ENG.wav</Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_CONSTRUCTION_COMPLETE_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+
+	 <SFXEvent Name="UHD_Planet_Gained">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD1501_ENG.wav I000_UHD1502_ENG.wav I000_UHD1503_ENG.wav</Samples>
+		 <Localize> Yes </Localize>
+		 	<Min_Volume>85</Min_Volume>
+			<Max_Volume>85</Max_Volume>
+		 <Text_ID> TEXT_SFX_UHD_PLANET_GAINED_1, TEXT_SFX_UHD_PLANET_GAINED_2, TEXT_SFX_UHD_PLANET_GAINED_3</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Planet_Lost">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD1504_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Min_Volume>85</Min_Volume>
+			<Max_Volume>85</Max_Volume>
+		 <Text_ID> TEXT_SFX_UHD_PLANET_LOST_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Upgrade_Progress">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD1601_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_UPGRADE_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Upgrade_Complete">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD1602_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_UPGRADE_2</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+
+
+	 <SFXEvent Name="UHD_Enemy_Fleet">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD1705_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_ENEMY_FLEET_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+
+	 <SFXEvent Name="UHD_Bounty_Hunter_Lost">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD2105_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 	<Min_Volume>85</Min_Volume>
+			<Max_Volume>85</Max_Volume>
+		 <Text_ID> TEXT_SFX_UHD_BOUNTY_HUNTER_LOST_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+
+	 <SFXEvent Name="UHD_Smuggler_Lost">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD2106_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 	<Min_Volume>85</Min_Volume>
+			<Max_Volume>85</Max_Volume>
+		 <Text_ID> TEXT_SFX_UHD_SMUGGLER_LOST_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+ 
+	 <SFXEvent Name="UHD_Mon_Mothma_Defeated">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD2201_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_MON_MOTHMA_DEFEATED_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Emperor_Defeated">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD2302_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_EMPEROR_DEFEATED_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Ion_Cannon_Available">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD2401_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_ION_CANNON_AVAILABLE_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Hypervelocity_Available">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD2402_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_HYPERVELOCITY_AVAILABLE_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Turbo_Tower_Available">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD2404_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_TURBO_TOWER_AVAILABLE_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+
+	 <SFXEvent Name="UHD_Bombing_Run_Available">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD2501_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_BOMBING_RUN_AVAILABLE_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+
+	 <SFXEvent Name="UHD_Bombing_Run_Canceled">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD2505_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_BOMBING_RUN_CANCELED_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+
+
+	 <SFXEvent Name="UHD_Tech_Upgrade_Progress">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD5504_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_TECH_PROGRESS_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Tech_Upgrade_Canceled">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD5505_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_TECH_CANCELED_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Tech_Upgrade_Complete">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD5506_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_TECH_COMPLETE_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+
+
+
+
+	 <SFXEvent Name="UHD_Death_Star_30_Seconds">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3835_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_DEATH_STAR_30_SECONDS</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Death_Star_15_Seconds">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3836_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_DEATH_STAR_15_SECONDS</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Death_Star_5_Seconds">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3837_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_DEATH_STAR_5_SECONDS</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+
+	 <SFXEvent Name="UHD_Death_Star_Cleared">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3840_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_DEATH_STAR_CLEARED</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+ 
+
+
+
+
+
+
+
+
+
+	 <SFXEvent Name="UHD_Turret_Build">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4201_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_TURRET_BUILD_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Bacta_Tank_Build">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4202_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_BACTA_TANK_BUILD_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>       
+
+	 <SFXEvent Name="UHD_Repair_Station_Build">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4203_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_REPAIR_STATION_BUILD_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Sensor_Node_Build">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4204_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_SENSOR_NODE_BUILD_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+
+	 <SFXEvent Name="UHD_Shield_Generator_Build">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4206_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_SHIELD_GENERATOR_BUILD_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Repairing">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4207_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_REPAIRING_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+
+	 <SFXEvent Name="UHD_Mission_Updated">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4301_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		   <Min_Volume>85</Min_Volume>
+			<Max_Volume>85</Max_Volume>
+		 <Text_ID> TEXT_SFX_UHD_MISSION_UPDATED_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>       
+
+
+
+
+
+	<SFXEvent Name="UHD_Choose_Reinforcements">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	<Samples> I000_UHD4401_ENG.wav </Samples>
+	<Localize> Yes </Localize>
+	  <Text_ID> TEXT_SFX_UHD_CHOOSE_REINFORCEMENTS </Text_ID>
+	  <Overlap_Test> Unit_UHD </Overlap_Test>
+ </SFXEvent>
+
+
+	<SFXEvent Name="UHD_Reinforcements_En_Route">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	<Samples> I000_UHD4601_ENG.wav </Samples>
+	<Localize> Yes </Localize>
+	  <Text_ID> TEXT_SFX_UHD_REINFORCEMENTS_EN_ROUTE </Text_ID>
+	  <Overlap_Test> Unit_UHD </Overlap_Test>
+ </SFXEvent>
+
+	<SFXEvent Name="UHD_Reinforcements_Cancelled">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples> I000_UHD5711_ENG.wav </Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_REINFORCEMENTS_CANCELED </Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>
+
+
+
+
+
+
+	<SFXEvent Name="UHD_Build_Structure">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples> I000_UHD4703_ENG.wav I000_UHD4716_ENG.wav I000_UHD4718_ENG.wav </Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_BUILD_STRUCTURE_1, TEXT_SFX_UHD_BUILD_STRUCTURE_2, TEXT_SFX_UHD_BUILD_STRUCTURE_4 </Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>
+
+	<SFXEvent Name="UHD_Build_Vehicle">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples> I000_UHD4707_ENG.wav I000_UHD4714_ENG.wav I000_UHD4715_ENG.wav</Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_BUILD_VEHICLE_1, TEXT_SFX_UHD_BUILD_VEHICLE_2, TEXT_SFX_UHD_BUILD_VEHICLE_3 </Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>
+  
+  <SFXEvent Name="UHD_Build_Droids">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples> I000_UHD4714_ENG.wav I000_UHD4707_ENG.wav</Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID>TEXT_SFX_UHD_BUILD_VEHICLE_2, TEXT_SFX_UHD_BUILD_VEHICLE_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>
+
+	<SFXEvent Name="UHD_Build_Troops">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples> I000_UHD4705_ENG.wav I000_UHD4706_ENG.wav I000_UHD4708_ENG.wav I000_UHD4709_ENG.wav I000_UHD4710_ENG.wav I000_UHD4711_ENG.wav I000_UHD4712_ENG.wav</Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_BUILD_TROOPS_2, TEXT_SFX_UHD_BUILD_TROOPS_3, TEXT_SFX_UHD_BUILD_TROOPS_4, TEXT_SFX_UHD_BUILD_TROOPS_5, TEXT_SFX_UHD_BUILD_TROOPS_6, TEXT_SFX_UHD_BUILD_TROOPS_7, TEXT_SFX_UHD_BUILD_TROOPS_8</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>
+
+	<SFXEvent Name="UHD_Build_Commander">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples>  I000_UHD4704_ENG.wav</Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_BUILD_TROOPS_2 </Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>
+
+
+	<SFXEvent Name="UHD_Build_Bounty_Hunter">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples> I000_UHD4720_ENG.wav </Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_BUILD_BOUNTY_HUNTER_1 </Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>
+
+	<SFXEvent Name="UHD_Build_Smuggler">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples> I000_UHD4719_ENG.wav </Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_BUILD_SMUGGLER_1 </Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>
+
+
+	<SFXEvent Name="UHD_New_Construction">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples> I000_UHD4723_ENG.wav </Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_NEW_OPTIONS_1 </Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>
+
+	<SFXEvent Name="UHD_New_Options">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples> I000_UHD4724_ENG.wav</Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_NEW_OPTIONS_2 </Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>
+
+	<SFXEvent Name="UHD_Build_Unit">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples>  I000_UHD4707_ENG.wav</Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_BUILD_VEHICLE_2 </Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>
+
+
+
+
+
+
+	<SFXEvent Name="UHD_Landing_Zone_Captured">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples> I000_UHD4905_ENG.wav </Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_LANDING_ZONE_CAPTURED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>
+
+	<SFXEvent Name="UHD_Landing_Zone_Lost">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples> I000_UHD4906_ENG.wav</Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_LANDING_ZONE_LOST_1 </Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>
+
+	<SFXEvent Name="UHD_Last_Landing_Zone_Lost">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples> I000_UHD4907_ENG.wav </Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_LAST_LANDING_ZONE_LOST_1 </Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>
+
+	<SFXEvent Name="UHD_Build_Pad_Captured">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples> I000_UHD4908_ENG.wav</Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_BUILD_PAD_CAPTURED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>
+
+	<SFXEvent Name="UHD_Build_Pad_Lost">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples> I000_UHD4909_ENG.wav </Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_BUILD_PAD_LOST_1 </Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>
+
+	<SFXEvent Name="UHD_Base_Shield_Offline">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples> I000_UHD5001_ENG.wav </Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_BASE_SHIELD_OFFLINE_1 </Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>
+
+	<SFXEvent Name="UHD_Enemy_Base_Shield_Offline">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples> I000_UHD5002_ENG.wav </Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_ENEMY_BASE_SHIELD_OFFLINE_1 </Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>
+
+	<SFXEvent Name="UHD_Base_Shield_Penetrated">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples> I000_UHD5003_ENG.wav </Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_BASE_SHIELD_PENETRATED_1 </Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>
+
+	<SFXEvent Name="UHD_Enemy_Base_Shield_Penetrated">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples> I000_UHD5004_ENG.wav </Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_ENEMY_BASE_SHIELD_PENETRATED_1 </Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>
+
+	<SFXEvent Name="UHD_Defeated">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples> I000_UHD5101_ENG.wav </Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_DEFEATED_1 </Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>
+
+	<SFXEvent Name="UHD_Battle_Pending">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples> I000_UHD5401_ENG.wav </Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_BATTLE_PENDING_1 </Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>
+
+	<SFXEvent Name="UHD_Researching">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples> I000_UHD5501_ENG.wav </Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_RESEARCHING_1 </Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>
+
+
+	<SFXEvent Name="UHD_Research_Complete">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	  <Samples> I000_UHD5503_ENG.wav </Samples>
+	  <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_RESEARCH_COMPLETE_1 </Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Control_Point_60_Seconds">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	  <Samples> I000_UHD5610_ENG.wav </Samples>
+	  <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_CONTROL_POINT_1_MIN </Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+
+	<SFXEvent Name="UHD_Control_Point_30_Seconds">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	  <Samples> I000_UHD5611_ENG.wav </Samples>
+	  <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_CONTROL_POINT_30_SEC </Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Control_Point_15_Seconds">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	  <Samples> I000_UHD5612_ENG.wav </Samples>
+	  <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_CONTROL_POINT_15_SEC </Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Control_Point_5_Seconds">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	  <Samples> I000_UHD5613_ENG.wav </Samples>
+	  <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_CONTROL_POINT_5_SEC </Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Enemy_Control_Point_60_Seconds">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD5623_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_ENEMY_CONTROL_POINT_1_MIN </Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+	  </SFXEvent>
+
+
+	<SFXEvent Name="UHD_Enemy_Control_Point_30_Seconds">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD5624_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_ENEMY_CONTROL_POINT_30_SEC </Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+	  </SFXEvent>
+
+	  <SFXEvent Name="UHD_Enemy_Control_Point_15_Seconds">
+		  <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD5625_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_ENEMY_CONTROL_POINT_15_SEC </Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+	  </SFXEvent>
+
+	  <SFXEvent Name="UHD_Enemy_Control_Point_5_Seconds">
+		  <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD5626_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_ENEMY_CONTROL_POINT_5_SEC </Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+	  </SFXEvent>
+
+	  <SFXEvent Name="UHD_Request_Assistance">
+		  <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD5627_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_REQUEST_ASSIST_1 </Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+	  </SFXEvent>
+
+	  <SFXEvent Name="UHD_Canceled">
+		  <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD5701_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_CANCELED_1 </Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+	  </SFXEvent>
+
+	  <SFXEvent Name="UHD_Unit_Canceled">
+		  <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD5702_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_UNIT_CANCELED_1 </Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+	  </SFXEvent>
+
+	  <SFXEvent Name="UHD_Vehicle_Canceled">
+		  <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD5703_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_VEHICLE_CANCELED_1 </Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+	  </SFXEvent>
+
+	  <SFXEvent Name="UHD_Building_Canceled">
+		  <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD5704_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_BUILDING_CANCELED_1 </Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+	  </SFXEvent>
+
+	  <SFXEvent Name="UHD_Upgrade_Canceled">
+		  <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD5705_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_UPGRADE_CANCELED_1 </Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+	  </SFXEvent>
+
+	<SFXEvent Name="UHD_Research_Canceled">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples> I000_UHD5706_ENG.wav </Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_RESEARCH_CANCELED_1 </Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>
+
+
+	<SFXEvent Name="UHD_Recruitment_Canceled">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples> I000_UHD5707_ENG.wav </Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_RECRUITMENT_CANCELED_1 </Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>
+
+
+	  <SFXEvent Name="UHD_Training_Canceled">
+		  <Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples> I000_UHD5708_ENG.wav </Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_TRAINING_CANCELED_1 </Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>
+
+	  <SFXEvent Name="UHD_Request_Canceled">
+		  <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD5709_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_REQUEST_CANCELED_1 </Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+	  </SFXEvent>
+
+	  <SFXEvent Name="UHD_Assistance_Canceled">
+		  <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD5710_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_ASSIST_CANCELED_1 </Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+	  </SFXEvent>
+
+
+
+	  <SFXEvent Name="UHD_Capture_Mining">
+		  <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD5801_ENG.wav I000_UHD5805_ENG.wav</Samples>
+		 <Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_CAPTURE_MINING_1, TEXT_SFX_UHD_CAPTURE_MINING_2</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+	  </SFXEvent>
+
+	  <SFXEvent Name="UHD_Capture_HEAVY_VEHICLE">
+		  <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD5802_ENG.wav I000_UHD5806_ENG.wav</Samples>
+		 <Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_CAPTURE_HEAVY_VEHICLE_1, TEXT_SFX_UHD_CAPTURE_HEAVY_VEHICLE_2</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+	  </SFXEvent>
+
+	  <SFXEvent Name="UHD_Capture_SENSOR">
+		  <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD5803_ENG.wav I000_UHD5807_ENG.wav</Samples>
+		 <Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_CAPTURE_SENSOR_1, TEXT_SFX_UHD_CAPTURE_SENSOR_2</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+	  </SFXEvent>
+
+	  <SFXEvent Name="UHD_Capture_TURBO">
+		  <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD5804_ENG.wav I000_UHD5808_ENG.wav</Samples>
+		 <Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_CAPTURE_TURBO_1, TEXT_SFX_UHD_CAPTURE_TURBO_2</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+	  </SFXEvent>
+
+	  <SFXEvent Name="UHD_Capture_MERCENARIES">
+		  <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD5811_ENG.wav</Samples>
+		 <Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_CAPTURE_MERCENARIES_3 </Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+	  </SFXEvent>
+
+
+	  <SFXEvent Name="UHD_LOST_Mining">
+		  <Use_Preset> Preset_HUD </Use_Preset>
+		  <Samples> I000_UHD5814_ENG.wav </Samples>
+		  <Localize> Yes </Localize>
+			 <Text_ID> TEXT_SFX_UHD_LOST_MINING_1</Text_ID>
+			 <Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_LOST_HEAVY_VEHICLE">
+			<Use_Preset> Preset_HUD </Use_Preset>
+		  <Samples> I000_UHD5815_ENG.wav</Samples>
+		  <Localize> Yes </Localize>
+			 <Text_ID> TEXT_SFX_UHD_LOST_HEAVY_VEHICLE_1</Text_ID>
+			 <Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_LOST_SENSOR">
+			<Use_Preset> Preset_HUD </Use_Preset>
+		  <Samples> I000_UHD5816_ENG.wav</Samples>
+		  <Localize> Yes </Localize>
+			 <Text_ID> TEXT_SFX_UHD_LOST_SENSOR_1</Text_ID>
+			 <Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_LOST_TURBO">
+			<Use_Preset> Preset_HUD </Use_Preset>
+		  <Samples> I000_UHD5817_ENG.wav </Samples>
+		  <Localize> Yes </Localize>
+			 <Text_ID> TEXT_SFX_UHD_LOST_TURBO_1</Text_ID>
+			 <Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		
+		<SFXEvent Name="UHD_SENSOR_ARRAY_UNDER_ATTACK">
+			<Use_Preset> Preset_HUD </Use_Preset>
+		  <Samples> I000_UHD5820_ENG.wav</Samples>
+		  <Localize> Yes </Localize>
+			 <Text_ID> TEXT_SFX_UHD_SENSOR_ARRAY_UNDER_ATTACK_1 </Text_ID>
+			 <Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+
+
+		<SFXEvent Name="UHD_SENSOR_ARRAY_DESTROYED">
+			<Use_Preset> Preset_HUD </Use_Preset>
+		  <Samples> I000_UHD5822_ENG.wav</Samples>
+		  <Localize> Yes </Localize>
+			 <Text_ID> TEXT_SFX_UHD_SENSOR_ARRAY_DESTROYED_1 </Text_ID>
+			 <Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>          
+
+		<SFXEvent Name="UHD_CREDIT_CAPACITY">
+			<Use_Preset> Preset_HUD </Use_Preset>
+		  <Samples> I000_UHD5901_ENG.wav</Samples>
+		  <Localize> Yes </Localize>
+			 <Text_ID> TEXT_SFX_UHD_CREDIT_CAPACITY_1 </Text_ID>
+			 <Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_SPACE_STATION_UPGRADED">
+			<Use_Preset> Preset_HUD </Use_Preset>
+		  <Samples> I000_UHD6001_ENG.wav</Samples>
+		  <Localize> Yes </Localize>
+			 <Text_ID> TEXT_SFX_UHD_SPACE_STATION_UPGRADED_1 </Text_ID>
+			 <Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_ENEMY_SPACE_STATION_UPGRADED">
+			<Use_Preset> Preset_HUD </Use_Preset>
+		  <Samples> I000_UHD6002_ENG.wav</Samples>
+		  <Localize> Yes </Localize>
+			 <Text_ID> TEXT_SFX_UHD_ENEMY_SPACE_STATION_UPGRADED_1 </Text_ID>
+			 <Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+
+		<SFXEvent Name="UHD_INVASION_COMMENCING">
+			<Use_Preset> Preset_HUD </Use_Preset>
+	  <Samples> I000_UHD6101_ENG.wav</Samples>
+	  <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_INVASION_COMMENCING_1 </Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+		<SFXEvent Name="UHD_System_Blockaded">
+			<Use_Preset> Preset_HUD </Use_Preset>
+	  <Samples> I000_UHD6201_ENG.wav I000_UHD6202_ENG.wav I000_UHD6203_ENG.wav</Samples>
+	  <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_BLOCKADED_1, TEXT_SFX_UHD_BLOCKADED_2, TEXT_SFX_UHD_BLOCKADED_3 </Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+		<SFXEvent Name="UHD_Ion_Cannon_Charging">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD6301_ENG.wav </Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_ION_CHARGING_1</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_Hypervelocity_Charging">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD6303_ENG.wav </Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_HYPER_CHARGING_1</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_Ion_Cannon_Firing">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD6302_ENG.wav </Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_ION_FIRING_2</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_Hypervelocity_Firing">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD6304_ENG.wav </Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_HYPER_FIRING_2</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_Reinforcement_Contested">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD6607_ENG.wav </Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_CONTROL_CONTESTED_1</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_Unit_Cap_Reached">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD6705_ENG.wav </Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_CAPACITY_4</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_Droidworks_Under_Attack">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD6901_ENG.wav </Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_DROIDWORKS_UNDER_ATTACK_1</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_Droidworks_Destroyed">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD6902_ENG.wav </Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_DROIDWORKS_DESTROYED_1</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+
+
+
+
+
+
+
+
+		<SFXEvent Name="UHD_Bombard_Available">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD7001_ENG.wav</Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_BOMBARDMENT_1</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_Bombard_Ally_Available">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD7002_ENG.wav</Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_BOMBARDMENT_2</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_Bombard_Enemy_Available">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD7003_ENG.wav</Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_BOMBARDMENT_3</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_Bombard_Canceled">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD7004_ENG.wav</Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_BOMBARDMENT_4</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_Bombard_Select_Target">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD7005_ENG.wav</Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_BOMBARDMENT_5</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_Bombard_Incoming">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD7006_ENG.wav</Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_BOMBARDMENT_6</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_Removing_Corruption">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD7101_ENG.wav</Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_CORRUPTION_1</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_Corruption_Removed">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD7102_ENG.wav</Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_CORRUPTION_2</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_Shield_Generator_Constructing">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD7501_ENG.wav</Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_MOBILE_SHIELD_1</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_Shield_Generator_Sold">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD7502_ENG.wav</Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_MOBILE_SHIELD_2</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_Cage_Constructing">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD7601_ENG.wav</Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_CAGE_1</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_Cage_Sold">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD7602_ENG.wav</Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_CAGE_2</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_Enemy_Fleet_Approaching">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD7701_ENG.wav</Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_ENEMY_FLEET_APPROACH_1</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+
+		<SFXEvent Name="UHD_GravGen_Under_Attack">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD8001_ENG.wav </Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_GRAVGEN_UNDER_ATTACK_1</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_GravGen_Destroyed">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD8001_ENG.wav </Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_GRAVGEN_DESTROYED_1</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_Palace_Under_Attack">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD8101_ENG.wav </Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_PALACE_UNDER_ATTACK_1</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_Palace_Destroyed">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD8101_ENG.wav </Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_PALACE_DESTROYED_1</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_Factory_Under_Attack">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD8201_ENG.wav </Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_FACTORY_UNDER_ATTACK_1</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_Factory_Destroyed">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD8202_ENG.wav </Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_FACTORY_DESTROYED_1</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_Merc_Barracks_Under_Attack">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD8301_ENG.wav </Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_MERC_BARRACKS_UNDER_ATTACK_1</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_Merc_Barracks_Destroyed">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD8302_ENG.wav </Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_MERC_BARRACKS_DESTROYED_1</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+		<SFXEvent Name="UHD_Palace_Upgrade">
+			<Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD8401_ENG.wav </Samples>
+			<Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_PALACE_UPGRADE_1</Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>
+
+ 	<!--    END UNDERWORLD HUD LINES      --> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--	<SFXEvent Name="UHD_Transport_Under_Attack">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0301_ENG.wav I000_UHD0302_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_TRANSPORT_UNDER_ATTACK_1, TEXT_SFX_UHD_TRANSPORT_UNDER_ATTACK_2</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Transport_En_Route">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0303_ENG.wav I000_UHD0306_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_TRANSPORT_EN_ROUTE_1, TEXT_SFX_UHD_TRANSPORT_EN_ROUTE_2</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Landing_Zone_Invalid">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0304_ENG.wav I000_UHD0307_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_LANDING_ZONE_INVALID_1, TEXT_SFX_UHD_LANDING_ZONE_INVALID_2</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Transport_Landed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0305_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_TRANSPORT_LANDED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Landing_Zone_Invalid_Shields">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0308_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_LANDING_ZONE_INVALID_SHIELDS_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Enemy_Transport_Lost">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0309_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_ENEMY_TRANSPORT_LOST_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Transport_Lost">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0310_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_TRANSPORT_LOST_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>       -->
+
+ <!--  <SFXEvent Name="UHD_Enemy_Transport_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0404_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_ENEMY_TRANSPORT_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Transport_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0405_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_TRANSPORT_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Enemy_Walker_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0406_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_ENEMY_WALKER_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Enemy_Tank_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0407_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_ENEMY_TANK_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Enemy_Speeder_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0408_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_ENEMY_SPEEDER_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Enemy_Unit_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0409_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_ENEMY_UNIT_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Structure_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0501_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_STRUCTURE_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>          -->
+
+ <!--  <SFXEvent Name="UHD_Hypervelocity_Under_Attack">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0510_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_HYPERVELOCITY_UNDER_ATTACK_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Hypervelocity_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0511_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_HYPERVELOCITY_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>             -->
+
+<!--	<SFXEvent Name="UHD_Sensor_Node_Under_Attack">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0526_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_SENSOR_NODE_UNDER_ATTACK_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Sensor_Node_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0527_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_SENSOR_NODE_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>       -->
+
+		<!--  <SFXEvent Name="UHD_Prison_Under_Attack">
+			  <Use_Preset> Preset_HUD </Use_Preset>
+			  <Samples> I000_UHD5205_ENG.wav</Samples>
+			  <Localize> Yes </Localize>
+			  <Text_ID> TEXT_SFX_UHD_PRISON_UNDER_ATTACK_1</Text_ID>
+			  <Overlap_Test> Unit_UHD </Overlap_Test>
+		  </SFXEvent>
+
+		  <SFXEvent Name="UHD_Prison_Destroyed">
+			  <Use_Preset> Preset_HUD </Use_Preset>
+			  <Samples> I000_UHD5206_ENG.wav</Samples>
+			  <Localize> Yes </Localize>
+			  <Text_ID> TEXT_SFX_UHD_PRISON_DESTROYED_1</Text_ID>
+			  <Overlap_Test> Unit_UHD </Overlap_Test>
+		  </SFXEvent>           -->
+
+<!--	<SFXEvent Name="UHD_Advanced_Vehicle_Factory_Under_Attack">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD5213_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_ADVANCED_VEHICLE_FACTORY_UNDER_ATTACK_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Advanced_Vehicle_Factory_Destroyed">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD5214_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_ADVANCED_VEHICLE_FACTORY_DESTROYED_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>            -->
+
+<!--	<SFXEvent Name="UHD_Base_Shields_Down">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0534_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_BASE_SHIELDS_DOWN_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+	<SFXEvent Name="UHD_Enemy_Base_Shields_Down">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD5301_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_ENEMY_BASE_SHIELDS_DOWN_2</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>
+
+
+	<SFXEvent Name="UHD_Planetary_Shields_Down">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0535_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_PLANETARY_SHIELDS_DOWN_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>      
+
+	<SFXEvent Name="UHD_Planetary_Shields_Up">
+		<Use_Preset> Preset_HUD </Use_Preset>
+		<Samples> I000_UHD0537_ENG.wav</Samples>
+		<Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_PLANETARY_SHIELDS_UP_1</Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+	</SFXEvent>        -->
+
+		<!--  <SFXEvent Name="UHD_Base_Structure_Destroyed">
+			  <Use_Preset> Preset_HUD </Use_Preset>
+			  <Samples> I000_UHD0538_ENG.wav</Samples>
+			  <Localize> Yes </Localize>
+			  <Text_ID> TEXT_SFX_UHD_BASE_STRUCTURE_DESTROYED_1</Text_ID>
+			  <Overlap_Test> Unit_UHD </Overlap_Test>
+		  </SFXEvent>
+
+		 <SFXEvent Name="UHD_Enemy_Structure_Destroyed">
+				<Use_Preset> Preset_HUD </Use_Preset>
+			  <Samples> I000_UHD0539_ENG.wav</Samples>
+			  <Localize> Yes </Localize>
+			  <Text_ID> TEXT_SFX_UHD_ENEMY_STRUCTURE_DESTROYED_1</Text_ID>
+			  <Overlap_Test> Unit_UHD </Overlap_Test>
+		  </SFXEvent>
+
+		  <SFXEvent Name="UHD_Enemy_Hutt_Palace_Destroyed">
+		  <Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0540_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_ENEMY_HUTT_PALACE_DESTROYED_1</Text_ID>
+				<Overlap_Test> Unit_UHD </Overlap_Test>
+			</SFXEvent>
+
+			<SFXEvent Name="UHD_Enemy_Ion_Cannon_Destroyed">
+			<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0541_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_ENEMY_ION_CANNON_DESTROYED_1</Text_ID>
+				<Overlap_Test> Unit_UHD </Overlap_Test>
+			</SFXEvent>
+
+			<SFXEvent Name="UHD_Enemy_Mining_Destroyed">
+			<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0542_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_ENEMY_MINING_DESTROYED_1</Text_ID>
+
+			</SFXEvent>
+
+			<SFXEvent Name="UHD_Enemy_Cantina_Destroyed">
+			<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0543_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_ENEMY_CANTINA_DESTROYED_1</Text_ID>
+
+			</SFXEvent>
+
+			<SFXEvent Name="UHD_Enemy_Hypervelocity_Destroyed">
+			<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0544_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_ENEMY_HYPERVELOCITY_DESTROYED_1</Text_ID>
+
+			</SFXEvent>
+
+			<SFXEvent Name="UHD_Enemy_Shield_Generator_Destroyed">
+			<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0545_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_ENEMY_SHIELD_GENERATOR_DESTROYED_1</Text_ID>
+
+			</SFXEvent>
+
+			<SFXEvent Name="UHD_Enemy_Jamming_Station_Destroyed">
+			<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0546_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_ENEMY_JAMMING_STATION_DESTROYED_1</Text_ID>
+
+			</SFXEvent>
+
+			<SFXEvent Name="UHD_Enemy_Arena_Destroyed">
+			<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0547_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_ENEMY_ARENA_DESTROYED_1</Text_ID>
+
+			</SFXEvent>
+
+			<SFXEvent Name="UHD_Enemy_Gravity_Generator_Destroyed">
+			<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0548_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_ENEMY_GRAVITY_GENERATOR_DESTROYED_1</Text_ID>
+			</SFXEvent>
+
+			<SFXEvent Name="UHD_Enemy_Infiltrator_Facility_Destroyed">
+			<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0549_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_ENEMY_INFILTRATOR_FACILITY_DESTROYED_1</Text_ID>
+
+			</SFXEvent>
+
+			<SFXEvent Name="UHD_Enemy_Magnepulse_Destroyed">
+			<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0550_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_ENEMY_MAGNEPULSE_DESTROYED_1</Text_ID>
+
+			</SFXEvent>
+
+			<SFXEvent Name="UHD_Enemy_Scanner_Destroyed">
+			<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0551_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_ENEMY_SCANNER_DESTROYED_1</Text_ID>
+
+			</SFXEvent>
+
+			<SFXEvent Name="UHD_Enemy_Sensor_Node_Destroyed">
+			<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0552_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_ENEMY_SENSOR_NODE_DESTROYED_1</Text_ID>
+
+			</SFXEvent>
+
+
+			<SFXEvent Name="UHD_Enemy_Turbo_Tower_Destroyed">
+			<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0553_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_ENEMY_TURBO_TOWER_DESTROYED_1</Text_ID>
+
+			</SFXEvent>
+
+			<SFXEvent Name="UHD_Enemy_Power_Generator_Destroyed">
+			<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0554_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_ENEMY_POWER_GENERATOR_DESTROYED_1</Text_ID>
+
+			</SFXEvent>
+
+			<SFXEvent Name="UHD_Enemy_Planetary_Sheild_Generator_Destroyed">
+			<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0554_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_ENEMY_PLANETARY_SHIELD_DESTROYED_1</Text_ID>
+
+			</SFXEvent>
+
+
+			<SFXEvent Name="UHD_Enemy_Planetary_Shields_Down">
+			<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0557_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_PLANETARY_SHIELDS_DOWN_1</Text_ID>
+
+			</SFXEvent>   
+
+			<SFXEvent Name="UHD_Hutt_Palace_Sold">
+				<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0558_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_HUTT_PALACE_SOLD_1</Text_ID>
+				<Overlap_Test> Unit_UHD </Overlap_Test>
+			</SFXEvent>
+
+			<SFXEvent Name="UHD_Ion_Cannon_Sold">
+				<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0559_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_ION_CANNON_SOLD_1</Text_ID>
+				<Overlap_Test> Unit_UHD </Overlap_Test>
+			</SFXEvent>
+
+			<SFXEvent Name="UHD_Mining_Sold">
+				<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0560_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_MINING_SOLD_1</Text_ID>
+				<Overlap_Test> Unit_UHD </Overlap_Test>
+			</SFXEvent>
+
+			<SFXEvent Name="UHD_Cantina_Sold">
+				<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0561_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_CANTINA_SOLD_1</Text_ID>
+				<Overlap_Test> Unit_UHD </Overlap_Test>
+			</SFXEvent>
+
+			<SFXEvent Name="UHD_Hypervelocity_Sold">
+				<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0562_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_HYPERVELOCITY_SOLD_1</Text_ID>
+				<Overlap_Test> Unit_UHD </Overlap_Test>
+			</SFXEvent>
+
+			<SFXEvent Name="UHD_Shield_Generator_Sold">
+				<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0563_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_SHIELD_GENERATOR_SOLD_1</Text_ID>
+				<Overlap_Test> Unit_UHD </Overlap_Test>
+			</SFXEvent>
+
+			<SFXEvent Name="UHD_Jamming_Station_Sold">
+				<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0564_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_JAMMING_STATION_SOLD_1</Text_ID>
+				<Overlap_Test> Unit_UHD </Overlap_Test>
+			</SFXEvent>
+
+			<SFXEvent Name="UHD_Arena_Sold">
+				<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0565_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_ARENA_SOLD_1</Text_ID>
+				<Overlap_Test> Unit_UHD </Overlap_Test>
+			</SFXEvent>
+
+			<SFXEvent Name="UHD_Infiltrator_Facility_Sold">
+				<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0566_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_INFILTRATOR_FACILITY_SOLD_1</Text_ID>
+				<Overlap_Test> Unit_UHD </Overlap_Test>
+			</SFXEvent>
+
+			<SFXEvent Name="UHD_Scanner_Sold">
+				<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0567_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_SCANNER_SOLD_1</Text_ID>
+				<Overlap_Test> Unit_UHD </Overlap_Test>
+			</SFXEvent>
+
+			<SFXEvent Name="UHD_Turbo_Tower_Sold">
+				<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD0568_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_TURBO_TOWER_SOLD_1</Text_ID>
+				<Overlap_Test> Unit_UHD </Overlap_Test>
+			</SFXEvent>           -->
+
+<!--	 <SFXEvent Name="UHD_Retreat_Success_Space">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD0804_ENG.wav</Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_RETREAT_SUCCESS_SPACE_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>      -->
+
+		<!--   <SFXEvent Name="UHD_Enemy_Fleeing">
+				 <Use_Preset> Preset_HUD </Use_Preset>
+				 <Samples> I000_UHD0808_ENG.wav I000_UHD0810_ENG.wav I000_UHD0811_ENG.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Text_ID> TEXT_SFX_UHD_ENEMY_FLEEING_1, TEXT_SFX_UHD_ENEMY_FLEEING_2, TEXT_SFX_UHD_ENEMY_FLEEING_3</Text_ID>
+				 <Overlap_Test> Unit_UHD </Overlap_Test>
+			 </SFXEvent>        
+
+			 <SFXEvent Name="UHD_Retreat_Base">
+				 <Use_Preset> Preset_HUD </Use_Preset>
+				 <Samples> I000_UHD0812_ENG.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Text_ID> TEXT_SFX_UHD_RETREAT_BASE_1</Text_ID>
+				 <Overlap_Test> Unit_UHD </Overlap_Test>
+			 </SFXEvent>        -->
+
+		<!--   <SFXEvent Name="UHD_Building">
+				<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD1301_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_BUILDING_1</Text_ID>
+				<Overlap_Test> Unit_UHD </Overlap_Test>
+			</SFXEvent>       -->
+
+		<!--  <SFXEvent Name="UHD_Fleet_Arrival">
+			 <Use_Preset> Preset_HUD </Use_Preset>
+			 <Samples> I000_UHD1401_ENG.wav</Samples>
+			 <Localize> Yes </Localize>
+			 <Text_ID> TEXT_SFX_UHD_FLEET_ARRIVAL_1</Text_ID>
+			 <Overlap_Test> Unit_UHD </Overlap_Test>
+		 </SFXEvent>     -->
+
+		<!--   <SFXEvent Name="UHD_Enemy_Sighted">
+				<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD1701_ENG.wav </Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_ENEMY_SIGHTED_1</Text_ID>
+				<Overlap_Test> Unit_UHD </Overlap_Test>
+			</SFXEvent>
+
+			<SFXEvent Name="UHD_Enemy_Walker">
+				<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD1702_ENG.wav I000_UHD1703_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_ENEMY_WALKER_1, TEXT_SFX_UHD_ENEMY_WALKER_2</Text_ID>
+				<Overlap_Test> Unit_UHD </Overlap_Test>
+			</SFXEvent>       --> 
+
+<!--	 <SFXEvent Name="UHD_Death_Star_Approaching">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD1707_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_DEATH_STAR_APPROACHING_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>       
+
+	 <SFXEvent Name="UHD_Bounty_Hunter_Deployed">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD1801_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_BOUNTY_HUNTER_DEPLOYED_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>     
+
+	 <SFXEvent Name="UHD_Bounty_Hunter_Capture">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD1802_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_BOUNTY_HUNTER_DEPLOYED_2</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Bounty_Hunter_Political">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples>I000_UHD1803_ENG.wav</Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_BOUNTY_HUNTER_DEPLOYED_3</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+
+	 <SFXEvent Name="UHD_Smuggler_Deployed">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD1901_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_SMUGGLER_DEPLOYED_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Smuggler_Siphon">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD1902_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_SMUGGLER_SIPHON_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Smuggler_Rescue">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD1903_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_SMUGGLER_RESCUE_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+
+	 <SFXEvent Name="UHD_Hero_Eliminated">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD2101_ENG.wav</Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_HERO_ELIMINATED_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Hero_Lost">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD2102_ENG.wav</Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_HERO_LOST_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Bounty_Hunter_Eliminated">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD2103_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_BOUNTY_HUNTER_ELIMINATED_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>        -->
+
+		<!--   <SFXEvent Name="UHD_Smuggler_Eliminated">
+				<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD2104_ENG.wav </Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_SMUGGLER_ELIMINATED_1</Text_ID>
+				<Overlap_Test> Unit_UHD </Overlap_Test>
+			</SFXEvent>       --> 
+
+		<!--   <SFXEvent Name="UHD_Enemy_Hero_Detected">
+				 <Use_Preset> Preset_HUD </Use_Preset>
+				 <Samples> I000_UHD2107_ENG.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Text_ID> TEXT_SFX_UHD_ENEMY_HERO_DETECTED_1</Text_ID>
+				  <Overlap_Test> Unit_UHD </Overlap_Test>
+			 </SFXEvent>
+
+			 <SFXEvent Name="UHD_Enemy_Hero_Eliminated">
+				 <Use_Preset> Preset_HUD </Use_Preset>
+				 <Samples> I000_UHD2108_ENG.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Text_ID> TEXT_SFX_UHD_ENEMY_HERO_ELIMINATED_1</Text_ID>
+				 <Overlap_Test> Unit_UHD </Overlap_Test>
+			 </SFXEvent>     -->
+
+		<!--  <SFXEvent Name="UHD_Magnepulse_Available">
+			  <Use_Preset> Preset_HUD </Use_Preset>
+			  <Samples> I000_UHD2405_ENG.wav </Samples>
+			  <Localize> Yes </Localize>
+			  <Text_ID> TEXT_SFX_UHD_MAGNEPULSE_AVAILABLE_1</Text_ID>
+			  <Overlap_Test> Unit_UHD </Overlap_Test>
+		  </SFXEvent>      -->
+
+		<!--   <SFXEvent Name="UHD_Bombers_Incoming">
+				<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD2502_ENG.wav I000_UHD2503_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_BOMBERS_INCOMING_1, TEXT_SFX_UHD_BOMBERS_INCOMING_2</Text_ID>
+				<Overlap_Test> Unit_UHD </Overlap_Test>
+			</SFXEvent>
+
+			<SFXEvent Name="UHD_Bombers_Destroyed">
+				<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD2504_ENG.wav </Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_BOMBERS_DESTROYED_1</Text_ID>
+				<Overlap_Test> Unit_UHD </Overlap_Test>
+			</SFXEvent>       -->
+
+
+		<!--   <SFXEvent Name="UHD_Bombing_Target">
+				<Use_Preset> Preset_HUD </Use_Preset>
+				 <Samples> I000_UHD2601_ENG.wav I000_UHD2602_ENG.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Text_ID> TEXT_SFX_UHD_BOMBING_TARGET_1, TEXT_SFX_UHD_BOMBING_TARGET_2</Text_ID>
+				 <Overlap_Test> Unit_UHD </Overlap_Test>
+			 </SFXEvent>     
+
+			<SFXEvent Name="UHD_Enemy_Gain_Tech_Level">
+				<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD2701_ENG.wav </Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_ENEMY_GAIN_TECH_LEVEL_1</Text_ID>
+				<Overlap_Test> Unit_UHD </Overlap_Test>
+			</SFXEvent>         
+
+			<SFXEvent Name="UHD_Gain_Tech_Level">
+				<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD2803_ENG.wav </Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_GAIN_TECH_LEVEL_1</Text_ID>
+				<Overlap_Test> Unit_UHD </Overlap_Test>
+			</SFXEvent>          -->
+
+<!--	 <SFXEvent Name="UHD_System_Destoyed">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3821_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_SYSTEM_DESTROYED_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>     
+
+	 <SFXEvent Name="UHD_Fire_When_Ready">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3823_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_FIRE_WHEN_READY_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>          
+
+
+
+
+	 <SFXEvent Name="UHD_Death_Star_15">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3824_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_DEATH_STAR_15</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Death_Star_10">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3825_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_DEATH_STAR_10</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Death_Star_9">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3826_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_DEATH_STAR_9</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Death_Star_8">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3827_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_DEATH_STAR_8</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Death_Star_7">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3828_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_DEATH_STAR_7</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Death_Star_6">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3829_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_DEATH_STAR_6</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Death_Star_5">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3830_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_DEATH_STAR_5</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Death_Star_4">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3831_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_DEATH_STAR_4</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Death_Star_3">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3832_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_DEATH_STAR_3</Text_ID>
+		  <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Death_Star_2">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3833_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_DEATH_STAR_2</Text_ID>
+		  <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Death_Star_1">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3834_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_DEATH_STAR_1</Text_ID>
+		  <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>        -->
+
+		<!--   <SFXEvent Name="UHD_Death_Star_Halted">
+				<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD3838_ENG.wav </Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_DEATH_STAR_HALTED</Text_ID>
+				<Overlap_Test> Unit_UHD </Overlap_Test>
+			</SFXEvent>
+
+			<SFXEvent Name="UHD_Death_Star_Underway">
+				<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD3839_ENG.wav </Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_DEATH_STAR_UNDERWAY</Text_ID>
+				<Overlap_Test> Unit_UHD </Overlap_Test>
+			</SFXEvent>        -->
+
+
+
+
+<!-- PLANET NAMES -->
+
+
+
+
+ <!--
+
+	 <SFXEvent Name="UHD_Abregado_Rae">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3901_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_ABREGADO_RAE</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Aeten_II">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3902_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_AETEN_II</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Alderaan">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3903_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_ALDERAAN</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Alzoc_III">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3904_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_ALZOC_III</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Anaxes">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3905_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_ANAXES</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Aridus">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3906_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_ARIDUS</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Atzerri">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3907_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_ATZERRI</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Bakura">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3908_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_BAKURA</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Balmorra">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3909_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_BALMORRA</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Bespin">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3910_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_BESPIN</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Bestine">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3911_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_BESTINE</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Bonadan">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3912_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_BONADAN</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Bothawui">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3913_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_BOTHAWUI</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Brentaal">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3914_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_BRENTAAL</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Byss">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3915_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_BYSS</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Carida">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3916_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_CARIDA</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Corellia">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3917_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_CORELLIA</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Corulag">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3918_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_CORULAG</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Coruscant">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3919_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_CORUSCANT</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Dagobah">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3920_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_DAGOBAH</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Dantooine">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3921_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_DANTOOINE</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Duro">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3922_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_DURO</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Endor">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3923_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_ENDOR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Eriadu">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3924_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_ERIADU</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Fondor">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3925_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_FONDOR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Fresia">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3926_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_FRESIA</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Gamorr">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3927_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_GAMORR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Geonosis">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3928_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_GEONOSIS</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Hapes">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3929_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_HAPES</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Hoth">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3930_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_HOTH</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Ilum">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3931_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_ILUM</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Jabiim">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3932_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_JABIIM</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Kamino">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3933_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_KAMINO</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Kashyyyk">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3934_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_KASHYYYK</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Kessel">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3935_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_KESSEL</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Korriban">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3936_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_KORRIBAN</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Kuat">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3937_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_KUAT</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Lwhekk">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3938_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_LWHEKK</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Manaan">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3939_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_MANAAN</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Mon_Calimari">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3940_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_MON_CALIMARI</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Naboo">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3941_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_NABOO</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_NalHutta">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3942_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_NALHUTTA</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Rakatta">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3943_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_RAKATTA</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Ralltiir">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3944_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_RALLTIIR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Rhinnal">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3945_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_RHINNAL</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Rothana">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3946_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_ROTHANA</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Ryloth">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3947_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_RYLOTH</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Sullust">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3948_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_SULLUST</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Taris">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3949_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_TARIS</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Tatooine">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3950_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_TATOOINE</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Thyferra">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3951_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_THYFERRA</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Trandosha">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3952_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_TRANDOSHA</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Tynna">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3953_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_TYNNA</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Vergesso_Asteroids">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3954_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_VERGESSO_ASTEROIDS</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Wayland">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3955_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_WAYLAND</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Yavin">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD3956_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_YAVIN</Text_ID>
+		 
+	 </SFXEvent>
+
+
+
+
+
+	 <SFXEvent Name="UHD_Abregado_Rae_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4001_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_ABREGADO_RAE_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Aeten_II_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4002_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_AETEN_II_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Alderaan_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4003_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_ALDERAAN_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Alzoc_III_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4004_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_ALZOC_III_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Anaxes_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4005_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_ANAXES_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Aridus_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4006_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_ARIDUS_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Atzerri_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4007_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_ATZERRI_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Bakura_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4008_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_BAKURA_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Balmorra_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4009_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_BALMORRA_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Bespin_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4010_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_BESPIN_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Bestine_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4011_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_BESTINE_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Bonadan_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4012_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_BONADAN_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Bothawui_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4013_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_BOTHAWUI_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Brentaal_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4014_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_BRENTAAL_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Byss_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4015_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_BYSS_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Carida_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4016_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_CARIDA_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Corellia_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4017_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_CORELLIA_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Corulag_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4018_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_CORULAG_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Coruscant_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4019_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_CORUSCANT_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Dagobah_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4020_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_DAGOBAH_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Dantooine_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4021_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_DANTOOINE_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Duro_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4022_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_DURO_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Endor_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4023_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_ENDOR_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Eriadu_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4024_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_ERIADU_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Fondor_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4025_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_FONDOR_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Fresia_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4026_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_FRESIA_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Gamorr_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4027_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_GAMORR_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Geonosis_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4028_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_GEONOSIS_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Hapes_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4029_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_HAPES_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Hoth_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4030_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_HOTH_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Ilum_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4031_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_ILUM_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Jabiim_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4032_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_JABIIM_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Kamino_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4033_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_KAMINO_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Kashyyyk_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4034_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_KASHYYYK_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Kessel_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4035_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_KESSEL_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Korriban_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4036_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_KORRIBAN_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Kuat_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4037_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_KUAT_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Lwhekk_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4038_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_LWHEKK_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Manaan_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4039_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_MANAAN_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Mon_Calimari_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4040_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_MON_CALIMARI_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Naboo_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4041_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_NABOO_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_NalHutta_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4042_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_NALHUTTA_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Rakatta_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4043_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_RAKATTA_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Ralltiir_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4044_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_RALLTIIR_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Rhinnal_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4045_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_RHINNAL_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Rothana_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4046_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_ROTHANA_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Ryloth_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4047_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_RYLOTH_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Sullust_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4048_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_SULLUST_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Taris_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4049_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_TARIS_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Tatooine_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4050_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_TATOOINE_DEATH_STAR</Text_ID>
+		 
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Thyferra_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4051_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_THYFERRA_DEATH_STAR</Text_ID>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Trandosha_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4052_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_TRANDOSHA_DEATH_STAR</Text_ID>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Tynna_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4053_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_TYNNA_DEATH_STAR</Text_ID>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Wayland_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4054_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_WAYLAND_DEATH_STAR</Text_ID>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Yavin_Death_Star">
+	 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4055_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_YAVIN_DEATH_STAR</Text_ID>
+	 </SFXEvent>
+
+		 -->
+
+
+
+
+
+ <!--   <SFXEvent Name="UHD_Enemy_90_Percent">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4101_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_ENEMY_90_PERCENT</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>
+
+	 <SFXEvent Name="UHD_Enemy_One_Planet">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4102_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_ENEMY_ONE_PLANET</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>        -->
+
+		<!--  <SFXEvent Name="UHD_Power_Generator_Build">
+			  <Use_Preset> Preset_HUD </Use_Preset>
+			  <Samples> I000_UHD4205_ENG.wav </Samples>
+			  <Localize> Yes </Localize>
+			  <Text_ID> TEXT_SFX_UHD_POWER_GENERATOR_BUILD_1</Text_ID>
+			  <Overlap_Test> Unit_UHD </Overlap_Test>
+		  </SFXEvent>     -->
+
+<!--	 <SFXEvent Name="UHD_Constructing">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4208_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_CONSTRUCTING_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>     
+
+	 <SFXEvent Name="UHD_Structure_Sold">
+		 <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD4209_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+		 <Text_ID> TEXT_SFX_UHD_STRUCTURE_SOLD_1</Text_ID>
+		 <Overlap_Test> Unit_UHD </Overlap_Test>
+	 </SFXEvent>        -->
+
+		<!--   <SFXEvent Name="UHD_Mission_Timer">
+				<Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD4302_ENG.wav </Samples>
+				<Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_MISSION_TIMER_1</Text_ID>
+				<Overlap_Test> Unit_UHD </Overlap_Test>
+			</SFXEvent>      --> 
+
+<!-- 	<SFXEvent Name="UHD_Choose_Landing">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	<Samples> I000_UHD4501_ENG.wav </Samples>
+   <Localize> Yes </Localize>
+	  <Text_ID> TEXT_SFX_UHD_CHOOSE_LANDING </Text_ID>
+	  <Overlap_Test> Unit_UHD </Overlap_Test>
+ </SFXEvent>        -->
+
+<!-- 	<SFXEvent Name="UHD_Build_Hero">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples> I000_UHD4721_ENG.wav </Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_BUILD_HERO_1 </Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>               
+
+	<SFXEvent Name="UHD_Credits_Gained">
+		<Use_Preset> Preset_HUD </Use_Preset>
+	 <Samples> I000_UHD4722_ENG.wav </Samples>
+	 <Localize> Yes </Localize>
+		<Text_ID> TEXT_SFX_UHD_CREDITS_GAINED_1 </Text_ID>
+		<Overlap_Test> Unit_UHD </Overlap_Test>
+  </SFXEvent>               -->
+
+		<!--	<SFXEvent Name="UHD_Purchase_Available">
+			  <Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD5502_ENG.wav </Samples>
+			<Localize> Yes </Localize>
+			  <Text_ID> TEXT_SFX_UHD_PURCHASE_AVAILABLE_1 </Text_ID>
+			  <Overlap_Test> Unit_UHD </Overlap_Test>
+		 </SFXEvent>     --> 
+
+		<!--  <SFXEvent Name="UHD_New_Units">
+			  <Use_Preset> Preset_HUD </Use_Preset>
+			<Samples> I000_UHD4725_ENG.wav I000_UHD4726_ENG.wav</Samples>
+			<Localize> Yes </Localize>
+			  <Text_ID> TEXT_SFX_UHD_NEW_UNITS_1, TEXT_SFX_UHD_NEW_UNITS_2 </Text_ID>
+			  <Overlap_Test> Unit_UHD </Overlap_Test>
+		 </SFXEvent>         --> 
+
+ <!--    <SFXEvent Name="UHD_Reinforments_Canceled">
+		  <Use_Preset> Preset_HUD </Use_Preset>
+		 <Samples> I000_UHD5711_ENG.wav </Samples>
+		 <Localize> Yes </Localize>
+			<Text_ID> TEXT_SFX_UHD_REINFORCEMENTS_CANCELED_1 </Text_ID>
+			<Overlap_Test> Unit_UHD </Overlap_Test>
+	  </SFXEvent>         --> 
+
+		<!-- 	<SFXEvent Name="UHD_LOST_MERCENARIES">
+				 <Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD5818_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				  <Text_ID> TEXT_SFX_UHD_LOST_MERCENARIES_1 </Text_ID>
+				  <Overlap_Test> Unit_UHD </Overlap_Test>
+			 </SFXEvent>      
+
+
+			 <SFXEvent Name="UHD_MERCENARY_UNDER_ATTACK">
+				 <Use_Preset> Preset_HUD </Use_Preset>
+				<Samples> I000_UHD5819_ENG.wav</Samples>
+				<Localize> Yes </Localize>
+				  <Text_ID> TEXT_SFX_UHD_MERCENARY_UNDER_ATTACK_1 </Text_ID>
+				  <Overlap_Test> Unit_UHD </Overlap_Test>
+			 </SFXEvent>			 --> 
+
+  <!--    	<SFXEvent Name="UHD_MERCENARY_DESTROYED">
+			<Use_Preset> Preset_HUD </Use_Preset>
+		  <Samples> I000_UHD5821_ENG.wav</Samples>
+		  <Localize> Yes </Localize>
+			 <Text_ID> TEXT_SFX_UHD_MERCENARY_DESTROYED_1 </Text_ID>
+			 <Overlap_Test> Unit_UHD </Overlap_Test>
+		</SFXEvent>         -->  
+
+		<!--  	<SFXEvent Name="UHD_STARBASE_UPGRADED">
+				  <Use_Preset> Preset_HUD </Use_Preset>
+			 <Samples> I000_UHD6003_ENG.wav</Samples>
+			 <Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_STARBASE_UPGRADED_1 </Text_ID>
+				<Overlap_Test> Unit_UHD </Overlap_Test>
+		  </SFXEvent>           
+
+			  <SFXEvent Name="UHD_ENEMY_STARBASE_UPGRADED">
+				  <Use_Preset> Preset_HUD </Use_Preset>
+			 <Samples> I000_UHD6004_ENG.wav</Samples>
+			 <Localize> Yes </Localize>
+				<Text_ID> TEXT_SFX_UHD_ENEMY_STARBASE_UPGRADED_1 </Text_ID>
+				<Overlap_Test> Unit_UHD </Overlap_Test>
+		  </SFXEvent>              -->
+
+
+
+</SFXEvents>

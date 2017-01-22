@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Stap_Data>
+  <GroundInfantry Name="Stap">
+    <LOD_Bias>5</LOD_Bias>
+    <Text_ID>TEXT_UNIT_STAP</Text_ID>
+    <Encyclopedia_Good_Against> Clone_Trooper_P1 </Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To> Arc_Trooper A6_Juggernaut AT_RT_Walker </Encyclopedia_Vulnerable_To>
+    <Land_Model_Name>SeV_Stap_Blue.ALO</Land_Model_Name>
+    <Icon_Name>i_button_stap.tga</Icon_Name>
+    <!--<Land_Terrain_Model_Mapping>
+			Temperate, 			SeV_Stap_Blue.ALO,
+			Urban, 				SeV_Stap_Blue.ALO,
+			Arctic, 			SeV_Stap_Blue.ALO,
+			Volcanic, 			SeV_Stap_Blue.ALO,
+			Desert, 			SeV_Stap_Brown.ALO,
+			Forest, 			SeV_Stap_Blue.ALO,
+			Swamp, 				SeV_Stap_Blue.ALO
+		</Land_Terrain_Model_Mapping>-->
+    <Behavior> SELECTABLE </Behavior>
+    <LandBehavior>ABILITY_COUNTDOWN, BIKE_LOCOMOTOR, IDLE, TARGETING, WEAPON, STUNNABLE, POWERED, REVEAL, HIDE_WHEN_FOGGED, WIND_DISTURBANCE,DAMAGE_TRACKING, AMBIENT_SFX, SURFACE_FX, AFFECTED_BY_SHIELD </LandBehavior>
+    <Is_Affected_By_Gravity_Control_Field> Yes </Is_Affected_By_Gravity_Control_Field>
+    <!-- This is considered a repulsorlift-driven unit -->
+    <Base_Shield_Penetration_Particle>Shield_Penetration_Effect_Particle</Base_Shield_Penetration_Particle>
+    <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+    <Mass>1.0</Mass>
+    <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+    <Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+    <Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+    <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+    <Max_Speed>3.4</Max_Speed>
+    <Max_Rate_Of_Turn>6.5</Max_Rate_Of_Turn>
+    <Max_Rate_Of_Roll>2</Max_Rate_Of_Roll>
+    <Bank_Turn_Angle>35</Bank_Turn_Angle>
+    <LateralAcceleration> .15 </LateralAcceleration>
+    <Min_Speed_Fraction_For_Turn> 0 </Min_Speed_Fraction_For_Turn>
+    <Space_Layer> Land </Space_Layer>
+    <UnitCollisionClass> Vehicle </UnitCollisionClass>
+    <Custom_Hard_XExtent> 6.0 </Custom_Hard_XExtent>
+    <Custom_Hard_YExtent> 2.0 </Custom_Hard_YExtent>
+    <FormationSpacing> .75 </FormationSpacing>
+    <Walk_Transition>Yes</Walk_Transition>
+    <Movement_Animation_Speed> 3.0 </Movement_Animation_Speed>
+    <MinimumPushReturnDistance> 10 </MinimumPushReturnDistance>
+    <FormationOrder> 1 </FormationOrder>
+    <Scale_Factor>1.5</Scale_Factor>
+    <CanCellStack>yes</CanCellStack>
+    <!--<Is_Sprite>No</Is_Sprite>-->
+    <Type>Hover</Type>
+    <Deploys>No</Deploys>
+    <Affiliation>Rebel</Affiliation>
+    <Political_Control>0</Political_Control>
+    <Size_Value>25</Size_Value>
+    <Damage>5</Damage>
+    <Sensor_Range>100</Sensor_Range>
+    <Shield_Points>0</Shield_Points>
+    <Tactical_Health>60</Tactical_Health> <!-- From 40 -->
+    <!-- hitpoints halved to make the unit more paper-like -->
+    <Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+    <Energy_Capacity>200</Energy_Capacity>
+    <Energy_Refresh_Rate>999</Energy_Refresh_Rate>
+    <Stealth_Capable>No</Stealth_Capable>
+    <Victory_Relevant>yes</Victory_Relevant>
+    <SurfaceFX_Name>Hover</SurfaceFX_Name>
+    <Armor_Type> Armor_Scout_Bike </Armor_Type>
+    <Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+    <Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+    <Targeting_Max_Attack_Distance>150.0</Targeting_Max_Attack_Distance>
+    <Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+    <Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+    <Projectile_Types>Proj_Blaster_Cannon_Red</Projectile_Types>
+    <Projectile_Fire_Recharge_Seconds>0.8</Projectile_Fire_Recharge_Seconds> <!-- From 1.1 -->
+    <Projectile_Fire_Pulse_Count>4</Projectile_Fire_Pulse_Count>
+    <Projectile_Fire_Pulse_Delay_Seconds>0.4</Projectile_Fire_Pulse_Delay_Seconds> <!-- From 0.6 -->
+    <Projectile_Damage>10.0</Projectile_Damage> <!-- From 2 -->
+    <Targeting_Fire_Inaccuracy> Infantry, 1.0 </Targeting_Fire_Inaccuracy> <!-- From 10 -->
+    <Targeting_Fire_Inaccuracy> Vehicle, 20.0 </Targeting_Fire_Inaccuracy>
+    <Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
+    <Targeting_Fire_Inaccuracy> Structure, 15.0 </Targeting_Fire_Inaccuracy>
+    <Fire_Category_Restrictions> Air </Fire_Category_Restrictions>
+    <Wind_Disturbance_Radius>50</Wind_Disturbance_Radius>
+    <Wind_Disturbance_Strength>10</Wind_Disturbance_Strength>
+    <Wind_Disturbance_Sphere_Alpha>0.4</Wind_Disturbance_Sphere_Alpha>
+    <Death_Explosions>Small_Explosion_Land</Death_Explosions>
+    <Destruction_Survivors> Battledroids, 1.0 </Destruction_Survivors>
+    <SFXEvent_Select>Unit_Select_Battle_Droid</SFXEvent_Select>
+    <SFXEvent_Move>Unit_Move_Battle_Droid</SFXEvent_Move>
+    <SFXEvent_Fleet_Move>Unit_Fleet_Move_Battle_Droid</SFXEvent_Fleet_Move>
+    <SFXEvent_Attack>Unit_Attack_Battle_Droid</SFXEvent_Attack>
+    <SFXEvent_Guard>Unit_Guard_Battle_Droid</SFXEvent_Guard>
+    <SFXEvent_Fire>Unit_Scout_Trooper_Fire</SFXEvent_Fire>
+    <Death_SFXEvent_Start_Die>Unit_Speeder_Bike_Death_SFX</Death_SFXEvent_Start_Die>
+    <SFXEvent_Assist_Move> Unit_Assist_Move_Battle_Droid </SFXEvent_Assist_Move>
+    <SFXEvent_Assist_Attack> Unit_Assist_Attack_Battle_Droid </SFXEvent_Assist_Attack>
+    <SFXEvent_Ambient_Moving> Unit_STAP_Moving_Engine_Loop </SFXEvent_Ambient_Moving>
+    <SFXEvent_Engine_Moving_Loop> Unit_STAP_Idle_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+    <SFXEvent_Ambient_Moving_Min_Delay_Seconds> 7 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+    <SFXEvent_Ambient_Moving_Max_Delay_Seconds> 12 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+    <SFXEvent_Engine_Cinematic_Focus_Loop> Unit_STAP_Idle_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+    <SFXEvent_Tactical_Build_Started> UHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
+    <SFXEvent_Tactical_Build_Complete> UHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
+    <SFXEvent_Tactical_Build_Cancelled> UHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+    <CategoryMask> Vehicle </CategoryMask>
+    <MovementClass> Hover </MovementClass>
+    <OccupationStyle>1x1</OccupationStyle>
+    <Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+    <Blob_Shadow_Scale>18.0, 7.0</Blob_Shadow_Scale>
+    <Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+    <Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+    <Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+    <Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+    <Is_Squashable> Yes </Is_Squashable>
+    <No_Reflection_Below_Detail_Level>99</No_Reflection_Below_Detail_Level>
+    <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+    <AI_Combat_Power>40</AI_Combat_Power>
+    <Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+    <Targeting_Priority_Set>AvoidAntiInfantryTurrets</Targeting_Priority_Set>
+    <Idle_Chase_Range>50.0</Idle_Chase_Range>
+    <Guard_Chase_Range>200.0</Guard_Chase_Range>
+    <Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+    <Select_Box_Scale>38</Select_Box_Scale>
+    <Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+    <Surface_Type_Cover_Damage_Shield>.5</Surface_Type_Cover_Damage_Shield>
+    <Weather_Category>Infantry</Weather_Category>
+    <Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+    <Encyclopedia_Text>TEXT_TOOLTIP_STAP</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+    <Death_Fade_Time>0.25</Death_Fade_Time>
+    <Death_Persistence_Duration>0.0</Death_Persistence_Duration>
+    <Influences_Capture_Point> False </Influences_Capture_Point>
+    <Tactical_Bribe_Cost />
+  </GroundInfantry>
+  <GroundCompany Name="Cis_Stap_Squad">
+    <LOD_Bias>5</LOD_Bias>
+    <Text_ID>TEXT_UNIT_STAP</Text_ID>
+    <Encyclopedia_Good_Against> Clone_Trooper_P1 Clone_Trooper_P2 </Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To> Arc_Trooper A6_Juggernaut AT_RT_Walker </Encyclopedia_Vulnerable_To>
+    <GUI_Row> 1 </GUI_Row>
+    <Is_Dummy>Yes</Is_Dummy>
+    <Damage>10</Damage>
+    <Autoresolve_Health>100</Autoresolve_Health>
+    <Affiliation>Rebel</Affiliation>
+    <Build_Cost_Credits>75</Build_Cost_Credits>
+    <Piracy_Value_Credits>10</Piracy_Value_Credits>
+    <Build_Time_Seconds>3</Build_Time_Seconds>
+    <Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+    <Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+    <Tech_Level>0</Tech_Level>
+    <Required_Timeline>0</Required_Timeline>
+    <!--<Required_Ground_Base_Level>2</Required_Ground_Base_Level>-->
+    <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>0</Required_Star_Base_Level>
+    <Required_Special_Structures>R_Ground_Barracks</Required_Special_Structures>
+    <Required_Planets />
+    <Behavior>ABILITY_COUNTDOWN, DUMMY_GROUND_COMPANY</Behavior>
+    <Formation_Priority>1</Formation_Priority>
+    <Is_Escort>yes</Is_Escort>
+    <Ship_Class>infantry</Ship_Class>
+    <Company_Transport_Unit>C9979_Landing_Craft</Company_Transport_Unit>
+    <Company_Units>Stap, Stap, Stap, Stap</Company_Units>
+    <Max_Squad_Size> 1 </Max_Squad_Size>
+    <Icon_Name>i_button_stap.tga</Icon_Name>
+    <GUI_Model_Name>SeV_Stap_Blue.ALO</GUI_Model_Name>
+    <GUI_Distance>65</GUI_Distance>
+    <GUI_Offset>0 0 5</GUI_Offset>
+    <GUI_Velocity>45</GUI_Velocity>
+    <SFXEvent_Build_Started>UHD_Build_Troops</SFXEvent_Build_Started>
+    <SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+    <SFXEvent_Build_Complete>Unit_Complete_Battle_Droid</SFXEvent_Build_Complete>
+    <SFXEvent_Fleet_Move>Unit_Fleet_Move_Battle_Droid</SFXEvent_Fleet_Move>
+    <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+    <Tactical_Build_Cost_Multiplayer>75</Tactical_Build_Cost_Multiplayer> <!-- From 100 -->
+    <Tactical_Build_Time_Seconds>5</Tactical_Build_Time_Seconds>
+    <Tactical_Build_Prerequisites />
+    <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+    <!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+    <!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+    <!--<MULTIPLAYER SKIRMISH VALUES END>-->
+    <Encyclopedia_Text>TEXT_TOOLTIP_STAP</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+    <Maintenance_Cost>0.05</Maintenance_Cost>
+    <Population_Value>1</Population_Value>
+    <Score_Cost_Credits>150</Score_Cost_Credits>
+  </GroundCompany>
+</Stap_Data>

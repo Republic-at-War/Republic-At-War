@@ -1,0 +1,494 @@
+<?xml version="1.0" ?>
+<Props_Bastion>
+
+
+
+	<Props_Bastion Name="Prop_Imperial_Building_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>EB_GovernorsQuarters.alo</Land_Model_Name>
+		<Scale_Factor>2.2</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+
+<Props_Bastion Name="Prop_Imperial_Building_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Land_Model_Name>W_Bespin_Building01.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Is_Discardable>No</Is_Discardable> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+	</Props_Bastion>
+
+	<Props_Bastion Name="Prop_Imperial_Building_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Land_Model_Name>W_Bespin_Building02.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Is_Discardable>No</Is_Discardable> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+	</Props_Bastion>
+
+	<Props_Bastion Name="Prop_Imperial_Building_D">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Land_Model_Name>W_Bespin_Building03.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Is_Discardable>No</Is_Discardable> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+	</Props_Bastion>
+	
+<Props_Bastion Name="Prop_Imperial_Building_E">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_ImperialPalace.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+
+
+<Props_Bastion Name="Prop_Imperial_Building_F">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>NB_mandalorian_barracks.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+
+<Props_Bastion Name="Prop_Imperial_Building_F_Med">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>NB_mandalorian_barracks.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>3.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+
+<Props_Bastion Name="Prop_Imperial_Building_F_Lrg">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>NB_mandalorian_barracks.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>4.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+
+<Props_Bastion Name="Prop_Imperial_Building_F_Hug">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>NB_mandalorian_barracks.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>5.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+
+<Props_Bastion Name="Prop_Imperial_Building_G">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>EB_CheckPointStructure.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+
+<Props_Bastion Name="Prop_Imperial_Building_H">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>w_uplink_station.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.6</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+
+<Props_Bastion Name="Prop_Imperial_Building_I">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>Mausoleum.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.13</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+
+	<Props_Bastion Name="Prop_Imperial_Building_J">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_urban_building_A.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+  
+  <Props_Bastion Name="Prop_Imperial_Building_JJ">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_urban_building_A.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+  
+	<Props_Bastion Name="Prop_Imperial_Building_K">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_urban_building_B.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+ 
+ <Props_Bastion Name="Prop_Imperial_Building_KK">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_urban_building_B.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+ 
+<Props_Bastion Name="Prop_Imperial_Building_K_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_urban_building_B.ALO</Land_Model_Name>
+		<Scale_Factor>5.0</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+
+<Props_Bastion Name="Prop_Imperial_Building_L">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_urban_building_C.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+ 
+ <Props_Bastion Name="Prop_Imperial_Building_LL">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_urban_building_C.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+ 
+<Props_Bastion Name="Prop_Imperial_Building_M">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_urban_building_D.ALO</Land_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+
+<Props_Bastion Name="Prop_Imperial_Building_MM">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_urban_building_D.ALO</Land_Model_Name>
+		<Scale_Factor>0.1</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+
+<Props_Bastion Name="Prop_Imperial_Building_N">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_urban_building_E.ALO</Land_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+
+<Props_Bastion Name="Prop_Imperial_Building_NN">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_urban_building_E.ALO</Land_Model_Name>
+		<Scale_Factor>0.1</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+
+<Props_Bastion Name="Prop_Imperial_Building_O">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_urban_building_F.ALO</Land_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+
+<Props_Bastion Name="Prop_Imperial_Building_OO">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_urban_building_F.ALO</Land_Model_Name>
+		<Scale_Factor>0.1</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+
+<Props_Bastion Name="Prop_Imperial_Building_P">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_urban_building_D.ALO</Land_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+
+<Props_Bastion Name="Prop_Imperial_Building_PP">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_urban_building_F.ALO</Land_Model_Name>
+		<Scale_Factor>0.1</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+
+<Props_Bastion Name="Prop_Imperial_Building_Q">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>Bastion8.alo</Land_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+
+<Props_Bastion Name="Prop_Imperial_Building_QQ">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>Bastion8.alo</Land_Model_Name>
+		<Scale_Factor>0.1</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+
+	<Props_Bastion Name="Imperial_Guard_Tower">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name><Land_Model_Name>EB_GuardTower.alo</Land_Model_Name></Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+	<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+
+	<Props_Bastion Name="Imperial_Bridge">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name><Land_Model_Name>W_DathBridge.alo</Land_Model_Name></Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+			<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		</Props_Bastion>
+	
+<Props_Bastion Name="Prop_Imp_HalfWall_F_Huge">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanHalfWall_C.ALO</Land_Model_Name>
+		<Scale_Factor>5.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+
+		<Props_Bastion Name="Prop_Imp_SteamPipes">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanPipes.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Bastion>
+
+<Props_Bastion Name="Prop_Imp_Antenna_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanStreetLite.ALO</Land_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Props_Bastion>
+	
+	<Props_Bastion Name="Prop_Imp_Antenna_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanStreetLite.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Props_Bastion>
+	
+	<Props_Bastion Name="Prop_Imp_Antenna_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanStreetLite.ALO</Land_Model_Name>
+		<Scale_Factor>1.25</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Props_Bastion>
+	
+	<Props_Bastion Name="Prop_Imp_Antenna_D">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanStreetLite.ALO</Land_Model_Name>
+		<Scale_Factor>1.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Props_Bastion>
+
+	<Props_Bastion Name="Prop_Imp_Antenna_E">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanStreetLite.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Props_Bastion>
+
+
+		<Props_Bastion Name="Prop_Imp_Wall_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanWall_A.ALO</Land_Model_Name>
+		<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+	<Props_Bastion Name="Prop_Imp_Wall_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanWall_B.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		</Props_Bastion>
+
+	<Props_Bastion Name="Prop_Imp_Wall_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanWall_A.ALO</Land_Model_Name>
+		<Scale_Factor>0.6</Scale_Factor>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+
+	<Props_Bastion Name="Prop_Imp_Wall_D_HUGE">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanWall_B.ALO</Land_Model_Name>
+		<Scale_Factor>5.0</Scale_Factor>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Bastion>
+	
+	<Props_Bastion Name="Prop_Imp_Tower_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Land_Model_Name>W_Kamino_Tower_lrg.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Is_Discardable>No</Is_Discardable> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+</Props_Bastion>
+
+	<Props_Bastion Name="Prop_Imp_Tower_Small">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Kamino_Tower_sml.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Is_Discardable>No</Is_Discardable> 
+	</Props_Bastion>
+	
+<Props_Bastion Name="Prop_Imp_Wall_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>EB_BaseWall-mid.alo</Land_Model_Name>
+			<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Scale_Factor>4.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Is_Discardable>No</Is_Discardable> 
+	</Props_Bastion>
+
+<Props_Bastion Name="Prop_Imp_Wall_Large_Corner">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>EB_BaseWall-crn.alo</Land_Model_Name>
+			<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Scale_Factor>4.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Is_Discardable>No</Is_Discardable> 
+	</Props_Bastion>
+
+<Props_Bastion Name="Prop_Imp_Wall_Large_Inside_Corner">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>EB_BaseWall-inside-crn.alo</Land_Model_Name>
+			<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Scale_Factor>4.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Is_Discardable>No</Is_Discardable> 
+	</Props_Bastion>
+
+<Props_Bastion Name="Prop_Imperial_Bastion_Prison">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>NB_Prison.ALO</Land_Model_Name>
+			<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Is_Discardable>No</Is_Discardable> 
+	</Props_Bastion>
+
+</Props_Bastion>

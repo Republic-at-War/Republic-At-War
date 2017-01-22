@@ -1,0 +1,261 @@
+<?xml version="1.0"?>
+
+
+
+<Droid_Enforcer_Tank_Data>
+
+
+
+
+
+
+
+
+	<GroundVehicle Name="Persuader_Droid_Enforcer">
+
+		<Text_ID>TEXT_UNIT_ENFORCER_TANK</Text_ID>
+		<Encyclopedia_Good_Against> AT_AP AT_RT_Walker AT_RT_Walker </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> A6_Juggernaut LAAT AT-TE_Walker </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text>TEXT_TOOLTIP_ENFORCER_TANK</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_enforcer_tank.tga</Icon_Name>
+
+		<Select_Box_Scale>90</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Land_Model_Name>SEV_SNAILTANK.ALO</Land_Model_Name>
+
+		<Max_Speed>1.0</Max_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Movement_Animation_Speed> 1.0 </Movement_Animation_Speed>
+
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Affiliation>Rebel</Affiliation>
+		<Political_Control>0</Political_Control>	
+		<Ranking_In_Category>7</Ranking_In_Category>
+
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Vehicle </UnitCollisionClass>
+		<OverrideAcceleration> .2 </OverrideAcceleration>
+		<OverrideDeceleration> .2 </OverrideDeceleration>
+		<FormationSpacing> 2.5 </FormationSpacing>
+		<FormationOrder> 4 </FormationOrder>
+		<FormationGrouping> Standard </FormationGrouping>
+		<FormationRaggedness> 0.5 </FormationRaggedness>
+		<MaxJiggleDistance> 0 </MaxJiggleDistance>
+		<MinimumPushReturnDistance> 100 </MinimumPushReturnDistance>
+
+		<UseSecondaryFacing> false </UseSecondaryFacing>
+		<SecondaryTurnInPlaceROTCoefficient> .5 </SecondaryTurnInPlaceROTCoefficient>
+		<SecondaryTurnAngle> 90 </SecondaryTurnAngle>
+		<MinSecondaryTurnROTCoefficient> .01 </MinSecondaryTurnROTCoefficient>
+		<MaxSecondaryTurnROTCoefficient> .7 </MaxSecondaryTurnROTCoefficient>
+		<SecondaryTurnLookaheadDistance> 0 </SecondaryTurnLookaheadDistance>
+
+		<Custom_Hard_XExtent> 20.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 10.0 </Custom_Hard_YExtent>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+
+		<Behavior> SELECTABLE </Behavior>
+		<LandBehavior> ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, TREAD_SCROLL, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, POWERED, REVEAL, HIDE_WHEN_FOGGED, SQUASH, SURFACE_FX, UNIT_AI, STUNNABLE, WIND_DISTURBANCE,DAMAGE_TRACKING, SELF_DESTRUCT</LandBehavior>
+
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+		<SurfaceFX_Name>Generic_Track</SurfaceFX_Name>
+		<Property_Flags>GoodInfantryCrusher</Property_Flags>
+
+		<Size_Value>70</Size_Value>
+		<Damage>20</Damage>
+		<Armor_Type> Armor_T4B </Armor_Type>
+		<Tactical_Health>550</Tactical_Health>
+
+		<Shield_Points>0</Shield_Points>
+		<Shield_Refresh_Rate>18</Shield_Refresh_Rate>
+		<Energy_Capacity>999</Energy_Capacity>
+		<Energy_Refresh_Rate>999</Energy_Refresh_Rate>
+
+		<Land_FOW_Reveal_Range>275.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>650.0</Targeting_Max_Attack_Distance>
+		<Ranged_Target_Z_Adjust>13.0</Ranged_Target_Z_Adjust>
+
+		<Projectile_Types>Proj_Ground_Laser_Cannon_Red_ATAT</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>1.5</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>4</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+
+		<Targeting_Fire_Inaccuracy> Infantry, 10.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 1.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 1.0 </Targeting_Fire_Inaccuracy>
+		<Fire_Category_Restrictions> Air </Fire_Category_Restrictions>	
+
+		<Turret_Rotate_Extent_Degrees>10</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>45</Turret_Elevate_Extent_Degrees>
+
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<Wind_Disturbance_Radius>50</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>10</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.4</Wind_Disturbance_Sphere_Alpha>
+		<Base_Shield_Penetration_Particle>Shield_Penetration_Effect_Particle</Base_Shield_Penetration_Particle>
+
+		<SFXEvent_Fire>Unit_Enforcer_Tank_Fire</SFXEvent_Fire>
+		<!--<SFXEvent_Fire>Unit_AT_AT_Fire</SFXEvent_Fire>-->
+		<SFXEvent_Select>Unit_Select_Snailtank</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Snailtank</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Snailtank</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Snailtank</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Move_Snailtank</SFXEvent_Guard>
+		<SFXEvent_Assist_Move> Unit_Move_Snailtank</SFXEvent_Assist_Move>		
+		<SFXEvent_Assist_Attack> Unit_Attack_Snailtank</SFXEvent_Assist_Attack>
+		<SFXEvent_Engine_Idle_Loop> Unit_T2B_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_T2B_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Unit_Lost> UHD_Unit_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Tactical_Build_Started> UHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>		
+		<SFXEvent_Tactical_Build_Complete> UHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>		
+		<SFXEvent_Tactical_Build_Cancelled> UHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+		<Death_SFXEvent_Start_Die>Unit_Tank_Death_SFX</Death_SFXEvent_Start_Die>
+
+
+
+
+		<No_Reflection_Below_Detail_Level>99</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>3</No_Refraction_Below_Detail_Level>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>65.0, 50.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+
+		<CategoryMask> Vehicle </CategoryMask>
+		<MovementClass>Tracked</MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Ground_Vehicle_Turret_Target> Yes </Ground_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Overall_Length>45.0</Overall_Length> <!-- For vehicle pitching up and down on terrain -->
+		<Overall_Width>20.0</Overall_Width> <!-- For vehicle rolling left and right on terrain value (20 by geometry)-->
+		<Has_Land_Evaluator>Yes</Has_Land_Evaluator>
+		<AI_Combat_Power>200</AI_Combat_Power>
+
+		<Idle_Chase_Range>0.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>AntiVehicleStructure</Targeting_Priority_Set>
+		<Autonomous_Move_Extension_Vs_Attacker>150.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Converted_To_Enemy_Die_Time_Seconds>45</Converted_To_Enemy_Die_Time_Seconds>
+		<Weather_Category>Tracked</Weather_Category>
+
+		<Death_Clone>Damage_Normal, Snailtank_Death_Clone</Death_Clone>
+		<Score_Cost_Credits>1500</Score_Cost_Credits>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+
+
+		<Tactical_Bribe_Cost />
+
+	</GroundVehicle>
+
+	<GroundVehicle Name="Snailtank_Death_Clone">
+		<Variant_Of_Existing_Type>Persuader_Droid_Enforcer</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Land_Model_Name>SeV_snailtank_dc.ALO</Land_Model_Name>
+		<Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
+		<LandBehavior>HIDE_WHEN_FOGGED,LAND_OBSTACLE</LandBehavior>
+		<Obstacle_Width>40.0</Obstacle_Width>
+		<Obstacle_Height>40.0</Obstacle_Height>
+		<Obstacle_X_Offset>0.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-20.0</Obstacle_Y_Offset>
+		<Death_Persistence_Duration> 20 </Death_Persistence_Duration>
+		<Death_Explosions_End>Large_Explosion_Land</Death_Explosions_End>
+		<Death_SFXEvent_End_Die>Unit_Calamari_Death_SFX</Death_SFXEvent_End_Die>
+		<IsDeathClone> true </IsDeathClone>
+	</GroundVehicle>
+
+	<GroundCompany Name="Persuader_Droid_Enforcer_Company">
+		<Text_ID>TEXT_UNIT_ENFORCER_TANK</Text_ID>
+		<Encyclopedia_Good_Against> AT_AP AT_RT_Walker AT_RT_Walker </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> A6_Juggernaut LAAT AT-TE_Walker </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text>TEXT_TOOLTIP_ENFORCER_TANK</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_enforcer_tank.tga</Icon_Name>
+
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>40</Damage>
+		<Autoresolve_Health>100</Autoresolve_Health>
+
+		<Affiliation>Rebel</Affiliation>
+		<Build_Cost_Credits>650</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Tech_Level>2</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>R_Ground_Heavy_Vehicle_Factory</Required_Special_Structures>
+		<!--<Required_Planets>Geonosis, Mechis, Hypori</Required_Planets>-->
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>2</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Ship_Class>tank</Ship_Class>
+		<Company_Transport_Unit>C9979_Landing_Craft</Company_Transport_Unit>
+		<Company_Units>Persuader_Droid_Enforcer, Persuader_Droid_Enforcer</Company_Units>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Score_Cost_Credits>180</Score_Cost_Credits>
+		<Population_Value>2</Population_Value>
+		<Maintenance_Cost>0.05</Maintenance_Cost>
+
+		<Cheap_Bribe_Cost>9</Cheap_Bribe_Cost>
+		<Expensive_Bribe_Cost>18</Expensive_Bribe_Cost>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Snailtank</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Snailtank</SFXEvent_Fleet_Move>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>750</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>RC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+
+	</GroundCompany>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Droid_Enforcer_Tank_Data>

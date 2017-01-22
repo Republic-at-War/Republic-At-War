@@ -1,0 +1,3651 @@
+SURFACE	ei_trooper_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ei_trooper_move_00	1032	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ei_trooper_move_01	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ei_trooper_move_01	1170	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ei_trooper_move_02	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ei_trooper_move_02	1164	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ei_trooper_die_00	1152	TROOPER_IMPACT	B_Head
+
+SURFACE	ei_trooper_die_01	888	TROOPER_IMPACT	B_Thigh_R
+
+SURFACE	ei_trooper_fw_die_00	1113	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ei_trooper_fw_die_01	1274	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ei_trooper_fw_die_02	1320	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ei_trooper_fl_die_00	8653	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ei_trooper_fl_die_01	9437	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ei_trooper_land_00	805	TROOPER_IMPACT	B_Neck
+SURFACE	ei_trooper_land_00	2632	TROOPER_IMPACT	B_Neck
+
+SOUND	ei_trooper_crushed_00	698	Unit_Infantry_Squish
+
+SOUND	ev_at-at_move_00	3145	Unit_Anim_AT_AT_Walk_Hydraulics
+SURFACE	ev_at-at_move_00	7946	AT_AT_FOOTPRINT	P_FootPuff_L02
+SOUND	ev_at-at_move_00	8146	Unit_Anim_AT_AT_Walk_Hydraulics
+SURFACE	ev_at-at_move_00	10945	AT_AT_FOOTPRINT	P_FootPuff_L01
+SOUND	ev_at-at_move_00	11145	Unit_Anim_AT_AT_Walk_Hydraulics
+SURFACE	ev_at-at_move_00	14945	AT_AT_FOOTPRINT	P_FootPuff_R02
+SOUND	ev_at-at_move_00	15145	Unit_Anim_AT_AT_Walk_Hydraulics
+SURFACE	ev_at-at_move_00	2911	AT_AT_FOOTPRINT	P_Footpuff_R01
+
+SURFACE	ev_at-at_turnl_00	1645	AT_AT_FOOTPRINT	P_FootPuff_R02
+SURFACE	ev_at-at_turnl_00	3745	AT_AT_FOOTPRINT	P_FootPuff_L02
+SURFACE	ev_at-at_turnl_00	5930	AT_AT_FOOTPRINT	B_Foot_R01
+SURFACE	ev_at-at_turnl_00	8200	AT_AT_FOOTPRINT	B_Foot_L01
+
+SURFACE	ev_at-at_turnr_00	2445	AT_AT_FOOTPRINT	P_FootPuff_L02
+SURFACE	ev_at-at_turnr_00	4446	AT_AT_FOOTPRINT	P_FootPuff_R02
+SURFACE	ev_at-at_turnr_00	6246	AT_AT_FOOTPRINT	P_FootPuff_L01
+SURFACE	ev_at-at_turnr_00	8446	AT_AT_FOOTPRINT	P_FootPuff_R01
+
+SOUND	ev_at-at_die_00	5946	Unit_Anim_AT_AT_Death_Fall
+SOUND	ev_at-at_die_00	20146	Unit_Anim_AT_AT_Ground_Slam
+SURFACE	ev_at-at_die_00	3052	AT_AT_FOOTPRINT	B_Foot_L01
+
+SOUND	ev_at-at_die_01	21600	Unit_Anim_AT_AT_Ground_Slam
+SOUND	ev_at-at_die_01	1169	Unit_Anim_AT_AT_Walk_Hydraulics
+SOUND	ev_at-at_die_01	6149	Unit_Anim_AT_AT_Walk_Hydraulics
+SOUND	ev_at-at_die_01	8152	Unit_Space_Station_Break_Death_SFX
+SOUND	ev_at-at_die_01	7049	Unit_Anim_AT_AT_Death_Fall
+
+SOUND	ev_at-at_die_02	480	Unit_Anim_AT_AT_Death_Fall
+SOUND	ev_at-at_die_02	18450	Unit_Anim_AT_AT_Ground_Slam
+SOUND	ev_at-at_die_02	9209	Unit_Anim_AT_AT_Foot_Plant
+SOUND	ev_at-at_die_02	12089	Unit_Anim_AT_AT_Foot_Plant
+
+SURFACE	ev_at-at_turnl_begin_00	4146	AT_AT_FOOTPRINT	P_FootPuff_L01
+
+SURFACE	ev_at-at_turnl_end_00	5646	AT_AT_FOOTPRINT	P_FootPuff_L01
+
+SURFACE	ev_at-at_turnr_begin_00	2745	AT_AT_FOOTPRINT	P_FootPuff_R01
+
+SURFACE	ev_at-at_turnr_end_00	5346	AT_AT_FOOTPRINT	P_FootPuff_R01
+
+SURFACE	ev_at-at_movestart_00	3945	AT_AT_FOOTPRINT	P_FootPuff_L02
+SURFACE	ev_at-at_movestart_00	6146	AT_AT_FOOTPRINT	P_FootPuff_R01
+SURFACE	ev_at-at_movestart_00	10945	AT_AT_FOOTPRINT	P_FootPuff_L01
+SURFACE	ev_at-at_movestart_00	14445	AT_AT_FOOTPRINT	P_FootPuff_L01
+
+SURFACE	ev_at-at_move_endone_00	2545	AT_AT_FOOTPRINT	P_FootPuff_R01
+SURFACE	ev_at-at_move_endone_00	6846	AT_AT_FOOTPRINT	P_FootPuff_L02
+SURFACE	ev_at-at_move_endone_00	10745	AT_AT_FOOTPRINT	P_FootPuff_R02
+SURFACE	ev_at-at_move_endone_00	14945	AT_AT_FOOTPRINT	P_FootPuff_L01
+
+SURFACE	ev_at-at_move_endtwo_00	3645	AT_AT_FOOTPRINT	P_FootPuff_L02
+SURFACE	ev_at-at_move_endtwo_00	7546	AT_AT_FOOTPRINT	P_FootPuff_R02
+SURFACE	ev_at-at_move_endtwo_00	11845	AT_AT_FOOTPRINT	P_FootPuff_L01
+
+SURFACE	ev_at-at_move_endthree_00	3045	AT_AT_FOOTPRINT	P_FootPuff_L01
+SURFACE	ev_at-at_move_endthree_00	6746	AT_AT_FOOTPRINT	P_FootPuff_R02
+SURFACE	ev_at-at_move_endthree_00	10945	AT_AT_FOOTPRINT	P_FootPuff_R01
+SURFACE	ev_at-at_move_endthree_00	14845	AT_AT_FOOTPRINT	P_FootPuff_L02
+
+SURFACE	ev_at-at_move_endfour_00	3345	AT_AT_FOOTPRINT	P_FootPuff_R02
+SURFACE	ev_at-at_move_endfour_00	6446	AT_AT_FOOTPRINT	P_FootPuff_R01
+SURFACE	ev_at-at_move_endfour_00	11745	AT_AT_FOOTPRINT	P_FootPuff_L02
+SURFACE	ev_at-at_move_endfour_00	14745	AT_AT_FOOTPRINT	P_FootPuff_L01
+
+SURFACE	ev_at-at_turnl_half_00	1700	AT_AT_FOOTPRINT	B_Foot_R02
+SURFACE	ev_at-at_turnl_half_00	3689	AT_AT_FOOTPRINT	B_Foot_L02
+SURFACE	ev_at-at_turnl_half_00	5940	AT_AT_FOOTPRINT	B_Foot_R01
+SURFACE	ev_at-at_turnl_half_00	8325	AT_AT_FOOTPRINT	B_Foot_L01
+
+SURFACE	ev_at-at_turnl_quarter_00	1574	AT_AT_FOOTPRINT	B_Foot_R02
+SURFACE	ev_at-at_turnl_quarter_00	3532	AT_AT_FOOTPRINT	B_Foot_L02
+SURFACE	ev_at-at_turnl_quarter_00	5547	AT_AT_FOOTPRINT	B_Foot_R01
+SURFACE	ev_at-at_turnl_quarter_00	8104	AT_AT_FOOTPRINT	B_Foot_L01
+
+SURFACE	ev_at-at_turnr_half_00	2177	AT_AT_FOOTPRINT	B_Foot_L02
+SURFACE	ev_at-at_turnr_half_00	4121	AT_AT_FOOTPRINT	B_Foot_R02
+SURFACE	ev_at-at_turnr_half_00	6254	AT_AT_FOOTPRINT	B_Foot_L01
+SURFACE	ev_at-at_turnr_half_00	8100	AT_AT_FOOTPRINT	B_Foot_R01
+
+SURFACE	ev_at-at_turnr_quarter_00	1988	AT_AT_FOOTPRINT	B_Foot_L02
+SURFACE	ev_at-at_turnr_quarter_00	4095	AT_AT_FOOTPRINT	B_Foot_R02
+SURFACE	ev_at-at_turnr_quarter_00	6209	AT_AT_FOOTPRINT	B_Foot_L01
+SURFACE	ev_at-at_turnr_quarter_00	7973	AT_AT_FOOTPRINT	B_Foot_R01
+
+SURFACE	ev_at-at_deploy_00	2789	AT_AT_FOOTPRINT	B_Foot_R01
+SURFACE	ev_at-at_deploy_00	7415	AT_AT_FOOTPRINT	B_Foot_R02
+
+SURFACE	ev_at-at_undeploy_00	2519	AT_AT_FOOTPRINT	B_Foot_R02
+SURFACE	ev_at-at_undeploy_00	7523	AT_AT_FOOTPRINT	B_Foot_R01
+
+SOUND	ev_at-at_ca_die_00	731	Unit_Anim_AT_AT_Walk_Hydraulics
+SOUND	ev_at-at_ca_die_00	16	Unit_Anim_AT_AT_Death_Fall
+SOUND	ev_at-at_ca_die_00	8959	Unit_Anim_AT_AT_Ground_Slam
+
+SOUND	ev_at-at_deployed_ca_die_00	43	Unit_Anim_AT_AT_Death_Fall
+SOUND	ev_at-at_deployed_ca_die_00	9019	Unit_Anim_AT_AT_Ground_Slam
+
+SOUND	ev_at-at_deployed_die_00	139	Unit_Anim_AT_AT_Death_Fall
+SOUND	ev_at-at_deployed_die_00	20019	Unit_Anim_AT_AT_Ground_Slam
+SURFACE	ev_at-at_deployed_die_00	2855	AT_AT_FOOTPRINT	B_Foot_L01
+
+SOUND	ev_at-at_rope_drop_00	41	Unit_AT_AT_Rope_Drop
+
+SOUND	ev_at-at_rope_lift_00	65	Unit_AT_AT_Rope_Lift
+
+SOUND	ev_atpt_idle_00	139	Vehicle_Anim_Motor
+SOUND	ev_atpt_idle_00	7179 Vehicle_Anim_Motor
+
+SURFACE	ev_atpt_move_00	1300  AT_PT_Footprint B_Foot_L
+SURFACE	ev_atpt_move_00	2900  AT_PT_Footprint B_Foot_R
+
+SURFACE	ev_atpt_turnl_00 1400  AT_PT_Footprint	B_Foot_L
+SURFACE	ev_atpt_turnl_00 2900	 AT_PT_Footprint	B_Foot_R
+
+SURFACE	ev_atpt_turnr_00 1300  AT_PT_Footprint	B_Foot_L
+SURFACE	ev_atpt_turnr_00 2900	 AT_PT_Footprint	B_Foot_R
+
+SOUND	ev_at-st_idle_01	69	Vehicle_Anim_Motor
+SOUND	ev_at-st_idle_01	6519	Vehicle_Anim_Motor
+
+SURFACE	ev_at-st_move_00	1220	AT-ST_FOOTPRINT	B_Foot_L
+SURFACE	ev_at-st_move_00	2749	AT-ST_FOOTPRINT	B_Foot_R
+
+SURFACE	ev_at-st_turnl_00	1338	AT-ST_FOOTPRINT	B_Foot_L
+SURFACE	ev_at-st_turnl_00	2840	AT-ST_FOOTPRINT	B_Foot_R
+
+SURFACE	ev_at-st_turnr_00	1231	AT-ST_FOOTPRINT	B_Foot_R
+SURFACE	ev_at-st_turnr_00	2740	AT-ST_FOOTPRINT	B_Foot_L
+
+SOUND	ev_at-st_die_00	45	Unit_Anim_AT_ST_Death_Fall
+SOUND	ev_at-st_die_00	2663	Unit_Anim_AT_ST_Ground_Slam
+
+SOUND	ev_at-st_die_01	12	Unit_Anim_AT_ST_Death_Fall
+SOUND	ev_at-st_die_01	1300	Unit_Anim_AT_ST_Ground_Slam
+
+SOUND	ev_at-st_die_02	2802	Unit_Anim_AT_ST_Ground_Slam
+SOUND	ev_at-st_die_02	12	Unit_Anim_AT_ST_Death_Fall
+
+SURFACE	ev_at-st_movestart_00	1209	AT-ST_FOOTPRINT	B_Foot_L
+SURFACE	ev_at-st_movestart_00	2808	AT-ST_FOOTPRINT	B_Foot_R
+
+SURFACE	ev_at-st_move_endone_00	1444	AT-ST_FOOTPRINT	B_Foot_L
+SURFACE	ev_at-st_move_endone_00	2850	AT-ST_FOOTPRINT	B_Foot_R
+
+SURFACE	ev_at-st_move_endtwo_00	777	AT-ST_FOOTPRINT	B_Foot_L
+SURFACE	ev_at-st_move_endtwo_00	2840	AT-ST_FOOTPRINT	B_Foot_R
+
+SURFACE	ev_at-st_move_endthree_00	1049	AT-ST_FOOTPRINT	B_Foot_R
+SURFACE	ev_at-st_move_endthree_00	2749	AT-ST_FOOTPRINT	B_Foot_L
+
+SURFACE	ev_at-st_turnl_half_00	1214	AT-ST_FOOTPRINT	B_Foot_L
+SURFACE	ev_at-st_turnl_half_00	2829	AT-ST_FOOTPRINT	B_Foot_R
+
+SURFACE	ev_at-st_turnl_quarter_00	1103	AT-ST_FOOTPRINT	B_Foot_L
+SURFACE	ev_at-st_turnl_quarter_00	2888	AT-ST_FOOTPRINT	B_Foot_R
+
+SURFACE	ev_at-st_turnr_half_00	1321	AT-ST_FOOTPRINT	B_Foot_L
+SURFACE	ev_at-st_turnr_half_00	2818	AT-ST_FOOTPRINT	B_Foot_R
+
+SURFACE	ev_at-st_turnr_quarter_00	1119	AT-ST_FOOTPRINT	B_Foot_L
+SURFACE	ev_at-st_turnr_quarter_00	2866	AT-ST_FOOTPRINT	B_Foot_R
+
+
+SURFACE	ReV_atte_move_00	892.5	AT_AT_FOOTPRINT		B_FOOT_R2
+SURFACE	ReV_atte_move_00	3686	POD_WALKER_FOOTPRINT	B_Foot_R3
+SURFACE	ReV_atte_move_00	5011	POD_WALKER_FOOTPRINT B_Foot_L2
+SURFACE	ReV_atte_move_00	5807.5	AT_AT_FOOTPRINT B_Foot_R1
+SURFACE	ReV_atte_move_00	8837	POD_WALKER_FOOTPRINT	B_Foot_L3
+SURFACE	ReV_atte_move_00	9926	POD_WALKER_FOOTPRINT	B_Foot_L1
+
+SOUND	ReV_atte_movestart_00	10	Unit_Anim_AT_AT_Walk_Hydraulics
+SOUND	ReV_atte_movestart_00	30	Unit_Anim_AT_AT_Walk_Hydraulics
+SURFACE	ReV_atte_movestart_00	1600	AT_AT_FOOTPRINT		B_FOOT_L2
+SURFACE	ReV_atte_movestart_00	3200	AT_AT_FOOTPRINT		B_FOOT_R2
+SURFACE	ReV_atte_movestart_00	2400	AT_TE_Footprint	B_Foot_L1
+SURFACE	ReV_atte_movestart_00	1200	AT_TE_Footprint	B_Foot_R1
+SURFACE	ReV_atte_movestart_00	2400	AT_TE_Footprint	B_Foot_L3
+SURFACE	ReV_atte_movestart_00	1200	AT_TE_Footprint	B_Foot_R3
+
+SURFACE	ReV_atte_turnl_00	2400	AT_TE_Footprint	B_Foot_L1
+SURFACE	ReV_atte_turnl_00	1200	AT_TE_Footprint	B_Foot_R1
+SURFACE	ReV_atte_turnl_00	2400	AT_TE_Footprint	B_Foot_L3
+SURFACE	ReV_atte_turnl_00	1200	AT_TE_Footprint	B_Foot_R3
+SURFACE	ReV_atte_turnl_00	3200	AT_AT_FOOTPRINT		B_FOOT_R2
+SURFACE	ReV_atte_turnl_00	1600	AT_AT_FOOTPRINT		B_FOOT_L2
+
+SURFACE	ReV_atte_turnr_00	2400	AT_TE_Footprint	B_Foot_R1
+SURFACE	ReV_atte_turnr_00	1200	AT_TE_Footprint	B_Foot_L1
+SURFACE	ReV_atte_turnr_00	2400	AT_TE_Footprint	B_Foot_R3
+SURFACE	ReV_atte_turnr_00	1200	AT_TE_Footprint	B_Foot_L3
+SURFACE	ReV_atte_turnr_00	3200	AT_AT_FOOTPRINT		B_FOOT_R2
+SURFACE	ReV_atte_turnr_00	1600	AT_AT_FOOTPRINT		B_FOOT_L2
+
+SOUND	ReV_atte_die_00	547.5	Structure_Repair_UnDeploy
+SOUND	ReV_atte_die_00	5202.5	Unit_Anim_AT_AT_Ground_Slam
+
+SOUND	rv_mptl-2a_deploy_00	24	Unit_MPTL_Tank_Deploy_Start
+SOUND	rv_mptl-2a_deploy_00	7015	Unit_MPTL_Tank_Deploy_Stop
+
+SOUND	rv_mptl-2a_undeploy_00	44	Unit_MPTL_Tank_Undeploy_Start
+SOUND	rv_mptl-2a_undeploy_00	8581	Unit_MPTL_Tank_Undeploy_Stop
+
+SURFACE	ri_plexsoldier_move_00	30	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ri_plexsoldier_move_00	1575	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ri_plexsoldier_die_00	1047	GENERIC_IMPACT	B_Backpack
+
+SURFACE	ri_plexsoldier_die_01	522	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ri_plexsoldier_fw_die_00	1021	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ri_plexsoldier_fw_die_01	1253	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ri_plexsoldier_fw_die_02	1229	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ri_plexsoldier_fl_die_00	8583	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ri_plexsoldier_land_00	883	GENERIC_IMPACT	B_Neck
+
+SOUND	ri_plexsoldier_crushed_00	684	Unit_Infantry_Squish
+
+SURFACE	ri_infantry_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ri_infantry_move_00	1042	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ri_infantry_move_01	15	GENERIC_TRACK	B_Foot_R
+SURFACE	ri_infantry_move_01	1141	GENERIC_TRACK	B_Foot_L
+
+SURFACE	ri_infantry_move_02	19	GENERIC_TRACK	B_Foot_R
+SURFACE	ri_infantry_move_02	1106	GENERIC_TRACK	B_Foot_L
+
+SURFACE	ri_infantry_die_00	1162	GENERIC_IMPACT	B_Backpack
+
+SURFACE	ri_infantry_die_01	592	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ri_infantry_fw_die_00	1029	GENERIC_IMPACT	B_Backpack
+
+SURFACE	ri_infantry_fw_die_01	1293	GENERIC_IMPACT	B_Backpack
+
+SURFACE	ri_infantry_fw_die_02	1392	GENERIC_IMPACT	B_Backpack
+
+SURFACE	ri_infantry_fl_die_00	8233	GENERIC_IMPACT	B_Backpack
+
+SURFACE	ri_infantry_land_00	618	GENERIC_IMPACT	B_Backpack
+SURFACE	ri_infantry_land_00	2970	GENERIC_IMPACT	B_Backpack
+
+SOUND	ri_infantry_crushed_00	720	Unit_Infantry_Squish
+
+SURFACE	ev_spmat_move_00	3478	SPMAT_FOOTPRINT	BN_Foot_L02
+SURFACE	ev_spmat_move_00	6937	SPMAT_FOOTPRINT	BN_Foot_R02
+
+SURFACE	ev_spmat_turnl_00	4461	SPMAT_FOOTPRINT	BN_Foot_L02
+SURFACE	ev_spmat_turnl_00	1033	SPMAT_FOOTPRINT	BN_Foot_R00
+SURFACE	ev_spmat_turnl_00	1445	SPMAT_FOOTPRINT	BN_Foot_L00
+SURFACE	ev_spmat_turnl_00	2142	SPMAT_FOOTPRINT	BN_Foot_R02
+SURFACE	ev_spmat_turnl_00	2898	SPMAT_FOOTPRINT	BN_Foot_R00
+SURFACE	ev_spmat_turnl_00	4465	SPMAT_FOOTPRINT	BN_Foot_L02
+SURFACE	ev_spmat_turnl_00	5253	SPMAT_FOOTPRINT	BN_Foot_R00
+
+SURFACE	ev_spmat_turnr_00	895	SPMAT_FOOTPRINT	BN_Foot_L02
+SURFACE	ev_spmat_turnr_00	1364	SPMAT_FOOTPRINT	BN_Foot_R00
+SURFACE	ev_spmat_turnr_00	2301	SPMAT_FOOTPRINT	BN_Foot_L00
+SURFACE	ev_spmat_turnr_00	2952	SPMAT_FOOTPRINT	BN_Foot_R02
+SURFACE	ev_spmat_turnr_00	3921	SPMAT_FOOTPRINT	BN_Foot_L02
+SURFACE	ev_spmat_turnr_00	4476	SPMAT_FOOTPRINT	BN_Foot_R00
+SURFACE	ev_spmat_turnr_00	5307	SPMAT_FOOTPRINT	BN_Foot_L00
+
+SOUND	ev_spmat_die_00	3678	Unit_Anim_SPMAT_Foot_Plant
+SOUND	ev_spmat_die_00	4425	Unit_Anim_SPMAT_Foot_Plant
+SOUND	ev_spmat_die_00	5100	Unit_Anim_SPMAT_Foot_Plant
+SOUND	ev_spmat_die_00	6513	Unit_Anim_SPMAT_Foot_Plant
+
+SURFACE	ev_spmat_movestart_00	0	SPMAT_FOOTPRINT	BN_Foot_L00
+SURFACE	ev_spmat_movestart_00	2888	SPMAT_FOOTPRINT	BN_Foot_R00
+SURFACE	ev_spmat_movestart_00	5818	SPMAT_FOOTPRINT	BN_Foot_L02
+
+SURFACE	ev_spmat_move_endone_00	6823	SPMAT_FOOTPRINT	BN_Foot_L00
+SURFACE	ev_spmat_move_endone_00	2532	SPMAT_FOOTPRINT	BN_Foot_L02
+SURFACE	ev_spmat_move_endone_00	0	SPMAT_FOOTPRINT	BN_Foot_R00
+SURFACE	ev_spmat_move_endone_00	5640	SPMAT_FOOTPRINT	BN_Foot_R02
+SURFACE	ev_spmat_move_endone_00	1914	SPMAT_FOOTPRINT	BN_Foot_L00
+SURFACE	ev_spmat_move_endone_00	3294	SPMAT_FOOTPRINT	BN_Foot_L02
+SURFACE	ev_spmat_move_endone_00	5023	SPMAT_FOOTPRINT	BN_Foot_R00
+
+SURFACE	ev_spmat_move_endtwo_00	4514	SPMAT_FOOTPRINT	BN_Foot_R00
+SURFACE	ev_spmat_move_endtwo_00	3967	SPMAT_FOOTPRINT	BN_Foot_R02
+SURFACE	ev_spmat_move_endtwo_00	6865	SPMAT_FOOTPRINT	BN_Foot_L00
+SURFACE	ev_spmat_move_endtwo_00	1511	SPMAT_FOOTPRINT	BN_Foot_L02
+SURFACE	ev_spmat_move_endtwo_00	1293	SPMAT_FOOTPRINT	BN_Foot_R00
+SURFACE	ev_spmat_move_endtwo_00	4326	SPMAT_FOOTPRINT	BN_Foot_R02
+SURFACE	ev_spmat_move_endtwo_00	6788	SPMAT_FOOTPRINT	BN_Foot_L00
+
+SURFACE	ev_spmat_move_endthree_00	4891	SPMAT_FOOTPRINT	BN_Foot_L00
+SURFACE	ev_spmat_move_endthree_00	4723	SPMAT_FOOTPRINT	BN_Foot_L02
+SURFACE	ev_spmat_move_endthree_00	1511	SPMAT_FOOTPRINT	BN_Foot_R00
+SURFACE	ev_spmat_move_endthree_00	6851	SPMAT_FOOTPRINT	BN_Foot_R00
+SURFACE	ev_spmat_move_endthree_00	2014	SPMAT_FOOTPRINT	BN_Foot_R02
+SURFACE	ev_spmat_move_endthree_00	6711	SPMAT_FOOTPRINT	BN_Foot_R02
+SURFACE	ev_spmat_move_endthree_00	1342	SPMAT_FOOTPRINT	BN_Foot_L00
+
+SURFACE	ev_spmat_turnl_half_00	1005	SPMAT_FOOTPRINT	BN_Foot_R02
+SURFACE	ev_spmat_turnl_half_00	1369	SPMAT_FOOTPRINT	BN_Foot_L00
+SURFACE	ev_spmat_turnl_half_00	2110	SPMAT_FOOTPRINT	BN_Foot_R00
+SURFACE	ev_spmat_turnl_half_00	2861	SPMAT_FOOTPRINT	BN_Foot_L02
+
+SURFACE	ev_spmat_turnl_quarter_00	1819	SPMAT_FOOTPRINT	BN_Foot_L02
+SURFACE	ev_spmat_turnl_quarter_00	2931	SPMAT_FOOTPRINT	BN_Foot_R00
+SURFACE	ev_spmat_turnl_quarter_00	1332	SPMAT_FOOTPRINT	BN_Foot_L00
+
+SURFACE	ev_spmat_turnr_half_00	1428	SPMAT_FOOTPRINT	BN_Foot_R00
+SURFACE	ev_spmat_turnr_half_00	953	SPMAT_FOOTPRINT	BN_Foot_L00
+SURFACE	ev_spmat_turnr_half_00	1987	SPMAT_FOOTPRINT	BN_Foot_R02
+SURFACE	ev_spmat_turnr_half_00	2872	SPMAT_FOOTPRINT	BN_Foot_L02
+
+SURFACE	ev_spmat_turnr_quarter_00	2535	SPMAT_FOOTPRINT	BN_Foot_R02
+SURFACE	ev_spmat_turnr_quarter_00	1396	SPMAT_FOOTPRINT	BN_Foot_L02
+
+SOUND	ev_spmat_deploy_00	7677	Unit_SPMAT_Deploy_Stop
+SOUND	ev_spmat_deploy_00	107	Unit_SPMAT_Deploy_Start
+
+SOUND	ev_spmat_undeploy_00	8262	Unit_SPMAT_Deploy_Stop
+SOUND	ev_spmat_undeploy_00	80	Unit_SPMAT_Deploy_Start
+
+SOUND	rv_transport_land_00	32	Unit_Gallofree_Landing
+
+SOUND	rv_transport_takeoff_00	32	Unit_Gallofree_Takeoff
+
+SURFACE	ei_vader_move_00	437	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ei_vader_move_00	1489	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SOUND	ei_vader_attack_00	1511	Unit_Light_Saber_Swing
+
+SOUND	ei_vader_attack_01	262	Unit_Light_Saber_Swing
+SOUND	ei_vader_attack_01	1639	Unit_Light_Saber_Swing
+
+SOUND	ei_vader_block_blaster_00	0	Unit_Light_Saber_Swing
+
+SOUND	ei_vader_block_blaster_01	0	Unit_Light_Saber_Swing
+
+SOUND	ei_vader_block_blaster_02	0	Unit_Light_Saber_Swing
+
+SOUND	ei_vader_block_blaster_03	0	Unit_Light_Saber_Swing
+
+SOUND	ei_vader_block_blaster_04	0	Unit_Light_Saber_Swing
+
+SOUND	ei_vader_redirect_blaster_00	0	Unit_Light_Saber_Swing
+
+SOUND	ei_vader_redirect_blaster_01	0	Unit_Light_Saber_Swing
+
+SOUND	ei_vader_redirect_blaster_02	0	Unit_Light_Saber_Swing
+
+SOUND	ei_vader_redirect_blaster_03	0	Unit_Light_Saber_Swing
+
+SOUND	ei_vader_idle_blockblaster_00	239	Unit_Light_Saber_Swing
+
+SOUND	ei_vader_idle_blockblaster_01	10	Unit_Light_Saber_Swing
+
+SOUND	ei_vader_fw_attack_00	10	Unit_Light_Saber_Swing
+SOUND	ei_vader_fw_attack_00	982	Unit_Light_Saber_Swing
+
+SOUND	ei_vader_hc_win_00	3732	Unit_Light_Saber_Swing
+SOUND	ei_vader_hc_win_00	7782	Unit_Light_Saber_Swing
+SOUND	ei_vader_hc_win_00	11682	Unit_Light_Saber_Swing
+SOUND	ei_vader_hc_win_00	400	Unit_Light_Saber_Swing
+SOUND	ei_vader_hc_win_00	1610	Unit_Light_Saber_Swing
+SOUND	ei_vader_hc_win_00	4651	Unit_Light_Saber_Swing
+
+SOUND	ei_vader_hc_lose_00	42	Unit_Light_Saber_Swing
+SOUND	ei_vader_hc_lose_00	10107	Unit_Light_Saber_Swing
+SOUND	ei_vader_hc_lose_00	13347	Unit_Light_Saber_Swing
+SOUND	ei_vader_hc_lose_00	990	Unit_Light_Saber_Clash
+SOUND	ei_vader_hc_lose_00	2010	Unit_Light_Saber_Clash
+SOUND	ei_vader_hc_lose_00	3310	Unit_Light_Saber_Clash
+SOUND	ei_vader_hc_lose_00	5390	Unit_Light_Saber_Swing
+SOUND	ei_vader_hc_lose_00	6270	Unit_Light_Saber_Swing
+SOUND	ei_vader_hc_lose_00	8770	Unit_Light_Saber_Swing
+SOUND	ei_vader_hc_lose_00	3810	Unit_Light_Saber_Clash
+SOUND	ei_vader_hc_lose_00	4301	Unit_Light_Saber_Clash
+
+SOUND	ei_vader_hc_draw_00	42	Unit_Light_Saber_Swing
+SOUND	ei_vader_hc_draw_00	11307	Unit_Light_Saber_Swing
+SOUND	ei_vader_hc_draw_00	12342	Unit_Light_Saber_Clash
+SOUND	ei_vader_hc_draw_00	12822	Unit_Light_Saber_Swing
+SOUND	ei_vader_hc_draw_00	7692	Unit_Light_Saber_Swing
+SOUND	ei_vader_hc_draw_00	690	Unit_Light_Saber_Clash
+SOUND	ei_vader_hc_draw_00	2820	Unit_Light_Saber_Swing
+SOUND	ei_vader_hc_draw_00	5060	Unit_Light_Saber_Swing
+SOUND	ei_vader_hc_draw_00	6000	Unit_Light_Saber_Clash
+SOUND	ei_vader_hc_draw_00	6440	Unit_Light_Saber_Swing
+
+SURFACE	ei_vader_walkmove_00	679	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ei_vader_walkmove_00	1814	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SOUND	rv_mfalcon_land_land_00	74	Unit_Falcon_Landing
+
+SOUND	rv_mfalcon_land_takeoff_00	74	Unit_Falcon_Takeoff
+
+SOUND	ev_imperialcraft_land_00	134	Unit_Shuttle_Landing_2
+
+SOUND	ev_imperialcraft_takeoff_00	134	Unit_Shuttle_Takeoff_2
+
+SOUND	ev_lambdashuttle_land_00	32	Unit_Shuttle_Landing
+
+SOUND	ev_lambdashuttle_takeoff_00	32	Unit_Shuttle_Takeoff
+
+SOUND	ev_stardestroyer_d_die_00	5069	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_stardestroyer_d_die_00	30149	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_stardestroyer_d_die_00	48449	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_stardestroyer_d_die_00	51809	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_stardestroyer_d_die_00	57029	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_stardestroyer_d_die_00	7769	Unit_Space_Station_Death_SFX
+SOUND	ev_stardestroyer_d_die_00	12329	Unit_Space_Station_Death_SFX
+SOUND	ev_stardestroyer_d_die_00	13769	Unit_Space_Station_Death_SFX
+SOUND	ev_stardestroyer_d_die_00	16589	Unit_Space_Station_Death_SFX
+SOUND	ev_stardestroyer_d_die_00	19589	Unit_Space_Station_Death_SFX
+SOUND	ev_stardestroyer_d_die_00	54132	Unit_Space_Station_Death_SFX
+SOUND	ev_stardestroyer_d_die_00	24390	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_stardestroyer_d_die_00	510	Unit_Star_Destroyer_Death_Crack_SFX
+SOUND	ev_stardestroyer_d_die_00	0	Unit_Space_Station_Death_SFX
+SOUND	ev_stardestroyer_d_die_00	27090	Unit_Space_Station_Death_SFX
+SOUND	ev_stardestroyer_d_die_00	33690	Unit_Space_Station_Death_SFX
+SOUND	ev_stardestroyer_d_die_00	37950	Unit_Space_Station_Death_SFX
+
+SOUND	ReV_Venator_d_die_00	5069	Unit_Star_Destroyer_Death_SFX
+SOUND	ReV_Venator_d_die_00	30149	Unit_Star_Destroyer_Death_SFX
+SOUND	ReV_Venator_d_die_00	48449	Unit_Star_Destroyer_Death_SFX
+SOUND	ReV_Venator_d_die_00	51809	Unit_Star_Destroyer_Death_SFX
+SOUND	ReV_Venator_d_die_00	57029	Unit_Star_Destroyer_Death_SFX
+SOUND	ReV_Venator_d_die_00	7769	Unit_Space_Station_Death_SFX
+SOUND	ReV_Venator_d_die_00	12329	Unit_Space_Station_Death_SFX
+SOUND	ReV_Venator_d_die_00	13769	Unit_Space_Station_Death_SFX
+SOUND	ReV_Venator_d_die_00	16589	Unit_Space_Station_Death_SFX
+SOUND	ReV_Venator_d_die_00	19589	Unit_Space_Station_Death_SFX
+SOUND	ReV_Venator_d_die_00	54132	Unit_Space_Station_Death_SFX
+SOUND	ReV_Venator_d_die_00	24390	Unit_Star_Destroyer_Death_SFX
+SOUND	ReV_Venator_d_die_00	510	Unit_Star_Destroyer_Death_Crack_SFX
+SOUND	ReV_Venator_d_die_00	0	Unit_Space_Station_Death_SFX
+SOUND	ReV_Venator_d_die_00	27090	Unit_Space_Station_Death_SFX
+SOUND	ReV_Venator_d_die_00	33690	Unit_Space_Station_Death_SFX
+SOUND	ReV_Venator_d_die_00	37950	Unit_Space_Station_Death_SFX
+
+SOUND	ui_ewok_handler_idle_00	1020	Unit_Anim_Panic_Ewok
+SOUND	ui_ewok_handler_idle_00	3438	Unit_Anim_Panic_Ewok
+
+SOUND	ui_ewok_handler_idle_01	1124	Unit_Anim_Panic_Ewok
+SOUND	ui_ewok_handler_idle_01	3165	Unit_Anim_Panic_Ewok
+
+SOUND	ui_ewok_handler_idle_02	1042	Unit_Anim_Panic_Ewok
+SOUND	ui_ewok_handler_idle_02	3434	Unit_Anim_Panic_Ewok
+
+SOUND	ui_ewok_handler_idle_03	1312	Unit_Anim_Panic_Ewok
+SOUND	ui_ewok_handler_idle_03	3401	Unit_Anim_Panic_Ewok
+SOUND	ui_ewok_handler_idle_03	5596	Unit_Anim_Panic_Ewok
+
+SURFACE	ui_ewok_handler_move_00	1012	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ui_ewok_handler_move_00	2105	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SOUND	ui_ewok_handler_attack_00	4237	Unit_Anim_Hurt_Ewok
+
+SURFACE	ui_ewok_handler_die_00	1913	GENERIC_IMPACT	B_Pelvis
+SURFACE	ui_ewok_handler_die_00	3607	GENERIC_IMPACT	B_Pelvis
+
+SOUND	ui_ewok_handler_land_00	1423	Unit_Anim_Panic_Ewok
+
+SURFACE	ui_ewok_handler_walkmove_00	1091	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ui_ewok_handler_walkmove_00	1999	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SOUND	ni_ewok_bomb_nohat_fire_move_00	921	Unit_Ewok_Burning
+
+SURFACE	ni_gmale_urban_a_move_00	2180	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ni_gmale_urban_a_move_00	1198	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ni_gmale_urban_a_move_01	1141	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ni_gmale_urban_a_move_01	2169	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ni_gmale_urban_a_die_00	1319	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_gmale_urban_a_die_01	864	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_gmale_urban_a_fw_die_00	1437	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_gmale_urban_a_fw_die_01	1161	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_gmale_urban_a_fw_die_02	1333	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_gmale_urban_a_fl_die_00	8665	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_gmale_urban_a_fl_die_01	10303	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_gmale_urban_a_land_00	929	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_mandalorian_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ni_mandalorian_move_00	1135	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ni_mandalorian_land_00	709	TROOPER_IMPACT	B_Neck
+SURFACE	ni_mandalorian_land_00	2126	TROOPER_IMPACT	B_Neck
+
+SURFACE	ri_infiltrator_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ri_infiltrator_move_00	1166	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ri_infiltrator_move_01	9	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ri_infiltrator_move_01	1091	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ri_infiltrator_die_00	1328	GENERIC_IMPACT	B_Head
+
+SURFACE	ri_infiltrator_die_01	542	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ri_infiltrator_fw_die_00	1155	GENERIC_IMPACT	B_Head
+
+SURFACE	ri_infiltrator_fw_die_01	1250	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ri_infiltrator_fw_die_02	1363	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ri_infiltrator_fl_die_00	8892	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ri_infiltrator_land_00	916	GENERIC_IMPACT	B_Neck
+SURFACE	ri_infiltrator_land_00	2385	GENERIC_IMPACT	B_Neck
+
+SURFACE	ri_infiltrator_bombtoss_00	1001	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ni_twilek_f_move_00	1262	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ni_twilek_f_move_00	2175	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ni_twilek_f_move_01	1097	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ni_twilek_f_move_01	2175	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ni_twilek_f_move_02	1128	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ni_twilek_f_move_02	2173	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ni_twilek_f_die_00	1334	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_twilek_f_die_01	784	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_twilek_f_fw_die_00	1115	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_twilek_f_fw_die_01	1312	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_twilek_f_fw_die_02	1317	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_twilek_f_fl_die_00	8231	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_twilek_f_land_00	1033	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_twilek_f_walkmove_00	1106	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ni_twilek_f_walkmove_00	2180	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ni_twilek_f_walkmove_01	946	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ni_twilek_f_walkmove_01	2164	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ni_twilek_f_walkmove_02	969	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ni_twilek_f_walkmove_02	1976	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ni_twilek_f_crouchmove_00	1047	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ni_twilek_f_crouchmove_00	2184	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ni_twilek_f_crouchturnl_00	372	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ni_twilek_f_crouchturnl_00	791	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ni_twilek_f_crouchturnr_00	403	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ni_twilek_f_crouchturnr_00	781	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ni_twilek_f_crushed_00	695	GENERIC_IMPACT	B_Pelvis
+
+SOUND	eb_cin_basewall-mid_cinematic_01	29	Unit_Shuttle_Door_Open_2
+
+SOUND	eb_cin_basewall-mid_cinematic_03	21	Unit_Shuttle_Door_Open_2
+
+SURFACE	ev_at-aa_move_00	1835	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	ev_at-aa_move_00	1835	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+SURFACE	ev_at-aa_move_00	4006	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	ev_at-aa_move_00	4006	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+
+SURFACE	ev_at-aa_turnl_00	847	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+SURFACE	ev_at-aa_turnl_00	847	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	ev_at-aa_turnl_00	1889	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	ev_at-aa_turnl_00	1889	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	ev_at-aa_turnl_00	2898	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	ev_at-aa_turnl_00	2898	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+SURFACE	ev_at-aa_turnl_00	3914	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	ev_at-aa_turnl_00	3914	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+
+SURFACE	ev_at-aa_turnr_00	809	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	ev_at-aa_turnr_00	809	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	ev_at-aa_turnr_00	1875	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	ev_at-aa_turnr_00	1875	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+SURFACE	ev_at-aa_turnr_00	2877	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	ev_at-aa_turnr_00	2877	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	ev_at-aa_turnr_00	3879	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	ev_at-aa_turnr_00	3879	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+
+SOUND	ev_at-aa_die_00	890	Unit_Anim_SPMAT_Foot_Plant
+SOUND	ev_at-aa_die_00	4980	Unit_Anim_SPMAT_Foot_Plant
+SOUND	ev_at-aa_die_00	5900	Unit_Anim_SPMAT_Foot_Plant
+
+SURFACE	ev_at-aa_movestart_00	1872	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	ev_at-aa_movestart_00	1872	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	ev_at-aa_movestart_00	3946	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	ev_at-aa_movestart_00	3946	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+
+SURFACE	ev_at-aa_move_endone_00	1857	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	ev_at-aa_move_endone_00	1857	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	ev_at-aa_move_endone_00	3841	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	ev_at-aa_move_endone_00	3841	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+
+SURFACE	ev_at-aa_move_endtwo_00	328	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	ev_at-aa_move_endtwo_00	328	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	ev_at-aa_move_endtwo_00	2282	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	ev_at-aa_move_endtwo_00	2282	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+SURFACE	ev_at-aa_move_endtwo_00	3931	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	ev_at-aa_move_endtwo_00	3931	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+
+SURFACE	ev_at-aa_move_endthree_00	1215	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	ev_at-aa_move_endthree_00	1215	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+SURFACE	ev_at-aa_move_endthree_00	2707	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	ev_at-aa_move_endthree_00	2707	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	ev_at-aa_move_endthree_00	4058	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	ev_at-aa_move_endthree_00	4058	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+
+SURFACE	ev_at-aa_turnl_half_00	994	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	ev_at-aa_turnl_half_00	994	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+SURFACE	ev_at-aa_turnl_half_00	2344	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	ev_at-aa_turnl_half_00	2344	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	ev_at-aa_turnl_half_00	3232	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	ev_at-aa_turnl_half_00	3232	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+SURFACE	ev_at-aa_turnl_half_00	3907	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	ev_at-aa_turnl_half_00	3907	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+
+SURFACE	ev_at-aa_turnl_quarter_00	697	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	ev_at-aa_turnl_quarter_00	697	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	ev_at-aa_turnl_quarter_00	1478	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	ev_at-aa_turnl_quarter_00	1478	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+SURFACE	ev_at-aa_turnl_quarter_00	2375	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	ev_at-aa_turnl_quarter_00	2375	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+
+SURFACE	ev_at-aa_turnr_half_00	1051	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	ev_at-aa_turnr_half_00	1051	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	ev_at-aa_turnr_half_00	2095	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	ev_at-aa_turnr_half_00	2095	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+SURFACE	ev_at-aa_turnr_half_00	3168	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	ev_at-aa_turnr_half_00	3168	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	ev_at-aa_turnr_half_00	3865	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	ev_at-aa_turnr_half_00	3865	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+
+SURFACE	ev_at-aa_turnr_quarter_00	479	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	ev_at-aa_turnr_quarter_00	479	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	ev_at-aa_turnr_quarter_00	1323	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	ev_at-aa_turnr_quarter_00	1323	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+SURFACE	ev_at-aa_turnr_quarter_00	1829	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	ev_at-aa_turnr_quarter_00	1829	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	ev_at-aa_turnr_quarter_00	2393	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	ev_at-aa_turnr_quarter_00	2393	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+
+SOUND	ev_at-aa_deploy_00	7896	Unit_SPMAT_Deploy_Stop
+SOUND	ev_at-aa_deploy_00	18	Unit_MPTL_Tank_Deploy_Stop
+SURFACE	ev_at-aa_deploy_00	3932	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	ev_at-aa_deploy_00	5003	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+SURFACE	ev_at-aa_deploy_00	5966	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	ev_at-aa_deploy_00	7010	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+
+SOUND	ev_at-aa_undeploy_00	18	Unit_MPTL_Tank_Deploy_Stop
+SURFACE	ev_at-aa_undeploy_00	3815	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	ev_at-aa_undeploy_00	4940	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+SURFACE	ev_at-aa_undeploy_00	5948	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	ev_at-aa_undeploy_00	6993	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SOUND	ev_at-aa_undeploy_00	7379	Structure_Repair_UnDeploy
+
+SOUND	ui_droideka_deploy_00	1583	Unit_Destroyer_Droid_Anim_Unfold
+
+SOUND	ui_droideka_undeploy_00	360	Unit_Destroyer_Droid_Anim_Unfold
+
+SOUND	uv_f9tztransport_deploy_00	9	Unit_Shuttle_Door_Open_2
+
+SOUND	uv_f9tztransport_undeploy_00	9	Unit_Shuttle_Door_Open_2
+
+SOUND	rv_gallofreehtt26_deploy_00	12	Unit_Shuttle_Door_Open_2
+
+SOUND	rv_gallofreehtt26_undeploy_00	859	Unit_Shuttle_Door_Open_2
+
+SOUND	ev_juggernaut_deploy_00	44	Unit_Juggernaut_Door_Start
+SOUND	ev_juggernaut_deploy_00	305	Unit_Juggernaut_Door_Open
+SOUND	ev_juggernaut_deploy_00	8486	Unit_Juggernaut_Door_Stop
+
+SOUND	ev_juggernaut_undeploy_00	44	Unit_Juggernaut_Door_Open
+SOUND	ev_juggernaut_undeploy_00	6092	Unit_Juggernaut_Door_Start
+SOUND	ev_juggernaut_undeploy_00	8837	Unit_Juggernaut_Door_Close
+
+SURFACE	ReV_atrt_MOVE_00	1300	AT_RT_Footprint	B_Foot_L
+SURFACE	ReV_atrt_MOVE_00	2900	AT_RT_Footprint	B_Foot_R
+
+SURFACE	ReV_atrt_TURNL_00	1400	AT_RT_Footprint	B_Foot_L
+SURFACE	ReV_atrt_TURNL_00	2900	AT_RT_Footprint	B_Foot_R
+
+SURFACE	ReV_atrt_TURNR_00	1300	AT_RT_Footprint	B_Foot_R
+SURFACE	ReV_atrt_TURNR_00	2900	AT_RT_Footprint	B_Foot_L
+
+SOUND	ReV_atrt_DIE_00	2671	Unit_Anim_AT_ST_Ground_Slam
+SURFACE	ReV_atrt_DIE_00	646	SPMAT_FOOTPRINT	B_Body
+
+SOUND	ev_podwalker_idle_01	139	Vehicle_Anim_Motor
+SOUND	ev_podwalker_idle_01	7179	Vehicle_Anim_Motor
+
+SURFACE	ev_podwalker_move_00	1300	POD_WALKER_FOOTPRINT	B_Foot_L
+SURFACE	ev_podwalker_move_00	2900	POD_WALKER_FOOTPRINT	B_Foot_R
+
+SURFACE	ev_podwalker_turnl_00	1400	POD_WALKER_FOOTPRINT	B_Foot_L
+SURFACE	ev_podwalker_turnl_00	2900	POD_WALKER_FOOTPRINT	B_Foot_R
+
+SURFACE	ev_podwalker_turnr_00	1300	POD_WALKER_FOOTPRINT	B_Foot_R
+SURFACE	ev_podwalker_turnr_00	2900	POD_WALKER_FOOTPRINT	B_Foot_L
+
+SOUND	ev_podwalker_die_00	2671	Unit_Anim_AT_ST_Ground_Slam
+SURFACE	ev_podwalker_die_00	646	SPMAT_FOOTPRINT	B_Body
+
+SURFACE	ev_podwalker_movestart_00	1500	POD_WALKER_FOOTPRINT	B_Foot_L
+SURFACE	ev_podwalker_movestart_00	2900	POD_WALKER_FOOTPRINT	B_Foot_R
+
+SURFACE	ev_podwalker_move_endone_00	1500	POD_WALKER_FOOTPRINT	B_Foot_L
+SURFACE	ev_podwalker_move_endone_00	2900	POD_WALKER_FOOTPRINT	B_Foot_R
+
+SURFACE	ev_podwalker_move_endtwo_00	1000	POD_WALKER_FOOTPRINT	B_Foot_L
+SURFACE	ev_podwalker_move_endtwo_00	2800	POD_WALKER_FOOTPRINT	B_Foot_R
+
+SURFACE	ev_podwalker_move_endthree_00	1250	POD_WALKER_FOOTPRINT	B_Foot_R
+SURFACE	ev_podwalker_move_endthree_00	2900	POD_WALKER_FOOTPRINT	B_Foot_L
+
+SURFACE	ev_podwalker_turnl_half_00	1500	POD_WALKER_FOOTPRINT	B_Foot_L
+SURFACE	ev_podwalker_turnl_half_00	2900	POD_WALKER_FOOTPRINT	B_Foot_R
+
+SURFACE	ev_podwalker_turnl_quarter_00	1200	POD_WALKER_FOOTPRINT	B_Foot_L
+SURFACE	ev_podwalker_turnl_quarter_00	2900	POD_WALKER_FOOTPRINT	B_Foot_R
+
+SURFACE	ev_podwalker_turnr_half_00	1300	POD_WALKER_FOOTPRINT	B_Foot_L
+SURFACE	ev_podwalker_turnr_half_00	2900	POD_WALKER_FOOTPRINT	B_Foot_R
+
+SURFACE	ev_podwalker_turnr_quarter_00	1200	POD_WALKER_FOOTPRINT	B_Foot_L
+SURFACE	ev_podwalker_turnr_quarter_00	2900	POD_WALKER_FOOTPRINT	B_Foot_R
+
+SOUND	uv_mz8mobilepulsecannon_attack_00	12	Unit_Pulse_Cannon_PowerUp
+SOUND	uv_mz8mobilepulsecannon_attack_00	3113	Unit_Pulse_Cannon_Fire
+
+SOUND	ui_night_sister_idle_00	732	Unit_Rancor_Growl_1
+
+SOUND	ui_night_sister_idle_01	4151	Unit_Rancor_Roar_Long_1
+
+SOUND	ui_night_sister_idle_02	4193	Unit_Rancor_Roar_Long_2
+
+SOUND	ui_night_sister_pound_attack_00	2000	Rancor_Damage_Vehicle_SFX
+
+
+SOUND	ui_night_sister_move_00	533	Unit_Rancor_Growl_1
+SOUND	ui_night_sister_move_00	816	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ui_night_sister_move_00	951	RANCOR_FOOTPRINT	B_Foot_R
+SOUND	ui_night_sister_move_00	3876	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ui_night_sister_move_00	4023	RANCOR_FOOTPRINT	B_Foot_L
+
+SOUND	ui_night_sister_turnl_00	1272	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ui_night_sister_turnl_00	1423	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	ui_night_sister_turnl_00	2856	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ui_night_sister_turnl_00	2981	RANCOR_FOOTPRINT	B_Foot_R
+
+SOUND	ui_night_sister_turnr_00	1204	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ui_night_sister_turnr_00	1276	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	ui_night_sister_turnr_00	2836	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ui_night_sister_turnr_00	2959	RANCOR_FOOTPRINT	B_Foot_R
+
+SOUND	ui_night_sister_attack_00	1649	Unit_Rancor_Roar_Short_1
+
+SOUND	ui_night_sister_attack_01	1200	Unit_Rancor_Roar_Short_1
+
+SOUND	ui_night_sister_die_00	6	Unit_Rancor_Death
+SURFACE	ui_night_sister_die_00	2076	GENERIC_IMPACT	B_Pelvis
+SURFACE	ui_night_sister_die_00	2436	GENERIC_IMPACT	B_Pelvis
+SURFACE	ui_night_sister_die_00	3035	GENERIC_IMPACT	B_Pelvis
+SURFACE	ui_night_sister_die_00	3581	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ui_night_sister_die_01	2021	GENERIC_IMPACT	B_Pelvis
+SURFACE	ui_night_sister_die_01	3377	GENERIC_IMPACT	B_Pelvis
+SURFACE	ui_night_sister_die_01	3852	GENERIC_IMPACT	B_Pelvis
+SURFACE	ui_night_sister_die_01	5057	GENERIC_IMPACT	B_Pelvis
+
+SOUND	ui_night_sister_movestart_00	851	Unit_Rancor_Growl_1
+SOUND	ui_night_sister_movestart_00	1254	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ui_night_sister_movestart_00	1492	RANCOR_FOOTPRINT	B_Foot_R
+SOUND	ui_night_sister_movestart_00	3919	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ui_night_sister_movestart_00	4042	RANCOR_FOOTPRINT	B_Foot_L
+
+SOUND	ui_night_sister_move_endone_00	678	Unit_Rancor_Growl_1
+SOUND	ui_night_sister_move_endone_00	786	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ui_night_sister_move_endone_00	994	RANCOR_FOOTPRINT	B_Foot_R
+SOUND	ui_night_sister_move_endone_00	3390	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ui_night_sister_move_endone_00	3514	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	ui_night_sister_move_endone_00	4452	Unit_Anim_Rancor_Foot_Plant
+
+SOUND	ui_night_sister_move_endtwo_00	1608	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ui_night_sister_move_endtwo_00	1744	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	ui_night_sister_move_endtwo_00	3792	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ui_night_sister_move_endtwo_00	3904	RANCOR_FOOTPRINT	B_Foot_R
+
+SOUND	ui_night_sister_move_endthree_00	2837	Unit_Rancor_Growl_1
+SOUND	ui_night_sister_move_endthree_00	2910	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ui_night_sister_move_endthree_00	3034	RANCOR_FOOTPRINT	B_Foot_R
+SOUND	ui_night_sister_move_endthree_00	4518	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ui_night_sister_move_endthree_00	4630	RANCOR_FOOTPRINT	B_Foot_L
+
+SOUND	ui_night_sister_turnl_half_00	806	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ui_night_sister_turnl_half_00	934	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	ui_night_sister_turnl_half_00	1969	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ui_night_sister_turnl_half_00	1987	RANCOR_FOOTPRINT	B_Foot_R
+
+SOUND	ui_night_sister_turnl_quarter_00	818	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ui_night_sister_turnl_quarter_00	916	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	ui_night_sister_turnl_quarter_00	1964	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ui_night_sister_turnl_quarter_00	1987	RANCOR_FOOTPRINT	B_Foot_R
+
+SOUND	ui_night_sister_turnr_half_00	822	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ui_night_sister_turnr_half_00	864	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	ui_night_sister_turnr_half_00	1960	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ui_night_sister_turnr_half_00	1987	RANCOR_FOOTPRINT	B_Foot_R
+
+SOUND	ui_night_sister_turnr_quarter_00	822	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ui_night_sister_turnr_quarter_00	922	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	ui_night_sister_turnr_quarter_00	1898	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ui_night_sister_turnr_quarter_00	1987	RANCOR_FOOTPRINT	B_Foot_R
+
+SURFACE	ui_night_sister_eat_attack_00	1456	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	ui_night_sister_eat_attack_00	6564	Unit_Rancor_Eat_2
+SOUND	ui_night_sister_eat_attack_00	98	Unit_Rancor_Eat_1
+SOUND	ui_night_sister_eat_attack_00	7937	Unit_Infantry_Squish
+
+SURFACE	ui_bossk_move_00	3	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ui_bossk_move_00	1183	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ui_bossk_move_01	1216	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ui_bossk_move_01	8	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ui_bossk_move_02	8	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ui_bossk_move_02	1231	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ui_bossk_die_00	1319	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ui_bossk_die_01	925	GENERIC_IMPACT	B_Pelvis
+SURFACE	ui_bossk_die_01	4534	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ui_bossk_walkmove_00	1082	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ui_bossk_walkmove_00	2195	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ui_bossk_walkmove_01	1086	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ui_bossk_walkmove_01	2184	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ui_bossk_walkmove_02	1051	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ui_bossk_walkmove_02	2175	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ei_bobafett_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ei_bobafett_move_00	1135	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ei_bobafett_land_00	709	TROOPER_IMPACT	B_Neck
+SURFACE	ei_bobafett_land_00	2126	TROOPER_IMPACT	B_Neck
+
+SOUND	ei_bobafett_jump_00	793	Unit_Jet_Pack_Takeoff
+
+SURFACE	ei_bobafett_flylanddrop_00	322	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SOUND	ri_chewbacca_idle_01	4944	Unit_Anim_Chewie_Growl_1
+
+SURFACE	ri_chewbacca_move_00	3869	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ri_chewbacca_move_00	34	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ri_chewbacca_move_00	1164	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SOUND	ri_chewbacca_attackidle_02	2693	Unit_Anim_Chewie_Growl_2
+
+SOUND	ri_chewbacca_attackidle_03	841	Unit_Anim_Chewie_Growl_3
+
+SURFACE	ri_chewbacca_walkmove_00	1157	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ri_chewbacca_walkmove_00	2472	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SOUND	ri_chewbacca_celebrate_00	969	Unit_Anim_Chewie_Growl_1
+
+SOUND	ai_rancor_idle_00	732	Unit_Rancor_Growl_1
+
+SOUND	ai_rancor_idle_01	4151	Unit_Rancor_Roar_Long_1
+
+SOUND	ai_rancor_idle_02	4193	Unit_Rancor_Roar_Long_2
+
+SOUND	ai_rancor_pound_attack_00 2000	Rancor_Damage_Vehicle_SFX
+
+
+SOUND	ai_rancor_move_00	533	Unit_Rancor_Growl_1
+SOUND	ai_rancor_move_00	816	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_rancor_move_00	951	RANCOR_FOOTPRINT	B_Foot_R
+SOUND	ai_rancor_move_00	3876	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_rancor_move_00	4023	RANCOR_FOOTPRINT	B_Foot_L
+
+SOUND	ai_rancor_turnl_00	1272	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_rancor_turnl_00	1423	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	ai_rancor_turnl_00	2856	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_rancor_turnl_00	2981	RANCOR_FOOTPRINT	B_Foot_R
+
+SOUND	ai_rancor_turnr_00	1204	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_rancor_turnr_00	1276	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	ai_rancor_turnr_00	2836	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_rancor_turnr_00	2959	RANCOR_FOOTPRINT	B_Foot_R
+
+SOUND	ai_rancor_attack_00	1649	Unit_Rancor_Roar_Short_1
+
+SOUND	ai_rancor_attack_01	1200	Unit_Rancor_Roar_Short_1
+
+SOUND	ai_rancor_die_00	6	Unit_Rancor_Death
+SURFACE	ai_rancor_die_00	2076	GENERIC_IMPACT	B_Pelvis
+SURFACE	ai_rancor_die_00	2436	GENERIC_IMPACT	B_Pelvis
+SURFACE	ai_rancor_die_00	3035	GENERIC_IMPACT	B_Pelvis
+SURFACE	ai_rancor_die_00	3581	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ai_rancor_die_01	2021	GENERIC_IMPACT	B_Pelvis
+SURFACE	ai_rancor_die_01	3377	GENERIC_IMPACT	B_Pelvis
+SURFACE	ai_rancor_die_01	3852	GENERIC_IMPACT	B_Pelvis
+SURFACE	ai_rancor_die_01	5057	GENERIC_IMPACT	B_Pelvis
+
+SOUND	ai_rancor_movestart_00	851	Unit_Rancor_Growl_1
+SOUND	ai_rancor_movestart_00	1254	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_rancor_movestart_00	1492	RANCOR_FOOTPRINT	B_Foot_R
+SOUND	ai_rancor_movestart_00	3919	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_rancor_movestart_00	4042	RANCOR_FOOTPRINT	B_Foot_L
+
+SOUND	ai_rancor_move_endone_00	678	Unit_Rancor_Growl_1
+SOUND	ai_rancor_move_endone_00	786	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_rancor_move_endone_00	994	RANCOR_FOOTPRINT	B_Foot_R
+SOUND	ai_rancor_move_endone_00	3390	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_rancor_move_endone_00	3514	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	ai_rancor_move_endone_00	4452	Unit_Anim_Rancor_Foot_Plant
+
+SOUND	ai_rancor_move_endtwo_00	1608	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_rancor_move_endtwo_00	1744	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	ai_rancor_move_endtwo_00	3792	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_rancor_move_endtwo_00	3904	RANCOR_FOOTPRINT	B_Foot_R
+
+SOUND	ai_rancor_move_endthree_00	2837	Unit_Rancor_Growl_1
+SOUND	ai_rancor_move_endthree_00	2910	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_rancor_move_endthree_00	3034	RANCOR_FOOTPRINT	B_Foot_R
+SOUND	ai_rancor_move_endthree_00	4518	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_rancor_move_endthree_00	4630	RANCOR_FOOTPRINT	B_Foot_L
+
+SOUND	ai_rancor_turnl_half_00	806	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_rancor_turnl_half_00	934	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	ai_rancor_turnl_half_00	1969	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_rancor_turnl_half_00	1987	RANCOR_FOOTPRINT	B_Foot_R
+
+SOUND	ai_rancor_turnl_quarter_00	818	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_rancor_turnl_quarter_00	916	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	ai_rancor_turnl_quarter_00	1964	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_rancor_turnl_quarter_00	1987	RANCOR_FOOTPRINT	B_Foot_R
+
+SOUND	ai_rancor_turnr_half_00	822	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_rancor_turnr_half_00	864	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	ai_rancor_turnr_half_00	1960	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_rancor_turnr_half_00	1987	RANCOR_FOOTPRINT	B_Foot_R
+
+SOUND	ai_rancor_turnr_quarter_00	822	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_rancor_turnr_quarter_00	922	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	ai_rancor_turnr_quarter_00	1898	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_rancor_turnr_quarter_00	1987	RANCOR_FOOTPRINT	B_Foot_R
+
+SURFACE	ai_rancor_eat_attack_00	1456	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	ai_rancor_eat_attack_00	6564	Unit_Rancor_Eat_2
+SOUND	ai_rancor_eat_attack_00	98	Unit_Rancor_Eat_1
+SOUND	ai_rancor_eat_attack_00	7937	Unit_Infantry_Squish
+
+SOUND	ri_c3po_idle_01	738	Unit_Anim_C3PO_Foot_Motor
+
+SOUND	ri_c3po_idle_02	5195	Unit_Anim_C3PO_Foot_Motor
+
+SOUND	ri_c3po_idle_03	145	Unit_Anim_C3PO_Foot_Motor
+SOUND	ri_c3po_idle_03	3634	Unit_Anim_C3PO_Foot_Motor
+
+SURFACE	ri_c3po_move_00	91	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ri_c3po_move_00	872	INFANTRY_FOOT_PLANT	B_Foot_L
+SOUND	ri_c3po_move_00	452	Unit_Anim_C3PO_Foot_Motor
+
+SOUND	ri_r2_idle_01	24	Unit_Anim_R2_Head_Motor
+SOUND	ri_r2_idle_01	5345	Unit_Anim_R2_Head_Motor
+
+SOUND	ri_r2_idle_02	41	Unit_Anim_R2_Head_Motor
+SOUND	ri_r2_idle_02	5411	Unit_Anim_R2_Head_Motor
+
+SOUND	ri_r2_idle_03	29	Unit_Anim_R2_Head_Motor
+SOUND	ri_r2_idle_03	3497	Unit_Anim_R2_Head_Motor
+SOUND	ri_r2_idle_03	5003	Unit_Anim_R2_Head_Motor
+SOUND	ri_r2_idle_03	1651	Unit_Anim_R2_Head_Motor
+
+SOUND	ri_r2_move_01	24	Unit_Anim_R2_Head_Motor
+
+SOUND	ri_r2_hacking_00	29	Unit_Anim_R2_Head_Motor
+SOUND	ri_r2_hacking_00	1667	Unit_Anim_R2_Head_Motor
+SOUND	ri_r2_hacking_00	3497	Unit_Anim_R2_Head_Motor
+SOUND	ri_r2_hacking_00	5070	Unit_Anim_R2_Head_Motor
+
+SOUND	ri_r2_repairing_00	29	Unit_Anim_R2_Head_Motor
+SOUND	ri_r2_repairing_00	1734	Unit_Anim_R2_Head_Motor
+SOUND	ri_r2_repairing_00	3515	Unit_Anim_R2_Head_Motor
+SOUND	ri_r2_repairing_00	4943	Unit_Anim_R2_Head_Motor
+
+
+
+SURFACE	ni_darksideadepts_move_00	1271	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ni_darksideadepts_move_00	2885	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SOUND	ni_darksideadepts_attack_00	241	Unit_Light_Saber_Swing
+
+SOUND	ni_darksideadepts_block_blaster_00	0	Unit_Light_Saber_Swing
+
+SOUND	ni_darksideadepts_block_blaster_01	0	Unit_Light_Saber_Swing
+
+SOUND	ni_darksideadepts_block_blaster_02	0	Unit_Light_Saber_Swing
+
+SOUND	ni_darksideadepts_block_blaster_03	0	Unit_Light_Saber_Swing
+
+SOUND	ni_darksideadepts_redirect_blaster_00	0	Unit_Light_Saber_Swing
+
+SOUND	ni_darksideadepts_redirect_blaster_01	0	Unit_Light_Saber_Swing
+
+SOUND	ni_darksideadepts_redirect_blaster_02	0	Unit_Light_Saber_Swing
+
+SOUND	ni_darksideadepts_redirect_blaster_03	0	Unit_Light_Saber_Swing
+
+
+
+
+
+SURFACE	sei_dooku_move_00	1271	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	sei_dooku_move_00	2885	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SOUND	sei_dooku_attack_00	241	Unit_Light_Saber_Swing
+
+SOUND	sei_dooku_block_blaster_00	0	Unit_Light_Saber_Swing
+
+SOUND	sei_dooku_block_blaster_01	0	Unit_Light_Saber_Swing
+
+SOUND	sei_dooku_block_blaster_02	0	Unit_Light_Saber_Swing
+
+SOUND	sei_dooku_block_blaster_03	0	Unit_Light_Saber_Swing
+
+SOUND	sei_dooku_redirect_blaster_00	0	Unit_Light_Saber_Swing
+
+SOUND	sei_dooku_redirect_blaster_01	0	Unit_Light_Saber_Swing
+
+SOUND	sei_dooku_redirect_blaster_02	0	Unit_Light_Saber_Swing
+
+SOUND	sei_dooku_redirect_blaster_03	0	Unit_Light_Saber_Swing
+
+SURFACE	ri_hansolo_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ri_hansolo_move_00	1167	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SOUND	ri_hansolo_cinematic_01	16223	Unit_Katarn_Plant_Bomb_SFX
+
+SOUND	ri_hansolo_cinematic_03	2007	Unit_Katarn_Plant_Bomb_SFX
+
+SURFACE	ri_hansolo_land_00	950	GENERIC_IMPACT	B_Neck
+SURFACE	ri_hansolo_land_00	2665	GENERIC_IMPACT	B_Neck
+
+SURFACE	ri_hansolo_walkmove_00	1073	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ri_hansolo_walkmove_00	2175	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SOUND	ui_ig88_idle_01	233	Unit_Anim_C3PO_Foot_Motor
+
+SURFACE	ui_ig88_move_00	4	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ui_ig88_move_00	1218	INFANTRY_FOOT_PLANT	B_Foot_L
+SOUND	ui_ig88_move_00	314	Unit_Anim_C3PO_Foot_Motor
+SOUND	ui_ig88_move_00	1603	Unit_Anim_C3PO_Foot_Motor
+
+SOUND	ui_ig88_attackidle_01	469	Unit_Anim_C3PO_Foot_Motor
+
+SURFACE	ui_ig88_land_00	903	TROOPER_IMPACT	B_Pelvis
+SOUND	ui_ig88_land_00	929	Unit_BodyFall_IG88
+
+SOUND	ui_ig88_demolition_00	7819	Unit_Katarn_Plant_Bomb_SFX
+SOUND	ui_ig88_demolition_00	2125	Unit_Anim_C3PO_Foot_Motor
+SOUND	ui_ig88_demolition_00	3994	Unit_Anim_C3PO_Foot_Motor
+SOUND	ui_ig88_demolition_00	6204	Unit_Anim_C3PO_Foot_Motor
+SOUND	ui_ig88_demolition_00	9944	Unit_Anim_C3PO_Foot_Motor
+SOUND	ui_ig88_demolition_00	12970	Unit_Anim_C3PO_Foot_Motor
+SOUND	ui_ig88_demolition_00	15180	Unit_Anim_C3PO_Foot_Motor
+
+SOUND	ui_ig88_contaminate_attack_00	456	Unit_Anim_C3PO_Foot_Motor
+
+SOUND	ui_ig88_contaminate_release_00	761	Unit_Anim_C3PO_Foot_Motor
+
+SURFACE	ri_kylekatarn_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ri_kylekatarn_move_00	1150	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ri_kylekatarn_land_00	936	GENERIC_IMPACT	B_Neck
+
+SOUND	ri_kylekatarn_demolition_00	10684	Unit_Katarn_Plant_Bomb_SFX
+
+SURFACE	ri_kylekatarn_bombtoss_00	1123	INFANTRY_FOOT_PLANT	B_Foot_L
+SOUND	ri_kylekatarn_bombtoss_00	544	Unit_Grenade_Throw
+
+SURFACE	ri_skywalker_move_00	10	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ri_skywalker_move_00	1227	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SOUND	ri_skywalker_attack_00	287	Unit_Light_Saber_Swing_Obi
+SOUND	ri_skywalker_attack_00	1392	Unit_Light_Saber_Swing_Obi
+SOUND	ri_skywalker_attack_00	2834	Unit_Light_Saber_Swing_Obi
+
+SURFACE	ri_skywalker_walkmove_00	1062	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ri_skywalker_walkmove_00	2191	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SOUND	ri_skywalker_sword_throw_00	1519	Unit_Light_Saber_Swing_Obi
+SOUND	ri_skywalker_sword_throw_00	1706	Unit_Yoda_Whoosh
+
+SURFACE	ei_marajade_move_00	10	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ei_marajade_move_00	1168	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ei_marajade_move_01	10	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ei_marajade_move_01	1157	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ei_marajade_move_02	10	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ei_marajade_move_02	1152	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ei_marajade_land_00	831	GENERIC_IMPACT	B_Pelvis
+SURFACE	ei_marajade_land_00	2651	GENERIC_IMPACT	B_Pelvis
+
+SOUND	ei_marajade_demolition_00	10845	Unit_Katarn_Plant_Bomb_SFX
+
+SOUND	ei_marajade_bombtoss_00	490	Unit_Grenade_Throw
+
+SURFACE	ei_marajade_walkmove_00	1047	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ei_marajade_walkmove_00	2153	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ei_marajade_walkmove_01	1071	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ei_marajade_walkmove_01	2074	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ei_marajade_walkmove_02	1058	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ei_marajade_walkmove_02	2134	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ei_marajade_crouchmove_00	1003	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ei_marajade_crouchmove_00	2094	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ei_marajade_crouchturnl_00	372	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ei_marajade_crouchturnl_00	787	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ei_marajade_crouchturnr_00	390	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ei_marajade_crouchturnr_00	783	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ei_marajade_crushed_00	663	GENERIC_IMPACT	B_Foot_L
+
+SURFACE	ri_obiwan_move_00	1358	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ri_obiwan_move_00	2891	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SOUND	ri_obiwan_attack_00	46	Unit_Light_Saber_Swing_Obi
+
+SOUND	ri_obiwan_block_blaster_00	0	Unit_Light_Saber_Swing_Obi
+
+SOUND	ri_obiwan_block_blaster_01	0	Unit_Light_Saber_Swing_Obi
+
+SOUND	ri_obiwan_block_blaster_02	0	Unit_Light_Saber_Swing_Obi
+
+SOUND	ri_obiwan_block_blaster_03	0	Unit_Light_Saber_Swing_Obi
+
+SOUND	ri_obiwan_redirect_blaster_00	0	Unit_Light_Saber_Swing_Obi
+
+SOUND	ri_obiwan_redirect_blaster_01	0	Unit_Light_Saber_Swing_Obi
+
+SOUND	ri_obiwan_redirect_blaster_02	0	Unit_Light_Saber_Swing_Obi
+
+SOUND	ri_obiwan_redirect_blaster_03	0	Unit_Light_Saber_Swing_Obi
+
+SOUND	ri_obiwan_hc_win_00	13227	Unit_Light_Saber_Swing_Obi
+SOUND	ri_obiwan_hc_win_00	290	Unit_Light_Saber_Swing_Obi
+SOUND	ri_obiwan_hc_win_00	1550	Unit_Light_Saber_Swing_Obi
+SOUND	ri_obiwan_hc_win_00	6920	Unit_Light_Saber_Swing_Obi
+SOUND	ri_obiwan_hc_win_00	4899	Unit_Light_Saber_Swing_Obi
+SOUND	ri_obiwan_hc_win_00	8860	Unit_Light_Saber_Swing_Obi
+
+SOUND	ri_obiwan_hc_lose_00	12042	Unit_Light_Saber_Clash
+SOUND	ri_obiwan_hc_lose_00	1300	Unit_Light_Saber_Clash
+SOUND	ri_obiwan_hc_lose_00	2291	Unit_Light_Saber_Swing_Obi
+SOUND	ri_obiwan_hc_lose_00	2781	Unit_Light_Saber_Clash
+SOUND	ri_obiwan_hc_lose_00	3250	Unit_Light_Saber_Swing_Obi
+SOUND	ri_obiwan_hc_lose_00	4181	Unit_Light_Saber_Swing_Obi
+SOUND	ri_obiwan_hc_lose_00	6020	Unit_Light_Saber_Swing_Obi
+SOUND	ri_obiwan_hc_lose_00	8081	Unit_Light_Saber_Clash
+
+SOUND	ri_obiwan_hc_draw_00	0	Unit_Light_Saber_Swing_Obi
+SOUND	ri_obiwan_hc_draw_00	8157	Unit_Light_Saber_Swing_Obi
+SOUND	ri_obiwan_hc_draw_00	610	Unit_Light_Saber_Swing_Obi
+SOUND	ri_obiwan_hc_draw_00	2710	Unit_Light_Saber_Swing_Obi
+SOUND	ri_obiwan_hc_draw_00	4651	Unit_Light_Saber_Swing_Obi
+SOUND	ri_obiwan_hc_draw_00	5600	Unit_Light_Saber_Swing_Obi
+
+SURFACE	ui_silri_move_00	0	INFANTRY_FOOT_PLANT	B_foot_R
+SURFACE	ui_silri_move_00	1278	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SOUND	ui_silri_attack_00	135	Unit_Silri_Light_Saber_Swing
+SOUND	ui_silri_attack_00	1067	Unit_Silri_Light_Saber_Swing
+SOUND	ui_silri_attack_00	1811	Unit_Silri_Light_Saber_Hit
+SOUND	ui_silri_attack_00	2880	Unit_Silri_Light_Saber_Swing
+
+SURFACE	ui_silri_land_00	1124	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ui_silri_walkmove_00	1108	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ui_silri_walkmove_00	2180	INFANTRY_FOOT_PLANT	B_foot_R
+
+SOUND	ui_tyber_idle_02	2152	Unit_Tyber_Draw_Blaster
+
+SURFACE	ui_tyber_move_00	8	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ui_tyber_move_00	1157	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ui_tyber_land_00	929	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ui_tyber_walkmove_00	1074	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ui_tyber_walkmove_00	2188	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ui_urai_fen_move_00	8	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ui_urai_fen_move_00	1117	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ui_urai_fen_move_01	8	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ui_urai_fen_move_01	1192	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ui_urai_fen_move_02	10	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ui_urai_fen_move_02	1231	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SOUND	ui_urai_fen_attack_00	1085	Unit_Anim_Urai_Blade_Swing
+
+SOUND	ui_urai_fen_attack_01	2637	Unit_Anim_Urai_Blade_Swing
+
+SOUND	ui_urai_fen_attack_02	768	Unit_Anim_Urai_Blade_Swing
+SOUND	ui_urai_fen_attack_02	2394	Unit_Anim_Urai_Blade_Swing
+SOUND	ui_urai_fen_attack_02	831	Unit_Anim_Urai_Blade_Swing
+SOUND	ui_urai_fen_attack_02	2472	Unit_Anim_Urai_Blade_Swing
+
+SURFACE	ui_urai_fen_die_00	1329	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ui_urai_fen_die_01	944	GENERIC_IMPACT	B_Pelvis
+SURFACE	ui_urai_fen_die_01	4325	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ui_urai_fen_walkmove_00	1001	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ui_urai_fen_walkmove_00	1995	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ui_urai_fen_walkmove_01	1102	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ui_urai_fen_walkmove_01	2045	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ui_urai_fen_walkmove_02	1132	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ui_urai_fen_walkmove_02	2173	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ri_yoda_move_00	438	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ri_yoda_move_00	1166	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ri_yoda_attack_00	2439	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ri_yoda_attack_00	2669	INFANTRY_FOOT_PLANT	B_Foot_L
+SOUND	ri_yoda_attack_00	520	Unit_Yoda_Whoosh
+SOUND	ri_yoda_attack_00	1184	Unit_Yoda_Whoosh
+SOUND	ri_yoda_attack_00	1857	Unit_Yoda_Whoosh
+SOUND	ri_yoda_attack_00	385	Unit_Light_Saber_Swing_Obi
+SOUND	ri_yoda_attack_00	1467	Unit_Light_Saber_Swing_Obi
+SOUND	ri_yoda_attack_00	2550	Unit_Light_Saber_Swing_Obi
+SOUND	ri_yoda_attack_00	795	Unit_Anim_Grunts_Yoda
+SOUND	ri_yoda_attack_00	2492	Unit_Anim_Grunts_Yoda
+
+SURFACE	ri_yoda_attack_01	2427	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ri_yoda_attack_01	2697	INFANTRY_FOOT_PLANT	B_Foot_L
+SOUND	ri_yoda_attack_01	553	Unit_Yoda_Whoosh
+SOUND	ri_yoda_attack_01	1262	Unit_Yoda_Whoosh
+SOUND	ri_yoda_attack_01	2062	Unit_Yoda_Whoosh
+SOUND	ri_yoda_attack_01	438	Unit_Light_Saber_Swing_Obi
+SOUND	ri_yoda_attack_01	1615	Unit_Light_Saber_Swing_Obi
+SOUND	ri_yoda_attack_01	2570	Unit_Light_Saber_Swing_Obi
+SOUND	ri_yoda_attack_01	651	Unit_Anim_Grunts_Yoda
+SOUND	ri_yoda_attack_01	2484	Unit_Anim_Grunts_Yoda
+
+SURFACE	ri_yoda_spinmove_00	3251	INFANTRY_FOOT_PLANT	B_Foot_L
+SOUND	ri_yoda_spinmove_00	930	Unit_Yoda_Whoosh
+SOUND	ri_yoda_spinmove_00	1707	Unit_Yoda_Whoosh
+SOUND	ri_yoda_spinmove_00	2887	Unit_Yoda_Whoosh
+SOUND	ri_yoda_spinmove_00	1106	Unit_Light_Saber_Swing_Obi
+SOUND	ri_yoda_spinmove_00	1872	Unit_Light_Saber_Swing_Obi
+SOUND	ri_yoda_spinmove_00	731	Unit_Anim_Grunts_Yoda
+SOUND	ri_yoda_spinmove_00	3077	Unit_Anim_Grunts_Yoda
+
+SURFACE	ri_yoda_spinmove_01	3230	INFANTRY_FOOT_PLANT	B_Foot_L
+SOUND	ri_yoda_spinmove_01	865	Unit_Light_Saber_Swing_Obi
+SOUND	ri_yoda_spinmove_01	1709	Unit_Light_Saber_Swing_Obi
+SOUND	ri_yoda_spinmove_01	2552	Unit_Light_Saber_Swing_Obi
+SOUND	ri_yoda_spinmove_01	532	Unit_Yoda_Whoosh
+SOUND	ri_yoda_spinmove_01	1320	Unit_Yoda_Whoosh
+SOUND	ri_yoda_spinmove_01	2197	Unit_Yoda_Whoosh
+SOUND	ri_yoda_spinmove_01	588	Unit_Anim_Grunts_Yoda
+SOUND	ri_yoda_spinmove_01	3159	Unit_Anim_Grunts_Yoda
+
+SURFACE	ri_yoda_spinmove_02	3275	INFANTRY_FOOT_PLANT	B_Foot_L
+SOUND	ri_yoda_spinmove_02	466	Unit_Yoda_Whoosh
+SOUND	ri_yoda_spinmove_02	1523	Unit_Yoda_Whoosh
+SOUND	ri_yoda_spinmove_02	2648	Unit_Yoda_Whoosh
+SOUND	ri_yoda_spinmove_02	797	Unit_Light_Saber_Swing_Obi
+SOUND	ri_yoda_spinmove_02	1865	Unit_Light_Saber_Swing_Obi
+
+SURFACE	ri_yoda_walk_00	1847	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ri_yoda_walk_00	14	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SOUND	wc_bantha_idle_01	134	Ambient_Bantha_Random_Noises
+
+SOUND	wc_bantha_move_00	2735	Unit_Anim_Snow_Infantry_Foot_Plant
+SOUND	wc_bantha_move_00	5840	Unit_Anim_Snow_Infantry_Foot_Plant
+SOUND	wc_bantha_move_00	8845	Unit_Anim_Snow_Infantry_Foot_Plant
+SOUND	wc_bantha_move_00	11893	Unit_Anim_Snow_Infantry_Foot_Plant
+
+SOUND	wc_bantha_attack_00	76	Ambient_Bantha_Random_Noises
+
+SURFACE	wc_bantha_die_00	1861	GENERIC_IMPACT	B_Body
+SURFACE	wc_bantha_die_00	4480	GENERIC_IMPACT	B_Body
+SOUND	wc_bantha_die_00	98	Unit_Anim_Bantha_Death
+
+SURFACE	ni_ewok_move_00	566	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ni_ewok_move_00	1594	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ni_ewok_move_01	591	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ni_ewok_move_01	1579	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ni_ewok_die_00	168	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_ewok_die_01	558	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_ewok_fw_die_00	1086	GENERIC_IMPACT	B_Pelvis
+
+SOUND	ni_ewok_fl_die_00	172	Unit_Ewok_Death_Lightning
+SOUND	ni_ewok_fl_die_00	11177	Unit_Ewok_Death
+SURFACE	ni_ewok_fl_die_00	11851	GENERIC_IMPACT	B_Pelvis
+
+SOUND	ni_ewok_fire_move_00	0	Unit_Ewok_Burning
+
+SURFACE	ni_ewok_fire_die_00	2308	GENERIC_IMPACT	B_Pelvis
+
+SOUND	ai_groundbeetle_move_00	859	SFX_Anim_Beetle_Footsteps
+SOUND	ai_groundbeetle_move_00	1953	SFX_Anim_Beetle_Footsteps
+
+SOUND	ai_groundbeetle_attack_00	225	SFX_Anim_Beetle_Grunt
+SOUND	ai_groundbeetle_attack_00	2639	SFX_Anim_Beetle_Attack
+
+SOUND	w_felucia_bulbplant_attack_00	18	SFX_Anim_Felucia_Plant_Prep_2
+SOUND	w_felucia_bulbplant_attack_00	3581	SFX_Anim_Felucia_Plant_Shoot_1
+
+SOUND	w_felucia_plant_01_attack_00	62	SFX_Anim_Felucia_Plant_Prep_1
+SOUND	w_felucia_plant_01_attack_00	6704	SFX_Anim_Felucia_Plant_Shoot_2
+
+SOUND	ni_geonosian_idle_01	1080	Ambient_Geonosian_Random_Chatter
+
+SOUND	ni_geonosian_attackidle_00	3023	Ambient_Geonosian_Random_Chatter
+
+SURFACE	ni_geonosian_die_00	2387	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_geonosian_die_01	2844	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_geonosian_fw_die_00	1476	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_geonosian_fl_die_00	8630	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_gungan_move_00	26	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ni_gungan_move_00	1231	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ni_gungan_move_01	30	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ni_gungan_move_01	1267	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ni_gungan_move_02	35	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ni_gungan_move_02	1223	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ni_gungan_die_00	1334	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_gungan_die_01	979	GENERIC_IMPACT	B_Pelvis
+SURFACE	ni_gungan_die_01	4394	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_gungan_fw_die_00	1211	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_gungan_fw_die_01	1327	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_gungan_fw_die_02	1339	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_gungan_fl_die_00	8665	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_gungan_fl_die_01	9562	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_gungan_land_00	975	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_gungan_walkmove_00	1047	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ni_gungan_walkmove_00	2065	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ni_gungan_crouchmove_00	1016	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ni_gungan_crouchmove_00	2039	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SOUND	ni_gungan_crushed_00	715	Unit_Infantry_Squish
+
+SURFACE	ni_jawa_move_00	611	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ni_jawa_move_00	1654	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ni_jawa_move_01	626	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ni_jawa_move_01	1588	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ni_jawa_die_00	206	GENERIC_IMPACT	B_Pelvis
+SURFACE	ni_jawa_die_00	1354	GENERIC_IMPACT	B_Pelvis
+SURFACE	ni_jawa_die_00	3559	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_jawa_die_01	600	GENERIC_IMPACT	B_Pelvis
+SURFACE	ni_jawa_die_01	1571	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_jawa_fw_die_00	1130	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_jawa_fl_die_00	11997	GENERIC_IMPACT	B_Pelvis
+SURFACE	ni_jawa_fl_die_00	13019	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_jawa_fire_move_00	635	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ni_jawa_fire_move_00	1643	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ni_jawa_fire_die_00	2604	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_sandpeople_c_move_00	20	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ni_sandpeople_c_move_00	1394	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ni_sandpeople_c_move_01	81	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ni_sandpeople_c_move_01	1559	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ni_sandpeople_c_die_00	1494	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_sandpeople_c_fw_die_00	1215	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_sandpeople_c_fl_die_00	8736	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_sandpeople_c_land_00	1306	GENERIC_IMPACT	B_Pelvis
+
+SOUND	ni_sandpeople_c_warning_00	652	Unit_Attack_Tusken
+
+SOUND	ni_sandpeople_c_crushed_00	674	Unit_Infantry_Squish
+
+SURFACE	ni_sandpeople_b_move_00	75	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ni_sandpeople_b_move_00	1406	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ni_sandpeople_b_move_01	87	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ni_sandpeople_b_move_01	1517	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ni_sandpeople_b_die_00	1375	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_sandpeople_b_fw_die_00	1184	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_sandpeople_b_fl_die_00	8763	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ni_sandpeople_b_land_00	1286	GENERIC_IMPACT	B_Pelvis
+
+SOUND	ni_sandpeople_b_warning_00	960	Unit_Attack_Tusken
+
+SOUND	ni_sandpeople_b_crushed_00	688	Unit_Infantry_Squish
+
+SOUND	ai_sarlacc_idle_00	5538	Unit_Anim_Sarlacc_Growl
+
+SOUND	ai_sarlacc_attack_00	10203	Unit_Anim_Sarlacc_Eat
+SOUND	ai_sarlacc_attack_00	15819	Unit_Anim_Sarlacc_Burp
+
+SOUND	ai_shaaks_move_00	1684	Unit_Anim_Grass_Infantry_Foot_Plant
+SOUND	ai_shaaks_move_00	3820	Unit_Anim_Grass_Infantry_Foot_Plant
+
+SOUND	ai_shaaks_turnl_00	56	Unit_Anim_Grass_Infantry_Foot_Plant
+SOUND	ai_shaaks_turnl_00	361	Unit_Anim_Grass_Infantry_Foot_Plant
+SOUND	ai_shaaks_turnl_00	737	Unit_Anim_Grass_Infantry_Foot_Plant
+SOUND	ai_shaaks_turnl_00	988	Unit_Anim_Grass_Infantry_Foot_Plant
+
+SOUND	ai_shaaks_turnr_00	37	Unit_Anim_Grass_Infantry_Foot_Plant
+SOUND	ai_shaaks_turnr_00	324	Unit_Anim_Grass_Infantry_Foot_Plant
+SOUND	ai_shaaks_turnr_00	635	Unit_Anim_Grass_Infantry_Foot_Plant
+SOUND	ai_shaaks_turnr_00	969	Unit_Anim_Grass_Infantry_Foot_Plant
+
+SOUND	ai_tauntaun_idle_00	1239	Taun_Taun_Short_Voice
+
+SOUND	ai_tauntaun_idle_01	617	Taun_Taun_Long_Voice
+
+SOUND	ai_tauntaun_idle_02	431	Taun_Taun_Itch_Voice
+
+SOUND	ai_tauntaun_die_00	34	Unit_Taun_Taun_Death
+
+SOUND	ai_tauntaun_die_01	44	Unit_Taun_Taun_Death
+
+SOUND	ri_wookiee01_idle_01	5004	Ambient_Wookie_Random_Chatter
+
+SURFACE	ri_wookiee01_move_00	186	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ri_wookiee01_move_00	1061	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ri_wookiee01_move_01	150	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ri_wookiee01_move_01	1075	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ri_wookiee01_die_00	1787	GENERIC_IMPACT	B_Pelvis
+
+SOUND	ri_wookiee01_celebrate_00	1049	Unit_Anim_Cheer_Wookie
+
+SOUND	w_smallbomb_idle_00	2960	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	5960	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	8960	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	11960	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	14960	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	17960	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	20960	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	23960	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	26960	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	29960	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	32960	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	35960	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	38960	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	41960	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	44960	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	47460	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	49360	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	50960	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	52460	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	53660	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	54660	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	55560	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	56360	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	57060	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	57660	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	58260	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	58760	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	59260	Unit_Katarn_Bomb_Beep_SFX
+SOUND	w_smallbomb_idle_00	59760	Unit_Katarn_Bomb_Beep_SFX
+
+SOUND	mdp_00_deploy_00	62	Unit_SPMAT_Deploy_Start
+SOUND	mdp_00_deploy_00	8279	Unit_SPMAT_Deploy_Stop
+
+SOUND	mdp_00_undeploy_00	62	Unit_SPMAT_Deploy_Start
+SOUND	mdp_00_undeploy_00	8297	Unit_SPMAT_Deploy_Stop
+
+SOUND	uv_mdu_deploy_00	34	Unit_SPMAT_Deploy_Start
+SOUND	uv_mdu_deploy_00	6600	Unit_SPMAT_Deploy_Stop
+
+SOUND	uv_mdu_undeploy_00	45	Unit_SPMAT_Deploy_Start
+SOUND	uv_mdu_undeploy_00	6279	Unit_SPMAT_Deploy_Stop
+
+SOUND	uv_mdu_pad_build_00	951	Structure_Repair_Deploy
+SOUND	uv_mdu_pad_build_00	2421	Structure_Repair_Deploy
+SOUND	uv_mdu_pad_build_00	5109	Structure_Repair_UnDeploy
+SOUND	uv_mdu_pad_build_00	6691	Structure_Repair_UnDeploy
+SOUND	uv_mdu_pad_build_00	7615	Unit_SPMAT_Deploy_Start
+SOUND	uv_mdu_pad_build_00	13650	Unit_SPMAT_Deploy_Stop
+
+SOUND	uv_mdu_pad_sell_00	98	Unit_SPMAT_Deploy_Start
+SOUND	uv_mdu_pad_sell_00	6411	Unit_SPMAT_Deploy_Stop
+SOUND	uv_mdu_pad_sell_00	5767	Structure_Repair_UnDeploy
+SOUND	uv_mdu_pad_sell_00	7615	Structure_Repair_Deploy
+SOUND	uv_mdu_pad_sell_00	8736	Structure_Repair_UnDeploy
+SOUND	uv_mdu_pad_sell_00	11451	Structure_Repair_Deploy
+SOUND	uv_mdu_pad_sell_00	13551	Structure_Repair_Deploy
+
+SOUND	ri_wookiee_captured_move_00	163	Unit_Anim_Grass_Infantry_Foot_Plant
+SOUND	ri_wookiee_captured_move_00	1119	Unit_Anim_Grass_Infantry_Foot_Plant
+
+SOUND	ri_wookiee_captured_move_01	124	Unit_Anim_Grass_Infantry_Foot_Plant
+SOUND	ri_wookiee_captured_move_01	1105	Unit_Anim_Grass_Infantry_Foot_Plant
+
+SOUND	ri_wookiee_captured_walkmove_00	1182	Unit_Anim_Grass_Infantry_Foot_Plant
+SOUND	ri_wookiee_captured_walkmove_00	2576	Unit_Anim_Grass_Infantry_Foot_Plant
+
+SOUND	mov_em6_prison_wookies_cinematic_00	1300	Unit_Anim_Grass_Infantry_Foot_Plant
+SOUND	mov_em6_prison_wookies_cinematic_00	2651	Unit_Anim_Grass_Infantry_Foot_Plant
+SOUND	mov_em6_prison_wookies_cinematic_00	4263	Unit_Anim_Grass_Infantry_Foot_Plant
+SOUND	mov_em6_prison_wookies_cinematic_00	5459	Unit_Anim_Grass_Infantry_Foot_Plant
+SOUND	mov_em6_prison_wookies_cinematic_00	20072	Unit_Anim_Grass_Infantry_Foot_Plant
+SOUND	mov_em6_prison_wookies_cinematic_00	21189	Unit_Anim_Grass_Infantry_Foot_Plant
+SOUND	mov_em6_prison_wookies_cinematic_00	21449	Unit_Anim_Grass_Infantry_Foot_Plant
+SOUND	mov_em6_prison_wookies_cinematic_00	21969	Unit_Anim_Grass_Infantry_Foot_Plant
+SOUND	mov_em6_prison_wookies_cinematic_00	22750	Unit_Anim_Grass_Infantry_Foot_Plant
+SOUND	mov_em6_prison_wookies_cinematic_00	23269	Unit_Anim_Grass_Infantry_Foot_Plant
+SOUND	mov_em6_prison_wookies_cinematic_00	24283	Unit_Anim_Grass_Infantry_Foot_Plant
+SOUND	mov_em6_prison_wookies_cinematic_00	23686	Unit_Anim_Grass_Infantry_Foot_Plant
+SOUND	mov_em6_prison_wookies_cinematic_00	24752	Unit_Anim_Grass_Infantry_Foot_Plant
+SOUND	mov_em6_prison_wookies_cinematic_00	25453	Unit_Anim_Grass_Infantry_Foot_Plant
+SOUND	mov_em6_prison_wookies_cinematic_00	25688	Unit_Anim_Grass_Infantry_Foot_Plant
+SOUND	mov_em6_prison_wookies_cinematic_00	14819	Unit_Anim_Cheer_Wookie
+SOUND	mov_em6_prison_wookies_cinematic_00	16353	Unit_Anim_Cheer_Wookie
+SOUND	mov_em6_prison_wookies_cinematic_00	17888	Unit_Anim_Cheer_Wookie
+
+SOUND	mov_ei_fieldcommander_move_00	19	Unit_Anim_Grass_Infantry_Foot_Plant
+SOUND	mov_ei_fieldcommander_move_00	1168	Unit_Anim_Grass_Infantry_Foot_Plant
+
+SOUND	mov_ei_fieldcommander_chokedeath_00	19350	Unit_Anim_Trooper_Death_Grass
+SOUND	mov_ei_fieldcommander_chokedeath_00	15426	Unit_Anim_Grass_Infantry_Foot_Plant
+SOUND	mov_ei_fieldcommander_chokedeath_00	16064	Unit_Anim_Grass_Infantry_Foot_Plant
+
+SOUND	rv_mfalcon_land_00	32	Unit_Falcon_Landing
+
+SOUND	rv_mfalcon_takeoff_00	77	Unit_Falcon_Takeoff
+
+SOUND	mov_empire_intro_shuttle_cinematic_00	6000	Empire_Campaign_Intro_Star_Destroyer_Engine_Loop
+SOUND	mov_empire_intro_shuttle_cinematic_00	41200	CIN_Shuttle_Takeoff_Space
+
+SOUND	ri_saber_spin_swordspin_00	34	Unit_Light_Saber_Swing_Obi
+
+SOUND	w_planet_deathstar02_ii_attack_00	36	Unit_Death_Star_2_Pre_Fire
+
+SOUND	w_planet_deathstar02_ii_attack_01	36	Unit_Death_Star_2_Pre_Fire
+
+SOUND	Rev_cr20_land_00	5564.5	Unit_Barge_Landing
+
+SOUND	Rev_cr20_takeoff_00	0.5	Unit_Barge_Takeoff
+
+SOUND	uv_tylander_landing_land_00	134	Unit_Barge_Landing
+
+SOUND	uv_tylander_landing_takeoff_00	104	Unit_Barge_Takeoff
+
+SOUND	w_jaba_deploy_00	500	Static_On
+
+SOUND	w_jaba_undeploy_00	3023	Static_Off
+
+SOUND	w_urai_hologram_deploy_00	433	Static_On
+
+SOUND	w_urai_hologram_undeploy_00	3509	Static_Off
+
+SOUND SeV_novasword_land_Land 0 
+
+SOUND	ui_tyber_in_jail_idle_02	2152	Unit_Tyber_Draw_Blaster
+
+SURFACE	ui_tyber_in_jail_move_00	8	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ui_tyber_in_jail_move_00	1157	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ui_tyber_in_jail_land_00	929	GENERIC_IMPACT	B_Pelvis
+
+SOUND	w_star_destroyer_construction_d_die_00	1079	Unit_Star_Destroyer_Death_Crack_SFX
+SOUND	w_star_destroyer_construction_d_die_00	27869	Unit_Star_Destroyer_Death_SFX
+
+SOUND	eb_dock_break_die_00	25839	Unit_Space_Station_Death_SFX
+SOUND	eb_dock_break_die_00	51039	Unit_Space_Station_Death_SFX
+SOUND	eb_dock_break_die_00	56719	Unit_Space_Station_Death_SFX
+SOUND	eb_dock_break_die_00	63600	Unit_Space_Station_Death_SFX
+SOUND	eb_dock_break_die_00	320	Unit_Space_Station_Break_Death_SFX
+SOUND	eb_dock_break_die_00	15279	Unit_Space_Station_Break_Death_SFX
+SOUND	eb_dock_break_die_00	8159	Unit_Space_Station_Break_Death_SFX
+SOUND	eb_dock_break_die_00	20239	Unit_Space_Station_Break_Death_SFX
+
+SOUND	ev_acclamator_d_die_00	12944	Unit_Cruiser_Death_SFX
+SOUND	ev_acclamator_d_die_00	13950	Unit_Cruiser_Death_SFX
+
+SOUND	rv_herotransport_land_00	104	Unit_Gallofree_Landing
+
+SOUND	rv_herotransport_takeoff_00	134	Unit_Gallofree_Takeoff
+
+SOUND	ev_at-barge_land_land_00	74	Unit_Barge_Landing
+
+SOUND	ev_at-barge_land_takeoff_00	74	Unit_Barge_Takeoff
+
+SOUND	uv_rz-52boardingship_landing_land_00	74	Unit_Barge_Landing
+
+SOUND	uv_rz-52boardingship_landing_takeoff_00	134	Unit_Barge_Takeoff
+
+SOUND	uv_vehtransport_landing_land_00	74	Unit_Barge_Landing
+
+SOUND	uv_vehtransport_landing_takeoff_00	104	Unit_Barge_Takeoff
+
+SOUND	ev_executorstardestroyer_d_die_00	240	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	2759	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	5159	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	7680	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	10319	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	12839	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	15239	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	17160	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	19680	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	22079	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	25919	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	30119	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	33959	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	39119	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	43800	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	52646	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	60745	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	67566	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	75879	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	85683	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	94422	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	119759	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	119147	Unit_Star_Destroyer_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	3836	Unit_Star_Destroyer_Death_Crack_SFX
+SOUND	ev_executorstardestroyer_d_die_00	13428	Unit_Star_Destroyer_Death_Crack_SFX
+SOUND	ev_executorstardestroyer_d_die_00	31971	Unit_Star_Destroyer_Death_Crack_SFX
+SOUND	ev_executorstardestroyer_d_die_00	49236	Unit_Star_Destroyer_Death_Crack_SFX
+SOUND	ev_executorstardestroyer_d_die_00	64156	Unit_Star_Destroyer_Death_Crack_SFX
+SOUND	ev_executorstardestroyer_d_die_00	80568	Unit_Star_Destroyer_Death_Crack_SFX
+SOUND	ev_executorstardestroyer_d_die_00	56056	Unit_Space_Station_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	8525	Unit_Cruiser_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	24085	Unit_Cruiser_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	28348	Unit_Cruiser_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	36447	Unit_Cruiser_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	45612	Unit_Cruiser_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	53925	Unit_Cruiser_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	57975	Unit_Cruiser_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	72255	Unit_Cruiser_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	68419	Unit_Cruiser_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	82060	Unit_Cruiser_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	90159	Unit_Cruiser_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	106785	Unit_Cruiser_Death_SFX
+SOUND	ev_executorstardestroyer_d_die_00	101456	Unit_Cruiser_Death_SFX
+
+SOUND	rev_laat_1_deploy_00	74	Unit_LAAT_Deploy_Start
+
+SOUND	rev_laat_1_undeploy_00	74	Unit_LAAT_Undeploy_Start
+
+SOUND	rev_laat_1_move_00	74	Unit_LAAT_Move_Start
+
+SOUND	rev_laat_1_movestart_00	74	Unit_LAAT_Move_Start
+
+SOUND	rev_laat_1_move_endone_00	74	Unit_LAAT_Move_Stop
+
+SOUND	rev_laat_2_deploy_00	74	Unit_LAAT_Deploy_Start
+
+SOUND	rev_laat_2_undeploy_00	74	Unit_LAAT_Undeploy_Start
+
+SOUND	rev_laat_2_move_00	74	Unit_LAAT_Move_Start
+
+SOUND	rev_laat_2_movestart_00	74	Unit_LAAT_Move_Start
+
+SOUND	rev_laat_2_move_endone_00	74	Unit_LAAT_Move_Stop
+
+SOUND	ReV_arc_gunship_deploy_00	74	Unit_LAAT_Deploy_Start
+
+SOUND	ReV_arc_gunship_undeploy_00	74	Unit_LAAT_Undeploy_Start
+
+SOUND	ReV_arc_gunship_move_00	74	Unit_LAAT_Move_Start
+
+SOUND	ReV_arc_gunship_movestart_00	74	Unit_LAAT_Move_Start
+
+SOUND	ReV_arc_gunship_move_endone_00	74	Unit_LAAT_Move_Stop
+
+SURFACE	ReI_clonetrooper_p1_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_clonetrooper_p1_move_00	1032	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_clonetrooper_p1_move_01	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_clonetrooper_p1_move_01	1170	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_clonetrooper_p1_move_02	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_clonetrooper_p1_move_02	1164	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_clonetrooper_p1_die_00	1152	TROOPER_IMPACT	B_Head
+
+SURFACE	ReI_clonetrooper_p1_die_01	888	TROOPER_IMPACT	B_Thigh_R
+
+SURFACE	ReI_clonetrooper_p1_fw_die_00	1113	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_p1_fw_die_01	1274	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_p1_fw_die_02	1320	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_p1_fl_die_00	8653	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_p1_fl_die_01	9437	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_p1_land_00	805	TROOPER_IMPACT	B_Neck
+SURFACE	ReI_clonetrooper_p1_land_00	2632	TROOPER_IMPACT	B_Neck
+
+SOUND	ReI_clonetrooper_p1_crushed_00	698	Unit_Infantry_Squish
+
+
+SURFACE	ReI_clonecommander_p1_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_clonecommander_p1_move_00	1032	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_clonecommander_p1_move_01	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_clonecommander_p1_move_01	1170	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_clonecommander_p1_move_02	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_clonecommander_p1_move_02	1164	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_clonecommander_p1_die_00	1152	TROOPER_IMPACT	B_Head
+
+SURFACE	ReI_clonecommander_p1_die_01	888	TROOPER_IMPACT	B_Thigh_R
+
+SURFACE	ReI_clonecommander_p1_fw_die_00	1113	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonecommander_p1_fw_die_01	1274	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonecommander_p1_fw_die_02	1320	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonecommander_p1_fl_die_00	8653	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonecommander_p1_fl_die_01	9437	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonecommander_p1_land_00	805	TROOPER_IMPACT	B_Neck
+SURFACE	ReI_clonecommander_p1_land_00	2632	TROOPER_IMPACT	B_Neck
+
+SOUND	ReI_clonecommander_p1_crushed_00	698	Unit_Infantry_Squish
+
+SURFACE	cis_bdroid_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	cis_bdroid_move_00	1032	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	cis_bdroid_move_01	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	cis_bdroid_move_01	1170	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	cis_bdroid_walkmove_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	cis_bdroid_walkmove_00	1164	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	cis_bdroid_die_00	1152	TROOPER_IMPACT	B_Head
+
+SURFACE	cis_bdroid_die_01	888	TROOPER_IMPACT	B_Thigh_L
+
+SURFACE	cis_bdroid_fw_die_00	1113	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	cis_bdroid_fl_die_00	8653	TROOPER_IMPACT	B_Pelvis
+
+SOUND	cis_bdroid_crushed_00	698	Unit_Infantry_Squish
+
+SURFACE	sei_jango_fett_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	sei_jango_fett_move_00	1135	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	sei_jango_fett_land_00	709	TROOPER_IMPACT	B_Neck
+SURFACE	sei_jango_fett_land_00	2126	TROOPER_IMPACT	B_Neck
+
+SOUND	sei_jango_fett_jump_00	793	Unit_Jet_Pack_Takeoff
+
+SURFACE	sei_jango_fett_flylanddrop_00	322	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	sev_crabdroid_turnl_00	1992	POD_WALKER_FOOTPRINT	B_Leg_BL
+SURFACE	sev_crabdroid_turnl_00	610	POD_WALKER_FOOTPRINT	B_Leg_BR
+SURFACE	sev_crabdroid_turnl_00	1320	POD_WALKER_FOOTPRINT	B_Leg_F
+
+SURFACE	sev_crabdroid_turnr_00	666	POD_WALKER_FOOTPRINT	B_Leg_BL
+SURFACE	sev_crabdroid_turnr_00	1312	POD_WALKER_FOOTPRINT	B_Leg_F
+SURFACE	sev_crabdroid_turnr_00	1990	POD_WALKER_FOOTPRINT	B_Leg_BR
+
+SURFACE	sev_crabdroid_movestart_00	648	POD_WALKER_FOOTPRINT	Calf_01
+SURFACE	sev_crabdroid_movestart_00	1194	POD_WALKER_FOOTPRINT	B_Leg_F
+SURFACE	sev_crabdroid_movestart_00	1936	POD_WALKER_FOOTPRINT	B_Leg_BL
+
+SURFACE	sev_crabdroid_move_00	598     POD_WALKER_FOOTPRINT	B_Leg_BR
+SURFACE	sev_crabdroid_move_00	1194	POD_WALKER_FOOTPRINT	B_Leg_F
+SURFACE	sev_crabdroid_move_00	1964	POD_WALKER_FOOTPRINT	B_Leg_BL
+
+SURFACE	sev_crabdroid_move_endone_00	724	POD_WALKER_FOOTPRINT	B_Leg_BR
+SURFACE	sev_crabdroid_move_endone_00	1316	POD_WALKER_FOOTPRINT	B_Leg_F
+SURFACE	sev_crabdroid_move_endone_00	1910	POD_WALKER_FOOTPRINT	B_Leg_BL
+
+SURFACE	sev_crabdroid_move_endtwo_00	209	POD_WALKER_FOOTPRINT	B_Leg_F
+SURFACE	sev_crabdroid_move_endtwo_00	1536	POD_WALKER_FOOTPRINT	B_Leg_BR
+SURFACE	sev_crabdroid_move_endtwo_00	1006	POD_WALKER_FOOTPRINT	B_Leg_BL
+
+SURFACE	sev_crabdroid_turnl_half_00	596	POD_WALKER_FOOTPRINT	Calf_01
+SURFACE	sev_crabdroid_turnl_half_00	1286	POD_WALKER_FOOTPRINT	Calf_02
+SURFACE	sev_crabdroid_turnl_half_00	1985	POD_WALKER_FOOTPRINT	Calf_00
+
+SURFACE	sev_crabdroid_turnl_quarter_00	584	POD_WALKER_FOOTPRINT	Calf_02
+SURFACE	sev_crabdroid_turnl_quarter_00	1362	POD_WALKER_FOOTPRINT	Calf_02
+SURFACE	sev_crabdroid_turnl_quarter_00	1990	POD_WALKER_FOOTPRINT	Calf_00
+
+SURFACE	sev_crabdroid_turnr_half_00	624	POD_WALKER_FOOTPRINT	Calf_00
+SURFACE	sev_crabdroid_turnr_half_00	1252	POD_WALKER_FOOTPRINT	Calf_02
+SURFACE	sev_crabdroid_turnr_half_00	1976	POD_WALKER_FOOTPRINT	Calf_01
+
+SURFACE	sev_crabdroid_turnr_quarter_00	506	POD_WALKER_FOOTPRINT	Calf_00
+SURFACE	sev_crabdroid_turnr_quarter_00	1284	POD_WALKER_FOOTPRINT	Calf_02
+SURFACE	sev_crabdroid_turnr_quarter_00	1978	POD_WALKER_FOOTPRINT	Calf_01
+
+SOUND	ReV_theta_shuttle_land_LAND_00	32	Unit_Shuttle_Landing
+
+SOUND	ReV_theta_shuttle_land_TAKEOFF_00	7000	Unit_Shuttle_Takeoff
+
+SOUND	SeV_Sheathipede_Land_Land_00	32	Unit_Shuttle_Landing
+
+SOUND	SeV_Sheathipede_Land_Takeoff_00	32	Unit_Shuttle_Takeoff
+
+SOUND	ReV_botajef_transport_land_Land_00	134	Unit_Barge_Landing
+
+SOUND	ReV_botajef_transport_land_TakeOff_00	104	Unit_Barge_Takeoff
+
+SOUND	Sev_Hardcell_Land_00	134	Unit_Barge_Landing
+
+SOUND	Sev_Hardcell_TakeOff_00	104	Unit_Barge_Takeoff
+
+
+SURFACE	SeV_homingspider_move_00	1835	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	SeV_homingspider_move_00	1835	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+SURFACE	SeV_homingspider_move_00	4006	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	SeV_homingspider_move_00	4006	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+
+SURFACE	SeV_homingspider_turnl_00	847	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+SURFACE	SeV_homingspider_turnl_00	847	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	SeV_homingspider_turnl_00	1889	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	SeV_homingspider_turnl_00	1889	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	SeV_homingspider_turnl_00	2898	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	SeV_homingspider_turnl_00	2898	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+SURFACE	SeV_homingspider_turnl_00	3914	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	SeV_homingspider_turnl_00	3914	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+
+SURFACE	SeV_homingspider_turnr_00	809	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	SeV_homingspider_turnr_00	809	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	SeV_homingspider_turnr_00	1875	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	SeV_homingspider_turnr_00	1875	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+SURFACE	SeV_homingspider_turnr_00	2877	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	SeV_homingspider_turnr_00	2877	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	SeV_homingspider_turnr_00	3879	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	SeV_homingspider_turnr_00	3879	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+
+SURFACE	SeV_homingspider_movestart_00	1872	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	SeV_homingspider_movestart_00	1872	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	SeV_homingspider_movestart_00	3946	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	SeV_homingspider_movestart_00	3946	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+
+SURFACE	SeV_homingspider_move_endone_00	1857	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	SeV_homingspider_move_endone_00	1857	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	SeV_homingspider_move_endone_00	3841	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	SeV_homingspider_move_endone_00	3841	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+
+SURFACE	SeV_homingspider_move_endtwo_00	328	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	SeV_homingspider_move_endtwo_00	328	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	SeV_homingspider_move_endtwo_00	2282	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	SeV_homingspider_move_endtwo_00	2282	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+SURFACE	SeV_homingspider_move_endtwo_00	3931	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	SeV_homingspider_move_endtwo_00	3931	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+
+SURFACE	SeV_homingspider_move_endthree_00	1215	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	SeV_homingspider_move_endthree_00	1215	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+SURFACE	SeV_homingspider_move_endthree_00	2707	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	SeV_homingspider_move_endthree_00	2707	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	SeV_homingspider_move_endthree_00	4058	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	SeV_homingspider_move_endthree_00	4058	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+
+SURFACE	SeV_homingspider_turnl_half_00	994	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	SeV_homingspider_turnl_half_00	994	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+SURFACE	SeV_homingspider_turnl_half_00	2344	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	SeV_homingspider_turnl_half_00	2344	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	SeV_homingspider_turnl_half_00	3232	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	SeV_homingspider_turnl_half_00	3232	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+SURFACE	SeV_homingspider_turnl_half_00	3907	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	SeV_homingspider_turnl_half_00	3907	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+
+SURFACE	SeV_homingspider_turnl_quarter_00	697	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	SeV_homingspider_turnl_quarter_00	697	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	SeV_homingspider_turnl_quarter_00	1478	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	SeV_homingspider_turnl_quarter_00	1478	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+SURFACE	SeV_homingspider_turnl_quarter_00	2375	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	SeV_homingspider_turnl_quarter_00	2375	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+
+SURFACE	SeV_homingspider_turnr_half_00	1051	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	SeV_homingspider_turnr_half_00	1051	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	SeV_homingspider_turnr_half_00	2095	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	SeV_homingspider_turnr_half_00	2095	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+SURFACE	SeV_homingspider_turnr_half_00	3168	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	SeV_homingspider_turnr_half_00	3168	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	SeV_homingspider_turnr_half_00	3865	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	SeV_homingspider_turnr_half_00	3865	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+
+SURFACE	SeV_homingspider_turnr_quarter_00	479	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	SeV_homingspider_turnr_quarter_00	479	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	SeV_homingspider_turnr_quarter_00	1323	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	SeV_homingspider_turnr_quarter_00	1323	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+SURFACE	SeV_homingspider_turnr_quarter_00	1829	ATAA_FOOTPRINT_LEFT	B_Toes_LF
+SURFACE	SeV_homingspider_turnr_quarter_00	1829	ATAA_FOOTPRINT_RIGHT	B_Toes_RR
+SURFACE	SeV_homingspider_turnr_quarter_00	2393	ATAA_FOOTPRINT_RIGHT	B_Toes_RF
+SURFACE	SeV_homingspider_turnr_quarter_00	2393	ATAA_FOOTPRINT_LEFT	B_Toes_LR
+
+SOUND	ai_krayt_dragon_idle_01	134	Unit_Rancor_Growl_1
+
+SOUND	ai_krayt_dragon_move_00	2735	Unit_Anim_Snow_Infantry_Foot_Plant
+SOUND	ai_krayt_dragon_move_00	5840	Unit_Anim_Rancor_Foot_Plant
+SOUND	ai_krayt_dragon_move_00	8845	Unit_Anim_Rancor_Foot_Plant
+SOUND	ai_krayt_dragon_move_00	11893	Unit_Anim_Rancor_Foot_Plant
+
+SOUND	ai_krayt_dragon_attack_00	76	Unit_Rancor_Roar_Short_1
+
+SURFACE	ai_krayt_dragon_die_00	1861	GENERIC_IMPACT	B_Body
+SURFACE	ai_krayt_dragon_die_00	4480	GENERIC_IMPACT	B_Body
+SOUND	ai_krayt_dragon_die_00	98	Unit_Rancor_Death
+
+SOUND	ai_bull_rancor_idle_00	732	Unit_Rancor_Growl_1
+
+SOUND	ai_bull_rancor_idle_01	4151	Unit_Rancor_Roar_Long_1
+
+SOUND	ai_bull_rancor_idle_02	4193	Unit_Rancor_Roar_Long_2
+
+SOUND	ai_bull_rancor_pound_attack_00 2000	Rancor_Damage_Vehicle_SFX
+
+
+SOUND	ai_bull_rancor_move_00	533	Unit_Rancor_Growl_1
+SOUND	ai_bull_rancor_move_00	816	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_bull_rancor_move_00	951	RANCOR_FOOTPRINT	B_Foot_R
+SOUND	ai_bull_rancor_move_00	3876	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_bull_rancor_move_00	4023	RANCOR_FOOTPRINT	B_Foot_L
+
+SOUND	ai_bull_rancor_turnl_00	1272	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_bull_rancor_turnl_00	1423	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	ai_bull_rancor_turnl_00	2856	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_bull_rancor_turnl_00	2981	RANCOR_FOOTPRINT	B_Foot_R
+
+SOUND	ai_bull_rancor_turnr_00	1204	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_bull_rancor_turnr_00	1276	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	ai_bull_rancor_turnr_00	2836	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_bull_rancor_turnr_00	2959	RANCOR_FOOTPRINT	B_Foot_R
+
+SOUND	ai_bull_rancor_attack_00	1649	Unit_Rancor_Roar_Short_1
+
+SOUND	ai_bull_rancor_attack_01	1200	Unit_Rancor_Roar_Short_1
+
+SOUND	ai_bull_rancor_die_00	6	Unit_Rancor_Death
+SURFACE	ai_bull_rancor_die_00	2076	GENERIC_IMPACT	B_Pelvis
+SURFACE	ai_bull_rancor_die_00	2436	GENERIC_IMPACT	B_Pelvis
+SURFACE	ai_bull_rancor_die_00	3035	GENERIC_IMPACT	B_Pelvis
+SURFACE	ai_bull_rancor_die_00	3581	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ai_bull_rancor_die_01	2021	GENERIC_IMPACT	B_Pelvis
+SURFACE	ai_bull_rancor_die_01	3377	GENERIC_IMPACT	B_Pelvis
+SURFACE	ai_bull_rancor_die_01	3852	GENERIC_IMPACT	B_Pelvis
+SURFACE	ai_bull_rancor_die_01	5057	GENERIC_IMPACT	B_Pelvis
+
+SOUND	ai_bull_rancor_movestart_00	851	Unit_Rancor_Growl_1
+SOUND	ai_bull_rancor_movestart_00	1254	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_bull_rancor_movestart_00	1492	RANCOR_FOOTPRINT	B_Foot_R
+SOUND	ai_bull_rancor_movestart_00	3919	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_bull_rancor_movestart_00	4042	RANCOR_FOOTPRINT	B_Foot_L
+
+SOUND	ai_bull_rancor_move_endone_00	678	Unit_Rancor_Growl_1
+SOUND	ai_bull_rancor_move_endone_00	786	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_bull_rancor_move_endone_00	994	RANCOR_FOOTPRINT	B_Foot_R
+SOUND	ai_bull_rancor_move_endone_00	3390	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_bull_rancor_move_endone_00	3514	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	ai_bull_rancor_move_endone_00	4452	Unit_Anim_Rancor_Foot_Plant
+
+SOUND	ai_bull_rancor_move_endtwo_00	1608	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_bull_rancor_move_endtwo_00	1744	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	ai_bull_rancor_move_endtwo_00	3792	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_bull_rancor_move_endtwo_00	3904	RANCOR_FOOTPRINT	B_Foot_R
+
+SOUND	ai_bull_rancor_move_endthree_00	2837	Unit_Rancor_Growl_1
+SOUND	ai_bull_rancor_move_endthree_00	2910	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_bull_rancor_move_endthree_00	3034	RANCOR_FOOTPRINT	B_Foot_R
+SOUND	ai_bull_rancor_move_endthree_00	4518	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_bull_rancor_move_endthree_00	4630	RANCOR_FOOTPRINT	B_Foot_L
+
+SOUND	ai_bull_rancor_turnl_half_00	806	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_bull_rancor_turnl_half_00	934	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	ai_bull_rancor_turnl_half_00	1969	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_bull_rancor_turnl_half_00	1987	RANCOR_FOOTPRINT	B_Foot_R
+
+SOUND	ai_bull_rancor_turnl_quarter_00	818	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_bull_rancor_turnl_quarter_00	916	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	ai_bull_rancor_turnl_quarter_00	1964	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_bull_rancor_turnl_quarter_00	1987	RANCOR_FOOTPRINT	B_Foot_R
+
+SOUND	ai_bull_rancor_turnr_half_00	822	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_bull_rancor_turnr_half_00	864	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	ai_bull_rancor_turnr_half_00	1960	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_bull_rancor_turnr_half_00	1987	RANCOR_FOOTPRINT	B_Foot_R
+
+SOUND	ai_bull_rancor_turnr_quarter_00	822	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_bull_rancor_turnr_quarter_00	922	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	ai_bull_rancor_turnr_quarter_00	1898	Unit_Anim_Rancor_Foot_Plant
+SURFACE	ai_bull_rancor_turnr_quarter_00	1987	RANCOR_FOOTPRINT	B_Foot_R
+
+SURFACE	ai_bull_rancor_eat_attack_00	1456	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	ai_bull_rancor_eat_attack_00	6564	Unit_Rancor_Eat_2
+SOUND	ai_bull_rancor_eat_attack_00	98	Unit_Rancor_Eat_1
+SOUND	ai_bull_rancor_eat_attack_00	7937	Unit_Infantry_Squish
+
+SURFACE	rei_21b_move_00	2180	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	rei_21b_move_00	1198	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	rei_21b_move_01	1141	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	rei_21b_move_01	2169	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	rei_21b_die_00	1319	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	rei_21b_die_01	864	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	rei_21b_fw_die_00	1437	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	rei_21b_fw_die_01	1161	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	rei_21b_fw_die_02	1333	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	rei_21b_fl_die_00	8665	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	rei_21b_fl_die_01	10303	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	rei_21b_land_00	929	GENERIC_IMPACT	B_Pelvis
+
+SOUND	sev_fanblade_fighter_land_land_00	7	Unit_Falcon_Landing
+
+SOUND	sev_fanblade_fighter_land_takeoff_00	7.5	Unit_Falcon_Takeoff
+
+SOUND	SeV_siege_mortar_deploy_00	13400	Unit_Siege_Mortar_Start
+
+
+SOUND	SeB_flakgun_attack_00	2512.5	Unit_Providence_Artillery_Fire
+
+SURFACE	ReV_atpt_move_00	1155	AT-ST_FOOTPRINT	Bone05
+SURFACE	ReV_atpt_move_00	2340	AT-ST_FOOTPRINT	Bone10
+
+SURFACE	ReV_atpt_move_00	3646.5	AT-ST_FOOTPRINT	Bone10
+
+SOUND	ReV_atpt_move_00	1039.5	Unit_Anim_AT_PT_Foot_Plant
+SOUND	ReV_atpt_move_00	2355.5	Unit_Anim_AT_PT_Foot_Plant
+
+SOUND	ReV_atpt_turnl_00	1120	Unit_Anim_AT_PT_Foot_Plant
+SOUND	ReV_atpt_turnr_00	2020	Unit_Anim_AT_PT_Foot_Plant
+
+SOUND	ReV_atpt_movestart_00	1191.5	Unit_Anim_AT_PT_Foot_Plant
+
+SOUND	ReV_atpt_die_00	1940	Unit_Anim_AT_ST_Ground_Slam
+
+SOUND	SEI_magnaguard_attack_00	802	Unit_Magna_Pike_Swing_00
+
+SOUND	SEI_magnaguard_attack_01	1217.5	Unit_Magna_Pike_Swing_03
+
+SOUND	SEI_magnaguard_attack_02	1361	Unit_Magna_Pike_Swing_02
+
+SOUND	SEI_magnaguard_idle_03	1601.5	Unit_Magna_Pike_Swing_01
+
+SOUND	SeV_mtt_deploy_00	240	Unit_Mtt_Deploy_Start
+
+SOUND	SeV_c9979_land_Land_00	80	Unit_C9979_Land
+SOUND	SeV_c9979_land_Takeoff_00	15	Unit_C9979_Takeoff
+
+SURFACE	SEI_Asajj_Ventress_move_00	8	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	SEI_Asajj_Ventress_move_00	1117	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	SEI_Asajj_Ventress_move_01	8	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	SEI_Asajj_Ventress_move_01	1192	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SOUND	SEI_Asajj_Ventress_attack_00  1590.5  Unit_Asajj_Grunt_1
+SOUND	SEI_Asajj_Ventress_attack_00  2263   Unit_Light_Saber_Swing
+
+SOUND	SEI_Asajj_Ventress_attack_02	1077.5	Unit_Asajj_Grunt_2
+SOUND	SEI_Asajj_Ventress_attack_01	2558.5	Unit_Asajj_Grunt_1
+
+SOUND	SEI_Asajj_Ventress_attack_01	2609.5	Unit_Light_Saber_Swing
+
+SOUND	SEI_Asajj_Ventress_attack_02	1533	Unit_Light_Saber_Swing
+
+
+SURFACE	SEI_Asajj_Ventress_die_00	1329	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	SEI_Asajj_Ventress_die_01	944	GENERIC_IMPACT	B_Pelvis
+SURFACE	SEI_Asajj_Ventress_die_01	4325	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	SEI_Asajj_Ventress_walkmove_00	1001	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	SEI_Asajj_Ventress_walkmove_00	1995	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	SEI_Asajj_Ventress_walkmove_01	1102	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	SEI_Asajj_Ventress_walkmove_01	2045	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	REI_mace_windu_move_00	10	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_mace_windu_move_00	1227	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SOUND	REI_mace_windu_attack_00	287	Unit_Light_Saber_Swing_Obi
+SOUND	REI_mace_windu_attack_00	1392	Unit_Light_Saber_Swing_Obi
+SOUND	REI_mace_windu_attack_00	2834	Unit_Light_Saber_Swing_Obi
+
+SURFACE	REI_mace_windu_walkmove_00	1062	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	REI_mace_windu_walkmove_00	2191	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SOUND	REI_mace_windu_sword_throw_00	1519	Unit_Light_Saber_Swing_Obi
+SOUND	REI_mace_windu_sword_throw_00	1706	Unit_Yoda_Whoosh
+
+SURFACE	REI_obiwan_move_00	10	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_obiwan_move_00	1227	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SOUND	REI_obiwan_attack_00	287	Unit_Light_Saber_Swing_Obi
+SOUND	REI_obiwan_attack_00	1392	Unit_Light_Saber_Swing_Obi
+SOUND	REI_obiwan_attack_00	2834	Unit_Light_Saber_Swing_Obi
+
+SURFACE	REI_obiwan_walkmove_00	1062	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	REI_obiwan_walkmove_00	2191	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SOUND	REI_obiwan_sword_throw_00	1519	Unit_Light_Saber_Swing_Obi
+SOUND	REI_obiwan_sword_throw_00	1706	Unit_Yoda_Whoosh
+
+SURFACE	REI_anakin_move_00	10	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_anakin_move_00	1227	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SOUND	REI_anakin_attack_00	287	Unit_Light_Saber_Swing_Obi
+SOUND	REI_anakin_attack_00	1392	Unit_Light_Saber_Swing_Obi
+SOUND	REI_anakin_attack_00	2834	Unit_Light_Saber_Swing_Obi
+
+SURFACE	REI_anakin_walkmove_00	1062	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	REI_anakin_walkmove_00	2191	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SOUND	REI_anakin_sword_throw_00	1519	Unit_Light_Saber_Swing_Obi
+SOUND	REI_anakin_sword_throw_00	1706	Unit_Yoda_Whoosh
+
+SURFACE	REI_Aayla_Secura_move_00	437	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_Aayla_Secura_move_00.	1489	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SOUND	REI_Aayla_Secura_attack_00	1511	Unit_Light_Saber_Swing
+
+SOUND	REI_Aayla_Secura_attack_01	262	Unit_Light_Saber_Swing
+SOUND	REI_Aayla_Secura_attack_01	1639	Unit_Light_Saber_Swing
+
+SOUND	REI_Aayla_Secura_block_blaster_00	0	Unit_Light_Saber_Swing
+
+SOUND	REI_Aayla_Secura_block_blaster_01	0	Unit_Light_Saber_Swing
+
+SOUND	REI_Aayla_Secura_block_blaster_02	0	Unit_Light_Saber_Swing
+
+SOUND	REI_Aayla_Secura_block_blaster_03	0	Unit_Light_Saber_Swing
+
+SOUND	REI_Aayla_Secura_block_blaster_04	0	Unit_Light_Saber_Swing
+
+SOUND	REI_Aayla_Secura_redirect_blaster_00	0	Unit_Light_Saber_Swing
+
+SOUND	REI_Aayla_Secura_redirect_blaster_01	0	Unit_Light_Saber_Swing
+
+SOUND	REI_Aayla_Secura_redirect_blaster_02	0	Unit_Light_Saber_Swing
+
+SOUND	REI_Aayla_Secura_redirect_blaster_03	0	Unit_Light_Saber_Swing
+
+SOUND	REI_Aayla_Secura_idle_blockblaster_00	239	Unit_Light_Saber_Swing
+
+SOUND	REI_Aayla_Secura_idle_blockblaster_01	10	Unit_Light_Saber_Swing
+
+SOUND	REI_Aayla_Secura_fw_attack_00	10	Unit_Light_Saber_Swing
+SOUND	REI_Aayla_Secura_fw_attack_00	982	Unit_Light_Saber_Swing
+
+SURFACE	REI_Aayla_Secura_walkmove_00	679	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_Aayla_Secura_walkmove_00	1814	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_Barris_Offee_move_00	437	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_Barris_Offee_move_00.	1489	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SOUND	REI_Barris_Offee_attack_00	1511	Unit_Light_Saber_Swing
+
+SOUND	REI_Barris_Offee_attack_01	262	Unit_Light_Saber_Swing
+SOUND	REI_Barris_Offee_attack_01	1639	Unit_Light_Saber_Swing
+
+SOUND	REI_Barris_Offee_block_blaster_00	0	Unit_Light_Saber_Swing
+
+SOUND	REI_Barris_Offee_block_blaster_01	0	Unit_Light_Saber_Swing
+
+SOUND	REI_Barris_Offee_block_blaster_02	0	Unit_Light_Saber_Swing
+
+SOUND	REI_Barris_Offee_block_blaster_03	0	Unit_Light_Saber_Swing
+
+SOUND	REI_Barris_Offee_block_blaster_04	0	Unit_Light_Saber_Swing
+
+SOUND	REI_Barris_Offee_redirect_blaster_00	0	Unit_Light_Saber_Swing
+
+SOUND	REI_Barris_Offee_redirect_blaster_01	0	Unit_Light_Saber_Swing
+
+SOUND	REI_Barris_Offee_redirect_blaster_02	0	Unit_Light_Saber_Swing
+
+SOUND	REI_Barris_Offee_redirect_blaster_03	0	Unit_Light_Saber_Swing
+
+SOUND	REI_Barris_Offee_idle_blockblaster_00	239	Unit_Light_Saber_Swing
+
+SOUND	REI_Barris_Offee_idle_blockblaster_01	10	Unit_Light_Saber_Swing
+
+SOUND	REI_Barris_Offee_fw_attack_00	10	Unit_Light_Saber_Swing
+SOUND	REI_Barris_Offee_fw_attack_00	982	Unit_Light_Saber_Swing
+
+SURFACE	REI_Barris_Offee_walkmove_00	679	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_Barris_Offee_walkmove_00	1814	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_luminara_move_00	1358	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_luminara_move_00	2891	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SOUND	REI_luminara_attack_00	46	Unit_Light_Saber_Swing_Obi
+
+SOUND	REI_luminara_block_blaster_00	0	Unit_Light_Saber_Swing_Obi
+
+SOUND	REI_luminara_block_blaster_01	0	Unit_Light_Saber_Swing_Obi
+
+SOUND	REI_luminara_block_blaster_02	0	Unit_Light_Saber_Swing_Obi
+
+SOUND	REI_luminara_block_blaster_03	0	Unit_Light_Saber_Swing_Obi
+
+SOUND	REI_luminara_redirect_blaster_00	0	Unit_Light_Saber_Swing_Obi
+
+SOUND	REI_luminara_redirect_blaster_01	0	Unit_Light_Saber_Swing_Obi
+
+SOUND	REI_luminara_redirect_blaster_02	0	Unit_Light_Saber_Swing_Obi
+
+SOUND	REI_luminara_redirect_blaster_03	0	Unit_Light_Saber_Swing_Obi
+
+SOUND	REI_Plokoon_attack_00	46	Unit_Light_Saber_Swing_Obi
+
+SOUND	REI_Plokoon_block_blaster_00	0	Unit_Light_Saber_Swing_Obi
+
+SOUND	REI_Plokoon_block_blaster_01	0	Unit_Light_Saber_Swing_Obi
+
+SOUND	REI_Plokoon_block_blaster_02	0	Unit_Light_Saber_Swing_Obi
+
+SOUND	REI_Plokoon_block_blaster_03	0	Unit_Light_Saber_Swing_Obi
+
+SOUND	REI_Plokoon_redirect_blaster_00	0	Unit_Light_Saber_Swing_Obi
+
+SOUND	REI_Plokoon_redirect_blaster_01	0	Unit_Light_Saber_Swing_Obi
+
+SOUND	REI_Plokoon_redirect_blaster_02	0	Unit_Light_Saber_Swing_Obi
+
+SOUND	REI_Plokoon_redirect_blaster_03	0	Unit_Light_Saber_Swing_Obi
+
+SURFACE	ai_droid_8t88_move_00	2180	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ai_droid_8t88_move_00	1198	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ai_droid_8t88_move_01	1141	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ai_droid_8t88_move_01	2169	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ai_droid_8t88_die_00	1319	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ai_droid_8t88_die_01	864	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ai_droid_8t88_fw_die_00	1437	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ai_droid_8t88_fw_die_01	1161	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ai_droid_8t88_fw_die_02	1333	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ai_droid_8t88_fl_die_00	8665	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ai_droid_8t88_fl_die_01	10303	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ai_droid_8t88_land_00	929	GENERIC_IMPACT	B_Pelvis
+
+SOUND	Ai_droid_cz_series_idle_01	738	Unit_Anim_C3PO_Foot_Motor
+
+SOUND	Ai_droid_cz_series_idle_02	5195	Unit_Anim_C3PO_Foot_Motor
+
+SOUND	Ai_droid_cz_series_idle_03	145	Unit_Anim_C3PO_Foot_Motor
+SOUND	Ai_droid_cz_series_idle_03	3634	Unit_Anim_C3PO_Foot_Motor
+
+SURFACE	Ai_droid_cz_series_move_00	91	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	Ai_droid_cz_series_move_00	872	INFANTRY_FOOT_PLANT	B_Foot_L
+SOUND	Ai_droid_cz_series_move_00	452	Unit_Anim_C3PO_Foot_Motor
+
+SOUND	ai_droid_ra7_idle_01	738	Unit_Anim_C3PO_Foot_Motor
+
+SOUND	ai_droid_ra7_idle_02	5195	Unit_Anim_C3PO_Foot_Motor
+
+SOUND	ai_droid_ra7_idle_03	145	Unit_Anim_C3PO_Foot_Motor
+SOUND	ai_droid_ra7_idle_03	3634	Unit_Anim_C3PO_Foot_Motor
+
+SURFACE	ai_droid_ra7_move_00	91	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ai_droid_ra7_move_00	872	INFANTRY_FOOT_PLANT	B_Foot_L
+SOUND	ai_droid_ra7_move_00	452	Unit_Anim_C3PO_Foot_Motor
+
+SOUND	ai_droid_ra7_black_idle_01	738	Unit_Anim_C3PO_Foot_Motor
+
+SOUND	ai_droid_ra7_black_idle_02	5195	Unit_Anim_C3PO_Foot_Motor
+
+SOUND	ai_droid_ra7_black_idle_03	145	Unit_Anim_C3PO_Foot_Motor
+SOUND	ai_droid_ra7_black_idle_03	3634	Unit_Anim_C3PO_Foot_Motor
+
+SURFACE	ai_droid_ra7_black_move_00	91	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ai_droid_ra7_black_move_00	872	INFANTRY_FOOT_PLANT	B_Foot_L
+SOUND	ai_droid_ra7_black_move_00	452	Unit_Anim_C3PO_Foot_Motor
+
+SURFACE	ai_ev9d9_move_00	2180	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ai_ev9d9_move_00	1198	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ai_ev9d9_move_01	1141	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ai_ev9d9_move_01	2169	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ai_ev9d9_die_00	1319	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ai_ev9d9_die_01	864	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ai_ev9d9_fw_die_00	1437	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ai_ev9d9_fw_die_01	1161	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ai_ev9d9_fw_die_02	1333	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ai_ev9d9_fl_die_00	8665	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ai_ev9d9_fl_die_01	10303	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ai_ev9d9_land_00	929	GENERIC_IMPACT	B_Pelvis
+
+SOUND	Ai_felucia_rancor_idle_00	732	Unit_Rancor_Growl_1
+
+SOUND	Ai_felucia_rancor_idle_01	4151	Unit_Rancor_Roar_Long_1
+
+SOUND	Ai_felucia_rancor_idle_02	4193	Unit_Rancor_Roar_Long_2
+
+SOUND	Ai_felucia_rancor_pound_attack_00 2000	Rancor_Damage_Vehicle_SFX
+
+
+SOUND	Ai_felucia_rancor_move_00	533	Unit_Rancor_Growl_1
+SOUND	Ai_felucia_rancor_move_00	816	Unit_Anim_Rancor_Foot_Plant
+SURFACE	Ai_felucia_rancor_move_00	951	RANCOR_FOOTPRINT	B_Foot_R
+SOUND	Ai_felucia_rancor_move_00	3876	Unit_Anim_Rancor_Foot_Plant
+SURFACE	Ai_felucia_rancor_move_00	4023	RANCOR_FOOTPRINT	B_Foot_L
+
+SOUND	Ai_felucia_rancor_turnl_00	1272	Unit_Anim_Rancor_Foot_Plant
+SURFACE	Ai_felucia_rancor_turnl_00	1423	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	Ai_felucia_rancor_turnl_00	2856	Unit_Anim_Rancor_Foot_Plant
+SURFACE	Ai_felucia_rancor_turnl_00	2981	RANCOR_FOOTPRINT	B_Foot_R
+
+SOUND	Ai_felucia_rancor_turnr_00	1204	Unit_Anim_Rancor_Foot_Plant
+SURFACE	Ai_felucia_rancor_turnr_00	1276	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	Ai_felucia_rancor_turnr_00	2836	Unit_Anim_Rancor_Foot_Plant
+SURFACE	Ai_felucia_rancor_turnr_00	2959	RANCOR_FOOTPRINT	B_Foot_R
+
+SOUND	Ai_felucia_rancor_attack_00	1649	Unit_Rancor_Roar_Short_1
+
+SOUND	Ai_felucia_rancor_attack_01	1200	Unit_Rancor_Roar_Short_1
+
+SOUND	Ai_felucia_rancor_die_00	6	Unit_Rancor_Death
+SURFACE	Ai_felucia_rancor_die_00	2076	GENERIC_IMPACT	B_Pelvis
+SURFACE	Ai_felucia_rancor_die_00	2436	GENERIC_IMPACT	B_Pelvis
+SURFACE	Ai_felucia_rancor_die_00	3035	GENERIC_IMPACT	B_Pelvis
+SURFACE	Ai_felucia_rancor_die_00	3581	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ai_felucia_rancor_die_01	2021	GENERIC_IMPACT	B_Pelvis
+SURFACE	Ai_felucia_rancor_die_01	3377	GENERIC_IMPACT	B_Pelvis
+SURFACE	Ai_felucia_rancor_die_01	3852	GENERIC_IMPACT	B_Pelvis
+SURFACE	Ai_felucia_rancor_die_01	5057	GENERIC_IMPACT	B_Pelvis
+
+SOUND	Ai_felucia_rancor_movestart_00	851	Unit_Rancor_Growl_1
+SOUND	Ai_felucia_rancor_movestart_00	1254	Unit_Anim_Rancor_Foot_Plant
+SURFACE	Ai_felucia_rancor_movestart_00	1492	RANCOR_FOOTPRINT	B_Foot_R
+SOUND	Ai_felucia_rancor_movestart_00	3919	Unit_Anim_Rancor_Foot_Plant
+SURFACE	Ai_felucia_rancor_movestart_00	4042	RANCOR_FOOTPRINT	B_Foot_L
+
+SOUND	Ai_felucia_rancor_move_endone_00	678	Unit_Rancor_Growl_1
+SOUND	Ai_felucia_rancor_move_endone_00	786	Unit_Anim_Rancor_Foot_Plant
+SURFACE	Ai_felucia_rancor_move_endone_00	994	RANCOR_FOOTPRINT	B_Foot_R
+SOUND	Ai_felucia_rancor_move_endone_00	3390	Unit_Anim_Rancor_Foot_Plant
+SURFACE	Ai_felucia_rancor_move_endone_00	3514	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	Ai_felucia_rancor_move_endone_00	4452	Unit_Anim_Rancor_Foot_Plant
+
+SOUND	Ai_felucia_rancor_move_endtwo_00	1608	Unit_Anim_Rancor_Foot_Plant
+SURFACE	Ai_felucia_rancor_move_endtwo_00	1744	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	Ai_felucia_rancor_move_endtwo_00	3792	Unit_Anim_Rancor_Foot_Plant
+SURFACE	Ai_felucia_rancor_move_endtwo_00	3904	RANCOR_FOOTPRINT	B_Foot_R
+
+SOUND	Ai_felucia_rancor_move_endthree_00	2837	Unit_Rancor_Growl_1
+SOUND	Ai_felucia_rancor_move_endthree_00	2910	Unit_Anim_Rancor_Foot_Plant
+SURFACE	Ai_felucia_rancor_move_endthree_00	3034	RANCOR_FOOTPRINT	B_Foot_R
+SOUND	Ai_felucia_rancor_move_endthree_00	4518	Unit_Anim_Rancor_Foot_Plant
+SURFACE	Ai_felucia_rancor_move_endthree_00	4630	RANCOR_FOOTPRINT	B_Foot_L
+
+SOUND	Ai_felucia_rancor_turnl_half_00	806	Unit_Anim_Rancor_Foot_Plant
+SURFACE	Ai_felucia_rancor_turnl_half_00	934	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	Ai_felucia_rancor_turnl_half_00	1969	Unit_Anim_Rancor_Foot_Plant
+SURFACE	Ai_felucia_rancor_turnl_half_00	1987	RANCOR_FOOTPRINT	B_Foot_R
+
+SOUND	Ai_felucia_rancor_turnl_quarter_00	818	Unit_Anim_Rancor_Foot_Plant
+SURFACE	Ai_felucia_rancor_turnl_quarter_00	916	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	Ai_felucia_rancor_turnl_quarter_00	1964	Unit_Anim_Rancor_Foot_Plant
+SURFACE	Ai_felucia_rancor_turnl_quarter_00	1987	RANCOR_FOOTPRINT	B_Foot_R
+
+SOUND	Ai_felucia_rancor_turnr_half_00	822	Unit_Anim_Rancor_Foot_Plant
+SURFACE	Ai_felucia_rancor_turnr_half_00	864	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	Ai_felucia_rancor_turnr_half_00	1960	Unit_Anim_Rancor_Foot_Plant
+SURFACE	Ai_felucia_rancor_turnr_half_00	1987	RANCOR_FOOTPRINT	B_Foot_R
+
+SOUND	Ai_felucia_rancor_turnr_quarter_00	822	Unit_Anim_Rancor_Foot_Plant
+SURFACE	Ai_felucia_rancor_turnr_quarter_00	922	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	Ai_felucia_rancor_turnr_quarter_00	1898	Unit_Anim_Rancor_Foot_Plant
+SURFACE	Ai_felucia_rancor_turnr_quarter_00	1987	RANCOR_FOOTPRINT	B_Foot_R
+
+SURFACE	Ai_felucia_rancor_eat_attack_00	1456	RANCOR_FOOTPRINT	B_Foot_L
+SOUND	Ai_felucia_rancor_eat_attack_00	6564	Unit_Rancor_Eat_2
+SOUND	Ai_felucia_rancor_eat_attack_00	98	Unit_Rancor_Eat_1
+SOUND	Ai_felucia_rancor_eat_attack_00	7937	Unit_Infantry_Squish
+
+SURFACE	Ai_naboo_citizen_f_a_move_00	10	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	Ai_naboo_citizen_f_a_move_00	1168	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	Ai_naboo_citizen_f_a_move_01	10	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	Ai_naboo_citizen_f_a_move_01	1157	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	Ai_naboo_citizen_f_a_move_02	10	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	Ai_naboo_citizen_f_a_move_02	1152	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	Ai_naboo_citizen_f_a_land_00	831	GENERIC_IMPACT	B_Pelvis
+SURFACE	Ai_naboo_citizen_f_a_land_00	2651	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ai_naboo_citizen_f_a_walkmove_00	1047	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ai_naboo_citizen_f_a_walkmove_00	2153	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ai_naboo_citizen_f_a_walkmove_01	1071	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ai_naboo_citizen_f_a_walkmove_01	2074	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ai_naboo_citizen_f_a_walkmove_02	1058	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ai_naboo_citizen_f_a_walkmove_02	2134	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ai_naboo_citizen_f_a_crushed_00	663	GENERIC_IMPACT	B_Foot_L
+
+SURFACE	Ai_naboo_citizen_f_b_move_00	10	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	Ai_naboo_citizen_f_b_move_00	1168	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	Ai_naboo_citizen_f_b_move_01	10	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	Ai_naboo_citizen_f_b_move_01	1157	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	Ai_naboo_citizen_f_b_move_02	10	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	Ai_naboo_citizen_f_b_move_02	1152	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	Ai_naboo_citizen_f_b_land_00	831	GENERIC_IMPACT	B_Pelvis
+SURFACE	Ai_naboo_citizen_f_b_land_00	2651	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ai_naboo_citizen_f_b_walkmove_00	1047	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ai_naboo_citizen_f_b_walkmove_00	2153	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ai_naboo_citizen_f_b_walkmove_01	1071	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ai_naboo_citizen_f_b_walkmove_01	2074	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ai_naboo_citizen_f_b_walkmove_02	1058	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ai_naboo_citizen_f_b_walkmove_02	2134	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ai_naboo_citizen_f_b_crushed_00	663	GENERIC_IMPACT	B_Foot_L
+
+SURFACE	Ai_naboo_citizen_f_c_move_00	10	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	Ai_naboo_citizen_f_c_move_00	1168	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	Ai_naboo_citizen_f_c_move_01	10	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	Ai_naboo_citizen_f_c_move_01	1157	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	Ai_naboo_citizen_f_c_move_02	10	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	Ai_naboo_citizen_f_c_move_02	1152	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	Ai_naboo_citizen_f_c_land_00	831	GENERIC_IMPACT	B_Pelvis
+SURFACE	Ai_naboo_citizen_f_c_land_00	2651	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ai_naboo_citizen_f_c_walkmove_00	1047	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ai_naboo_citizen_f_c_walkmove_00	2153	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ai_naboo_citizen_f_c_walkmove_01	1071	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ai_naboo_citizen_f_c_walkmove_01	2074	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ai_naboo_citizen_f_c_walkmove_02	1058	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ai_naboo_citizen_f_c_walkmove_02	2134	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ai_naboo_citizen_f_c_crushed_00	663	GENERIC_IMPACT	B_Foot_L
+
+SURFACE	Ni_duros_A_move_00	2180	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_duros_A_move_00	1198	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_duros_A_move_01	1141	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_duros_A_move_01	2169	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_duros_A_die_00	1319	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_duros_A_die_01	864	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_duros_A_fw_die_00	1437	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_duros_A_fw_die_01	1161	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_duros_A_fw_die_02	1333	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_duros_A_fl_die_00	8665	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_duros_A_fl_die_01	10303	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_duros_A_land_00	929	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_duros_B_move_00	2180	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_duros_B_move_00	1198	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_duros_B_move_01	1141	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_duros_B_move_01	2169	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_duros_B_die_00	1319	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_duros_B_die_01	864	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_duros_B_fw_die_00	1437	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_duros_B_fw_die_01	1161	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_duros_B_fw_die_02	1333	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_duros_B_fl_die_00	8665	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_duros_B_fl_die_01	10303	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_duros_B_land_00	929	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_duros_C_move_00	2180	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_duros_C_move_00	1198	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_duros_C_move_01	1141	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_duros_C_move_01	2169	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_duros_C_die_00	1319	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_duros_C_die_01	864	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_duros_C_fw_die_00	1437	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_duros_C_fw_die_01	1161	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_duros_C_fw_die_02	1333	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_duros_C_fl_die_00	8665	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_duros_C_fl_die_01	10303	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_duros_C_land_00	929	GENERIC_IMPACT	B_Pelvis
+
+SOUND	Ni_ig86_idle_01	233	Unit_Anim_C3PO_Foot_Motor
+
+SURFACE	Ni_ig86_move_00	4	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	Ni_ig86_move_00	1218	INFANTRY_FOOT_PLANT	B_Foot_L
+SOUND	Ni_ig86_move_00	314	Unit_Anim_C3PO_Foot_Motor
+SOUND	Ni_ig86_move_00	1603	Unit_Anim_C3PO_Foot_Motor
+
+SOUND	Ni_ig86_attackidle_01	469	Unit_Anim_C3PO_Foot_Motor
+
+SURFACE	Ni_ig86_land_00	903	TROOPER_IMPACT	B_Pelvis
+SOUND	Ni_ig86_land_00	929	Unit_BodyFall_IG88
+
+SOUND	Ni_ig86_demolition_00	7819	Unit_Katarn_Plant_Bomb_SFX
+SOUND	Ni_ig86_demolition_00	2125	Unit_Anim_C3PO_Foot_Motor
+SOUND	Ni_ig86_demolition_00	3994	Unit_Anim_C3PO_Foot_Motor
+SOUND	Ni_ig86_demolition_00	6204	Unit_Anim_C3PO_Foot_Motor
+SOUND	Ni_ig86_demolition_00	9944	Unit_Anim_C3PO_Foot_Motor
+SOUND	Ni_ig86_demolition_00	12970	Unit_Anim_C3PO_Foot_Motor
+SOUND	Ni_ig86_demolition_00	15180	Unit_Anim_C3PO_Foot_Motor
+
+SURFACE	Ni_ithorian_move_00	2180	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_ithorian_move_00	1198	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_ithorian_move_01	1141	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_ithorian_move_01	2169	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_ithorian_die_00	1319	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_ithorian_die_01	864	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_ithorian_fw_die_00	1437	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_ithorian_fw_die_01	1161	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_ithorian_fw_die_02	1333	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_ithorian_fl_die_00	8665	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_ithorian_fl_die_01	10303	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_ithorian_land_00	929	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_munn_A_move_00	2180	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_munn_A_move_00	1198	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_munn_A_move_01	1141	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_munn_A_move_01	2169	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_munn_A_die_00	1319	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_munn_A_die_01	864	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_munn_A_fw_die_00	1437	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_munn_A_fw_die_01	1161	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_munn_A_fw_die_02	1333	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_munn_A_fl_die_00	8665	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_munn_A_fl_die_01	10303	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_munn_B_move_00	2180	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_munn_B_move_00	1198	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_munn_B_move_01	1141	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_munn_B_move_01	2169	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_munn_B_land_00	929	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_munn_B_die_00	1319	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_munn_B_die_01	864	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_munn_B_fw_die_00	1437	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_munn_B_fw_die_01	1161	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_munn_B_fw_die_02	1333	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_munn_B_fl_die_00	8665	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_munn_B_fl_die_01	10303	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_munn_B_land_00	929	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_naboo_security_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	Ni_naboo_security_move_00	1032	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	Ni_naboo_security_move_01	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	Ni_naboo_security_move_01	1170	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	Ni_naboo_security_move_02	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	Ni_naboo_security_move_02	1164	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	Ni_naboo_security_die_00	1152	TROOPER_IMPACT	B_Head
+
+SURFACE	Ni_naboo_security_die_01	888	TROOPER_IMPACT	B_Thigh_R
+
+SURFACE	Ni_naboo_security_fw_die_00	1113	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	Ni_naboo_security_fw_die_01	1274	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	Ni_naboo_security_fw_die_02	1320	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	Ni_naboo_security_fl_die_00	8653	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	Ni_naboo_security_fl_die_01	9437	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	Ni_naboo_security_land_00	805	TROOPER_IMPACT	B_Neck
+SURFACE	Ni_naboo_security_land_00	2632	TROOPER_IMPACT	B_Neck
+
+SOUND	Ni_naboo_security_crushed_00	698	Unit_Infantry_Squish
+
+SURFACE	Ni_neimodian_A_move_00	2180	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_neimodian_A_move_00	1198	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_neimodian_A_move_01	1141	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_neimodian_A_move_01	2169	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_neimodian_A_die_00	1319	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_neimodian_A_die_01	864	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_neimodian_A_fw_die_00	1437	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_neimodian_A_fw_die_01	1161	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_neimodian_A_fw_die_02	1333	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_neimodian_A_fl_die_00	8665	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_neimodian_A_fl_die_01	10303	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_neimodian_A_land_00	929	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_neimodian_B_move_00	2180	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_neimodian_B_move_00	1198	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_neimodian_B_move_01	1141	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_neimodian_B_move_01	2169	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_neimodian_B_die_00	1319	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_neimodian_B_die_01	864	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_neimodian_B_fw_die_00	1437	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_neimodian_B_fw_die_01	1161	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_neimodian_B_fw_die_02	1333	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_neimodian_B_fl_die_00	8665	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_neimodian_B_fl_die_01	10303	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_neimodian_B_land_00	929	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_rodian_a_move_00	2180	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_rodian_a_move_00	1198	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_rodian_a_move_01	1141	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_rodian_a_move_01	2169	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_rodian_a_die_00	1319	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_rodian_a_die_01	864	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_rodian_a_fw_die_00	1437	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_rodian_a_fw_die_01	1161	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_rodian_a_fw_die_02	1333	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_rodian_a_fl_die_00	8665	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_rodian_a_fl_die_01	10303	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_rodian_a_land_00	929	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_rodian_b_move_00	2180	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_rodian_b_move_00	1198	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_rodian_b_move_01	1141	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_rodian_b_move_01	2169	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_rodian_b_die_00	1319	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_rodian_b_die_01	864	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_rodian_b_fw_die_00	1437	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_rodian_b_fw_die_01	1161	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_rodian_b_fw_die_02	1333	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_rodian_b_fl_die_00	8665	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_rodian_b_fl_die_01	10303	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_rodian_b_land_00	929	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_trandoshan_militia_A_move_00	3	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	Ni_trandoshan_militia_A_move_00	1183	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	Ni_trandoshan_militia_A_move_01	1216	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_trandoshan_militia_A_move_01	8	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_trandoshan_militia_A_move_02	8	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	Ni_trandoshan_militia_A_move_02	1231	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	Ni_trandoshan_militia_A_die_00	1319	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_trandoshan_militia_A_die_01	925	GENERIC_IMPACT	B_Pelvis
+SURFACE	Ni_trandoshan_militia_A_die_01	4534	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_trandoshan_militia_A_walkmove_00	1082	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_trandoshan_militia_A_walkmove_00	2195	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_trandoshan_militia_A_walkmove_01	1086	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_trandoshan_militia_A_walkmove_01	2184	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_trandoshan_militia_A_walkmove_02	1051	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_trandoshan_militia_A_walkmove_02	2175	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_trandoshan_militia_B_move_00	3	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	Ni_trandoshan_militia_B_move_00	1183	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	Ni_trandoshan_militia_B_move_01	1216	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_trandoshan_militia_B_move_01	8	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_trandoshan_militia_B_move_02	8	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	Ni_trandoshan_militia_B_move_02	1231	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	Ni_trandoshan_militia_B_die_00	1319	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_trandoshan_militia_B_die_01	925	GENERIC_IMPACT	B_Pelvis
+SURFACE	Ni_trandoshan_militia_B_die_01	4534	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_trandoshan_militia_B_walkmove_00	1082	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_trandoshan_militia_B_walkmove_00	2195	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_trandoshan_militia_B_walkmove_01	1086	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_trandoshan_militia_B_walkmove_01	2184	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_trandoshan_militia_B_walkmove_02	1051	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_trandoshan_militia_B_walkmove_02	2175	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_trandoshan_militia_C_move_00	3	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	Ni_trandoshan_militia_C_move_00	1183	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	Ni_trandoshan_militia_C_move_01	1216	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_trandoshan_militia_C_move_01	8	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_trandoshan_militia_C_move_02	8	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	Ni_trandoshan_militia_C_move_02	1231	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	Ni_trandoshan_militia_C_die_00	1319	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_trandoshan_militia_C_die_01	925	GENERIC_IMPACT	B_Pelvis
+SURFACE	Ni_trandoshan_militia_C_die_01	4534	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	Ni_trandoshan_militia_C_walkmove_00	1082	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_trandoshan_militia_C_walkmove_00	2195	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_trandoshan_militia_C_walkmove_01	1086	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_trandoshan_militia_C_walkmove_01	2184	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	Ni_trandoshan_militia_C_walkmove_02	1051	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	Ni_trandoshan_militia_C_walkmove_02	2175	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	REI_327_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_327_move_00	1032	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_327_move_01	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_327_move_01	1170	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_327_move_02	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_327_move_02	1164	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_327_die_00	1152	TROOPER_IMPACT	B_Head
+
+SURFACE	REI_327_die_01	888	TROOPER_IMPACT	B_Thigh_R
+
+SURFACE	REI_327_fw_die_00	1113	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	REI_327_fw_die_01	1274	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	REI_327_fw_die_02	1320	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	REI_327_fl_die_00	8653	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	REI_327_fl_die_01	9437	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	REI_327_land_00	805	TROOPER_IMPACT	B_Neck
+SURFACE	REI_327_land_00	2632	TROOPER_IMPACT	B_Neck
+
+SOUND	REI_327_crushed_00	698	Unit_Infantry_Squish
+
+SURFACE	REI_327_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_327_move_00	1032	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_327_move_01	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_327_move_01	1170	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_327_move_02	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_327_move_02	1164	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_327_die_00	1152	TROOPER_IMPACT	B_Head
+
+SURFACE	REI_327_die_01	888	TROOPER_IMPACT	B_Thigh_R
+
+SURFACE	REI_327_fw_die_00	1113	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	REI_327_fw_die_01	1274	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	REI_327_fw_die_02	1320	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	REI_327_fl_die_00	8653	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	REI_327_fl_die_01	9437	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	REI_327_land_00	805	TROOPER_IMPACT	B_Neck
+SURFACE	REI_327_land_00	2632	TROOPER_IMPACT	B_Neck
+
+SOUND	REI_327_crushed_00	698	Unit_Infantry_Squish
+
+SURFACE	REI_arc_trooper_die_00	1309	GENERIC_IMPACT	B_Backpack
+
+SURFACE	REI_arc_trooper_die_01	829	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_arc_trooper_move_00	81	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_arc_trooper_move_00	1188	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_arc_trooper_fw_die_00	1119	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_arc_trooper_fw_die_01	1322	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_arc_trooper_fw_die_02	1464	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_arc_trooper_fl_die_00	6419	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_arc_trooper_fl_die_01	7463	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_arc_trooper_walkmove_00	988	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	REI_arc_trooper_walkmove_00	2157	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	REI_arc_trooper_crouchmove_00	2054	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_arc_trooper_crouchmove_00	1035	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_arc_trooper_crouchturnl_00	376	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	REI_arc_trooper_crouchturnl_00	790	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	REI_arc_trooper_crouchturnr_00	404	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_arc_trooper_crouchturnr_00	795	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_arc_trooper_crushed_00	701	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_arc_trooper_capt_die_00	1309	GENERIC_IMPACT	B_Backpack
+
+SURFACE	REI_arc_trooper_capt_die_01	829	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_arc_trooper_capt_move_00	81	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_arc_trooper_capt_move_00	1188	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_arc_trooper_capt_fw_die_00	1119	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_arc_trooper_capt_fw_die_01	1322	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_arc_trooper_capt_fw_die_02	1464	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_arc_trooper_capt_fl_die_00	6419	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_arc_trooper_capt_fl_die_01	7463	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_arc_trooper_capt_walkmove_00	988	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	REI_arc_trooper_capt_walkmove_00	2157	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	REI_arc_trooper_capt_crouchmove_00	2054	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_arc_trooper_capt_crouchmove_00	1035	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_arc_trooper_capt_crouchturnl_00	376	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	REI_arc_trooper_capt_crouchturnl_00	790	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	REI_arc_trooper_capt_crouchturnr_00	404	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_arc_trooper_capt_crouchturnr_00	795	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_arc_trooper_capt_crushed_00	701	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_arc_trooper_z6_die_00	1122	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_arc_trooper_z6_move_00	1142	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_arc_trooper_z6_move_00	2296	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_bacara_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_bacara_move_00	1032	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_bacara_move_01	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_bacara_move_01	1170	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_bacara_move_02	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_bacara_move_02	1164	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_bacara_die_00	1152	TROOPER_IMPACT	B_Head
+
+SURFACE	ReI_bacara_die_01	888	TROOPER_IMPACT	B_Thigh_R
+
+SURFACE	ReI_bacara_fw_die_00	1113	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_bacara_fw_die_01	1274	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_bacara_fw_die_02	1320	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_bacara_fl_die_00	8653	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_bacara_fl_die_01	9437	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_bacara_land_00	805	TROOPER_IMPACT	B_Neck
+SURFACE	ReI_bacara_land_00	2632	TROOPER_IMPACT	B_Neck
+
+SOUND	ReI_bacara_crushed_00	698	Unit_Infantry_Squish
+
+SURFACE	REI_bly_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_bly_move_00	1032	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_bly_move_01	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_bly_move_01	1170	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_bly_move_02	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_bly_move_02	1164	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_bly_die_00	1152	TROOPER_IMPACT	B_Head
+
+SURFACE	REI_bly_die_01	888	TROOPER_IMPACT	B_Thigh_R
+
+SURFACE	REI_bly_fw_die_00	1113	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	REI_bly_fw_die_01	1274	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	REI_bly_fw_die_02	1320	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	REI_bly_fl_die_00	8653	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	REI_bly_fl_die_01	9437	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	REI_bly_land_00	805	TROOPER_IMPACT	B_Neck
+SURFACE	REI_bly_land_00	2632	TROOPER_IMPACT	B_Neck
+
+SOUND	REI_bly_crushed_00	698	Unit_Infantry_Squish
+
+SURFACE	REI_boss_die_00	1309	GENERIC_IMPACT	B_Backpack
+
+SURFACE	REI_boss_die_01	829	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_boss_move_00	81	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_boss_move_00	1188	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_boss_fw_die_00	1119	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_boss_fw_die_01	1322	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_boss_fw_die_02	1464	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_boss_fl_die_00	6419	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_boss_fl_die_01	7463	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_boss_walkmove_00	988	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	REI_boss_walkmove_00	2157	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	REI_boss_crouchmove_00	2054	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_boss_crouchmove_00	1035	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_boss_crouchturnl_00	376	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	REI_boss_crouchturnl_00	790	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	REI_boss_crouchturnr_00	404	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_boss_crouchturnr_00	795	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_boss_crushed_00	701	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ReI_clone_sniper_die_00	1309	GENERIC_IMPACT	B_Backpack
+
+SURFACE	ReI_clone_sniper_die_01	829	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ReI_clone_sniper_move_00	81	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_clone_sniper_move_00	1188	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_clone_sniper_fw_die_00	1119	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ReI_clone_sniper_fw_die_01	1322	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ReI_clone_sniper_fw_die_02	1464	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ReI_clone_sniper_fl_die_00	6419	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ReI_clone_sniper_fl_die_01	7463	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ReI_clone_sniper_walkmove_00	988	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ReI_clone_sniper_walkmove_00	2157	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ReI_clone_sniper_crouchmove_00	2054	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_clone_sniper_crouchmove_00	1035	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_clone_sniper_crouchturnl_00	376	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ReI_clone_sniper_crouchturnl_00	790	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ReI_clone_sniper_crouchturnr_00	404	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_clone_sniper_crouchturnr_00	795	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_clone_sniper_crushed_00	701	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonecommando_die_00	1309	GENERIC_IMPACT	B_Backpack
+
+SURFACE	ReI_clonecommando_die_01	829	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonecommando_move_00	81	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_clonecommando_move_00	1188	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_clonecommando_fw_die_00	1119	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonecommando_fw_die_01	1322	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonecommando_fw_die_02	1464	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonecommando_fl_die_00	6419	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonecommando_fl_die_01	7463	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonecommando_walkmove_00	988	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ReI_clonecommando_walkmove_00	2157	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ReI_clonecommando_crouchmove_00	2054	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_clonecommando_crouchmove_00	1035	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_clonecommando_crouchturnl_00	376	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	ReI_clonecommando_crouchturnl_00	790	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	ReI_clonecommando_crouchturnr_00	404	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_clonecommando_crouchturnr_00	795	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_clonecommando_crushed_00	701	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_barc_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_clonetrooper_barc_move_00	1032	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_clonetrooper_barc_move_01	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_clonetrooper_barc_move_01	1170	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_clonetrooper_barc_move_02	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_clonetrooper_barc_move_02	1164	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_clonetrooper_barc_die_00	1152	TROOPER_IMPACT	B_Head
+
+SURFACE	ReI_clonetrooper_barc_die_01	888	TROOPER_IMPACT	B_Thigh_R
+
+SURFACE	ReI_clonetrooper_barc_fw_die_00	1113	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_barc_fw_die_01	1274	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_barc_fw_die_02	1320	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_barc_fl_die_00	8653	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_barc_fl_die_01	9437	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_barc_land_00	805	TROOPER_IMPACT	B_Neck
+SURFACE	ReI_clonetrooper_barc_land_00	2632	TROOPER_IMPACT	B_Neck
+
+SOUND	ReI_clonetrooper_barc_crushed_00	698	Unit_Infantry_Squish
+
+SURFACE	ReI_clonetrooper_engineer_ord_p1_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_clonetrooper_engineer_ord_p1_move_00	1032	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_clonetrooper_engineer_ord_p1_move_01	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_clonetrooper_engineer_ord_p1_move_01	1170	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_clonetrooper_engineer_ord_p1_move_02	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_clonetrooper_engineer_ord_p1_move_02	1164	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_clonetrooper_engineer_ord_p1_die_00	1152	TROOPER_IMPACT	B_Head
+
+SURFACE	ReI_clonetrooper_engineer_ord_p1_die_01	888	TROOPER_IMPACT	B_Thigh_R
+
+SURFACE	ReI_clonetrooper_engineer_ord_p1_fw_die_00	1113	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_engineer_ord_p1_fw_die_01	1274	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_engineer_ord_p1_fw_die_02	1320	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_engineer_ord_p1_fl_die_00	8653	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_engineer_ord_p1_fl_die_01	9437	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_engineer_ord_p1_land_00	805	TROOPER_IMPACT	B_Neck
+SURFACE	ReI_clonetrooper_engineer_ord_p1_land_00	2632	TROOPER_IMPACT	B_Neck
+
+SOUND	ReI_clonetrooper_engineer_ord_p1_crushed_00	698	Unit_Infantry_Squish
+
+SURFACE	ReI_clonetrooper_engineer_two_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_clonetrooper_engineer_two_move_00	1032	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_clonetrooper_engineer_two_move_01	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_clonetrooper_engineer_two_move_01	1170	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_clonetrooper_engineer_two_move_02	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_clonetrooper_engineer_two_move_02	1164	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_clonetrooper_engineer_two_die_00	1152	TROOPER_IMPACT	B_Head
+
+SURFACE	ReI_clonetrooper_engineer_two_die_01	888	TROOPER_IMPACT	B_Thigh_R
+
+SURFACE	ReI_clonetrooper_engineer_two_fw_die_00	1113	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_engineer_two_fw_die_01	1274	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_engineer_two_fw_die_02	1320	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_engineer_two_fl_die_00	8653	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_engineer_two_fl_die_01	9437	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_engineer_two_land_00	805	TROOPER_IMPACT	B_Neck
+SURFACE	ReI_clonetrooper_engineer_two_land_00	2632	TROOPER_IMPACT	B_Neck
+
+SOUND	ReI_clonetrooper_engineer_two_crushed_00	698	Unit_Infantry_Squish
+
+SURFACE	ReI_clonetrooper_medic_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_clonetrooper_medic_move_00	1032	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_clonetrooper_medic_move_01	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_clonetrooper_medic_move_01	1170	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_clonetrooper_medic_move_02	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_clonetrooper_medic_move_02	1164	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_clonetrooper_medic_die_00	1152	TROOPER_IMPACT	B_Head
+
+SURFACE	ReI_clonetrooper_medic_die_01	888	TROOPER_IMPACT	B_Thigh_R
+
+SURFACE	ReI_clonetrooper_medic_fw_die_00	1113	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_medic_fw_die_01	1274	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_medic_fw_die_02	1320	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_medic_fl_die_00	8653	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_medic_fl_die_01	9437	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_medic_land_00	805	TROOPER_IMPACT	B_Neck
+SURFACE	ReI_clonetrooper_medic_land_00	2632	TROOPER_IMPACT	B_Neck
+
+SOUND	ReI_clonetrooper_medic_crushed_00	698	Unit_Infantry_Squish
+
+SURFACE	REI_clonetrooper_phase2_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_clonetrooper_phase2_move_00	1032	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_clonetrooper_phase2_move_01	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_clonetrooper_phase2_move_01	1170	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_clonetrooper_phase2_move_02	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_clonetrooper_phase2_move_02	1164	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_clonetrooper_phase2_die_00	1152	TROOPER_IMPACT	B_Head
+
+SURFACE	REI_clonetrooper_phase2_die_01	888	TROOPER_IMPACT	B_Thigh_R
+
+SURFACE	REI_clonetrooper_phase2_fw_die_00	1113	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	REI_clonetrooper_phase2_fw_die_01	1274	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	REI_clonetrooper_phase2_fw_die_02	1320	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	REI_clonetrooper_phase2_fl_die_00	8653	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	REI_clonetrooper_phase2_fl_die_01	9437	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	REI_clonetrooper_phase2_land_00	805	TROOPER_IMPACT	B_Neck
+SURFACE	REI_clonetrooper_phase2_land_00	2632	TROOPER_IMPACT	B_Neck
+
+SOUND	REI_clonetrooper_phase2_crushed_00	698	Unit_Infantry_Squish
+
+SURFACE	ReI_clonetrooper_senate_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_clonetrooper_senate_move_00	1032	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_clonetrooper_senate_move_01	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_clonetrooper_senate_move_01	1170	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_clonetrooper_senate_move_02	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_clonetrooper_senate_move_02	1164	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_clonetrooper_senate_die_00	1152	TROOPER_IMPACT	B_Head
+
+SURFACE	ReI_clonetrooper_senate_die_01	888	TROOPER_IMPACT	B_Thigh_R
+
+SURFACE	ReI_clonetrooper_senate_fw_die_00	1113	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_senate_fw_die_01	1274	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_senate_fw_die_02	1320	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_senate_fl_die_00	8653	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_senate_fl_die_01	9437	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_clonetrooper_senate_land_00	805	TROOPER_IMPACT	B_Neck
+SURFACE	ReI_clonetrooper_senate_land_00	2632	TROOPER_IMPACT	B_Neck
+
+SOUND	ReI_clonetrooper_senate_crushed_00	698	Unit_Infantry_Squish
+
+SURFACE	REI_cody_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_cody_move_00	1032	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_cody_move_01	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_cody_move_01	1170	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_cody_move_02	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_cody_move_02	1164	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_cody_die_00	1152	TROOPER_IMPACT	B_Head
+
+SURFACE	REI_cody_die_01	888	TROOPER_IMPACT	B_Thigh_R
+
+SURFACE	REI_cody_fw_die_00	1113	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	REI_cody_fw_die_01	1274	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	REI_cody_fw_die_02	1320	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	REI_cody_fl_die_00	8653	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	REI_cody_fl_die_01	9437	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	REI_cody_land_00	805	TROOPER_IMPACT	B_Neck
+SURFACE	REI_cody_land_00	2632	TROOPER_IMPACT	B_Neck
+
+SOUND	REI_cody_crushed_00	698	Unit_Infantry_Squish
+
+SURFACE	ReI_deviss_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_deviss_move_00	1032	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_deviss_move_01	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_deviss_move_01	1170	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_deviss_move_02	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_deviss_move_02	1164	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_deviss_die_00	1152	TROOPER_IMPACT	B_Head
+
+SURFACE	ReI_deviss_die_01	888	TROOPER_IMPACT	B_Thigh_R
+
+SURFACE	ReI_deviss_fw_die_00	1113	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_deviss_fw_die_01	1274	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_deviss_fw_die_02	1320	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_deviss_fl_die_00	8653	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_deviss_fl_die_01	9437	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_deviss_land_00	805	TROOPER_IMPACT	B_Neck
+SURFACE	ReI_deviss_land_00	2632	TROOPER_IMPACT	B_Neck
+
+SOUND	ReI_deviss_crushed_00	698	Unit_Infantry_Squish
+
+SURFACE	REI_fixer_die_00	1309	GENERIC_IMPACT	B_Backpack
+
+SURFACE	REI_fixer_die_01	829	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_fixer_move_00	81	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_fixer_move_00	1188	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_fixer_fw_die_00	1119	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_fixer_fw_die_01	1322	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_fixer_fw_die_02	1464	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_fixer_fl_die_00	6419	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_fixer_fl_die_01	7463	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_fixer_walkmove_00	988	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	REI_fixer_walkmove_00	2157	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	REI_fixer_crouchmove_00	2054	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_fixer_crouchmove_00	1035	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_fixer_crouchturnl_00	376	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	REI_fixer_crouchturnl_00	790	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	REI_fixer_crouchturnr_00	404	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_fixer_crouchturnr_00	795	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_fixer_crushed_00	701	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	ReI_gree_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_gree_move_00	1032	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_gree_move_01	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_gree_move_01	1170	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_gree_move_02	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_gree_move_02	1164	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_gree_die_00	1152	TROOPER_IMPACT	B_Head
+
+SURFACE	ReI_gree_die_01	888	TROOPER_IMPACT	B_Thigh_R
+
+SURFACE	ReI_gree_fw_die_00	1113	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_gree_fw_die_01	1274	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_gree_fw_die_02	1320	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_gree_fl_die_00	8653	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_gree_fl_die_01	9437	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_gree_land_00	805	TROOPER_IMPACT	B_Neck
+SURFACE	ReI_gree_land_00	2632	TROOPER_IMPACT	B_Neck
+
+SOUND	ReI_gree_crushed_00	698	Unit_Infantry_Squish
+
+SURFACE	ReI_rex_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_rex_move_00	1032	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_rex_move_01	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_rex_move_01	1170	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_rex_move_02	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	ReI_rex_move_02	1164	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	ReI_rex_die_00	1152	TROOPER_IMPACT	B_Head
+
+SURFACE	ReI_rex_die_01	888	TROOPER_IMPACT	B_Thigh_R
+
+SURFACE	ReI_rex_fw_die_00	1113	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_rex_fw_die_01	1274	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_rex_fw_die_02	1320	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_rex_fl_die_00	8653	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_rex_fl_die_01	9437	TROOPER_IMPACT	B_Pelvis
+
+SURFACE	ReI_rex_land_00	805	TROOPER_IMPACT	B_Neck
+SURFACE	ReI_rex_land_00	2632	TROOPER_IMPACT	B_Neck
+
+SOUND	ReI_rex_crushed_00	698	Unit_Infantry_Squish
+
+SURFACE	REI_scorch_die_00	1309	GENERIC_IMPACT	B_Backpack
+
+SURFACE	REI_scorch_die_01	829	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_scorch_move_00	81	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_scorch_move_00	1188	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_scorch_fw_die_00	1119	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_scorch_fw_die_01	1322	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_scorch_fw_die_02	1464	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_scorch_fl_die_00	6419	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_scorch_fl_die_01	7463	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_scorch_walkmove_00	988	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	REI_scorch_walkmove_00	2157	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	REI_scorch_crouchmove_00	2054	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_scorch_crouchmove_00	1035	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_scorch_crouchturnl_00	376	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	REI_scorch_crouchturnl_00	790	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	REI_scorch_crouchturnr_00	404	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_scorch_crouchturnr_00	795	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_sev_crushed_00	701	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_sev_die_00	1309	GENERIC_IMPACT	B_Backpack
+
+SURFACE	REI_sev_die_01	829	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_sev_move_00	81	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_sev_move_00	1188	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_sev_fw_die_00	1119	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_sev_fw_die_01	1322	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_sev_fw_die_02	1464	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_sev_fl_die_00	6419	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_sev_fl_die_01	7463	GENERIC_IMPACT	B_Pelvis
+
+SURFACE	REI_sev_walkmove_00	988	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	REI_sev_walkmove_00	2157	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	REI_sev_crouchmove_00	2054	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_sev_crouchmove_00	1035	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_sev_crouchturnl_00	376	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	REI_sev_crouchturnl_00	790	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	REI_sev_crouchturnr_00	404	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	REI_sev_crouchturnr_00	795	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	REI_sev_crushed_00	701	GENERIC_IMPACT	B_Pelvis
+
+SOUND	ReV_a6_juggernaut_deploy_00	44	Unit_Juggernaut_Door_Start
+SOUND	ReV_a6_juggernaut_deploy_00	305	Unit_Juggernaut_Door_Open
+SOUND	ReV_a6_juggernaut_deploy_00	8486	Unit_Juggernaut_Door_Stop
+
+SOUND	ReV_a6_juggernaut_undeploy_00	44	Unit_Juggernaut_Door_Open
+SOUND	ReV_a6_juggernaut_undeploy_00	6092	Unit_Juggernaut_Door_Start
+SOUND	ReV_a6_juggernaut_undeploy_00	8837	Unit_Juggernaut_Door_Close
+
+SURFACE	SeI_cad_bane_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	SeI_cad_bane_move_00	1167	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	SeI_cad_bane_land_00	950	GENERIC_IMPACT	B_Neck
+SURFACE	SeI_cad_bane_land_00	2665	GENERIC_IMPACT	B_Neck
+
+SURFACE	SeI_cad_bane_walkmove_00	1073	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	SeI_cad_bane_walkmove_00	2175	INFANTRY_FOOT_PLANT	B_Foot_R 
+
+SOUND	W_barloz_freighter_idle_00	350	Unit_Freighter_Takeoff
+
+SURFACE	SeI_aurra_sing_move_00	0	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	SeI_aurra_sing_move_00	1166	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	SeI_aurra_sing_die_00	1328	GENERIC_IMPACT	B_Head
+
+SURFACE	SeI_aurra_sing_land_00	916	GENERIC_IMPACT	B_Neck
+SURFACE	SeI_aurra_sing_land_00	2385	GENERIC_IMPACT	B_Neck
+
+SURFACE	SeI_aurra_sing_bombtoss_00	1001	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	SeI_battledroid_MOVE_00	1039.5	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	SeI_battledroid_MOVE_00	1680	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	SeI_battledroid_MOVE_01	1062	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	SeI_battledroid_MOVE_01	1780	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SOUND	SeI_battledroid_CRUSHED_00	160	Unit_Infantry_Squish
+
+SURFACE	SeI_battledroid_DIE_00	806.5	TROOPER_IMPACT	B_Thigh_L
+SURFACE	SeI_battledroid_DIE_00	1120	TROOPER_IMPACT	B_Foot_L
+
+SURFACE	SeI_battledroid_DIE_01	400.5	TROOPER_IMPACT	B_Calf_L
+SURFACE	SeI_battledroid_DIE_01	1440	TROOPER_IMPACT	B_Bicep_L
+
+SURFACE	SeI_battledroid_FW_DIE_00	1603	TROOPER_IMPACT	B_Thigh_L
+
+SURFACE	SeI_battledroid_fw_die_01	1915	TROOPER_IMPACT	B_Thigh_L
+
+SURFACE	SeI_battledroid_fw_die_02	1557	TROOPER_IMPACT	B_Thigh_L
+
+SURFACE	SeI_battledroid_fl_die_00	2498	TROOPER_IMPACT	B_Bicep_R
+
+SURFACE	SeI_battledroid_walkmove_00	761.5	INFANTRY_FOOT_PLANT	B_Foot_L
+SURFACE	SeI_battledroid_walkmove_00	1518.5	INFANTRY_FOOT_PLANT	B_Foot_R
+
+SURFACE	SeI_superbattledroid_MOVE_00	481.5	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	SeI_superbattledroid_MOVE_00	1150.5	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SURFACE	SeI_superbattledroid_WALKMOVE_00	400	INFANTRY_FOOT_PLANT	B_Foot_R
+SURFACE	SeI_superbattledroid_WALKMOVE_00	962	INFANTRY_FOOT_PLANT	B_Foot_L
+
+SOUND	SeV_bulwark_d_die_00	19497.5	Unit_Space_Station_Death_SFX
+SOUND	SeV_bulwark_d_die_00	38007	Unit_Space_Station_Death_SFX
+SOUND	SeV_bulwark_d_die_00	75036.5	Unit_Star_Destroyer_Death_SFX
+SOUND	SeV_bulwark_d_die_00	88044	Unit_Star_Destroyer_Death_SFX
+
+SOUND	SeI_grievous_attack_00	796.5	Unit_Light_Saber_Swing_Obi
+SOUND	SeI_grievous_attack_00	976.5	Unit_Yoda_Whoosh
+
+SOUND	SeI_grievous_attack_01	1132.5	Unit_Light_Saber_Swing_Obi
+SOUND	SeI_grievous_attack_01	1132.5	Unit_Light_Saber_Swing_Obi
+SOUND	SeI_grievous_attack_01	1310	Unit_Yoda_Whoosh
+SOUND	SeI_grievous_attack_01	1310	Unit_Yoda_Whoosh
+
+SOUND	SeI_grievous_attack_02	1837	Unit_Light_Saber_Swing_Obi
+SOUND	SeI_grievous_attack_02	2015	Unit_Yoda_Whoosh
+
+SOUND	SeI_grievous_attack_03	1157.5	Unit_Light_Saber_Swing_Obi
+SOUND	SeI_grievous_attack_03	1157.5	Unit_Light_Saber_Swing_Obi
+
+SOUND	SeI_grievous_attack_04	1617	Unit_Light_Saber_Swing_Obi
+SOUND	SeI_grievous_attack_04	1617	Unit_Light_Saber_Swing_Obi
+SOUND	SeI_grievous_attack_04	2021	Unit_Yoda_Whoosh
+SOUND	SeI_grievous_attack_04	2021	Unit_Yoda_Whoosh
+
+SOUND	SeI_grievous_attackidle_00	80	Unit_Obiwan_Lightsaber_Idle_Loop
+
+SURFACE	SeI_grievous_move_00	1201.5	INFANTRY_FOOT_PLANT	Mesh_Foot_R01
+SURFACE	SeI_grievous_move_00	2320	INFANTRY_FOOT_PLANT	Mesh_Foot_R
+
+SURFACE	SeI_grievous_move_01	1201.5	INFANTRY_FOOT_PLANT	Mesh_Foot_R01
+SURFACE	SeI_grievous_move_01	2320	INFANTRY_FOOT_PLANT	Mesh_Foot_R
+
+SURFACE	SeI_grievous_walkmove_00	1201.5	INFANTRY_FOOT_PLANT	Mesh_Foot_R01
+SURFACE	SeI_grievous_walkmove_00	2320	INFANTRY_FOOT_PLANT	Mesh_Foot_R
+
+SOUND	SeI_grievous_move_00	80	Unit_Obiwan_Lightsaber_Moving_Loop
+
+SOUND	SeI_grievous_move_01	80	Unit_Obiwan_Lightsaber_Moving_Loop
+
+SOUND	SeI_grievous_walkmove_00	80	Unit_Obiwan_Lightsaber_Moving_Loop
+
+SOUND	SeI_grievous_spinmove_00	1140	Unit_Light_Saber_Swing_Obi
+SOUND	SeI_grievous_spinmove_00	1140	Unit_Light_Saber_Swing_Obi
+SOUND	SeI_grievous_spinmove_00	1541	Unit_Yoda_Whoosh
+SOUND	SeI_grievous_spinmove_00	1541	Unit_Yoda_Whoosh
+
+SOUND	SeI_grievous_spinmove_01	1140	Unit_Light_Saber_Swing_Obi
+SOUND	SeI_grievous_spinmove_01	1140	Unit_Light_Saber_Swing_Obi
+SOUND	SeI_grievous_spinmove_01	1541	Unit_Yoda_Whoosh
+SOUND	SeI_grievous_spinmove_01	1541	Unit_Yoda_Whoosh
+
+SOUND	ReV_nu_shuttle_land_land_00	1520.5	Unit_Shuttle_Landing_2
+SOUND	ReV_nu_shuttle_land_takeoff_00	9	Unit_Shuttle_Takeoff_2
+
+SOUND	ReV_acclamator_landing_land_00	71	Unit_Gallofree_Landing
+
+SOUND	ReV_acclamator_landing_takeoff_00	42.5	Unit_Gallofree_Takeoff
+
+SOUND	ReV_laat-c_land_land_00	27	Unit_LAAT_Deploy_Start
+SOUND	ReV_laat-c_land_takeoff_00	18	Unit_LAAT_Undeploy_Start

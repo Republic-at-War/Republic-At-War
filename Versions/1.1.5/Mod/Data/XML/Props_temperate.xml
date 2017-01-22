@@ -1,0 +1,2376 @@
+<?xml version="1.0" ?>
+<Props_Temperate>
+
+	<Props_Temperate Name="Bird_Spawn_Dark">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TempRockClstr00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<LandBehavior>SPAWN_INDIGENOUS_UNITS</LandBehavior>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> Medium Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 18.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 25.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 3.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> -5.0 </Custom_Hard_YExtent_Offset>
+		
+		<Spawned_Indigenous_Units_Type>Bird_Black_Color, Bird_Medium_Color</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>5</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>No</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>80.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>0</Max_Distance_From_Spawner>
+
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Is_Indigenous_Unit_Corruptible>False</Is_Indigenous_Unit_Corruptible>
+	</Props_Temperate>
+ 
+	<Props_Temperate Name="Bird_Spawn_Light">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TempRockClstr00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<LandBehavior> SPAWN_INDIGENOUS_UNITS </LandBehavior>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> Medium Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 18.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 25.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 3.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> -5.0 </Custom_Hard_YExtent_Offset>
+		
+		<Spawned_Indigenous_Units_Type>Bird_Light_Color, Bird_Medium_Color</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>5</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>No</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>80.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>0</Max_Distance_From_Spawner>
+
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Is_Indigenous_Unit_Corruptible>False</Is_Indigenous_Unit_Corruptible>
+	</Props_Temperate>
+
+
+	<Props_Temperate Name="Prop_TempRock_Cluster_00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TempRockClstr00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> Medium Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 18.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 25.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 3.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> -5.0 </Custom_Hard_YExtent_Offset>
+
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>50.0, 50.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Rock_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_TempRock_Cluster_00_Reflection">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TempRockClstr00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> Medium Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 18.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 25.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 3.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> -5.0 </Custom_Hard_YExtent_Offset>
+
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>50.0, 50.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Rock_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_TempRock_Cluster_01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TempRockClstr01.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> Medium Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 15.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 14.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 2.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> -2.0 </Custom_Hard_YExtent_Offset>
+
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>50.0, 50.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Rock_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_TempRock_Cluster_01_Reflection">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TempRockClstr01.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> Medium Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 15.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 14.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 2.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> -2.0 </Custom_Hard_YExtent_Offset>
+
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>50.0, 50.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Rock_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_TempRock_Cluster_02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TempRockClstr02.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>30.0, 30.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Rock_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_TempRock_Cluster_02_Reflection">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TempRockClstr02.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>30.0, 30.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Rock_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_TempRock_Cluster_03">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TempRockClstr03.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> High Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 28.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 23.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> -6.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> 7.0 </Custom_Hard_YExtent_Offset>
+
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_TempRock_Cluster_03_Reflection">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TempRockClstr03.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> High Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 15.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 14.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 2.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> -2.0 </Custom_Hard_YExtent_Offset>
+
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_Bush00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Bush_Temp00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>99</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_Bush01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Bush_Temp02.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>99</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>30.0, 30.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_Weeds">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_SwampGrass01.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>99</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_BushCypress">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Bush_Cypress.ALO</Land_Model_Name>
+		<Scale_Factor>1.65</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>15.0, 15.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Temperate_SithStatue">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_SithStatue.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>15.0, 15.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Temperate_SithTomb">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_SithTomb.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>15.0, 15.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_Cattails">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Temp_Cattail.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_Maple00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Dec_00_HI.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name></Blob_Shadow_Material_Name>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Temperate_Maple00_Obstacle">
+		<Variant_Of_Existing_Type> Prop_Temperate_Maple00 </Variant_Of_Existing_Type>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> High Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 5.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 5.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 0.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> 0.0 </Custom_Hard_YExtent_Offset>
+		
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Temperate_Maple00_Kashyykk">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Dec_00_HI.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name></Blob_Shadow_Material_Name>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_Maple00_Kashyykk_Lrg">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Dec_00_HI.ALO</Land_Model_Name>
+		<Scale_Factor>4.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name></Blob_Shadow_Material_Name>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Temperate_Maple00_Kashyykk_Obstacle">
+		<Variant_Of_Existing_Type> Prop_Temperate_Maple00_Kashyykk </Variant_Of_Existing_Type>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> High Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 5.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 5.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 0.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> 0.0 </Custom_Hard_YExtent_Offset>
+		
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_Maple00_Kashyykk_Obstacle_Lrg">
+		<Variant_Of_Existing_Type> Prop_Temperate_Maple00_Kashyykk_Lrg </Variant_Of_Existing_Type>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> High Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 5.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 5.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 0.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> 0.0 </Custom_Hard_YExtent_Offset>
+		
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_Maple00_Cluster">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Dec_00_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>150.0, 150.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name></Blob_Shadow_Material_Name>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Temperate_Maple00_Cluster_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Dec_NS00_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>150.0, 150.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name></Blob_Shadow_Material_Name>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_Maple01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Dec_01_HI.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>75.0, 75.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name></Blob_Shadow_Material_Name>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Temperate_Maple01_Obstacle">
+		<Variant_Of_Existing_Type> Prop_Temperate_Maple01 </Variant_Of_Existing_Type>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> High Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 5.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 5.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 0.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> 0.0 </Custom_Hard_YExtent_Offset>
+		
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Temperate_Canopy_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Dec_Canopy_A.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>75.0, 75.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name></Blob_Shadow_Material_Name>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_Maple01_Cluster">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Dec_01_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>150.0, 150.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name></Blob_Shadow_Material_Name>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Temperate_Maple01_Cluster_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Dec_NS01_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>150.0, 150.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name></Blob_Shadow_Material_Name>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_Maple02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Dec_00Yellow_HI.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>90.0, 90.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_Maple02_Cluster">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Dec_00Yellow_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>90.0, 90.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Temperate_Maple02_Cluster_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Dec_NSYellow_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>90.0, 90.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Temperate_Maple02_Obstacle">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Dec_00Yellow_HI.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> High Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 3.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 3.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 0.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> 0.0 </Custom_Hard_YExtent_Offset>
+
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>90.0, 90.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+
+	
+	<Props_Temperate Name="Prop_Temperate_Maple03">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Dec_01Red_HI.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>90.0, 90.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_Maple03_Cluster">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Dec_01Red_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>90.0, 90.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Temperate_Maple03_Cluster_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Dec_NSRed_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>90.0, 90.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Temperate_Maple03_Obstacle">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Dec_01Red_HI.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> High Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 3.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 3.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 0.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> 0.0 </Custom_Hard_YExtent_Offset>
+
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>90.0, 90.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_Palm_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TreePalm_A.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_Palm_A_Cluster">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TreePalm_A_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Temperate_Palm_A_Cluster_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TreePalm_NS_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Temperate_Palm_A_Obstacle">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TreePalm_A.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> High Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 3.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 3.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 0.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> 0.0 </Custom_Hard_YExtent_Offset>
+
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_AlienTree_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Alien_00_HI.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_AlienTree_A_Cluster">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Alien_00_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Temperate_AlienTree_A_Cluster_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Alien_NS_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Temperate_AlienTree_A_Obstacle">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Alien_00_HI.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> High Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 5.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 5.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 0.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> 0.0 </Custom_Hard_YExtent_Offset>
+
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+
+	
+	<Props_Temperate Name="Prop_Temperate_AlienTree_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Alien_00_HI.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+		<Props_Temperate Name="Prop_Temperate_Ginko_Small">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ginko_tree.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+	  <Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_Ginko_Medium">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ginko_tree.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+	  <Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_Ginko_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ginko_tree.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+	  <Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_Bilba_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_bilbatree.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+	  <Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_Bilba_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_bilbatree_b.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+	<Is_Decoration>No</Is_Decoration>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+	  <Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_Dogwood_Small">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_dogwood_tree.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+	  <Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_Dogwood_Medium">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_dogwood_tree.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+	<Is_Decoration>No</Is_Decoration>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+	  <Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_Dogwood_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_dogwood_tree.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+
+	<Is_Decoration>No</Is_Decoration>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+	  <Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_Birch_Small">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_birchtree.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+	<Is_Decoration>No</Is_Decoration>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+	  <Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_Birch_Medium">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_birchtree.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+	  <Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_Birch_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_birchtree.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+	  <Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+		<Props_Temperate Name="Prop_Temperate_Holly_Small">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_holly_tree.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+	<Is_Decoration>No</Is_Decoration>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+	  <Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+		<Props_Temperate Name="Prop_Temperate_Holly_Medium">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_holly_tree.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+	  <Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+		<Props_Temperate Name="Prop_Temperate_Holly_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_holly_tree.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+	  <Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temp_Bush00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Tactical_Model_Name>W_Bush_Temp00.ALO</Tactical_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>99</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>15.0, 15.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Mnt_Temp00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TempMntRnge00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_GroundCover_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_GrndCvr_A.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_GroundCover_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_GrndCvr_B.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_GroundCover_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_GrndCvr_C.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_GroundCover_D">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_GrndCvr_D.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_GroundCover_Wheat">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_GrndCvr_C.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_GroundCover_Felucia">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_GrndCvr_Felucia.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Dantooine_Building_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_dantooine_house_A.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Dantooine_Building_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_dantooine_house_B.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Dantooine_Building_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_dantooine_house_C.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Ruins_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_ruins00.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> High Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 15.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 16.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> -4.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> -4.0 </Custom_Hard_YExtent_Offset>
+
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Ruins_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_ruins01.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> Low Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 25.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 19.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> -10.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> -6.0 </Custom_Hard_YExtent_Offset>
+
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Ruins_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_ruins02.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> Low Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 31.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 24.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> -8.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> -4.0 </Custom_Hard_YExtent_Offset>
+
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Ruins_D">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_ruins03.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> Low Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 41.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 27.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> -16.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> 5.0 </Custom_Hard_YExtent_Offset>
+
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Naboo_Theed_Building_Hangar_Complex">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_theed_hangar_complex.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Naboo_Theed_Building_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TheedBuild_A.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Building_A_Lrg">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TheedBuild_A.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Naboo_Theed_Building_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TheedBuild_B.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Building_B_Lrg">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TheedBuild_B.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Naboo_Theed_Building_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TheedBuild_C.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Naboo_Theed_Building_C_Lrg">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TheedBuild_C.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Naboo_Theed_Building_D">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_theedtower.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Building_E">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_theedbuilding_large.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Building_F">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_theed_building_tall.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Building_Civ_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_naboo_civ_building_A.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Building_Civ_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_naboo_civ_building_B.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Building_Civ_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_naboo_civ_building_C.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>7.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Building_Civ_D">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_naboo_civ_building_D.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>7.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Building_Civ_E">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_naboo_civ_building_E.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>7.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Building_Civ_F">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_naboo_civ_building_F.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>7.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Building_Civ_G">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_naboo_civ_building_G.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>4.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Building_Civ_H">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_naboo_civ_building_H.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>7.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Building_Civ_I">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_naboo_civ_building_I.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>7.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Building_Civ_J">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_naboo_civ_building_J.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>7.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Building_K">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_theedtower.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Oblesik">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_naboo_civ_building_oblesik.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>15.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Gazebo">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_naboo_civ_building_gazebo.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Spire">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_naboo_civ_building_spire.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>5.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Fountain">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_naboo_civ_building_fountain_C.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Fountain_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_naboo_civ_building_fountain_A.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Fountain_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_naboo_civ_building_fountain_D.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Fountain_D">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_naboo_civ_building_fountain_B.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Naboo_Theed_Palace">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TheedPalace.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Palace_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TheedPalace.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Steet_Light">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_theedStreetlight.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Arch">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_theed_arch.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Naboo_Theed_Wall_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TheedWall_A.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Naboo_Theed_Wall_A_Med">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TheedWall_A.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Naboo_Theed_Wall_A_Lrg">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TheedWall_A.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Wall_A_Huge">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TheedWall_A.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>4.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Naboo_Theed_Wall_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TheedWall_B.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Naboo_Theed_Wall_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TheedWall_C.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_N1_Fighter_Landed">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_naboo_fighter_ground.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Waterfall_TopSpray">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Waterfallspray_top.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Temperate_Planet_Lua">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_planet_alderaan_high.alo</Land_Model_Name>
+		<Is_Decoration> Yes </Is_Decoration> <!-- Anything with a behavior other than IDLE can not be tagged as a decoration -->
+		<Is_Discardable> No </Is_Discardable>
+		<Loop_Idle_Anim_00> Yes </Loop_Idle_Anim_00>
+		<Idle_Anim_00_Rate_Mod>1.0</Idle_Anim_00_Rate_Mod>
+		<Scale_Factor>500.0</Scale_Factor>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<In_Background> No </In_Background>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Temperate_Felucia_LandBridge">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Felucia_Rock_Arch00.ALO</Land_Model_Name>
+		<LandBehavior>SPACE_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Obstacle_Radius> 60 </Space_Obstacle_Radius>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+	</Props_Temperate>	
+	
+	<Props_Temperate Name="Prop_Theed_Bridge">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TheedWall_B.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Props_Temperate>	
+	
+	<!--jdg using this bad boy in UM06-->
+	<Props_Temperate Name="Prop_Power_Generator">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_paddlewheel.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Loop_Idle_Anim_00> Yes </Loop_Idle_Anim_00>
+		<Idle_Anim_00_Rate_Mod>1.0</Idle_Anim_00_Rate_Mod>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		
+		<Is_Decoration>No</Is_Decoration>
+	</Props_Temperate>
+
+<!--NEW-->
+<Props_Temperate Name="Prop_Temperate_SithStatue_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_SithStatue.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>15.0, 15.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Temperate_SithTomb_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_SithTomb.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>15.0, 15.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Naboo_Theed_Wall_B_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TheedWall_B.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Wall_B_Huge">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TheedWall_B.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>5.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Naboo_Theed_Wall_B_Huge">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TheedWall_B.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>7.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Boz_Pity_Mausoleum">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>Mausoleum.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.10</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+	
+		<Props_Temperate Name="Prop_Boz_Pity_Ruins_One">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>bozpityruins.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+  
+  <Props_Temperate Name="Prop_Boz_Pity_Ruins_Two">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>bozpityruins.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+   
+   <Props_Temperate Name="Prop_Boz_Pity_Ruins_Three">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>bozpityruins.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Boz_Pity_Temple">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>w_bozpity_temple.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Boz_Pity_Statue_Small">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>w_bozpity_statue.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Boz_Pity_Statue_medium">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>w_bozpity_statue.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Boz_Pity_Statue_large">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>w_bozpity_statue.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>4.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Boz_Pity_Mausoleum_Ruin">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Boz_Pity_Mausoleum.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>10.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Windmill">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>LoW_R1_Prop_WindMill.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Behavior>IDLE</Behavior>
+			<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>4.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	  <SFXEvent_Engine_Idle_Loop> Ambient_Waterfall_Loop </SFXEvent_Engine_Idle_Loop>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Grain_Silo">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>LoW_R1_Prop_Silo.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>5.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Equipment_Shed">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>LoW_R1_Prop_Shed.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>4.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Felucia_Rockform_02a">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_rock_arch00.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+		</Props_Temperate>
+
+<Props_Temperate Name="Prop_Felucia_Rockform_02b">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_rock_arch00.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Felucia_Rockform_02c">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_rock_arch00.alo</Land_Model_Name>
+		<Scale_Factor>2.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Felucia_Rockform_02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_rock_arch00.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Temperate>
+
+ 	<Props_Temperate Name="Prop_Felucia_Ground_Cover_Tall">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_GrndCvr_Felucia_tall.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Felucia_Tulip00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_01.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Felucia_Tulip01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_01.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Felucia_Tulip02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_01.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Felucia_Tulip03">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_01.alo</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Felucia_MushCap00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_03.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+
+	<Props_Temperate Name="Prop_Felucia_MushCap01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_03.alo</Land_Model_Name>
+		<Scale_Factor>2.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Felucia_MushCap02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_03.alo</Land_Model_Name>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+
+ <Props_Temperate Name="Prop_Felucia_MushCap03">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_03.alo</Land_Model_Name>
+		<Scale_Factor>4.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Felucia_OrbTree00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_02.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Felucia_OrbTree01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_02.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+</Props_Temperate>
+
+<Props_Temperate Name="Prop_Felucia_OrbTree02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_02.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Felucia_OrbTree03">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_02.alo</Land_Model_Name>
+		<Scale_Factor>5.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Felucia_Shroom00a">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_04.alo</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Felucia_Shroom00b">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_04.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Felucia_Shroom01a">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_05.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Felucia_Shroom01b">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_05.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Felucia_Shroom01b">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_05.alo</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Felucia_Shroom02a">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_06.alo</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Felucia_Shroom02b">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_06.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Felucia_Shroom02c">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_06.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Felucia_TreePlant00a">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_felucia_plant_00_short.alo</Land_Model_Name>
+		<Scale_Factor>2.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Felucia_TreePlant01a">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_felucia_plant_00_medium.alo</Land_Model_Name>
+		<Scale_Factor>2.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Felucia_TreePlant02a">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_felucia_plant_00_tall.alo</Land_Model_Name>
+		<Scale_Factor>2.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+	
+		
+	<Props_Temperate Name="Prop_Felucia_TreePlant00b">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_felucia_plant_00_short.alo</Land_Model_Name>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Felucia_TreePlant00c">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_felucia_plant_00_short.alo</Land_Model_Name>
+		<Scale_Factor>5.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+	
+		<Props_Temperate Name="Prop_Felucia_TreePlant01b">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_felucia_plant_00_medium.alo</Land_Model_Name>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+	
+		<Props_Temperate Name="Prop_Felucia_TreePlant01c">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_felucia_plant_00_medium.alo</Land_Model_Name>
+		<Scale_Factor>5.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+	
+	<Props_Temperate Name="Prop_Felucia_TreePlant02b">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_felucia_plant_00_tall.alo</Land_Model_Name>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Felucia_TreePlant02c">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_felucia_plant_00_tall.alo</Land_Model_Name>
+		<Scale_Factor>5.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Campfire">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_campfire.alo</Land_Model_Name>
+		<Scale_Factor>1.3</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Temperate>
+
+
+<Props_Temperate Name="Prop_Dantooine_Fence">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_dantooine_fence.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>5.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Shuttle_Service">
+		<Land_Model_Name>Av_shuttle.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Behavior>IDLE</Behavior>
+			<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Sith_Statue">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sith_statue.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Sith_Statue_huge">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sith_statue.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Sith_Statue_Holocron">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sith_statue_holcron.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Sith_Statue_Holocro_Lrg">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sith_statue_holcron.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Sith_Statue_Holocro_Huge">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sith_statue_holcron.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>4.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Sith_Statue_Staff">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sith_statue_staff.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Sith_Statue_Staff_huge">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sith_statue_staff.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Sith_Statue_Dog">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sith_statue_dog.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Sith_Statue_Dog_Med">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sith_statue_dog.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Sith_Statue_Dog_Sml">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sith_statue_dog.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.25</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Sith_Monument">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sith_monument.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Sith_Ruins">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sith_ruins.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Sith_Etching">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sith_etching_ruin_A.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>4.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Sith_Rune_Tower">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sith_rune_tower.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Sith_Rubble_Pile">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sith_rubble_pile.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>4.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Sith_Rubble_Pile_Small">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sith_rubble_pile.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Sith_Rubble_Pile_Med">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sith_rubble_pile.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Sith_Column_Short">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sith_column_short.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Sith_Column_Tall">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sith_column_tall.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Sith_Temple">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sith_temple.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>4.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Sith_Tower_Ruins">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sith_tower_ruins.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>6.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Sith_Wall_Ruins_Collapsed">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sith_wall_ruins.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>16</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Sith_Wall_Ruins_Collapsed_huge">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sith_wall_ruins.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>32</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Sith_Wall_Ruins_Upright">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sith_wall_ruins_A.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>16</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Sith_Wall_Ruins_Upright_Huge">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sith_wall_ruins_A.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>32</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Sith_Tombs">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sith_tombs.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>4.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Bridge_City">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>NB_Cato_Neimodia.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Bridge_City_Arch">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_bridgecity_arch1.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>17.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+<Props_Temperate Name="Prop_Bridge_City_Arch_Main">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_bridgecity_arch.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>28.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Temperate>
+
+</Props_Temperate>

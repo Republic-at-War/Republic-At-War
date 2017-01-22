@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+
+
+<Sabaoth_Bomber_Data>
+
+
+
+
+	<SpaceUnit Name="Sabaoth_Bomber">
+		<Text_ID>TEXT_UNIT_SABAOTH_BOMBER</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_SABAOTH_BOMBER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_BOMBER </Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against> Venator Victory_Destroyer Acclamator_Assault_Ship </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> V19_Fighter Republic_light_frigate Republic_light_assault_cruiser </Encyclopedia_Vulnerable_To>
+		<Icon_Name>i_button_sabaoth_bomber.tga</Icon_Name>
+
+		<Space_Model_Name>NV_Sabaoth_Bomber.ALO</Space_Model_Name>
+		<Scale_Factor>0.09</Scale_Factor> <!-- From 0.18 -->
+		<Select_Box_Scale>425</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-1</Select_Box_Z_Adjust>
+		<Mouse_Collide_Override_Sphere_Radius> 50.0 </Mouse_Collide_Override_Sphere_Radius>
+
+		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Mass>0.99</Mass>
+
+		<Max_Lift>3</Max_Lift>
+		<Max_Speed>3.6</Max_Speed>
+		<Min_Speed>2.3</Min_Speed>
+		<Max_Rate_Of_Turn>2.0</Max_Rate_Of_Turn>
+		<Max_Thrust>1.0</Max_Thrust>
+		<Max_Rate_Of_Roll>2.8</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>70</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>500.0</Begin_Turn_Towards_Distance>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.6</Hyperspace_Speed>
+		<Maintenance_Cost>0.1</Maintenance_Cost>
+
+		<Affiliation>Rebel</Affiliation>
+
+		<Shield_Points>55</Shield_Points>
+		<Tactical_Health>50</Tactical_Health>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>
+		<Energy_Capacity>999</Energy_Capacity>
+		<Energy_Refresh_Rate>999</Energy_Refresh_Rate>
+		<Ship_Class>bomber</Ship_Class>
+		<Armor_Type> Armor_Bomber </Armor_Type>
+        <Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+                
+		<Formation_Priority>2</Formation_Priority>
+		<Size_Value>8</Size_Value>
+		<Is_Escort>no</Is_Escort>
+		<Is_Bomber>yes</Is_Bomber>
+		<Land_Bomber_Type>CIS_Bomber_Bombing_Run</Land_Bomber_Type>
+		<Damage>5</Damage>
+		<Squadron_Capacity>0</Squadron_Capacity>
+		<Number_per_Squadron>3</Number_per_Squadron>
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, REVEAL, NEBULA </SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+		<Land_FOW_Reveal_Range>130.0</Land_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range>600.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>500.0</Targeting_Max_Attack_Distance>
+
+		<HardPoints>
+			HP_SABAOTH_LASER_00,
+			HP_SABAOTH_TORP_00,
+			HP_SABAOTH_TORP_01
+		</HardPoints>
+
+
+		<SFXEvent_Fire> Unit_Sabaoth_Laser </SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Skipray</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Skipray</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Skipray</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Skipray</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Skipray</SFXEvent_Guard>
+		<SFXEvent_Move_Into_Nebula> Unit_Nebula_Skipray </SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Skipray </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Skipray </SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Skipray </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Skipray </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Skipray </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Skipray </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Skipray </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Skipray </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_GRAV_Skipray </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Ambient_Moving> Unit_Y_Wing_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 10 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Y_Wing_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Death_SFXEvent_Start_Die>Unit_Y_Wing_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Death_Explosions>Small_Explosion_Space</Death_Explosions>
+		<Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
+
+		<CategoryMask> Bomber | AntiCapital</CategoryMask>
+		<Property_Flags> SmallShip </Property_Flags>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Air_Vehicle_Turret_Target> Yes </Air_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<Min_Speed_Fraction_For_Turn>0.6</Min_Speed_Fraction_For_Turn>
+		<Custom_Footprint_Radius> 15.0 </Custom_Footprint_Radius>
+		<MovementClass> Space </MovementClass>
+		<Out_Of_Combat_Defense_Adjustment>-1.0</Out_Of_Combat_Defense_Adjustment>
+		<Minimum_Follow_Distance>50.0</Minimum_Follow_Distance>
+
+		<Create_Team>Yes</Create_Team>
+		<AI_Combat_Power>75</AI_Combat_Power>
+		<Collision_Box_Modifier>2.0</Collision_Box_Modifier>
+		<Targeting_Priority_Set>Bomber</Targeting_Priority_Set>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		
+		<Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+		<Spin_Away_On_Death_Chance>0.2</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Time>2.0f</Spin_Away_On_Death_Time>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space</Spin_Away_On_Death_Explosion>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_Y_Wing_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<Strafe_Distance>500.0</Strafe_Distance>
+		<Population_Value>1</Population_Value>
+		
+
+
+	</SpaceUnit>
+
+
+	<!-- Squadron info -->
+	
+	<Squadron Name="Sabaoth_Bomber_Squadron">
+	  <Text_ID>TEXT_UNIT_SABAOTH_BOMBER</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_SABAOTH_BOMBER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_BOMBER </Encyclopedia_Unit_Class>
+	  <Encyclopedia_Good_Against> Venator Victory_Destroyer Acclamator_Assault_Ship </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> V19_Fighter Republic_light_frigate Republic_light_assault_cruiser </Encyclopedia_Vulnerable_To>
+		<Icon_Name>i_button_sabaoth_bomber.tga</Icon_Name>
+
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Formation_Priority>2</Formation_Priority>
+		<Is_Escort>No</Is_Escort>
+		<Is_Bomber>yes</Is_Bomber>
+		<Autoresolve_Health>200</Autoresolve_Health>
+		<Damage>15</Damage>
+		
+		<Affiliation>Rebel</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+		<Build_Time_Seconds>14</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline />
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures>Ground_Hutt_Palace_R</Required_Special_Structures>
+    <Build_Limit_Current_Per_Player>12</Build_Limit_Current_Per_Player>
+     
+		<Cheap_Bribe_Cost>10</Cheap_Bribe_Cost>
+		<Expensive_Bribe_Cost>20</Expensive_Bribe_Cost>
+		<Tactical_Bribe_Cost>275</Tactical_Bribe_Cost>
+
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+		<Squadron_Units>Sabaoth_Bomber, Sabaoth_Bomber, Sabaoth_Bomber</Squadron_Units>
+		<Squadron_Offsets>80.0,0.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,80.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-80.0,0.0</Squadron_Offsets>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Skipray</SFXEvent_Build_Complete>
+
+		<FormationOrder>3</FormationOrder>
+		<Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>200.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>300.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Property_Flags> SmallShip </Property_Flags>
+		<Population_Value>1</Population_Value>
+		<Score_Cost_Credits> 700</Score_Cost_Credits>
+
+     	<Max_Squad_Size> 3 </Max_Squad_Size>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>700</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>14</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+
+
+	</Squadron>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Sabaoth_Bomber_Data>

@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+
+
+<Carrack_Data>
+
+<!-- Power to weapons OR power to engines -->
+
+	<SpaceUnit Name="Carrack">
+		<Text_ID>TEXT_UNIT_CARRACK</Text_ID>
+		<Encyclopedia_Good_Against> Hammer_Class_Picket Vulture_Droid_Fighter CIS_Bomber </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Recusant_Frigate Providence_Class_Carrier Munificent_Frigate</Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text>TEXT_TOOLTIP_CARRACK</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CRUISER</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_Carrack_CR.tga</Icon_Name>
+		
+		<GUI_Row> 1 </GUI_Row>
+		<Space_Model_Name>ReV_Carrack.alo</Space_Model_Name>
+		<Select_Box_Scale>260</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Mass>0.9995</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+
+        <Ranking_In_Category>7</Ranking_In_Category>
+		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
+		
+		<Max_Speed>3.0</Max_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<MovementClass> Space </MovementClass>
+		<Space_Layer> Corvette </Space_Layer>
+		<Layer_Z_Adjust>-15.0</Layer_Z_Adjust>
+		<Max_Rate_Of_Roll>0.8</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<OverrideAcceleration> .065 </OverrideAcceleration>
+		<OverrideDeceleration> .065 </OverrideDeceleration>
+
+		<Max_Thrust>0.8</Max_Thrust>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		<Maintenance_Cost>0.05</Maintenance_Cost>
+
+		<Armor_Type> Armor_Tartan </Armor_Type>
+    <Shield_Armor_Type>Shield_Corvette</Shield_Armor_Type>
+
+		<Shield_Points>800</Shield_Points> <!-- From 700 -->
+		<Tactical_Health>1600</Tactical_Health> <!-- From 1400 -->
+		<Damage>20</Damage>
+		<Autoresolve_Health>700</Autoresolve_Health> 
+		<Shield_Refresh_Rate>13</Shield_Refresh_Rate> <!-- From 12 -->
+		<Energy_Capacity>999999</Energy_Capacity>
+		<Energy_Refresh_Rate>300</Energy_Refresh_Rate>
+		<Formation_Priority>3</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Squadron_Capacity>0</Squadron_Capacity>
+		<Transport_Capacity>0</Transport_Capacity>
+		<Number_per_Squadron>1</Number_per_Squadron>
+		<Size_Value>120</Size_Value>
+
+		<Affiliation>Empire</Affiliation>
+		<Tech_Level>2</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Build_Cost_Credits>1600</Build_Cost_Credits>
+		<AI_Combat_Power>2000</AI_Combat_Power>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+
+		<Cheap_Bribe_Cost>70</Cheap_Bribe_Cost>
+		<Expensive_Bribe_Cost>130</Expensive_Bribe_Cost>
+		<Tactical_Bribe_Cost>725</Tactical_Bribe_Cost>
+
+		<Behavior>ABILITY_COUNTDOWN, DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+		<SpaceBehavior> SIMPLE_SPACE_LOCOMOTOR, TARGETING, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Death_Clone>Damage_Normal, Carrack_Death_Clone</Death_Clone>
+
+		<Space_FOW_Reveal_Range>1200.0</Space_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range>1200.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>800.0</Targeting_Max_Attack_Distance>
+
+		<Hardpoints>
+			HP_Carrack_00,
+HP_Carrack_01,
+HP_Carrack_02,
+HP_Carrack_03,
+HP_Carrack_04,
+HP_Carrack_05,
+HP_Carrack_06,
+HP_Carrack_07,
+HP_Carrack_08,
+HP_Carrack_09,
+HP_Carrack_10,
+HP_Carrack_11
+		</Hardpoints>
+
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Rep_Cruiser</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Carrack_Moving_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Select>Unit_Select_Rep_Ship</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Rep_Ship</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleetmove_Rep_Ship</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Rep_Ship</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Move_Rep_Ship</SFXEvent_Guard>
+		<SFXEvent_Stop/>
+		<SFXEvent_Barrage />
+		<SFXEvent_Move_Into_Nebula /> 
+
+		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_HP_Rep_Ship </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_HP_Rep_Ship </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_HP_Rep_Ship </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_HP_Rep_Ship </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_HP_Rep_Ship </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_HP_Rep_Ship </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_HP_Rep_Ship </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Engine_Idle_Loop> Unit_Tartan_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Tartan_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Tartan_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<MovementClass> Space </MovementClass>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>400.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>400.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>Corvette</Targeting_Priority_Set>
+		<Autonomous_Move_Extension_Vs_Attacker>300.0</Autonomous_Move_Extension_Vs_Attacker>
+		<CategoryMask> Corvette | AntiFighter | AntiBomber </CategoryMask>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Score_Cost_Credits> 1250</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+		
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes"> 
+            
+	<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+			
+				<Mod_Multiplier>SPEED_MULTIPLIER,		0.5f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	-25.0</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.2f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>7</Expiration_Seconds>
+				
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Special_Weapons_Rep_Ship</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1600</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Carrack_Death_Clone">
+		<Text_ID>TEXT_UNIT_CARRACK</Text_ID>
+		<Space_Model_Name>ReV_carrack_d.alo</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<Max_Speed>0.25</Max_Speed>
+		<Max_Rate_Of_Turn>0.4</Max_Rate_Of_Turn>
+		<Max_Thrust>0.05</Max_Thrust>
+		<Max_Rate_Of_Roll>0.02</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>5</Bank_Turn_Angle>
+		<Affiliation>Empire</Affiliation>
+		<Ship_Class>capital_ship</Ship_Class>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceUnit>
+	
+	
+	
+	
+</Carrack_Data>

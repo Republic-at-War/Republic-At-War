@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+
+
+<Story_Mode_Plots>
+
+		<!--<Lua_Script>Infastructure_Empire</Lua_Script>-->
+    <Active_Plot>Story_Empire_AI_Heroes_EXP.xml</Active_Plot>
+   
+</Story_Mode_Plots>

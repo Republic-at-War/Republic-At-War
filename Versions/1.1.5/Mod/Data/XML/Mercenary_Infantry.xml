@@ -1,0 +1,681 @@
+<?xml version="1.0"?>
+<Mercenary_Infantry_Data>
+
+
+	<GroundInfantry Name="Merc_Infantry">
+		<LOD_Bias>5</LOD_Bias>
+		<Text_ID>TEXT_UNIT_MERCENARY_INFANTRY</Text_ID>
+		<Encyclopedia_Good_Against> Clone_Trooper_P1 Battledroids </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Destroyer_Droid AT_PT UC_Rebel_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INFANTRY </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> TEXT_UNIT_TOOLTIP_MERCENARY_INFANTRY TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+		<Icon_Name>i_button_ui_mercenary_infantry.tga</Icon_Name>
+
+		<Land_Model_Name>UI_Mercenary.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>SURFACE_FX,LAND_TEAM_INFANTRY_LOCOMOTOR,IDLE,WEAPON, STUNNABLE, REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING, ABILITY_COUNTDOWN</LandBehavior>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<CanCellStack>yes</CanCellStack>
+		<Mass>1.0</Mass>
+
+
+		<Movement_Animation_Speed> 1.0 </Movement_Animation_Speed>
+		<Rotation_Animation_Speed> 20.0 </Rotation_Animation_Speed>
+		<Walk_Animation_Speed> 1.0 </Walk_Animation_Speed>
+		<Crouch_Animation_Speed> .50 </Crouch_Animation_Speed>
+		<Max_Speed>1.0</Max_Speed>
+		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+
+		<FormationSpacing> 1.0 </FormationSpacing>
+		<MinimumPushReturnDistance> 10 </MinimumPushReturnDistance>
+		<OverrideAcceleration> .07 </OverrideAcceleration>
+		<OverrideDeceleration> .07 </OverrideDeceleration>
+		<FormationOrder> 1 </FormationOrder>
+		<FormationGrouping> Standard </FormationGrouping>
+
+		<Custom_Soft_Footprint_Radius> 3.5 </Custom_Soft_Footprint_Radius>
+		<Custom_Hard_XExtent> 2.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 2.0 </Custom_Hard_YExtent>
+
+		<Affiliation>Rebel</Affiliation>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Size_Value>10</Size_Value>
+		<Damage>1</Damage>
+		<Sensor_Range>20</Sensor_Range>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>35</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Influences_Capture_Point> True </Influences_Capture_Point>
+		<Stealth_Capable>No</Stealth_Capable>
+
+		<Projectile_Types>Proj_Merc_Concussion_Grenade</Projectile_Types>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>3.5</Projectile_Fire_Recharge_Seconds>
+		<Targeting_Min_Attack_Distance> 50 </Targeting_Min_Attack_Distance>
+
+		<Targeting_Fire_Inaccuracy> Infantry, 5.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 3.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 5.0 </Targeting_Fire_Inaccuracy>
+
+		<Land_FOW_Reveal_Range>250.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>240.0</Targeting_Max_Attack_Distance>
+
+		<Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+		<Armor_Type> Armor_Infantry </Armor_Type>
+
+		<CategoryMask> Infantry </CategoryMask>
+		<MovementClass> Infantry </MovementClass>
+		<SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
+		<SFXEvent_Select> Unit_Select_Mercenary </SFXEvent_Select>         		
+		<SFXEvent_Move> Unit_Move_Mercenary </SFXEvent_Move>  
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Mercenary</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack> Unit_Attack_Mercenary </SFXEvent_Attack>         		 
+		<SFXEvent_Guard> Unit_Guard_Mercenary </SFXEvent_Guard>            		 
+		<SFXEvent_Assist_Move> Unit_Assist_Move_Mercenary </SFXEvent_Assist_Move>		
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_Mercenary </SFXEvent_Assist_Attack> 
+		<Death_SFXEvent_Start_Die>Unit_Underworld_Soldier_Death</Death_SFXEvent_Start_Die>
+		<SFXEvent_Fire>Unit_Underworld_Infantry_Fire</SFXEvent_Fire>
+
+		<OccupationStyle>1x1</OccupationStyle>
+		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+		<No_Reflection_Below_Detail_Level>99</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+		<Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+		<Is_Squashable> Yes </Is_Squashable>
+		<Create_Team>Yes</Create_Team>
+		<AI_Combat_Power>6</AI_Combat_Power>
+
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>AvoidAntiInfantryTurrets</Targeting_Priority_Set>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Surface_Type_Cover_Damage_Shield>.5</Surface_Type_Cover_Damage_Shield>
+		<Weather_Category>Infantry</Weather_Category>
+		
+		<Death_Fade_Time>0.25</Death_Fade_Time>
+		<Death_Persistence_Duration>0.0</Death_Persistence_Duration>
+
+		<Death_Clone>Damage_Disruptor_Hand, Infantry_Disruptor_Death_Clone_00</Death_Clone>
+		<Death_Clone>Damage_Disruptor_Hand, Infantry_Disruptor_Death_Clone_01</Death_Clone>
+		<Death_Clone>Damage_Infection, Infantry_Melt_Death_Clone_00</Death_Clone>
+		<Death_Clone>Damage_Remote_Bomb, Merc_Remote_Bomb_Death_Clone</Death_Clone>
+
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
+		<Conversion_Ability_Changes_To_Enemy> Underworld_Merc_Converted_To_Enemy </Conversion_Ability_Changes_To_Enemy>
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+		
+            <Unit_Ability>
+                <Type>PROXIMITY_MINES</Type>
+                <Recharge_Seconds>80.0</Recharge_Seconds>
+                <GUI_Activated_Ability_Name> Grenadier_Proximity </GUI_Activated_Ability_Name> 
+                <Effective_Radius> 500.0 </Effective_Radius>
+                <SFXEvent_Target_Ability />  
+                <Area_Effect_Decal_Distance> 50.0 </Area_Effect_Decal_Distance>
+                <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+            </Unit_Ability>
+
+			<Unit_Ability>
+				<Type>STIM_PACK</Type>
+				<Expiration_Seconds> 10.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 2.0f</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Damage_Percent_When_Activated>.35</Damage_Percent_When_Activated>
+			</Unit_Ability>
+          
+		</Unit_Abilities_Data>
+
+        <Abilities SubObjectList="Yes">
+
+            <Proximity_Mines_Ability Name="Grenadier_Proximity">
+                <Activation_Style> User_Input </Activation_Style>
+                <Activation_Min_Range>0.0</Activation_Min_Range>
+                <Activation_Max_Range>70.0</Activation_Max_Range>
+                <Mine_Type>Proximity_Mine</Mine_Type>
+                <Trigger_Radius>30</Trigger_Radius>
+                <Number_Of_Mines>6</Number_Of_Mines>
+                <Activation_Time_In_Seconds>3</Activation_Time_In_Seconds>
+                <Activate_SFX>Unit_Lightsaber_Projectile_Block</Activate_SFX>
+                <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+            </Proximity_Mines_Ability>
+
+		</Abilities>
+
+	</GroundInfantry>
+
+
+	<GroundInfantry Name="Merc_Converted_To_Enemy">
+		<Variant_Of_Existing_Type> Merc_Infantry </Variant_Of_Existing_Type>
+		<SFXEvent_Select> Unit_Select_Mercenary </SFXEvent_Select>         		
+		<SFXEvent_Move> Unit_Move_Mercenary </SFXEvent_Move>               		
+		<SFXEvent_Attack> Unit_Attack_Mercenary </SFXEvent_Attack>         		 
+		<SFXEvent_Guard> Unit_Guard_Mercenary </SFXEvent_Guard>            		 
+		<SFXEvent_Assist_Move> Unit_Assist_Move_Mercenary </SFXEvent_Assist_Move>		
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_Mercenary </SFXEvent_Assist_Attack> 
+		<Death_SFXEvent_Start_Die>Unit_Underworld_Soldier_Death</Death_SFXEvent_Start_Die>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Merc_Remote_Bomb_Death_Clone">
+		<Variant_Of_Existing_Type> Merc_Infantry </Variant_Of_Existing_Type>
+		<Death_SFXEvent_Start_Die>Unit_Underworld_Soldier_Bomb_Death</Death_SFXEvent_Start_Die>
+	</GroundInfantry>
+
+	
+<GroundInfantry Name="Merc_Infantry_Rep">
+<Variant_Of_Existing_Type> Merc_Infantry </Variant_Of_Existing_Type>
+<Affiliation>Empire</Affiliation>
+</GroundInfantry>
+
+
+<!-- COMPANY INFO -->
+
+
+	<GroundCompany Name="Merc_Squad">
+		<Text_ID>TEXT_UNIT_MERCENARY_INFANTRY_SQUAD</Text_ID>
+		<Encyclopedia_Good_Against> Clone_Trooper_P1 Battledroids </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Destroyer_Droid AT_PT UC_Rebel_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INFANTRY </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> TEXT_UNIT_TOOLTIP_MERCENARY_INFANTRY TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+		<Icon_Name>i_button_ui_mercenary_infantry.tga</Icon_Name>
+		
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>15</Damage>
+		<Autoresolve_Health>100</Autoresolve_Health>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Cost_Credits>200</Build_Cost_Credits> <!-- From 320 -->
+		<Build_Time_Seconds>8</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>Ground_Hutt_Palace_R</Required_Special_Structures>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Ship_Class>infantry</Ship_Class>
+		<Company_Transport_Unit>Merc_Infantry_Droid_Shuttle</Company_Transport_Unit>
+		<Create_Team_Type> Merc_Team </Create_Team_Type>
+		<Company_Units>Merc_Infantry, Merc_Infantry, Merc_Infantry, Merc_Infantry, Merc_Infantry, Merc_Infantry, Merc_Infantry, Merc_Infantry, Merc_Infantry, Merc_Infantry, Merc_Infantry, Merc_Infantry</Company_Units>
+		<Max_Squad_Size> 4 </Max_Squad_Size>
+
+		<SFXEvent_Build_Started>UHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Mercenary</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Mercenary</SFXEvent_Fleet_Move>
+
+		<Score_Cost_Credits>45</Score_Cost_Credits>
+
+		<Cheap_Bribe_Cost>2</Cheap_Bribe_Cost>
+		<Expensive_Bribe_Cost>5</Expensive_Bribe_Cost>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>200</Tactical_Build_Cost_Multiplayer> <!-- From 450 -->
+		<Tactical_Build_Time_Seconds>8</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>--> 
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+		
+            <Unit_Ability>
+                <Type>PROXIMITY_MINES</Type>
+                <Recharge_Seconds>80.0</Recharge_Seconds>
+                <GUI_Activated_Ability_Name> Grenadier_Proximity </GUI_Activated_Ability_Name> 
+                <Effective_Radius> 500.0 </Effective_Radius>
+                <SFXEvent_Target_Ability />  
+                <Area_Effect_Decal_Distance> 60.0 </Area_Effect_Decal_Distance>
+                <Must_Be_Bought_On_Black_Market>Yes</Must_Be_Bought_On_Black_Market>
+            </Unit_Ability>
+
+			<Unit_Ability>
+				<Type>STIM_PACK</Type>
+				<Expiration_Seconds> 10.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 2.0f</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Damage_Percent_When_Activated>.35</Damage_Percent_When_Activated>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+        <Abilities SubObjectList="Yes">
+
+            <Proximity_Mines_Ability Name="Grenadier_Proximity">
+                <Activation_Style> User_Input </Activation_Style>
+                <Activation_Min_Range>0.0</Activation_Min_Range>
+                <Activation_Max_Range>70.0</Activation_Max_Range>
+                <Mine_Type>Proximity_Mine</Mine_Type>
+                <Trigger_Radius>30</Trigger_Radius>
+                <Number_Of_Mines>6</Number_Of_Mines>
+                <Activation_Time_In_Seconds>3</Activation_Time_In_Seconds>
+                <Activate_SFX>Unit_Lightsaber_Projectile_Block</Activate_SFX>
+                <Must_Be_Bought_On_Black_Market>Yes</Must_Be_Bought_On_Black_Market>
+            </Proximity_Mines_Ability>
+
+		</Abilities>
+
+		<Maintenance_Cost>0.05</Maintenance_Cost>
+		<Population_Value>1</Population_Value>
+	</GroundCompany>
+
+<GroundCompany Name="Merc_Squad_Skirmish">
+		<Text_ID>TEXT_UNIT_MERCENARY_INFANTRY_SQUAD</Text_ID>
+		<Encyclopedia_Good_Against> Clone_Trooper_P1 Battledroids </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Destroyer_Droid AT_PT UC_Rebel_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INFANTRY </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> TEXT_UNIT_TOOLTIP_MERCENARY_INFANTRY TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+		<Icon_Name>i_button_ui_mercenary_infantry.tga</Icon_Name>
+		
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>45</Damage>
+		<Autoresolve_Health>135</Autoresolve_Health>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Cost_Credits>250</Build_Cost_Credits> <!-- From 320 -->
+		<Build_Time_Seconds>8</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>Skirmish_Ground_Cis_Merc_Hq</Required_Special_Structures>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Ship_Class>infantry</Ship_Class>
+		<Company_Transport_Unit>Merc_Infantry_Droid_Shuttle</Company_Transport_Unit>
+		<Create_Team_Type> Merc_Team </Create_Team_Type>
+		<Company_Units>Merc_Infantry, Merc_Infantry, Merc_Infantry, Merc_Infantry, Merc_Infantry, Merc_Infantry, Merc_Infantry, Merc_Infantry, Merc_Infantry, Merc_Infantry, Merc_Infantry, Merc_Infantry</Company_Units>
+		<Max_Squad_Size> 4 </Max_Squad_Size>
+
+		<SFXEvent_Build_Started>UHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Mercenary</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Mercenary</SFXEvent_Fleet_Move>
+
+		<Score_Cost_Credits>45</Score_Cost_Credits>
+
+		<Cheap_Bribe_Cost>2</Cheap_Bribe_Cost>
+		<Expensive_Bribe_Cost>5</Expensive_Bribe_Cost>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>250</Tactical_Build_Cost_Multiplayer> <!-- From 450 -->
+		<Tactical_Build_Time_Seconds>8</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>--> 
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+		
+            <Unit_Ability>
+                <Type>PROXIMITY_MINES</Type>
+                <Recharge_Seconds>80.0</Recharge_Seconds>
+                <GUI_Activated_Ability_Name> Grenadier_Proximity </GUI_Activated_Ability_Name> 
+                <Effective_Radius> 500.0 </Effective_Radius>
+                <SFXEvent_Target_Ability />  
+                <Area_Effect_Decal_Distance> 60.0 </Area_Effect_Decal_Distance>
+                <Must_Be_Bought_On_Black_Market>Yes</Must_Be_Bought_On_Black_Market>
+            </Unit_Ability>
+
+			<Unit_Ability>
+				<Type>STIM_PACK</Type>
+				<Expiration_Seconds> 10.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 2.0f</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Damage_Percent_When_Activated>.35</Damage_Percent_When_Activated>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+        <Abilities SubObjectList="Yes">
+
+            <Proximity_Mines_Ability Name="Grenadier_Proximity">
+                <Activation_Style> User_Input </Activation_Style>
+                <Activation_Min_Range>0.0</Activation_Min_Range>
+                <Activation_Max_Range>70.0</Activation_Max_Range>
+                <Mine_Type>Proximity_Mine</Mine_Type>
+                <Trigger_Radius>30</Trigger_Radius>
+                <Number_Of_Mines>6</Number_Of_Mines>
+                <Activation_Time_In_Seconds>3</Activation_Time_In_Seconds>
+                <Activate_SFX>Unit_Lightsaber_Projectile_Block</Activate_SFX>
+                <Must_Be_Bought_On_Black_Market>Yes</Must_Be_Bought_On_Black_Market>
+            </Proximity_Mines_Ability>
+
+		</Abilities>
+
+		<Maintenance_Cost>0.05</Maintenance_Cost>
+		<Population_Value>1</Population_Value>
+	</GroundCompany>
+
+<GroundCompany Name="Merc_Squad_Rep">
+		<Text_ID>TEXT_UNIT_MERCENARY_INFANTRY_SQUAD</Text_ID>
+		<Encyclopedia_Good_Against> Clone_Trooper_P1 Battledroids </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Destroyer_Droid AT_PT UC_Rebel_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INFANTRY </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> TEXT_UNIT_TOOLTIP_MERCENARY_INFANTRY TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+		<Icon_Name>i_button_ui_mercenary_infantry.tga</Icon_Name>
+		
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>45</Damage>
+		<Autoresolve_Health>135</Autoresolve_Health>
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>250</Build_Cost_Credits> <!-- From 320 -->
+		<Build_Time_Seconds>8</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>Ground_Hutt_Palace_E</Required_Special_Structures>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Ship_Class>infantry</Ship_Class>
+		<Company_Transport_Unit>Merc_Infantry_Droid_Shuttle_Rep</Company_Transport_Unit>
+		<Create_Team_Type> Merc_Team </Create_Team_Type>
+		<Company_Units>Merc_Infantry_Rep, Merc_Infantry_Rep, Merc_Infantry_Rep, Merc_Infantry_Rep, Merc_Infantry_Rep, Merc_Infantry_Rep, Merc_Infantry_Rep, Merc_Infantry_Rep, Merc_Infantry_Rep, Merc_Infantry_Rep, Merc_Infantry_Rep, Merc_Infantry_Rep</Company_Units>
+		<Max_Squad_Size> 4 </Max_Squad_Size>
+
+		<SFXEvent_Build_Started>RHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Mercenary</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Mercenary</SFXEvent_Fleet_Move>
+
+		<Score_Cost_Credits>45</Score_Cost_Credits>
+
+		<Cheap_Bribe_Cost>2</Cheap_Bribe_Cost>
+		<Expensive_Bribe_Cost>5</Expensive_Bribe_Cost>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>250</Tactical_Build_Cost_Multiplayer> <!-- From 450 -->
+		<Tactical_Build_Time_Seconds>8</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>--> 
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+		
+            <Unit_Ability>
+                <Type>PROXIMITY_MINES</Type>
+                <Recharge_Seconds>80.0</Recharge_Seconds>
+                <GUI_Activated_Ability_Name> Grenadier_Proximity </GUI_Activated_Ability_Name> 
+                <Effective_Radius> 500.0 </Effective_Radius>
+                <SFXEvent_Target_Ability />  
+                <Area_Effect_Decal_Distance> 60.0 </Area_Effect_Decal_Distance>
+                <Must_Be_Bought_On_Black_Market>Yes</Must_Be_Bought_On_Black_Market>
+            </Unit_Ability>
+
+			<Unit_Ability>
+				<Type>STIM_PACK</Type>
+				<Expiration_Seconds> 10.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 2.0f</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Damage_Percent_When_Activated>.35</Damage_Percent_When_Activated>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+        <Abilities SubObjectList="Yes">
+
+            <Proximity_Mines_Ability Name="Grenadier_Proximity">
+                <Activation_Style> User_Input </Activation_Style>
+                <Activation_Min_Range>0.0</Activation_Min_Range>
+                <Activation_Max_Range>70.0</Activation_Max_Range>
+                <Mine_Type>Proximity_Mine</Mine_Type>
+                <Trigger_Radius>30</Trigger_Radius>
+                <Number_Of_Mines>6</Number_Of_Mines>
+                <Activation_Time_In_Seconds>3</Activation_Time_In_Seconds>
+                <Activate_SFX>Unit_Lightsaber_Projectile_Block</Activate_SFX>
+                <Must_Be_Bought_On_Black_Market>Yes</Must_Be_Bought_On_Black_Market>
+            </Proximity_Mines_Ability>
+
+		</Abilities>
+
+		<Maintenance_Cost>0.05</Maintenance_Cost>
+		<Population_Value>1</Population_Value>
+	</GroundCompany>
+
+<GroundCompany Name="Merc_Squad_Rep_Skirmish">
+		<Text_ID>TEXT_UNIT_MERCENARY_INFANTRY_SQUAD</Text_ID>
+		<Encyclopedia_Good_Against> Clone_Trooper_P1 Battledroids </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Destroyer_Droid AT_PT UC_Rebel_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INFANTRY </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> TEXT_UNIT_TOOLTIP_MERCENARY_INFANTRY TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+		<Icon_Name>i_button_ui_mercenary_infantry.tga</Icon_Name>
+		
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>45</Damage>
+		<Autoresolve_Health>135</Autoresolve_Health>
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>250</Build_Cost_Credits> <!-- From 320 -->
+		<Build_Time_Seconds>8</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>Skirmish_Ground_Republic_Merc_Hq</Required_Special_Structures>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Ship_Class>infantry</Ship_Class>
+		<Company_Transport_Unit>Merc_Infantry_Droid_Shuttle_Rep</Company_Transport_Unit>
+		<Create_Team_Type> Merc_Team </Create_Team_Type>
+		<Company_Units>Merc_Infantry_Rep, Merc_Infantry_Rep, Merc_Infantry_Rep, Merc_Infantry_Rep, Merc_Infantry_Rep, Merc_Infantry_Rep, Merc_Infantry_Rep, Merc_Infantry_Rep, Merc_Infantry_Rep, Merc_Infantry_Rep, Merc_Infantry_Rep, Merc_Infantry_Rep</Company_Units>
+		<Max_Squad_Size> 4 </Max_Squad_Size>
+
+		<SFXEvent_Build_Started>RHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Mercenary</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Mercenary</SFXEvent_Fleet_Move>
+
+		<Score_Cost_Credits>45</Score_Cost_Credits>
+
+		<Cheap_Bribe_Cost>2</Cheap_Bribe_Cost>
+		<Expensive_Bribe_Cost>5</Expensive_Bribe_Cost>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>250</Tactical_Build_Cost_Multiplayer> <!-- From 450 -->
+		<Tactical_Build_Time_Seconds>8</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>RL_Merc_Support_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>--> 
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+		
+            <Unit_Ability>
+                <Type>PROXIMITY_MINES</Type>
+                <Recharge_Seconds>80.0</Recharge_Seconds>
+                <GUI_Activated_Ability_Name> Grenadier_Proximity </GUI_Activated_Ability_Name> 
+                <Effective_Radius> 500.0 </Effective_Radius>
+                <SFXEvent_Target_Ability />  
+                <Area_Effect_Decal_Distance> 60.0 </Area_Effect_Decal_Distance>
+                <Must_Be_Bought_On_Black_Market>Yes</Must_Be_Bought_On_Black_Market>
+            </Unit_Ability>
+
+			<Unit_Ability>
+				<Type>STIM_PACK</Type>
+				<Expiration_Seconds> 10.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 2.0f</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Damage_Percent_When_Activated>.35</Damage_Percent_When_Activated>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+        <Abilities SubObjectList="Yes">
+
+            <Proximity_Mines_Ability Name="Grenadier_Proximity">
+                <Activation_Style> User_Input </Activation_Style>
+                <Activation_Min_Range>0.0</Activation_Min_Range>
+                <Activation_Max_Range>70.0</Activation_Max_Range>
+                <Mine_Type>Proximity_Mine</Mine_Type>
+                <Trigger_Radius>30</Trigger_Radius>
+                <Number_Of_Mines>6</Number_Of_Mines>
+                <Activation_Time_In_Seconds>3</Activation_Time_In_Seconds>
+                <Activate_SFX>Unit_Lightsaber_Projectile_Block</Activate_SFX>
+                <Must_Be_Bought_On_Black_Market>Yes</Must_Be_Bought_On_Black_Market>
+            </Proximity_Mines_Ability>
+
+		</Abilities>
+
+		<Maintenance_Cost>0.05</Maintenance_Cost>
+		<Population_Value>1</Population_Value>
+	</GroundCompany>
+
+<!-- CONTAINER INFO -->
+
+
+
+
+	<Container Name="Merc_Team">
+		<Text_ID>TEXT_UNIT_UNDERWORLD_MERC_SQUAD</Text_ID>
+			<Encyclopedia_Good_Against> Clone_Trooper_P1 Battledroids </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Destroyer_Droid AT_PT UC_Rebel_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INFANTRY </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> TEXT_UNIT_TOOLTIP_MERCENARY_INFANTRY TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+		<Icon_Name>i_button_ui_mercenary_infantry.tga</Icon_Name>
+
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Garrison_Category> Infantry </Garrison_Category>
+
+		<Max_Speed> 1.1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> 1.0 </FormationSpacing>
+		<FormationOrder> 2 </FormationOrder>
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<OverrideAcceleration> .08 </OverrideAcceleration>
+		<OverrideDeceleration> .08 </OverrideDeceleration>
+
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Targeting_Max_Attack_Distance>150.0</Targeting_Max_Attack_Distance>
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>130.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		
+        <Select_Box_Scale>60</Select_Box_Scale>
+        <Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<CategoryMask>Infantry</CategoryMask>
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+		
+            <Unit_Ability>
+                <Type>PROXIMITY_MINES</Type>
+                <Recharge_Seconds>80.0</Recharge_Seconds>
+                <GUI_Activated_Ability_Name> Grenadier_Proximity </GUI_Activated_Ability_Name> 
+                <Effective_Radius> 500.0 </Effective_Radius>
+                <SFXEvent_Target_Ability />  
+                <Area_Effect_Decal_Distance> 60.0 </Area_Effect_Decal_Distance>
+                <Must_Be_Bought_On_Black_Market>Yes</Must_Be_Bought_On_Black_Market>
+            </Unit_Ability>
+         
+			<Unit_Ability>
+				<Type>STIM_PACK</Type>
+				<Expiration_Seconds> 15.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 2.0f</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Damage_Percent_When_Activated>.25</Damage_Percent_When_Activated>
+			</Unit_Ability>
+         
+		</Unit_Abilities_Data>
+
+        <Abilities SubObjectList="Yes">
+
+            <Proximity_Mines_Ability Name="Grenadier_Proximity">
+                <Activation_Style> User_Input </Activation_Style>
+                <Activation_Min_Range>0.0</Activation_Min_Range>
+                <Activation_Max_Range>70.0</Activation_Max_Range>
+                <Mine_Type>Proximity_Mine</Mine_Type>
+                <Trigger_Radius>30</Trigger_Radius>
+                <Number_Of_Mines>6</Number_Of_Mines>
+                <Activation_Time_In_Seconds>3</Activation_Time_In_Seconds>
+                <Activate_SFX>Unit_Lightsaber_Projectile_Block</Activate_SFX>
+                <Must_Be_Bought_On_Black_Market>Yes</Must_Be_Bought_On_Black_Market>
+            </Proximity_Mines_Ability>
+
+		</Abilities>
+
+	</Container>
+	
+	
+	
+	
+	
+
+
+</Mercenary_Infantry_Data>

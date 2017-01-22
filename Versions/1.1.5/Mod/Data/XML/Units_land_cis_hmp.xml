@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HMP_Air_Vehicle_Data>
+  <GroundVehicle Name="HMP">
+    <Text_ID>TEXT_UNIT_HMP</Text_ID>
+    <Encyclopedia_Good_Against> AV_7_Antivehicle_Cannon LAAT AT-TE_Walker </Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To> Empire_Anti_Aircraft_Turret   </Encyclopedia_Vulnerable_To>
+    <Encyclopedia_Text>TEXT_TOOLTIP_HMP</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPEEDER</Encyclopedia_Unit_Class>
+    <Icon_Name>i_button_hmp.tga</Icon_Name>
+    <Land_Model_Name>SeV_hmp.ALO</Land_Model_Name>
+    <Select_Box_Scale>100</Select_Box_Scale>
+    <GUI_Bounds_Scale>0.35</GUI_Bounds_Scale>
+    <No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+    <PathFrameDelay> 4 </PathFrameDelay>
+    <Scale_Factor>0.6</Scale_Factor>
+    <Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+    <Blob_Shadow_Scale>65.0, 65.0</Blob_Shadow_Scale>
+    <Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+    <Hover_Offset>90.0</Hover_Offset>
+    <Prepare_Strafe_Height>0</Prepare_Strafe_Height>
+    <MaxFacingLookAheadFrames>5.0</MaxFacingLookAheadFrames>
+    <Mouse_Collide_Override_Sphere_Radius> 30.0 </Mouse_Collide_Override_Sphere_Radius>
+    <UnitCollisionClass> Vehicle </UnitCollisionClass>
+    <Ranking_In_Category>6</Ranking_In_Category>
+    <Max_Speed>4.0</Max_Speed>
+    <Min_Speed>0.2</Min_Speed>
+    <OverrideAcceleration> .4</OverrideAcceleration>
+    <OverrideDeceleration> .4</OverrideDeceleration>
+    <Max_Rate_Of_Turn>3.0</Max_Rate_Of_Turn>
+    <Max_Rate_Of_Roll>3.0</Max_Rate_Of_Roll>
+    <Max_Lift>3.5</Max_Lift>
+    <Bank_Turn_Angle>20</Bank_Turn_Angle>
+    <Space_Layer> Frigate </Space_Layer>
+    <Stationary_Space_Layer> Land </Stationary_Space_Layer>
+    <PathFrameDelay> 4 </PathFrameDelay>
+    <Should_Cause_Limited_Turrets_To_Turn> false </Should_Cause_Limited_Turrets_To_Turn>
+    <AI_Combat_Power>200</AI_Combat_Power>
+    <Behavior>SELECTABLE, POWERED</Behavior>
+    <LandBehavior>ABILITY_COUNTDOWN, FLYING_LOCOMOTOR,REVEAL,HIDE_WHEN_FOGGED, AMBIENT_SFX,UNIT_AI,TARGETING,WEAPON, WIND_DISTURBANCE,DAMAGE_TRACKING</LandBehavior>
+    <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+    <SurfaceFX_Name>Hover</SurfaceFX_Name>
+    <Is_Affected_By_Gravity_Control_Field> Yes </Is_Affected_By_Gravity_Control_Field>
+    <Influences_Capture_Point>False</Influences_Capture_Point>
+    <Collidable_By_Projectile_Living> Yes </Collidable_By_Projectile_Living>
+    <Affiliation>Rebel</Affiliation>
+    <Armor_Type> Armor_Speeder </Armor_Type>
+    <Damage>8</Damage>
+    <Autoresolve_Health>100.0</Autoresolve_Health>
+    <Shield_Points>0</Shield_Points>
+    <Tactical_Health>250</Tactical_Health>
+    <Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+    <Energy_Capacity>1000</Energy_Capacity>
+    <Energy_Refresh_Rate>999</Energy_Refresh_Rate>
+    <Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+    <Land_FOW_Reveal_Range>320.0</Land_FOW_Reveal_Range>
+    <Targeting_Max_Attack_Distance>400.0</Targeting_Max_Attack_Distance>
+    <!--<Damaged_Smoke_Asset_Name>P_Smoke_Small02.alo</Damaged_Smoke_Asset_Name>-->
+    <Death_Explosions>Medium_Explosion_Land</Death_Explosions>
+    <HardPoints>
+     HP_HMP_00,
+     HP_HMP_01,
+     HP_HMP_02,
+     HP_HMP_03,
+     HP_HMP_04,
+     HP_HMP_05
+     </HardPoints>
+    <Turret_Rotate_Extent_Degrees>20.0</Turret_Rotate_Extent_Degrees>
+    <Turret_Elevate_Extent_Degrees>30.0</Turret_Elevate_Extent_Degrees>
+    <Projectile_Types>Proj_Ground_Laser_Cannon_Red</Projectile_Types>
+    <Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+    <Projectile_Fire_Pulse_Count>10</Projectile_Fire_Pulse_Count>
+    <Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+    <Targeting_Fire_Inaccuracy> LandHero, 10.0</Targeting_Fire_Inaccuracy>
+    <Targeting_Fire_Inaccuracy>Infantry, 10.0</Targeting_Fire_Inaccuracy>
+    <Targeting_Fire_Inaccuracy>Vehicle, 10.0</Targeting_Fire_Inaccuracy>
+    <Targeting_Fire_Inaccuracy>Air, 5.0</Targeting_Fire_Inaccuracy>
+    <Targeting_Fire_Inaccuracy>Structure, 10.0</Targeting_Fire_Inaccuracy>
+    <Strafe_Distance>500.0</Strafe_Distance>
+    <Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+    <Spin_Away_On_Death_Chance>0.2</Spin_Away_On_Death_Chance>
+    <Spin_Away_On_Death_Time>2.0f</Spin_Away_On_Death_Time>
+    <Spin_Away_On_Death_Explosion>Medium_Explosion_Land</Spin_Away_On_Death_Explosion>
+    <Spin_Away_On_Death_SFXEvent_Start_Die>Unit_A_Wing_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die>
+    <Remove_Upon_Death>true</Remove_Upon_Death>
+    <Wind_Disturbance_Radius>100</Wind_Disturbance_Radius>
+    <Wind_Disturbance_Strength>5</Wind_Disturbance_Strength>
+    <Wind_Disturbance_Sphere_Alpha>0.1</Wind_Disturbance_Sphere_Alpha>
+    <SFXEvent_Fire>Unit_AT_ST_Fire</SFXEvent_Fire>
+    <SFXEvent_Select>Unit_Select_Snailtank</SFXEvent_Select>
+    <SFXEvent_Move>Unit_Move_Snailtank</SFXEvent_Move>
+    <SFXEvent_Fleet_Move>Unit_Fleet_Move_Snailtank</SFXEvent_Fleet_Move>
+    <SFXEvent_Attack>Unit_Attack_Snailtank</SFXEvent_Attack>
+    <SFXEvent_Guard>Unit_Move_Snailtank</SFXEvent_Guard>
+    <SFXEvent_Assist_Move> Unit_Move_Snailtank</SFXEvent_Assist_Move>
+    <SFXEvent_Assist_Attack> Unit_Attack_Snailtank</SFXEvent_Assist_Attack>
+    <Death_SFXEvent_Start_Die>Unit_Snow_Speeder_Death_SFX</Death_SFXEvent_Start_Die>
+    <SFXEvent_Ambient_Moving> Unit_A_Wing_Fly_By </SFXEvent_Ambient_Moving>
+    <SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+    <SFXEvent_Ambient_Moving_Max_Delay_Seconds>10</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+    <SFXEvent_Engine_Cinematic_Focus_Loop> Unit_A_Wing_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+    <SFXEvent_Unit_Lost> UHD_Unit_Destroyed </SFXEvent_Unit_Lost>
+    <SFXEvent_Tactical_Build_Started> UHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
+    <SFXEvent_Tactical_Build_Complete> UHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
+    <SFXEvent_Tactical_Build_Cancelled> UHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+    <CategoryMask> Air | AntiStructure | AntiAir </CategoryMask>
+    <MovementClass> Flying </MovementClass>
+    <OccupationStyle>1x1</OccupationStyle>
+    <Victory_Relevant>yes</Victory_Relevant>
+    <No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+    <No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+    <Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+    <GUI_Bracket_Size>1</GUI_Bracket_Size>
+    <Air_Vehicle_Turret_Target> Yes </Air_Vehicle_Turret_Target>
+    <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+    <Space_Full_Stop_Command> Yes </Space_Full_Stop_Command>
+    <!--Keep the idle chase range small since Snowspeeders don't tether-->
+    <Idle_Chase_Range>50.0</Idle_Chase_Range>
+    <Guard_Chase_Range>50.0</Guard_Chase_Range>
+    <Attack_Move_Response_Range>50.0</Attack_Move_Response_Range>
+    <Targeting_Stickiness_Time_Threshold>3.0</Targeting_Stickiness_Time_Threshold>
+    <Targeting_Priority_Set>ATATAntiEverything</Targeting_Priority_Set>
+    <Autonomous_Move_Extension_Vs_Attacker>50.0</Autonomous_Move_Extension_Vs_Attacker>
+    <FormationGrouping> Solo </FormationGrouping>
+    <Weather_Category>Flying</Weather_Category>
+    <Score_Cost_Credits>50</Score_Cost_Credits>
+    <Tactical_Bribe_Cost>525</Tactical_Bribe_Cost>
+    <Should_Reinforcements_Move> false </Should_Reinforcements_Move>
+    <FormationSpacing>3.0</FormationSpacing>
+    <FormationOrder> 5 </FormationOrder>
+    <FormationRaggedness> 1 </FormationRaggedness>
+    <MaxJiggleDistance> 5 </MaxJiggleDistance>
+    <Custom_Hard_XExtent> 25.0 </Custom_Hard_XExtent>
+    <Custom_Hard_YExtent> 25.0 </Custom_Hard_YExtent>
+  </GroundVehicle>
+  <GroundCompany Name="HMP_Air_Wing">
+    <Text_ID>TEXT_HMP_WING</Text_ID>
+    <Encyclopedia_Good_Against> AV_7_Antivehicle_Cannon LAAT AT-TE_Walker </Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To> Empire_Anti_Aircraft_Turret   </Encyclopedia_Vulnerable_To>
+    <Encyclopedia_Text>TEXT_TOOLTIP_HMP</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPEEDER</Encyclopedia_Unit_Class>
+    <Icon_Name>i_button_hmp.tga</Icon_Name>
+    <Select_Box_Scale>100</Select_Box_Scale>
+    <GUI_Bounds_Scale>0.35</GUI_Bounds_Scale>
+    <No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+    <GUI_Row> 1 </GUI_Row>
+    <Is_Dummy>Yes</Is_Dummy>
+    <Damage>16</Damage>
+    <Autoresolve_Health>40</Autoresolve_Health>
+    <Affiliation>Rebel</Affiliation>
+    <Build_Cost_Credits>1200</Build_Cost_Credits>
+    <Build_Time_Seconds>27</Build_Time_Seconds>
+    <Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+    <Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+    <Tech_Level>3</Tech_Level>
+    <Required_Timeline>0</Required_Timeline>
+    <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>0</Required_Star_Base_Level>
+    <Required_Special_Structures>R_Ground_Heavy_Vehicle_Factory</Required_Special_Structures>
+    <Required_Planets />
+    <Behavior>DUMMY_GROUND_COMPANY</Behavior>
+    <Formation_Priority>6</Formation_Priority>
+    <Is_Escort>no</Is_Escort>
+    <Ship_Class>walker</Ship_Class>
+    <Company_Transport_Unit>C9979_Landing_Craft</Company_Transport_Unit>
+    <Company_Units>HMP, HMP</Company_Units>
+    <Max_Squad_Size> 1 </Max_Squad_Size>
+    <SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+    <SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+    <SFXEvent_Build_Complete>Unit_Complete_Snailtank</SFXEvent_Build_Complete>
+    <SFXEvent_Fleet_Move>Unit_Fleet_Move_Snailtank</SFXEvent_Fleet_Move>
+    <Score_Cost_Credits>650</Score_Cost_Credits>
+    <Maintenance_Cost>0.05</Maintenance_Cost>
+    <Population_Value>2</Population_Value>
+    <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+    <Tactical_Build_Cost_Multiplayer>1300</Tactical_Build_Cost_Multiplayer>
+    <Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+    <Tactical_Build_Prerequisites>RC_Level_Four_Tech_Upgrade</Tactical_Build_Prerequisites>
+    <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+    <!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+    <!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+    <!--<MULTIPLAYER SKIRMISH VALUES END>-->
+  </GroundCompany>
+</HMP_Air_Vehicle_Data>

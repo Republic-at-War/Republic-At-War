@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+
+<Story>
+
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+	
+	<Event Name="Lock_Malevolence">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+        <Reward_Type>LOCK_UNIT</Reward_Type>
+        <Reward_Param1>Malevolence</Reward_Param1>
+     <Prereq>Universal_Story_Start</Prereq>
+  </Event>
+
+<!--<Event Name="Start_Cis_Production">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_ELEMENT</Reward_Type>
+		<Reward_Param1>Story_Plots_Infrastructure.xml</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>-->
+
+<!-- Force Rebels to get X-wing instead of Z-95 to start -->
+
+	<Event Name="Story_Advance_Tech_2">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>300</Event_Param1>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Story_Advance_Tech_3">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>420</Event_Param1>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>
+		<Prereq>Story_Advance_Tech_2</Prereq>
+	</Event>
+	
+	<Event Name="Story_Advance_Tech_4">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>600</Event_Param1>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>
+		<Prereq>Story_Advance_Tech_3</Prereq>
+	</Event>
+	
+	<Event Name="Story_Advance_Tech_5">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>780</Event_Param1>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>
+		<Prereq>Story_Advance_Tech_3</Prereq>
+	</Event>
+	
+	
+
+
+<!-- Rebel Hero Release -->
+
+
+	<!-- Spawn Starting Heroes -->
+	
+		<Event Name="Spawn_Nute_Gunray">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Nute_Gunray_Team</Reward_Param1>
+		<Reward_Param2>Geonosis</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	
+  
+  
+
+	<!-- Spawn Tech 1 Heroes -->
+
+	<Event Name="Rebels_Enter_Tech_01">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>1</Event_Param1>
+	</Event>
+
+	<Event Name="Spawn_Count_Dooku">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Count_Dooku_Team</Reward_Param1>
+		<Reward_Param2>Geonosis</Reward_Param2>
+		<Prereq>Rebels_Enter_Tech_01</Prereq>
+	</Event>
+	
+<Event Name="Spawn_Jango_Fett">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Jango_Fett_Team</Reward_Param1>
+		<Reward_Param2>Geonosis</Reward_Param2>
+		<Prereq>Rebels_Enter_Tech_01</Prereq>
+	</Event>
+	
+
+
+
+	<!-- Spawn Tech 2 Heroes -->
+
+		<Event Name="Rebels_Enter_Tech_02">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+
+<Event Name="Spawn_Asajj_Ventress">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Asajj_Ventress_Team</Reward_Param1>
+		<Reward_Param2>Geonosis</Reward_Param2>
+		<Prereq>Rebels_Enter_Tech_02</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Aurra_Sing">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Aurra_Sing_Team</Reward_Param1>
+		<Reward_Param2>Geonosis</Reward_Param2>
+		<Prereq>Rebels_Enter_Tech_02</Prereq>
+	</Event>
+
+	
+
+
+	<!-- Spawn Tech 3 Heroes -->
+
+		<Event Name="Rebels_Enter_Tech_03">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>3</Event_Param1>
+	</Event>
+
+	<Event Name="Spawn_Durge">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Durge_Team</Reward_Param1>
+		<Reward_Param2>Geonosis</Reward_Param2>
+		<Prereq>Rebels_Enter_Tech_03</Prereq>
+	</Event>
+
+<Event Name="Spawn_Grievous">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>General_Grievous_Team</Reward_Param1>
+		<Reward_Param2>Geonosis</Reward_Param2>
+		<Prereq>Rebels_Enter_Tech_03</Prereq>
+	</Event>
+
+	
+<Event Name="Spawn_Trench">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Admiral_Trench</Reward_Param1>
+		<Reward_Param2>Geonosis</Reward_Param2>
+		<Prereq>Rebels_Enter_Tech_03</Prereq>
+	</Event>
+	
+
+	
+
+
+
+
+	<!-- Spawn Tech 4 Heroes -->
+
+	<Event Name="Rebels_Enter_Tech_04">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>4</Event_Param1>
+	</Event>
+
+	<Event Name="Spawn_Cad_Bane">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Cad_Bane_Team</Reward_Param1>
+		<Reward_Param2>Geonosis</Reward_Param2>
+		<Prereq>Rebels_Enter_Tech_04</Prereq>
+	</Event>
+
+
+<Event Name="Spawn_Bossk">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Bossk_Team</Reward_Param1>
+		<Reward_Param2>Geonosis</Reward_Param2>
+		<Prereq>Rebels_Enter_Tech_04</Prereq>
+	</Event>
+	
+	
+	
+	
+
+</Story>

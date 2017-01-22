@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<Recusant_Data>
+
+		<SpaceUnit Name="Recusant_Frigate">
+		<Text_ID>TEXT_UNIT_RECUSANT</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_RECUSANT</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FRIGATE </Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against>CR90 Carrack Rep_Centax_Heavy_Frigate   </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>NTB630 Venator Republic_Victory_Destroyer   </Encyclopedia_Vulnerable_To>
+		<Space_Model_Name>SeV_recusant.ALO</Space_Model_Name>
+		<Icon_Name>I_BUTTON_Recusant.tga</Icon_Name>
+		<No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+		<GUI_Row> 1 </GUI_Row>
+		<Mass>0.999</Mass>
+		<Scale_Factor>5.0</Scale_Factor>
+		<Damage>30</Damage>
+		<Autoresolve_Health>4500</Autoresolve_Health>
+		<Shield_Points>2600</Shield_Points> <!-- From 2300 -->
+		<Tactical_Health>3800</Tactical_Health> <!-- From 3500 -->
+		<Shield_Refresh_Rate>90</Shield_Refresh_Rate> <!-- From 85 -->
+		<Energy_Capacity>3000</Energy_Capacity>
+		<Energy_Refresh_Rate>500</Energy_Refresh_Rate>
+
+    <Ranking_In_Category>6</Ranking_In_Category>
+		<Max_Speed>2.4</Max_Speed>
+		<MovementClass> Space </MovementClass>
+	  <Space_Layer> Frigate </Space_Layer>
+		<Layer_Z_Adjust>-170.0</Layer_Z_Adjust>
+		<Max_Rate_Of_Turn>0.5</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>0.3</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<OverrideAcceleration> .05 </OverrideAcceleration>
+		<OverrideDeceleration> .05 </OverrideDeceleration>
+
+		<Armor_Type> Armor_Vengeance </Armor_Type>
+    <Shield_Armor_Type>Shield_Frigate</Shield_Armor_Type>
+		<Max_Thrust>1.1</Max_Thrust>
+		<Hyperspace>Yes</Hyperspace>
+		<Select_Box_Scale>150</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Ranged_Target_Z_Adjust>35.0</Ranged_Target_Z_Adjust>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		<Maintenance_Cost>0.2</Maintenance_Cost>
+
+		<Affiliation>Rebel</Affiliation> 
+		<Ship_Class>frigate</Ship_Class>
+		<Formation_Priority>3</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Squadron_Capacity>10</Squadron_Capacity>
+		<Transport_Capacity>8</Transport_Capacity>
+		<Number_per_Squadron>1</Number_per_Squadron>
+		<AI_Combat_Power>4000</AI_Combat_Power>
+		<Build_Cost_Credits>3200</Build_Cost_Credits> <!-- From 2900 -->
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Tech_Level>2</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>3</Required_Star_Base_Level>
+
+		<Cheap_Bribe_Cost>150</Cheap_Bribe_Cost>
+		<Expensive_Bribe_Cost>280</Expensive_Bribe_Cost>
+		<Tactical_Bribe_Cost>1500</Tactical_Bribe_Cost>
+		<Size_Value>8</Size_Value>
+
+		<Death_Clone>Damage_Normal, Recusant_Death_Clone</Death_Clone>
+		
+		<Behavior> DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED </Behavior>
+		<SpaceBehavior>SPAWN_SQUADRON, ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, ION_STUN_EFFECT </SpaceBehavior> 
+			
+		<Space_FOW_Reveal_Range>3000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1000.0</Targeting_Max_Attack_Distance>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Death_Leave_Hulk_Behind> No </Death_Leave_Hulk_Behind>
+		<Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
+
+		<HardPoints>
+			HP_Recusant_01, 
+			HP_Recusant_02, 
+			HP_Recusant_03, 
+			HP_Recusant_04, 
+			HP_Recusant_05, 
+			HP_Recusant_06, 
+			HP_Recusant_07, 
+			HP_Recusant_08, 
+			HP_Recusant_09, 
+			HP_Recusant_10,
+			HP_Recusant_11, 
+			HP_Recusant_12, 
+			HP_Recusant_13, 
+			HP_Recusant_14, 
+			HP_Recusant_15, 
+			HP_Recusant_16, 
+			HP_Recusant_17, 
+			HP_Recusant_18,
+			HP_Recusant_19,
+			HP_Recusant_20,
+			HP_Recusant_Shield_Generator, 
+			HP_Recusant_Engines
+		</HardPoints>
+		 		
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Recusant</SFXEvent_Build_Complete>
+
+		<SFXEvent_Select>Unit_Select_Recusant</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Recusant</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Recusant</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Recusant</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Recusant</SFXEvent_Guard>
+		<SFXEvent_Stop>Unit_Stop_Recusant</SFXEvent_Stop>
+		<SFXEvent_Barrage>Unit_Barrage_Recusant</SFXEvent_Barrage>
+		<SFXEvent_Move_Into_Asteroid_Field> Unit_Asteroids_Recusant </SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Move_Into_Nebula> Unit_Nebula_Recusant </SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Damaged_By_Asteroid> SFX_Asteroid_Detonation </SFXEvent_Damaged_By_Asteroid>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Recusant </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Recusant </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Recusant </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Recusant </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Recusant </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Recusant </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Recusant </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,   </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,   </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Recusant </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Recusant </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Lost_Engines_Recusant </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Ambient_Loop>Unit_Nebulon_Moving_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Engine_Idle_Loop> Unit_Nebulon_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Nebulon_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Nebulon_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		
+		<Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
+        <SFXEvent_Health_Critical_Warning> Unit_Ship_Alarm </SFXEvent_Health_Critical_Warning>
+    
+		<CategoryMask> Frigate | AntiCorvette | AntiFrigate | AntiCapital </CategoryMask>  
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Space_Full_Stop_Command> Yes </Space_Full_Stop_Command>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>1.0</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>1.0</Radar_Icon_Scale_Space>
+
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>0.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>400.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+
+ <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+    <Tactical_Build_Cost_Multiplayer>3200</Tactical_Build_Cost_Multiplayer>
+    <Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+    <Tactical_Build_Prerequisites />
+    <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+    <!-- Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player-->
+    <!-- Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies-->
+    <!-- <MULTIPLAYER SKIRMISH VALUES END> -->
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.3f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	-2.0f</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Recusant</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+			
+		</Unit_Abilities_Data>
+
+		
+
+		
+		<Score_Cost_Credits> 5000</Score_Cost_Credits>
+		<Population_Value>2</Population_Value>
+		
+	</SpaceUnit>
+
+     <SpaceUnit Name="Recusant_Death_Clone">
+		<Text_ID>TEXT_UNIT_PIRATE_FRIGATE</Text_ID>
+		<Space_Model_Name>SeV_recusant_D.ALO</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Death_Persistence_Duration> 0 </Death_Persistence_Duration>
+		<Scale_Factor>5.5</Scale_Factor>
+		<Layer_Z_Adjust>-200.0</Layer_Z_Adjust>
+		<Max_Speed>1.2</Max_Speed>
+		<Max_Rate_Of_Turn>0.03</Max_Rate_Of_Turn>
+		<Max_Thrust>1</Max_Thrust>
+		<Max_Rate_Of_Roll>0.1</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>0</Bank_Turn_Angle>
+		<Affiliation>Empire</Affiliation>
+		<Ship_Class>frigate</Ship_Class>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceUnit>
+
+
+
+</Recusant_Data>

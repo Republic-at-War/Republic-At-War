@@ -1,0 +1,240 @@
+<?xml version="1.0" ?>
+<Props_Volcanic>
+	<Props_Volcanic Name="Prop_Volcano_RockForm01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Volcano_Rock00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+	</Props_Volcanic>
+	
+	<Props_Volcanic Name="Prop_Volcano_RockForm02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Volcano_Rock01.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+
+	</Props_Volcanic>
+	
+	<Props_Volcanic Name="Prop_Volcano_RockForm03">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Volcano_Rock02.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Editor_Placed>false</Is_Editor_Placed>
+	</Props_Volcanic>
+
+	<Props_Volcanic Name="Prop_Volcano_Crystal_Purple">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Crystals_Sullust.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Volcanic>
+
+	<Props_Volcanic Name="Prop_Volcano_RockClust_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LavaRockClstr00.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> Medium Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 18.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 25.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 3.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> -5.0 </Custom_Hard_YExtent_Offset>
+
+	</Props_Volcanic>
+
+	<Props_Volcanic Name="Prop_Volcano_RockClust_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LavaRockClstr01.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> Medium Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 15.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 14.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 2.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> -2.0 </Custom_Hard_YExtent_Offset>
+
+	</Props_Volcanic>
+
+	<Props_Volcanic Name="Prop_Volcano_RockClust_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LavaRockClstr02.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Volcanic>
+
+	<Props_Volcanic Name="Prop_Volcano_RockClust_D">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LavaRockClstr03.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> High Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 27.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 24.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> -4.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> 8.0 </Custom_Hard_YExtent_Offset>
+
+	</Props_Volcanic>
+	
+	<Props_Volcanic Name="Prop_Vol_Steam00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Vol_Steam00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Volcanic>
+	
+	<Props_Volcanic Name="Prop_Vol_Steam01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Vol_Steam01.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Editor_Placed>false</Is_Editor_Placed>
+	</Props_Volcanic>
+
+	<Props_Volcanic Name="Prop_Vol_HeatPlume">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Lava_Heat_Particle1.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Volcanic>
+	
+	<Props_Volcanic Name="Prop_Vol_Heat_Cloud">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>CIN_HEAT.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Props_Volcanic>
+
+	<Props_Volcanic Name="Prop_Vol_HeatPlume1">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Lava_Heat_Particle.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Volcanic>
+	
+	<Props_Volcanic Name="Prop_Vol_HeatWave">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_lava_heat_wave.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Volcanic>
+
+	<Props_Volcanic Name="Prop_Vol_HeatLight">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Lightbeams_lava.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Volcanic>
+
+	<Props_Volcanic Name="Prop_Volcano_Civ_Building_NoSpawn">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>NB_VCH.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Volcanic>
+
+	<Props_Volcanic Name="Prop_Geonosis_Tower_02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_Geonosis_Tower02.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Volcanic>
+
+<Props_Volcanic Name="Prop_Geonosis_Tower_02_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_Geonosis_Tower02.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Volcanic>
+
+	<Props_Volcanic Name="Prop_Geonosis_Tower_04">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_Geonosis_Tower03.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Volcanic>
+
+<Props_Volcanic Name="Prop_Geonosis_Tower_04_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_Geonosis_Tower03.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Volcanic>
+
+	<Props_Volcanic Name="Prop_Geonosis_Crack">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_Geo_Rockcrack01.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Volcanic>
+
+	<Props_Volcanic Name="Prop_Geonosis_RockForm00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Geonosis_RockForm01.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Volcanic>
+
+<Props_Volcanic Name="Prop_Geonosis_RockForm00_Medium">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Geonosis_RockForm01.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Volcanic>
+
+<Props_Volcanic Name="Prop_Geonosis_RockForm00_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Geonosis_RockForm01.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Volcanic>
+
+	<Props_Volcanic Name="Prop_Geonosis_CrackSteam">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_Geo_Cracksteam.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Volcanic>
+
+
+
+</Props_Volcanic>

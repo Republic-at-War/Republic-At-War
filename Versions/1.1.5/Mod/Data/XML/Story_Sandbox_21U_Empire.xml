@@ -1,0 +1,448 @@
+<?xml version="1.0" ?>
+
+
+
+<!--******************************************************-->
+<!--******	Campaign: Fall of the Jedi   (Republic)	******-->
+<!--******************************************************-->
+
+
+
+<Story>
+
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Story_Dialog>Dialog_Raw_GC_Solo</Story_Dialog>
+		<Story_Chapter>14</Story_Chapter>
+		<Story_Tag>Intro_Tag</Story_Tag>
+	</Event>
+
+	<!--SETUP BASE STORY EVENTS-->
+
+	<!-- Empire Hero Release -->
+
+
+
+
+	<!-- Spawn Starting Heroes -->
+
+	<Event Name="Empire_AI_Unlock_Research_Facility">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>E_Ground_Research_Facility</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+
+	<Event Name="Empire_AI_Heroes_02">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Chancellor_Palpatine_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+
+
+
+	<!-- Spawn Tech Level 1 Heroes -->
+
+	<Event Name="Empire_Enters_Tech_01">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>1</Event_Param1>
+	</Event>
+
+	<Event Name="Spawn_Yoda">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Yoda_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Empire_Enters_Tech_01</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Mace_Windu">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Mace_Windu_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Empire_Enters_Tech_01</Prereq>
+	</Event>
+
+
+
+	<!-- Spawn Time Era 2 Heroes -->
+
+	<Event Name="Empire_Enters_Tech_02">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+
+	<Event Name="Spawn_Anakin">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Anakin_Skywalker_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Empire_Enters_Tech_02</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Obiwan">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Obiwan_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Empire_Enters_Tech_02</Prereq>
+	</Event>
+
+
+	<!-- Spawn Time Era 3 Heroes -->
+
+	<Event Name="Empire_Enters_Tech_03">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>3</Event_Param1>
+	</Event>
+
+	<Event Name="Spawn_Deltasquad">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Deltasquad_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Empire_Enters_Tech_03</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Plo_Koon">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Plokoon_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Empire_Enters_Tech_03</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Admiral_Yularen">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Admiral_Yularen</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Empire_Enters_Tech_03</Prereq>
+	</Event>
+
+
+
+	<!-- Spawn Time Era 4 Heroes -->
+
+	<Event Name="Empire_Enters_Tech_04">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>4</Event_Param1>
+	</Event>
+
+	<Event Name="Lock_V19">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>V19_Squadron</Reward_Param1>
+		<Prereq>Empire_Enters_Tech_04</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Commander_Cody">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Commander_Cody_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Empire_Enters_Tech_04</Prereq>
+	</Event>
+
+
+
+	<!-- Spawn Time Era 5 Heroes -->
+
+	<Event Name="Empire_Enters_Tech_05">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>5</Event_Param1>
+	</Event>
+
+	<Event Name="Lock_P1_Clone_Squad">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Republic_Clonetrooper_P1_Squad</Reward_Param1>
+		<Prereq>Empire_Enters_Tech_05</Prereq>
+	</Event>
+
+	<Event Name="Lock_P1_Clone_Platoon">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Republic_Clonetrooper_P1_Platoon</Reward_Param1>
+		<Prereq>Empire_Enters_Tech_05</Prereq>
+	</Event>
+
+	<Event Name="Lock_P1_Clone_Company">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Republic_Clonetrooper_P1_Company</Reward_Param1>
+		<Prereq>Empire_Enters_Tech_05</Prereq>
+	</Event>
+
+	<Event Name="Lock_P1_Clone_Commander">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Field_Com_Republic_P1_Team</Reward_Param1>
+		<Prereq>Empire_Enters_Tech_05</Prereq>
+	</Event>
+
+	<!--Order 66 -->
+
+	<Event Name="Execute_Order66_Pause">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>30</Event_Param1>
+		<Reward_Type>PAUSE_GALACTIC</Reward_Type>
+		<Prereq>Empire_Enters_Tech_05</Prereq>
+	</Event>
+
+	<Event Name="Execute_Order66">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_REPUBLIC_ORDER66</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>
+		<Reward_Param8>REPUBLIC_ORDER66</Reward_Param8>
+		<Reward_Param9>Emperor_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Execute_Order66_Pause</Prereq>
+	</Event>
+
+	<Event Name="Execute_Order66_Stop_Text">
+		<!--Stop Text-->
+		<Event_Type>STORY_SPEECH_DONE</Event_Type>
+		<Event_Param1>REPUBLIC_ORDER66</Event_Param1>
+		<Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_REPUBLIC_ORDER66</Reward_Param1>
+		<Reward_Param4>remove</Reward_Param4>
+		<Prereq>Execute_Order66</Prereq>
+	</Event>
+	<Event Name="Execute_Order66_Stop_Loop">
+		<!--Stop Loop-->
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+		<Prereq>Execute_Order66_Stop_Text</Prereq>
+	</Event>
+
+	<Event Name="Order_66_Montage_Movie">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>START_MOVIE</Reward_Type>
+		<Reward_Param1>Order66_Montage</Reward_Param1>
+		<Prereq>Execute_Order66_Stop_Loop</Prereq>
+	</Event>
+	<Event Name="Order_66_Montage_End">
+		<Event_Type>STORY_MOVIE_DONE</Event_Type>
+		<Reward_Type>UNPAUSE_GALACTIC</Reward_Type>
+		<Prereq>Order_66_Montage_Movie</Prereq>
+	</Event>
+
+	<Event Name="Jedi_Purge_Remove_Mace_Windu">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Mace_Windu</Reward_Param1>
+		<Prereq>Order_66_Montage_End</Prereq>
+	</Event>
+
+	<Event Name="Jedi_Purge_Remove_Plokoon">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Plokoon</Reward_Param1>
+		<Prereq>Jedi_Purge_Remove_Mace_Windu</Prereq>
+	</Event>
+
+	<Event Name="Jedi_Purge_Remove_Obiwan">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Obiwan</Reward_Param1>
+		<Prereq>Jedi_Purge_Remove_Plokoon</Prereq>
+	</Event>
+
+	<Event Name="Jedi_Purge_Remove_Aayla">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Aayla_Secura</Reward_Param1>
+		<Prereq>Jedi_Purge_Remove_Obiwan</Prereq>
+	</Event>
+
+	<Event Name="Lock_Aayla">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Aayla_Secura_Team</Reward_Param1>
+		<Prereq>Jedi_Purge_Remove_Obiwan</Prereq>
+	</Event>
+
+	<Event Name="Jedi_Purge_Remove_Barris">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Barris_Offee</Reward_Param1>
+		<Prereq>Jedi_Purge_Remove_Aayla</Prereq>
+	</Event>
+
+	<Event Name="Lock_Barris">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Barris_Offee_Team</Reward_Param1>
+		<Prereq>Jedi_Purge_Remove_Aayla</Prereq>
+	</Event>
+
+	<Event Name="Jedi_Purge_Remove_Luminara">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Luminara_Unduli</Reward_Param1>
+		<Prereq>Jedi_Purge_Remove_Barris</Prereq>
+	</Event>
+
+	<Event Name="Lock_Luminara">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Luminara_Team</Reward_Param1>
+		<Prereq>Jedi_Purge_Remove_Barris</Prereq>
+	</Event>
+
+	<Event Name="Jedi_Purge_Remove_Shaakti">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Shaak_Ti</Reward_Param1>
+		<Prereq>Jedi_Purge_Remove_Luminara</Prereq>
+	</Event>
+
+	<Event Name="Lock_Shaakti">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Shaak_Ti_Team</Reward_Param1>
+		<Prereq>Jedi_Purge_Remove_Luminara</Prereq>
+	</Event>
+
+	<Event Name="Jedi_Purge_Remove_Yoda">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Yoda</Reward_Param1>
+		<Prereq>Jedi_Purge_Remove_Shaakti</Prereq>
+	</Event>
+
+	<Event Name="The_New_Order_Begins">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Prereq>Jedi_Purge_Remove_Yoda</Prereq>
+	</Event>
+
+	<Event Name="The_New_Order_Remove_Palpatine">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Chancellor_Palpatine</Reward_Param1>
+		<Prereq>The_New_Order_Begins</Prereq>
+	</Event>
+
+	<Event Name="The_New_Order_Spawn_Palpatine">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Emperor_Palpatine_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>The_New_Order_Remove_Palpatine</Prereq>
+	</Event>
+
+	<Event Name="The_New_Order_Begins_1">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Prereq>The_New_Order_Spawn_Palpatine</Prereq>
+	</Event>
+
+	<Event Name="The_New_Order_Remove_Anakin">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Anakin_Skywalker</Reward_Param1>
+		<Prereq>The_New_Order_Begins_1</Prereq>
+	</Event>
+
+	<Event Name="The_New_Order_Spawn_Vader">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Darth_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>The_New_Order_Remove_Anakin</Prereq>
+	</Event>
+
+	<Event Name="The_New_Order_Pause">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>PAUSE_GALACTIC</Reward_Type>
+		<Prereq>The_New_Order_Spawn_Vader</Prereq>
+	</Event>
+
+	<Event Name="The_New_Order_Begins_2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_REPUBLIC_NEWORDER</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>
+		<Reward_Param8>REPUBLIC_NEWORDER</Reward_Param8>
+		<Reward_Param9>Emperor_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>The_New_Order_Spawn_Vader</Prereq>
+	</Event>
+
+	<Event Name="The_New_Order_Begins_2_Stop_Text">
+		<!--Stop Text-->
+		<Event_Type>STORY_SPEECH_DONE</Event_Type>
+		<Event_Param1>REPUBLIC_NEWORDER</Event_Param1>
+		<Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_REPUBLIC_NEWORDER</Reward_Param1>
+		<Reward_Param4>remove</Reward_Param4>
+		<Prereq>Execute_Order66</Prereq>
+	</Event>
+	<Event Name="The_New_Order_Begins_2_Stop_Loop">
+		<!--Stop Loop-->
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+		<Prereq>The_New_Order_Begins_2_Stop_Text</Prereq>
+	</Event>
+
+	<Event Name="The_New_Order_Unpause">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNPAUSE_GALACTIC</Reward_Type>
+		<Prereq>The_New_Order_Begins_2_Stop_Loop</Prereq>
+	</Event>
+
+	<Event Name="The_New_Order_Spawn_Tarkin">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Grand_Moff_Tarkin_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>The_New_Order_Spawn_Vader</Prereq>
+	</Event>
+
+	<Event Name="The_New_Order_Begins_3">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Prereq>The_New_Order_Spawn_Tarkin</Prereq>
+	</Event>
+
+	<Event Name="Lock_ARC170">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Arc_170_Squadron</Reward_Param1>
+		<Prereq>The_New_Order_Begins_3</Prereq>
+	</Event>
+
+	<Event Name="The_New_Order_Spawn_ISD_1">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Star_Destroyer</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Lock_ARC170</Prereq>
+	</Event>
+
+	<Event Name="The_New_Order_Spawn_ISD_2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Star_Destroyer</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>The_New_Order_Spawn_ISD_1</Prereq>
+	</Event>
+
+	<Event Name="The_New_Order_Spawn_ISD_3">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Star_Destroyer</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>The_New_Order_Spawn_ISD_2</Prereq>
+	</Event>
+
+</Story> 

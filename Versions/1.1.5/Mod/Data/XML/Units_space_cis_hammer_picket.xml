@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<Hammer_Class_Picket>
+
+	<SpaceUnit Name="Hammer_Class_Picket">
+		<Text_ID>TEXT_UNIT_CIS_PICKET</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_CIS_PICKET</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PICKET</Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against> V19_Fighter NTB630 Arc_170  </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Carrack Rep_Acclamator_Assault_Ship Rep_Centax_Heavy_Frigate </Encyclopedia_Vulnerable_To>
+		<GUI_Row> 1 </GUI_Row>
+		<Space_Model_Name>SEV_PICKET.ALO</Space_Model_Name>
+		<GUI_Model_Name>SEV_PICKET.ALO</GUI_Model_Name>
+		<Select_Box_Scale>75</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Mass>0.995</Mass>
+		<Scale_Factor>2.4</Scale_Factor>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<No_Colorization_Color> 237,78,78 </No_Colorization_Color>
+
+		<Ranking_In_Category>7</Ranking_In_Category>
+		<Max_Speed>2.45</Max_Speed> <!-- Was 3.25 -->
+		<Max_Rate_Of_Turn>1.25</Max_Rate_Of_Turn> <!-- was 1.50 -->
+		<MovementClass> Space </MovementClass>
+		<Space_Layer> Corvette </Space_Layer>
+		<Layer_Z_Adjust>-40.0</Layer_Z_Adjust>
+		<Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<OverrideAcceleration> .05 </OverrideAcceleration>
+		<OverrideDeceleration> .05 </OverrideDeceleration>
+
+		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
+		<Armor_Type> Armor_Corellian_Corvette </Armor_Type>
+		<Shield_Armor_Type>Shield_Corvette</Shield_Armor_Type>
+		<Max_Thrust>0.5</Max_Thrust>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		<Maintenance_Cost>0.05</Maintenance_Cost>
+		<Min_Speed>2.0</Min_Speed>
+		<Max_Lift>0.0</Max_Lift>
+
+
+		<Space_FOW_Reveal_Range>1200.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+
+		<Affiliation>Rebel</Affiliation>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Damage>20</Damage>
+		<Shield_Points>600</Shield_Points>
+		<Tactical_Health>750</Tactical_Health>
+		<Shield_Refresh_Rate>15</Shield_Refresh_Rate>
+		<Energy_Capacity>4500</Energy_Capacity>
+		<Energy_Refresh_Rate>300</Energy_Refresh_Rate>
+		<Ship_Class>corvette</Ship_Class>
+		<FormationPriority>3</FormationPriority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Political_Control>0</Political_Control>
+		<Squadron_Capacity>0</Squadron_Capacity>
+		<Transport_Capacity>4</Transport_Capacity>
+		<Number_per_Squadron>1</Number_per_Squadron>
+		<Build_Cost_Credits>1250</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Slice_Cost_Credits>675</Slice_Cost_Credits>
+		<AI_Combat_Power>1500</AI_Combat_Power>
+		<Build_Time_Seconds>15</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Size_Value>120</Size_Value>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+		<SpaceBehavior> ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, SELECTABLE, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
+
+		<Space_FOW_Reveal_Range>1000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>800.0</Targeting_Max_Attack_Distance>
+		<CategoryMask> Corvette | AntiFighter | AntiBomber </CategoryMask>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<HardPoints> 
+			HP_Picket_01, HP_Picket_02, HP_Picket_03, HP_Picket_04, HP_Picket_05, HP_Picket_06, HP_Picket_07, HP_Picket_08
+		</HardPoints>
+
+		<Icon_Name>I_BUTTON_PICKET.tga</Icon_Name>
+		<GUI_Distance>600</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<SFXEvent_Fire>Unit_Corvette_Fire</SFXEvent_Fire>
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_Battle_Droid</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Corvette_Moving_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Select>Unit_Select_CIS_Unit</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Recusant</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Battle_Droid</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Recusant</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Recusant</SFXEvent_Guard>
+		<SFXEvent_Stop>Unit_Stop_Recusant</SFXEvent_Stop>
+		<SFXEvent_Barrage>Unit_Barrage_Recusant</SFXEvent_Barrage>
+		<SFXEvent_Move_Into_Nebula> Unit_Nebula_Recusant </SFXEvent_Move_Into_Nebula>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Recusant </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Recusant </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Recusant </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Recusant </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Recusant </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Recusant </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Engine_Idle_Loop> Unit_Corvette_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Corvette_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Corvette_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<MovementClass> Space </MovementClass>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>400.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>400.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>Corvette</Targeting_Priority_Set>
+		<Autonomous_Move_Extension_Vs_Attacker>300.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Tactical_Bribe_Cost>625</Tactical_Bribe_Cost>
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>TURBO</Type>
+
+				<Expiration_Seconds>20</Expiration_Seconds>
+				<Recharge_Seconds>50</Recharge_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	0.0f</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		2.0f</Mod_Multiplier>
+
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Move_Recusant</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+
+		<Score_Cost_Credits> 1250</Score_Cost_Credits>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1600</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		<Population_Value>1</Population_Value>
+	</SpaceUnit>
+
+
+
+
+
+</Hammer_Class_Picket>

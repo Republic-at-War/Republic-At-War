@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Multi_Troop_Transport_Data>
+  <GroundVehicle Name="Multi_Troop_Transport">
+    <Text_ID>TEXT_UNIT_MTT</Text_ID>
+    <Encyclopedia_Good_Against> Barc_Speeder Clone_Trooper_P1 AT_RT_Walker  </Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To> AT-TE_Walker LAAT AV_7_Antivehicle_Cannon </Encyclopedia_Vulnerable_To>
+    <Encyclopedia_Text>TEXT_TOOLTIP_TEXT_UNIT_MTT</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+    <Icon_Name> i_button_mtt.tga </Icon_Name>
+    <Land_Model_Name>SEV_MTT.ALO</Land_Model_Name>
+    <Select_Box_Scale>200</Select_Box_Scale>
+    <Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+    <GUI_Bracket_Size>2</GUI_Bracket_Size>
+    <Scale_Factor>1.0</Scale_Factor>
+    <Mass>1.0</Mass>
+    <Size_Value>150</Size_Value>
+    <Max_Speed>1.1</Max_Speed>
+    <Movement_Animation_Speed>1.0 </Movement_Animation_Speed>
+    <Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+    <Stopped_Rate_Of_Turn>1</Stopped_Rate_Of_Turn>
+    <Behavior> SELECTABLE </Behavior>
+    <LandBehavior>
+		ABILITY_COUNTDOWN, 
+		AFFECTED_BY_SHIELD, 
+		WALK_LOCOMOTOR, 
+		IDLE, 
+		TARGETING, 
+		WEAPON, 
+		DEPLOY_TROOPERS, 
+		POWERED, 
+		SQUASH, 
+		REVEAL, 
+		HIDE_WHEN_FOGGED, 
+		UNIT_AI, 
+		STUNNABLE, 
+		WIND_DISTURBANCE, 
+		SURFACE_FX, 
+		DAMAGE_TRACKING
+		</LandBehavior>
+    <Has_Land_Evaluator>True</Has_Land_Evaluator>
+    <Is_Affected_By_Gravity_Control_Field> Yes </Is_Affected_By_Gravity_Control_Field>
+    <Is_Supercrusher>Yes</Is_Supercrusher>
+    <SurfaceFX_Name>Hover</SurfaceFX_Name>
+    <Wind_Disturbance_Radius>300</Wind_Disturbance_Radius>
+    <Wind_Disturbance_Strength>10</Wind_Disturbance_Strength>
+    <Wind_Disturbance_Sphere_Alpha>0.4</Wind_Disturbance_Sphere_Alpha>
+    <Affiliation>Rebel</Affiliation>
+    <Armor_Type> Armor_ATAT </Armor_Type>
+    <Tactical_Health>850</Tactical_Health>
+    <Shield_Points>0</Shield_Points>
+    <Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+    <Energy_Capacity>9999</Energy_Capacity>
+    <Energy_Refresh_Rate>9999</Energy_Refresh_Rate>
+    <AI_Combat_Power>500</AI_Combat_Power>
+    <Damage>100</Damage>
+    <Deploys>Yes</Deploys>
+    <Auto_Deploys>No</Auto_Deploys>
+    <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+    <Land_FOW_Reveal_Range>550.0</Land_FOW_Reveal_Range>
+    <Targeting_Max_Attack_Distance>350.0</Targeting_Max_Attack_Distance>
+    <Ranged_Target_Z_Adjust>6.0</Ranged_Target_Z_Adjust>
+    <Death_Explosions>Large_Explosion_Land</Death_Explosions>
+    <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+    <Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+    <Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+    <Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+    <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+    <SFXEvent_Fire>Unit_AT_ST_Fire</SFXEvent_Fire>
+    <SFXEvent_Select>Unit_Select_Battle_Droid</SFXEvent_Select>
+    <SFXEvent_Move>Unit_Move_Battle_Droid</SFXEvent_Move>
+    <SFXEvent_Fleet_Move>Unit_Fleet_Move_Battle_Droid</SFXEvent_Fleet_Move>
+    <SFXEvent_Attack>Unit_Attack_Battle_Droid</SFXEvent_Attack>
+    <SFXEvent_Guard>Unit_Guard_Battle_Droid</SFXEvent_Guard>
+    <SFXEvent_Engine_Idle_Loop> Unit_Gargantuan_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+    <SFXEvent_Engine_Moving_Loop> Unit_Gargantuan_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+    <SFXEvent_Assist_Move> Unit_Assist_Move_Battle_Droid </SFXEvent_Assist_Move>
+    <SFXEvent_Assist_Attack> Unit_Assist_Attack_Battle_Droid</SFXEvent_Assist_Attack>
+    <SFXEvent_Unit_Lost> UHD_Unit_Destroyed </SFXEvent_Unit_Lost>
+    <SFXEvent_Tactical_Build_Started> UHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
+    <SFXEvent_Tactical_Build_Complete> UHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
+    <SFXEvent_Tactical_Build_Cancelled> UHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+    <Death_SFXEvent_Start_Die>Unit_Tank_Death_SFX</Death_SFXEvent_Start_Die>
+    <Overall_Length>60.0</Overall_Length>
+    <Overall_Width>0.0</Overall_Width>
+    <CategoryMask> Vehicle </CategoryMask>
+    <MovementClass>LargeHover</MovementClass>
+    <OccupationStyle>1x1</OccupationStyle>
+    <Victory_Relevant>yes</Victory_Relevant>
+    <No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+    <No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+    <Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+    <Blob_Shadow_Scale>75.0, 50.0</Blob_Shadow_Scale>
+    <Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+    <Weather_Category>LargeWalker</Weather_Category>
+    <Ranking_In_Category>3</Ranking_In_Category>
+    <Space_Layer> Land </Space_Layer>
+    <UnitCollisionClass> Giant Vehicle </UnitCollisionClass>
+    <!-- These extents have to be huge because of the scale factor-->
+    <Custom_Hard_XExtent> 100.0 </Custom_Hard_XExtent>
+    <Custom_Hard_YExtent> 50.0 </Custom_Hard_YExtent>
+    <FormationGrouping> Solo </FormationGrouping>
+    <MinimumPushReturnDistance> 100 </MinimumPushReturnDistance>
+    <Projectile_Types>Proj_ATST_Blaster_Cannon_Red</Projectile_Types>
+    <Projectile_Fire_Pulse_Count>4</Projectile_Fire_Pulse_Count>
+    <Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+    <Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+    <Targeting_Fire_Inaccuracy> Infantry, 15.0 </Targeting_Fire_Inaccuracy>
+    <Targeting_Fire_Inaccuracy> Vehicle, 1.0 </Targeting_Fire_Inaccuracy>
+    <Targeting_Fire_Inaccuracy> Air, 5.0 </Targeting_Fire_Inaccuracy>
+    <Targeting_Fire_Inaccuracy> Structure, 5.0 </Targeting_Fire_Inaccuracy>
+    <Idle_Chase_Range>0.0</Idle_Chase_Range>
+    <Guard_Chase_Range>200.0</Guard_Chase_Range>
+    <Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+    <Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+    <Targeting_Priority_Set>Anti_All_Attack_Priority</Targeting_Priority_Set>
+    <Score_Cost_Credits>500</Score_Cost_Credits>
+    <Population_Value>3</Population_Value>
+    <Influences_Capture_Point> False </Influences_Capture_Point>
+    <Base_Shield_Penetration_Particle>Shield_Penetration_Effect_Particle</Base_Shield_Penetration_Particle>
+    <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+    <Death_Clone>Damage_Normal, Multi_Troop_Transport_Death_Clone</Death_Clone>
+    <Remove_Upon_Death>true</Remove_Upon_Death>
+    <Unit_Abilities_Data SubObjectList="Yes">
+      <!-- IMPORTANT! If you modify the ability below, please make same adjustments to unit's "Captured" clone. -->
+      <!-- I know this is awkward, hopefully we'll get a chance to re-write the code to fix it.   -Oksana -->
+      <Unit_Ability>
+        <Type>DEPLOY_TROOPERS</Type>
+        <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_DEPLOY_DROIDS_NAME</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_TOOLTIP_DEPLOY MTT_DESCRIPTION</Alternate_Description_Text>
+        <Alternate_Icon_Name>I_SA_DEPLOY_BATTLEDROIDS.tga</Alternate_Icon_Name>
+        <Recharge_Seconds>6</Recharge_Seconds>
+        <Spawned_Object_Type>Cis_Deployed_Battle_Droid_Squad</Spawned_Object_Type>
+        <Max_Num_Spawned_Objects>6</Max_Num_Spawned_Objects>
+        <Owner_Attachment_Bone> B_Trooper_00,B_Trooper_01, B_Trooper_02, B_Trooper_03, B_Trooper_04, B_Trooper_05, B_Trooper_06, B_Trooper_07, B_Trooper_08, B_Trooper_09, B_Trooper_10, B_Trooper_11, B_Trooper_12, B_Trooper_13, B_Trooper_14, B_Trooper_15  </Owner_Attachment_Bone>
+        <SFXEvent_GUI_Unit_Ability_Activated>Unit_Select_Battle_Droid</SFXEvent_GUI_Unit_Ability_Activated>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+    <Abilities SubObjectList="Yes">
+      <Force_Healing_Ability Name="CL_Onboard_Repair_Unit_L1_Bonus">
+        <Initially_Enabled>No</Initially_Enabled>
+        <Activation_Style>Ground_Automatic</Activation_Style>
+        <Heal_Range>0.0</Heal_Range>
+        <Heal_Percent>0.025</Heal_Percent>
+        <Heal_Amount>0.0</Heal_Amount>
+        <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+        <Single_Target_Heal>Yes</Single_Target_Heal>
+        <Applicable_Unit_Categories />
+        <Applicable_Unit_Types />
+        <SFXEvent_Target_Affected />
+        <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+        <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+        <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+        <Owner_Light_Effect_Color2 />
+        <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+        <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+      </Force_Healing_Ability>
+      <Force_Healing_Ability Name="CL_Onboard_Repair_Unit_L2_Bonus">
+        <Initially_Enabled>No</Initially_Enabled>
+        <Activation_Style>Ground_Automatic</Activation_Style>
+        <Heal_Range>0.0</Heal_Range>
+        <Heal_Percent>0.025</Heal_Percent>
+        <Heal_Amount>0.0</Heal_Amount>
+        <Heal_Interval_In_Secs>3.0</Heal_Interval_In_Secs>
+        <Single_Target_Heal>Yes</Single_Target_Heal>
+        <Applicable_Unit_Categories />
+        <Applicable_Unit_Types />
+        <SFXEvent_Target_Affected />
+        <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+        <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+        <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+        <Owner_Light_Effect_Color2 />
+        <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+        <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+      </Force_Healing_Ability>
+    </Abilities>
+  </GroundVehicle>
+  <GroundCompany Name="Multi_Troop_Transport_Company">
+    <Text_ID>TEXT_UNIT_MTT</Text_ID>
+    <Encyclopedia_Good_Against> Barc_Speeder Clone_Trooper_P1 AT_RT_Walker  </Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To> AT-TE_Walker LAAT AV_7_Antivehicle_Cannon </Encyclopedia_Vulnerable_To>
+    <Encyclopedia_Text>TEXT_TOOLTIP_TEXT_UNIT_MTT</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+    <Icon_Name> i_button_mtt.tga </Icon_Name>
+    <GUI_Row> 0 </GUI_Row>
+    <Is_Dummy>Yes</Is_Dummy>
+    <Damage>100</Damage>
+    <Autoresolve_Health>450</Autoresolve_Health>
+    <Affiliation>Rebel</Affiliation>
+    <Build_Cost_Credits>1600</Build_Cost_Credits>
+    <Build_Time_Seconds>25</Build_Time_Seconds>
+    <Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+    <Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+    <Tech_Level>3</Tech_Level>
+    <Required_Timeline>0</Required_Timeline>
+    <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>0</Required_Star_Base_Level>
+    <Required_Special_Structures>R_Ground_Heavy_Vehicle_Factory</Required_Special_Structures>
+    <!--<Required_Planets>Geonosis, Mechis, Hypori</Required_Planets>-->
+    <Behavior>DUMMY_GROUND_COMPANY</Behavior>
+    <Formation_Priority>2</Formation_Priority>
+    <Is_Escort>yes</Is_Escort>
+    <Ship_Class>walker</Ship_Class>
+    <Company_Transport_Unit>C9979_Landing_Craft</Company_Transport_Unit>
+    <Company_Units>Multi_Troop_Transport</Company_Units>
+    <Max_Squad_Size> 1 </Max_Squad_Size>
+    <Score_Cost_Credits>180</Score_Cost_Credits>
+    <Population_Value>1</Population_Value>
+    <Maintenance_Cost>0.05</Maintenance_Cost>
+    <Cheap_Bribe_Cost>45</Cheap_Bribe_Cost>
+    <Expensive_Bribe_Cost>90</Expensive_Bribe_Cost>
+    <SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+    <SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+    <SFXEvent_Build_Complete>Unit_Select_Battle_Droid</SFXEvent_Build_Complete>
+    <SFXEvent_Fleet_Move>Unit_Fleet_Move_Battle_Droid</SFXEvent_Fleet_Move>
+    <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+    <Tactical_Build_Cost_Multiplayer>2800</Tactical_Build_Cost_Multiplayer>
+    <!--1800-->
+    <Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+    <!--20-->
+    <Tactical_Build_Prerequisites>RC_Level_Four_Tech_Upgrade</Tactical_Build_Prerequisites>
+    <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+    <!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+    <!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+    <!--<MULTIPLAYER SKIRMISH VALUES END>-->
+    <Unit_Abilities_Data SubObjectList="Yes">
+      <!-- IMPORTANT! If you modify the ability below, please make same adjustments to unit's "Captured" clone. -->
+      <!-- I know this is awkward, hopefully we'll get a chance to re-write the code to fix it.   -Oksana -->
+      <Unit_Ability>
+        <Type>DEPLOY_TROOPERS</Type>
+        <Alternate_Description_Text>TEXT_TOOLTIP_DEPLOY MTT_DESCRIPTION</Alternate_Description_Text>
+        <Recharge_Seconds>6</Recharge_Seconds>
+        <Spawned_Object_Type>Cis_Deployed_Battle_Droid_Squad</Spawned_Object_Type>
+        <Max_Num_Spawned_Objects>6</Max_Num_Spawned_Objects>
+        <Owner_Attachment_Bone> B_Trooper_00,B_Trooper_01, B_Trooper_02, B_Trooper_03, B_Trooper_04, B_Trooper_05, B_Trooper_06, B_Trooper_07, B_Trooper_08, B_Trooper_09, B_Trooper_10, B_Trooper_11, B_Trooper_12, B_Trooper_13, B_Trooper_14, B_Trooper_15  </Owner_Attachment_Bone>
+        <SFXEvent_GUI_Unit_Ability_Activated>Unit_Select_Battle_Droid</SFXEvent_GUI_Unit_Ability_Activated>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+  </GroundCompany>
+  <GroundVehicle Name="Multi_Troop_Transport_Death_Clone">
+    <Variant_Of_Existing_Type>Multi_Troop_Transport</Variant_Of_Existing_Type>
+    <Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
+    <LandBehavior>HIDE_WHEN_FOGGED</LandBehavior>
+    <Custom_Hard_XExtent>120.0</Custom_Hard_XExtent>
+    <Custom_Hard_XExtent_Offset>-9.0</Custom_Hard_XExtent_Offset>
+    <Death_Persistence_Duration>10</Death_Persistence_Duration>
+    <Death_Explosions_End>Large_Explosion_Land</Death_Explosions_End>
+    <Death_SFXEvent_End_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_End_Die>
+    <IsDeathCloneObstacle>true</IsDeathCloneObstacle>
+    <IsDeathClone>true</IsDeathClone>
+  </GroundVehicle>
+</Multi_Troop_Transport_Data>

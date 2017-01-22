@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<Wookiee_Warriors_Data>
+
+
+
+	
+	<GroundInfantry Name="Wookiee_Warrior">
+		<LOD_Bias>5</LOD_Bias>
+		<Text_ID>TEXT_INDIG_WOOKIE</Text_ID>
+		<Encyclopedia_Good_Against> Battledroids Super_Battledroids </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Heavy_Artillery_Gun Hailfire_Tank Rebel_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INFANTRY </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_WOOKIE_WARRIOR TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Land_Model_Name>RI_Wookiee01.alo</Land_Model_Name>
+		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>SURFACE_FX,LAND_TEAM_INFANTRY_LOCOMOTOR, IDLE,WEAPON,REVEAL,HIDE_WHEN_FOGGED</LandBehavior>
+		<SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<CanCellStack>yes</CanCellStack>
+		<Select_Box_Scale>0</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<Mass>1.0</Mass>
+		<GUI_Bracket_Width>5</GUI_Bracket_Width>
+		<GUI_Bracket_Height>0</GUI_Bracket_Height>
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+		<Icon_Name>i_button_generic_wookie.tga</Icon_Name>
+
+		<Influences_Capture_Point>True</Influences_Capture_Point>
+
+		<Movement_Animation_Speed> 1 </Movement_Animation_Speed>
+		<Walk_Animation_Speed> .43 </Walk_Animation_Speed>
+		<Max_Speed>1</Max_Speed>
+		<Max_Rate_Of_Turn>10.0</Max_Rate_Of_Turn>
+		<Custom_Soft_Footprint_Radius> 3.5 </Custom_Soft_Footprint_Radius>
+		<Custom_Hard_XExtent> 3.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 3.0 </Custom_Hard_YExtent>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing>
+		<MinimumPushReturnDistance> 10 </MinimumPushReturnDistance>
+		<Min_Speed> .1 </Min_Speed>
+		<OverrideAcceleration> .1 </OverrideAcceleration>
+		<OverrideDeceleration> .1 </OverrideDeceleration>
+		<FormationOrder> 2 </FormationOrder>
+		<FormationGrouping> Standard </FormationGrouping>
+		
+		<Scale_Factor>1.5</Scale_Factor>
+		<Affiliation>Empire</Affiliation>
+		<Required_Timeline>0</Required_Timeline>
+		<IsBuildable>No</IsBuildable>
+		<Size_Value>10</Size_Value>
+		<Armor_Type> Armor_Infantry </Armor_Type>
+		<Damage>8</Damage>
+		<Tactical_Health>200</Tactical_Health> <!-- From 70 -->
+		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>10.0, 10.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+		
+		<Projectile_Types>Proj_Wookiee_Bowcaster</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>0.6</Projectile_Fire_Recharge_Seconds> <!-- From 1.5 -->
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+
+		<Targeting_Fire_Inaccuracy> Infantry, 2.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 8.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 8.0 </Targeting_Fire_Inaccuracy>
+		
+		<Land_FOW_Reveal_Range>130.0</Land_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+
+		<SFXEvent_Select>Unit_Select_Wookie</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Wookie</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_Wookie</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Wookie</SFXEvent_Guard>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_Wookie </SFXEvent_Assist_Move>		
+		<SFXEvent_Assist_Attack> Unit_Attack_Wookie </SFXEvent_Assist_Attack>
+
+		<Death_SFXEvent_Start_Die>Unit_Wookie_Death</Death_SFXEvent_Start_Die>
+		<SFXEvent_Fire>Unit_Chewie_Blaster_Fire</SFXEvent_Fire>
+
+		<SFXEvent_Ambient_Moving> Ambient_Wookie_Random_Chatter </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 10 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+
+		<Death_Clone>Damage_Disruptor_Hand, Infantry_Tall_Disruptor_Death_Clone_00</Death_Clone>
+		<Death_Clone>Damage_Disruptor_Hand, Infantry_Tall_Disruptor_Death_Clone_01</Death_Clone>
+		<Death_Clone>Damage_Infection, Infantry_Tall_Melt_Death_Clone_00</Death_Clone>
+
+		<MovementClass>Infantry</MovementClass>
+		<CategoryMask> Infantry </CategoryMask>
+		<Victory_Relevant>no</Victory_Relevant>
+		<Weather_Category>Infantry</Weather_Category>
+		
+		<OccupationStyle>1x1</OccupationStyle>
+		<Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+		<Is_Squashable> No </Is_Squashable>
+
+		<Death_Fade_Time>0.25</Death_Fade_Time>
+		<Death_Persistence_Duration>0.0</Death_Persistence_Duration>
+		<Create_Team>True</Create_Team>
+		<Create_Team_Type>Wookie_Team</Create_Team_Type>
+		
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+		<AI_Combat_Power>7</AI_Combat_Power>
+		
+		<Movie_Object>false</Movie_Object>
+		
+		
+	</GroundInfantry>
+  
+  
+	<GroundCompany Name="Wookiee_Warrior_Company">
+		<Encyclopedia_Good_Against> Battledroids Super_Battledroids </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Heavy_Artillery_Gun Hailfire_Tank Rebel_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<Text_ID>TEXT_INDIGENOUS_WOOKIE_PARTY</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_TOOLTIP_WOOKIE_WARRIOR TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INFANTRY </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_generic_wookie.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>18</Damage>
+		<Autoresolve_Health>100</Autoresolve_Health>
+		<Affiliation>Empire</Affiliation>
+		
+		<Build_Cost_Credits>250</Build_Cost_Credits>
+		<Build_Time_Seconds>12</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>3</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>E_Ground_Barracks</Required_Special_Structures>
+		<Required_Planets>Kashyyyk</Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Ship_Class>infantry</Ship_Class>
+		<Company_Transport_Unit>Republic_Nu_Shuttle</Company_Transport_Unit>
+		<Company_Units>Wookiee_Warrior, Wookiee_Warrior, Wookiee_Warrior, Wookiee_Warrior, Wookiee_Warrior, Wookiee_Warrior, Wookiee_Warrior, Wookiee_Warrior, Wookiee_Warrior</Company_Units>
+		<Max_Squad_Size> 3 </Max_Squad_Size>
+		<Create_Team_Type>Wookie_Warrior_Container</Create_Team_Type>
+		<Score_Cost_Credits>20</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+	
+	</GroundCompany>
+	
+	<GroundCompany Name="Wookiee_Warrior_Company_Skirmish">
+		<Text_ID>TEXT_INDIGENOUS_WOOKIE_PARTY</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_TOOLTIP_WOOKIE_WARRIOR TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INFANTRY </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_generic_wookie.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>72</Damage>
+		<Autoresolve_Health>30</Autoresolve_Health>
+		<Affiliation>Empire</Affiliation>
+		
+		<Build_Cost_Credits>250</Build_Cost_Credits>
+		<Build_Time_Seconds>12</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>3</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>Skirmish_Ground_Republic_Merc_Hq</Required_Special_Structures>
+		<Required_Planets />
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Ship_Class>infantry</Ship_Class>
+		<Company_Transport_Unit>Republic_Nu_Shuttle</Company_Transport_Unit>
+		<Company_Units>Wookiee_Warrior, Wookiee_Warrior, Wookiee_Warrior, Wookiee_Warrior, Wookiee_Warrior, Wookiee_Warrior, Wookiee_Warrior, Wookiee_Warrior, Wookiee_Warrior</Company_Units>
+		<Max_Squad_Size> 3 </Max_Squad_Size>
+		<Create_Team_Type>Wookie_Warrior_Container</Create_Team_Type>
+		<Score_Cost_Credits>20</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+	
+	<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>250</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>8</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>--> 
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+	
+	</GroundCompany>
+
+		
+
+ <Container Name="Wookie_Warrior_Container">
+		<Text_ID>TEXT_INDIGENOUS_WOOKIE_PARTY</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INFANTRY </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_TOOLTIP_WOOKIE_WARRIOR TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>i_button_generic_wookie.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>65</Select_Box_Scale>
+
+		<Max_Speed> 1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.0</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+	</Container>
+
+
+  
+	
+		
+
+ 
+
+
+
+</Wookiee_Warriors_Data>
+
+ 

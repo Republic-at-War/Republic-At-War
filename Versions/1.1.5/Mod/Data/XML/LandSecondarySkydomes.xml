@@ -1,0 +1,147 @@
+<?xml version="1.0" ?>
+<LandSecondarySkydomes>
+
+<!-- These 4 skys are now obsolite and should not be used   G.C. -->
+	
+	<LandSecondarySkydome Name="Day_Blue_Horizon_Sky">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_skyorange_horizon_evening.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+       <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</LandSecondarySkydome>
+
+	<LandSecondarySkydome Name="Day_Desert_Horizon_Sky">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_skyorange_horizon_evening.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+       <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</LandSecondarySkydome>
+
+	<LandSecondarySkydome Name="Evening_Blue_Horizon_Sky">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_skyorange_horizon_evening.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+       <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</LandSecondarySkydome>
+
+	<LandSecondarySkydome Name="Evening_Desert_Horizon_Sky">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_skyorange_horizon_evening.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+       <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</LandSecondarySkydome>
+
+
+
+
+<!-- Below sky props are good to use   G.C. -->
+
+	<LandSecondarySkydome Name="Urban_Traffic00">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_sky_urban_traffic00.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+       <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</LandSecondarySkydome>
+
+
+	<LandSecondarySkydome Name="Planet_Rings00">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_sky_rings00.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+       <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</LandSecondarySkydome>
+
+<LandSecondarySkydome Name="Planet_Rings00_Giant">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_sky_rings00.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+       <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>3.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</LandSecondarySkydome>
+
+	<LandSecondarySkydome Name="Planet_Rings_larger00">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_sky_rings01.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+       <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</LandSecondarySkydome>
+	
+		<LandSecondarySkydome Name="Planet_Rings_larger00_giant">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_sky_rings01.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+       <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>3.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</LandSecondarySkydome>
+	
+</LandSecondarySkydomes>	

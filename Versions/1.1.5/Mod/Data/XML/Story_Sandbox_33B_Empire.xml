@@ -1,0 +1,159 @@
+<?xml version="1.0" ?>
+
+
+
+<!--******************************************-->
+<!--******	Campaign: Clusters (Empire)	******-->
+<!--******************************************-->
+
+
+
+<Story>
+
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Story_Dialog>Dialog_Raw_GC_Solo</Story_Dialog>
+		<Story_Chapter>17</Story_Chapter>
+		<Story_Tag>Intro_Tag</Story_Tag>
+	</Event>
+	
+	<Event Name="Story_Space_Coruscant_Attack">
+		<Event_Type>STORY_SPACE_TACTICAL</Event_Type>
+		<Event_Param1>Story_Plots_Coruscant_Clusters.xml</Event_Param1>
+		<Event_Param2>Coruscant</Event_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<!-- Empire Hero Release -->
+
+
+	<!-- Spawn Starting Heroes -->
+
+	<Event Name="Empire_AI_Unlock_Research_Facility">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>E_Ground_Research_Facility</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+
+	<Event Name="Empire_AI_Heroes_02">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Chancellor_Palpatine_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+
+
+
+	<!-- Spawn Tech Level 1 Heroes -->
+
+	<Event Name="Empire_Enters_Tech_01">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>1</Event_Param1>
+	</Event>
+
+	<Event Name="Spawn_Yoda">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Yoda_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Empire_Enters_Tech_01</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Mace_Windu">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Mace_Windu_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Empire_Enters_Tech_01</Prereq>
+	</Event>
+
+
+
+
+	<!-- Spawn Time Era 2 Heroes -->
+
+	<Event Name="Empire_Enters_Tech_02">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+
+	<Event Name="Spawn_Anakin">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Anakin_Skywalker_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Empire_Enters_Tech_02</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Obiwan">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Obiwan_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Empire_Enters_Tech_02</Prereq>
+	</Event>
+
+
+
+
+	<!-- Spawn Time Era 3 Heroes -->
+
+	<Event Name="Empire_Enters_Tech_03">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>3</Event_Param1>
+	</Event>
+
+	<Event Name="Spawn_Deltasquad">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Deltasquad_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Empire_Enters_Tech_03</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Plo_Koon">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Plokoon_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Empire_Enters_Tech_03</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Admiral_Yularen">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Admiral_Yularen</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Empire_Enters_Tech_03</Prereq>
+	</Event>
+
+
+	<!-- Spawn Time Era 4 Heroes -->
+
+	<Event Name="Empire_Enters_Tech_04">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>4</Event_Param1>
+	</Event>
+
+	<Event Name="Lock_V19">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>V19_Squadron</Reward_Param1>
+		<Prereq>Empire_Enters_Tech_04</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Commander_Cody">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Commander_Cody_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Empire_Enters_Tech_04</Prereq>
+	</Event>
+
+</Story>

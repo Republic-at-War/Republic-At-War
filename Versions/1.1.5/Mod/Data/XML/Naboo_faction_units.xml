@@ -1,0 +1,582 @@
+<?xml version="1.0"?>
+<Naboo_Faction_Units>
+
+
+
+	<!-- NABOO FACTION SPACE UNITS -->
+
+
+	<SpaceUnit Name="Naboo_Fighter">
+
+		<Text_ID>TEXT_UNIT_N1_FIGHTER</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FIGHTER </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_N1_FIGHTER</Encyclopedia_Text>
+		<Encyclopedia_Good_Against> TIE_Fighter Skipray_Blastboat TIE_Bomber </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Tartan_Patrol_Cruiser Crusader_Gunship</Encyclopedia_Vulnerable_To>
+		<Icon_Name>I_BUTTON_N1_FIGHTER.tga</Icon_Name>
+		<Space_Model_Name>IA2_NabooFighter.ALO</Space_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+		<Select_Box_Scale>70</Select_Box_Scale>
+		<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
+		<Mouse_Collide_Override_Sphere_Radius> 50.0 </Mouse_Collide_Override_Sphere_Radius>
+        <Damage_Type>Damage_Fighter</Damage_Type>
+		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Mass>0.98</Mass>
+		<Max_Speed>5.0</Max_Speed>
+		<Min_Speed>4.5</Min_Speed>
+		<Max_Rate_Of_Turn>6.0</Max_Rate_Of_Turn>
+		<Max_Thrust>1.0</Max_Thrust>
+		<Max_Rate_Of_Roll>6.0</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>60</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>800.0</Begin_Turn_Towards_Distance>
+		<Fires_Forward>no</Fires_Forward>
+		<Turret_Rotate_Extent_Degrees>20</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>40</Turret_Elevate_Extent_Degrees>
+		<Max_Lift>4</Max_Lift>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		<Maintenance_Cost>0.1</Maintenance_Cost>
+		<Affiliation>Naboo</Affiliation>
+		<Shield_Points>40</Shield_Points>
+		<Tactical_Health>60</Tactical_Health>
+		<Shield_Refresh_Rate>3</Shield_Refresh_Rate>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>300</Energy_Refresh_Rate>
+		<Ship_Class>fighter</Ship_Class>
+		<Armor_Type> Armor_Fighter </Armor_Type>
+    <Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Political_Control>0</Political_Control>
+		<Squadron_Capacity>0</Squadron_Capacity>
+		<Number_per_Squadron>5</Number_per_Squadron>
+		<Size_Value>8</Size_Value>
+		<SpaceBehavior>FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING </SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Damage>8</Damage>
+							
+    <Projectile_Types>Proj_Ship_Small_Laser_Cannon_Green</Projectile_Types>
+		<Projectile_Fire_Pulse_Count>2</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+		<Land_FOW_Reveal_Range>130.0</Land_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range>500.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>450.0</Targeting_Max_Attack_Distance>
+		<Death_Explosions>Small_Explosion_Space</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_X_Wing_Death_SFX</Death_SFXEvent_Start_Die>
+		<Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
+
+		<SFXEvent_Fire>Unit_X_Wing_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_X_Wing</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_X_Wing</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_X_Wing</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_X_Wing</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_X_Wing</SFXEvent_Guard>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_X_Wing </SFXEvent_Assist_Move>		
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_X_Wing </SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Asteroid_Field> Unit_Asteroids_X_Wing </SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Move_Into_Nebula> Unit_Nebula_X_Wing </SFXEvent_Move_Into_Nebula>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_GRAV_X_Wing </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_X_Wing </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_X_Wing </SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning> Unit_Enemy_Health_Low_X_Wing </SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning> Unit_Enemy_Health_Critical_X_Wing </SFXEvent_Enemy_Damaged_Health_Critical_Warning>		
+		<SFXEvent_Ambient_Moving> Unit_X_Wing_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 10 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_X_Wing_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<CategoryMask> Fighter | AntiBomber</CategoryMask>
+		<Property_Flags> SmallShip </Property_Flags>
+		
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<Custom_Footprint_Radius> 7.0 </Custom_Footprint_Radius>
+		<MovementClass> Space </MovementClass>
+		<FormationOrder>2</FormationOrder>
+		<Out_Of_Combat_Defense_Adjustment>-1.0</Out_Of_Combat_Defense_Adjustment>
+		<Minimum_Follow_Distance>25.0</Minimum_Follow_Distance>
+		<Create_Team>Yes</Create_Team>
+		<AI_Combat_Power>60</AI_Combat_Power>
+		<Collision_Box_Modifier>2.0</Collision_Box_Modifier>
+		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		
+			
+		
+		
+		<Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+		<Spin_Away_On_Death_Chance>0.2</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Time>2.0f</Spin_Away_On_Death_Time>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space</Spin_Away_On_Death_Explosion>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_X_Wing_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<Strafe_Distance>500.0</Strafe_Distance>
+		<Population_Value>0</Population_Value>
+	</SpaceUnit>
+
+
+	<Squadron Name="Naboo_Fighter_Squadron">
+		<Text_ID>TEXT_UNIT_N1_FIGHTER</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FIGHTER </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_N1_FIGHTER</Encyclopedia_Text>
+		<Encyclopedia_Good_Against> TIE_Fighter Skipray_Blastboat TIE_Bomber </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Tartan_Patrol_Cruiser Crusader_Gunship</Encyclopedia_Vulnerable_To>
+		<Icon_Name>I_BUTTON_N1_FIGHTER.tga</Icon_Name>
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Autoresolve_Health>400</Autoresolve_Health>
+		<Damage>30</Damage>
+		<Affiliation>Naboo</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>300</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>15</Build_Time_Seconds>
+		<Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline />
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+		<Squadron_Units>Naboo_Fighter, Naboo_Fighter, Naboo_Fighter, Naboo_Fighter</Squadron_Units>
+		<Squadron_Units>Naboo_Fighter, Naboo_Fighter, Naboo_Fighter, Naboo_Fighter</Squadron_Units>
+		<Squadron_Units>Naboo_Fighter, Naboo_Fighter, Naboo_Fighter, Naboo_Fighter</Squadron_Units>
+<Max_Squad_Size>12</Max_Squad_Size>
+<Squadron_Offsets>150.0,0.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>50.0,0.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>100.0,-50.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>100.0,50.0,0.0</Squadron_Offsets>
+
+
+<Squadron_Offsets>0.0,150.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>50.0,100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets> -50.0,100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>0.0,50.0,0.0</Squadron_Offsets>
+
+
+<Squadron_Offsets>0.0,-150.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>-50.0,-100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets> 50.0,-100.0,0.0</Squadron_Offsets>
+<Squadron_Offsets>0.0,-50.0,0.0</Squadron_Offsets>
+		
+		<GUI_Model_Name>IA2_NabooFighter.ALO</GUI_Model_Name>
+		<GUI_Distance>120</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Fighter</SFXEvent_Build_Complete>
+
+		<FormationOrder>1</FormationOrder>
+		<Squadron_Formation_Error_Tolerance>35.0</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>200.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>500.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Property_Flags> SmallShip </Property_Flags>
+		<Score_Cost_Credits> 420</Score_Cost_Credits>
+		
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>300</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		<Population_Value>0</Population_Value>
+	</Squadron>
+
+	
+	
+
+
+
+
+
+
+	<!-- NABOO FACTION LAND UNITS -->
+
+
+
+	<GroundInfantry Name="Naboo_Trooper">
+		<Variant_Of_Existing_Type> Rebel_Trooper </Variant_Of_Existing_Type>
+		<LOD_Bias>5</LOD_Bias>
+		<Text_ID>TEXT_UNIT_NABOO_INFANTRY</Text_ID>
+		<Encyclopedia_Good_Against> Rebel_Trooper Stormtrooper </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> TIE_Crawler Dark_Trooper_PhaseII UC_Rebel_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INFANTRY </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> TEXT_UNIT_NABOO_TROOPER_ENCYC TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+		
+		<Affiliation>Naboo</Affiliation>
+	  <Death_Clone>Damage_Force_Whirlwind, Naboo_Trooper_Force_Whirlwind_Death_Clone</Death_Clone>
+		<Death_Clone>Damage_Force_Lightning, Naboo_Trooper_Force_Lightning_Death_Clone</Death_Clone>
+		<Death_Clone>Damage_Crush, Naboo_Trooper_Crush_Death_Clone</Death_Clone>
+	 <Conversion_Ability_Changes_To_Enemy> Naboo_Trooper_Converted_To_Enemy </Conversion_Ability_Changes_To_Enemy>
+	</GroundInfantry>
+	
+	<GroundInfantry Name="Naboo_Trooper_Converted_To_Enemy">
+		<Variant_Of_Existing_Type> Naboo_Trooper </Variant_Of_Existing_Type>
+		<SFXEvent_Select>Unit_Select_Rebel_Soldier</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Rebel_Soldier</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Rebel_Soldier</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Soldier</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Rebel_Soldier</SFXEvent_Guard>
+		<SFXEvent_Fire>Unit_Rebel_Infantry_Fire</SFXEvent_Fire>
+		<Death_SFXEvent_Start_Die>Unit_Rebel_Soldier_Death</Death_SFXEvent_Start_Die>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Naboo_Trooper_Force_Whirlwind_Death_Clone">
+		<Variant_Of_Existing_Type>Rebel_Trooper</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</GroundInfantry>
+
+	<GroundInfantry Name="Naboo_Trooper_Force_Lightning_Death_Clone">
+		<Variant_Of_Existing_Type>Rebel_Trooper</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FL_DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</GroundInfantry>
+
+	<GroundInfantry Name="Naboo_Trooper_Crush_Death_Clone">
+		<Variant_Of_Existing_Type>Rebel_Trooper</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>Crushed</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</GroundInfantry>
+	
+	<GroundInfantry Name="Naboo_Trooper_Remote_Bomb_Death_Clone">
+		<Variant_Of_Existing_Type>Plex_Soldier</Variant_Of_Existing_Type>
+		<Death_SFXEvent_Start_Die>Unit_Rebel_Soldier_Bomb_Death</Death_SFXEvent_Start_Die>
+	</GroundInfantry>		
+
+	
+	
+	<GroundCompany Name="Naboo_Infantry_Squad">
+		<Variant_Of_Existing_Type>Rebel_Infantry_Squad</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_NABOO_INFANTRY</Text_ID>
+		<Encyclopedia_Good_Against> Rebel_Trooper Stormtrooper </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> TIE_Crawler Dark_Trooper_PhaseII UC_Rebel_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INFANTRY </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> TEXT_UNIT_NABOO_TROOPER_ENCYC TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+		
+		<Affiliation>Naboo</Affiliation>
+		
+		
+		<Company_Units>Naboo_Trooper, Naboo_Trooper, Naboo_Trooper, Naboo_Trooper, Naboo_Trooper, Naboo_Trooper, Naboo_Trooper, Naboo_Trooper, Naboo_Trooper, Naboo_Trooper,</Company_Units>
+		<Max_Squad_Size> 5 </Max_Squad_Size>
+
+		
+	</GroundCompany>
+
+	
+
+
+
+
+	
+
+
+<!-- NABOO STRUCTURES -->
+
+
+
+	<SpecialStructure Name="Naboo_Ground_Barracks">
+		<Variant_Of_Existing_Type>R_Ground_Barracks</Variant_Of_Existing_Type>
+		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
+		<Text_ID>TEXT_GROUND_BARRACKS_NABOO</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BARRACKS_NABOO TEXT_TOOLTIP_GARRISON_R_BARRACKS </Encyclopedia_Text>
+		
+		
+
+		<Destruction_Survivors> 
+			Naboo_Infantry_Squad, 1.0
+		</Destruction_Survivors>
+
+		<Affiliation>Naboo</Affiliation>
+		
+		
+		<Starting_Spawned_Units_Tech_0>Naboo_Infantry_Squad, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Naboo_Infantry_Squad, -1</Reserve_Spawned_Units_Tech_0>
+
+				
+		<Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>		
+			
+
+	</SpecialStructure>
+
+
+
+
+	<SpecialStructure Name="Naboo_Ground_Base_Shield">
+		<Text_ID>TEXT_GROUND_BASE_SHIELD</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BASE_SHIELD_00  </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+		<Land_Model_Name>NB_BASESHIELDGEN.ALO</Land_Model_Name>
+		<GUI_Row> 0 </GUI_Row>
+
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+
+		<Behavior>DUMMY_GROUND_STRUCTURE, SELECTABLE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,BASE_SHIELD,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,TERRAIN_TEXTURE_MODIFICATION,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>	
+		<Radar_Range_Icon_Name>i_radar_shield.tga</Radar_Range_Icon_Name>
+
+		<Obstacle_Proxy_Type> E_Ground_Base_Shield_Build_Pad </Obstacle_Proxy_Type>
+		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>			
+		<Terrain_Texture_Modifier_Join_Distance>1.0</Terrain_Texture_Modifier_Join_Distance>	
+		<Terrain_Texture_Modifier_Square>true</Terrain_Texture_Modifier_Square>			
+
+		<Shield_On_Anim>SHIELD_ON</Shield_On_Anim>
+		<Shield_Off_Anim>SHIELD_OFF</Shield_Off_Anim>
+		<Base_Shield_Radius>740</Base_Shield_Radius>
+		<Base_Shield_Always_Off> False </Base_Shield_Always_Off>
+
+		<SecondaryOccupationPassability> Shield </SecondaryOccupationPassability>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Ranged_Target_Z_Adjust>30.0</Ranged_Target_Z_Adjust>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		<GUI_Bounds_Scale>0.05</GUI_Bounds_Scale>
+		<Is_Dummy>No</Is_Dummy>
+
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+		<Obstacle_Width>40.0</Obstacle_Width>
+		<Obstacle_Height>40.0</Obstacle_Height>
+		<Obstacle_X_Offset>-20.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-20.0</Obstacle_Y_Offset>
+		<Fine_Tune_Occupied_Passability> false </Fine_Tune_Occupied_Passability>
+		
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Custom_Hard_XExtent> 50.0 </Custom_Hard_XExtent>
+  		<Custom_Hard_YExtent> 50.0 </Custom_Hard_YExtent>
+ 		<Custom_Soft_Footprint_Radius> 40.0 </Custom_Soft_Footprint_Radius>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Reinforcement_Prevention_Radius>775</Reinforcement_Prevention_Radius>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+
+		<Shield_Normal_Color>0.2, 0.2, 0.8, 1.0</Shield_Normal_Color>
+		<Shield_Upgraded_Color>0.2, 0.7, 0.8, 1.0</Shield_Upgraded_Color>
+		
+		<Affiliation>Naboo</Affiliation>
+		<Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+		<Size_Value>50</Size_Value>
+		<Base_Position>In_Base</Base_Position>
+		<Tech_Level>9</Tech_Level>
+
+		<Tactical_Additional_Structure_Type>Hutt_Power_Generator</Tactical_Additional_Structure_Type>
+		<Tactical_Health>650</Tactical_Health>
+		<Icon_Name>i_button_base_shield_generator.tga</Icon_Name>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<Sabotage_Cost_Credits>4000</Sabotage_Cost_Credits>
+
+		<SFXEvent_Build_Started>EHD_Shield_Generator_Build</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> EHD_Shield_Generator_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> EHD_Shield_Generator_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select> Structure_Shield_Gen_Select_SFX </SFXEvent_Select>
+		<SFXEvent_Powered_Active_Loop> Structure_Shutter_Shield_Generator_Loop </SFXEvent_Powered_Active_Loop>
+		<SFXEvent_Ambient_Loop>Structure_Barracks_Loop</SFXEvent_Ambient_Loop>
+
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+		
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		
+		<Score_Cost_Credits> 20000 </Score_Cost_Credits>
+		<Property_Flags>InBase</Property_Flags>
+		<Movie_Object>false</Movie_Object>
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="E_Base_Shield_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.025</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+
+	</SpecialStructure>
+
+
+	<SpecialStructure Name="Naboo_Power_Generator">
+		<Text_ID>TEXT_STRUCTURE_POWER_GENERATOR</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_POWER_GENERATOR_00 </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_POWER_GENERATOR_00 </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		<GUI_Row> 0 </GUI_Row>
+		<Land_Model_Name>RB_SHIELD-GENERATOR.ALO</Land_Model_Name>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>20.0</Ranged_Target_Z_Adjust>
+		<Behavior>DUMMY_GROUND_STRUCTURE,SELECTABLE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,SELECTABLE, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+		<Size_Value>50</Size_Value>
+		<Base_Position>Out_Base</Base_Position>
+		<Tech_Level>99</Tech_Level>
+		<Icon_Name>i_button_power_generator.tga</Icon_Name>
+	
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Obstacle_Proxy_Type> Power_Generator_E_Build_Pad </Obstacle_Proxy_Type>		
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+	
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.2  0.1</Radar_Icon_Size>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.75</Scale_Factor>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>800</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Naboo</Affiliation>
+		<Base_Level_Available>1</Base_Level_Available>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+		
+		<Abilities SubObjectList="Yes">
+		
+			<Base_Power_Ability Name="H_Power_Plant_Base_Power">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+			</Base_Power_Ability>
+
+			<Force_Healing_Ability Name="H_Power_Plant_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.025</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+			
+		</Abilities>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> EHD_Power_Generator_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> EHD_Power_Generator_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select> Structure_Power_Gen_Select_SFX </SFXEvent_Select>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Structure_Power_Generator_Cinematic_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Score_Cost_Credits> 2000 </Score_Cost_Credits>
+	</SpecialStructure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Naboo_Faction_Units>
+
+
+

@@ -1,0 +1,156 @@
+<?xml version="1.0" ?>
+<SpacePrimarySkydomes>
+	
+	<SpacePrimarySkydome Name="Cin_Space_Green_Screen">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_greenscreen.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpacePrimarySkydome>
+
+	<SpacePrimarySkydome Name="Cin_Space_Black_Screen">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_blackscreen.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+    <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpacePrimarySkydome>
+
+
+	<SpacePrimarySkydome Name="Cin_Space_Purple_Screen">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_purplescreen.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+    <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpacePrimarySkydome>
+
+	<SpacePrimarySkydome Name="Stars_Low">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_low.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+    <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Behavior>SKY_DOME</Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpacePrimarySkydome>
+	
+	<SpacePrimarySkydome Name="Stars_Medium">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_medium.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+    <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Behavior>SKY_DOME</Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpacePrimarySkydome>
+	
+	<SpacePrimarySkydome Name="Stars_High">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_high.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+    <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Behavior>SKY_DOME</Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpacePrimarySkydome>
+
+	<SpacePrimarySkydome Name="Stars_Maw">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_maw.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+    <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Behavior>SKY_DOME</Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpacePrimarySkydome>
+
+	<SpacePrimarySkydome Name="Stars_Cinematic">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_cine.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+    <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Behavior>SKY_DOME</Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpacePrimarySkydome>
+	
+	<SpacePrimarySkydome Name="Stars_Cinematic_huge">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_cine.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+    <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>3.0</Scale_Factor>
+		<Behavior>SKY_DOME</Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpacePrimarySkydome>
+	
+	<SpacePrimarySkydome Name="Stars_Lua_Cinematic">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_cine_lua.alo</Space_Model_Name>
+		<Land_Model_Name>w_stars_cine_lua.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>SKY_DOME</Behavior>
+		<Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Sort_Order_Adjust></Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>No</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpacePrimarySkydome>
+	
+</SpacePrimarySkydomes>	

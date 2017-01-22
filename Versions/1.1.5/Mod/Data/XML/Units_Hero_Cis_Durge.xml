@@ -1,0 +1,508 @@
+<?xml version="1.0"?>
+<Durge_Hero_Files>
+
+
+	<!-- MAIN DURGE HERO DATA -->
+
+
+	<HeroUnit Name="Durge">
+		<LOD_Bias>5</LOD_Bias>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_DURGE</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_DURGE </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_BOUNTY_HUNTER </Encyclopedia_Unit_Class>
+		<Land_Model_Name>SEI_DURGE.ALO</Land_Model_Name>
+		<Icon_Name>I_BUTTON_DURGE.tga</Icon_Name>
+		<Scale_Factor>2.5</Scale_Factor>
+
+		<GalacticBehavior> SELECTABLE  </GalacticBehavior>
+		<LandBehavior> SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, UNIT_AI, GARRISON_UNIT, ABILITY_COUNTDOWN,ION_STUN_EFFECT, STUNNABLE </LandBehavior>
+
+		<Uses_Multiple_Locomotors> Yes </Uses_Multiple_Locomotors>
+		<Hover_Offset>16.0</Hover_Offset>
+		<Primary_Locomotor_Name>WALK_LOCOMOTOR</Primary_Locomotor_Name>
+
+		<Garrison_Category> Infantry </Garrison_Category>
+		<SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<CanCellStack>yes</CanCellStack>
+		<Mass>1.0</Mass>
+		<GUI_Bracket_Width>5</GUI_Bracket_Width>
+		<GUI_Bracket_Height>0</GUI_Bracket_Height>
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+		<Movement_Animation_Speed> 0.8 </Movement_Animation_Speed>
+		<Max_Speed> 1 </Max_Speed>
+		<Alternate_Max_Speed> 2.5 </Alternate_Max_Speed>
+		<Max_Rate_Of_Turn> 20.0 </Max_Rate_Of_Turn>
+		<Alternate_Max_Rate_Of_Turn> 6.0 </Alternate_Max_Rate_Of_Turn>
+		<Custom_Soft_Footprint_Radius> 6.5 </Custom_Soft_Footprint_Radius>
+		<Custom_Hard_XExtent> 5.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 5.0 </Custom_Hard_YExtent>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing>
+		<MinimumPushReturnDistance> 10 </MinimumPushReturnDistance>
+		<Min_Speed> .1 </Min_Speed>
+		<OverrideAcceleration> .1 </OverrideAcceleration>
+		<OverrideDeceleration> .1 </OverrideDeceleration>
+		<Max_Lift> .6 </Max_Lift>
+		
+		<Type>Walk</Type>
+		<Deploys>No</Deploys>
+		<Affiliation>Rebel</Affiliation>
+		<Size_Value>10</Size_Value>
+		<Sensor_Range>20</Sensor_Range>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>700</Tactical_Health>
+		
+		<Always_Spawn_In_Orbit>NO</Always_Spawn_In_Orbit>
+		
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Damage>75</Damage>
+		<Stealth_Capable>No</Stealth_Capable>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Armor_Type> Armor_Hero </Armor_Type>
+
+		<Projectile_Types>Proj_Durge_Blaster_Shotgun, Proj_Bossk_Plasma_Grenade</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>2.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>2</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+
+		<Land_FOW_Reveal_Range>250.0</Land_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+		<Targeting_Max_Attack_Distance>200.0</Targeting_Max_Attack_Distance>
+		<Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+
+		<Targeting_Fire_Inaccuracy> Infantry, 10.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 10.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 10.0 </Targeting_Fire_Inaccuracy>
+		
+		<SFXEvent_Select>Unit_Select_Urai_Fen</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Urai_Fen</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Urai_Fen</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Urai_Fen</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Urai_Fen</SFXEvent_Guard>
+		<SFXEvent_Fire>Unit_Tyber_Fire</SFXEvent_Fire>
+		<SFXEvent_Group_Move>Unit_Group_Move_Urai_Fen</SFXEvent_Group_Move>
+		<SFXEvent_Group_Attack>Unit_Group_Attack_Urai_Fen</SFXEvent_Group_Attack>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Urai_Fen </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Urai_Fen </SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die> Unit_Defeat_Urai_Fen</Death_SFXEvent_Start_Die>
+
+		<CategoryMask> LandHero | SpaceHero </CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+		<MovementClass>Infantry</MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+		<Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+		<Attach_To_Flagship_During_Space_Battle>No</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>
+		<Lua_Script>ObjectScript_Durge</Lua_Script>
+		
+		
+		<Select_Box_Scale>27</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<Selection_Blob_Material_Name>Selection_Rebel_Hero</Selection_Blob_Material_Name>
+        <Highlight_Blob_Material_Name>Highlight_Rebel_Hero</Highlight_Blob_Material_Name>
+
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<AI_Combat_Power>500</AI_Combat_Power>
+		<Idle_Chase_Range>100.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		
+		<Neutralization_Cost>1500.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
+		<Target_Stealth_Units>Yes</Target_Stealth_Units>
+		
+		<Destroy_When_Used_As_Corruption_Prereq> No </Destroy_When_Used_As_Corruption_Prereq>
+		<Death_Fade_Time>0.25</Death_Fade_Time>
+		<Death_Persistence_Duration>0.0</Death_Persistence_Duration>
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+
+           <Unit_Ability>
+				<Type>SWAP_WEAPONS</Type>
+				<Alternate_Name_Text>TEXT_TOOLTIP_BOSSK_SWAP</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_BOSSK_SWAP_DESCRIPTION</Alternate_Description_Text>
+                <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+                <GUI_Activated_Ability_Name>Disruptor_Swap_Weapon</GUI_Activated_Ability_Name> 
+					 <SFXEvent_GUI_Unit_Ability_Activated> Unit_Attack_Urai_Fen </SFXEvent_GUI_Unit_Ability_Activated> 
+			<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+
+            <Unit_Ability>
+                <Type>RADIOACTIVE_CONTAMINATE</Type>
+                <Alternate_Name_Text>TEXT_TOOLTIP_DURGE_SWAMPGAS</Alternate_Name_Text>
+                <Alternate_Description_Text>TEXT_DURGE_SWAMPGAS_DESCRIPTION</Alternate_Description_Text>
+                <Alternate_Icon_Name>I_SA_INFECTION.TGA</Alternate_Icon_Name>
+                <Recharge_Seconds>45.0</Recharge_Seconds>
+                <GUI_Activated_Ability_Name> Durge_Swampgas_Contaminate </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+                <!-- This dist should match the heal range of the object -->
+                <Area_Effect_Decal_Distance> 125.0 </Area_Effect_Decal_Distance>
+                <Spawned_Object_Type> Stun_Ability_Particles </Spawned_Object_Type>
+				<SFXEvent_Target_Ability> Unit_Infect_Durge </SFXEvent_Target_Ability>
+				<SFXEvent_Special_Ability_Loop> Unit_IG88_Contamination_Loop </SFXEvent_Special_Ability_Loop> 
+            <Supports_Autofire>True</Supports_Autofire>
+            </Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+
+					
+			<Redirect_Blaster_Ability Name="Durge_Redirect_Blaster">
+				<Initially_Enabled> Yes </Initially_Enabled>		
+				<Activation_Style>Take_Damage</Activation_Style>
+				<!-- Redirection chance is rolled first. If failed, we roll block chance. If failed, we take the damage. -->
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.20</Block_Chance>
+				<Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 10.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<!-- We can block/redirect shots from the following units types: -->
+				<Applicable_Unit_Categories>Infantry | LandHero | Vehicle | Air | Structure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+			
+			<Galactic_Stealth_Ability Name="Durge_Galactic_Stealth">
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+
+			<System_Spy_Ability Name="Durge_Limited_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+				<See_Minor_Stealth_Heroes>Yes</See_Minor_Stealth_Heroes>
+				<See_Major_Stealth_Heroes>Yes</See_Major_Stealth_Heroes>
+			</System_Spy_Ability>
+
+			<Neutralize_Hero_Ability Name="Durge_Neutralize_Hero">
+				<Cost_Mod_By_Base_Level>0.0,0.0, 5.0,1.0</Cost_Mod_By_Base_Level>
+				<Cost_Mod_By_Previous_Neutralizations>0.0,0.0, 1000.0,750.0</Cost_Mod_By_Previous_Neutralizations>
+				<Cost_Mod_By_Planetary_Corruption_Level>0.0,0.0, 1.0,0.25</Cost_Mod_By_Planetary_Corruption_Level>
+				<General_Minor_Hero_Cost_Mod>1.0</General_Minor_Hero_Cost_Mod>
+				<General_Major_Hero_Cost_Mod>1.0</General_Major_Hero_Cost_Mod>
+				<Owner_Respawn_Time_In_Secs>120.0, 150.0</Owner_Respawn_Time_In_Secs>
+				<Target_Respawn_Time_In_Secs>240.0, 300.0</Target_Respawn_Time_In_Secs>
+				<Can_Neutralize_Minor_Heroes>Yes</Can_Neutralize_Minor_Heroes>
+				<Can_Neutralize_Major_Heroes>Yes</Can_Neutralize_Major_Heroes>
+			</Neutralize_Hero_Ability>
+		
+      <Force_Healing_Ability Name="Durge_Self_Heal">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Heal_Range>5.0</Heal_Range>
+				<Heal_Amount> 0.0 </Heal_Amount>
+				<Heal_Percent> 0.03 </Heal_Percent>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>Durge</Applicable_Unit_Types>
+				<Excluded_Unit_Types />
+			</Force_Healing_Ability>
+
+			<Radioactive_Contaminate_Ability Name="Durge_Swampgas_Contaminate">
+				<Activation_Style> User_Input </Activation_Style>
+				<!-- We need to be within this distance of the clicked target to consider activating Stun -->
+				<Activation_Min_Range>0.0</Activation_Min_Range>
+				<Activation_Max_Range>150.0</Activation_Max_Range>
+				<Spray_Time_In_Secs>3.0</Spray_Time_In_Secs>
+				<Contamination_Object_Name>Radioactive_Contamination</Contamination_Object_Name>
+				<SFXEvent_Radioactive> Unit_IG88_Contamination_Hit </SFXEvent_Radioactive>
+			</Radioactive_Contaminate_Ability>
+
+		</Abilities>
+		
+	</HeroUnit>
+	
+
+
+
+	<!-- IG-2000 HERO TRANSPORT DATA -->
+	
+
+
+
+
+	
+
+
+
+	<!-- DURGE COMPANY DATA -->
+
+
+
+	<HeroCompany Name="Durge_Team">
+		<LOD_Bias>5</LOD_Bias>
+		<Text_ID>TEXT_HERO_DURGE</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_DURGE </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_BOUNTY_HUNTER </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_DURGE.tga</Icon_Name>
+		
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>80</Damage>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>1</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		
+		<Always_Spawn_In_Orbit>NO</Always_Spawn_In_Orbit>
+		<Company_Transport_Unit>Novasword_Fighter</Company_Transport_Unit>
+
+		<Company_Units>Durge</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Stealth_Company>Yes</Is_Stealth_Company>
+		<Available_In_Skirmish>yes</Available_In_Skirmish>
+		<Can_Be_Only_One>true</Can_Be_Only_One>
+
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
+		<CategoryMask> LandHero | SpaceHero </CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+		<Population_Value>1</Population_Value>
+
+		<SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
+			<SFXEvent_Build_Complete>Unit_Select_Urai_Fen</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Select_Urai_Fen</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Urai_Fen</SFXEvent_Fleet_Move>
+		
+		<Unit_Abilities_Data SubObjectList="Yes"> </Unit_Abilities_Data>
+		
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+
+	</HeroCompany>
+
+
+	<HeroCompany Name="Durge_Team_Land_MP">
+		<Variant_Of_Existing_Type>Durge_Team</Variant_Of_Existing_Type>
+	
+		<Tactical_Build_Cost_Multiplayer>1800</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>5</Tactical_Build_Time_Seconds>
+	  <Tactical_Build_Prerequisites>RC_Level_Four_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+	</HeroCompany>
+	
+	<HeroCompany Name="Durge_Team_Space_MP">
+		<Variant_Of_Existing_Type>Durge_Team</Variant_Of_Existing_Type>
+	
+		<Tactical_Build_Cost_Multiplayer>1800</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+	  <Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+	</HeroCompany>
+
+
+	
+
+<UniqueUnit Name="Novasword_Fighter">
+
+		<Text_ID>TEXT_UNIT_NOVASWORD_FIGHTER</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FIGHTER </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_NOVASWORD_FIGHTER</Encyclopedia_Text>
+		<Encyclopedia_Good_Against> NTB630 V19_Fighter Arc_170 </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Republic_light_assault_cruiser Republic_light_frigate</Encyclopedia_Vulnerable_To>
+		<Space_Model_Name>SeV_novasword.ALO</Space_Model_Name>
+		<Scale_Factor>0.1</Scale_Factor> <!-- From 0.13 -->
+		<Select_Box_Scale>250</Select_Box_Scale>
+		<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
+
+		<Mouse_Collide_Override_Sphere_Radius> 50.0 </Mouse_Collide_Override_Sphere_Radius>
+		<Guard_Chase_Range>2000</Guard_Chase_Range> <!-- Added -->
+		<Idle_Chase_Range>1000</Idle_Chase_Range> <!-- Added -->
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Mass>0.98</Mass>
+		<Max_Speed>5.2</Max_Speed>
+		<Min_Speed>3.5</Min_Speed>
+		<Max_Rate_Of_Turn>4.0</Max_Rate_Of_Turn>
+		<Max_Thrust>1.0</Max_Thrust>
+		<Max_Rate_Of_Roll>5.0</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>50</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>300.0</Begin_Turn_Towards_Distance>
+		<Fires_Forward>no</Fires_Forward>
+		<Turret_Rotate_Extent_Degrees>20</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>40</Turret_Elevate_Extent_Degrees>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		<Maintenance_Cost>0.1</Maintenance_Cost>
+		<Max_Lift>4</Max_Lift>
+		<Affiliation>Rebel</Affiliation>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Shield_Points>400</Shield_Points> <!-- From 110 -->
+		<Tactical_Health>1000</Tactical_Health> <!-- From 800 -->
+		<Shield_Refresh_Rate>10</Shield_Refresh_Rate>
+		<Energy_Capacity>999</Energy_Capacity>
+		<Energy_Refresh_Rate>999</Energy_Refresh_Rate>
+		<Armor_Type> Armor_Hero_Transport </Armor_Type>
+     <Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+
+		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
+		<Ship_Class>fighter</Ship_Class>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Political_Control>0</Political_Control>
+		<Squadron_Capacity>0</Squadron_Capacity>
+		<Number_per_Squadron>5</Number_per_Squadron>
+		<Build_Cost_Credits>60</Build_Cost_Credits>
+		<Build_Time_Seconds>10</Build_Time_Seconds>
+		<Size_Value>4</Size_Value>  <!-- 8 -->
+		<Behavior>TRANSPORT </Behavior>
+		<SpaceBehavior>ABILITY_COUNTDOWN, LURE, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA </SpaceBehavior>
+			
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Damage>7</Damage>
+        <Damage_Type>Damage_AWing</Damage_Type>
+		<Projectile_Types>Proj_Ship_Small_Laser_Cannon_Red_X3</Projectile_Types> <!-- From Proj_Ship_Small_Laser_Cannon_Red -->
+		<Projectile_Fire_Pulse_Count>8</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+		<Land_FOW_Reveal_Range>130.0</Land_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range>600.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>500.0</Targeting_Max_Attack_Distance>
+		<Death_Explosions>Small_Explosion_Space</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_A_Wing_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
+		<Fire_Inaccuracy_Distance> Fighter, 1.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 1.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Transport, 1.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 30.0 </Fire_Inaccuracy_Distance>
+
+	  <SFXEvent_Select>Unit_Select_Urai_Fen</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Urai_Fen</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Urai_Fen</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Urai_Fen</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Urai_Fen</SFXEvent_Guard>
+		<SFXEvent_Fire><SFXEvent_Fire>Unit_Star_Viper_Fire</SFXEvent_Fire></SFXEvent_Fire>
+			
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Urai_Fen </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Urai_Fen </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Urai_Fen </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Urai_Fen </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Urai_Fen </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Urai_Fen </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Urai_Fen </SFXEvent_Attack_Hardpoint>
+
+	  <SFXEvent_Health_Low_Warning> Unit_Health_Low_Urai_Fen </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Urai_Fen </SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Ambient_Moving> Unit_A_Wing_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 10 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_A_Wing_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+    <Landing_Transport_Variant>Novasword_Fighter_Landing</Landing_Transport_Variant>
+
+		<CategoryMask> Fighter | SpaceHero | AntiFighter | AntiBomber </CategoryMask>
+		<Property_Flags> SmallShip </Property_Flags>
+		<Icon_Name>I_BUTTON_DURGE.tga</Icon_Name>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Custom_Footprint_Radius> 7.0 </Custom_Footprint_Radius> <!-- 15 -->
+		<MovementClass> Space </MovementClass>
+		<FormationOrder>1</FormationOrder>
+		<Out_Of_Combat_Defense_Adjustment>-1.0</Out_Of_Combat_Defense_Adjustment>
+		<Minimum_Follow_Distance>25.0</Minimum_Follow_Distance> <!-- 50 -->
+		<Create_Team>Yes</Create_Team>
+		<AI_Combat_Power>80</AI_Combat_Power>
+		<Collision_Box_Modifier>2.0</Collision_Box_Modifier>
+		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+		<Target_Stealth_Units>Yes</Target_Stealth_Units>
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>INVULNERABILITY</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds> <!-- From 6 -->
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.0f</Mod_Multiplier> <!-- completely invulnerabe -->
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Attack_Urai_Fen</SFXEvent_GUI_Unit_Ability_Activated>
+				<Supports_Autofire>True</Supports_Autofire>
+ 		</Unit_Ability>
+			
+		</Unit_Abilities_Data>
+
+		<Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+		<Spin_Away_On_Death_Chance>0.2</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Time>2.0f</Spin_Away_On_Death_Time>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space</Spin_Away_On_Death_Explosion>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_A_Wing_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<Tactical_Bribe_Cost>150</Tactical_Bribe_Cost>
+		
+		<Lua_Script>ObjectScript_Novasword</Lua_Script>
+
+		<Strafe_Distance>500.0</Strafe_Distance>
+		<Population_Value>0</Population_Value>	
+	</UniqueUnit>
+
+
+<TransportUnit Name="Novasword_Fighter_Landing">
+		<Variant_Of_Existing_Type>Novasword_Fighter</Variant_Of_Existing_Type>
+		<Land_Model_Name>SeV_novasword_land.ALO</Land_Model_Name>
+		<Icon_Name>I_BUTTON_DURGE.tga</Icon_Name>
+		<Behavior>TRANSPORT</Behavior>
+		<Scale_Factor>0.55</Scale_Factor>
+		<LandBehavior>HIDE_WHEN_FOGGED</LandBehavior> 
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<User_Bound_Min>-700, -700, 0</User_Bound_Min>
+		<User_Bound_Max>700, 700, 1500</User_Bound_Max>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+      	<UnitCollisionClass>Landing Transport</UnitCollisionClass>	
+	</TransportUnit>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Durge_Hero_Files>

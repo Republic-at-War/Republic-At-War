@@ -1,0 +1,314 @@
+<?xml version="1.0" ?>
+<Props_Snow>
+
+	<Props_Snow Name="Prop_Rock_Cluster-sml_00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ROCKCLSTR.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>30.0, 30.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Rock_Shadow</Blob_Shadow_Material_Name>
+	</Props_Snow>
+
+	<Props_Snow Name="Prop_Rock_Cluster-sml_00_Reflection">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ROCKCLSTR.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>30.0, 30.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Rock_Shadow</Blob_Shadow_Material_Name>
+	</Props_Snow>
+	
+	<Props_Snow Name="Prop_Rock_Cluster_00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ROCKCLSTR00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> Medium Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 18.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 25.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 3.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> -5.0 </Custom_Hard_YExtent_Offset>
+
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Rock_Shadow</Blob_Shadow_Material_Name>
+	</Props_Snow>
+
+	<Props_Snow Name="Prop_Rock_Cluster_00_Reflection">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ROCKCLSTR00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> Medium Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 18.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 25.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 3.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> -5.0 </Custom_Hard_YExtent_Offset>
+
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Rock_Shadow</Blob_Shadow_Material_Name>
+	</Props_Snow>
+	
+	<Props_Snow Name="Prop_Rock_Cluster_01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ROCKCLSTR01.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> Medium Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 24.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 30.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 3.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> -10.0 </Custom_Hard_YExtent_Offset>
+
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Rock_Shadow</Blob_Shadow_Material_Name>
+	</Props_Snow>
+
+	<Props_Snow Name="Prop_Crystals_Illum">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Crystals_Illum.ALO</Land_Model_Name>
+		<Scale_Factor>.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Rock_Shadow</Blob_Shadow_Material_Name>
+	</Props_Snow>
+
+	<Props_Snow Name="Prop_Rock_Cluster_01_Reflection">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ROCKCLSTR01.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> Medium Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 22.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 28.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 3.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> -8.0 </Custom_Hard_YExtent_Offset>
+
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Rock_Shadow</Blob_Shadow_Material_Name>
+	</Props_Snow>
+	
+	<Props_Snow Name="Prop_IceRckSlide_00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_IceRckSlide00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>40.0, 40.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Rock_Shadow</Blob_Shadow_Material_Name>
+	</Props_Snow>
+	
+	<Props_Snow Name="Prop_Tree_PineSnow00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Ever_Snow01_HI.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name></Blob_Shadow_Material_Name>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Snow>
+	
+	<Props_Snow Name="Prop_Tree_PineSnow00_Cluster">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Ever_Snow01_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name></Blob_Shadow_Material_Name>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Snow>
+
+	<Props_Snow Name="Prop_Tree_PineSnow00_Obstacle">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Ever_Snow01_HI.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> High Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 3.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 3.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 0.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> 0.0 </Custom_Hard_YExtent_Offset>
+
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name></Blob_Shadow_Material_Name>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Snow>
+
+
+	<Props_Snow Name="Prop_Tree_PineSnow00_Cluster_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Ever_SnowNS01_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name></Blob_Shadow_Material_Name>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Snow>
+
+	<Props_Snow Name="Prop_Tree_PineSnow01_Cluster_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Ever_SnowNS02_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name></Blob_Shadow_Material_Name>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Snow>
+	
+	<Props_Snow Name="Prop_Tree_PineSnow01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Ever_Snow02_HI.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name></Blob_Shadow_Material_Name>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Snow>
+	
+	<Props_Snow Name="Prop_Tree_PineSnow01_Cluster">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Ever_Snow02_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name></Blob_Shadow_Material_Name>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Snow>
+
+	<Props_Snow Name="Prop_Tree_PineSnow01_Obstacle">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Ever_Snow02_HI.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> High Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 3.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 3.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 0.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> 0.0 </Custom_Hard_YExtent_Offset>
+		
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name></Blob_Shadow_Material_Name>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Snow>
+	
+	<Props_Snow Name="Prop_Ice_Mountain00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_IceMntRnge00.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Snow>
+	
+	<Props_Snow Name="Prop_Ice_Mountain01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_IceMntRnge01.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Snow>
+	
+	<Props_Snow Name="Prop_HothBaseDoor00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_HothDoors.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Snow>
+	
+	<Props_Snow Name="Prop_HothBaseDoor-TEMP-00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_HothDoorsgreg.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Snow>
+	
+	<Props_Snow Name="Prop_SnowWind00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_SnowWind.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Snow>
+
+	<Props_Snow Name="Prop_Snow_House_No_Spawn">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>NB_SCH.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Snow>
+
+
+<Props_Snow Name="Prop_Ice_Mountain03">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_IceMntRnge01.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Snow>
+
+</Props_Snow>

@@ -1,0 +1,318 @@
+<?xml version="1.0"?>
+<Battledroid_Data>
+
+
+
+	<GroundInfantry Name="Super_Battledroid">
+		<LOD_Bias>5</LOD_Bias>
+		<Text_ID>TEXT_UNIT_SUPERBATTLEDROID</Text_ID>
+		<Encyclopedia_Good_Against> Clone_Trooper_P1 Arc_Trooper </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> AV_7_Antivehicle_Cannon AT_PT LAAT </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> TEXT_UNIT_B2_BATTLEDROID_ENCYC TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+		<Land_Model_Name>SeI_superbattledroid.ALO</Land_Model_Name>
+		<Icon_Name>I_BUTTON_B2_BATTLEDROID.tga</Icon_Name>
+		
+		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>SURFACE_FX,WALK_LOCOMOTOR,IDLE,TARGETING,WEAPON, STUNNABLE, REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING, GARRISON_UNIT</LandBehavior>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<CanCellStack>yes</CanCellStack>
+		<Mass>1.0</Mass>
+
+		<SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
+
+		<Movement_Animation_Speed> 0.9 </Movement_Animation_Speed>
+		<Rotation_Animation_Speed> 20.0 </Rotation_Animation_Speed>
+		<Walk_Animation_Speed> .366 </Walk_Animation_Speed>
+		<Crouch_Animation_Speed> .537 </Crouch_Animation_Speed>
+		<Max_Speed>0.8</Max_Speed>
+		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+		<Custom_Soft_Footprint_Radius> 3.5 </Custom_Soft_Footprint_Radius>
+		<Custom_Hard_XExtent> 2.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 2.0 </Custom_Hard_YExtent>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .4 </FormationSpacing> 
+		<MinimumPushReturnDistance> 10 </MinimumPushReturnDistance>
+		<OverrideAcceleration> .05 </OverrideAcceleration>
+		<OverrideDeceleration> .05 </OverrideDeceleration>
+		<FormationOrder> 2 </FormationOrder>
+
+		<Scale_Factor>1.65</Scale_Factor> 
+		<Type>Walk</Type>
+		<Affiliation>Rebel</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Size_Value>10</Size_Value>
+		<Damage>5</Damage>
+		<Sensor_Range>20</Sensor_Range>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>75</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Stealth_Capable>No</Stealth_Capable>
+
+		<Armor_Type> Armor_Infantry </Armor_Type>
+
+		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>10.0, 10.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Projectile_Types>Proj_Hand_Blaster_Red</Projectile_Types>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+
+		<Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+
+		<Projectile_Fire_Recharge_Seconds>0.8</Projectile_Fire_Recharge_Seconds>
+
+		<Targeting_Fire_Inaccuracy> Infantry, 5.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 10.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 10.0 </Targeting_Fire_Inaccuracy>
+		
+		<Fire_Category_Restrictions> Air </Fire_Category_Restrictions>
+
+		<SFXEvent_Select>Unit_Select_Superbattle_Droid</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Superbattle_Droid</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Superbattle_Droid</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Superbattle_Droid</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Move_Superbattle_Droid</SFXEvent_Guard>
+		<SFXEvent_Fire>Unit_Storm_Trooper_Fire</SFXEvent_Fire>
+		<Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Assist_Move> Unit_Move_Superbattle_Droid</SFXEvent_Assist_Move>		
+		<SFXEvent_Assist_Attack> Unit_Attack_Superbattle_Droid</SFXEvent_Assist_Attack>
+
+
+		<SFXEvent_Tactical_Build_Started> UHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>		
+		<SFXEvent_Tactical_Build_Complete> UHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>		
+		<SFXEvent_Tactical_Build_Cancelled> UHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+
+		<CategoryMask> Infantry </CategoryMask>
+		<MovementClass> Infantry </MovementClass>
+		<Property_Flags>Fodder</Property_Flags>
+
+		<OccupationStyle>1x1</OccupationStyle>
+
+
+
+		<No_Reflection_Below_Detail_Level>99</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+		<Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+		<Is_Squashable> Yes </Is_Squashable>
+		<Create_Team>Yes</Create_Team>
+		<AI_Combat_Power>10</AI_Combat_Power>
+
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>AvoidAntiInfantryTurrets</Targeting_Priority_Set>
+
+		<Targeting_Max_Attack_Distance>140.0</Targeting_Max_Attack_Distance>
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>130.0</Attack_Move_Response_Range>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Surface_Type_Cover_Damage_Shield>.5</Surface_Type_Cover_Damage_Shield>
+		<Weather_Category>Infantry</Weather_Category>
+
+		
+		<Death_Clone>Damage_Force_Whirlwind, Super_Battledroid_Force_Whirlwind_Death_Clone</Death_Clone>
+		<Death_Clone>Damage_Crush, Super_Battledroid_Crush_Death_Clone</Death_Clone>
+
+		<Death_Fade_Time>60</Death_Fade_Time>
+		<Death_Persistence_Duration>0.0</Death_Persistence_Duration>
+
+		<Movie_Object>false</Movie_Object>
+	</GroundInfantry>
+	<GroundInfantry Name="Squad_Super_Battledroid">
+		<Variant_Of_Existing_Type>Super_Battledroid</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_CLONETROOPER_P1</Text_ID>
+		<LandBehavior>LANDING, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR,IDLE,WEAPON, STUNNABLE, REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING</LandBehavior>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Is_Squashable> Yes </Is_Squashable>
+		<Max_Speed>1.0</Max_Speed>
+		<Space_Layer> None </Space_Layer>
+		<Custom_Soft_Footprint_Radius> 3.0 </Custom_Soft_Footprint_Radius>
+		<Max_Rate_Of_Turn>16.0</Max_Rate_Of_Turn>
+		<FormationRaggedness> .2 </FormationRaggedness>
+		<MaxJiggleDistance> 2 </MaxJiggleDistance>
+  </GroundInfantry>
+
+
+
+
+
+	<GroundInfantry Name="Super_Battledroid_Force_Whirlwind_Death_Clone">
+		<Variant_Of_Existing_Type>Super_Battledroid</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</GroundInfantry>
+
+	<GroundInfantry Name="Super_Battledroid_Crush_Death_Clone">
+		<Variant_Of_Existing_Type>Super_Battledroid</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</GroundInfantry>
+
+	<GroundInfantry Name="Spawned_Battledroid">
+		<Variant_Of_Existing_Type>Super_Battledroid</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_BATTLEDROID</Text_ID>
+		<LandBehavior>SURFACE_FX, WALK_LOCOMOTOR,IDLE,WEAPON, TARGETING, STUNNABLE, REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING</LandBehavior>
+		<Victory_Relevant>no</Victory_Relevant>
+		<Is_Squashable> Yes </Is_Squashable>
+		<Space_Layer> None </Space_Layer>
+	</GroundInfantry>
+
+	<GroundCompany Name="Cis_Super_BattleDroid_Squad">
+		<Text_ID>TEXT_UNIT_SUPERBATTLEDROID</Text_ID>
+		<Encyclopedia_Good_Against> Clone_Trooper_P1 Arc_Trooper </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> AV_7_Antivehicle_Cannon AT_PT LAAT </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> TEXT_UNIT_B2_BATTLEDROID_ENCYC TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_B2_BATTLEDROID.tga</Icon_Name>
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>18</Damage>
+		<Autoresolve_Health>100</Autoresolve_Health>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Cost_Credits>300</Build_Cost_Credits> <!-- From 15 -->
+		<Build_Time_Seconds>5</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Tech_Level>2</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>R_ground_barracks</Required_Special_Structures>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Ship_Class>infantry</Ship_Class>
+		<Company_Transport_Unit>Cis_Hardcell_Transport</Company_Transport_Unit>
+		<Create_Team_Type> Super_Battledroid_Team </Create_Team_Type>
+
+		<Company_Units> 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+			Squad_Super_Battledroid, 
+		</Company_Units>
+		<Max_Squad_Size> 9 </Max_Squad_Size>
+
+
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Superbattle_Droid</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Superbattle_Droid</SFXEvent_Fleet_Move>
+
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>300</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>RC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+		<Maintenance_Cost>0.05</Maintenance_Cost>
+		<Population_Value>1</Population_Value>
+		<Score_Cost_Credits>55</Score_Cost_Credits>
+	</GroundCompany>
+	
+	<Container Name="Super_Battledroid_Team">
+		<Text_ID>TEXT_UNIT_SUPERBATTLEDROID</Text_ID>
+		<Encyclopedia_Good_Against> Clone_Trooper_P1 Arc_Trooper </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> AV_7_Antivehicle_Cannon AT_PT LAAT </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> TEXT_UNIT_B2_BATTLEDROID_ENCYC TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_B2_BATTLEDROID.tga</Icon_Name>
+
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Garrison_Category> Infantry </Garrison_Category>
+
+		<Max_Speed> 0.8 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> 1.0 </FormationSpacing>
+		<FormationOrder> 2 </FormationOrder>
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Rows </ContainerArrangement>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Targeting_Max_Attack_Distance>140.0</Targeting_Max_Attack_Distance>
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>130.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Select_Box_Scale>60</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<CategoryMask>Infantry</CategoryMask>
+
+	</Container>
+
+
+
+
+
+
+
+
+</Battledroid_Data>
+
+ 

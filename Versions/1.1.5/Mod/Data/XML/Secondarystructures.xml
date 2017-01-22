@@ -1,0 +1,1146 @@
+<?xml version="1.0" ?>
+<SecondaryStructures>
+	
+	<SecondaryStructure Name="Secondary_Prison_E">
+		<Text_ID>TEXT_GROUND_SECONDARY_EMPIRE_PRISON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_SECONDARY_PRISON  </Encyclopedia_Text>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_PRISON_DESTROY </Secondary_Objective>
+		<Land_Model_Name>NB_Prison.ALO</Land_Model_Name>
+		<Icon_Name>i_button_nb_prison.tga</Icon_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<SFXEvent_Ambient_Loop />
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<Behavior>DUMMY_GROUND_STRUCTURE,SELECTABLE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,SELECTABLE,DAMAGE_TRACKING,UNIT_AI, HIDE_WHEN_FOGGED</LandBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Size_Value>50</Size_Value>
+		<Base_Position>Out_Base</Base_Position>
+		<Tech_Level>0</Tech_Level>
+	
+		<Select_Box_Scale>100</Select_Box_Scale>
+		
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+
+		<Death_Clone_Is_Obstacle>True</Death_Clone_Is_Obstacle>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Destruction_Survivors>
+			Rebel_Infantry_Squad, .07
+			Rebel_Tank_Buster_Squad, .07
+			Pirate_Soldier_Squad, .07
+			Pirate_PLEX_Squad, .07
+			Endor_Ewok_Hunting_Party, .07
+			Naboo_Gungan_Warrior_Troop, .07
+			Kashyyyk_Wookie_War_Party, .07
+			Tatooine_Jawa_Scout_Team, .07
+			Mon_Calamari_Civ_Company, .07
+			Bothan_Civ_Company, .07
+			Imperial_Guard_Company, .07
+			Geonosian_Civ_Company, .07
+			Sullustan_Civ_Company, .07
+			Urban_Civilian_Team_Rebel, .07
+			Rancor, .02
+		</Destruction_Survivors>
+		
+		<Minimum_Destruction_Survivor_Count>4</Minimum_Destruction_Survivor_Count>
+		<Maximum_Destruction_Survivor_Count>8</Maximum_Destruction_Survivor_Count>
+		
+		<Affiliation>Empire</Affiliation>
+		<Base_Level_Available>0</Base_Level_Available>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<GUI_Bracket_Width>40</GUI_Bracket_Width>
+		<GUI_Bracket_Height>0</GUI_Bracket_Height>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> EHD_Prison_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> EHD_Prison_Destroyed </SFXEvent_Unit_Lost>
+
+		<Score_Cost_Credits> 2000 </Score_Cost_Credits>
+	</SecondaryStructure>
+	
+	
+	<SecondaryStructure Name="Secondary_Training_Facility_R">
+		<Icon_Name>i_button_r_officer_academy.tga</Icon_Name>
+		<Text_ID>TEXT_GROUND_SECONDARY_REBEL_TRAINING</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_SECONDARY_TRAINING  </Encyclopedia_Text>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_TRAINING_DESTROY </Secondary_Objective>
+		<Land_Model_Name>RB_Barracks_small.alo</Land_Model_Name>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<Behavior>SELECTABLE, UNIT_AI</Behavior>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,SPAWN_SQUADRON, HIDE_WHEN_FOGGED</LandBehavior>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		
+		<Death_Clone_Is_Obstacle>True</Death_Clone_Is_Obstacle>
+		
+		<Destruction_Survivors>
+			Rebel_Infantry_Squad, 1.0
+			Field_Com_Rebel_Team, 1.0
+			T2B_Tank, 1.0
+		</Destruction_Survivors>
+
+		<Affiliation>Rebel</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> RHD_Barracks_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> RHD_Barracks_Destroyed </SFXEvent_Unit_Lost>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>		
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Starting_Spawned_Units_Tech_0>Rebel_infantry_squad, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Rebel_tank_buster_squad, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Rebel_infantry_squad, -1</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Rebel_tank_buster_squad, -1</Reserve_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>2</Spawned_Squadron_Delay_Seconds>		
+		<Spawned_Squadron_Location_Bones>SPAWN_00</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>110.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+		<AI_Combat_Power> 5 </AI_Combat_Power>
+		<Lua_Script>ProximitySpawnTrigger_R</Lua_Script>
+	</SecondaryStructure>
+	
+	
+	<SecondaryStructure Name="Secondary_Mining_Facility">
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_MINING</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_SECONDARY_MINING TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_MINING_CAPTURE </Secondary_Objective>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<GUI_Row> 0 </GUI_Row>
+		<Land_Model_Name> NB_Abandon_Mining.ALO </Land_Model_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+
+		<Scale_Factor>0.55</Scale_Factor>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Affiliation>Neutral, Rebel, Empire, Pirates, Underworld</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Size_Value>50</Size_Value>
+		<Base_Position>Out_Base</Base_Position>
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Tactical_Health>200</Tactical_Health>
+		<Behavior>CAPTURE_POINT, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>CAPTURE_POINT, SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI</LandBehavior>
+		<Capture_Point_Transition_Time_Seconds>10.0</Capture_Point_Transition_Time_Seconds>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Icon_Name>i_button_mining_facility.tga</Icon_Name>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		
+		<Land_Damage_Thresholds>1, 0.5, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		
+		<Death_Clone_Is_Obstacle>True</Death_Clone_Is_Obstacle>
+		<Destruction_Survivors>  </Destruction_Survivors>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> EHD_Mining_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> EHD_Mining_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select>Structure_Mining_Select_SFX</SFXEvent_Select>
+
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+
+		<CategoryMask> Structure </CategoryMask>
+		
+		<Score_Cost_Credits> 5000 </Score_Cost_Credits>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<Lua_Script>SecondaryMiningFacility</Lua_Script>
+	</SecondaryStructure>
+	
+	
+	<SecondaryStructure Name="Secondary_Pirate_Outpost_H">
+		<Text_ID>TEXT_GROUND_SECONDARY_PIRATE_OUTPOST</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_SECONDARY_OUTPOST </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_OUTPOST_DESTROY </Secondary_Objective>
+		<Land_Model_Name>NB_PirateBase_Sml.alo</Land_Model_Name>
+		<Icon_Name>i_button_pirate_outpost.tga</Icon_Name>
+		
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<Behavior>SELECTABLE, HIDE_WHEN_FOGGED</Behavior>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, SPAWN_SQUADRON</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.5</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Pirates</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+		
+		<Death_Clone_Is_Obstacle>True</Death_Clone_Is_Obstacle>
+		
+		<Destruction_Survivors>
+			Pirate_Survivors_Medium, 0.15
+			Pirate_Swamp_Speeder_Team, 0.05
+			Credit_Power_Up, 0.80
+		</Destruction_Survivors>
+
+		<Land_Damage_Thresholds> 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates> 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		
+		<Starting_Spawned_Units_Tech_0>Pirate_Soldier_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Pirate_PLEX_Squad, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Pirate_Soldier_Squad, -1</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Pirate_PLEX_Squad, -1</Reserve_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>15</Spawned_Squadron_Delay_Seconds>		
+		<Spawned_Squadron_Location_Bones>SPAWN_00</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>110.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+		<Lua_Script>ProximitySpawnTrigger</Lua_Script>
+  </SecondaryStructure>
+  
+  
+  <SecondaryStructure Name="Secondary_Heavy_Factory_E">
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_HEAVY_FACTORY</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY_E TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_E_FACTORY_CAPTURE </Secondary_Objective>
+		<Icon_Name>i_button_e_advanced_weapons.tga</Icon_Name>
+		<GUI_Row> 0 </GUI_Row>
+		<Land_Model_Name>EB_VehicleFactory.alo</Land_Model_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<SFXEvent_Ambient_Loop>Structure_Barracks_Loop</SFXEvent_Ambient_Loop>
+		<Behavior>CAPTURE_POINT, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,SELECTABLE, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,SPAWN_SQUADRON,CAPTURE_POINT</LandBehavior>
+		<Capture_Point_Transition_Time_Seconds>12.0</Capture_Point_Transition_Time_Seconds>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Community_Property>no</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		
+        <Ownership_Sticks>Yes</Ownership_Sticks>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.50</Scale_Factor>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		<Is_Dummy>No</Is_Dummy>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+	
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+
+		<Land_Damage_Thresholds>1, .5, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Affiliation>Neutral, Rebel, Empire, Pirates, Underworld</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Size_Value>50</Size_Value>
+		<Tactical_Health>600</Tactical_Health>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> EHD_Heavy_Vehicle_Factory_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> EHD_Heavy_Vehicle_Factory_Destroyed </SFXEvent_Unit_Lost>
+		
+		<CategoryMask> Structure </CategoryMask>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
+		<Property_Flags>InBase</Property_Flags>
+		
+		<Starting_Spawned_Units_Tech_0>Pod_Walker_Empire, 5</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>0</Spawned_Squadron_Delay_Seconds>		
+		<Spawned_Squadron_Location_Bones>SPAWN_00</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>110.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Lua_Script>SecondaryHeavyFactory</Lua_Script>
+		<Death_Clone_Is_Obstacle>True</Death_Clone_Is_Obstacle>
+	</SecondaryStructure>
+	
+	
+	<SecondaryStructure Name="Secondary_Heavy_Factory_R">
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_HEAVY_FACTORY</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY_R TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_R_FACTORY_CAPTURE </Secondary_Objective>
+		<GUI_Row> 0 </GUI_Row>
+		<Land_Model_Name>rb_heavyvehiclefactory.alo</Land_Model_Name>
+		<Icon_Name>i_button_r_advanced_weapons.tga</Icon_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<SFXEvent_Ambient_Loop>Structure_Barracks_Loop</SFXEvent_Ambient_Loop>
+		<Behavior>CAPTURE_POINT, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,SELECTABLE, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,SPAWN_SQUADRON,CAPTURE_POINT</LandBehavior>
+		<Capture_Point_Transition_Time_Seconds>12.0</Capture_Point_Transition_Time_Seconds>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Community_Property>No</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		
+        <Ownership_Sticks>Yes</Ownership_Sticks>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.50</Scale_Factor>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		<Is_Dummy>No</Is_Dummy>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+
+		<Land_Damage_Thresholds>1, 0.5, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Affiliation>Neutral, Rebel, Empire, Pirates, Underworld</Affiliation>
+		<Political_Control>0</Political_Control>
+		
+		<Size_Value>50</Size_Value>
+		
+		<Tactical_Health>500</Tactical_Health>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> RHD_Heavy_Vehicle_Factory_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> RHD_Heavy_Vehicle_Factory_Destroyed </SFXEvent_Unit_Lost>
+		
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
+		<Property_Flags>InBase</Property_Flags>
+		
+		<Starting_Spawned_Units_Tech_0>Swamp_Speeder_R, 5</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>0</Spawned_Squadron_Delay_Seconds>		
+		<Spawned_Squadron_Location_Bones>SPAWN_00</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>110.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Lua_Script>SecondaryHeavyFactory</Lua_Script>
+		<Death_Clone_Is_Obstacle>True</Death_Clone_Is_Obstacle>
+	</SecondaryStructure>
+  
+  
+	<SecondaryStructure Name="Secondary_Abandoned_Sensor">
+		<Icon_Name>i_button_shutter_shield_generator.tga</Icon_Name>
+		<Select_Box_Scale>150</Select_Box_Scale>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_SENSOR_ARRAY</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_SECONDARY_SENSOR TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_SENSOR_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>NB_SHUTTERSHIELDGEN.ALO</Land_Model_Name>
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Scale_Factor>0.5</Scale_Factor>
+
+        <Ownership_Sticks>Yes</Ownership_Sticks>
+		<Affiliation>Neutral, Rebel, Empire, Underworld</Affiliation>
+		<Tactical_Health>700</Tactical_Health>
+		<Behavior> CAPTURE_POINT, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,</LandBehavior>
+		<Capture_Point_Transition_Time_Seconds>10.0</Capture_Point_Transition_Time_Seconds>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>			
+		<Terrain_Texture_Modifier_Join_Distance>500.0</Terrain_Texture_Modifier_Join_Distance>	
+		<Terrain_Texture_Modifier_Square>true</Terrain_Texture_Modifier_Square>	
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> RHD_Sensor_Array_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> RHD_Sensor_Array_Destroyed </SFXEvent_Unit_Lost>
+		
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+		<Land_FOW_Reveal_Range>10000.0</Land_FOW_Reveal_Range>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		
+		<Land_Damage_Thresholds>1, 0.5, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_SHUTTER_SHIELD_00  </Encyclopedia_Text>
+		<Score_Cost_Credits> 3500 </Score_Cost_Credits>
+		<Death_Clone_Is_Obstacle>True</Death_Clone_Is_Obstacle>
+		
+		<Terrain_Texture_Modifier_Square>False</Terrain_Texture_Modifier_Square>
+	</SecondaryStructure>	
+	
+	
+	<SecondaryStructure Name="Secondary_Abandoned_Turbolaser_Tower">
+		<Text_ID> TEXT_GROUND_TURBOLASER_TOWER_ABANDONED </Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_SECONDARY_TURBOLASER TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_TURBOLASER_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>EB_TLTower.ALO</Land_Model_Name>
+		<Scale_Factor>.75</Scale_Factor>
+		<Space_Model_Name />
+		<Behavior> CAPTURE_POINT, REVEAL, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,TURRET,TARGETING,WEAPON,POWERED,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,STUNNABLE </LandBehavior>
+		<Capture_Point_Transition_Time_Seconds>10.0</Capture_Point_Transition_Time_Seconds>
+		<Is_Decoration>No</Is_Decoration>
+		<Has_Land_Evaluator>Yes</Has_Land_Evaluator>
+		<Capture_Point_Radius>200.0</Capture_Point_Radius>
+		
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		
+		<Begin_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</Begin_Control_Transition_Radar_Event>
+		<End_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</End_Control_Transition_Radar_Event>
+		
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>			
+		<Terrain_Texture_Modifier_Join_Distance>500.0</Terrain_Texture_Modifier_Join_Distance>	
+		<Terrain_Texture_Modifier_Square>true</Terrain_Texture_Modifier_Square>			
+		<Select_Box_Scale>35</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<Is_Community_Property>No</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Space_Layer> Corvette </Space_Layer>
+	
+		<Land_Damage_Thresholds>1, 0.5, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+		<Tactical_Additional_Structure_Type>Power_Generator_E</Tactical_Additional_Structure_Type>
+		<Armor_Type> Armor_Turret </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Mass>1.0</Mass>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>700</Tactical_Health>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>40</Energy_Refresh_Rate>
+		<Projectile_Types>Proj_Ground_Turbolaser_Green</Projectile_Types>
+
+		<Land_FOW_Reveal_Range>700.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>700.0</Targeting_Max_Attack_Distance>
+
+		<Ranged_Target_Z_Adjust>20.0</Ranged_Target_Z_Adjust>
+
+		<Projectile_Fire_Recharge_Seconds>2.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>4</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.3</Projectile_Fire_Pulse_Delay_Seconds>
+
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>45</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Speed>4.0</Turret_Rotate_Speed>
+		<Turret_Bone_Name>B_Turret_00</Turret_Bone_Name>
+		<Barrel_Bone_Name>B_Barrel_00</Barrel_Bone_Name>
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+
+		<!-- Ground infantry priority 1, ground vehicles priority 1, air vehicles N/A (9999) -->
+		<Turret_Targets_Ground_Infantry> 2 </Turret_Targets_Ground_Infantry>
+		<Turret_Targets_Ground_Vehicles> 1 </Turret_Targets_Ground_Vehicles>
+		<Turret_Targets_Air_Vehicles> 3 </Turret_Targets_Air_Vehicles>       
+		<Turret_Targets_Anything_Else> 9999 </Turret_Targets_Anything_Else>     <!-- 9999 = won't target -->
+
+		<Targeting_Fire_Inaccuracy> Infantry, 15.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> LandHero, 15.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 5.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 10.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 1.0 </Targeting_Fire_Inaccuracy>
+
+		<Icon_Name>i_button_turbolaser_tower.tga</Icon_Name>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Special_Weapon_Ready>EHD_Turbo_Tower_Available</SFXEvent_Special_Weapon_Ready>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack> EHD_Turbo_Tower_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> EHD_Turbo_Tower_Destroyed </SFXEvent_Unit_Lost>
+	
+		<CategoryMask> Structure </CategoryMask>
+		<Affiliation>Neutral, Rebel, Empire, Pirates, Underworld</Affiliation>
+		<Death_Clone_Is_Obstacle>True</Death_Clone_Is_Obstacle>
+		<Targeting_Priority_Set>AntiVehicle</Targeting_Priority_Set>
+	</SecondaryStructure>
+	
+	<SecondaryStructure Name="Secondary_Abandoned_Heavy_Turbolaser_Tower">
+		<Text_ID> TEXT_GROUND_TURBOLASER_TOWER_ABANDONED </Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_SECONDARY_TURBOLASER TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_TURBOLASER_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>EB_TLTower.ALO</Land_Model_Name>
+		<Scale_Factor>1.3</Scale_Factor>
+		<Space_Model_Name />
+		<Behavior> CAPTURE_POINT, REVEAL, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,TURRET,TARGETING,WEAPON,POWERED,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,STUNNABLE </LandBehavior>
+		<Capture_Point_Transition_Time_Seconds>10.0</Capture_Point_Transition_Time_Seconds>
+		<Is_Decoration>No</Is_Decoration>
+		<Has_Land_Evaluator>Yes</Has_Land_Evaluator>
+		<Capture_Point_Radius>200.0</Capture_Point_Radius>
+		
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		
+		<Begin_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</Begin_Control_Transition_Radar_Event>
+		<End_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</End_Control_Transition_Radar_Event>
+		
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>			
+		<Terrain_Texture_Modifier_Join_Distance>500.0</Terrain_Texture_Modifier_Join_Distance>	
+		<Terrain_Texture_Modifier_Square>true</Terrain_Texture_Modifier_Square>			
+		<Select_Box_Scale>35</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<Is_Community_Property>No</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Space_Layer> Corvette </Space_Layer>
+	
+		<Land_Damage_Thresholds>1, 0.5, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+		<Tactical_Additional_Structure_Type>Power_Generator_E</Tactical_Additional_Structure_Type>
+		<Armor_Type> Armor_Turret </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Mass>1.0</Mass>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>1300</Tactical_Health>
+		<Energy_Capacity>9999</Energy_Capacity>
+		<Energy_Refresh_Rate>40</Energy_Refresh_Rate>
+		<Projectile_Types>Proj_Ground_Heavy_Turbolaser_Green</Projectile_Types>
+
+		<Land_FOW_Reveal_Range>700.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>700.0</Targeting_Max_Attack_Distance>
+
+		<Ranged_Target_Z_Adjust>20.0</Ranged_Target_Z_Adjust>
+
+		<Projectile_Fire_Recharge_Seconds>4.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>4</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.3</Projectile_Fire_Pulse_Delay_Seconds>
+
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>45</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Speed>4.0</Turret_Rotate_Speed>
+		<Turret_Bone_Name>B_Turret_00</Turret_Bone_Name>
+		<Barrel_Bone_Name>B_Barrel_00</Barrel_Bone_Name>
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+
+		<!-- Ground infantry priority 1, ground vehicles priority 1, air vehicles N/A (9999) -->
+		<Turret_Targets_Ground_Infantry> 2 </Turret_Targets_Ground_Infantry>
+		<Turret_Targets_Ground_Vehicles> 1 </Turret_Targets_Ground_Vehicles>
+		<Turret_Targets_Air_Vehicles> 3 </Turret_Targets_Air_Vehicles>       
+		<Turret_Targets_Anything_Else> 9999 </Turret_Targets_Anything_Else>     <!-- 9999 = won't target -->
+
+		<Targeting_Fire_Inaccuracy> Infantry, 15.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> LandHero, 15.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 5.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 10.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 1.0 </Targeting_Fire_Inaccuracy>
+
+		<Icon_Name>i_button_turbolaser_tower.tga</Icon_Name>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Special_Weapon_Ready>EHD_Turbo_Tower_Available</SFXEvent_Special_Weapon_Ready>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack> EHD_Turbo_Tower_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> EHD_Turbo_Tower_Destroyed </SFXEvent_Unit_Lost>
+	
+		<CategoryMask> Structure </CategoryMask>
+		<Affiliation>Neutral, Rebel, Empire, Pirates, Underworld</Affiliation>
+		<Death_Clone_Is_Obstacle>True</Death_Clone_Is_Obstacle>
+		<Targeting_Priority_Set>AntiVehicle</Targeting_Priority_Set>
+	</SecondaryStructure>
+	
+	
+	<SecondaryStructure Name="Secondary_Mercenary_Outfitter">
+		<Text_ID>TEXT_GROUND_MERCENARY_OUTFITTER</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_SECONDARY_OUTFITTER_01 TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_OUTFITTER_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>NB_MercenaryOutfitter.alo</Land_Model_Name>
+		<Icon_Name>i_button_nb_mercenary_outfitter.tga</Icon_Name>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<Behavior>REVEAL, HIDE_WHEN_FOGGED, CAPTURE_POINT, SELECTABLE</Behavior>
+		<LandBehavior>DUMMY_GROUND_STRUCTURE, LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<SpaceBehavior>SPACE_OBSTACLE</SpaceBehavior>
+		
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack> EHD_Mercenary_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> EHD_Mercenary_Destroyed </SFXEvent_Unit_Lost>
+
+		<Tactical_Buildable_Objects_Campaign> 
+			Empire,
+				E_Secure_Area_Upgrade,
+				E_Magnetically_Sealed_Structure_Upgrade,				
+				RL_Weatherproof_Upgrade,
+			Rebel,
+				R_Magnetically_Sealed_Structure_Upgrade,
+				R_Secure_Area_Upgrade,
+				CL_Weatherproof_Upgrade
+			
+		</Tactical_Buildable_Objects_Campaign>
+		
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Empire,
+				E_Magnetically_Sealed_Structure_Upgrade,
+				E_Secure_Area_Upgrade,
+			Rebel,
+				R_Magnetically_Sealed_Structure_Upgrade,
+				R_Secure_Area_Upgrade
+			
+		</Tactical_Buildable_Objects_Multiplayer>
+				
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+        <Ownership_Sticks>Yes</Ownership_Sticks>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Neutral, Rebel, Empire, Pirates, Underworld</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+		
+		<Destruction_Survivors>
+			Pirate_Survivors_Medium, 1.0
+		</Destruction_Survivors>
+
+		<Land_Damage_Thresholds> 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates> 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+		<Death_Clone_Is_Obstacle>True</Death_Clone_Is_Obstacle>
+	</SecondaryStructure>
+	
+		<SecondaryStructure Name="N_Gravity_Well_Station">
+		<Text_ID>TEXT_GRAVITY_WELL_STATION</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_GRAVITY_WELL_STATION_01  </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<Behavior>CAPTURE_POINT, SELECTABLE, DUMMY_ORBITAL_STRUCTURE</Behavior>
+		<SpaceBehavior>SPACE_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, UNIT_AI</SpaceBehavior>
+		<Space_Model_Name>NB_CommJamStation.alo</Space_Model_Name>
+		<Space_Layer> StaticObject </Space_Layer>
+		
+		<GUI_Row> 0 </GUI_Row>
+		<Select_Box_Scale>330</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Neutral, Empire, Rebel, Underworld</Affiliation>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		
+		<Tech_Level>0</Tech_Level>
+		<Is_Interdictor>Yes</Is_Interdictor>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		
+		<Icon_Name>i_button_comm_jamming.tga</Icon_Name>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+		<SFXEvent_Select> Structure_Power_Gen_Select_SFX </SFXEvent_Select>
+		<Is_Community_Property>Yes</Is_Community_Property>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Armor_Type> Armor_Satellite </Armor_Type>
+
+		<Modifies_Reveal_Range>no</Modifies_Reveal_Range>
+		<Reveal_Range_Modifier>-.50</Reveal_Range_Modifier>
+		
+		<CategoryMask> Structure </CategoryMask>
+
+
+		<Death_Clone>Damage_Normal, N_Gravity_Well_Station_Death_Clone</Death_Clone>
+
+		<Score_Cost_Credits> 2000 </Score_Cost_Credits>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Custom_Soft_Footprint_Radius> 500 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		
+		
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		
+		<Tactical_Health>600</Tactical_Health>
+		<Reinforcement_Prevention_Radius> 2200 </Reinforcement_Prevention_Radius>
+		<Capture_Point_Radius>350.0</Capture_Point_Radius>
+		<Capture_Point_Transition_Time_Seconds>13</Capture_Point_Transition_Time_Seconds>
+		<Tactical_Respawn_Time_In_Secs>50</Tactical_Respawn_Time_In_Secs>
+		<Ownership_Sticks>Yes</Ownership_Sticks>
+		
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="N_Gravity_Well_Station_Death_Clone">
+		<Text_ID>TEXT_GRAVITY_WELL_STATION</Text_ID>
+		<Space_Model_Name>NB_CommJamStation_D.alo</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Death_Explosions>Large_Explosion_Space_Empire</Death_Explosions>
+		<Affiliation>Neutral, Empire, Rebel, Underworld</Affiliation>
+		<Ship_Class>capital_ship</Ship_Class>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SecondaryStructure>
+
+
+	<SecondaryStructure Name="N_Remote_Sensor_Pod">
+		<Text_ID>TEXT_REMOTE_SENSOR_POD</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_REMOTE_SENSOR_POD  </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<Behavior>CAPTURE_POINT, SELECTABLE, DUMMY_ORBITAL_STRUCTURE</Behavior>
+		<SpaceBehavior>SPACE_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, UNIT_AI</SpaceBehavior>
+		
+		<Space_Model_Name>NB_SpaceSensorNode.ALO</Space_Model_Name>
+		<Icon_Name>i_button_space_sensornode.tga</Icon_Name>
+		<Affiliation>Neutral, Empire, Rebel, Underworld</Affiliation>
+
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Tactical_Health>500</Tactical_Health>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		
+		<Victory_Relevant>no</Victory_Relevant>
+
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> EHD_Jamming_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> EHD_Jamming_Station_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select> Structure_Comm_Array_Select_SFX </SFXEvent_Select>
+		
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Armor_Type> Armor_Satellite </Armor_Type>
+
+
+		<CategoryMask> Structure </CategoryMask>
+
+		
+		<Score_Cost_Credits> 1000 </Score_Cost_Credits>
+		<Custom_Soft_Footprint_Radius> 180 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		
+		
+		<Tactical_Health>600</Tactical_Health>
+		<Space_FOW_Reveal_Range>18000</Space_FOW_Reveal_Range>
+		<Capture_Point_Radius>350</Capture_Point_Radius>
+		<Capture_Point_Transition_Time_Seconds>10</Capture_Point_Transition_Time_Seconds>
+		<Tactical_Respawn_Time_In_Secs>30</Tactical_Respawn_Time_In_Secs>
+		<Ownership_Sticks>Yes</Ownership_Sticks>
+		
+	</SecondaryStructure>
+	
+	<SecondaryStructure Name="Skirmish_Hutt_Asteroid_Base">
+		<Variant_Of_Existing_Type>Hutt_Asteroid_Base</Variant_Of_Existing_Type>
+		
+		<Behavior>CAPTURE_POINT, DUMMY_STAR_BASE, SELECTABLE</Behavior>
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Victory_Relevant>no</Victory_Relevant>
+		<Affiliation>Rebel, Empire, Neutral, Underworld</Affiliation>
+		
+		<Capture_Point_Transition_Time_Seconds>20</Capture_Point_Transition_Time_Seconds>
+		<Capture_Point_Radius>800</Capture_Point_Radius>
+		
+		<Tactical_Health> 700 </Tactical_Health>
+		<Shield_Points>300</Shield_Points>
+		<Shield_Refresh_Rate>10</Shield_Refresh_Rate>
+		<Energy_Capacity>2000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+		<Damage>35</Damage>
+
+		<Base_Level>6</Base_Level>
+		<Prev_Level_Base />
+		<Next_Level_Base />
+
+		<Ownership_Sticks>Yes</Ownership_Sticks>
+		<Tactical_Respawn_Time_In_Secs>120</Tactical_Respawn_Time_In_Secs>
+		<Space_FOW_Reveal_Range>1000.0</Space_FOW_Reveal_Range>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Reinforcement_Prevention_Radius> 1000 </Reinforcement_Prevention_Radius>
+		
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Empire,
+				Empire_Pirate_IPV,
+				Empire_Pirate_Frigate,
+				Republic_Gozanti_Cruiser,
+				Empire_Pirate_Fighter_Squadron,
+				Z95_Headhunter_Empire_Squadron,
+			Rebel,
+				Rebel_Pirate_IPV,
+				Rebel_Pirate_Frigate,
+				Cis_Gozanti_Cruiser,
+				Rebel_Pirate_Fighter_Squadron,
+				Z95_Headhunter_Rebel_Squadron
+		</Tactical_Buildable_Objects_Multiplayer>
+		
+		<Tech_Level>0</Tech_Level>
+		
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Select> Structure_Light_Factory_Select_SFX </SFXEvent_Select>
+		<SFXEvent_Unit_Under_Attack> </SFXEvent_Unit_Under_Attack>
+				
+		<HardPoints>
+			HP_Pirate_Base_Shield_Gen_00_Weak, HP_Pirate_Base_Heavy_Turret_00_Weak, HP_Pirate_Base_Heavy_Turret_01_Weak, HP_Pirate_Base_Turbolaser_00_Weak, HP_Pirate_Base_Turbolaser_01_Weak, HP_Pirate_Base_Turbolaser_02_Weak, HP_Pirate_Base_Turbolaser_03_Weak, HP_Pirate_Base_Laser_Cannon_00_Weak, HP_Pirate_Base_Laser_Cannon_01_Weak
+		</HardPoints>
+		
+		<Scale_Factor> .85 </Scale_Factor>
+		
+		<Text_ID>TEXT_HUTT_STAR_BASE_1</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_STATION2</Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_MERCHANT_SPACE_DOCK_00 </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STATION</Encyclopedia_Unit_Class>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>Yes</Initial_State_Visible_Under_FOW>
+		
+		<Death_Clone>Damage_Normal, Skirmish_Hutt_Asteroid_Base_Death_Clone</Death_Clone>
+		<Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+		
+	</SecondaryStructure>
+	
+	<SecondaryStructure Name="Skirmish_Hutt_Asteroid_Base_Death_Clone">
+		<Space_Model_Name>NB_APBase_D.alo</Space_Model_Name>
+		<Scale_Factor> .85 </Scale_Factor>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<CategoryMask> Capital </CategoryMask>
+		<Death_Persistence_Duration> 25 </Death_Persistence_Duration>
+		<Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+	</SecondaryStructure>
+	
+	<SecondaryStructure Name="Skirmish_Merchant_Dock">
+		<Select_Box_Scale>600</Select_Box_Scale>
+		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
+		<Variant_Of_Existing_Type>Orbital_Construction_Pod</Variant_Of_Existing_Type>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Armor_Type>  Armor_Satellite </Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+	
+		<Behavior>CAPTURE_POINT, DUMMY_ORBITAL_STRUCTURE, SELECTABLE</Behavior>
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>	
+		
+		<Capture_Point_Transition_Time_Seconds>15</Capture_Point_Transition_Time_Seconds>
+		<Capture_Point_Radius>800</Capture_Point_Radius>
+		<Reinforcement_Prevention_Radius> 800 </Reinforcement_Prevention_Radius>
+		<Tactical_Respawn_Time_In_Secs>80</Tactical_Respawn_Time_In_Secs>
+		
+		<Shield_Points>500</Shield_Points>
+		<Shield_Refresh_Rate>10</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+				
+		
+		<Affiliation>Rebel, Empire, Neutral, Underworld</Affiliation>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Empire,
+				Empire_Pirate_IPV,
+				Empire_Pirate_Frigate,
+				Republic_Gozanti_Cruiser
+				Empire_Pirate_Fighter_Squadron,
+				Z95_Headhunter_Empire_Squadron,
+			Rebel,
+				Rebel_Pirate_IPV,
+				Rebel_Pirate_Frigate,
+				Cis_Gozanti_Cruiser,
+				Rebel_Pirate_Fighter_Squadron,
+				Z95_Headhunter_Rebel_Squadron
+		</Tactical_Buildable_Objects_Multiplayer>
+		
+		<Collidable_By_Projectile_Living> Yes </Collidable_By_Projectile_Living>
+		<Space_Layer> StaticObject </Space_Layer>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+
+		<SFXEvent_Select>Structure_Light_Factory_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		
+		<Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+		
+        <Ownership_Sticks>Yes</Ownership_Sticks>
+		<Scale_Factor> 1.75 </Scale_Factor>
+		<Tactical_Health> 600 </Tactical_Health>
+		<Base_Level_Available> 0 </Base_Level_Available>
+		<Required_Ground_Base_Level> 0 </Required_Ground_Base_Level>
+		<Space_FOW_Reveal_Range>850.0</Space_FOW_Reveal_Range>
+		<CategoryMask> Structure </CategoryMask>
+        <Is_Community_Property>Yes</Is_Community_Property>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		
+		<Text_ID> TEXT_STRUCTURE_MERCHANT_SPACE_DOCK </Text_ID>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_MERCHANT_SPACE_DOCK_00 </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>Yes</Initial_State_Visible_Under_FOW>
+	</SecondaryStructure>
+
+
+</SecondaryStructures>

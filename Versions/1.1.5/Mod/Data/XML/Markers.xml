@@ -1,0 +1,1471 @@
+<?xml version="1.0"?>
+<Markers>
+	<Marker Name="Attacker Entry Position">
+		<Text_ID>TEXT_ATTACKER_ENTRY_POSITION</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name>w_flag_marker_Green.alo</Galactic_Model_Name>
+		<Space_Model_Name>w_flag_marker_Green.alo</Space_Model_Name>
+		<Land_Model_Name>w_flag_marker_Green.alo</Land_Model_Name>
+		<Behavior>MARKER, HINT</Behavior>
+		<Land_FOW_Reveal_Range>600.0</Land_FOW_Reveal_Range>
+		<Reveal_For_Attacker>true</Reveal_For_Attacker>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+	</Marker>
+
+	<Marker Name="Attacker Setup Phase Reveal">
+		<Text_ID>TEXT_ATTACKER_ENTRY_POSITION</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name>w_flag_marker_Green.alo</Galactic_Model_Name>
+		<Space_Model_Name>w_flag_marker_Green.alo</Space_Model_Name>
+		<Land_Model_Name>w_flag_marker_Green.alo</Land_Model_Name>
+		<Behavior>MARKER</Behavior>
+		<Land_FOW_Reveal_Range>600.0</Land_FOW_Reveal_Range>
+		<Reveal_For_Attacker>true</Reveal_For_Attacker>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+	</Marker>
+
+	<Marker Name="Defending Forces Position">
+		<Text_ID>TEXT_DEFENDING_FORCES_POSITION</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name>w_flag_marker_Blue.alo</Galactic_Model_Name>
+		<Space_Model_Name>w_flag_marker_Blue.alo</Space_Model_Name>
+		<Land_Model_Name>w_flag_marker_Blue.alo</Land_Model_Name>
+		<Behavior>MARKER, HINT</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
+	</Marker>
+
+	<Marker Name="Defender Setup Phase Reveal">
+		<Text_ID>TEXT_DEFENDING_FORCES_POSITION</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name>w_flag_marker_Blue.alo</Galactic_Model_Name>
+		<Space_Model_Name>w_flag_marker_Blue.alo</Space_Model_Name>
+		<Land_Model_Name>w_flag_marker_Blue.alo</Land_Model_Name>
+		<Behavior>MARKER</Behavior>
+		<Land_FOW_Reveal_Range>600.0</Land_FOW_Reveal_Range>
+		<Reveal_For_Defender>true</Reveal_For_Defender>
+		<Is_Discardable>false</Is_Discardable> 
+		<Affiliation>Neutral</Affiliation>
+	</Marker>
+
+	<Marker Name="In Base Special Structure Position">
+		<Text_ID>TEXT_IN_BASE_SS_POSITION</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Land_Model_Name>EB_MegaAdvancedWeapons.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
+	</Marker>
+	
+	<Marker Name="Out Base Special Structure Position">
+		<Text_ID>TEXT_OUT_BASE_SS_POSITION</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Land_Model_Name>EB_GRAVCONTROLGEN.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
+	</Marker>
+	
+	<Marker Name="Base Shield Structure Position">
+		<Text_ID>TEXT_GROUND_BASE_SHIELD</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Marker_For_Specific_Object_Type> E_Ground_Base_Shield, R_Ground_Base_Shield </Marker_For_Specific_Object_Type>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Land_Model_Name>NB_BASESHIELDGEN.ALO</Land_Model_Name>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.75</Scale_Factor>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
+	</Marker>
+	
+	<Marker Name="Pirate Shield Structure Position">
+		<Text_ID>TEXT_GROUND_BASE_SHIELD</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Marker_For_Specific_Object_Type> P_Ground_Base_Shield_Small </Marker_For_Specific_Object_Type>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Land_Model_Name>NB_BASESHIELDGEN_small.ALO</Land_Model_Name>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Pirates</Affiliation>
+		<Scale_Factor>0.75</Scale_Factor>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
+	</Marker>
+
+	<Marker Name="Power Generator Structure Position">
+		<Text_ID>TEXT_STRUCTURE_POWER_GENERATOR</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Marker_For_Specific_Object_Type> Power_Generator_E, Power_Generator_R, Power_Generator_P </Marker_For_Specific_Object_Type>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Land_Model_Name>RB_SHIELD-GENERATOR.ALO</Land_Model_Name>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.75</Scale_Factor>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
+	</Marker>
+	
+	<Marker Name="Turbolaser Structure Position">
+		<Text_ID>TEXT_GROUND_TURBOLASER_TOWER</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Marker_For_Specific_Object_Type> E_Ground_Turbolaser_Tower, R_Ground_Flakgun </Marker_For_Specific_Object_Type>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Land_Model_Name>EB_TLTower.ALO</Land_Model_Name>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.75</Scale_Factor>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
+	</Marker>
+	
+	<Marker Name="Pirate Command Center Position">
+		<Text_ID>TEXT_STRUCTURE_PIRATE_BASE</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Marker_For_Specific_Object_Type> Pirate_Command_Center </Marker_For_Specific_Object_Type>
+		<Galactic_Model_Name />
+		<Space_Model_Name />
+		<Land_Model_Name>nb_piratebase_01.alo</Land_Model_Name>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Pirates</Affiliation>
+	</Marker>
+
+	<Marker Name="Orbital Special Structure Position">
+		<Text_ID>TEXT_ORBITAL_SS_POSITION</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name>NV_LRS.ALO</Space_Model_Name>
+		<Land_Model_Name />
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+	</Marker>
+
+	<Marker Name="Space Station Position">
+		<Text_ID>TEXT_ORBITAL_STATION_POSITION</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Space_Model_Name>RB_STATION_05.ALO</Space_Model_Name>
+		<Land_Model_Name />
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+	</Marker>
+	
+	<Marker Name="Orbital_Weapons_Structure Position">
+		<Text_ID>TEXT_GROUND_TURBOLASER_TOWER</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Marker_For_Specific_Object_Type> Cis_Gun_Platform </Marker_For_Specific_Object_Type>
+		<Galactic_Model_Name />
+		<Space_Model_Name>SeV_Gun_Platform.ALO</Space_Model_Name>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
+	</Marker>
+
+	<Marker Name="Garrison Position">
+		<Text_ID>TEXT_DEFENDING_GARRISON_POSITION</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name>w_flag_marker_Blue.alo</Galactic_Model_Name>
+		<Space_Model_Name>w_flag_marker_Blue.alo</Space_Model_Name>
+		<Land_Model_Name>w_flag_marker_Blue.alo</Land_Model_Name>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+	</Marker>
+
+    <Marker Name="AI Hint Zone Center">
+        <Text_ID>TEXT_AI_HINT_ZONE_POSITION</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Land Defender Retreat Marker">
+        <Text_ID> TEXT_LAND_DEFENDER_RETREAT_MARKER </Text_ID>
+        <Is_Marker> Yes </Is_Marker>
+        <Land_Model_Name> W_FLAG_MARKER_YELLOW.ALO </Land_Model_Name>
+        <Behavior> MARKER, HINT </Behavior>
+        <Is_Discardable>false</Is_Discardable> 
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Story_Trigger_Zone">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+        <Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+
+    <Marker Name="Story_Trigger_Zone_00">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+        <Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Story_Trigger_Zone_01">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+        <Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Story_Trigger_Zone_02">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+        <Is_Discardable>false</Is_Discardable> 
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Story_Trigger_Zone_03">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+        <Is_Discardable>false</Is_Discardable> 
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Story_Trigger_Zone_04">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+        <Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+    
+    <Marker Name="Story_Trigger_Zone_05">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+        <Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+    
+    <Marker Name="Story_Trigger_Zone_06">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+        <Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+    
+    <Marker Name="Story_Trigger_Zone_07">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+        <Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+    
+    <Marker Name="Story_Trigger_Zone_08">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+        <Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+    
+    <Marker Name="Story_Trigger_Zone_09">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+        <Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Story_Trigger_Zone_10">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+        <Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Story_Trigger_Zone_11">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+        <Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Story_Trigger_Zone_12">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+        <Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Story_Trigger_Zone_13">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+        <Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Story_Trigger_Zone_14">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+        <Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Story_Trigger_Zone_15">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+        <Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Story_Trigger_Zone_16">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+        <Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+
+
+    <Marker Name="Reveal_Marker_00">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+		<LandBehavior>REVEAL</LandBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+        <Is_Discardable>false</Is_Discardable>
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>No</Collidable_By_Projectile_Dead>
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<CategoryMask> Structure </CategoryMask>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+
+    <Marker Name="Reveal_Marker_01">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+		<LandBehavior> REVEAL</LandBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+        <Is_Discardable>false</Is_Discardable>
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>No</Collidable_By_Projectile_Dead>
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<CategoryMask> Structure </CategoryMask>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Reveal_Marker_02">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+		<LandBehavior> REVEAL</LandBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+        <Is_Discardable>false</Is_Discardable>
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>No</Collidable_By_Projectile_Dead>
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<CategoryMask> Structure </CategoryMask>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Reveal_Marker_03">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+		<LandBehavior> REVEAL</LandBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+        <Is_Discardable>false</Is_Discardable>
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>No</Collidable_By_Projectile_Dead>
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<CategoryMask> Structure </CategoryMask>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Reveal_Marker_04">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+		<LandBehavior> REVEAL</LandBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+        <Is_Discardable>false</Is_Discardable>
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>No</Collidable_By_Projectile_Dead>
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<CategoryMask> Structure </CategoryMask>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Reveal_Marker_05">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+		<LandBehavior> REVEAL</LandBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+        <Is_Discardable>false</Is_Discardable>
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>No</Collidable_By_Projectile_Dead>
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<CategoryMask> Structure </CategoryMask>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Reveal_Marker_06">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+		<LandBehavior> REVEAL</LandBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+        <Is_Discardable>false</Is_Discardable>
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>No</Collidable_By_Projectile_Dead>
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<CategoryMask> Structure </CategoryMask>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Reveal_Marker_07">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+		<LandBehavior> REVEAL</LandBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+        <Is_Discardable>false</Is_Discardable>
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>No</Collidable_By_Projectile_Dead>
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<CategoryMask> Structure </CategoryMask>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Reveal_Marker_08">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+		<LandBehavior> REVEAL</LandBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+        <Is_Discardable>false</Is_Discardable>
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>No</Collidable_By_Projectile_Dead>
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<CategoryMask> Structure </CategoryMask>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Reveal_Marker_09">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+		<LandBehavior> REVEAL</LandBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+        <Is_Discardable>false</Is_Discardable>
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>No</Collidable_By_Projectile_Dead>
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<CategoryMask> Structure </CategoryMask>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Reveal_Marker_10">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+		<LandBehavior> REVEAL</LandBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+        <Is_Discardable>false</Is_Discardable>
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>No</Collidable_By_Projectile_Dead>
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<CategoryMask> Structure </CategoryMask>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+
+    <Marker Name="Player_0_Position_Marker">
+        <Text_ID> TEXT_SKIRMISH_PLAYER_POSITION </Text_ID>
+        <Is_Marker> Yes </Is_Marker>
+        <Land_Model_Name> W_FLAG_MARKER_RED.ALO </Land_Model_Name>
+        <Space_Model_Name>W_FLAG_MARKER_RED.ALO</Space_Model_Name>
+        <Behavior> MARKER </Behavior>
+        <Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Player_1_Position_Marker">
+        <Text_ID> TEXT_SKIRMISH_PLAYER_POSITION </Text_ID>
+        <Is_Marker> Yes </Is_Marker>
+        <Land_Model_Name> W_FLAG_MARKER_RED.ALO </Land_Model_Name>
+        <Space_Model_Name>W_FLAG_MARKER_RED.ALO</Space_Model_Name>
+        <Behavior> MARKER </Behavior>
+        <Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Player_2_Position_Marker">
+        <Text_ID> TEXT_SKIRMISH_PLAYER_POSITION </Text_ID>
+        <Is_Marker> Yes </Is_Marker>
+        <Land_Model_Name> W_FLAG_MARKER_RED.ALO </Land_Model_Name>
+        <Space_Model_Name>W_FLAG_MARKER_RED.ALO</Space_Model_Name>
+        <Behavior> MARKER </Behavior>
+        <Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Player_3_Position_Marker">
+        <Text_ID> TEXT_SKIRMISH_PLAYER_POSITION </Text_ID>
+        <Is_Marker> Yes </Is_Marker>
+        <Land_Model_Name> W_FLAG_MARKER_RED.ALO </Land_Model_Name>
+        <Space_Model_Name>W_FLAG_MARKER_RED.ALO</Space_Model_Name>
+        <Behavior> MARKER </Behavior>
+        <Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Player_4_Position_Marker">
+        <Text_ID> TEXT_SKIRMISH_PLAYER_POSITION </Text_ID>
+        <Is_Marker> Yes </Is_Marker>
+        <Land_Model_Name> W_FLAG_MARKER_RED.ALO </Land_Model_Name>
+        <Space_Model_Name>W_FLAG_MARKER_RED.ALO</Space_Model_Name>
+        <Behavior> MARKER </Behavior>
+        <Is_Discardable>false</Is_Discardable> 
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Player_5_Position_Marker">
+        <Text_ID> TEXT_SKIRMISH_PLAYER_POSITION </Text_ID>
+        <Is_Marker> Yes </Is_Marker>
+        <Land_Model_Name> W_FLAG_MARKER_RED.ALO </Land_Model_Name>
+        <Space_Model_Name>W_FLAG_MARKER_RED.ALO</Space_Model_Name>
+        <Behavior> MARKER </Behavior>
+        <Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Player_6_Position_Marker">
+        <Text_ID> TEXT_SKIRMISH_PLAYER_POSITION </Text_ID>
+        <Is_Marker> Yes </Is_Marker>
+        <Land_Model_Name> W_FLAG_MARKER_RED.ALO </Land_Model_Name>
+        <Space_Model_Name>W_FLAG_MARKER_RED.ALO</Space_Model_Name>
+        <Behavior> MARKER </Behavior>
+        <Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Player_7_Position_Marker">
+        <Text_ID> TEXT_SKIRMISH_PLAYER_POSITION </Text_ID>
+        <Is_Marker> Yes </Is_Marker>
+        <Land_Model_Name> W_FLAG_MARKER_RED.ALO </Land_Model_Name>
+        <Space_Model_Name>W_FLAG_MARKER_RED.ALO</Space_Model_Name>
+        <Behavior> MARKER </Behavior>
+        <Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Player_0_Spawn_Point_Marker">
+        <Text_ID> TEXT_SKIRMISH_PLAYER_SPAWN_POINT </Text_ID>
+        <Is_Marker> Yes </Is_Marker>
+        <Land_Model_Name> W_FLAG_MARKER_RED.ALO </Land_Model_Name>
+        <Space_Model_Name>W_FLAG_MARKER_RED.ALO</Space_Model_Name>
+        <Behavior> MARKER </Behavior>
+        <Is_Discardable>false</Is_Discardable> 
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Player_1_Spawn_Point_Marker">
+        <Text_ID> TEXT_SKIRMISH_PLAYER_SPAWN_POINT </Text_ID>
+        <Is_Marker> Yes </Is_Marker>
+        <Land_Model_Name> W_FLAG_MARKER_RED.ALO </Land_Model_Name>
+        <Space_Model_Name>W_FLAG_MARKER_RED.ALO</Space_Model_Name>
+        <Behavior> MARKER </Behavior>
+        <Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Player_2_Spawn_Point_Marker">
+        <Text_ID> TEXT_SKIRMISH_PLAYER_SPAWN_POINT </Text_ID>
+        <Is_Marker> Yes </Is_Marker>
+        <Land_Model_Name> W_FLAG_MARKER_RED.ALO </Land_Model_Name>
+        <Space_Model_Name>W_FLAG_MARKER_RED.ALO</Space_Model_Name>
+        <Behavior> MARKER </Behavior>
+        <Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Player_3_Spawn_Point_Marker">
+        <Text_ID> TEXT_SKIRMISH_PLAYER_SPAWN_POINT </Text_ID>
+        <Is_Marker> Yes </Is_Marker>
+        <Land_Model_Name> W_FLAG_MARKER_RED.ALO </Land_Model_Name>
+        <Space_Model_Name>W_FLAG_MARKER_RED.ALO</Space_Model_Name>
+        <Behavior> MARKER </Behavior>
+        <Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Player_4_Spawn_Point_Marker">
+        <Text_ID> TEXT_SKIRMISH_PLAYER_SPAWN_POINT </Text_ID>
+        <Is_Marker> Yes </Is_Marker>
+        <Land_Model_Name> W_FLAG_MARKER_RED.ALO </Land_Model_Name>
+        <Space_Model_Name>W_FLAG_MARKER_RED.ALO</Space_Model_Name>
+        <Behavior> MARKER </Behavior>
+        <Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+    
+    <Marker Name="Player_5_Spawn_Point_Marker">
+        <Text_ID> TEXT_SKIRMISH_PLAYER_SPAWN_POINT </Text_ID>
+        <Is_Marker> Yes </Is_Marker>
+        <Land_Model_Name> W_FLAG_MARKER_RED.ALO </Land_Model_Name>
+        <Space_Model_Name>W_FLAG_MARKER_RED.ALO</Space_Model_Name>
+        <Behavior> MARKER </Behavior>
+        <Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Player_6_Spawn_Point_Marker">
+        <Text_ID> TEXT_SKIRMISH_PLAYER_SPAWN_POINT </Text_ID>
+        <Is_Marker> Yes </Is_Marker>
+        <Land_Model_Name> W_FLAG_MARKER_RED.ALO </Land_Model_Name>
+        <Space_Model_Name>W_FLAG_MARKER_RED.ALO</Space_Model_Name>
+        <Behavior> MARKER </Behavior>
+        <Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Player_7_Spawn_Point_Marker">
+        <Text_ID> TEXT_SKIRMISH_PLAYER_SPAWN_POINT </Text_ID>
+        <Is_Marker> Yes </Is_Marker>
+        <Land_Model_Name> W_FLAG_MARKER_RED.ALO </Land_Model_Name>
+        <Space_Model_Name>W_FLAG_MARKER_RED.ALO</Space_Model_Name>
+        <Behavior> MARKER </Behavior>
+        <Is_Discardable>false</Is_Discardable> 
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+    
+    <Marker Name="IN_GAME_BOMBING_RUN_MARKER">
+        <Text_ID> TEXT_BOMBERING_RUN_TARGET </Text_ID>
+        <Is_Marker> Yes </Is_Marker>
+        <Land_Model_Name> W_FLAG_MARKER_RED.ALO </Land_Model_Name>
+        <Space_Model_Name>W_FLAG_MARKER_RED.ALO</Space_Model_Name>
+        <Behavior> MARKER </Behavior>
+		<CategoryMask> Structure </CategoryMask>	<!-- Some kind of category is required to be targeted for land bombing runs -->
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+
+    <Marker Name="Death_Star_Position">
+        <Text_ID> TEXT_DEATH_STAR_POSITION </Text_ID>
+        <Is_Marker> Yes </Is_Marker>
+        <Land_Model_Name> </Land_Model_Name>
+        <Space_Model_Name>w_planet_deathstar.alo</Space_Model_Name>
+        <Behavior> MARKER </Behavior>
+        <Is_Discardable>false</Is_Discardable>  
+		<Scale_Factor>2.0</Scale_Factor>
+		<In_Background>Yes</In_Background>
+    </Marker>
+
+	 <Marker Name="Cash_Point_Small">
+		<Text_ID> TEXT_CASH_POINT </Text_ID>
+		<Land_Model_Name>W_Pedistal.alo</Land_Model_Name>
+		<Scale_Factor>0.8</Scale_Factor>
+		<Space_Model_Name />
+		<Behavior> CASH_POINT </Behavior>
+		<Cash_Point_Credits_Per_Second>100</Cash_Point_Credits_Per_Second>
+		<Cash_Point_Radius>30</Cash_Point_Radius>
+		<Influences_Cash_Point>no</Influences_Cash_Point>
+		<Cash_Point_Transition_Time_Seconds>5.0</Cash_Point_Transition_Time_Seconds>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Has_Land_Evaluator>Yes</Has_Land_Evaluator>
+	 </Marker>
+
+    <Marker Name="Cash_Point_Medium">
+		<Text_ID> TEXT_CASH_POINT </Text_ID>
+		<Land_Model_Name>W_Pedistal.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Space_Model_Name />
+		<Behavior> CASH_POINT </Behavior>
+		<Cash_Point_Credits_Per_Second>200</Cash_Point_Credits_Per_Second>
+		<Cash_Point_Radius>40</Cash_Point_Radius>
+		<Influences_Cash_Point>no</Influences_Cash_Point>
+		<Cash_Point_Transition_Time_Seconds>5.0</Cash_Point_Transition_Time_Seconds>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Has_Land_Evaluator>Yes</Has_Land_Evaluator>
+    </Marker>
+
+    <Marker Name="Cash_Point_Large">
+		<Text_ID> TEXT_CASH_POINT </Text_ID>
+		<Land_Model_Name>W_Pedistal.alo</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Space_Model_Name />
+		<Behavior> CASH_POINT </Behavior>
+		<Cash_Point_Credits_Per_Second>300</Cash_Point_Credits_Per_Second>
+		<Cash_Point_Radius>50</Cash_Point_Radius>
+		<Influences_Cash_Point>no</Influences_Cash_Point>
+		<Cash_Point_Transition_Time_Seconds>5.0</Cash_Point_Transition_Time_Seconds>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Has_Land_Evaluator>Yes</Has_Land_Evaluator>
+		
+	 </Marker>
+
+
+
+
+    <Marker Name="Debug_Audio_Emitter_Marker">
+        <Text_ID> TEXT_DEBUG_AUDIO_EMITTER_MARKER </Text_ID>
+        <Is_Marker> Yes </Is_Marker>
+        <Land_Model_Name> w_flag_marker_Blue.alo </Land_Model_Name>
+        <Space_Model_Name> </Space_Model_Name>
+        <Behavior> </Behavior> <!-- For test case, dont set MARKER behavior -->
+		  <SFXEvent_Debug_Test_Loop> Debug_Audio_Test_Loop </SFXEvent_Debug_Test_Loop>
+    </Marker>
+
+	 <!-- Mike and Frank - 12.19.2005 -->
+    <Marker Name="Audio_Waterfall_Emitter_Marker">
+        <Text_ID> TEXT_AUDIO_WATERFALL_EMITTER_MARKER </Text_ID>
+        <Is_Marker> Yes </Is_Marker>
+        <Land_Model_Name> w_flag_marker_Blue.alo </Land_Model_Name>
+        <Space_Model_Name> </Space_Model_Name>
+        <Behavior> MARKER </Behavior>
+		  <SFXEvent_Ambient_Loop> Ambient_Waterfall_Loop </SFXEvent_Ambient_Loop>
+    </Marker>
+
+
+
+    <Marker Name="Reinforcement_Point">
+		<Text_ID> TEXT_TOOLTIP_REINFORCEMENT_POINT_NAME </Text_ID>
+		<Tooltip_Text>TEXT_TOOLTIP_REINFORCEMENT_POINT_DESCRIPTION</Tooltip_Text>
+		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_DESCRIPTION </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>W_Pedistal_Faction.alo</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Space_Model_Name />
+		<Behavior> CAPTURE_POINT, REVEAL, REINFORCEMENT_POINT, DUMMY_TOOLTIP </Behavior>
+		<Capture_Point_Transition_Time_Seconds>10.0</Capture_Point_Transition_Time_Seconds>
+		<Is_Decoration>No</Is_Decoration>
+		<Has_Land_Evaluator>Yes</Has_Land_Evaluator>
+		<Reinforcement_Enabling_Radius>250.0</Reinforcement_Enabling_Radius>
+		<Land_FOW_Reveal_Range>275.0</Land_FOW_Reveal_Range>
+		<Capture_Point_Radius>100.0</Capture_Point_Radius>
+		
+		<Is_Visible_On_Radar>True</Is_Visible_On_Radar>
+		<Radar_Show_Facing>No</Radar_Show_Facing>
+		<Radar_Range_Icon_Name>i_radar_landing.tga</Radar_Range_Icon_Name>
+		<Radar_Icon_Name>mini_map_reinforcement.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<Begin_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</Begin_Control_Transition_Radar_Event>
+		<End_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</End_Control_Transition_Radar_Event>
+		<Reinforcement_Region_Blob_Name>Reinforcement_Point_Radius_Overlay</Reinforcement_Region_Blob_Name>
+
+		<Faction_Anim_Subindex>Rebel, 0</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Empire, 1</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Neutral, 2</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Pirates, 2</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Underworld, 3</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Hostile, 2</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Hutts, 2</Faction_Anim_Subindex>
+
+		<Influences_Capture_Point>True</Influences_Capture_Point>
+		<Control_Point_Domination_Condition_Relevant>Yes</Control_Point_Domination_Condition_Relevant>
+		<Affiliation>Neutral, Rebel, Empire, Pirates, Underworld, Hutts</Affiliation>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
+		<Additional_Population_Capacity>100</Additional_Population_Capacity>
+		<Property_Flags>IsRushTarget</Property_Flags>
+		<Immune_To_Damage>True</Immune_To_Damage>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
+	 </Marker>
+
+
+
+    <Marker Name="Reinforcement_Point_Plus1_Cap">
+		<Variant_Of_Existing_Type>Reinforcement_Point</Variant_Of_Existing_Type>
+		<Land_Model_Name>W_Pedistal_faction_1.alo</Land_Model_Name>
+		<Additional_Population_Capacity>1</Additional_Population_Capacity>
+	</Marker>
+
+    <Marker Name="Reinforcement_Point_Plus2_Cap">
+		<Variant_Of_Existing_Type>Reinforcement_Point</Variant_Of_Existing_Type>
+		<Land_Model_Name>W_Pedistal_faction_2.alo</Land_Model_Name>
+		<Additional_Population_Capacity>2</Additional_Population_Capacity>
+	</Marker>
+
+    <Marker Name="Reinforcement_Point_Plus3_Cap">
+		<Variant_Of_Existing_Type>Reinforcement_Point</Variant_Of_Existing_Type>
+		<Land_Model_Name>W_Pedistal_faction_3.alo</Land_Model_Name>
+		<Additional_Population_Capacity>3</Additional_Population_Capacity>
+	</Marker>
+	 
+    <Marker Name="Reinforcement_Point_Plus4_Cap">
+		<Variant_Of_Existing_Type>Reinforcement_Point</Variant_Of_Existing_Type>
+		<Land_Model_Name>W_Pedistal_faction_4.alo</Land_Model_Name>
+		<Additional_Population_Capacity>4</Additional_Population_Capacity>
+	 </Marker>
+
+	<Marker Name="Reinforcement_Point_Plus5_Cap">
+		<Variant_Of_Existing_Type>Reinforcement_Point</Variant_Of_Existing_Type>
+		<Land_Model_Name>W_Pedistal_faction_5.alo</Land_Model_Name>
+		<Additional_Population_Capacity>5</Additional_Population_Capacity>
+	</Marker>
+	 
+	<Marker Name="Reinforcement_Point_Plus10_Cap">
+		<Variant_Of_Existing_Type>Reinforcement_Point</Variant_Of_Existing_Type>
+		<Land_Model_Name>W_Pedistal_faction_10.alo</Land_Model_Name>
+		<Additional_Population_Capacity>10</Additional_Population_Capacity>
+	</Marker>
+	 
+	 
+
+	<Marker Name="Reinforcement_Point_Rebel">
+		<Text_ID> TEXT_TOOLTIP_REINFORCEMENT_POINT_NAME </Text_ID>
+		<!--<Tooltip_Text>TEXT_TOOLTIP_REINFORCEMENT_POINT_DESCRIPTION</Tooltip_Text> -->
+		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_DESCRIPTION  </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>W_Pedistal_Rebel.alo</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Space_Model_Name />
+		<Behavior> REVEAL, REINFORCEMENT_POINT, HIDE_WHEN_FOGGED, DUMMY_TOOLTIP </Behavior>
+		<Capture_Point_Transition_Time_Seconds>10.0</Capture_Point_Transition_Time_Seconds>
+		<Is_Decoration>No</Is_Decoration>
+		<Has_Land_Evaluator>Yes</Has_Land_Evaluator>
+		<Reinforcement_Enabling_Radius>250.0</Reinforcement_Enabling_Radius>
+		<Land_FOW_Reveal_Range>275.0</Land_FOW_Reveal_Range>
+		<Capture_Point_Radius>100.0</Capture_Point_Radius>
+		
+		<Is_Visible_On_Radar>True</Is_Visible_On_Radar>
+		<Radar_Range_Icon_Name>i_radar_landing.tga</Radar_Range_Icon_Name>
+		<Radar_Show_Facing>No</Radar_Show_Facing>
+		<Radar_Icon_Name>mini_map_reinforcement.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<Begin_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</Begin_Control_Transition_Radar_Event>
+		<End_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</End_Control_Transition_Radar_Event>
+		<Reinforcement_Region_Blob_Name>Reinforcement_Point_Radius_Overlay</Reinforcement_Region_Blob_Name>
+
+		<Faction_Anim_Subindex>Rebel, 0</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Empire, 1</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Neutral, 2</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Pirates, 2</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Underworld, 3</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Hostile, 2</Faction_Anim_Subindex>
+
+		<Influences_Capture_Point>True</Influences_Capture_Point>
+		<Affiliation>Rebel</Affiliation>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
+		<Additional_Population_Capacity>100</Additional_Population_Capacity>
+		<Immune_To_Damage>True</Immune_To_Damage>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
+	</Marker>
+	 
+	<Marker Name="Reinforcement_Point_Rebel_Plus4_Cap">
+		<Variant_Of_Existing_Type>Reinforcement_Point_Rebel</Variant_Of_Existing_Type>
+		<Additional_Population_Capacity>4</Additional_Population_Capacity>
+	</Marker>
+	 
+	<Marker Name="Reinforcement_Point_Empire">
+		<Text_ID> TEXT_TOOLTIP_REINFORCEMENT_POINT_NAME </Text_ID>
+		<!--<Tooltip_Text>TEXT_TOOLTIP_REINFORCEMENT_POINT_DESCRIPTION</Tooltip_Text> -->
+		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_DESCRIPTION  </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>W_Pedistal_Imperial.alo</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Space_Model_Name />
+		<Behavior> REVEAL, REINFORCEMENT_POINT, HIDE_WHEN_FOGGED, DUMMY_TOOLTIP </Behavior>
+		<Capture_Point_Transition_Time_Seconds>10.0</Capture_Point_Transition_Time_Seconds>
+		<Is_Decoration>No</Is_Decoration>
+		<Has_Land_Evaluator>Yes</Has_Land_Evaluator>
+		<Reinforcement_Enabling_Radius>250.0</Reinforcement_Enabling_Radius>
+		<Land_FOW_Reveal_Range>275.0</Land_FOW_Reveal_Range>
+		<Capture_Point_Radius>100.0</Capture_Point_Radius>
+		
+		<Is_Visible_On_Radar>True</Is_Visible_On_Radar>
+		<Radar_Range_Icon_Name>i_radar_landing.tga</Radar_Range_Icon_Name>
+		<Radar_Show_Facing>No</Radar_Show_Facing>
+		<Radar_Icon_Name>mini_map_reinforcement.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<Begin_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</Begin_Control_Transition_Radar_Event>
+		<End_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</End_Control_Transition_Radar_Event>
+		<Reinforcement_Region_Blob_Name>Reinforcement_Point_Radius_Overlay</Reinforcement_Region_Blob_Name>
+		
+		<Faction_Anim_Subindex>Rebel, 0</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Empire, 1</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Neutral, 2</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Pirates, 2</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Underworld, 3</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Hostile, 2</Faction_Anim_Subindex>
+
+		<Influences_Capture_Point>True</Influences_Capture_Point>
+		<Affiliation>Empire</Affiliation>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
+		<Additional_Population_Capacity>100</Additional_Population_Capacity>
+		<Immune_To_Damage>True</Immune_To_Damage>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
+	</Marker>
+	 
+	<Marker Name="Reinforcement_Point_Empire_Plus4_Cap">
+		<Variant_Of_Existing_Type>Reinforcement_Point_Empire</Variant_Of_Existing_Type>
+		<Additional_Population_Capacity>4</Additional_Population_Capacity>
+	</Marker>
+
+
+
+	 <Marker Name="Reinforcement_Point_Underworld">
+		<Text_ID> TEXT_TOOLTIP_REINFORCEMENT_POINT_NAME </Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_DESCRIPTION  </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>W_pedistal_underworld.alo</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Space_Model_Name />
+		<Behavior> REVEAL, REINFORCEMENT_POINT, HIDE_WHEN_FOGGED, DUMMY_TOOLTIP </Behavior>
+		<Capture_Point_Transition_Time_Seconds>10.0</Capture_Point_Transition_Time_Seconds>
+		<Is_Decoration>No</Is_Decoration>
+		<Has_Land_Evaluator>Yes</Has_Land_Evaluator>
+		<Reinforcement_Enabling_Radius>250.0</Reinforcement_Enabling_Radius>
+		<Land_FOW_Reveal_Range>275.0</Land_FOW_Reveal_Range>
+		<Capture_Point_Radius>100.0</Capture_Point_Radius>
+		
+		<Is_Visible_On_Radar>True</Is_Visible_On_Radar>
+		<Radar_Range_Icon_Name>i_radar_landing.tga</Radar_Range_Icon_Name>
+		<Radar_Show_Facing>No</Radar_Show_Facing>
+		<Radar_Icon_Name>mini_map_reinforcement.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<Begin_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</Begin_Control_Transition_Radar_Event>
+		<End_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</End_Control_Transition_Radar_Event>
+		<Reinforcement_Region_Blob_Name>Reinforcement_Point_Radius_Overlay</Reinforcement_Region_Blob_Name>
+		
+		<Faction_Anim_Subindex>Rebel, 0</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Empire, 1</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Neutral, 2</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Pirates, 2</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Underworld, 3</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Hostile, 2</Faction_Anim_Subindex>
+
+		<Influences_Capture_Point>True</Influences_Capture_Point>
+		<Affiliation>Underworld</Affiliation>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
+		<Additional_Population_Capacity>100</Additional_Population_Capacity>
+		<Immune_To_Damage>True</Immune_To_Damage>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
+	 </Marker>
+	 
+	 <Marker Name="Reinforcement_Point_Underworld_Plus4_Cap">
+		<Variant_Of_Existing_Type>Reinforcement_Point_Underworld</Variant_Of_Existing_Type>
+		<Additional_Population_Capacity>4</Additional_Population_Capacity>
+	</Marker>
+
+
+
+
+
+
+
+
+
+
+	 <Marker Name="Captureable_Turret">
+		<Text_ID> TEXT_GROUND_TURBOLASER_TOWER </Text_ID>
+		<Land_Model_Name>EB_TLTower.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Space_Model_Name />
+		<Behavior> CAPTURE_POINT, REVEAL, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>LAND_OBSTACLE,TURRET,TARGETING,WEAPON,POWERED,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,TERRAIN_TEXTURE_MODIFICATION, STUNNABLE </LandBehavior>
+		<Capture_Point_Transition_Time_Seconds>10.0</Capture_Point_Transition_Time_Seconds>
+		<Is_Decoration>No</Is_Decoration>
+		<Has_Land_Evaluator>Yes</Has_Land_Evaluator>
+		<Capture_Point_Radius>150.0</Capture_Point_Radius>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		
+		<Begin_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</Begin_Control_Transition_Radar_Event>
+		<End_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</End_Control_Transition_Radar_Event>
+		
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>			
+		<Terrain_Texture_Modifier_Join_Distance>500.0</Terrain_Texture_Modifier_Join_Distance>	
+		<Terrain_Texture_Modifier_Square>true</Terrain_Texture_Modifier_Square>			
+		<Select_Box_Scale>35</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<Is_Community_Property>No</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Obstacle_Width>60.0</Obstacle_Width>
+		<Obstacle_Height>60.0</Obstacle_Height>
+		<Obstacle_X_Offset>-30.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-30.0</Obstacle_Y_Offset>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Armor_Type> Armor_Turret </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>900</Tactical_Health>
+		<Projectile_Types>Proj_Ground_Turbolaser_Green</Projectile_Types>
+
+		<Land_FOW_Reveal_Range>700.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>700.0</Targeting_Max_Attack_Distance>
+
+		<Ranged_Target_Z_Adjust>20.0</Ranged_Target_Z_Adjust>
+
+		<Projectile_Fire_Recharge_Seconds>2.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>4</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.3</Projectile_Fire_Pulse_Delay_Seconds>
+
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>45</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Speed>4.0</Turret_Rotate_Speed>
+		<Turret_Bone_Name>B_Turret_00</Turret_Bone_Name>
+		<Barrel_Bone_Name>B_Barrel_00</Barrel_Bone_Name>
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+
+		<!-- Ground infantry priority 1, ground vehicles priority 1, air vehicles N/A (9999) -->
+		<Turret_Targets_Ground_Infantry> 2 </Turret_Targets_Ground_Infantry>
+		<Turret_Targets_Ground_Vehicles> 1 </Turret_Targets_Ground_Vehicles>
+		<Turret_Targets_Air_Vehicles> 3 </Turret_Targets_Air_Vehicles>       
+		<Turret_Targets_Anything_Else> 9999 </Turret_Targets_Anything_Else>     <!-- 9999 = won't target -->
+
+		<Targeting_Fire_Inaccuracy> Infantry, 15.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> LandHero, 15.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 5.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 10.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 1.0 </Targeting_Fire_Inaccuracy>
+
+		<Tactical_Health>700</Tactical_Health>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>40</Energy_Refresh_Rate>
+		<Icon_Name>i_button_turbolaser_tower.tga</Icon_Name>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Special_Weapon_Ready>EHD_Turbo_Tower_Available</SFXEvent_Special_Weapon_Ready>
+		<CategoryMask> Structure </CategoryMask>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_TURBOLASER_00 TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE </Encyclopedia_Text>
+		<Affiliation>Rebel, Empire, Neutral, Pirates, Underworld</Affiliation>
+	 </Marker>
+
+    <Marker Name="Bonus_Spawn_Point">
+		<Text_ID>  </Text_ID>
+		<Land_Model_Name>W_FLAG_MARKER_RED.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Map_Load_Spawn_Table>
+			Credit_Power_Up, 0.25,
+			Rancor, 0.25
+		</Map_Load_Spawn_Table>
+	 </Marker>
+
+	 <Marker Name="Random_Secondary_Structure_R">
+		<Text_ID>  </Text_ID>
+		<Land_Model_Name>rb_heavyvehiclefactory.alo</Land_Model_Name>		
+		<Scale_Factor>1.5</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Affiliation>Rebel</Affiliation>
+		<Map_Load_Spawn_Table>
+			Secondary_Training_Facility_R, 0.14,
+			Secondary_Mining_Facility, 0.14,
+			Secondary_Pirate_Outpost_H, 0.14,
+			Secondary_Abandoned_Sensor, 0.14,
+			Secondary_Heavy_Factory_R, 0.14,
+			Secondary_Abandoned_Turbolaser_Tower, 0.14,
+			Secondary_Mercenary_Outfitter, 0.14,
+		</Map_Load_Spawn_Table>
+	 </Marker>
+	 
+	 <Marker Name="Rebel_Training_Script_Marker">
+		<Text_ID>  </Text_ID>
+		<Land_Model_Name>W_FLAG_MARKER_RED.ALO</Land_Model_Name>		
+		<Scale_Factor>.2</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Affiliation>Rebel</Affiliation>
+		<Lua_Script>Training_Facility</Lua_Script>
+	 </Marker>
+	 
+	 <Marker Name="Random_Secondary_Structure_E">
+		<Text_ID>  </Text_ID>
+		<Land_Model_Name>EB_VehicleFactory.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Affiliation>Empire</Affiliation>
+		<Map_Load_Spawn_Table>
+			Secondary_Prison_E, 0.14,
+			Secondary_Mining_Facility, 0.14,
+			Secondary_Pirate_Outpost_H, 0.14,
+			Secondary_Abandoned_Sensor, 0.14,
+			Secondary_Heavy_Factory_E, 0.14,
+			Secondary_Abandoned_Turbolaser_Tower, 0.14,
+			Secondary_Mercenary_Outfitter, 0.14,
+		</Map_Load_Spawn_Table>
+	 </Marker>
+	 
+	 <Marker Name="Random_Secondary_Structure_P">
+		<Text_ID>  </Text_ID>
+		<Land_Model_Name>nb_piratebase_01.alo</Land_Model_Name>
+		<Scale_Factor>.75</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Affiliation>Pirates</Affiliation>
+		<Map_Load_Spawn_Table>
+			Secondary_Mining_Facility, 0.14,
+			Secondary_Pirate_Outpost_H, 0.14,
+			Secondary_Abandoned_Sensor, 0.14,
+			Secondary_Heavy_Factory_R, 0.14,
+			Secondary_Heavy_Factory_E, 0.14,
+			Secondary_Abandoned_Turbolaser_Tower, 0.14,
+			Secondary_Mercenary_Outfitter, 0.14,
+		</Map_Load_Spawn_Table>
+	 </Marker>
+
+    <Marker Name="Initial_Camera_Position">
+        <Text_ID>TEXT_AI_HINT_ZONE_POSITION</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+    
+    <Marker Name="DEMO_CONTROLLER">
+		<Text_ID> </Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name>w_flag_marker_Green.alo</Galactic_Model_Name>
+		<Space_Model_Name>w_flag_marker_Green.alo</Space_Model_Name>
+		<Land_Model_Name>w_flag_marker_Green.alo</Land_Model_Name>
+		<Behavior>MARKER, HINT</Behavior>
+		<Land_FOW_Reveal_Range>600.0</Land_FOW_Reveal_Range>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Lua_Script>Demo_Attract_Controller</Lua_Script>
+	</Marker>
+	
+	<Marker Name="DEMO_CONTROLLER_LAND">
+		<Text_ID> </Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name>w_flag_marker_Green.alo</Galactic_Model_Name>
+		<Space_Model_Name>w_flag_marker_Green.alo</Space_Model_Name>
+		<Land_Model_Name>w_flag_marker_Green.alo</Land_Model_Name>
+		<Behavior>MARKER, HINT</Behavior>
+		<Land_FOW_Reveal_Range>600.0</Land_FOW_Reveal_Range>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Lua_Script>Demo_Land_Controller</Lua_Script>
+	</Marker>
+	
+			<Marker Name="DEMO_CONTROLLER_LAND_E">
+				<Text_ID> </Text_ID>
+				<Is_Marker>Yes</Is_Marker>
+				<Galactic_Model_Name>w_flag_marker_Green.alo</Galactic_Model_Name>
+				<Space_Model_Name>w_flag_marker_Green.alo</Space_Model_Name>
+				<Land_Model_Name>w_flag_marker_Green.alo</Land_Model_Name>
+				<Behavior>MARKER, HINT</Behavior>
+				<Land_FOW_Reveal_Range>600.0</Land_FOW_Reveal_Range>
+				<Is_Discardable>false</Is_Discardable>  
+				<Affiliation>Neutral</Affiliation>
+				<Lua_Script>Demo_Land_Controller_E</Lua_Script>
+			</Marker>
+			
+			<Marker Name="DEMO_CONTROLLER_LAND_R">
+				<Text_ID> </Text_ID>
+				<Is_Marker>Yes</Is_Marker>
+				<Galactic_Model_Name>w_flag_marker_Green.alo</Galactic_Model_Name>
+				<Space_Model_Name>w_flag_marker_Green.alo</Space_Model_Name>
+				<Land_Model_Name>w_flag_marker_Green.alo</Land_Model_Name>
+				<Behavior>MARKER, HINT</Behavior>
+				<Land_FOW_Reveal_Range>600.0</Land_FOW_Reveal_Range>
+				<Is_Discardable>false</Is_Discardable>  
+				<Affiliation>Neutral</Affiliation>
+				<Lua_Script>Demo_Land_Controller_R</Lua_Script>
+			</Marker>
+	
+	<Marker Name="FELUCIA_DEMO_CONTROLLER">
+		<Text_ID> </Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name>w_flag_marker_Green.alo</Galactic_Model_Name>
+		<Space_Model_Name>w_flag_marker_Green.alo</Space_Model_Name>
+		<Land_Model_Name>w_flag_marker_Green.alo</Land_Model_Name>
+		<Behavior>MARKER, HINT</Behavior>
+		<Land_FOW_Reveal_Range>600.0</Land_FOW_Reveal_Range>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<!--<Lua_Script>Demo_Felucia_Controller</Lua_Script>-->
+	</Marker>
+
+
+
+	<Marker Name="Team_00_Base_Position_Marker">
+		<Text_ID>TEXT_TEAM_0_START_POSITION_MARKER</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Space_Model_Name>w_flag_marker_Green.alo</Space_Model_Name>
+		<Land_Model_Name>w_flag_marker_Green.alo</Land_Model_Name>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+	</Marker>
+
+	<Marker Name="Team_01_Base_Position_Marker">
+		<Text_ID>TEXT_TEAM_1_START_POSITION_MARKER</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Space_Model_Name>w_flag_marker_Green.alo</Space_Model_Name>
+		<Land_Model_Name>w_flag_marker_Green.alo</Land_Model_Name>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+	</Marker>
+
+	<Marker Name="Team_02_Base_Position_Marker">
+		<Text_ID>TEXT_TEAM_2_START_POSITION_MARKER</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Space_Model_Name>w_flag_marker_Green.alo</Space_Model_Name>
+		<Land_Model_Name>w_flag_marker_Green.alo</Land_Model_Name>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+	</Marker>
+
+
+	<Marker Name="Team_00_Spawn_Point_Marker">
+		<Text_ID> TEXT_SKIRMISH_PLAYER_SPAWN_POINT </Text_ID>
+		<Is_Marker> Yes </Is_Marker>
+		<Land_Model_Name> W_FLAG_MARKER_RED.ALO </Land_Model_Name>
+		<Space_Model_Name>W_FLAG_MARKER_RED.ALO</Space_Model_Name>
+		<Behavior> MARKER </Behavior>
+		<Is_Discardable>false</Is_Discardable> 
+		<Affiliation>Neutral</Affiliation>
+	</Marker>
+
+	<Marker Name="Team_01_Spawn_Point_Marker">
+		<Text_ID> TEXT_SKIRMISH_PLAYER_SPAWN_POINT </Text_ID>
+		<Is_Marker> Yes </Is_Marker>
+		<Land_Model_Name> W_FLAG_MARKER_RED.ALO </Land_Model_Name>
+		<Space_Model_Name>W_FLAG_MARKER_RED.ALO</Space_Model_Name>
+		<Behavior> MARKER </Behavior>
+		<Is_Discardable>false</Is_Discardable> 
+		<Affiliation>Neutral</Affiliation>
+	</Marker>
+
+	<Marker Name="Team_02_Spawn_Point_Marker">
+		<Text_ID> TEXT_SKIRMISH_PLAYER_SPAWN_POINT </Text_ID>
+		<Is_Marker> Yes </Is_Marker>
+		<Land_Model_Name> W_FLAG_MARKER_RED.ALO </Land_Model_Name>
+		<Space_Model_Name>W_FLAG_MARKER_RED.ALO</Space_Model_Name>
+		<Behavior> MARKER </Behavior>
+		<Is_Discardable>false</Is_Discardable> 
+		<Affiliation>Neutral</Affiliation>
+	</Marker>
+	
+	<!-- jdg adding generic markers for color coding -->
+	 <Marker Name="Marker_Generic_White">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_White.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_White.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_White.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+        <Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+    
+    <Marker Name="Marker_Generic_Red">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_Red.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_Red.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_Red.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+        <Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+    
+    <Marker Name="Marker_Generic_Green">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_Green.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_Green.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_Green.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+        <Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+    
+    <Marker Name="Marker_Generic_Blue">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_Blue.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_Blue.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_Blue.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+        <Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+    
+    <Marker Name="Marker_Generic_Yellow">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_Yellow.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_Yellow.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_Yellow.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+        <Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+    
+    <Marker Name="Marker_Generic_Purple">
+        <Text_ID>TEXT_STORY_TRIGGER_ZONE</Text_ID>
+        <Is_Marker>Yes</Is_Marker>
+        <Galactic_Model_Name>w_flag_marker_Purple.alo</Galactic_Model_Name>
+        <Space_Model_Name>w_flag_marker_Purple.alo</Space_Model_Name>
+        <Land_Model_Name>w_flag_marker_Purple.alo</Land_Model_Name>
+        <Behavior>MARKER</Behavior>
+        <Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+    </Marker>
+    
+
+
+
+</Markers>
+

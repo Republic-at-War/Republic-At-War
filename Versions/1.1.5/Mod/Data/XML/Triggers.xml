@@ -1,0 +1,304 @@
+<?xml version="1.0" ?>
+<Triggers>
+
+<StoryTriggers Name="TASKED1_WAYPOINT1">
+<Text_ID> TEXT_LAND_TEST_TRIGGER_MARKER </Text_ID>
+<Available_In_Skirmish>yes</Available_In_Skirmish>
+<Is_Marker> Yes </Is_Marker>
+<Land_Model_Name> W_FLAG_MARKER_YELLOW.ALO </Land_Model_Name>
+<Space_Model_Name>W_FLAG_MARKER_YELLOW.ALO</Space_Model_Name>
+<Behavior> MARKER, HINT </Behavior>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED1_WAYPOINT2">
+<Variant_Of_Existing_Type>TASKED1_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED1_WAYPOINT3">
+<Variant_Of_Existing_Type>TASKED1_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+	
+<StoryTriggers Name="TASKED1_WAYPOINT4">
+<Variant_Of_Existing_Type>TASKED1_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED1_WAYPOINT5">
+<Variant_Of_Existing_Type>TASKED1_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED2_WAYPOINT1">
+<Text_ID> TEXT_LAND_TEST_TRIGGER_MARKER </Text_ID>
+<Available_In_Skirmish>yes</Available_In_Skirmish>
+<Is_Marker> Yes </Is_Marker>
+<Land_Model_Name> W_FLAG_MARKER_YELLOW.ALO </Land_Model_Name>
+<Space_Model_Name>W_FLAG_MARKER_YELLOW.ALO</Space_Model_Name>
+<Behavior> MARKER, HINT </Behavior>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED2_WAYPOINT2">
+<Variant_Of_Existing_Type>TASKED2_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED2_WAYPOINT3">
+<Variant_Of_Existing_Type>TASKED2_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+	
+<StoryTriggers Name="TASKED2_WAYPOINT4">
+<Variant_Of_Existing_Type>TASKED2_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED2_WAYPOINT5">
+<Variant_Of_Existing_Type>TASKED2_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED3_WAYPOINT1">
+<Text_ID> TEXT_LAND_TEST_TRIGGER_MARKER </Text_ID>
+<Available_In_Skirmish>yes</Available_In_Skirmish>
+<Is_Marker> Yes </Is_Marker>
+<Land_Model_Name> W_FLAG_MARKER_YELLOW.ALO </Land_Model_Name>
+<Space_Model_Name>W_FLAG_MARKER_YELLOW.ALO</Space_Model_Name>
+<Behavior> MARKER, HINT </Behavior>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED3_WAYPOINT2">
+<Variant_Of_Existing_Type>TASKED3_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED3_WAYPOINT3">
+<Variant_Of_Existing_Type>TASKED3_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+	
+<StoryTriggers Name="TASKED3_WAYPOINT4">
+<Variant_Of_Existing_Type>TASKED3_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED3_WAYPOINT5">
+<Variant_Of_Existing_Type>TASKED3_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED4_WAYPOINT1">
+<Text_ID> TEXT_LAND_TEST_TRIGGER_MARKER </Text_ID>
+<Available_In_Skirmish>yes</Available_In_Skirmish>
+<Is_Marker> Yes </Is_Marker>
+<Land_Model_Name> W_FLAG_MARKER_YELLOW.ALO </Land_Model_Name>
+<Space_Model_Name>W_FLAG_MARKER_YELLOW.ALO</Space_Model_Name>
+<Behavior> MARKER, HINT </Behavior>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED4_WAYPOINT2">
+<Variant_Of_Existing_Type>TASKED4_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED4_WAYPOINT3">
+<Variant_Of_Existing_Type>TASKED4_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+	
+<StoryTriggers Name="TASKED4_WAYPOINT4">
+<Variant_Of_Existing_Type>TASKED4_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED4_WAYPOINT5">
+<Variant_Of_Existing_Type>TASKED4_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED5_WAYPOINT1">
+<Text_ID> TEXT_LAND_TEST_TRIGGER_MARKER </Text_ID>
+<Available_In_Skirmish>yes</Available_In_Skirmish>
+<Is_Marker> Yes </Is_Marker>
+<Land_Model_Name> W_FLAG_MARKER_YELLOW.ALO </Land_Model_Name>
+<Space_Model_Name>W_FLAG_MARKER_YELLOW.ALO</Space_Model_Name>
+<Behavior> MARKER, HINT </Behavior>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED5_WAYPOINT2">
+<Variant_Of_Existing_Type>TASKED5_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED5_WAYPOINT3">
+<Variant_Of_Existing_Type>TASKED5_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+	
+<StoryTriggers Name="TASKED5_WAYPOINT4">
+<Variant_Of_Existing_Type>TASKED5_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED5_WAYPOINT5">
+<Variant_Of_Existing_Type>TASKED5_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED6_WAYPOINT1">
+<Text_ID> TEXT_LAND_TEST_TRIGGER_MARKER </Text_ID>
+<Available_In_Skirmish>yes</Available_In_Skirmish>
+<Is_Marker> Yes </Is_Marker>
+<Land_Model_Name> W_FLAG_MARKER_YELLOW.ALO </Land_Model_Name>
+<Space_Model_Name>W_FLAG_MARKER_YELLOW.ALO</Space_Model_Name>
+<Behavior> MARKER, HINT </Behavior>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED6_WAYPOINT2">
+<Variant_Of_Existing_Type>TASKED6_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED6_WAYPOINT3">
+<Variant_Of_Existing_Type>TASKED6_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+	
+<StoryTriggers Name="TASKED6_WAYPOINT4">
+<Variant_Of_Existing_Type>TASKED6_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED6_WAYPOINT5">
+<Variant_Of_Existing_Type>TASKED6_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED7_WAYPOINT1">
+<Text_ID> TEXT_LAND_TEST_TRIGGER_MARKER </Text_ID>
+<Available_In_Skirmish>yes</Available_In_Skirmish>
+<Is_Marker> Yes </Is_Marker>
+<Land_Model_Name> W_FLAG_MARKER_YELLOW.ALO </Land_Model_Name>
+<Space_Model_Name>W_FLAG_MARKER_YELLOW.ALO</Space_Model_Name>
+<Behavior> MARKER, HINT </Behavior>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED7_WAYPOINT2">
+<Variant_Of_Existing_Type>TASKED7_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED7_WAYPOINT3">
+<Variant_Of_Existing_Type>TASKED7_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+	
+<StoryTriggers Name="TASKED7_WAYPOINT4">
+<Variant_Of_Existing_Type>TASKED7_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED7_WAYPOINT5">
+<Variant_Of_Existing_Type>TASKED7_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED8_WAYPOINT1">
+<Text_ID> TEXT_LAND_TEST_TRIGGER_MARKER </Text_ID>
+<Available_In_Skirmish>yes</Available_In_Skirmish>
+<Is_Marker> Yes </Is_Marker>
+<Land_Model_Name> W_FLAG_MARKER_YELLOW.ALO </Land_Model_Name>
+<Space_Model_Name>W_FLAG_MARKER_YELLOW.ALO</Space_Model_Name>
+<Behavior> MARKER, HINT </Behavior>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED8_WAYPOINT2">
+<Variant_Of_Existing_Type>TASKED8_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED8_WAYPOINT3">
+<Variant_Of_Existing_Type>TASKED8_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+	
+<StoryTriggers Name="TASKED8_WAYPOINT4">
+<Variant_Of_Existing_Type>TASKED8_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED8_WAYPOINT5">
+<Variant_Of_Existing_Type>TASKED8_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED9_WAYPOINT1">
+<Text_ID> TEXT_LAND_TEST_TRIGGER_MARKER </Text_ID>
+<Available_In_Skirmish>yes</Available_In_Skirmish>
+<Is_Marker> Yes </Is_Marker>
+<Land_Model_Name> W_FLAG_MARKER_YELLOW.ALO </Land_Model_Name>
+<Space_Model_Name>W_FLAG_MARKER_YELLOW.ALO</Space_Model_Name>
+<Behavior> MARKER, HINT </Behavior>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED9_WAYPOINT2">
+<Variant_Of_Existing_Type>TASKED9_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED9_WAYPOINT3">
+<Variant_Of_Existing_Type>TASKED9_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+	
+<StoryTriggers Name="TASKED9_WAYPOINT4">
+<Variant_Of_Existing_Type>TASKED9_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED9_WAYPOINT5">
+<Variant_Of_Existing_Type>TASKED9_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED10_WAYPOINT1">
+<Text_ID> TEXT_LAND_TEST_TRIGGER_MARKER </Text_ID>
+<Available_In_Skirmish>yes</Available_In_Skirmish>
+<Is_Marker> Yes </Is_Marker>
+<Land_Model_Name> W_FLAG_MARKER_YELLOW.ALO </Land_Model_Name>
+<Space_Model_Name>W_FLAG_MARKER_YELLOW.ALO</Space_Model_Name>
+<Behavior> MARKER, HINT </Behavior>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED10_WAYPOINT2">
+<Variant_Of_Existing_Type>TASKED10_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED10_WAYPOINT3">
+<Variant_Of_Existing_Type>TASKED10_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+	
+<StoryTriggers Name="TASKED10_WAYPOINT4">
+<Variant_Of_Existing_Type>TASKED10_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED10_WAYPOINT5">
+<Variant_Of_Existing_Type>TASKED10_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED11_WAYPOINT1">
+<Text_ID> TEXT_LAND_TEST_TRIGGER_MARKER </Text_ID>
+<Available_In_Skirmish>yes</Available_In_Skirmish>
+<Is_Marker> Yes </Is_Marker>
+<Land_Model_Name> W_FLAG_MARKER_YELLOW.ALO </Land_Model_Name>
+<Space_Model_Name>W_FLAG_MARKER_YELLOW.ALO</Space_Model_Name>
+<Behavior> MARKER, HINT </Behavior>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED11_WAYPOINT2">
+<Variant_Of_Existing_Type>TASKED11_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED11_WAYPOINT3">
+<Variant_Of_Existing_Type>TASKED11_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+	
+<StoryTriggers Name="TASKED11_WAYPOINT4">
+<Variant_Of_Existing_Type>TASKED11_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED11_WAYPOINT5">
+<Variant_Of_Existing_Type>TASKED11_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED12_WAYPOINT1">
+<Text_ID> TEXT_LAND_TEST_TRIGGER_MARKER </Text_ID>
+<Available_In_Skirmish>yes</Available_In_Skirmish>
+<Is_Marker> Yes </Is_Marker>
+<Land_Model_Name> W_FLAG_MARKER_YELLOW.ALO </Land_Model_Name>
+<Space_Model_Name>W_FLAG_MARKER_YELLOW.ALO</Space_Model_Name>
+<Behavior> MARKER, HINT </Behavior>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED12_WAYPOINT2">
+<Variant_Of_Existing_Type>TASKED11_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED12_WAYPOINT3">
+<Variant_Of_Existing_Type>TASKED12_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+	
+<StoryTriggers Name="TASKED12_WAYPOINT4">
+<Variant_Of_Existing_Type>TASKED12_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+<StoryTriggers Name="TASKED12_WAYPOINT5">
+<Variant_Of_Existing_Type>TASKED12_WAYPOINT1</Variant_Of_Existing_Type>
+</StoryTriggers>
+
+</Triggers>

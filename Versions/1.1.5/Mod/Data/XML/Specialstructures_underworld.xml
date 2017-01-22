@@ -1,0 +1,1798 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+
+
+	<SpecialStructure Name="U_Ground_Palace">
+		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
+		<Text_ID>TEXT_GROUND_PALACE_UNDERWORLD</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_PALACE_UNDERWORLD TEXT_PALACE_UNDERWORLD_BUILDS </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_ENCYCLOPEDIA_PALACE_UNDERWORLD TEXT_ENCYCLOPEDIA_PALACE_UNDERWORLD_01</MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Can_Contain_Heroes_During_Ground_Battle> Yes </Can_Contain_Heroes_During_Ground_Battle>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+
+		<Land_Model_Name>UB_PALACE.ALO</Land_Model_Name>
+		<Icon_Name>i_button_ub_palace.tga</Icon_Name>
+		<Space_Layer> Corvette </Space_Layer>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<GUI_Row> 0 </GUI_Row>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<SFXEvent_Ambient_Loop>Structure_Barracks_Loop</SFXEvent_Ambient_Loop>
+		<Behavior>DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,SELECTABLE,SHIELDED,POWERED,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,TERRAIN_TEXTURE_MODIFICATION,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		<Obstacle_Proxy_Type>  </Obstacle_Proxy_Type>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		
+		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>			
+		<Terrain_Texture_Modifier_Join_Distance>1.0</Terrain_Texture_Modifier_Join_Distance>	
+		<Terrain_Texture_Modifier_Square>true</Terrain_Texture_Modifier_Square>			
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		<Is_Dummy>No</Is_Dummy>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+
+		<HardPoints>
+			HP_PALACE_POWER_GEN,
+			HP_PALACE_COMM_ARRAY
+		</HardPoints>
+
+		<Should_Be_Destroyed_When_All_Hardpoints_Destroyed> No </Should_Be_Destroyed_When_All_Hardpoints_Destroyed>
+
+
+		<Destruction_Survivors> 
+			Underworld_Merc_Squad, 1.0
+		</Destruction_Survivors>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+
+		<Affiliation>Underworld</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>2000</Build_Cost_Credits>
+		<Build_Time_Seconds>32</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Size_Value>50</Size_Value>
+		<Base_Position>In_Base</Base_Position>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+		
+		<Tactical_Health>2400</Tactical_Health>
+		<Shield_Points>1000</Shield_Points>
+		<Shield_Refresh_Rate>45</Shield_Refresh_Rate>
+		<Energy_Capacity>9000</Energy_Capacity>
+		<Energy_Refresh_Rate>9000</Energy_Refresh_Rate>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<Sabotage_Cost_Credits>4800</Sabotage_Cost_Credits>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> UHD_Palace_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> UHD_Palace_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select>Structure_Command_Center_Select_SFX</SFXEvent_Select>
+
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 5000 </Score_Cost_Credits>
+		<Property_Flags>InBase</Property_Flags>
+		
+		<Tactical_Buildable_Objects_Campaign>
+			Underworld,
+				UL_BM_Shielding_L1_Upgrade_NO_PREREQ,
+				UL_BM_Shielding_L2_Upgrade_NO_PREREQ,
+				UL_Rancor_Stimulant_L1_Upgrade_NO_PREREQ,
+				UL_Rancor_Stimulant_L2_Upgrade_NO_PREREQ
+		</Tactical_Buildable_Objects_Campaign>
+		
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Underworld,
+				Bossk_Team,
+				IG88_Team_Land_MP,
+				Silri_Team,
+				Tyber_Zann_Team,
+				Urai_Fen_Team,
+				Underworld_Saboteur_Team,
+				Guri_Team,
+				UC_Level_Two_Tech_Upgrade,
+				UC_Level_Three_Tech_Upgrade,
+				UL_Black_Market_Shielding_L1_Upgrade,
+				UL_Black_Market_Shielding_L2_Upgrade,
+				UL_Bounty_Upgrade,
+				UL_Bombing_Run_Use_Upgrade,
+				UL_Planetary_Bombard_Use_Upgrade
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<HQ_Win_Condition_Relevant>yes</HQ_Win_Condition_Relevant>
+		
+		<AI_Combat_Power>300</AI_Combat_Power>
+
+		<Abilities SubObjectList="Yes">
+		
+			<Force_Healing_Ability Name="U_Palace1_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.025</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+
+			<Planet_Income_Bonus_Ability Name="Underworld_Palace_Income_Bonus">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_MINING_FACILITIES</Specific_Mod_Source_Text>
+				<!-- 7% bonus to base planetary income -->
+				<Percentage_Income_Modifier>7</Percentage_Income_Modifier>
+				<!-- plus an absolute 0 credits to planetary income -->
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+				<!-- net effect of +( (base income * 0%) + 20) credits -->
+				<Additional_Multiplier_On_Mining_Colonies>2.5</Additional_Multiplier_On_Mining_Colonies>
+				<!-- net result above multiplied by 2.0 if the affected planet is a mining colony -->
+			</Planet_Income_Bonus_Ability>
+			
+			<Income_Stream_Ability Name="Underworld_Palace_Income_Stream">
+				<!-- Income streams only exist in tactical modes that are not spawned from galatic, so this will not affect campaign play. -->
+				<Base_Income_Value>50</Base_Income_Value>
+				<Base_Interval_In_Secs>5</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+
+			<!-- The state of these abilities (enabled/disabled) is controlled by hard points -->
+ 			<Enable_Radar_Ability Name="Underworld_Palace_Enable_Radar">
+ 				<Activation_Style>Ground_Automatic</Activation_Style>
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+ 			
+			<Base_Power_Ability Name="Underworld_Palace_Base_Power">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+			</Base_Power_Ability>
+
+			<Redirect_Blaster_Ability Name="U_Magnetically_Sealed_Structure">
+				<Initially_Enabled> No </Initially_Enabled>
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.30</Block_Chance>
+				<Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 30.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<!-- We can block/redirect shots from the following units types: -->
+				<Applicable_Unit_Categories>Hero | Infantry | Vehicle | Structure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+
+		</Abilities>
+	
+	</SpecialStructure>
+
+
+
+	<SpecialStructure Name="U_Ground_Barracks">
+		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
+		<Text_ID>TEXT_GROUND_BARRACKS_UNDERWORLD</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BARRACKS_UNDERWORLD TEXT_TOOLTIP_GARRISON_U_BARRACKS </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BARRACKS_UNDERWORLD TEXT_ENCYCLOPEDIA_BARRACKS_UNDERWORLD_01 </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Can_Contain_Heroes_During_Ground_Battle> Yes </Can_Contain_Heroes_During_Ground_Battle>
+
+		<Land_Model_Name>UB_Barracks.alo</Land_Model_Name>
+		<Icon_Name>i_button_ub_barracks.tga</Icon_Name>
+
+		<GUI_Row> 0 </GUI_Row>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<SFXEvent_Ambient_Loop>Structure_Barracks_Loop</SFXEvent_Ambient_Loop>
+		<Behavior>DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,SELECTABLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,TERRAIN_TEXTURE_MODIFICATION,SPAWN_SQUADRON,EARTHQUAKE_TARGET</LandBehavior>
+		<Obstacle_Proxy_Type>  </Obstacle_Proxy_Type>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		
+		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>			
+		<Terrain_Texture_Modifier_Join_Distance>1.0</Terrain_Texture_Modifier_Join_Distance>	
+		<Terrain_Texture_Modifier_Square>true</Terrain_Texture_Modifier_Square>			
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.3</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		<Is_Dummy>No</Is_Dummy>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+
+		<Destruction_Survivors> 
+			Underworld_Merc_Squad, 1.0
+		</Destruction_Survivors>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+
+		<Affiliation>Underworld</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<Build_Time_Seconds>18</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Build_Max_Instances_Per_Planet> -1 </Build_Max_Instances_Per_Planet>
+		<Size_Value>50</Size_Value>
+		<Base_Position>In_Base</Base_Position>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Tactical_Health>350</Tactical_Health>
+		<Shield_Points>600</Shield_Points>
+		<Shield_Refresh_Rate>25</Shield_Refresh_Rate>
+		<Energy_Capacity>9000</Energy_Capacity>
+		<Energy_Refresh_Rate>9000</Energy_Refresh_Rate>
+				
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<Sabotage_Cost_Credits>2000</Sabotage_Cost_Credits>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> UHD_Merc_Barracks_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> UHD_Merc_Barracks_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select>Structure_Barracks_Select_SFX</SFXEvent_Select>
+
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 5000 </Score_Cost_Credits>
+		<Property_Flags>InBase</Property_Flags>
+		
+		<Tactical_Buildable_Objects_Campaign>
+			Underworld,
+				UL_Ability_Recharge_L1_Upgrade_NO_PREREQ,
+				UL_Ability_Recharge_L2_Upgrade_NO_PREREQ
+		</Tactical_Buildable_Objects_Campaign>
+		
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Underworld,
+				Underworld_Disruptor_Merc_Squad,
+				Underworld_Merc_Squad,
+				Night_Sister_Company,
+				Vornskr_Wolf_Pack,
+				Underworld_Ewok_Handler_Company,
+				Underworld_Mandalorian_Assault_Squad,
+				UL_Ability_Recharge_L1_Upgrade,
+				UL_Ability_Recharge_L2_Upgrade,
+				UL_Rancor_Stimulant_L1_Upgrade,
+				UL_Rancor_Stimulant_L2_Upgrade,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<AI_Combat_Power>300</AI_Combat_Power>
+		
+		<Starting_Spawned_Units_Tech_0>Underworld_Merc_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Underworld_Merc_Squad, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Underworld_Disruptor_Merc_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Underworld_Disruptor_Merc_Squad, -1</Reserve_Spawned_Units_Tech_0>
+		
+		<Spawned_Squadron_Delay_Seconds>15</Spawned_Squadron_Delay_Seconds>		
+		<Spawned_Squadron_Location_Bones>SPAWN_00</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>180.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="U_Barracks_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.025</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+
+			<Redirect_Blaster_Ability Name="U_Magnetically_Sealed_Structure">
+				<Initially_Enabled> No </Initially_Enabled>
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.30</Block_Chance>
+				<Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 30.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<!-- We can block/redirect shots from the following units types: -->
+				<Applicable_Unit_Categories>Hero | Infantry | Vehicle | Structure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+
+		</Abilities>
+
+	</SpecialStructure>
+
+
+
+
+	<SpecialStructure Name="U_Ground_Droid_Works">
+		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
+		<Text_ID>TEXT_GROUND_DROID_WORKS</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_DROIDWORKS_UNDERWORLD TEXT_TOOLTIP_GARRISON_DROIDWORKS </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_ENCYCLOPEDIA_DROIDWORKS_UNDERWORLD TEXT_ENCYCLOPEDIA_DROIDWORKS_UNDERWORLD_01</MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Can_Contain_Heroes_During_Ground_Battle> Yes </Can_Contain_Heroes_During_Ground_Battle>
+
+		<Land_Model_Name>UB_DROIDWORKS.ALO</Land_Model_Name>
+		<Icon_Name>i_button_ub_droidworks.tga</Icon_Name>
+
+		<GUI_Row> 0 </GUI_Row>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<SFXEvent_Ambient_Loop>Structure_Barracks_Loop</SFXEvent_Ambient_Loop>
+		<Behavior>DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,SELECTABLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,TERRAIN_TEXTURE_MODIFICATION,SPAWN_SQUADRON,EARTHQUAKE_TARGET</LandBehavior>
+		<Obstacle_Proxy_Type>  </Obstacle_Proxy_Type>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		
+		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>			
+		<Terrain_Texture_Modifier_Join_Distance>1.0</Terrain_Texture_Modifier_Join_Distance>	
+		<Terrain_Texture_Modifier_Square>true</Terrain_Texture_Modifier_Square>			
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.2</Scale_Factor>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		<Is_Dummy>No</Is_Dummy>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+
+		<Destruction_Survivors> 
+			Underworld_Merc_Squad, 1.0
+		</Destruction_Survivors>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+
+		<Affiliation>Underworld</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>1300</Build_Cost_Credits>
+		<Build_Time_Seconds>22</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Build_Max_Instances_Per_Planet> -1 </Build_Max_Instances_Per_Planet>
+		<Size_Value>50</Size_Value>
+		<Base_Position>In_Base</Base_Position>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Tactical_Health>650</Tactical_Health>
+		<Shield_Points>700</Shield_Points>
+		<Shield_Refresh_Rate>25</Shield_Refresh_Rate>
+		<Energy_Capacity>9000</Energy_Capacity>
+		<Energy_Refresh_Rate>9000</Energy_Refresh_Rate>
+				
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<Sabotage_Cost_Credits>3000</Sabotage_Cost_Credits>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> UHD_Droidworks_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> UHD_Droidworks_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select>Structure_Light_Factory_Select_SFX</SFXEvent_Select>
+
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 5000 </Score_Cost_Credits>
+		<Property_Flags>InBase</Property_Flags>
+		
+		<Tactical_Buildable_Objects_Campaign>
+			Underworld,
+				UL_MDU_Armor_Plating_L1_Upgrade_NO_PREREQ,
+				UL_MDU_Armor_Plating_L2_Upgrade_NO_PREREQ,
+				UL_Smuggled_Droid_Systems_L1_Upgrade_NO_PREREQ,
+				UL_Smuggled_Droid_Systems_L2_Upgrade_NO_PREREQ
+		</Tactical_Buildable_Objects_Campaign>
+		
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Underworld,
+				Destroyer_Droid_Company,
+				Underworld_MDU_Company,
+				BattleDroid_Squad,
+				Persuader_Droid_Enforcer_Company,
+				Underworld_Super_BattleDroid_Squad,
+				UL_MDU_Armor_Plating_L1_Upgrade,
+				UL_MDU_Armor_Plating_L2_Upgrade,
+				UL_Smuggled_Droid_Systems_L1_Upgrade,
+				UL_Smuggled_Droid_Systems_L2_Upgrade,
+		    AAT_Tank_Company,
+		    Droideka_Mk1_Company,
+		    Hailfire_Tank_Company,
+		    Multi_Troop_Transport_Company,
+		    Stap_Squad,
+		    
+		
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<AI_Combat_Power>300</AI_Combat_Power>
+
+		<Starting_Spawned_Units_Tech_0>Destroyer_Droid_Company, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Destroyer_Droid_Company, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Spawned_Squadron_Delay_Seconds>15</Spawned_Squadron_Delay_Seconds>		
+		<Spawned_Squadron_Location_Bones>SPAWN_00</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>180.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="U_DroidWorks_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.025</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+			
+			<Redirect_Blaster_Ability Name="U_Magnetically_Sealed_Structure">
+				<Initially_Enabled> No </Initially_Enabled>
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.30</Block_Chance>
+				<Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 30.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<!-- We can block/redirect shots from the following units types: -->
+				<Applicable_Unit_Categories>Hero | Infantry | Vehicle | Structure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+			
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="U_Ground_Vehicle_Factory">
+		<GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
+		<Text_ID>TEXT_GROUND_FACTORY_UNDERWORLD</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_FACTORY_UNDERWORLD TEXT_TOOLTIP_GARRISON_FACTORY </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_ENCYCLOPEDIA_FACTORY_UNDERWORLD TEXT_ENCYCLOPEDIA_FACTORY_UNDERWORLD_01 </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Can_Contain_Heroes_During_Ground_Battle> Yes </Can_Contain_Heroes_During_Ground_Battle>
+
+		<Land_Model_Name>UB_HeavyFactory.alo</Land_Model_Name>
+		<Icon_Name>i_button_ub_heavyfactory.tga</Icon_Name>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.3</Scale_Factor>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<GUI_Row> 0 </GUI_Row>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<SFXEvent_Ambient_Loop>Structure_Barracks_Loop</SFXEvent_Ambient_Loop>
+		<Behavior>DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,SELECTABLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,TERRAIN_TEXTURE_MODIFICATION,SPAWN_SQUADRON,EARTHQUAKE_TARGET</LandBehavior>
+		<Obstacle_Proxy_Type>  </Obstacle_Proxy_Type>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		
+		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>			
+		<Terrain_Texture_Modifier_Join_Distance>1.0</Terrain_Texture_Modifier_Join_Distance>	
+		<Terrain_Texture_Modifier_Square>true</Terrain_Texture_Modifier_Square>			
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Is_Dummy>No</Is_Dummy>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+
+		<Destruction_Survivors> 
+			Underworld_Merc_Squad, 1.0
+		</Destruction_Survivors>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+
+		<Affiliation>Underworld</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>2400</Build_Cost_Credits>
+		<Build_Time_Seconds>35</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Build_Max_Instances_Per_Planet> -1 </Build_Max_Instances_Per_Planet>
+		<Size_Value>50</Size_Value>
+		<Base_Position>In_Base</Base_Position>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Tactical_Health>1000</Tactical_Health>
+		<Shield_Points>900</Shield_Points>
+		<Shield_Refresh_Rate>28</Shield_Refresh_Rate>
+		<Energy_Capacity>9000</Energy_Capacity>
+		<Energy_Refresh_Rate>9000</Energy_Refresh_Rate>
+				
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<Sabotage_Cost_Credits>4400</Sabotage_Cost_Credits>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> UHD_Factory_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> UHD_Factory_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select>Structure_Heavy_Factory_Select_SFX</SFXEvent_Select>
+
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 5000 </Score_Cost_Credits>
+		<Property_Flags>InBase</Property_Flags>
+		
+		<Tactical_Buildable_Objects_Campaign>
+			Underworld,
+				UL_Weapon_Boost_L1_Upgrade_NO_PREREQ,
+				UL_Weapon_Boost_L2_Upgrade_NO_PREREQ
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Underworld,
+				F9TZ_Cloaking_Transport_Company,
+				MAL_Rocket_Vehicle_Company,
+				MZ8_Pulse_Cannon_Tank_Company,
+				Canderous_Assault_Tank_Company,
+				V19_Air_Wing,
+				UL_Weapon_Boost_L1_Upgrade,
+				UL_Weapon_Boost_L2_Upgrade,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+
+<!-- put this back once canderous is approved Canderous_Assault_Tank_Company, -->
+
+		<AI_Combat_Power>300</AI_Combat_Power>
+
+		<Starting_Spawned_Units_Tech_0>MZ8_Pulse_Cannon_Tank, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>MZ8_Pulse_Cannon_Tank, -1</Reserve_Spawned_Units_Tech_0>
+		
+		<Spawned_Squadron_Delay_Seconds>15</Spawned_Squadron_Delay_Seconds>		
+		<Spawned_Squadron_Location_Bones>SPAWN_00</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>180.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="U_Factory_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.025</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+			
+			<Redirect_Blaster_Ability Name="U_Magnetically_Sealed_Structure">
+				<Initially_Enabled> No </Initially_Enabled>
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.30</Block_Chance>
+				<Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 30.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<!-- We can block/redirect shots from the following units types: -->
+				<Applicable_Unit_Categories>Hero | Infantry | Vehicle | Structure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+			
+		</Abilities>
+	</SpecialStructure>
+
+
+
+
+	<SpecialStructure Name="Garrison_Bunker_Template">
+		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
+		<Text_ID>TEXT_GROUND_BUNKER</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BUNKER </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BUNKER </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+		<Land_Model_Name>NB_Bunker.alo</Land_Model_Name>
+		<Icon_Name>i_button_nb_bunker.tga</Icon_Name>
+
+        <Space_Layer> Land </Space_Layer>	
+        <UnitCollisionClass> Vehicle </UnitCollisionClass>	
+        <Custom_Hard_XExtent> 26.0 </Custom_Hard_XExtent>
+        <Custom_Hard_YExtent> 26.0 </Custom_Hard_YExtent>
+
+
+		<Select_Box_Scale>110</Select_Box_Scale>
+		<GUI_Row> 0 </GUI_Row>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<SFXEvent_Ambient_Loop>Structure_Barracks_Loop</SFXEvent_Ambient_Loop>
+
+		<Behavior>DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior> REVEAL,SELECTABLE, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,EARTHQUAKE_TARGET, GARRISON_STRUCTURE</LandBehavior>
+
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Garrison_Exit_Dist>70</Garrison_Exit_Dist>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		<Is_Dummy>No</Is_Dummy>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+
+		<Armor_Type> Armor_Bunker </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+
+		<Affiliation>Neutral</Affiliation>
+		<Size_Value>50</Size_Value>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<Tactical_Health>1000</Tactical_Health>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 5000 </Score_Cost_Credits>
+        <Num_Garrison_Slots>5</Num_Garrison_Slots>
+        <Garrison_Bone_Names>b_garrison_00, b_garrison_01, b_garrison_02, b_garrison_03</Garrison_Bone_Names>
+        <Garrison_Enter_Dist>0</Garrison_Enter_Dist>
+        <Garrison_Radius>5</Garrison_Radius>
+        <Num_Garrison_Guns>8</Num_Garrison_Guns>
+
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+        <AI_Combat_Power>100</AI_Combat_Power>
+		<Property_Flags>TacticalStructure | CanContainGarrison | GarrisonCanFire </Property_Flags>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Garrison_Bunker_Empire">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_bunker.tga</Icon_Name>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>Empire</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Garrison_Bunker_Rebel">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+			<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		 <Garrison_Radius>10</Garrison_Radius>
+		<Affiliation>Rebel</Affiliation>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Garrison_Bunker_Underworld">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Land_Model_Name>UB_Bunker.alo</Land_Model_Name>
+		<Icon_Name>i_button_ui_bunker.tga</Icon_Name>
+		<Affiliation>Underworld</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Garrison_Bunker_Capturable">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<LandBehavior>SPACE_OBSTACLE, REVEAL,SELECTABLE, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,EARTHQUAKE_TARGET, GARRISON_STRUCTURE, CAPTURE_POINT</LandBehavior>
+		<Land_Model_Name>NB_Bunker.alo</Land_Model_Name>
+        <Ownership_Sticks>No</Ownership_Sticks>
+		<Capture_Point_Transition_Time_Seconds>3</Capture_Point_Transition_Time_Seconds>
+		<Capture_Point_Radius>220</Capture_Point_Radius>
+		<Affiliation>Rebel, Empire, Underworld, Pirates, Neutral,Hutts</Affiliation>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
+      <Include_In_UI_Map_Header>True</Include_In_UI_Map_Header>
+	</SpecialStructure>
+
+
+    <SpecialStructure Name="U_Ground_Mining_Facility">
+		<Select_Box_Scale>200</Select_Box_Scale>
+		<Text_ID>TEXT_GROUND_MINING_FACILITY</Text_ID>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<GUI_Row> 0 </GUI_Row>
+		<Land_Model_Name> NB_CMC22Mining.ALO </Land_Model_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+
+		<Can_Contain_Heroes_During_Ground_Battle> Yes </Can_Contain_Heroes_During_Ground_Battle>
+		<Scale_Factor>0.75</Scale_Factor>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Affiliation>Underworld</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>950</Build_Cost_Credits>
+		<Build_Time_Seconds>27</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Build_Max_Instances_Per_Planet> -1 </Build_Max_Instances_Per_Planet>
+		<Size_Value>50</Size_Value>
+		<Base_Position>In_Base</Base_Position>
+		<Tech_Level>9</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Tactical_Health>700</Tactical_Health>
+		<Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,EARTHQUAKE_TARGET,TERRAIN_TEXTURE_MODIFICATION,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		<Obstacle_Proxy_Type> Empire_Ground_Mining_Facility_Build_Pad </Obstacle_Proxy_Type>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Icon_Name>i_button_mining_facility.tga</Icon_Name>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.125  0.125</Radar_Icon_Size>
+		<Radar_Show_Facing>No</Radar_Show_Facing>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Sabotage_Cost_Credits>1000</Sabotage_Cost_Credits>
+
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+		<Obstacle_Width>120.0</Obstacle_Width>
+		<Obstacle_Height>120.0</Obstacle_Height>
+		<Obstacle_X_Offset>-60.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-60.0</Obstacle_Y_Offset>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> UHD_Mining_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> UHD_Mining_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select>Structure_Mining_Select_SFX</SFXEvent_Select>
+
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+
+		<!--<Tactical_Buildable_Objects_Multiplayer> 
+			Empire,
+				EL_Increased_Production_L1_Upgrade,
+				EL_Increased_Production_L2_Upgrade,
+		</Tactical_Buildable_Objects_Multiplayer>-->
+
+		<CategoryMask> Structure </CategoryMask>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Underworld_Mining_Income_Bonus">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_MINING_FACILITIES</Specific_Mod_Source_Text>
+				<!-- 8% bonus to base planetary income -->
+				<Percentage_Income_Modifier>4</Percentage_Income_Modifier>
+				<!-- plus an absolute 0 credits to planetary income -->
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+				<!-- net effect of +( (base income * 0%) + 20) credits -->
+				<Additional_Multiplier_On_Mining_Colonies>1.5</Additional_Multiplier_On_Mining_Colonies>
+				<!-- net result above multiplied by 2.0 if the affected planet is a mining colony -->
+			</Planet_Income_Bonus_Ability>
+			<Income_Stream_Ability Name="Underworld_Mining_Income_Stream">
+				<!-- Income streams only exist in tactical modes that are not spawned from galatic, so this will not affect campaign play. -->
+				<Base_Income_Value>125</Base_Income_Value>
+				<Base_Interval_In_Secs>5</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Force_Healing_Ability Name="U_Mining_Facility_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.003</Heal_Percent>  <!-- Change from .025 to .003 for MP-->
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs> <!-- change from 5.0 to 2.0 for MP-->
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+		<Score_Cost_Credits> 5000 </Score_Cost_Credits>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_MINING_00  </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_MINING_00, MP_TEXT_ENCYCLOPEDIA_MINING_01  </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+	</SpecialStructure>
+
+<SpecialStructure Name="U_Ground_Gravity_Generator">
+		<Text_ID>TEXT_GROUND_GRAVITY_GEN</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_GRAV_GEN_01  </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+		<GUI_Row> 0 </GUI_Row>
+		<Land_Model_Name>UB_GRAVCONTROLGEN.ALO</Land_Model_Name>
+		<Scale_Factor>0.82</Scale_Factor>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Underworld</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>2200</Build_Cost_Credits>
+		<Build_Time_Seconds>45</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+		<Size_Value>50</Size_Value>
+		<Base_Position>Out_Base</Base_Position>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures> U_Ground_Vehicle_Factory </Required_Special_Structures>
+		<Required_Planets />
+		<!--<Tactical_Additional_Structure_Type>U_Ground_Palace</Tactical_Additional_Structure_Type>-->
+		<Tactical_Health>900</Tactical_Health>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Obstacle_Width>220.0</Obstacle_Width>
+		<Obstacle_Height>220.0</Obstacle_Height>
+		<Obstacle_X_Offset>-110.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-110.0</Obstacle_Y_Offset>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+
+		<Behavior> DUMMY_GROUND_STRUCTURE </Behavior>
+		<LandBehavior> SPACE_OBSTACLE, LAND_OBSTACLE, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED, GRAVITY_CONTROL_FIELD ,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Gravity_Control_Field_Range> 3000.0 </Gravity_Control_Field_Range>	<!-- Large range to cover entire map -->
+		<Gravity_Control_Field_Slow_Fraction>0.9</Gravity_Control_Field_Slow_Fraction>
+		<Gravity_Control_Field_Effect>Repulsor_Jammer_Effect</Gravity_Control_Field_Effect>
+		
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Icon_Name>i_button_repulsorlift.tga</Icon_Name>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> UHD_GravGen_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> UHD_GravGen_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select> Structure_Power_Gen_Select_SFX </SFXEvent_Select>
+
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+		
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<Score_Cost_Credits> 22000 </Score_Cost_Credits>
+
+		<Abilities SubObjectList="Yes">
+
+			<Force_Healing_Ability Name="U_Gravity_Generator_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.03</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>3.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+
+			</Force_Healing_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+
+
+
+
+
+
+
+<SpecialStructure Name="Gladiator_Arena">
+		<GUI_Bounds_Scale>0.2</GUI_Bounds_Scale>
+		<Text_ID>TEXT_GROUND_GLADIATOR_ARENA</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_GLADIATOR_ARENA</Encyclopedia_Text>
+		<GUI_Row> 0 </GUI_Row>
+		<Land_Model_Name>NB_GrandArena.alo</Land_Model_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Underworld</Affiliation>
+		<!--<Political_Control>1</Political_Control>-->
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+		<Size_Value>50</Size_Value>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Base_Position>Out_Base</Base_Position>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+
+		<Tactical_Health>1100</Tactical_Health>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,EARTHQUAKE_TARGET</LandBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Icon_Name>i_button_grand_arena.tga</Icon_Name>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> RHD_Arena_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> RHD_Arena_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select> Structure_Arena_Select_SFX </SFXEvent_Select>
+		
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Gambling_Ability Name="Gladiator_Arena_Gambling_Income">
+				<!-- choose a new income modifier every 30 seconds -->
+				<Evaluation_Interval_In_Secs>30.0</Evaluation_Interval_In_Secs>
+				<!-- worst losses are -20% of the base -->
+				<Min_Income_Modifier>-0.20</Min_Income_Modifier>
+				<!-- best positive income is +60% of the base -->
+				<Max_Income_Modifier>0.60</Max_Income_Modifier>
+				<!-- 80% of the time the income will be positive -->
+				<Chance_To_Win>0.80</Chance_To_Win>
+			</Planet_Income_Gambling_Ability>
+			<Force_Healing_Ability Name="U_Arena_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.025</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+
+		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
+		<Obstacle_Width>200.0</Obstacle_Width>
+		<Obstacle_Height>200.0</Obstacle_Height>
+		<Obstacle_X_Offset>-100.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-100.0</Obstacle_Y_Offset>
+		
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+	</SpecialStructure>
+
+   <SpecialStructure Name="Ground_Saloon">
+		<Select_Box_Scale>250</Select_Box_Scale>
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+		<Text_ID>TEXT_GROUND_CANTINA</Text_ID>
+		<Land_Model_Name>W_CANTINATAT.ALO</Land_Model_Name>
+		<GUI_Row> 0 </GUI_Row>
+		<Affiliation>Underworld</Affiliation>
+
+		<Can_Contain_Heroes_During_Ground_Battle> Yes </Can_Contain_Heroes_During_Ground_Battle>
+		<Scale_Factor>0.75</Scale_Factor>
+		
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>600</Build_Cost_Credits>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+		<Size_Value>50</Size_Value>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Base_Position>Out_Base</Base_Position>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Tactical_Health>600</Tactical_Health>
+		<Behavior>DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,SELECTABLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,TERRAIN_TEXTURE_MODIFICATION,SPAWN_SQUADRON,EARTHQUAKE_TARGET</LandBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Icon_Name>i_button_cantina.tga</Icon_Name>
+		<GUI_Model_Name>W_CANTINATAT.ALO</GUI_Model_Name>
+		<GUI_Distance>850</GUI_Distance>
+		<GUI_Offset>0 0 20</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+
+		<Sabotage_Cost_Credits>1200</Sabotage_Cost_Credits>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> RHD_Cantina_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> RHD_Cantina_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select> Structure_Cantina_Select_SFX </SFXEvent_Select>
+		
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_CANTINA_U_00</Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_CANTINA_U_00  </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 6000 </Score_Cost_Credits>
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="U_Cantina_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.025</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+		
+	</SpecialStructure>
+
+   <SpecialStructure Name="Underworld_Casino">
+		<GUI_Bounds_Scale>0.2</GUI_Bounds_Scale>
+		<Text_ID>TEXT_GROUND_CASINO</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_UNDERWORLD_CASINO</Encyclopedia_Text>
+		<Select_Box_Scale>200</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Row> 0 </GUI_Row>
+		<Land_Model_Name>Nb_casino_building.alo</Land_Model_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Underworld</Affiliation>
+		<!--<Political_Control>1</Political_Control>-->
+		<Build_Cost_Credits>1200</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+		<Size_Value>50</Size_Value>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Base_Position>Out_Base</Base_Position>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+
+		<Tactical_Health>1100</Tactical_Health>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+	  <Behavior>DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,SELECTABLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,TERRAIN_TEXTURE_MODIFICATION,SPAWN_SQUADRON,EARTHQUAKE_TARGET</LandBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Icon_Name>i_button_casino.tga</Icon_Name>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> RHD_Arena_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> RHD_Arena_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select> Structure_Arena_Select_SFX </SFXEvent_Select>
+		
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Gambling_Ability Name="Casino_Gambling_Income">
+				<!-- choose a new income modifier every 30 seconds -->
+				<Evaluation_Interval_In_Secs>10.0</Evaluation_Interval_In_Secs>
+				<!-- worst losses are -20% of the base -->
+				<Min_Income_Modifier>-0.50</Min_Income_Modifier>
+				<!-- best positive income is +60% of the base -->
+				<Max_Income_Modifier>0.95</Max_Income_Modifier>
+				<!-- 80% of the time the income will be positive -->
+				<Chance_To_Win>0.80</Chance_To_Win>
+			</Planet_Income_Gambling_Ability>
+			<Force_Healing_Ability Name="U_Casino_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.025</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+
+		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
+		<Obstacle_Width>200.0</Obstacle_Width>
+		<Obstacle_Height>200.0</Obstacle_Height>
+		<Obstacle_X_Offset>-100.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-100.0</Obstacle_Y_Offset>
+		
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+	</SpecialStructure>
+
+<SpecialStructure Name="Underworld_Brothel">
+		<Select_Box_Scale>250</Select_Box_Scale>
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+		<Text_ID>TEXT_GROUND_BROTHEL</Text_ID>
+		<Land_Model_Name>Nb_brothe_building.alo</Land_Model_Name>
+		<GUI_Row> 0 </GUI_Row>
+		<Affiliation>Underworld</Affiliation>
+
+		<Can_Contain_Heroes_During_Ground_Battle> Yes </Can_Contain_Heroes_During_Ground_Battle>
+		<Scale_Factor>1.0</Scale_Factor>
+		
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>2000</Build_Cost_Credits>
+		<Build_Time_Seconds>50</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+		<Size_Value>50</Size_Value>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Base_Position>Out_Base</Base_Position>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Tactical_Health>600</Tactical_Health>
+		
+		<Behavior>DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,SELECTABLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,TERRAIN_TEXTURE_MODIFICATION,SPAWN_SQUADRON,EARTHQUAKE_TARGET</LandBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Icon_Name>i_button_brothel.tga</Icon_Name>
+		<GUI_Model_Name>Nb_brothe_building.alo</GUI_Model_Name>
+		<GUI_Distance>850</GUI_Distance>
+		<GUI_Offset>0 0 20</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+
+		<Sabotage_Cost_Credits>1200</Sabotage_Cost_Credits>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> RHD_Cantina_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> RHD_Cantina_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select> Structure_Cantina_Select_SFX </SFXEvent_Select>
+		
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BROTHEL</Encyclopedia_Text>
+		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 6000 </Score_Cost_Credits>
+		<Galactic_Influence_Range>150.0</Galactic_Influence_Range>
+		<Hyperspace_Fleet_Reveal_Range>150.0</Hyperspace_Fleet_Reveal_Range>
+		
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="U_Brothel_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.025</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>-->
+		
+		
+		<Planet_Income_Bonus_Ability Name="Underworld_Brothel_Income_Bonus">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_MINING_FACILITIES</Specific_Mod_Source_Text>
+				
+				<Percentage_Income_Modifier>9</Percentage_Income_Modifier>
+			
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+				
+				<Additional_Multiplier_On_Mining_Colonies>3.5</Additional_Multiplier_On_Mining_Colonies>
+			
+			</Planet_Income_Bonus_Ability>
+			
+			<Income_Stream_Ability Name="Underworld_Brothel_Income_Stream">
+				
+				<Base_Income_Value>50</Base_Income_Value>
+				<Base_Interval_In_Secs>5</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+				
+		
+			<System_Spy_Ability Name="Brothel_Intel_Ring">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Base_Levels>Yes</See_Base_Levels>
+				<See_Credit_Income>Yes</See_Credit_Income>
+				<See_Credit_Income_Breakdown>Yes</See_Credit_Income_Breakdown>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+				<See_Most_Powerful_Ship>Yes</See_Most_Powerful_Ship>
+				<See_Fleet_Contents>Yes</See_Fleet_Contents>
+				<See_Num_Ground_Companies>Yes</See_Num_Ground_Companies>
+				<See_Ground_Company_Contents>Yes</See_Ground_Company_Contents>
+				<See_Special_Structures>Yes</See_Special_Structures>
+				<See_Political_Control>Yes</See_Political_Control>
+				<See_Political_Control_Breakdown>Yes</See_Political_Control_Breakdown>
+				<See_Current_Production>No</See_Current_Production>
+				<See_Minor_Stealth_Heroes>Yes</See_Minor_Stealth_Heroes>
+				<See_Major_Stealth_Heroes>Yes</See_Major_Stealth_Heroes>
+			</System_Spy_Ability>
+	
+		</Abilities>
+		
+		
+	</SpecialStructure>
+
+	<!--<SpecialStructure Name="Ground_Underworld_Kdy_Laser">
+		<GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
+		<Text_ID>TEXT_GROUND_KDYLASER</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_KDYLASER_00  </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+ 	  <Icon_Name>i_button_magnepulse_cannon.tga</Icon_Name>
+		<GUI_Row> 0 </GUI_Row>
+		<Land_Model_Name>EB_MagnepulseCannon.alo</Land_Model_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Underworld </Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>10000</Build_Cost_Credits>
+		<Build_Time_Seconds>120</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+		<Size_Value>50</Size_Value>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Base_Position>Out_Base</Base_Position>
+		<Tech_Level>0</Tech_Level>
+		<SpaceAutoResolveHitRate>3</SpaceAutoResolveHitRate>
+		<Damage>50</Damage>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets />
+		<Shield_Points>200</Shield_Points>
+		<Tactical_Health>800</Tactical_Health>
+		<Shield_Refresh_Rate>15</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>6</Energy_Refresh_Rate>
+		<Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE, SHIELDED, POWERED, REVEAL, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		<SpaceBehavior>SPECIAL_WEAPON</SpaceBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Is_Special_Weapon_In_Space>Yes</Is_Special_Weapon_In_Space>
+		<Special_Weapon_Index>1</Special_Weapon_Index>
+		<Special_Weapon_Target_Action_Index> 0 </Special_Weapon_Target_Action_Index> 
+		<Special_Weapon_Valid_Targets>Transport | Corvette | Frigate | Capital | Super</Special_Weapon_Valid_Targets>
+		<Projectile_Fire_Recharge_Seconds>30.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>10</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Types>Proj_KDY_Laser_Green</Projectile_Types>
+		<Space_Victory_Relevant>No</Space_Victory_Relevant>
+		<Land_Victory_Relevant>Yes</Land_Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+
+		<Sabotage_Cost_Credits>6000</Sabotage_Cost_Credits>
+
+		<Destruction_Survivors> 
+			Underworld_Merc_Squad, 1.0
+		</Destruction_Survivors>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+	
+			
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Fire>Unit_Hyper_Velocity_Fire</SFXEvent_Fire>
+		<SFXEvent_Special_Weapon_Ready>EHD_Hypervelocity_Available</SFXEvent_Special_Weapon_Ready>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> EHD_Hypervelocity_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> EHD_Hypervelocity_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select>Structure_Hyper_Select_SFX</SFXEvent_Select>
+
+
+      <Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		
+		
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		
+		
+		<Score_Cost_Credits> 30000 </Score_Cost_Credits>
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="U_Kdy_Laser_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.025</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+	</SpecialStructure>-->
+
+<SpecialStructure Name="C_Ground_Research_Facility">
+		<GUI_Bounds_Scale>0.35</GUI_Bounds_Scale>
+		<Text_ID>TEXT_GROUND_RESEARCH_FACILITY</Text_ID>
+		<GUI_Row> 0 </GUI_Row>
+		<Land_Model_Name>EB_ResearchFacility.alo</Land_Model_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<SFXEvent_Ambient_Loop>Structure_Barracks_Loop</SFXEvent_Ambient_Loop>
+		<Behavior>DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,SELECTABLE, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,TERRAIN_TEXTURE_MODIFICATION,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		<Obstacle_Proxy_Type> E_Ground_Research_Facility_Build_Pad </Obstacle_Proxy_Type>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Can_Contain_Heroes_During_Ground_Battle> Yes </Can_Contain_Heroes_During_Ground_Battle>
+
+		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>			
+		<Terrain_Texture_Modifier_Join_Distance>1.0</Terrain_Texture_Modifier_Join_Distance>	
+		<Terrain_Texture_Modifier_Square>true</Terrain_Texture_Modifier_Square>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		<Is_Dummy>No</Is_Dummy>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+		
+		<!--<Destruction_Survivors> 
+			Empire_Survivors_Small, 1.0
+			Empire_Survivors_Medium, 1.0
+			Empire_Survivors_Large, 1.0 
+		</Destruction_Survivors>-->
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Affiliation>Underworld</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>1800</Build_Cost_Credits>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+		<Size_Value>50</Size_Value>
+		<Base_Position>In_Base</Base_Position>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Tactical_Health>750</Tactical_Health>
+		<Icon_Name>i_button_e_research_facility.tga</Icon_Name>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<Sabotage_Cost_Credits>5000</Sabotage_Cost_Credits>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> EHD_Research_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> EHD_Research_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select>Structure_Research_Select_SFX</SFXEvent_Select>
+
+
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+		
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_RESEARCH_00  </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_RESEARCH_00, MP_TEXT_ENCYCLOPEDIA_RESEARCH_01 </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 12000 </Score_Cost_Credits>
+		<Property_Flags>InBase</Property_Flags>
+	
+	    <!--<Tactical_Buildable_Objects_Campaign> 
+			Empire,
+				EL_Reinforced_Structures_Upgrade, 
+				EL_Enhanced_Turret_Firepower_L1_Upgrade,
+				EL_Enhanced_Turret_Firepower_L2_Upgrade,
+				EL_Weatherproof_Upgrade,
+		</Tactical_Buildable_Objects_Campaign>-->
+    
+	    <!--<Tactical_Buildable_Objects_Multiplayer> 
+			Empire,
+				EL_Bombing_Run_Use_Upgrade, 
+				EL_Reinforced_Structures_Upgrade, 
+				EL_Enhanced_Turret_Firepower_L1_Upgrade,
+				EL_Enhanced_Turret_Firepower_L2_Upgrade,
+				EL_Planetary_Bombard_Use_Upgrade,
+		</Tactical_Buildable_Objects_Multiplayer>-->
+		
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="C_Research_Facility_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.025</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+			<Redirect_Blaster_Ability Name="C_Magnetically_Sealed_Structure">
+				<Initially_Enabled> No </Initially_Enabled>
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.30</Block_Chance>
+				<Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 30.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<!-- We can block/redirect shots from the following units types: -->
+				<Applicable_Unit_Categories>Hero | Infantry | Vehicle | Structure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+			
+		</Abilities>
+	</SpecialStructure>
+
+</SpecialStructures>

@@ -1,0 +1,3358 @@
+<?xml version="1.0"?>
+<Props_Urban>
+ 
+
+	<Props_Urban Name="Prop_Urban_CarpetCorner00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_carpet_cap.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Ithor_Skydome_Prop">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_sky_ithor.ALO</Land_Model_Name>
+		<Scale_Factor>2.5</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_Block_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanBlock_A.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_Block_A_MISSION11">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanBlock_A_Mission11.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Block_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanBlock_B.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_HalfWall_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanHalfWall_A.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_HalfWall_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanHalfWall_B.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_HalfWall_Side">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanHalfWall_Side.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_HalfWall_Side_Small">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanHalfWall_Side_B.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_HalfWall_B_small">
+		<Variant_Of_Existing_Type>Prop_Urban_HalfWall_B</Variant_Of_Existing_Type>
+		<Scale_Factor>.8</Scale_Factor>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_HalfWall_B_smaller">
+		<Variant_Of_Existing_Type>Prop_Urban_HalfWall_B</Variant_Of_Existing_Type>
+		<Scale_Factor>.6</Scale_Factor>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_HalfWall_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanHalfWall_C.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_HalfWall_D">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanHalfWall_C.ALO</Land_Model_Name>
+		<Scale_Factor>2.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_HalfWall_E">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanHalfWall_B.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_HalfWall_F_Huge">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanHalfWall_C.ALO</Land_Model_Name>
+		<Scale_Factor>5.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_Tunnel_c">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanTrainTunnel2.ALO</Land_Model_Name>
+		<Scale_Factor>4.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Corner_Cap">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>RB_Station_04_HP04_TBL.alo</Land_Model_Name>
+		<Scale_Factor>0.27</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_Corner_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanCorner_A.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Corner_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_PrisonWall.ALO</Land_Model_Name>
+		<Scale_Factor>1.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_SteamPipes">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanPipes.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_Girder_Big">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_GIRDER_BIG.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Square_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanSquare_A.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Statue_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanPalpStatue.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Statue_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanObiStatue.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Statue_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanOddStatue.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Square_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanSquare_B.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Square_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanSquare_C.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Square_D">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanSquare_D.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Walk_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanWalk_A.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Antenna">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanStreetLite.ALO</Land_Model_Name>
+		<Scale_Factor>1.25</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Wall_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanWall_A.ALO</Land_Model_Name>
+		<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_Wall_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanWall_B.ALO</Land_Model_Name>
+		<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_Wall_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanWall_A.ALO</Land_Model_Name>
+		<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Scale_Factor>0.6</Scale_Factor>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_Wall_D_HUGE">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanWall_B.ALO</Land_Model_Name>
+		<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Scale_Factor>5.0</Scale_Factor>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_BuildFacade_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Urban_Builds_Generic00.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>3</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_BuildFacade_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Urban_Builds_Generic01.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Scale_Factor>2</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_BuildFacade_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Urban_Builds_Generic02.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_BuildFacade_D">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Urban_Builds_Generic03.ALO</Land_Model_Name>
+		<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Scale_Factor>2</Scale_Factor>
+        <No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>0</No_Refraction_Below_Detail_Level>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_AlderaanBuilding_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_AlderaanBuilding_A.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>.55</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_AlderaanBuilding_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_AlderaanBuilding_B.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>.35</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_AlderaanBuilding_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_AlderaanBuilding_C.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_AlderaanBuilding_D">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_AlderaanBuilding_D.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Scale_Factor>.35</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_AlderaanBuilding_E">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_AlderaanBuilding_E.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>.25</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Traffic_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Land_Model_Name>W_UrbanShadowTraffic00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Behavior>IDLE</Behavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Tunnel_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanTrainTunnel.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Tunnel_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanTrainTunnel2.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_Tunnel_Section">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanTrainTunnel2_long.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Civ_Structure_A">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Urban_CorBuild_A.alo</Land_Model_Name>
+		<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Civ_Structure_B">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Urban_CorBuild_B.alo</Land_Model_Name>
+		<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_Civ_Structure_C">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Urban_CorBuild_C.alo</Land_Model_Name>
+		<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_Civ_Structure_D">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Urban_CorBuild_D.alo</Land_Model_Name>
+		<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_Civ_Structure_E">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Urban_CorBuild_E.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_Civ_Structure_F">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Urban_CorBuild_F.alo</Land_Model_Name>
+		<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_JediTemple">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_JediTemple.alo</Land_Model_Name>
+		<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Scale_Factor>1.3</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Taris_Civ_Structure_A">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Urban_TarisBuild_A.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	
+
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Taris_Civ_Structure_B">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Urban_TarisBuild_B.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.65</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_Walk_Railing">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanRailing.ALO</Land_Model_Name>
+		<Scale_Factor>0.05</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Kamino_Decor_1">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Prop_MoistCollect.ALO</Land_Model_Name>
+		<Scale_Factor>3</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Kamino_Decor_2">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanStreetLite.ALO</Land_Model_Name>
+		<Scale_Factor>3</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Urban>
+		
+	<Props_Urban Name="Prop_Kamino_Decor_3">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Urban_Builds_Generic03.ALO</Land_Model_Name>
+		<Scale_Factor>15</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Is_Discardable>No</Is_Discardable> 
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Kamino_Decor_4">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Prop_ElecBox.ALO</Land_Model_Name>
+		<Scale_Factor>4</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Kamino_Decor_5">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Prop_PwrBox.ALO</Land_Model_Name>
+		<Scale_Factor>4</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Kamino_Decor_6">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Prop_Generator.ALO</Land_Model_Name>
+		<Scale_Factor>2</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Kamino_Decor_7">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Kamino_Edgewall.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Kamino_Decor_8">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_KaminoBuilding00.ALO</Land_Model_Name>
+		<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Scale_Factor>2</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Kamino_Tower_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Land_Model_Name>W_Kamino_Tower_lrg.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Is_Discardable>No</Is_Discardable> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Kamino_Tower_Small">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Kamino_Tower_sml.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Is_Discardable>No</Is_Discardable> 
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Kamino_Reflection_00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Kamino_Reflect.ALO</Land_Model_Name>
+		<Scale_Factor>3</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Kamino_Reflection_01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Kamino_Reflect.ALO</Land_Model_Name>
+		<Scale_Factor>6</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Bespin_Building_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Land_Model_Name>W_Bespin_Building01.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Is_Discardable>No</Is_Discardable> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Bespin_Building_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Land_Model_Name>W_Bespin_Building02.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Is_Discardable>No</Is_Discardable> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Bespin_Building_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Land_Model_Name>W_Bespin_Building03.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Is_Discardable>No</Is_Discardable> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Bespin_Building_A_lrg">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Land_Model_Name>W_Bespin_Building01.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Is_Discardable>No</Is_Discardable> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Bespin_Building_B_lrg">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Land_Model_Name>W_Bespin_Building02.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Is_Discardable>No</Is_Discardable> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Bespin_Building_C_lrg">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Land_Model_Name>W_Bespin_Building03.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Is_Discardable>No</Is_Discardable> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Bespin_Fan">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Bespin_Fan.ALO</Land_Model_Name>
+		<Scale_Factor>1.75</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Behavior>IDLE</Behavior>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Is_Discardable>No</Is_Discardable> 
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Bespin_GasCollector">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Gas_Collector.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Urban>
+
+<!--NEW-->
+
+	<Props_Urban Name="Prop_Urban_Statue_B_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanObiStatue.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Statue_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanOddStatue.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_StatueLarge_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanOddStatue.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_WallLarge_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanWall_B.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_AlderaanBuildingLarge_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_AlderaanBuilding_A.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.05</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_AlderaanBuildingLarge_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_AlderaanBuilding_B.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_AlderaanBuildingLarge_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_AlderaanBuilding_C.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_AlderaanBuildingLarge_E">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_AlderaanBuilding_E.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_urban_building_A.ALO</Land_Model_Name>
+		<Scale_Factor>8.0</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_urban_building_B.ALO</Land_Model_Name>
+		<Scale_Factor>8.0</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_urban_building_C.ALO</Land_Model_Name>
+		<Scale_Factor>8.0</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_D">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_urban_building_D.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_E">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_urban_building_E.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_F">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_urban_building_F.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_G">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_urban_building_F.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_H">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>Bastion8.alo</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_I">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name><Land_Model_Name>EB_GuardTower.alo</Land_Model_Name></Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+	<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_J">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Urban_CorBuild_A.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>8.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_K">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Urban_CorBuild_B.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>8.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_L">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Urban_CorBuild_C.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>8.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_M">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Urban_CorBuild_D.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>8.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_N">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Urban_CorBuild_E.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>8.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_O">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Urban_CorBuild_F.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>8.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+		
+	<Props_Urban Name="Prop_Urban_Civ_StructureLarge_A">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Urban_CorBuild_A.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	
+	
+	<Props_Urban Name="Prop_Urban_Civ_StructureLarge_B">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Urban_CorBuild_B.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Civ_StructureLarge_C">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Urban_CorBuild_C.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Civ_StructureLarge_D">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Urban_CorBuild_D.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Civ_StructureLarge_E">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Urban_CorBuild_E.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Civ_StructureLarge_F">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Urban_CorBuild_F.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_A">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>EB_Station_03_HP03_CM.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.65</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_B">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>RB_Station_04_HP04_TBL.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.65</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_C">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>EV_StarDestroyer_HP00_B-R.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>7.65</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_D">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>EV_StarDestroyer_HP00_M-C.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>7.65</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_E">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>EB_Station_05_HP05_PRT.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.65</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_F">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>EB_Station_05_HP05_TBL.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.65</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_G">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>w_space_girder00.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Ord_Mantell_Junk_H">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>RV_HomeOne_HP_SHG.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Ord_Mantell_Junk_I">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>RB_Station_04_HP04_SHG.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_J">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>EB_Station_01_HP01_SHG.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_K">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>NV_Jedicruiser_HP_B-M.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Ord_Mantell_Junk_L">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>Nb_apbase_hp_tl4.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Ord_Mantell_Junk_M">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>Nb_apbase_hp_tl3.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Ord_Mantell_Junk_N">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>Nb_apbase_hp_tl2.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Ord_Mantell_Junk_O">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>Nb_apbase_hp_shg.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_P">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>Nb_apbase_hp_ll1.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_Q">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>Nb_apbase_hp_ht2.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_R">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>EB_Station_05_HP05_CM.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_S">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>EB_Station_04_HP04_TBL.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_T">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>EB_Station_04_HP04_IC.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_U">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>EB_Station_03_HP03_PRT.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_V">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>EB_Station_03_HP03_IC.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_W">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>EB_Station_03_HP03_CM.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_X">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>EB_Station_02_HP02_LC.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_Y">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>EB_Station_02_HP02_TBL.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Ord_Mantell_Junk_Z">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>EB_Station_02_HP02_PRT.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>	
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_AA">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>EB_Station_01_HP01_CA.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>	
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_BB">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>EB_Station_01_HP01_SHG.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>	
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_CC">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>EB_Station_01_HP01_TBL.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>	
+
+<Props_Urban Name="Prop_Ord_Mantell_Junk_DD">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>EB_Station_01_HP01_LC.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>	
+
+<Props_Urban Name="Prop_Ord_Mantell_Junk_EE">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>EB_Station_01_HP01_CM.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>	
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_FF">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>RB_Station_05_HP05_TBL2.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>	
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_GG">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>RB_Station_05_HP05_TBL.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>	
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_HH">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>RB_Station_05_HP05_PRT.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>	
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_II">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>RB_Station_05_HP05_IC.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>	
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_JJ">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>RB_Station_05_HP05_CCM.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>	
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_KK">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>RB_Station_04_HP04_SHG.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>	
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_LL">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>RB_Station_04_HP04_TBL.alo </Land_Model_Name>
+	
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>	
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_MM">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>RB_Station_04_HP04_LC.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>	
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_NN">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>RB_Station_04_HP04_IC.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>	
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_OO">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>RB_Station_03_HP03_PRT.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>	
+
+<Props_Urban Name="Prop_Ord_Mantell_Junk_PP">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>RB_Station_03_HP03_IC.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_QQ">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>RB_Station_02_HP02_TBL.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_RR">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>RB_Station_02_HP02_LC.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_SS">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>RB_Station_01_HP01_CA.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_TT">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>RB_Station_01_HP01_TBL.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_UU">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>RB_Station_01_HP01_SHG.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+<Props_Urban Name="Prop_Ord_Mantell_Junk_VV">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>EV_VictoryStarDestroyer_HP00_C-B.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>5.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+<Props_Urban Name="Prop_Ord_Mantell_Junk_WW">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name> EV_VictoryStarDestroyer_HP00_C-F.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>7.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_XX">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name> W_Star_Destroyer_Construction.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>5.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+	
+	<Props_Urban Name="Prop_Ord_Mantell_Junk_YY">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name> RV_MonCalCruiser_Hulk.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>5.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+	
+	<Props_Urban Name="Prop_Druckenwell_Factory_A">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name> NB_RepairFacility.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+	
+	<Props_Urban Name="Prop_Mustafar_Support_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanHalfWall_A.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Urban>
+	
+<Props_Urban Name="Prop_Urban_Statue_P">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanPalpStatue.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Urban>	
+
+<!--                                    RAW/IA2                                         -->
+
+<Props_Urban Name="Prop_Mygeeto_Civ_Structure_A">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Mygeeto_Building_A.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.55</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Mygeeto_Civ_Structure_B">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Mygeeto_Building_B.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Mygeeto_Civ_Structure_C">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Mygeeto_Building_C.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.55</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Mygeeto_Civ_Structure_D">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Mygeeto_Building_D.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.7</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+<Props_Urban Name="Prop_Mygeeto_Civ_Structure_DD">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Mygeeto_Building_D.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.7</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Mygeeto_Civ_Structure_DDD">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Mygeeto_Building_D.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.7</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Mygeeto_Civ_Structure_E">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Mygeeto_Building_E.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>4.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Mygeeto_Civ_Structure_EE">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Mygeeto_Building_E.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>3.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Mygeeto_Wall_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Mygeeto_Wall_A.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+        <No_Reflection_Below_Detail_Level>99</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Mygeeto_Wall_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Mygeeto_Wall_B.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+        <No_Reflection_Below_Detail_Level>99</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Mygeeto_Wall_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Mygeeto_Wall_C.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+        <No_Reflection_Below_Detail_Level>99</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Mygeeto_Wall_D">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Mygeeto_Wall_D.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+        <No_Reflection_Below_Detail_Level>99</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Mygeeto_Wall_Corner_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Mygeeto_Corner_A.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+        <No_Reflection_Below_Detail_Level>99</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Mygeeto_Wall_Corner_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Mygeeto_Corner_B.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+        <No_Reflection_Below_Detail_Level>99</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Mygeeto_Lamp_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Mygeeto_Lamp_A.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Urban>	
+
+<Props_Urban Name="Prop_Smokestack_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_MECHISSMOKE01.ALO</Land_Model_Name>
+		 <No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+		
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Smokestack_A1">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_MECHISSMOKE01.ALO</Land_Model_Name>
+		 <No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+			</Props_Urban>
+	
+	<Props_Urban Name="Prop_Smokestack_A2">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_MECHISSMOKE01.ALO</Land_Model_Name>
+		 <No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+		
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Smokestack_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_MECHISSMOKE02.ALO</Land_Model_Name>
+		 <No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+		
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Smokestack_B1">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_MECHISSMOKE02.ALO</Land_Model_Name>
+		 <No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+		
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Smokestack_B2">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_MECHISSMOKE02.ALO</Land_Model_Name>
+		 <No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+		
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Smokestack_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_MECHISSMOKE03.ALO</Land_Model_Name>
+		 <No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+	<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+		
+	</Props_Urban>
+	
+		<Props_Urban Name="Prop_Smokestack_C1">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_MECHISSMOKE03.ALO</Land_Model_Name>
+		 <No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+		
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Smokestack_C2">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_MECHISSMOKE03.ALO</Land_Model_Name>
+	 <No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+		
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Mygeeto_Lamp_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Mygeeto_Lamp_A.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Urban>	
+	
+		<Props_Urban Name="Prop_Mygeeto_Platform_1">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>RB_Station_02_HP02_LC.alo </Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+	
+	<Props_Urban Name="Prop_Mygeeto_Platform_2">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>RB_Station_02_HP02_LC.alo </Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+	
+	<Props_Urban Name="Prop_Mygeeto_Platform_3">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>RB_Station_02_HP02_LC.alo </Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+	
+	<Props_Urban Name="Prop_Mygeeto_Platform_4">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>RB_Station_02_HP02_LC.alo </Land_Model_Name>
+		<Scale_Factor>2.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+	
+	<Props_Urban Name="Prop_Mygeeto_Platform_5">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>RB_Station_02_HP02_LC.alo </Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+	
+		<Props_Urban Name="Prop_Mygeeto_Platform_6">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>RB_Station_02_HP02_LC.alo </Land_Model_Name>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+	
+	<Props_Urban Name="Prop_Mygeeto_Building_1">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>prop_mygeeto1.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+	
+		<Props_Urban Name="Prop_Mygeeto_Building_1a">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>prop_mygeeto1.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.7</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+	
+	<Props_Urban Name="Prop_Mygeeto_Building_1b">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>prop_mygeeto1.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+	
+	<Props_Urban Name="Prop_Mygeeto_Building_2">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>prop_mygeeto2.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+	
+	<Props_Urban Name="Prop_Mygeeto_Building_2a">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>prop_mygeeto2.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.7</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+	
+	<Props_Urban Name="Prop_Mygeeto_Building_3">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>prop_mygeeto3.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+	
+	<Props_Urban Name="Prop_Mygeeto_Building_3a">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>prop_mygeeto3.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.7</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+	<Props_Urban Name="Prop_Mygeeto_Building_3b">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>prop_mygeeto3.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+<Props_Urban Name="Prop_Mygeeto_Building_3c">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>prop_mygeeto3.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+<Props_Urban Name="Prop_Mygeeto_Building_3d">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>prop_mygeeto3.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+<Props_Urban Name="Prop_Mygeeto_Platform_1a">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>PROP_MYGEETOPLAT.ALO </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+<Props_Urban Name="Prop_Mygeeto_Platform_1b">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>PROP_MYGEETOPLAT.ALO </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+<Props_Urban Name="Prop_Mygeeto_Platform_1c">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>PROP_MYGEETOPLAT.ALO </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+<Props_Urban Name="Prop_Tram">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>LoW_R1_Prop_Tram.ALO</Land_Model_Name>
+		<LandBehavior>WALK_LOCOMOTOR, IDLE</LandBehavior>
+		
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<Exclude_From_Distance_Fade>True</Exclude_From_Distance_Fade>
+        <No_Reflection_Below_Detail_Level>99</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Tram_Stationary">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>LoW_R1_Prop_Tram.ALO</Land_Model_Name>
+		
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<Exclude_From_Distance_Fade>True</Exclude_From_Distance_Fade>
+        <No_Reflection_Below_Detail_Level>99</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Tram_Repulsor_Platform">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>LoW_R1_Prop_Tram_RL.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<Exclude_From_Distance_Fade>True</Exclude_From_Distance_Fade>
+        <No_Reflection_Below_Detail_Level>99</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Tram_Support_Column">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>LoW_R1_Prop_Tram_SC.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<Exclude_From_Distance_Fade>True</Exclude_From_Distance_Fade>
+        <No_Reflection_Below_Detail_Level>99</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Urban_Civ_StructureLarge_G">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_ImperialPalace.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+<Props_Urban Name="Prop_Urban_Civ_Structure_G">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_ImperialPalace.alo </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+<Props_Urban Name="Prop_Urban_Statue_B_Large_1">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanObiStatue.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>5.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Urban_Street_Light">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Urban_StreetLight.ALO</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Urban_JediTemple_Raw">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_Jedi_Temple.alo</Land_Model_Name>
+		<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Scale_Factor>1.3</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Coruscant_Backdrop_hr">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Coruscant_Backdrop_hr.ALO</Land_Model_Name>
+		<Scale_Factor>4.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Coruscant_Backdrop_right_hr">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_backdrop_right_hr.ALO</Land_Model_Name>
+		<Scale_Factor>4.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Coruscant_Backdrop_1">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Coruscant_Backdrop2.ALO</Land_Model_Name>
+		<Scale_Factor>8</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Coruscant_Backdrop_2">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Coruscant_Backdrop3.ALO</Land_Model_Name>
+		<Scale_Factor>8</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Coruscant_Backdrop_3">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Coruscant_Backdrop4.ALO</Land_Model_Name>
+		<Scale_Factor>8</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Coruscant_Spire">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Coruscant_Spire.ALO</Land_Model_Name>
+		<Scale_Factor>1.25</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Urban>
+
+<!--ITHOR BUILDINGS-->
+
+	<Props_Urban Name="Prop_Urban_IthorBuilding_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ithorbuilding_a.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>.55</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_IthorBuilding_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ithorbuilding_b.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>.35</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_IthorBuilding_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ithorbuilding_c.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_IthorBuilding_D">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ithorbuilding_d.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Scale_Factor>.35</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_IthorBuilding_E">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ithorbuilding_e.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>.25</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+
+<Props_Urban Name="Prop_Urban_IthorBuilding_A_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ithorbuilding_a.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_IthorBuilding_B_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ithorbuilding_b.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_IthorBuilding_C_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ithorbuilding_c.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Scale_Factor>.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_IthorBuilding_D_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ithorbuilding_d.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Scale_Factor>.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_IthorBuilding_E_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ithorbuilding_e.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Power_Unit">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_power_unit.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Urban_Christophis_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>NB_Cristopsis_01.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Scale_Factor>0.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Urban_Christophis_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>NB_Cristopsis_02.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Scale_Factor>0.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Urban_Christophis_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>NB_Cristopsis_03.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Scale_Factor>0.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Urban_Christophis_D">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>NB_Cristopsis_04.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Scale_Factor>0.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Urban_Christophis_E">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>NB_Cristopsis_06.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Scale_Factor>0.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Urban_Christophis_F">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>NB_Cristopsis_05.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Scale_Factor>0.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Urban_Christophis_Streetlamp">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_christophis_streetlamp.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>7.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Urban_Christophis_Statue">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_christophis_statue.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>4.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Christophis_Crystals">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_christophis_crystals.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>4.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Urban_Coruscant_Tier_1A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_tier_1A.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Urban_Coruscant_Tier_1B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_tier_1B.ALO</Land_Model_Name>
+				<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Urban_Coruscant_Tier_1C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_tier_1C.ALO</Land_Model_Name>
+				<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Urban_Coruscant_Tier_1D">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_tier_1D.ALO</Land_Model_Name>
+				<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Urban_Coruscant_Tier_2A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_tier_2A.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Urban_Coruscant_Tier_2B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_tier_2B.ALO</Land_Model_Name>
+				<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Coruscant_Tier_2C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_tier_2C.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Coruscant_Tier_2D">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_tier_2D.ALO</Land_Model_Name>
+				<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Coruscant_Tier_3A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_tier_3A.ALO</Land_Model_Name>
+				<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Coruscant_Tier_3B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_tier_3B.ALO</Land_Model_Name>
+				<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Coruscant_Tier_3C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_tier_3C.ALO</Land_Model_Name>
+				<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Coruscant_Tier_4A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_tier_4A.ALO</Land_Model_Name>
+				<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Coruscant_Tier_4B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_tier_4B.ALO</Land_Model_Name>
+				<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Coruscant_Tier_4C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_tier_4C.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Coruscant_Tier_4D">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_tier_4D.ALO</Land_Model_Name>
+				<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Coruscant_Tier_5A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_tier_5A.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Coruscant_Tier_5B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_tier_5B.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Coruscant_Tier_6A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_tier_6A.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Coruscant_Tier_6B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_tier_6B.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Coruscant_Tier_6C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_tier_6C.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+		<Props_Urban Name="Prop_Urban_Coruscant_Tier_7A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Land_Model_Name>W_coruscant_tier_7A.ALO</Land_Model_Name>
+		<Behavior>IDLE</Behavior>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Coruscant_Diner">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_diner.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>5.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Coruscant_Speeder_Parked">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_prop_zam_speeder.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Coruscant_Naboo_Ship_Docked">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_naboo_ship.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>5.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_Night_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_building_A.ALO</Land_Model_Name>
+		<Scale_Factor>8.0</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_Night_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_building_B.ALO</Land_Model_Name>
+		<Scale_Factor>8.0</Scale_Factor>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_Night_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_building_C.ALO</Land_Model_Name>
+		<Scale_Factor>8.0</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_Night_D">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_building_D.ALO</Land_Model_Name>
+		<Scale_Factor>8.0</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_Night_E">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_building_E.ALO</Land_Model_Name>
+		<Scale_Factor>8.0</Scale_Factor>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_Night_F">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_building_F.ALO</Land_Model_Name>
+		<Scale_Factor>8.0</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_Night_G">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_building_G.ALO</Land_Model_Name>
+		<Scale_Factor>8.0</Scale_Factor>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_Night_A_Med">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_building_A.ALO</Land_Model_Name>
+		<Scale_Factor>2.5</Scale_Factor>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_Night_B_Med">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_building_B.ALO</Land_Model_Name>
+		<Scale_Factor>2.5</Scale_Factor>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_Night_C_Med">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_building_C.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_Night_D_Med">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_building_D.ALO</Land_Model_Name>
+		<Scale_Factor>2.5</Scale_Factor>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_Night_E_Med">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_building_E.ALO</Land_Model_Name>
+		<Scale_Factor>2.5</Scale_Factor>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_Night_F_Med">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_building_F.ALO</Land_Model_Name>
+		<Scale_Factor>2.5</Scale_Factor>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Coruscant_Building_Night_G_Med">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_coruscant_building_G.ALO</Land_Model_Name>
+		<Scale_Factor>2.5</Scale_Factor>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+<!--MINNTOOINE BUILDINGS-->
+
+	<Props_Urban Name="Prop_Urban_MinntooineBuilding_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_minntooinebuilding_a.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>.55</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_MinntooineBuilding_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_minntooinebuilding_b.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>.35</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_MinntooineBuilding_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_minntooinebuilding_c.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_MinntooineBuilding_D">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_minntooinebuilding_d.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>.35</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_MinntooineBuilding_E">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_minntooinebuilding_e.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>.25</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Urban_MinntooineBuilding_F">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_minntooinebuilding_f.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>.25</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Urban_MinntooineBuilding_A_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_minntooinebuilding_a.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_MinntooineBuilding_B_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_minntooinebuilding_b.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_MinntooineBuilding_C_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_minntooinebuilding_c.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_MinntooineBuilding_D_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_minntooinebuilding_d.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Urban_MinntooineBuilding_E_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_minntooinebuilding_e.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+<Props_Urban Name="Prop_Urban_MinntooineBuilding_F_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_minntooinebuilding_f.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Urban>
+
+	<Props_Urban Name="Prop_Cato_Building_A_A">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_cato_a.ALO </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+	<Props_Urban Name="Prop_Cato_Building_A_B">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_cato_a.ALO </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>2.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+<Props_Urban Name="Prop_Cato_Building_A_C">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_cato_a.ALO </Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+		<Props_Urban Name="Prop_Cato_Building_2_A">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_cato_building_b.ALO </Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+<Props_Urban Name="Prop_Cato_Building_2_B">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_cato_building_b.ALO </Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+<Props_Urban Name="Prop_Cato_Building_2_C">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_cato_building_b.ALO </Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+	<Props_Urban Name="Prop_Cato_Building_3_A">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_cato_building_c.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+<Props_Urban Name="Prop_Cato_Building_3_B">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_cato_building_c.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+<Props_Urban Name="Prop_Cato_Building_3_C">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_cato_building_c.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+<Props_Urban Name="Prop_Cato_Building_4_A">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_cato_building_d.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+<Props_Urban Name="Prop_Cato_Building_4_B">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_cato_building_d.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+<Props_Urban Name="Prop_Cato_Building_4_C">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_cato_building_d.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+<Props_Urban Name="Prop_Cato_Building_5_A">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_cato_e.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+<Props_Urban Name="Prop_Cato_Building_5_B">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_cato_e.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+<Props_Urban Name="Prop_Cato_Building_5_C">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_cato_e.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+<Props_Urban Name="Prop_Cato_Building_Lamp">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_cato_lamp.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+<Props_Urban Name="Prop_Cato_Building_6_A">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_cato_building_f.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+<Props_Urban Name="Prop_Cato_Building_6_B">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_cato_building_f.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+
+<Props_Urban Name="Prop_Cato_Building_6_C">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_URBAN</Text_ID>
+		<Land_Model_Name>W_cato_building_f.ALO</Land_Model_Name>
+			<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>		
+	
+		<Props_Urban Name="Prop_Urban_Pedestrian_Bridge_Short">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_urban_ped_bridge_short.ALO</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+	
+	<Props_Urban Name="Prop_Urban_Pedestrian_Bridge_Long">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_urban_ped_bridge_long.ALO</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Urban>
+
+</Props_Urban>

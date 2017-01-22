@@ -1,0 +1,472 @@
+<?xml version="1.0"?>
+<Cad_Bane_Hero_Files>
+
+
+
+<HeroUnit Name="Cad_Bane">
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Force_Sensitive>Yes</Is_Force_Sensitive>
+		<Text_ID>TEXT_HERO_CAD_BANE</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_CAD_BANE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOUNTY_HUNTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against> Clone_Trooper_P1 AT_RT_Walker Generic_Field_Commander_P1_Republic </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Arc_Trooper LAAT UC_Empire_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<Land_Model_Name>SeI_cad_bane.ALO</Land_Model_Name>
+		<Icon_Name>I_BUTTON_CAD_BANE.TGA</Icon_Name>
+
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Type>Walk</Type>
+		<Affiliation>Rebel</Affiliation>
+		<Required_Timeline>4</Required_Timeline>
+		<IsBuildable>No</IsBuildable>
+		<Spawn_Planet>Geonosis</Spawn_Planet>
+		<Size_Value>10</Size_Value>
+		<Stealth_Capable>No</Stealth_Capable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<CanCellStack>yes</CanCellStack>
+		<Mass>1.0</Mass>
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Movement_Animation_Speed> 0.8 </Movement_Animation_Speed>
+		<Max_Speed> 1 </Max_Speed>
+		<Max_Rate_Of_Turn> 20.0 </Max_Rate_Of_Turn>
+		<Custom_Soft_Footprint_Radius> 6.5 </Custom_Soft_Footprint_Radius>
+		<Custom_Hard_XExtent> 5.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 5.0 </Custom_Hard_YExtent>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing>
+		<MinimumPushReturnDistance> 10 </MinimumPushReturnDistance>
+		<Min_Speed> .1 </Min_Speed>
+		<OverrideAcceleration> .1 </OverrideAcceleration>
+		<OverrideDeceleration> .25 </OverrideDeceleration>
+		
+		<Deploys>No</Deploys>
+		<Affiliation>Rebel</Affiliation>
+
+		<Armor_Type> Armor_Hero </Armor_Type>
+		<Damage>50</Damage>
+		<Autoresolve_Health>400</Autoresolve_Health>
+		<Tactical_Health>400</Tactical_Health>
+
+		<GalacticBehavior>SELECTABLE</GalacticBehavior>
+		<LandBehavior>SELECTABLE, STUNNABLE, ABILITY_COUNTDOWN, SURFACE_FX, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,UNIT_AI, GARRISON_UNIT</LandBehavior>
+		<SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		
+		<Land_FOW_Reveal_Range>250.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>100.0</Targeting_Max_Attack_Distance>
+		<Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+		
+		<Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+
+		<Projectile_Types>Proj_Hand_Blaster_Red</Projectile_Types>
+    <Damage_Type>Damage_Wookiee</Damage_Type>
+		<Projectile_Damage>25.0</Projectile_Damage>
+		<Projectile_Fire_Recharge_Seconds>0.8</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>3</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+
+		<Targeting_Fire_Inaccuracy> Infantry, 1.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 3.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 20.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 5.0 </Targeting_Fire_Inaccuracy>
+
+		<CategoryMask> LandHero | SpaceHero </CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+		<MovementClass>Infantry</MovementClass>
+
+		<OccupationStyle>1x1</OccupationStyle>
+		<FormationRaggedness> 1.0 </FormationRaggedness>
+		<WaitsForFormationFormup>false</WaitsForFormationFormup>
+		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+		<Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+		<Is_Squashable> No </Is_Squashable>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Victory_Relevant>yes</Victory_Relevant>
+
+		<Attach_To_Flagship_During_Space_Battle>No</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>
+
+		<SFXEvent_Select>Unit_Select_Land_Cad_Bane</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Land_Cad_Bane</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Cad_Bane</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Land_Cad_Bane</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Move_Land_Cad_Bane</SFXEvent_Guard>
+		<SFXEvent_Deploy>Unit_Deploy_Cad_Bane</SFXEvent_Deploy>
+		<SFXEvent_Fire>Unit_Tusken_Sniper_Fire</SFXEvent_Fire>
+		<SFXEvent_Group_Move>Unit_Move_Land_Cad_Bane</SFXEvent_Group_Move>
+		<SFXEvent_Group_Attack>Unit_Attack_Land_Cad_Bane</SFXEvent_Group_Attack>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Cad_Bane </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Cad_Bane </SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die> Unit_Defeat_Cad_Bane </Death_SFXEvent_Start_Die>
+		
+		<Select_Box_Scale>27</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<Selection_Blob_Material_Name>Selection_Rebel_Hero</Selection_Blob_Material_Name>
+        <Highlight_Blob_Material_Name>Highlight_Rebel_Hero</Highlight_Blob_Material_Name>
+
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<AI_Combat_Power>250</AI_Combat_Power>
+
+		<Idle_Chase_Range>100.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Lua_Script>SpeederBike</Lua_Script>
+
+		<Neutralization_Cost>2000.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+
+		<Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
+		
+		<Encyclopedia_Text> TEXT_TOOLTIP_CADBANE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOUNTY_HUNTER</Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 5000 </Score_Cost_Credits>
+
+		<Death_Fade_Time>0.25</Death_Fade_Time>
+		<Death_Persistence_Duration>0.0</Death_Persistence_Duration>
+
+	
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+				<Unit_Ability>
+				<Type>UNTARGETED_STICKY_BOMB</Type>
+				<Recharge_Seconds>30</Recharge_Seconds>
+				<Spawned_Object_Type>Proj_Engineer_Bomb</Spawned_Object_Type>
+				<Bomb_Countdown_Seconds>5</Bomb_Countdown_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Bomb_Cad_Bane</SFXEvent_GUI_Unit_Ability_Activated>
+				<Supports_Autofire>True</Supports_Autofire>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_THERMALBOMB_NAME</Alternate_Name_Text>
+         <Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_THERMALBOMB_DESCRIPTION</Alternate_Description_Text>
+         <Alternate_Icon_Name>I_SA_BLAST.TGA</Alternate_Icon_Name>
+			</Unit_Ability>
+			<!-- Secondary ability -->
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Expiration_Seconds> 7.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 2.0f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Flee_Cad_Bane</SFXEvent_GUI_Unit_Ability_Activated>
+				 <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FLEE_NAME</Alternate_Name_Text>
+         <Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FLEE_DESCRIPTION</Alternate_Description_Text>
+         <Alternate_Icon_Name>I_SA_FLEE.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+
+			<Galactic_Stealth_Ability Name="Cad_Bane_Galactic_Stealth">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+
+			
+			<System_Spy_Ability Name="Cad_Bane_Limited_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+				<See_Minor_Stealth_Heroes>Yes</See_Minor_Stealth_Heroes>
+				<See_Major_Stealth_Heroes>Yes</See_Major_Stealth_Heroes>
+			</System_Spy_Ability>
+
+			<Hero_Protection_Ability Name="Cad_Bane_Hero_Protection">
+				<Neutralization_Cost_Multiplier>1.25</Neutralization_Cost_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+			</Hero_Protection_Ability>
+		
+		  <Neutralize_Hero_Ability Name="Cad_Bane_Neutralize_Hero">
+				<Cost_Mod_By_Base_Level>0.0,0.0, 5.0,1.0</Cost_Mod_By_Base_Level>
+				<Cost_Mod_By_Previous_Neutralizations>0.0,0.0, 1000.0,750.0</Cost_Mod_By_Previous_Neutralizations>
+				<Cost_Mod_By_Planetary_Corruption_Level>0.0,0.0, 1.0,0.25</Cost_Mod_By_Planetary_Corruption_Level>
+				<General_Minor_Hero_Cost_Mod>1.0</General_Minor_Hero_Cost_Mod>
+				<General_Major_Hero_Cost_Mod>1.0</General_Major_Hero_Cost_Mod>
+				<Owner_Respawn_Time_In_Secs>120.0, 150.0</Owner_Respawn_Time_In_Secs>
+				<Target_Respawn_Time_In_Secs>240.0, 300.0</Target_Respawn_Time_In_Secs>
+				<Can_Neutralize_Minor_Heroes>Yes</Can_Neutralize_Minor_Heroes>
+				<Can_Neutralize_Major_Heroes>Yes</Can_Neutralize_Major_Heroes>
+			</Neutralize_Hero_Ability>	
+		
+		</Abilities>
+
+
+	</HeroUnit>
+
+<HeroCompany Name="Cad_Bane_Team">
+		<Text_ID>TEXT_HERO_CAD_BANE</Text_ID>
+		<Icon_Name>I_BUTTON_CAD_BANE.TGA</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>50</Damage>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>2</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>The_Sleight_of_Hand</Company_Transport_Unit>
+		<Company_Units>Cad_Bane</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Homogeneous>No</Is_Homogeneous>
+		<Is_Stealth_Company>Yes</Is_Stealth_Company>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Formation_Priority>2</Formation_Priority>
+		<Available_In_Skirmish>yes</Available_In_Skirmish>
+		<Can_Be_Only_One>true</Can_Be_Only_One>
+		<Lua_Script>HanSoloPlan</Lua_Script>
+		<Idle_Chase_Range>100.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Population_Value>1</Population_Value>
+		<SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>		
+		<SFXEvent_Build_Complete>Unit_Respawn_Cad_Bane</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Respawn_Cad_Bane</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Cad_Bane</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+				<Unit_Ability>
+				<Type>UNTARGETED_STICKY_BOMB</Type>
+				<Recharge_Seconds>30</Recharge_Seconds>
+				<Spawned_Object_Type>Proj_Engineer_Bomb</Spawned_Object_Type>
+				<Bomb_Countdown_Seconds>5</Bomb_Countdown_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Bomb_Cad_Bane</SFXEvent_GUI_Unit_Ability_Activated>
+				<Supports_Autofire>True</Supports_Autofire>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_THERMALBOMB_NAME</Alternate_Name_Text>
+         <Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_THERMALBOMB_DESCRIPTION</Alternate_Description_Text>
+         <Alternate_Icon_Name>I_SA_BLAST.TGA</Alternate_Icon_Name>
+			</Unit_Ability>
+			<!-- Secondary ability -->
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Expiration_Seconds> 7.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 2.0f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Flee_Cad_Bane</SFXEvent_GUI_Unit_Ability_Activated>
+				 <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FLEE_NAME</Alternate_Name_Text>
+         <Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FLEE_DESCRIPTION</Alternate_Description_Text>
+         <Alternate_Icon_Name>I_SA_FLEE.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+		<Tactical_Build_Cost_Multiplayer>1600</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>RC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+		<Encyclopedia_Text> TEXT_TOOLTIP_CAD_BANE </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOUNTY_HUNTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against> Clone_Trooper_P1 AT_RT_Walker Generic_Field_Commander_P1_Republic </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Arc_Trooper LAAT UC_Empire_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<CategoryMask>LandHero | SpaceHero</CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
+	</HeroCompany>
+
+<UniqueUnit Name="The_Sleight_of_Hand">
+		<Text_ID>TEXT_UNIT_THE_SLEIGHT_OF_HAND</Text_ID>
+		<Encyclopedia_Good_Against> Ntb_630 V19_Fighter Arc_170</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Carrack_Cruiser Rep_Centax_Heavy_Frigate Acclamator_Assault_Ship </Encyclopedia_Vulnerable_To>
+		<Land_Model_Name> SeV_cadbane_transport_land.ALO </Land_Model_Name>
+		<Space_Model_Name> SeV_cadbane_transport.ALO </Space_Model_Name>
+		<Icon_Name>I_BUTTON_CADBANE_SHIP.tga</Icon_Name>
+		<Mass>0.995</Mass>
+		<Scale_Factor>0.1</Scale_Factor> <!-- From 0.14 -->
+		<Select_Box_Scale>500</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-1</Select_Box_Z_Adjust>
+
+		<Guard_Chase_Range>2000</Guard_Chase_Range> <!-- ADDED -->
+		<Idle_Chase_Range>1000</Idle_Chase_Range> <!-- ADDED -->
+        <Ranking_In_Category>3</Ranking_In_Category>
+		<Max_Speed>5.3</Max_Speed>
+		<Min_Speed>3.2</Min_Speed>
+		<Max_Rate_Of_Turn>4.0</Max_Rate_Of_Turn>
+		<Max_Lift>5.0</Max_Lift>
+		<Max_Thrust>1.0</Max_Thrust>
+		<Max_Rate_Of_Roll>5.0</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>50</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>800.0</Begin_Turn_Towards_Distance>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+
+		<Armor_Type> Armor_Hero_Transport </Armor_Type>
+
+		<Affiliation>Rebel</Affiliation>
+		<Ship_Class>Fighter</Ship_Class>
+		<Formation_Priority>5</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Shield_Points>125</Shield_Points>
+		<Tactical_Health>900</Tactical_Health>
+		<Shield_Refresh_Rate>15</Shield_Refresh_Rate>
+		<Energy_Capacity>999</Energy_Capacity>
+		<Energy_Refresh_Rate>999</Energy_Refresh_Rate>
+		<Size_Value>120</Size_Value>
+		<Damage>5</Damage>
+		<Behavior>DUMMY_STARSHIP, TRANSPORT, POWERED, SHIELDED </Behavior>
+		<SpaceBehavior>ABILITY_COUNTDOWN, FIGHTER_LOCOMOTOR, TARGETING, WEAPON, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, UNIT_AI, NEBULA, SELECTABLE, DAMAGE_TRACKING </SpaceBehavior>
+		<LandBehavior>REVEAL, HIDE_WHEN_FOGGED, IDLE</LandBehavior> 
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Hover_Offset>30.0</Hover_Offset>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Damage_Type>Damage_Fighter</Damage_Type>
+		<Projectile_Damage>12.0</Projectile_Damage>
+		<Projectile_Types>Proj_Ship_Medium_Laser_Cannon_Red</Projectile_Types>
+		<Projectile_Fire_Pulse_Count>8</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.15</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>0.0</Projectile_Fire_Recharge_Seconds>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range>1000.0</Space_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Targeting_Max_Attack_Distance>800.0</Targeting_Max_Attack_Distance>
+		<Death_Explosions>Medium_Explosion_Space_Empire</Death_Explosions>
+		
+		<Fire_Inaccuracy_Distance> Fighter, 1.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 1.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Transport, 1.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 5.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 30.0 </Fire_Inaccuracy_Distance>
+
+		<Turret_Rotate_Extent_Degrees>50</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>50</Turret_Elevate_Extent_Degrees>
+
+		<Fire_Category_Restrictions> Infantry, Vehicle, Structure, Air, Transport </Fire_Category_Restrictions>
+
+		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
+
+		<Encyclopedia_Text> TEXT_TOOLTIP_THE_SLEIGHT_OF_HAND </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR </Encyclopedia_Unit_Class>
+
+		
+
+		<Score_Cost_Credits> 8000 </Score_Cost_Credits>
+
+		<SFXEvent_Fire>Unit_Corvette_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Cad_Bane</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Land_Cad_Bane</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Cad_Bane</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Land_Cad_Bane</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Fleet_Move_Cad_Bane</SFXEvent_Guard>
+		<SFXEvent_Deploy>Unit_Deploy_Cad_Bane</SFXEvent_Deploy>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Cad_Bane </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Cad_Bane </SFXEvent_Health_Critical_Warning>
+    
+		<SFXEvent_Engine_Idle_Loop> Unit_Gunboat_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Gunboat_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Gunboat_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>200.0, 100.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+
+		<AI_Combat_Power>1500</AI_Combat_Power>
+		<MovementClass> Space </MovementClass>
+		<CategoryMask> Fighter | SpaceHero</CategoryMask>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Landing_Transport_Variant>The_Sleight_of_Hand_Landing</Landing_Transport_Variant>
+		<Display_Contained_Hero_Grab_Bars>True</Display_Contained_Hero_Grab_Bars>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>3200</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+		<Cheap_Bribe_Cost>2500</Cheap_Bribe_Cost>
+		<Space_Override_Population_Value>1</Space_Override_Population_Value>
+
+	<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+
+            <Unit_Ability>
+                <Type>CLUSTER_BOMB</Type>
+                <Recharge_Seconds>50.0</Recharge_Seconds>
+                <GUI_Activated_Ability_Name> The_Sleight_of_Hand_Cluster_Bomb </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+                <Effective_Radius> 500.0 </Effective_Radius>
+                <SFXEvent_GUI_Unit_Ability_Activated>Unit_Bomb_Cad_Bane</SFXEvent_GUI_Unit_Ability_Activated>
+                <Supports_Autofire>True</Supports_Autofire>
+            </Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+        <Abilities SubObjectList="Yes">
+
+            <Cluster_Bomb_Ability Name="The_Sleight_of_Hand_Cluster_Bomb">
+                <Activation_Style> User_Input </Activation_Style>
+                <Detonation_Time_In_Secs> 1.5 </Detonation_Time_In_Secs>
+                <Bomb_Type>Proj_Cluster_Bomb</Bomb_Type>
+                <Number_Of_Bombs> 12 </Number_Of_Bombs>
+                <SFXEvent_Activate>Unit_Bomb_Cad_Bane</SFXEvent_Activate>
+            </Cluster_Bomb_Ability>
+
+		</Abilities>
+		<Lua_Script>ObjectScript_MC30</Lua_Script>
+	</UniqueUnit>
+
+<UniqueUnit Name="The_Sleight_of_Hand_Landing">
+		<Variant_Of_Existing_Type>The_Sleight_of_Hand</Variant_Of_Existing_Type>
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<Scale_Factor>0.3</Scale_Factor>
+		<User_Bound_Min>-700, -700, 0</User_Bound_Min>
+		<User_Bound_Max>700, 700, 1500</User_Bound_Max>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</UniqueUnit>
+	
+	<HeroCompany Name="Cad_Bane_Team_Space_MP">
+		<Variant_Of_Existing_Type>Cad_Bane_Team</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_CAD_BANE</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_THE_SLEIGHT_OF_HAND </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR </Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against> Ntb_630 V19_Fighter Arc_170</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Carrack_Cruiser Rep_Centax_Heavy_Frigate Acclamator_Assault_Ship </Encyclopedia_Vulnerable_To>
+		<Icon_Name>I_BUTTON_CAD_BANE.TGA</Icon_Name>
+	
+<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+		<Tactical_Build_Cost_Multiplayer>2000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+		<!--<Tactical_Build_Prerequisites>RC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>-->
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+	
+		
+		
+	</HeroCompany>
+
+</Cad_Bane_Hero_Files>

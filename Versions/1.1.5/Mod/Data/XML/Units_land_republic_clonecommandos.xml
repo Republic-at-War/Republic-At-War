@@ -1,0 +1,356 @@
+<?xml version="1.0"?>
+<Clone_Commando_Data>
+
+
+
+	<GroundInfantry Name="Clone_Commando">
+		<Text_ID>TEXT_UNIT_CLONECOMMANDO</Text_ID>
+		<No_Colorization_Color> 237, 78, 78, 255 </No_Colorization_Color>
+		<Encyclopedia_Good_Against> Battledroids Stap  </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Destroyer_Droid Hailfire_Tank AAT_Tank </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text>TEXT_TOOLTIP_CLONECOMMANDO TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDOS</Encyclopedia_Unit_Class>
+		<Land_Model_Name>REI_CLONECOMMANDO.ALO</Land_Model_Name>
+	  <Icon_Name>I_BUTTON_CLONECOMMANDO.tga</Icon_Name>
+		
+		
+	<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>SURFACE_FX,WALK_LOCOMOTOR,IDLE,TARGETING,WEAPON, STUNNABLE, REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING, GARRISON_UNIT, ABILITY_COUNTDOWN</LandBehavior>
+		
+		<Garrison_Category> Infantry </Garrison_Category>
+			
+
+		<SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<CanCellStack>yes</CanCellStack>
+		<Movement_Animation_Speed> 0.8 </Movement_Animation_Speed>
+		<Rotation_Animation_Speed> 20.0 </Rotation_Animation_Speed>
+		<Walk_Animation_Speed> .366 </Walk_Animation_Speed>
+		<Crouch_Animation_Speed> .537 </Crouch_Animation_Speed>
+		<Max_Speed> 1.4 </Max_Speed>
+		<Max_Rate_Of_Turn> 25.0 </Max_Rate_Of_Turn>
+		<Custom_Soft_Footprint_Radius> 5.0 </Custom_Soft_Footprint_Radius>
+		<Custom_Hard_XExtent> 3.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 3.0 </Custom_Hard_YExtent>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> 
+		<MinimumPushReturnDistance> 10 </MinimumPushReturnDistance>
+		<OverrideAcceleration> .125 </OverrideAcceleration>
+		<OverrideDeceleration> .125 </OverrideDeceleration>
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+		<Select_Box_Scale>50</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		
+		
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.7</Scale_Factor> <!-- Temp scale change for scale test - change back once models resized -->
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Type>Walk</Type>
+		<Affiliation>Empire</Affiliation>
+		<!-- If you want heroes to contribute to political control, use Political_Control_Bonus_Ability -->
+		<Political_Faction>Empire</Political_Faction>
+		<IsBuildable>No</IsBuildable>
+		<Spawn_Planet>Coruscant</Spawn_Planet>
+		<Size_Value>75</Size_Value>
+
+		<Armor_Type> Armor_Hero </Armor_Type>
+		<Damage>8</Damage>
+		<Sensor_Range>50</Sensor_Range>
+		<Autoresolve_Health>110</Autoresolve_Health>
+		<Tactical_Health>250</Tactical_Health> <!-- From 110 -->
+
+		<Is_Stationary_When_Attacking>Yes</Is_Stationary_When_Attacking>
+		<Projectile_Types>Proj_Hand_Blaster_Blue</Projectile_Types>
+		<Land_FOW_Reveal_Range>400.0</Land_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+		<Targeting_Max_Attack_Distance>200.0</Targeting_Max_Attack_Distance> <!-- From 175 -->
+		<Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+		<Projectile_Fire_Recharge_Seconds>0.2</Projectile_Fire_Recharge_Seconds> <!-- From 1.5 -->
+		<Projectile_Fire_Pulse_Count>32</Projectile_Fire_Pulse_Count> <!-- From 4 -->
+		<Projectile_Fire_Pulse_Delay_Seconds>0.6</Projectile_Fire_Pulse_Delay_Seconds> <!-- From 0.1 -->
+
+    <Targeting_Fire_Inaccuracy> Infantry, 1.0 </Targeting_Fire_Inaccuracy> <!-- from 1.0 to make them more innacurate -->
+		<Targeting_Fire_Inaccuracy> Vehicle, 5.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 10.0 </Targeting_Fire_Inaccuracy>
+
+		<SFXEvent_Select>Unit_Select_Clone_Trooper</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Clone_Trooper</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Clone_Trooper</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Clone_Trooper</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Clone_Trooper</SFXEvent_Guard>
+		<SFXEvent_Fire>Unit_Z6_Fire</SFXEvent_Fire>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Commander_Cody </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Commander_Cody </SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die> Unit_Death_Boss </Death_SFXEvent_Start_Die>
+
+		<Stealth_Capable>No</Stealth_Capable>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<CategoryMask> LandHero </CategoryMask>
+		<Ranking_In_Category> 1 </Ranking_In_Category>
+		<MovementClass>Infantry</MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+		<Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+		<Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>
+		
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<AI_Combat_Power>250</AI_Combat_Power>
+
+		<Idle_Chase_Range>100.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Neutralization_Cost>1000.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+
+		<Score_Cost_Credits> 25000 </Score_Cost_Credits>
+		
+
+		<Death_Fade_Time>0.25</Death_Fade_Time>
+		<Death_Persistence_Duration>0.0</Death_Persistence_Duration>
+
+		
+	
+		<Target_Stealth_Units>Yes</Target_Stealth_Units>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			 
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+			</Unit_Ability>
+			 
+			<!-- Secondary ability -->
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Expiration_Seconds> 7.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 2.0f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated/>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+
+		<Abilities SubObjectList="Yes">
+
+				
+		
+
+
+      
+      <Force_Healing_Ability Name="Commando_Self_Heal">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Heal_Range>5.0</Heal_Range>
+				<Heal_Amount> 0.0 </Heal_Amount>
+				<Heal_Percent> 0.03 </Heal_Percent>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>Boss</Applicable_Unit_Types>
+				<Excluded_Unit_Types />
+				
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect />
+				<Target_Particle_Bone_Name>B_HEAD</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 2.0, 1.2</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 2.0, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>			
+		  
+		 
+			
+		
+		  
+			
+		</Abilities>
+		
+	<Movie_Object>false</Movie_Object>
+		
+	</GroundInfantry>
+
+	
+
+  
+	<GroundCompany Name="Republic_Commando_Squad">
+	 <Text_ID>TEXT_UNIT_CLONECOMMANDO_SQUAD</Text_ID>
+	 <Encyclopedia_Good_Against> Battledroids Stap  </Encyclopedia_Good_Against>
+	 <Encyclopedia_Vulnerable_To> Destroyer_Droid Hailfire_Tank AAT_Tank </Encyclopedia_Vulnerable_To>
+	 <Encyclopedia_Text>TEXT_TOOLTIP_CLONECOMMANDO_SQUAD TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+	 <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDOS</Encyclopedia_Unit_Class>
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>8</Damage>
+		<Autoresolve_Health>100</Autoresolve_Health> <!-- changed to reflect the real health of the units-->
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>200</Build_Cost_Credits> <!-- From 275 -->
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<!--<Build_Time_Seconds>15</Build_Time_Seconds>-->
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Tech_Level>2</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>Skirmish_Ground_Republic_Forward_Commandpost</Required_Special_Structures>
+		<!--<Required_Planets>Carida</Required_Planets>-->
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Ship_Class>infantry</Ship_Class>
+		<Company_Transport_Unit>Republic_Nu_Shuttle</Company_Transport_Unit>
+		<Create_Team_Type>Clone_Commando_Team </Create_Team_Type>
+        <!-- AI  Changed to 18 troopers in squads of 9 -->
+		<Company_Units>       
+		Clone_Commando,
+		Clone_Commando,
+		Clone_Commando,
+		Clone_Commando
+		</Company_Units>
+		<Max_Squad_Size> 4 </Max_Squad_Size>
+		<Icon_Name>I_BUTTON_CLONECOMMANDO.tga</Icon_Name>
+		
+		
+		
+	<SFXEvent_Build_Started>RHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Training_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Clone_Trooper</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Clone_Trooper</SFXEvent_Fleet_Move>
+
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>200</Tactical_Build_Cost_Multiplayer> <!-- From 600 -->
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>RL_Commando_Support_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>6</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+					
+		  
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.6f</Mod_Multiplier>
+			</Unit_Ability>
+			 
+			<!-- Secondary ability -->
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Expiration_Seconds> 7.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 2.0f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated/>
+			</Unit_Ability>
+		
+		
+		</Unit_Abilities_Data>
+		
+		
+		
+		<Maintenance_Cost>0.05</Maintenance_Cost>
+		<Population_Value>1</Population_Value>
+		<Score_Cost_Credits>54</Score_Cost_Credits>
+	</GroundCompany>
+	
+	
+ <Container Name="Clone_Commando_Team">
+    <Select_Box_Scale>65</Select_Box_Scale>
+   <Text_ID>TEXT_UNIT_CLONECOMMANDO_SQUAD</Text_ID>
+	 <Encyclopedia_Good_Against> Battledroids Stap  </Encyclopedia_Good_Against>
+	 <Encyclopedia_Vulnerable_To> Destroyer_Droid Hailfire_Tank AAT_Tank </Encyclopedia_Vulnerable_To>
+	 <Encyclopedia_Text>TEXT_TOOLTIP_CLONECOMMANDO_SQUAD TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+	 <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDOS</Encyclopedia_Unit_Class>
+    <Show_Name>No</Show_Name>
+    <Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+    <LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+    <SpaceBehavior>REVEAL</SpaceBehavior>
+    <Garrison_Category> Infantry </Garrison_Category>
+    <CategoryMask>Infantry</CategoryMask>
+    <Land_FOW_Reveal_Range>400.0</Land_FOW_Reveal_Range>
+    <Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+    <MovementClass>Infantry</MovementClass>
+
+    <Max_Speed> 1.0 </Max_Speed>
+    <Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+    <Space_Layer> Land </Space_Layer>
+    <UnitCollisionClass> Infantry </UnitCollisionClass>
+    <FormationSpacing> 1 </FormationSpacing>
+    <MovementClass> Infantry </MovementClass>
+    <OccupationStyle>1x1</OccupationStyle>
+    <Is_Squashable> true </Is_Squashable>
+    <MovementPredictionInterval> 4.0 </MovementPredictionInterval>
+    <ContainerArrangement> Dartboard </ContainerArrangement>
+    <FormationOrder> 2 </FormationOrder>
+  <OverrideAcceleration> .05 </OverrideAcceleration>
+		<OverrideDeceleration> .05 </OverrideDeceleration>
+
+    <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+    <Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+    <Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+   		<Icon_Name>I_BUTTON_CLONECOMMANDO.tga</Icon_Name>
+
+    <Targeting_Max_Attack_Distance>175.0</Targeting_Max_Attack_Distance>
+    <Idle_Chase_Range>50.0</Idle_Chase_Range>
+    <Guard_Chase_Range>200.0</Guard_Chase_Range>
+    <Attack_Move_Response_Range>130.0</Attack_Move_Response_Range>
+    <Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+
+   	<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+					
+		 <Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.6f</Mod_Multiplier>
+			</Unit_Ability>
+			 
+			<!-- Secondary ability -->
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Expiration_Seconds> 7.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 2.0f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated/>
+			</Unit_Ability>
+		
+		</Unit_Abilities_Data>
+		
+  </Container>
+
+
+</Clone_Commando_Data>
+
+ 

@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+
+<Story>
+
+	<Event Name="Disable_Retreat_CIS">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+	
+	<Event Name="Disable_Retreat_Republic">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Disable_Retreat_CIS</Prereq>
+	</Event>
+
+</Story>

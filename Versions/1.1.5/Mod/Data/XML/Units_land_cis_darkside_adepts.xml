@@ -1,0 +1,319 @@
+<?xml version="1.0"?>
+<Units_land_cis_darkside_adepts_data>
+
+
+	<GenericHeroUnit Name="Darkside_Adepts">
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Is_Force_Sensitive>Yes</Is_Force_Sensitive>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Text_ID>TEXT_UNIT_DARKSIDE_ADEPT</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_DARKSIDE_ADEPT </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DARKSIDE_ADEPT </Encyclopedia_Unit_Class>
+
+		<Land_Model_Name>NI_DarkSideAdepts.alo</Land_Model_Name>
+		<Icon_Name>i_button_sith.tga</Icon_Name>
+
+		<GalacticBehavior> SELECTABLE </GalacticBehavior>
+		<LandBehavior> SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, REVEAL, HIDE_WHEN_FOGGED, TARGETING, WEAPON, DAMAGE_TRACKING, UNIT_AI, ABILITY_COUNTDOWN, IMPOSING_PRESENCE, HOLSTER_WEAPON, GARRISON_UNIT </LandBehavior>
+		<Garrison_Category> Infantry </Garrison_Category>
+		
+		<!-- Lightsaber holstering data -->
+		<SFXEvent_Draw_Weapon> Unit_Light_Saber_On </SFXEvent_Draw_Weapon>
+		<SFXEvent_Holster_Weapon> Unit_Light_Saber_Off </SFXEvent_Holster_Weapon>
+		<Holster_Weapon_Bone_Name> b_saber </Holster_Weapon_Bone_Name>
+		<Holster_Drawn_Bone_Translation> 0.0, 0.0, 0.0 </Holster_Drawn_Bone_Translation>
+		<Holster_Holstered_Bone_Translation> 0.0, -5.835, 0.0 </Holster_Holstered_Bone_Translation>
+		<Holster_Transition_Time_In_Secs> 0.17 </Holster_Transition_Time_In_Secs>
+		<Holster_Minimum_Drawn_Time_In_Secs> 15.0 </Holster_Minimum_Drawn_Time_In_Secs>
+		<Holster_Disable_Engine_Loops> Yes </Holster_Disable_Engine_Loops>
+
+
+		<SFXEvent_Engine_Idle_Loop> Unit_Vader_Lightsaber_Idle_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Vader_Lightsaber_Moving_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Vader_Lightsaber_Cinematic_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<CanCellStack>yes</CanCellStack>
+		<Movement_Animation_Speed> 0.8 </Movement_Animation_Speed>
+		<Max_Speed>1</Max_Speed>
+		<Max_Rate_Of_Turn>16.0</Max_Rate_Of_Turn>
+		<Custom_Soft_Footprint_Radius> 6.5 </Custom_Soft_Footprint_Radius>
+		<Custom_Hard_XExtent> 2.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 2.0 </Custom_Hard_YExtent>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing>
+		<MinimumPushReturnDistance> 10 </MinimumPushReturnDistance>
+		<Min_Speed> .1 </Min_Speed>
+		<OverrideAcceleration> .1 </OverrideAcceleration>
+		<OverrideDeceleration> .25 </OverrideDeceleration>
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+		<Select_Box_Scale>27</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<Selection_Blob_Material_Name>Selection_Empire_Hero</Selection_Blob_Material_Name>
+        <Highlight_Blob_Material_Name>Highlight_Empire_Hero</Highlight_Blob_Material_Name>
+		
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Type>Walk</Type>
+		<Affiliation>Rebel</Affiliation>
+		<!-- If you want heroes to contribute to political control, use Political_Control_Bonus_Ability -->
+		<Political_Faction>Empire</Political_Faction>
+		<Size_Value>75</Size_Value>
+
+		<Armor_Type> Armor_Hero </Armor_Type>
+		<Damage>60</Damage>
+		<Autoresolve_Health>350</Autoresolve_Health>
+		<Tactical_Health>900</Tactical_Health>
+
+		<Is_Stationary_When_Attacking>Yes</Is_Stationary_When_Attacking>
+		<Projectile_Types>Proj_Lightsaber_Adept</Projectile_Types>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+		<Targeting_Max_Attack_Distance>20.0</Targeting_Max_Attack_Distance>
+		<Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+		<Projectile_Appearance_Delay_Frames> 16 </Projectile_Appearance_Delay_Frames>
+		<Projectile_Fire_Recharge_Seconds>1</Projectile_Fire_Recharge_Seconds>
+
+		<SFXEvent_Select>Unit_Select_Darkside_Adept</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Darkside_Adept</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_Darkside_Adept</SFXEvent_Attack>
+		<SFXEvent_Assist_Move>Unit_Assist_Move_Darkside_Adept</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>Unit_Assist_Attack_Darkside_Adept</SFXEvent_Assist_Attack>
+		<SFXEvent_Guard>Unit_Guard_Darkside_Adept</SFXEvent_Guard>
+		<SFXEvent_Fire>Unit_Rebel_Infantry_Fire</SFXEvent_Fire>
+		<Death_SFXEvent_Start_Die>Unit_Rebel_Soldier_Death</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Health_Low_Warning> Unit_Attack_Darkside_Adept </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Attack_Darkside_Adept </SFXEvent_Health_Critical_Warning>
+
+		<Stealth_Capable>No</Stealth_Capable>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<CategoryMask> LandHero </CategoryMask>
+		<Ranking_In_Category> 1 </Ranking_In_Category>
+		<MovementClass>Infantry</MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+		<Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+		
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<AI_Combat_Power>400</AI_Combat_Power>
+    <Attach_To_Flagship_During_Space_Battle>No</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>
+		<Neutralization_Cost>125.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+		<Idle_Chase_Range>50</Idle_Chase_Range>
+		<Guard_Chase_Range>200</Guard_Chase_Range> <!-- From 100 -->
+		<Attack_Move_Response_Range>200</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+		<Autonomous_Move_Extension_Vs_Attacker>50</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
+
+		<Death_Fade_Time>0.25</Death_Fade_Time>
+		<Death_Persistence_Duration>0.0</Death_Persistence_Duration>
+		
+			<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+		
+		<Unit_Ability>
+				<Type>FORCE_LIGHTNING</Type>
+				<Recharge_Seconds>20.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Adept_Force_Lightning </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+				<SFXEvent_Target_Ability> Unit_Lightning_Dooku </SFXEvent_Target_Ability> 
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+			
+				</Unit_Abilities_Data>
+				
+				<Abilities SubObjectList="Yes">
+
+<Redirect_Blaster_Ability Name="Darkside_Adept_Redirect_Blaster">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<!-- Redirection chance is rolled first. If failed, we roll block chance. If failed, we take the damage. -->
+				<Redirect_Chance>.50</Redirect_Chance>
+				<Block_Chance>0.30</Block_Chance>
+				<Reaction_Arc_In_Degrees>180.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 135.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<!-- We can block/redirect shots from the following units types: -->
+                 <Applicable_Unit_Categories> Infantry</Applicable_Unit_Categories>
+               <Applicable_Unit_Types>Aayla_Secura, Anakin_Skywalker, Barris_Offee, Commander_Cody, Boss, Fixer, Sev, Scorch, Luminara_Unduli, Mace_Windu, Obiwan, Plokoon, Shaak_Ti, Yoda, Clone_Commando, Arc_Trooper, Arc_Trooper, Arc_Trooper_Captain, Arc_Trooper_Z6, Generic_Field_Commander_P1_Republic, Generic_Field_Commander_P2_Republic</Applicable_Unit_Types>
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+			
+			<Force_Lightning_Ability Name="Adept_Force_Lightning">
+				<!-- <Activation_Style>Special_Attack</Activation_Style> -->
+				<Activation_Style> User_Input </Activation_Style>
+				<Activation_Min_Range>0.0</Activation_Min_Range>
+				<Activation_Max_Range>175.0</Activation_Max_Range>
+				<Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Damage_Amount>9999.0</Damage_Amount>
+				<Damage_Application_Time_In_Secs>2.3893</Damage_Application_Time_In_Secs>
+				<Start_Lightning_Frame_Number> 8 </Start_Lightning_Frame_Number>
+				<Lightning_Effect_Name>Force_Lightning</Lightning_Effect_Name>	<!-- See LightningEffectTypes.xml -->
+				<Lightning_Source_Bone_Name>B_HAND_L</Lightning_Source_Bone_Name>
+				<Lightning_Target_Bone_Name>B_PELVIS</Lightning_Target_Bone_Name>
+				<Lightning_Max_Targets> 15 </Lightning_Max_Targets> 					<!-- How many victims will the lightning seek out, including original target -->
+				<Lightning_Targets_Radius> 100.0 </Lightning_Targets_Radius>		<!-- How far from the original target will the lightning seek for other victims -->
+				<SFXEvent_Activate>Unit_Force_Lightning</SFXEvent_Activate>
+				<SFXEvent_Target_Affected />
+				<Target_Particle_Effect>Force_Lightning_Smoke</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>B_PELVIS</Target_Particle_Bone_Name> <!-- B_FOOT_R B_FOOT_L -->
+				<Target_Light_Effect_Type>Linear_Pulse</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>0.3, 0.3, 0.8</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>2.3893</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>25</Target_Light_Effect_Pulse_Count>
+			</Force_Lightning_Ability>
+			
+			<Galactic_Stealth_Ability Name="Darkside_Adept_Galactic_Stealth">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+
+			<System_Spy_Ability Name="Darkside_Adept_Spy_Force_Sensitive">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Force_Sensitive_Heroes>Yes</See_Force_Sensitive_Heroes>
+			</System_Spy_Ability>
+			
+			</Abilities>
+
+	</GenericHeroUnit>
+
+
+<HeroCompany Name="Darkside_Adept_Team">
+		<Text_ID>TEXT_UNIT_DARKSIDE_ADEPT</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_DARKSIDE_ADEPT</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DARKSIDE_ADEPT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against> Stormtrooper Rebel_Anti_Vehicle_Turret Rebel_Mobile_Defense_Unit </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Dark_Trooper_PhaseII Rebel_Infiltrator UC_Rebel_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<Icon_Name>i_button_sith.tga</Icon_Name>
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+
+		<GUI_Row>1</GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+
+		<Affiliation>Rebel</Affiliation>
+		<Build_Cost_Credits>2000</Build_Cost_Credits>
+		<Build_Time_Seconds>70</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> No </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Heroes>Yes</Build_Tab_Heroes>
+		<Combat_Power_Value>5</Combat_Power_Value>
+		<Tech_Level>3</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<!--<Required_Special_Structures>E_Ground_Barracks</Required_Special_Structures>-->
+		<Required_Planets>Korriban</Required_Planets>
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+
+		<Company_Transport_Unit>Sheathipede_Shuttle</Company_Transport_Unit>
+		<Company_Units> Darkside_Adepts </Company_Units>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<SFXEvent_Build_Complete>Unit_Complete_Sabateur</SFXEvent_Build_Complete>
+		<SFXEvent_Build_Started>UHD_Build_Commander</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+
+		<Population_Value>1</Population_Value>
+		<CategoryMask>LandHero</CategoryMask>
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Cheap_Bribe_Cost>0</Cheap_Bribe_Cost>
+		<Expensive_Bribe_Cost>0</Expensive_Bribe_Cost>
+
+	</HeroCompany>
+		
+		<HeroCompany Name="Darkside_Adept_Team_Skirmish">
+		<Text_ID>TEXT_UNIT_DARKSIDE_ADEPT</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_DARKSIDE_ADEPT</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DARKSIDE_ADEPT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against> Stormtrooper Rebel_Anti_Vehicle_Turret Rebel_Mobile_Defense_Unit </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Dark_Trooper_PhaseII Rebel_Infiltrator UC_Rebel_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<Icon_Name>i_button_sith.tga</Icon_Name>
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+
+		<GUI_Row>1</GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+
+		<Affiliation>Rebel</Affiliation>
+		<Build_Cost_Credits>350</Build_Cost_Credits> <!-- From 2000 -->
+		<Build_Time_Seconds>70</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> No </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Heroes>Yes</Build_Tab_Heroes>
+		<Combat_Power_Value>5</Combat_Power_Value>
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<!--<Required_Special_Structures>E_Ground_Barracks</Required_Special_Structures>-->
+		<Required_Planets>Korriban</Required_Planets>
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+
+		<Company_Transport_Unit>Sheathipede_Shuttle</Company_Transport_Unit>
+		<Company_Units> Darkside_Adepts </Company_Units>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<SFXEvent_Build_Complete>Unit_Complete_Sabateur</SFXEvent_Build_Complete>
+		<SFXEvent_Build_Started>UHD_Build_Commander</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+
+		<Population_Value>1</Population_Value>
+		<CategoryMask>LandHero</CategoryMask>
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Cheap_Bribe_Cost>0</Cheap_Bribe_Cost>
+		<Expensive_Bribe_Cost>0</Expensive_Bribe_Cost>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+					<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+		<Tactical_Build_Cost_Multiplayer>350</Tactical_Build_Cost_Multiplayer> <!-- From 550 -->
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+</HeroCompany>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Units_land_cis_darkside_adepts_data>

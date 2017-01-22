@@ -1,0 +1,613 @@
+<?xml version="1.0"?>
+<General_Grievous_Hero_Files>
+
+
+
+	<!-- BASE GROUND UNIT -->
+
+
+
+	<HeroUnit Name="General_Grievous">
+		<LOD_Bias>5</LOD_Bias>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Force_Sensitive>No</Is_Force_Sensitive>
+		<Text_ID>TEXT_HERO_GENERAL_GRIEVOUS</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_GENERAL_GRIEVOUS</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_GENERAL </Encyclopedia_Unit_Class>
+		<Land_Model_Name>SeI_grievous.ALO</Land_Model_Name>
+		<Icon_Name>I_BUTTON_GENERAL_GRIEVOUS.TGA</Icon_Name>
+
+		<Starting_Spawned_Units_Tech_0>Magnaguard_Grievous, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>0</Spawned_Squadron_Delay_Seconds>		
+		<Spawned_Squadron_Location_Bones>Muzzlea_00</Spawned_Squadron_Location_Bones>	
+		<Spawned_Squadron_Location_Flyout_Distances>50.0</Spawned_Squadron_Location_Flyout_Distances>	
+		<Spawn_Garrison_On_Load>false</Spawn_Garrison_On_Load>
+
+		<GalacticBehavior> SELECTABLE </GalacticBehavior>
+		<LandBehavior>SPAWN_SQUADRON, SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, REVEAL, HIDE_WHEN_FOGGED, TARGETING, WEAPON, DAMAGE_TRACKING, UNIT_AI, ABILITY_COUNTDOWN, HOLSTER_WEAPON </LandBehavior>
+
+		<!-- Lightsaber holstering data  -->
+		<!--<SFXEvent_Draw_Weapon> Unit_Light_Saber_On </SFXEvent_Draw_Weapon>
+		<SFXEvent_Holster_Weapon> Unit_Light_Saber_Off </SFXEvent_Holster_Weapon>
+		<Holster_Weapon_Bone_Name> b_saber </Holster_Weapon_Bone_Name>
+		<Holster_Drawn_Bone_Translation> 0.0, 0.0, 0.0 </Holster_Drawn_Bone_Translation>
+		<Holster_Holstered_Bone_Translation> 0.0, -5.1705, 0.0 </Holster_Holstered_Bone_Translation>
+		<Holster_Transition_Time_In_Secs> 0.17 </Holster_Transition_Time_In_Secs>
+		<Holster_Minimum_Drawn_Time_In_Secs> 15.0 </Holster_Minimum_Drawn_Time_In_Secs>
+		<Holster_Disable_Engine_Loops> Yes </Holster_Disable_Engine_Loops>-->
+
+		<Garrison_Category> Infantry </Garrison_Category>
+		<SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Is_Visible_On_Enemy_Radar>Yes</Is_Visible_On_Enemy_Radar>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<CanCellStack>yes</CanCellStack>
+		<Mass>1.0</Mass>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+
+
+		<Movement_Animation_Speed> 0.3</Movement_Animation_Speed>
+		<Walk_Animation_Speed>17.0 </Walk_Animation_Speed><!--5.2-->
+		<Max_Speed>1.8</Max_Speed>
+		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+		<Custom_Soft_Footprint_Radius> 6.5 </Custom_Soft_Footprint_Radius>
+		<Custom_Hard_XExtent> 2.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 2.0 </Custom_Hard_YExtent>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> 1.0 </FormationSpacing>
+		<MinimumPushReturnDistance> 10 </MinimumPushReturnDistance>
+		<Min_Speed> .1 </Min_Speed>
+		<OverrideAcceleration> .1 </OverrideAcceleration>
+		<OverrideDeceleration> .25 </OverrideDeceleration>
+
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>			
+		<Scale_Factor>0.04</Scale_Factor>
+		<Type>Walk</Type>
+		<Deploys>No</Deploys>
+		<Affiliation>Rebel</Affiliation>
+		<Size_Value>10</Size_Value>
+		<Sensor_Range>20</Sensor_Range>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>350</Autoresolve_Health>
+		<Damage>100</Damage>
+		<Stealth_Capable>No</Stealth_Capable>
+		<Victory_Relevant>yes</Victory_Relevant>
+
+		<Armor_Type> Armor_Hero </Armor_Type>
+
+		<Is_Stationary_When_Attacking>Yes</Is_Stationary_When_Attacking>
+		<Projectile_Types> Proj_Greivous_Lightsaber </Projectile_Types>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>1.3</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Appearance_Delay_Frames> 22 </Projectile_Appearance_Delay_Frames>
+
+		<Targeting_Fire_Inaccuracy> Infantry, 0.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 0.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 0.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 0.0 </Targeting_Fire_Inaccuracy>
+
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+		<Targeting_Max_Attack_Distance>18.0</Targeting_Max_Attack_Distance>
+		<Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+
+		<SFXEvent_Select>Unit_Select_Grievous</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Grievous</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Grievous</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Grievous</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Move_Grievous</SFXEvent_Guard>
+		<SFXEvent_Group_Move>Unit_Move_Grievous</SFXEvent_Group_Move>
+		<SFXEvent_Group_Attack>Unit_Attack_Grievous</SFXEvent_Group_Attack>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Grievous </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Grievous </SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die> Unit_Defeat_Grievous </Death_SFXEvent_Start_Die>   
+
+		<SFXEvent_Tactical_Build_Started> UHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>		
+		<SFXEvent_Tactical_Build_Complete> UHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>		
+		<SFXEvent_Tactical_Build_Cancelled> UHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+
+		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
+
+		<CategoryMask> LandHero | SpaceHero </CategoryMask>
+		<Ranking_In_Category> 2 </Ranking_In_Category>
+		<MovementClass>Infantry</MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+		<Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+		<Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+		<Attach_To_Flagship_During_Space_Battle>No</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>		
+
+		<Select_Box_Scale>1200</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<Selection_Blob_Material_Name>Selection_Rebel_Hero</Selection_Blob_Material_Name>
+		<Highlight_Blob_Material_Name>Highlight_Rebel_Hero</Highlight_Blob_Material_Name>
+
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<AI_Combat_Power>500</AI_Combat_Power>
+		<Idle_Chase_Range>100.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Neutralization_Cost>3500.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
+		<Death_Persistence_Duration>0.0</Death_Persistence_Duration>
+		<Death_Fade_Time>0.25</Death_Fade_Time>
+		<Lua_Script />
+
+		<Target_Stealth_Units>Yes</Target_Stealth_Units>
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes"> 
+
+			<Unit_Ability>
+				<Type>BERSERKER</Type>
+				<Recharge_Seconds>70.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Grievous_Rage_Attack </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+				<Effective_Radius> 500.0 </Effective_Radius>
+				<SFXEvent_Target_Ability> Unit_Rage_Attack_Grievous </SFXEvent_Target_Ability>  
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAGE_ATTACK_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAGE_ATTACK_DESCRIPTION</Alternate_Description_Text>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Expiration_Seconds> 7.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 2.0f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Sprint_Grievous</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+
+
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+
+			<Combat_Bonus_Ability Name="Grievous_Space_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Capital | Corvette | Frigate | Fighter</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Capital | Corvette | Frigate | Fighter</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Redirect_Blaster_Ability Name="Grievous_Redirect_Blaster">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<!-- Redirection chance is rolled first. If failed, we roll block chance. If failed, we take the damage. -->
+				<Redirect_Chance>.50</Redirect_Chance>
+				<Block_Chance>0.30</Block_Chance>
+				<Reaction_Arc_In_Degrees>180.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 135.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<!-- We can block/redirect shots from the following units types: -->
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>Darth_Vader_Expansion, Mandalorian_Indigenous, Mustafarian_Indigenous, Noghri_Indigenous, Sullustan_Civilian, Hutt_Civilian, Twilek_Female, Sand_Person_Sniper_A, Bothan_Civilian, Wookie_Warrior, Mon_Calamari_Civilian, Desert_Civilian_A, Swamp_Civilian_A, Urban_Civilian_A, Snow_Civilian_A, Pirate_Soldier, Rebel_Trooper, Rebel_Pilot, Rebel_Infiltrator, Scout_Trooper, Scout_Trooper_No_Bike, Stormtrooper, Destroyer_Droid, Underworld_Disruptor_Merc, TIE_Crawler, T2B_Tank, Dark_Trooper_PhaseII</Applicable_Unit_Types>
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+
+
+
+			<Absorb_Blaster_Ability Name="Grievous_Absorb_Blaster">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Absorb_Chance>.4</Absorb_Chance>
+				<!-- Absorb Percentage and Amount work together in the following way: -->
+				<!-- Actual Amount healed = (Projectile Damage * Absorb Percentage) + Absorb Amount -->
+				<!-- Either value can be zero, but at least one should be non-zero. -->
+				<Damage_Absorb_Percentage>0.2</Damage_Absorb_Percentage>
+				<Damage_Absorb_Amount>.8</Damage_Absorb_Amount>
+				<!-- We can absorb shots from the following units types (but no missiles or grenades): -->
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>Silri, Emperor_Palpatine, Mandalorian_Indigenous, Mustafarian_Indigenous, Noghri_Indigenous, Sullustan_Civilian, Hutt_Civilian, Twilek_Female, Sand_Person_Sniper_A, Bothan_Civilian, Wookie_Warrior, Mon_Calamari_Civilian, Desert_Civilian_A, Swamp_Civilian_A, Urban_Civilian_A, Snow_Civilian_A, Pirate_Soldier, Rebel_Trooper, Rebel_Pilot, Rebel_Infiltrator, Scout_Trooper, Scout_Trooper_No_Bike, Stormtrooper, Destroyer_Droid, Underworld_Disruptor_Merc, Dark_Trooper_PhaseII</Applicable_Unit_Types>
+				<SFXEvent_Activate>Unit_Force_Absorb</SFXEvent_Activate>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>2.0, 0.4, 0.4</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.5</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count />
+			</Absorb_Blaster_Ability>
+
+			<Berserker_Ability Name="Grievous_Rage_Attack">
+				<Activation_Style> User_Input </Activation_Style>
+				<Activation_Min_Range>0.0</Activation_Min_Range>
+				<Activation_Max_Range>120.0</Activation_Max_Range>
+				<Berserker_Speed>5.0</Berserker_Speed>
+				<Berserker_Damage>35.0</Berserker_Damage>
+				<Berserker_Damage_Range>12.0</Berserker_Damage_Range>
+				<Berserker_Duration_In_Secs>6.0</Berserker_Duration_In_Secs>
+				<Applicable_Unit_Categories>Infantry | Vehicle | Structure | LandHero</Applicable_Unit_Categories>
+			</Berserker_Ability>
+
+			<Galactic_Stealth_Ability Name="Grievous_Galactic_Stealth">
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+
+			<System_Spy_Ability Name="Grievous_Limited_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+				<See_Minor_Stealth_Heroes>Yes</See_Minor_Stealth_Heroes>
+				<See_Major_Stealth_Heroes>Yes</See_Major_Stealth_Heroes>
+			</System_Spy_Ability>
+
+
+		</Abilities>
+
+	</HeroUnit>
+
+
+
+
+
+
+
+
+
+
+	<!-- COMPANY DATA -->
+
+
+	<HeroCompany Name="General_Grievous_Team">
+		<LOD_Bias>5</LOD_Bias>
+		<Text_ID>TEXT_HERO_GENERAL_GRIEVOUS</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_GENERAL_GRIEVOUS</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_GENERAL </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_GENERAL_GRIEVOUS.TGA</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>100</Damage>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>1</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Invisible_Hand</Company_Transport_Unit>
+		<Company_Units>General_Grievous</Company_Units>
+		<Is_Homogeneous>No</Is_Homogeneous>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Force_Sensitive>No</Is_Force_Sensitive>
+		<Available_In_Skirmish>yes</Available_In_Skirmish>
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
+		<Can_Be_Only_One>true</Can_Be_Only_One>
+
+		<SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>		
+		<SFXEvent_Build_Complete>Unit_Complete_Grievous</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Complete_Grievous</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Grievous</SFXEvent_Fleet_Move>
+
+		<CategoryMask> LandHero | SpaceHero </CategoryMask>
+		<Ranking_In_Category> 2 </Ranking_In_Category>
+		<Population_Value>1</Population_Value>
+
+
+		<Unit_Abilities_Data SubObjectList="Yes"> </Unit_Abilities_Data>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+		<Tactical_Build_Cost_Multiplayer>4200</Tactical_Build_Cost_Multiplayer> <!--5500-->
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds> <!--30-->
+		<Tactical_Build_Prerequisites>RC_Level_Four_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+	</HeroCompany>
+
+	<UniqueUnit Name="Invisible_Hand">
+		<Text_ID>TEXT_UNIT_INVISIBLE_HAND</Text_ID>
+		<Encyclopedia_Good_Against> Rep_Acclamator_Assault_Ship Dreadnaught_Cruiser Rep_Centax_Heavy_Frigate </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Arc_170 NTB630 Mandator_Super_Star_Destroyer </Encyclopedia_Vulnerable_To>
+		<GUI_Row> 1 </GUI_Row>
+		<Icon_Name>I_BUTTON_GENERAL_GRIEVOUS.TGA</Icon_Name>
+		<Is_Named_Hero>true</Is_Named_Hero>
+		<Space_Model_Name>SeV_Invisible_Hand.ALO</Space_Model_Name>
+		<Select_Box_Scale>2500</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+		<Mass>0.9995</Mass>
+		<Scale_Factor>0.39</Scale_Factor>
+		<Ranking_In_Category> 1 </Ranking_In_Category>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Max_Speed>1.6</Max_Speed>
+		<Max_Rate_Of_Turn>0.167</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>0.167</Max_Rate_Of_Roll>
+		<MovementClass> Space </MovementClass>
+		<Space_Layer> Capital </Space_Layer>
+		<Layer_Z_Adjust>-405.0</Layer_Z_Adjust>
+
+		<Bank_Turn_Angle>5</Bank_Turn_Angle>
+		<OverrideAcceleration>0.0125</OverrideAcceleration>
+		<OverrideDeceleration>0.0125</OverrideDeceleration>
+
+		<Max_Thrust>0.375</Max_Thrust>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		<Maintenance_Cost>0.1</Maintenance_Cost>
+
+		<Armor_Type> Armor_Star_Destroyer </Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+		<Damage>70</Damage>
+		<Autoresolve_Health>10000</Autoresolve_Health>
+		<Shield_Points>5000</Shield_Points>
+		<Tactical_Health>7000</Tactical_Health>
+		<Shield_Refresh_Rate>90</Shield_Refresh_Rate>
+		<!-- was 50 -->
+		<Energy_Capacity>3000</Energy_Capacity>
+		<Energy_Refresh_Rate>400</Energy_Refresh_Rate>
+
+		<Affiliation>Rebel</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level> <!-- From 4 -->
+		<!--<Required_Special_Structures>Hoersch_Kessel</Required_Special_Structures>
+		<Required_Planets>Mechis</Required_Planets>-->
+		<Surface_Bombardment_Capable>yes</Surface_Bombardment_Capable>
+		<Ship_Class>Capital</Ship_Class>
+		<Formation_Priority>3</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Political_Control>0</Political_Control>
+		<Squadron_Capacity>10</Squadron_Capacity>
+		<Transport_Capacity>8</Transport_Capacity>
+		<Number_per_Squadron>1</Number_per_Squadron>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<AI_Combat_Power>2500</AI_Combat_Power>
+		<Build_Cost_Credits>5700</Build_Cost_Credits>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Size_Value>8</Size_Value>
+		<Behavior> SELECTABLE, TRANSPORT, DUMMY_STARSHIP </Behavior>
+		<SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDED, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space_Empire</Death_Explosions>
+
+		<Death_Clone>Damage_Normal, Invisible_Hand_Death_Clone</Death_Clone>
+		<Space_FOW_Reveal_Range>1200.0</Space_FOW_Reveal_Range>
+
+		<Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
+		<Targeting_Max_Attack_Distance>1400.0</Targeting_Max_Attack_Distance>
+
+		<!-- Set to spawn all units once and then not continue - no reserves -->
+		<Starting_Spawned_Units_Tech_0>Vulture_Droid_Squadron, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Tri_Droid_Squadron, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>CIS_Bomber_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds> <!-- From 2 -->
+		<!--Currently no reserves -->
+		<Reserve_Spawned_Units_Tech_0>Vulture_Droid_Squadron, 3</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Tri_Droid_Squadron, 4</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>CIS_Bomber_Squadron, 2</Reserve_Spawned_Units_Tech_0>
+
+		<HardPoints>
+			HP_Providence_01,
+			HP_Providence_02,
+			HP_Providence_03,
+			HP_Providence_04,
+			HP_Providence_05,
+			HP_Providence_06,
+			HP_Providence_07,
+			HP_Providence_08,
+			HP_Providence_10,
+			HP_Providence_11,
+			HP_Providence_12,
+			HP_Providence_13,
+			HP_Providence_14,
+			HP_Providence_15,
+			HP_Providence_16,
+			HP_Providence_17,
+			HP_Providence_18,
+			HP_Providence_19,
+			HP_Providence_20,
+			HP_Providence_21,
+			HP_Providence_22,
+			HP_Providence_23,
+			HP_Providence_24,
+			HP_Providence_25,
+			HP_Providence_26,
+			HP_Providence_27,
+			HP_Providence_28,
+			HP_Providence_29,
+			HP_Providence_30,
+			HP_Providence_31,
+			HP_Providence_32,
+			HP_Providence_Engines,
+			HP_Providence_Shield_Generator,
+			HP_Providence_Fighter_Bay_01,
+			HP_Providence_Fighter_Bay_02
+		</HardPoints>
+
+		<CategoryMask> Capital | AntiFrigate | SpaceHero </CategoryMask>
+		<GUI_Model_Name>SeV_Invisible_Hand.ALO</GUI_Model_Name>
+		<GUI_Distance>1100</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Ambient_Loop>Unit_Cis_Cap_Ship_Moving_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Select>Unit_Select_Space_Grievous</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Space_Grievous</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Grievous</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Space_Grievous</SFXEvent_Attack>
+		<SFXEvent_Move_Into_Asteroid_Field> Unit_Asteroids_Recusant </SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Damaged_By_Asteroid> SFX_Asteroid_Detonation </SFXEvent_Damaged_By_Asteroid>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Recusant </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Recusant </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Recusant </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Recusant </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Recusant </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Recusant </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Special_Ship_Lost_HP </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,   </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,   </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Special_Ship_Lost_HP </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Space_Grievous </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Lost_Engines_Space_Grievous </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Special_Ship_Lost_HP </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Engine_Idle_Loop> Unit_Cis_Cap_Ship_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Cis_Cap_Ship_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>  Unit_Cis_Cap_Ship_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+
+		<Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Space_Full_Stop_Command> Yes </Space_Full_Stop_Command>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>1.0</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>1.0</Radar_Icon_Scale_Space>
+		<Radar_Icon_Name>i_radar_capital_ship.tga</Radar_Icon_Name>
+		<Visible_On_Radar_When_Fogged>false</Visible_On_Radar_When_Fogged> <!-- From true -->
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+
+		<Lua_Script>ObjectScript_Invisible_Hand</Lua_Script>
+
+
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>0.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>400.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>Capital</Targeting_Priority_Set>
+
+		<Landing_Transport_Variant>Sheathipede_Landing</Landing_Transport_Variant>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+
+			<Unit_Ability>
+				<Type>WEAKEN_ENEMY</Type>
+
+				<Recharge_Seconds>60</Recharge_Seconds>
+
+				<!-- This is the radius within which we can "drop" the projectile (targeting radius) -->
+				<!-- The actual radius of ability is in projectile XML -->
+				<Effective_Radius> 1500.0 </Effective_Radius>
+				<Spawned_Object_Type>Grievous_Demoralize_Enemy_Effect</Spawned_Object_Type>  
+				<SFXEvent_Target_Ability> Unit_Special_Demoralize_Target_Space_Grievous </SFXEvent_Target_Ability> 
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Special_Demoralize_Active_Space_Grievous</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+
+				<!-- Area effect decal size depends on "Antills_Weaken_Enemy_Effect" -->
+				<Area_Effect_Decal_Distance> 1000 </Area_Effect_Decal_Distance>
+
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.3</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		2.0</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER ,	2.0</Mod_Multiplier>
+				<Recharge_Seconds>50</Recharge_Seconds>
+				<Expiration_Seconds>7</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Special_All_Batteries_Grievous</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FIRE_BATTERIES_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FIRE_BATTERIES_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_ALL_BATTERIES_FIRE.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+
+			<Combat_Bonus_Ability Name="Grievous_Space_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Capital | Corvette | Frigate | Fighter</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Capital | Corvette | Frigate | Fighter</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+		</Abilities>
+
+		<Encyclopedia_Text> TEXT_TOOLTIP_INVISIBLE_HAND</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_CAPITAL </Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 1800</Score_Cost_Credits>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>7200</Tactical_Build_Cost_Multiplayer> <!-- From 6800 -->
+		<Tactical_Build_Time_Seconds>18</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		<Population_Value>3</Population_Value>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Invisible_Hand_Death_Clone">
+		<Text_ID> TEXT_UNIT_PROVIDENCE </Text_ID>
+		<Space_Model_Name>SeV_Invisible_Hand_D.ALO</Space_Model_Name>
+		<Death_SFXEvent_Start_Die> Unit_Calamari_Death_SFX </Death_SFXEvent_Start_Die>
+		<Scale_Factor> 0.4 </Scale_Factor>
+		<Layer_Z_Adjust> -405.0 </Layer_Z_Adjust>
+		<Max_Speed> 0.25 </Max_Speed>
+		<Max_Rate_Of_Turn> 0.4 </Max_Rate_Of_Turn>
+		<Max_Thrust> 0.05 </Max_Thrust>
+		<Max_Rate_Of_Roll> 0.02 </Max_Rate_Of_Roll>
+		<Bank_Turn_Angle> 5 </Bank_Turn_Angle>
+		<Affiliation> Empire </Affiliation>
+		<Ship_Class> capital_ship </Ship_Class>
+		<Glory_Cinematics> CAM_Calamari_Cruiser_Die.tec </Glory_Cinematics>
+		<Death_Explosions>Huge_Explosion_Space_Empire</Death_Explosions>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</UniqueUnit>
+
+
+
+
+	<HeroCompany Name="General_Grievous_Team_Land_MP">
+		<Variant_Of_Existing_Type>General_Grievous_Team</Variant_Of_Existing_Type>
+		<Tactical_Build_Cost_Multiplayer>1600</Tactical_Build_Cost_Multiplayer><!--1600-->
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds><!--25-->
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+	</HeroCompany>
+
+
+
+
+</General_Grievous_Hero_Files>

@@ -1,0 +1,877 @@
+<?xml version="1.0" ?>
+<SpaceSecondarySkydomes>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_Blue">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_blue.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>25.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_Blue_Steel">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_steel_blue.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>25.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_Green">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_green.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>25.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_Green_Orange">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_green_orange.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>25.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_Green_Orange_2">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_green_orange02.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>25.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_Orange">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_orange.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>25.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_Orange_2">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_orange02.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>25.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_Purple">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_purple.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>25.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_Purple_2">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_purple02.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>25.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_Red">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_red.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>25.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_Red_Light">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_red_light.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>25.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_Red_Vivid">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_red_vivid.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>25.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+
+	<SpaceSecondarySkydome Name="Sky_Bespin_00">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_sky_bespin.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>25.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+
+	<SpaceSecondarySkydome Name="Sky_Bespin_00">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_sky_bespin.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>25.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Sky_Zhar_00">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_sky_zhar.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>25.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Sky_Ithor_00">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_sky_ithor.ALO</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>25.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+    <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Sky_Ground_00">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_sky_03.ALO</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>25.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+    <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Sky_Orange_Gas_00">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>W_sky_gasgig.ALO</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>25.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+    <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+		<SpaceSecondarySkydome Name="Coruscant_Surface">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>Courascantmap.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>25.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+    <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+		<SpaceSecondarySkydome Name="Star_Backdrop_RaW_Darkswarm_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_dark_swarm01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+		<SpaceSecondarySkydome Name="Star_Backdrop_RaW_Red_Sinkhole_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_red_sinkholes01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+		<SpaceSecondarySkydome Name="Star_Backdrop_RaW_BluePink_Swift_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_blue_pink_swift01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+		<SpaceSecondarySkydome Name="Star_Backdrop_RaW_Blue_Ripple_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_blue_ripple01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+		<SpaceSecondarySkydome Name="Star_Backdrop_RaW_Blue_Starforge_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_blue_starforge01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+		<SpaceSecondarySkydome Name="Star_Backdrop_RaW_Yellow_Soup_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_yellow_soup01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+		<SpaceSecondarySkydome Name="Star_Backdrop_RaW_Pink_Feather_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_pink_feather01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW_Red_Skybursts_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_red_skybursts01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW_Yellow_Razor_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_yellow_razor01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW_Orange_Flame_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_orange_flame01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW_Orange_Carinasheart_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_orange_carinasheart01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW_Purple_Smoke_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_purple_smoke01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW_Purple_Beacon_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_purple_beacon01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW_Purple_Mindscape_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_purple_mindscape01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW_Red_Supernova_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_red_supernova01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW_Blue_Dust_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_blue_dust01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW2_Red_Dust_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_red_dust01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW2_Blue_Red_Haze_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_blue_red_haze01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW2_Blue_Red_Haze_2">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_blue_red_haze02.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW2_Ultraviolet_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_ultraviolet01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW2_Starburst_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_starburst01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW2_Stormy_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_stormy01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW2_Andromeda_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_andromeda01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW2_Carnage_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_carnage01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW2_Blue_Orange_Haze_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_blue_orange_haze01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW2_Eye_Of_The_Storm_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_eye_of_the_storm01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+		
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW2_Eye_Of_The_Storm_2">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_eye_of_the_storm02.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW2_Red_Murk_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_red_murk01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW2_Red_Murk_2">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_red_murk02.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW2_Red_Dawn_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_red_dawn01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW2_Orange_Purple_Nebula_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_orange_purple_nebula01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+		
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW2_Boneyard_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_boneyard01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW2_Green_Sinkholes_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_green_sinkholes01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW2_Purple_Phoenix_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_purple_phoenix01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW2_Starburst_2">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_starburst02.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW2_Alpha_Omega_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_alpha_omega01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+	<SpaceSecondarySkydome Name="Star_Backdrop_RaW2_Purple_Clouds_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_purple_clouds01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+		<SpaceSecondarySkydome Name="Star_Backdrop_RaW2_Mayhem_Rift_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_mayhem_rift01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+		<SpaceSecondarySkydome Name="Star_Backdrop_RaW2_Green_Mists_1">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Space_Model_Name>w_stars_nebula_green_mists01.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+    <Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>20.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>yes</In_Background>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceSecondarySkydome>
+	
+</SpaceSecondarySkydomes>	

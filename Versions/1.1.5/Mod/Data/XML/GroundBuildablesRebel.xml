@@ -1,0 +1,821 @@
+<?xml version="1.0"?>
+<GroundBuildables>
+
+	<!-- ========================================= -->
+	<!-- GROUND-BASED TACTICAL BUILD PADS - REBEL  -->
+	<!-- ========================================= -->
+
+	<GroundBuildable Name="Rebel_Build_Pad">
+
+		<Behavior> TACTICAL_BUILD_OBJECTS, REVEAL, HIDE_WHEN_FOGGED </Behavior>
+		
+		<!-- This is a list of the buildable objects at this pad (defined below) - that will be under construction -->
+		<Tactical_Buildable_Objects_Campaign> Rebel, UC_Rebel_Buildable_Anti_Vehicle_Turret, UC_Rebel_Buildable_Anti_Infantry_Turret, UC_Rebel_Buildable_Anti_Aircraft_Turret, UC_Rebel_Buildable_Bacta_Tank, UC_Rebel_Buildable_Repair_Facility, UC_Rebel_Buildable_Sensor_Node </Tactical_Buildable_Objects_Campaign>
+		<Tactical_Buildable_Objects_Multiplayer> Rebel, UC_Rebel_Buildable_Anti_Vehicle_Turret, UC_Rebel_Buildable_Anti_Infantry_Turret, UC_Rebel_Buildable_Anti_Aircraft_Turret, UC_Rebel_Buildable_Bacta_Tank, UC_Rebel_Buildable_Repair_Facility, UC_Rebel_Buildable_Sensor_Node </Tactical_Buildable_Objects_Multiplayer>
+
+		<Text_ID> TEXT_REBEL_BUILD_PAD </Text_ID>
+		<Land_Model_Name>NB_BasePad_Rebel.alo</Land_Model_Name>
+		<Capture_Point_Radius>0</Capture_Point_Radius>
+		<Loop_Idle_Anim_00> No </Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living> No </Collidable_By_Projectile_Living>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
+		<Select_Box_Scale> 50 </Select_Box_Scale>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> Build Pad </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 10.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 10.0 </Custom_Hard_YExtent>
+		<Respects_Skirmish_Pre_Build_Bases_Option> false </Respects_Skirmish_Pre_Build_Bases_Option>
+		
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Shield_Points> 0 </Shield_Points>
+		<Tactical_Health> 10000 </Tactical_Health>
+		<Affiliation> Rebel </Affiliation>
+		<Base_Level_Available> 1 </Base_Level_Available>
+		<Required_Ground_Base_Level> 0 </Required_Ground_Base_Level>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+		<Reveal_During_Setup_Phase_Only> False </Reveal_During_Setup_Phase_Only>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<Victory_Relevant> No </Victory_Relevant>
+		<No_Reflection_Below_Detail_Level> 1 </No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level> 1 </No_Refraction_Below_Detail_Level>
+		<CategoryMask> Structure </CategoryMask>
+		<GUI_Bracket_Width> 20 </GUI_Bracket_Width>
+		<GUI_Bracket_Height> 0 </GUI_Bracket_Height>
+		<GUI_Bracket_Size> 1 </GUI_Bracket_Size> 
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Immune_To_Damage>True</Immune_To_Damage>
+		<Minimum_Time_Before_Pad_Can_Build_Again> 15 </Minimum_Time_Before_Pad_Can_Build_Again>
+
+	</GroundBuildable>
+	
+	<GroundBuildable Name="Rebel_Build_Pad_Offensive">
+
+		<Variant_Of_Existing_Type> Rebel_Build_Pad </Variant_Of_Existing_Type>
+
+		<!-- This is a list of the buildable objects at this pad (defined below) - that will be under construction -->
+		<Tactical_Buildable_Objects_Campaign> Rebel, UC_Rebel_Buildable_Anti_Vehicle_Turret, UC_Rebel_Buildable_Anti_Infantry_Turret, UC_Rebel_Buildable_Anti_Aircraft_Turret </Tactical_Buildable_Objects_Campaign>
+		<Tactical_Buildable_Objects_Multiplayer> Rebel, UC_Rebel_Buildable_Anti_Vehicle_Turret, UC_Rebel_Buildable_Anti_Infantry_Turret, UC_Rebel_Buildable_Anti_Aircraft_Turret </Tactical_Buildable_Objects_Multiplayer>
+
+	</GroundBuildable>
+	
+	<GroundBuildable Name="Rebel_Build_Pad_Defensive">
+
+		<Variant_Of_Existing_Type> Rebel_Build_Pad </Variant_Of_Existing_Type>
+
+		<!-- This is a list of the buildable objects at this pad (defined below) - that will be under construction -->
+		<Tactical_Buildable_Objects_Campaign> Rebel, UC_Rebel_Buildable_Bacta_Tank, UC_Rebel_Buildable_Repair_Facility, UC_Rebel_Buildable_Sensor_Node </Tactical_Buildable_Objects_Campaign>
+		<Tactical_Buildable_Objects_Multiplayer> Rebel, UC_Rebel_Buildable_Bacta_Tank, UC_Rebel_Buildable_Repair_Facility, UC_Rebel_Buildable_Sensor_Node </Tactical_Buildable_Objects_Multiplayer>
+
+	</GroundBuildable>
+	
+	<GroundBuildable Name="Rebel_Build_Pad_M1">
+
+		<Variant_Of_Existing_Type> Rebel_Build_Pad </Variant_Of_Existing_Type>
+		
+		<!-- This is a list of the buildable objects at this pad (defined below) - that will be under construction -->
+		<Tactical_Buildable_Objects_Campaign> Rebel, UC_Rebel_Buildable_Anti_Vehicle_Turret, UC_Rebel_Buildable_Anti_Infantry_Turret </Tactical_Buildable_Objects_Campaign>
+		<Tactical_Buildable_Objects_Multiplayer> Rebel, UC_Rebel_Buildable_Anti_Vehicle_Turret, UC_Rebel_Buildable_Anti_Infantry_Turret </Tactical_Buildable_Objects_Multiplayer>
+
+		<Visible_To_Enemies_When_Empty> false </Visible_To_Enemies_When_Empty>
+		
+	</GroundBuildable>
+	
+	<!-- =========================================================================== -->
+	<!-- UNDER CONSTRUCTION GROUND-BASED BUILDABLE TACTICAL BASE STRUCTURES - REBEL  -->
+	<!-- =========================================================================== -->
+
+	<GroundBuildable Name="UC_Rebel_Buildable_Abstract_Type">
+
+		<!-- NOTE: TACTICAL_UNDER_CONSTRUCTION does not work as a Land_Behavior, since the type->Behaves_Like() fails for some reason when it should not - need to fix -->
+		<Behavior> TACTICAL_UNDER_CONSTRUCTION, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED </Behavior>
+		<LandBehavior> EARTHQUAKE_TARGET </LandBehavior>
+		
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+
+		<Loop_Idle_Anim_00> No </Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living> Yes </Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Generic_Building_Death_SFX </Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust> 10.0 </Ranged_Target_Z_Adjust>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
+		<Land_FOW_Reveal_Range> 30.0 </Land_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier> 0.0 </Dense_FOW_Reveal_Range_Multiplier>
+		<Select_Box_Scale> 50 </Select_Box_Scale>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> Vehicle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 10.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 10.0 </Custom_Hard_YExtent>
+				
+		<Scale_Factor> 1.00 </Scale_Factor>
+		<Shield_Points> 0 </Shield_Points>
+		<Affiliation> Rebel </Affiliation>
+		<Base_Level_Available> 1 </Base_Level_Available>
+		<Required_Ground_Base_Level> 1 </Required_Ground_Base_Level>
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+		<Victory_Relevant> No </Victory_Relevant>
+		<No_Reflection_Below_Detail_Level> 1 </No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level> 1 </No_Refraction_Below_Detail_Level>
+		<CategoryMask> Structure </CategoryMask>
+		<GUI_Bracket_Width> 20 </GUI_Bracket_Width>
+		<GUI_Bracket_Height> 0 </GUI_Bracket_Height>
+		<GUI_Bracket_Size> 0 </GUI_Bracket_Size> 
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		
+	</GroundBuildable>
+
+	<GroundBuildable Name="UC_Rebel_Buildable_Repair_Facility">
+
+		<Variant_Of_Existing_Type> UC_Rebel_Buildable_Abstract_Type </Variant_Of_Existing_Type>
+
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_REP_TURRET</Encyclopedia_Text>
+
+		<Tactical_Buildable_Constructed> Rebel_Buildable_Repair_Facility </Tactical_Buildable_Constructed>		<!-- Defined below -->
+		<Tactical_Build_Cost_Multiplayer> 750 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>50</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 20 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Start_Lower_Z> 0 </Tactical_Build_Start_Lower_Z>
+		<Tactical_Health> 150 </Tactical_Health>
+
+		<Text_ID> TEXT_STRUCTURE_REBEL_BUILDABLE_REPAIR_FACILITY </Text_ID>
+		<Land_Model_Name> NB_RepairFacility.alo </Land_Model_Name>
+
+		<SFXEvent_Build_Started>UHD_Repair_Station_Build</SFXEvent_Build_Started>
+		<SFXEvent_Select>Structure_Repair_Select_SFX</SFXEvent_Select>
+	
+		<Scale_Factor> 0.75 </Scale_Factor>
+
+		<Icon_Name>i_button_r_repair_facility.tga</Icon_Name>
+
+	</GroundBuildable>
+
+	<GroundBuildable Name="UC_Rebel_Buildable_Repair_Facility_MDU">
+		<Variant_Of_Existing_Type> UC_Rebel_Buildable_Repair_Facility </Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed> Rebel_MDU_Repair_Facility </Tactical_Buildable_Constructed>		<!-- Defined below -->
+		<Tactical_Build_Cost_Multiplayer> 150 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>50</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 8 </Tactical_Build_Time_Seconds>
+		<Scale_Factor> 0.5 </Scale_Factor>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+	</GroundBuildable>
+
+	<GroundBuildable Name="UC_Rebel_Buildable_Bacta_Tank">
+
+		<Variant_Of_Existing_Type> UC_Rebel_Buildable_Abstract_Type </Variant_Of_Existing_Type>
+
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_HEAL_TURRET</Encyclopedia_Text>
+
+		<Tactical_Buildable_Constructed> Rebel_Buildable_Bacta_Tank </Tactical_Buildable_Constructed>		<!-- Defined below -->
+		<Tactical_Build_Cost_Multiplayer> 700 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>20</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 15 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Start_Lower_Z> 0 </Tactical_Build_Start_Lower_Z>
+		<Tactical_Health> 125 </Tactical_Health>
+
+		<Text_ID> TEXT_STRUCTURE_REBEL_BUILDABLE_BACTA_TANK </Text_ID>
+		<Land_Model_Name> NB_BactaTank.alo </Land_Model_Name>
+
+		<SFXEvent_Build_Started>UHD_Bacta_Tank_Build</SFXEvent_Build_Started>
+		<SFXEvent_Select>Structure_Bacta_Select_SFX</SFXEvent_Select>
+
+		<Icon_Name>i_button_bacta_tank.tga</Icon_Name>
+
+	</GroundBuildable>
+
+
+	<GroundBuildable Name="UC_Rebel_Buildable_Anti_Aircraft_Turret">
+
+		<Variant_Of_Existing_Type> UC_Rebel_Buildable_Abstract_Type </Variant_Of_Existing_Type>
+
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_AA_TURRET</Encyclopedia_Text>
+
+		<Tactical_Buildable_Constructed> Rebel_Anti_Aircraft_Turret </Tactical_Buildable_Constructed>		<!-- Defined in GroundTurrets.xml -->
+		<Tactical_Build_Cost_Multiplayer> 800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>20</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 18 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Start_Lower_Z> 0 </Tactical_Build_Start_Lower_Z>
+		<Tactical_Health> 175 </Tactical_Health>
+
+		<Text_ID> TEXT_STRUCTURE_TURRET_AA_UC </Text_ID>
+		<Land_Model_Name> EB_AATURRET.ALO </Land_Model_Name>
+		<Scale_Factor>0.95</Scale_Factor>
+
+		<SFXEvent_Build_Started>UHD_Turret_Build</SFXEvent_Build_Started>
+		<SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
+
+		<Armor_Type> Armor_Turret </Armor_Type>
+
+		<Icon_Name>i_button_e_anti_aircraft.tga</Icon_Name>
+
+	</GroundBuildable>
+
+
+	<GroundBuildable Name="UC_Rebel_Buildable_Anti_Infantry_Turret">
+
+		<Variant_Of_Existing_Type> UC_Rebel_Buildable_Abstract_Type </Variant_Of_Existing_Type>
+
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_AI_TURRET</Encyclopedia_Text>
+
+		<Tactical_Buildable_Constructed> Rebel_Anti_Infantry_Turret </Tactical_Buildable_Constructed>		<!-- Defined in GroundTurrets.xml -->
+		<Tactical_Build_Cost_Multiplayer> 700 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>20</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 15 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Start_Lower_Z> 0 </Tactical_Build_Start_Lower_Z>
+		<Tactical_Health> 150 </Tactical_Health>
+
+		<Text_ID> TEXT_STRUCTURE_TURRET_AI_UC </Text_ID>
+		<Land_Model_Name> RB_TURRET.ALO </Land_Model_Name>
+
+		<Scale_Factor> 1.30 </Scale_Factor>
+
+		<SFXEvent_Build_Started>UHD_Turret_Build</SFXEvent_Build_Started>
+		<SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
+
+		<Death_Explosions>Medium_Explosion_Land</Death_Explosions>
+
+		<Armor_Type> Armor_Turret </Armor_Type>
+
+		<Icon_Name>i_button_r_anti_infantry.tga</Icon_Name>
+
+	</GroundBuildable>
+
+
+	<GroundBuildable Name="UC_Rebel_Buildable_Anti_Vehicle_Turret">
+
+		<Variant_Of_Existing_Type> UC_Rebel_Buildable_Abstract_Type </Variant_Of_Existing_Type>
+
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_AV_TURRET</Encyclopedia_Text>
+
+		<Tactical_Buildable_Constructed> Rebel_Anti_Vehicle_Turret </Tactical_Buildable_Constructed>		<!-- Defined in GroundTurrets.xml -->
+		<Tactical_Build_Cost_Multiplayer> 850 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>20</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 23 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Start_Lower_Z> 0 </Tactical_Build_Start_Lower_Z>
+		<Tactical_Health> 200 </Tactical_Health>
+
+		<Text_ID> TEXT_STRUCTURE_TURRET_AV_UC </Text_ID>
+		<Land_Model_Name> EB_VEHICLETURRET.ALO </Land_Model_Name>
+
+		<SFXEvent_Build_Started>UHD_Turret_Build</SFXEvent_Build_Started>
+		<SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
+
+		<Death_Explosions>Medium_Explosion_Land</Death_Explosions>
+
+		<Armor_Type> Armor_Turret </Armor_Type>
+
+		<Radar_Icon_Size>0.05  0.05</Radar_Icon_Size>
+		<Icon_Name>i_button_e_anti_vehicle.tga</Icon_Name>
+
+	</GroundBuildable>
+
+
+	<GroundBuildable Name="UC_Rebel_Buildable_Sensor_Node">
+
+		<Variant_Of_Existing_Type> UC_Rebel_Buildable_Abstract_Type </Variant_Of_Existing_Type>
+
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_SENSOR_NODE</Encyclopedia_Text>
+
+		<Tactical_Buildable_Constructed> Sensor_Array </Tactical_Buildable_Constructed>			<!-- Defined int GroundStructures.xml -->
+		<Tactical_Build_Cost_Multiplayer> 450 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>10</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 10 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Start_Lower_Z> 0 </Tactical_Build_Start_Lower_Z>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<Text_ID> TEXT_STRUCTURE_SENSOR_UC </Text_ID>
+		<Land_Model_Name> NB_SensorNode.alo </Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<SFXEvent_Build_Started>UHD_Sensor_Node_Build</SFXEvent_Build_Started>
+		<SFXEvent_Select>Structure_Sensor_Select_SFX</SFXEvent_Select>
+
+		<Death_Explosions>Medium_Explosion_Land</Death_Explosions>
+		<Icon_Name>i_button_sensor_node.tga</Icon_Name>
+
+	</GroundBuildable>
+	
+<!--************************************************************************************************************-->	
+	<!--jdg this guy is used in Tutorial 01-->		
+	<GroundBuildable Name="Rebel_Build_Pad_Bacta">
+		<Variant_Of_Existing_Type>Rebel_Build_Pad</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Objects_Campaign> 
+			Rebel,
+				UC_Rebel_Buildable_Bacta_Tank
+		</Tactical_Buildable_Objects_Campaign>
+	</GroundBuildable>
+	
+<!--************************************************************************************************************-->	
+	<!--jdg this guy is used in Tutorial 01-->
+	<GroundBuildable Name="Rebel_Build_Pad_AITurret">
+		<Variant_Of_Existing_Type>Rebel_Build_Pad</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Objects_Campaign> 
+			Rebel,
+				UC_Rebel_Buildable_Anti_Infantry_Turret
+		</Tactical_Buildable_Objects_Campaign>
+	</GroundBuildable>
+
+<!--************************************************************************************************************-->	
+
+<GroundBuildable Name="Cis_Battlefield_Build_Pad">
+
+		<Behavior> TACTICAL_BUILD_OBJECTS, REVEAL, HIDE_WHEN_FOGGED </Behavior>
+		<!-- This is a list of the buildable objects at this pad (defined below) - that will be under construction -->
+		
+		<Tactical_Buildable_Objects_Multiplayer> Rebel, UC_Ground_Cis_Droid_Center, UC_Ground_Cis_Engineering_Platform, UC_Ground_Cis_Siege_Mortar, UC_Ground_Cis_Forward_Command_Post</Tactical_Buildable_Objects_Multiplayer>
+
+		<Text_ID> TEXT_EMPIRE_BUILD_PAD </Text_ID>
+		<Land_Model_Name>W_BuildBaseFOC.alo</Land_Model_Name>
+		<Capture_Point_Radius>0</Capture_Point_Radius>
+		<Loop_Idle_Anim_00> No </Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living> No </Collidable_By_Projectile_Living>
+			<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Name>MINI_MAP_BATTLEPAD.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Select_Box_Scale> 50 </Select_Box_Scale>
+		<Respects_Skirmish_Pre_Build_Bases_Option> false </Respects_Skirmish_Pre_Build_Bases_Option>
+		
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> Build Pad </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 10.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 10.0 </Custom_Hard_YExtent>
+		
+		<Scale_Factor> 0.15 </Scale_Factor>
+		<Shield_Points> 0 </Shield_Points>
+		<Tactical_Health> 10000 </Tactical_Health>
+		<Affiliation> Rebel </Affiliation>
+		<Base_Level_Available> 1 </Base_Level_Available>
+		<Required_Ground_Base_Level> 0 </Required_Ground_Base_Level>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+		<Reveal_During_Setup_Phase_Only> False </Reveal_During_Setup_Phase_Only>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<Victory_Relevant> No </Victory_Relevant>
+		<No_Reflection_Below_Detail_Level> 1 </No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level> 1 </No_Refraction_Below_Detail_Level>
+		<CategoryMask> Structure </CategoryMask>
+		<GUI_Bracket_Width> 20 </GUI_Bracket_Width>
+		<GUI_Bracket_Height> 0 </GUI_Bracket_Height>
+		<GUI_Bracket_Size> 1 </GUI_Bracket_Size> 
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Immune_To_Damage>True</Immune_To_Damage>
+		<Minimum_Time_Before_Pad_Can_Build_Again> 15 </Minimum_Time_Before_Pad_Can_Build_Again>
+
+	</GroundBuildable>
+
+<GroundBuildable Name="UC_Ground_Cis_Droid_Center">
+		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
+		<Behavior>TACTICAL_UNDER_CONSTRUCTION, REVEAL, HIDE_WHEN_FOGGED</Behavior>
+		<LandBehavior>TERRAIN_TEXTURE_MODIFICATION, LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Obstacle_Proxy_Type> Cis_Battlefield_Build_Pad </Obstacle_Proxy_Type>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Tactical_Buildable_Constructed> Skirmish_Ground_Cis_Droid_Center </Tactical_Buildable_Constructed>
+		<Tactical_Build_Start_Lower_Z> 50.0 </Tactical_Build_Start_Lower_Z>
+		<Text_ID>TEXT_GROUND_DROID_CENTER</Text_ID>
+		<Land_Model_Name>SeB_Droid_Center.ALO</Land_Model_Name>
+		<Icon_Name>I_BUTTON_BUILD_DROID_CENTER.tga</Icon_Name>
+		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>			
+		<Terrain_Texture_Modifier_Join_Distance>500.0</Terrain_Texture_Modifier_Join_Distance>	
+		<Terrain_Texture_Modifier_Square>false</Terrain_Texture_Modifier_Square>			
+		
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Dummy>No</Is_Dummy>
+		
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Vehicle </UnitCollisionClass>
+		<Custom_Hard_XExtent> 20.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 20.0 </Custom_Hard_YExtent>
+		
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+		<Affiliation>Rebel</Affiliation>
+		<Size_Value>50</Size_Value>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack> UHD_Base_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> UHD_Structure_Destroyed </SFXEvent_Unit_Lost>	
+		<SFXEvent_Select> Structure_Droid_Center_Select_SFX </SFXEvent_Select>
+		
+		Special battlefield structure that heals surrounding units. Allows production of Medical Droids, Infantry bonuses, and other upgrades. 
+		
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+			
+		<Encyclopedia_Text> TEXT_TOOLTIP_CIS_DROID_CENTER_SKIRMISH </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		
+		
+		<Tactical_Health>500</Tactical_Health>
+		<Tech_Level>0</Tech_Level>
+		<Tactical_Build_Cost_Multiplayer> 600 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds> 25 </Tactical_Build_Time_Seconds>
+		
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>	
+	</GroundBuildable>
+	
+	<GroundBuildable Name="Skirmish_Ground_Cis_Droid_Center">
+		<Variant_Of_Existing_Type>Ground_Cis_Droid_Center</Variant_Of_Existing_Type>
+		<Encyclopedia_Text> TEXT_TOOLTIP_CIS_DROID_CENTER_SKIRMISH </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Tech_Level>0</Tech_Level>
+		<Icon_Name>I_BUTTON_BUILD_DROID_CENTER.tga</Icon_Name>
+		<Space_Layer> Land </Space_Layer>
+		<Custom_Hard_XExtent> 20.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 20.0 </Custom_Hard_YExtent>
+		<UnitCollisionClass> Vehicle </UnitCollisionClass>
+		<Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior> <!--Tactical Sell for testing purposes - z3r0x -->
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Rebel,
+				Repair_Droid_Squad_Skirmish,
+				Magnaguard_Squad_Skirmish,
+				Bx_Commando_Squad,
+				IG86_Squad,
+				CL_Cpu_L1_Upgrade,
+				CL_Cpu_L2_Upgrade,
+				CL_Cpu_L3_Upgrade,
+				CL_Servos_L1_Upgrade,
+				CL_Servos_L2_Upgrade,
+				CL_Servos_L3_Upgrade,
+				CL_Combat_Programming_L1_Upgrade,
+				CL_Combat_Programming_L2_Upgrade,
+				CL_Combat_Programming_L3_Upgrade,
+				CL_Enhanced_Photoreceptors_Upgrade_L1,
+				CL_Enhanced_Photoreceptors_Upgrade_L2
+			</Tactical_Buildable_Objects_Multiplayer>
+		<Tactical_Sell_Credits> 300 </Tactical_Sell_Credits>
+		<Victory_Relevant>No</Victory_Relevant>
+	</GroundBuildable>
+	
+	<GroundBuildable Name="UC_Ground_Cis_Engineering_Platform">
+		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
+		<Behavior>TACTICAL_UNDER_CONSTRUCTION, REVEAL, HIDE_WHEN_FOGGED</Behavior>
+		<LandBehavior>TERRAIN_TEXTURE_MODIFICATION, LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Obstacle_Proxy_Type> Cis_Battlefield_Build_Pad </Obstacle_Proxy_Type>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Tactical_Buildable_Constructed> Skirmish_Ground_Cis_Engineering_Platform </Tactical_Buildable_Constructed>
+		<Tactical_Build_Start_Lower_Z> 50.0 </Tactical_Build_Start_Lower_Z>
+		<Text_ID>TEXT_GROUND_ENGINEERING_PLATFORM</Text_ID>
+		<Land_Model_Name>Nb_engineering_platform.ALO</Land_Model_Name>
+		<Icon_Name>I_BUTTON_BUILD_ENGINEER.tga</Icon_Name>
+		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>			
+		<Terrain_Texture_Modifier_Join_Distance>500.0</Terrain_Texture_Modifier_Join_Distance>	
+		<Terrain_Texture_Modifier_Square>false</Terrain_Texture_Modifier_Square>			
+		
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.7</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Dummy>No</Is_Dummy>
+		
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Vehicle </UnitCollisionClass>
+		<Custom_Hard_XExtent> 20.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 20.0 </Custom_Hard_YExtent>
+		
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+		<Affiliation>Empire</Affiliation>
+		<Size_Value>50</Size_Value>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack> UHD_Base_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> UHD_Structure_Destroyed </SFXEvent_Unit_Lost>	
+		<SFXEvent_Select> Structure_Engineering_Platform_Select_SFX </SFXEvent_Select>
+		
+		
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+			
+		<Encyclopedia_Text> TEXT_TOOLTIP_CIS_ENGINEER_PLATFORM_SKIRMISH </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		
+		
+		<Tech_Level>0</Tech_Level>
+		<Tactical_Health>500</Tactical_Health>
+		<Tactical_Build_Cost_Multiplayer> 600 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds> 25 </Tactical_Build_Time_Seconds>
+		
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>	
+	</GroundBuildable>
+	
+	<GroundBuildable Name="Skirmish_Ground_Cis_Engineering_Platform">
+		<Variant_Of_Existing_Type>Ground_Cis_Engineering_Platform</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_ENGINEERING_PLATFORM</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_CIS_ENGINEER_PLATFORM_SKIRMISH </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+			<Icon_Name>I_BUTTON_BUILD_ENGINEER.tga</Icon_Name>
+		<Space_Layer> Land </Space_Layer>
+		<Custom_Hard_XExtent> 20.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 20.0 </Custom_Hard_YExtent>
+		<UnitCollisionClass> Vehicle </UnitCollisionClass>
+		<Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		<Tech_Level>0</Tech_Level>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Rebel,
+				BattleDroid_Engineer_Squad,
+				CL_Rangefinder_L1_Upgrade,
+				CL_Rangefinder_L2_Upgrade,
+				CL_Rangefinder_L3_Upgrade,
+				CL_Light_Vehicle_Sensors_L1_Upgrade,
+				CL_Light_Vehicle_Sensors_L2_Upgrade,
+				CL_Heavy_Vehicle_Sensors_L1_Upgrade,
+				CL_Heavy_Vehicle_Sensors_L2_Upgrade,
+				CL_Vehicle_Salvage_Upgrade,
+				CL_Guidance_L1_Upgrade,
+				CL_Guidance_L2_Upgrade,
+				CL_Guidance_L3_Upgrade,
+				CL_Blaster_L1_Upgrade,
+				CL_Blaster_L2_Upgrade,
+				CL_Tank_Armor_L1_Upgrade,
+				CL_Tank_Armor_L2_Upgrade,
+				CL_Tank_Armor_L3_Upgrade,
+				CL_Onboard_Repair_L1_Upgrade,
+				CL_Onboard_Repair_L2_Upgrade
+			</Tactical_Buildable_Objects_Multiplayer>
+		<Tactical_Sell_Credits> 300 </Tactical_Sell_Credits>
+		<Victory_Relevant>No</Victory_Relevant>
+	</GroundBuildable>
+
+<GroundBuildable Name="UC_Ground_Cis_Siege_Mortar">
+		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
+		<Behavior>TACTICAL_UNDER_CONSTRUCTION, REVEAL, HIDE_WHEN_FOGGED</Behavior>
+		<LandBehavior>TERRAIN_TEXTURE_MODIFICATION, LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Obstacle_Proxy_Type> Cis_Battlefield_Build_Pad </Obstacle_Proxy_Type>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Tactical_Buildable_Constructed> Skirmish_Ground_Cis_Siege_Mortar </Tactical_Buildable_Constructed>
+		<Tactical_Build_Start_Lower_Z> 50.0 </Tactical_Build_Start_Lower_Z>
+		<Text_ID>TEXT_GROUND_SIEGE_MORTAR</Text_ID>
+		<Land_Model_Name>Seb_siege_mortar.alo</Land_Model_Name>
+		<Icon_Name>I_BUTTON_BUILD_SIEGE_MORTAR.tga</Icon_Name>
+		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>			
+		<Terrain_Texture_Modifier_Join_Distance>500.0</Terrain_Texture_Modifier_Join_Distance>	
+		<Terrain_Texture_Modifier_Square>false</Terrain_Texture_Modifier_Square>			
+		
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Dummy>No</Is_Dummy>
+		
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Vehicle </UnitCollisionClass>
+		<Custom_Hard_XExtent> 20.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 20.0 </Custom_Hard_YExtent>
+		
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+		<Affiliation>Empire</Affiliation>
+		<Size_Value>50</Size_Value>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack> UHD_Base_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> UHD_Structure_Destroyed </SFXEvent_Unit_Lost>	
+		<SFXEvent_Select>Structure_Ion_Select_SFX</SFXEvent_Select>
+		
+		
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+			
+		<Encyclopedia_Text>TEXT_TOOLTIP_SIEGE_MORTAR</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_ARTILLERY</Encyclopedia_Unit_Class>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		
+		
+		<Tech_Level>0</Tech_Level>
+		<Tactical_Health>1000</Tactical_Health>
+		<Tactical_Build_Cost_Multiplayer> 10000 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds> 25 </Tactical_Build_Time_Seconds>
+		
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>	
+	</GroundBuildable>
+	
+	<GroundBuildable Name="Skirmish_Ground_Cis_Siege_Mortar">
+		<Variant_Of_Existing_Type>Siege_Mortar</Variant_Of_Existing_Type>
+		<Space_Layer> Land </Space_Layer>
+		<Projectile_Types>Proj_Ground_Siege_Mortar_Nuke, Proj_Ground_Siege_Mortar_Plasma</Projectile_Types>
+		<Land_FOW_Reveal_Range>400.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1600.0</Targeting_Max_Attack_Distance>
+		<Custom_Hard_XExtent> 20.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 20.0 </Custom_Hard_YExtent>
+		<UnitCollisionClass> Vehicle </UnitCollisionClass>
+		<Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, ABILITY_COUNTDOWN, LAND_OBSTACLE,TURRET,WEAPON,LOBBING_SUPERWEAPON,POWERED,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		<Tactical_Additional_Structure_Type>Power_Generator_R</Tactical_Additional_Structure_Type>
+		
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Tech_Level>0</Tech_Level>
+		<Victory_Relevant>No</Victory_Relevant>
+		
+		<!-- Unit abilities description -->
+				<Unit_Abilities_Data SubObjectList="Yes">
+		
+		<Unit_Ability>
+				<Type>SWAP_WEAPONS</Type>
+				<Alternate_Name_Text>TEXT_TOOLTIP_SIEGE_MORTAR_SWAP</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_SIEGE_SWAP_DESCRIPTION</Alternate_Description_Text>
+                <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+                <GUI_Activated_Ability_Name>Siege_Mortar_Swap_Weapon</GUI_Activated_Ability_Name> 
+					 <SFXEvent_GUI_Unit_Ability_Activated>GUI_Toggle_Rocket_Attack_On </SFXEvent_GUI_Unit_Ability_Activated> 
+			</Unit_Ability>	
+			
+				<Unit_Ability>
+				<Type>FIRE_LOBBING_SUPERWEAPON</Type>
+				<Alternate_Name_Text>TEXT_TOOLTIP_SIEGE_MORTAR_FIRE</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_SIEGE_MORTAR_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_BLAST.TGA</Alternate_Icon_Name>
+				
+				<!-- Oksana: Make sure it matches this tag: <Projectile_Fire_Recharge_Seconds> or it will ASSERT-->
+				<Recharge_Seconds>30</Recharge_Seconds>  
+				
+	         <Area_Effect_Decal_Distance> 200.0 </Area_Effect_Decal_Distance>
+				<!--AJA - This broke the rendering code when I tried to enable it. <Effective_Radius>1500.0</Effective_Radius>-->
+			</Unit_Ability>
+			
+				</Unit_Abilities_Data>
+		
+	</GroundBuildable>	
+	
+	<GroundBuildable Name="UC_Ground_Cis_Forward_Command_Post">
+		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
+		<Behavior>TACTICAL_UNDER_CONSTRUCTION, REVEAL, HIDE_WHEN_FOGGED</Behavior>
+		<LandBehavior>TERRAIN_TEXTURE_MODIFICATION, LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Obstacle_Proxy_Type> Cis_Battlefield_Build_Pad </Obstacle_Proxy_Type>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Tactical_Buildable_Constructed> Skirmish_Ground_Cis_Forward_Commandpost </Tactical_Buildable_Constructed>
+		<Tactical_Build_Start_Lower_Z> 50.0 </Tactical_Build_Start_Lower_Z>
+		<Text_ID>TEXT_GROUND_FORWARD_COMMANDPOST</Text_ID>
+		<Land_Model_Name>Nb_forward_commandpost.ALO</Land_Model_Name>
+		<Icon_Name>I_BUTTON_FORWARD_COMMAND.tga</Icon_Name>
+		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>			
+		<Terrain_Texture_Modifier_Join_Distance>500.0</Terrain_Texture_Modifier_Join_Distance>	
+		<Terrain_Texture_Modifier_Square>false</Terrain_Texture_Modifier_Square>			
+		
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.3</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Dummy>No</Is_Dummy>
+		
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Vehicle </UnitCollisionClass>
+		<Custom_Hard_XExtent> 20.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 20.0 </Custom_Hard_YExtent>
+		
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+		<Affiliation>Rebel</Affiliation>
+		<Size_Value>50</Size_Value>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack> UHD_Base_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> UHD_Structure_Destroyed </SFXEvent_Unit_Lost>	
+		<SFXEvent_Select> Structure_Forward_Commandpost_Select_SFX </SFXEvent_Select>
+		
+		
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+			
+		<Encyclopedia_Text> TEXT_TOOLTIP_CIS_FORWARD_COMMANDPOST_SKIRMISH </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		
+		
+		<Tech_Level>0</Tech_Level>
+		<Tactical_Health>500</Tactical_Health>
+		<Tactical_Build_Cost_Multiplayer> 600 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds> 25 </Tactical_Build_Time_Seconds>
+		
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>	
+	</GroundBuildable>
+
+<GroundBuildable Name="Skirmish_Ground_Cis_Forward_Commandpost">
+		<Variant_Of_Existing_Type>Ground_Cis_Forward_Commandpost</Variant_Of_Existing_Type>
+		<Encyclopedia_Text> TEXT_TOOLTIP_CIS_FORWARD_COMMANDPOST_SKIRMISH</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_FORWARD_COMMAND.tga</Icon_Name>
+		<Space_Layer> Land </Space_Layer>
+		<Custom_Hard_XExtent> 20.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 20.0 </Custom_Hard_YExtent>
+		<UnitCollisionClass> Vehicle </UnitCollisionClass>
+		<Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		<Tech_Level>0</Tech_Level>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Rebel,
+				Bossk_Team,
+				Darkside_Adept_Team_Skirmish,
+				CL_Hot_Lz_Upgrade,
+				CL_Encrypted_Comms_Upgrade,
+				CL_Sith_Holocron_Upgrade,
+				CL_Fire_Control_Upgrade
+				
+				
+			</Tactical_Buildable_Objects_Multiplayer>
+		<Tactical_Sell_Credits> 300 </Tactical_Sell_Credits>
+		<Victory_Relevant>No</Victory_Relevant>
+		
+		<Abilities SubObjectList="Yes">
+			
+			<Battlefield_Modifier_Ability Name="CL_Fire_Control_Bonus">
+				<Initially_Enabled>No</Initially_Enabled>
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>10.0</FOW_Reveal_Range_Multiplier>
+			</Battlefield_Modifier_Ability>
+		
+		</Abilities>
+	</GroundBuildable>
+
+</GroundBuildables>
+
+

@@ -1,0 +1,915 @@
+<?xml version="1.0"?>
+<Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Lightbeams00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_lightbeams.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Rockform_00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tat_RockForm00.ALO</Land_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Rockform_01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tat_RockForm01.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Rockform_02a">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_rock_arch00.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Rockform_02b">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_rock_arch00.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Rockform_02c">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_rock_arch00.alo</Land_Model_Name>
+		<Scale_Factor>2.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Felucia>
+  
+  <Prop_Felucia Name="Prop_Rockform_02d">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_rock_arch00.alo</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Felucia>
+
+ <Prop_Felucia Name="Prop_Rockform_02e">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_rock_arch00.alo</Land_Model_Name>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Rockform_02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_rock_arch00.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Rockform_02Tat">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Kessel_Rockform.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Rockform_03">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Volcano_Rock00.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Rockform_04">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Volcano_Rock01.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Felucia>
+
+
+	<Prop_Felucia Name="Prop_Bushes_Tan00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Bush_Tat00.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Bushes_Tan01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Bush_Tat01.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Bushes_Tan02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Bush_Tat02.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Bushes_Tan03">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Bush_Tat00.ALO</Land_Model_Name>
+		<Scale_Factor>4.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Bushes_Tan04">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Bush_Tat01.ALO</Land_Model_Name>
+		<Scale_Factor>4.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Bushes_Tan05">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Bush_Tat02.ALO</Land_Model_Name>
+		<Scale_Factor>4.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Bushes_Green00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Fern03.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Bushes_Green01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Fern03.ALO</Land_Model_Name>
+		<Scale_Factor>4.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Bushes_Green02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Fern02.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Bushes_Green03">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Fern02.ALO</Land_Model_Name>
+		<Scale_Factor>3.25</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Bushes_Green04">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Fern00.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Bushes_Green05">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Fern00.ALO</Land_Model_Name>
+		<Scale_Factor>4.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Bushes_Green06">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Fern01.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Bushes_Green07">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Fern01.ALO</Land_Model_Name>
+		<Scale_Factor>4.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Bushes_Green08">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LeafBush00.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Bushes_Green09">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LeafBush00.ALO</Land_Model_Name>
+		<Scale_Factor>4.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Bushes_Green10">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Bush_Temp00.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Bushes_Green11">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Bush_Temp00.ALO</Land_Model_Name>
+		<Scale_Factor>4.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Bushes_Green12">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Bush_Temp02.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Bushes_Green13">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Bush_Temp02.ALO</Land_Model_Name>
+		<Scale_Factor>3.25</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Ground_Cover00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_GrndCvr_E.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Ground_Cover01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_GrndCvr_F.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Ground_Cover02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_GrndCvr_G.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Ground_Cover03">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_GrndCvr_H.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Ground_Cover04">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_GrndCvr_I.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Ground_Cover06">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Temp_Cattail.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Ground_Cover07">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_GrndCvr_A.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Ground_Cover_Tall">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_GrndCvr_Felucia_tall.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Ground_Cover11">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_SwampGrass00.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Tree_Wierd00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Tat00.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Tree_Wierd01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Tat00.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Tree_Wierd02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Alien_02_HI.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Tree_Wierd03">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Alien_02_HI.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Tree_Wierd04">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Alien_00_HI.ALO</Land_Model_Name>
+		<Scale_Factor>0.6</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Tree_Wierd05">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Alien_00_HI.ALO</Land_Model_Name>
+		<Scale_Factor>1.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Trees_Wierd00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Tat00_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Trees_Wierd01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Tat00_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Trees_Wierd02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Alien_NS02_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Trees_Wierd03">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Alien_NS02_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Trees_Wierd04">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Alien_NS_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>0.6</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Trees_Wierd05">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Alien_NS_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Rocks_Cluster00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_EndrRockClstr00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Rocks_Cluster01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_EndrRockClstr01.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Rocks_Cluster02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_EndrRockClstr02.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Rocks_Cluster03">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_EndrRockClstr03.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Rocks_Cluster00a">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_EndrRockClstr00.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Rocks_Cluster01a">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_EndrRockClstr01.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Rocks_Cluster02a">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_EndrRockClstr02.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Rocks_Cluster03a">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_EndrRockClstr03.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Rocks_Cluster04">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LavaRockClstr00.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Rocks_Cluster05">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LavaRockClstr01.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Rocks_Cluster06">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LavaRockClstr02.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Rocks_Cluster07">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LavaRockClstr03.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Rocks_Cluster04a">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LavaRockClstr00.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Rocks_Cluster05a">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LavaRockClstr01.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Rocks_Cluster06a">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LavaRockClstr02.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Rocks_Cluster07a">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LavaRockClstr03.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Ruins00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_ruins00.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Ruins01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_ruins00.alo</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Ruins02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_ruins01.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Ruins03">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_ruins01.alo</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Ruins04">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_ruins02.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Ruins05">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_ruins02.alo</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Ruins06">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_ruins03.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Ruins07">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_ruins03.alo</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Felucia_Tulip00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_01.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Felucia_Tulip01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_01.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Felucia_Tulip02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_01.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Felucia_MushCap00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_03.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Felucia_MushCap01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_03.alo</Land_Model_Name>
+		<Scale_Factor>2.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Felucia_MushCap02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_03.alo</Land_Model_Name>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Felucia_MushCap03">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_03.alo</Land_Model_Name>
+		<Scale_Factor>4.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Felucia_OrbTree00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_02.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Felucia_OrbTree01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_02.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Felucia_OrbTree02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_02.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Felucia_Shroom00a">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_04.alo</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Felucia_Shroom00b">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_04.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Felucia_Shroom01a">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_05.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Felucia_Shroom01b">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_05.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Felucia_Shroom02a">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_06.alo</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Felucia_Shroom02b">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_06.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Felucia_TreePlant00a">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_felucia_plant_00_short.alo</Land_Model_Name>
+		<Scale_Factor>2.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Felucia_TreePlant01a">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_felucia_plant_00_medium.alo</Land_Model_Name>
+		<Scale_Factor>2.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Felucia_TreePlant02a">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_felucia_plant_00_tall.alo</Land_Model_Name>
+		<Scale_Factor>2.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Felucia_TreePlant00b">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_felucia_plant_00_short.alo</Land_Model_Name>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Felucia_TreePlant01b">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_felucia_plant_00_medium.alo</Land_Model_Name>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Felucia>
+
+	<Prop_Felucia Name="Prop_Felucia_TreePlant02b">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_felucia_plant_00_tall.alo</Land_Model_Name>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Felucia>
+
+
+</Prop_Felucia>

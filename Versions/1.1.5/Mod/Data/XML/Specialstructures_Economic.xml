@@ -1,0 +1,1529 @@
+<?xml version="1.0"?>
+<SpecialStructures_Economic>
+
+	<!--             NEW STRUCTURES FOR RAW/IA2 BELOW                           -->
+	<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+	<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+	<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+	<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+
+
+
+	<SpecialStructure Name="Republic_Ground_Farm">
+		<Text_ID>TEXT_GROUND_FARM</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_FARM  </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+
+
+		<Select_Box_Scale>200</Select_Box_Scale>
+		<GUI_Row> 0 </GUI_Row>
+		<Land_Model_Name> NB_Farm.ALO </Land_Model_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+
+		<Can_Contain_Heroes_During_Ground_Battle> Yes </Can_Contain_Heroes_During_Ground_Battle>
+		<Scale_Factor>0.75</Scale_Factor>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Affiliation>Empire</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+		<!--<Build_Time_Seconds>30</Build_Time_Seconds>-->
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+		<Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
+		<Size_Value>50</Size_Value>
+		<Base_Position>Out_Base</Base_Position>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>E_Ground_Barracks</Required_Special_Structures>
+		<Required_Planets>Dantooine, Corellia, Saleucami, Abregado_Rae, Carida</Required_Planets>
+		<Tactical_Health>700</Tactical_Health>
+		<Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		<Obstacle_Proxy_Type> Republic_Ground_Farming_Build_Pad </Obstacle_Proxy_Type>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Icon_Name>i_button_farm.tga</Icon_Name>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.125  0.125</Radar_Icon_Size>
+		<Radar_Show_Facing>No</Radar_Show_Facing>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Sabotage_Cost_Credits>2000</Sabotage_Cost_Credits>
+
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+		<Obstacle_Width>160.0</Obstacle_Width>
+		<Obstacle_Height>160.0</Obstacle_Height>
+		<Obstacle_X_Offset>-60.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-60.0</Obstacle_Y_Offset>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Select>Structure_Mining_Select_SFX</SFXEvent_Select>
+
+
+
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+
+
+
+		<CategoryMask> Structure </CategoryMask>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="RL_Farm_Health_Boost_Bonus">
+				<Initially_Enabled> No </Initially_Enabled>
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>
+					Generic_Field_Commander_P2_Republic, 
+					Squad_Generic_Field_Commander_Republic_P2, 
+					Squad_Generic_Field_Commander_Variant_Republic_P2, 
+					Generic_Field_Commander_P1_Republic, 
+					Squad_Generic_Field_Commander_Republic_P1, 
+					Clone_Trooper_P2, 
+					Squad_Clonetrooper_P2, 
+					Squad_RE_P2_Field_Commander_Guard, 
+					Clone_Trooper_P1, 
+					Squad_Clonetrooper_P1, 
+					Squad_Sgt_Clonetrooper_P1, 
+					Squad_Lt_Clonetrooper_P1, 
+					Squad_Cpt_Clonetrooper_P1, 
+					Squad_RE_P1_Field_Commander_Guard, 
+					Clone_Trooper_501st, 
+					Squad_Clonetrooper_501st, 
+					Clone_Trooper_327th, 
+					Squad_Clonetrooper_327th_Star_Corps, 
+					Squad_Clonetrooper_Variant_327th_Star_Corps, 
+					Squad_Clonetrooper_Variant_2_327th_Star_Corps, 
+					Clone_Trooper_212th, Squad_Clonetrooper_212th, 
+					Squad_Clonetrooper_Airborne_212th, 
+					Clone_Trooper_41st, 
+					Squad_Clonetrooper_41st, 
+					Clone_Trooper_7th, 
+					Squad_Clonetrooper_7th
+				</Applicable_Unit_Types>
+				<Health_Bonus_Percentage>0.30</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>
+			<Planet_Income_Bonus_Ability Name="Rep_Farming_Income_Bonus">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_FARMING_FACILITIES</Specific_Mod_Source_Text>
+				<!-- 3% bonus to base planetary income -->
+				<Percentage_Income_Modifier>4</Percentage_Income_Modifier>
+				<!-- plus an absolute 0 credits to planetary income -->
+				<Absolute_Income_Modifier>30</Absolute_Income_Modifier>
+				<!-- net effect of +( (base income * 0%) + 20) credits -->
+				<Additional_Multiplier_On_Mining_Colonies>1.0</Additional_Multiplier_On_Mining_Colonies>
+				<!-- net result above multiplied by 2.0 if the affected planet is a mining colony -->
+			</Planet_Income_Bonus_Ability>
+
+		</Abilities>
+
+		<Score_Cost_Credits> 5000 </Score_Cost_Credits>
+
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+	</SpecialStructure>
+
+
+
+
+	<SpecialStructure Name="Confederacy_Ground_Farm">
+		<Text_ID>TEXT_GROUND_FARM</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_FARM  </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+
+
+		<Select_Box_Scale>200</Select_Box_Scale>
+		<GUI_Row> 0 </GUI_Row>
+		<Land_Model_Name> NB_Farm.ALO </Land_Model_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+
+		<Can_Contain_Heroes_During_Ground_Battle> Yes </Can_Contain_Heroes_During_Ground_Battle>
+		<Scale_Factor>0.75</Scale_Factor>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Affiliation>Rebel</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+		<!--<Build_Time_Seconds>30</Build_Time_Seconds>-->
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+		<Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
+		<Size_Value>50</Size_Value>
+		<Base_Position>Out_Base</Base_Position>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>R_Ground_Barracks</Required_Special_Structures>
+		<Required_Planets>Dantooine, Corellia, Saleucami, Abregado_Rae, Carida</Required_Planets>
+		<Tactical_Health>700</Tactical_Health>
+		<Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		<Obstacle_Proxy_Type> Confederacy_Ground_Farming_Build_Pad </Obstacle_Proxy_Type>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Icon_Name>i_button_farm.tga</Icon_Name>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.125  0.125</Radar_Icon_Size>
+		<Radar_Show_Facing>No</Radar_Show_Facing>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Sabotage_Cost_Credits>2000</Sabotage_Cost_Credits>
+
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+		<Obstacle_Width>160.0</Obstacle_Width>
+		<Obstacle_Height>160.0</Obstacle_Height>
+		<Obstacle_X_Offset>-60.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-60.0</Obstacle_Y_Offset>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Select>Structure_Mining_Select_SFX</SFXEvent_Select>
+
+
+
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+
+
+
+		<CategoryMask> Structure </CategoryMask>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="CL_Farm_Health_Boost_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>Darkside_Adepts, Asajj_Ventress, Aurra_Sing, Count_Dooku, Durge, General_Grievous, Jango_Fett</Applicable_Unit_Types>
+				<Health_Bonus_Percentage>0.30</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>
+			<Planet_Income_Bonus_Ability Name="Cis_Farming_Income_Bonus">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_FARMING_FACILITIES</Specific_Mod_Source_Text>
+				<!-- 3% bonus to base planetary income -->
+				<Percentage_Income_Modifier>2</Percentage_Income_Modifier>
+				<!-- plus an absolute 0 credits to planetary income -->
+				<Absolute_Income_Modifier>20</Absolute_Income_Modifier>
+				<!-- net effect of +( (base income * 0%) + 20) credits -->
+				<Additional_Multiplier_On_Mining_Colonies>1.0</Additional_Multiplier_On_Mining_Colonies>
+				<!-- net result above multiplied by 2.0 if the affected planet is a mining colony -->
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+
+		<Score_Cost_Credits> 5000 </Score_Cost_Credits>
+
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Empire_Ground_Mining_Facility">
+		<Select_Box_Scale>200</Select_Box_Scale>
+		<Text_ID>TEXT_GROUND_MINING_FACILITY</Text_ID>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<GUI_Row> 0 </GUI_Row>
+		<Land_Model_Name> NB_CMC22Mining.ALO </Land_Model_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+
+		<Can_Contain_Heroes_During_Ground_Battle> Yes </Can_Contain_Heroes_During_Ground_Battle>
+		<Scale_Factor>0.75</Scale_Factor>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Affiliation>Empire</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+		<!--<Build_Time_Seconds>30</Build_Time_Seconds>-->
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Build_Max_Instances_Per_Planet> -1 </Build_Max_Instances_Per_Planet>
+		<Size_Value>50</Size_Value>
+		<Base_Position>In_Base</Base_Position>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>e_ground_barracks</Required_Special_Structures>
+		<Required_Planets>Abregado_Rae, AetenII, AlzocIII, Atzerri, Geonosis, Ilum, Mustafar, Mygeeto, Rattatak, Rothana, Ryloth </Required_Planets>
+		<Tactical_Health>700</Tactical_Health>
+		<Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		<Obstacle_Proxy_Type> Empire_Ground_Mining_Facility_Build_Pad </Obstacle_Proxy_Type>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Icon_Name>i_button_mining_facility.tga</Icon_Name>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.125  0.125</Radar_Icon_Size>
+		<Radar_Show_Facing>No</Radar_Show_Facing>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Sabotage_Cost_Credits>2000</Sabotage_Cost_Credits>
+
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+		<Obstacle_Width>120.0</Obstacle_Width>
+		<Obstacle_Height>120.0</Obstacle_Height>
+		<Obstacle_X_Offset>-60.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-60.0</Obstacle_Y_Offset>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> RHD_Mining_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> RHD_Mining_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select>Structure_Mining_Select_SFX</SFXEvent_Select>
+
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Empire,
+			RL_Increased_Production_L1_Upgrade,
+			RL_Increased_Production_L2_Upgrade,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<CategoryMask> Structure </CategoryMask>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Empire_Mining_Income_Bonus">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_MINING_FACILITIES</Specific_Mod_Source_Text>
+				<!-- 3% bonus to base planetary income -->
+				<Percentage_Income_Modifier>7</Percentage_Income_Modifier>
+				<!-- plus an absolute 0 credits to planetary income -->
+				<Absolute_Income_Modifier>30</Absolute_Income_Modifier>
+				<!-- net effect of +( (base income * 0%) + 20) credits -->
+				<Additional_Multiplier_On_Mining_Colonies>2.0</Additional_Multiplier_On_Mining_Colonies>
+				<!-- net result above multiplied by 2.0 if the affected planet is a mining colony -->
+			</Planet_Income_Bonus_Ability>
+			<Income_Stream_Ability Name="Empire_Mining_Income_Stream">
+				<!-- Income streams only exist in tactical modes that are not spawned from galatic, so this will not affect campaign play. -->
+				<Base_Income_Value>500</Base_Income_Value>
+				<Base_Interval_In_Secs>5</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Force_Healing_Ability Name="E_Mining_Facility_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.003</Heal_Percent>  <!-- Change from .025 to .003 for MP-->
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs> <!-- change from 5.0 to 2.0 for MP-->
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+		<Score_Cost_Credits> 5000 </Score_Cost_Credits>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_MINING_00  </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_MINING_00, MP_TEXT_ENCYCLOPEDIA_MINING_01  </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+	</SpecialStructure>
+
+
+	<SpecialStructure Name="Rebel_Ground_Mining_Facility">
+		<Select_Box_Scale>200</Select_Box_Scale>
+		<Text_ID>TEXT_GROUND_MINING_FACILITY</Text_ID>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<GUI_Row> 0 </GUI_Row>
+		<Land_Model_Name> NB_CMC22Mining.ALO </Land_Model_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Scale_Factor>0.75</Scale_Factor>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Affiliation>Rebel</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Build_Max_Instances_Per_Planet> -1 </Build_Max_Instances_Per_Planet>
+		<Size_Value>50</Size_Value>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Slice_Cost_Credits>250</Slice_Cost_Credits>
+		<Base_Position>In_Base</Base_Position>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>r_ground_barracks</Required_Special_Structures>
+		<Required_Planets>Abregado_Rae, AetenII, AlzocIII, Atzerri, Geonosis, Ilum, Mustafar, Mygeeto, Rattatak, Rothana, Ryloth </Required_Planets>
+		<Tactical_Health>600</Tactical_Health>
+		<Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,EARTHQUAKE_TARGET,TERRAIN_TEXTURE_MODIFICATION,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		<Obstacle_Proxy_Type> Rebel_Ground_Mining_Facility_Build_Pad </Obstacle_Proxy_Type>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Can_Contain_Heroes_During_Ground_Battle> Yes </Can_Contain_Heroes_During_Ground_Battle>
+
+		<Sabotage_Cost_Credits>2000</Sabotage_Cost_Credits>
+
+		<Icon_Name>i_button_mining_facility.tga</Icon_Name>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Show_Facing>No</Radar_Show_Facing>
+		<Radar_Icon_Size>0.125  0.125</Radar_Icon_Size>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Rebel,
+			CL_Increased_Production_L1_Upgrade,
+			CL_Increased_Production_L2_Upgrade
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> UHD_Mining_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> UHD_Mining_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select>Structure_Mining_Select_SFX</SFXEvent_Select>
+
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+		<Obstacle_Width>120.0</Obstacle_Width>
+		<Obstacle_Height>120.0</Obstacle_Height>
+		<Obstacle_X_Offset>-60.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-60.0</Obstacle_Y_Offset>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+
+		<CategoryMask> Structure </CategoryMask>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Rebel_Mining_Income_Bonus">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_MINING_FACILITIES</Specific_Mod_Source_Text>
+				<!-- 3% bonus to base planetary income -->
+				<Percentage_Income_Modifier>7</Percentage_Income_Modifier>
+				<!-- plus an absolute 0 credits to planetary income -->
+				<Absolute_Income_Modifier>30</Absolute_Income_Modifier>
+				<!-- net effect of +( (base income * 0%) + 20) credits -->
+				<Additional_Multiplier_On_Mining_Colonies>2.0</Additional_Multiplier_On_Mining_Colonies>
+				<!-- net result above multiplied by 2.0 if the affected planet is a mining colony -->
+			</Planet_Income_Bonus_Ability>
+			<Income_Stream_Ability Name="Rebel_Mining_Income_Stream">
+				<!-- Income streams only exist in tactical modes that are not spawned from galatic, so this will not affect campaign play. -->
+				<Base_Income_Value>500</Base_Income_Value>
+				<Base_Interval_In_Secs>5</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Force_Healing_Ability Name="R_Mining_Facility_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.003</Heal_Percent> <!-- Change from .025 to .003 for MP-->
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs> <!-- change from 5.0 to 2.0 for MP-->
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_MINING_00  </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_MINING_00, MP_TEXT_ENCYCLOPEDIA_MINING_01  </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 5000 </Score_Cost_Credits>
+	</SpecialStructure>
+
+
+	<SpecialStructure Name="Republic_Ground_Refining_Facility">
+		<Select_Box_Scale>200</Select_Box_Scale>
+		<Text_ID>TEXT_GROUND_REFINING_FACILITY</Text_ID>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<GUI_Row> 0 </GUI_Row>
+		<Land_Model_Name> NB_Refinery.ALO </Land_Model_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+
+		<Can_Contain_Heroes_During_Ground_Battle> Yes </Can_Contain_Heroes_During_Ground_Battle>
+		<Scale_Factor>0.75</Scale_Factor>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Affiliation>Empire</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+		<!--<Build_Time_Seconds>30</Build_Time_Seconds>-->
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+		<Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
+		<Size_Value>50</Size_Value>
+		<Base_Position>Out_Base</Base_Position>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>e_ground_barracks</Required_Special_Structures>
+		<Required_Planets>Bespin, Bonadan, Endor, Eriadu, Kashyyyk, Sluis_Van, Sullust, Rendili, Taris, Utapau</Required_Planets>
+		<Tactical_Health>700</Tactical_Health>
+		<Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		<Obstacle_Proxy_Type> Empire_Ground_Mining_Facility_Build_Pad </Obstacle_Proxy_Type>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Icon_Name>i_button_refinery.tga</Icon_Name>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.125  0.125</Radar_Icon_Size>
+		<Radar_Show_Facing>No</Radar_Show_Facing>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Sabotage_Cost_Credits>2000</Sabotage_Cost_Credits>
+
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+		<Obstacle_Width>120.0</Obstacle_Width>
+		<Obstacle_Height>120.0</Obstacle_Height>
+		<Obstacle_X_Offset>-60.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-60.0</Obstacle_Y_Offset>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Select>Structure_Mining_Select_SFX</SFXEvent_Select>
+
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+
+
+
+		<CategoryMask> Structure </CategoryMask>
+		<Abilities SubObjectList="Yes">
+
+			<Force_Healing_Ability Name="E_Refining_Facility_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.003</Heal_Percent>  <!-- Change from .025 to .003 for MP-->
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs> <!-- change from 5.0 to 2.0 for MP-->
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+
+			<Combat_Bonus_Ability Name="RL_Blaster_Gas_Refining_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>Generic_Field_Commander_P2_Republic, Squad_Generic_Field_Commander_Republic_P2, Squad_Generic_Field_Commander_Variant_Republic_P2, Generic_Field_Commander_P1_Republic, Squad_Generic_Field_Commander_Republic_P1, Clone_Trooper_P2, Squad_Clonetrooper_P2, Squad_RE_P2_Field_Commander_Guard, Clone_Trooper_P1, Squad_Clonetrooper_P1, Squad_Sgt_Clonetrooper_P1, Squad_Lt_Clonetrooper_P1, Squad_Cpt_Clonetrooper_P1, Squad_RE_P1_Field_Commander_Guard, Clone_Trooper_501st, Squad_Clonetrooper_501st, Clone_Trooper_327th, Squad_Clonetrooper_327th_Star_Corps, Squad_Clonetrooper_Variant_327th_Star_Corps, Squad_Clonetrooper_Variant_2_327th_Star_Corps, Clone_Trooper_212th, Squad_Clonetrooper_212th, Squad_Clonetrooper_Airborne_212th, Clone_Trooper_41st, Squad_Clonetrooper_41st, Clone_Trooper_7th, Squad_Clonetrooper_7th</Applicable_Unit_Types>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.25</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Planet_Income_Bonus_Ability Name="Republic_Refining_Income_Bonus">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_REFINING_FACILITIES</Specific_Mod_Source_Text>
+				<!-- 3% bonus to base planetary income -->
+				<Percentage_Income_Modifier>7</Percentage_Income_Modifier>
+				<!-- plus an absolute 0 credits to planetary income -->
+				<Absolute_Income_Modifier>30</Absolute_Income_Modifier>
+				<!-- net effect of +( (base income * 0%) + 20) credits -->
+				<Additional_Multiplier_On_Mining_Colonies>2.0</Additional_Multiplier_On_Mining_Colonies>
+				<!-- net result above multiplied by 2.0 if the affected planet is a mining colony -->
+			</Planet_Income_Bonus_Ability>
+
+		</Abilities>
+
+		<Score_Cost_Credits> 5000 </Score_Cost_Credits>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_REFINING_00  </Encyclopedia_Text>
+
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+	</SpecialStructure>
+
+
+
+
+	<SpecialStructure Name="Cis_Ground_Refining_Facility">
+		<Select_Box_Scale>200</Select_Box_Scale>
+		<Text_ID>TEXT_GROUND_MINING_FACILITY</Text_ID>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<GUI_Row> 0 </GUI_Row>
+		<Land_Model_Name> NB_Refinery.ALO </Land_Model_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+
+		<Can_Contain_Heroes_During_Ground_Battle> Yes </Can_Contain_Heroes_During_Ground_Battle>
+		<Scale_Factor>0.75</Scale_Factor>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Affiliation>Rebel</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+		<!--<Build_Time_Seconds>30</Build_Time_Seconds>-->
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+		<Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
+		<Size_Value>50</Size_Value>
+		<Base_Position>Out_Base</Base_Position>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>r_ground_barracks</Required_Special_Structures>
+		<Required_Planets>Bespin, Bonadan, Endor, Eriadu, Kashyyyk, Sluis_Van, Sullust, Rendili, Taris, Utapau</Required_Planets>
+		<Tactical_Health>700</Tactical_Health>
+		<Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		<Obstacle_Proxy_Type> Empire_Ground_Mining_Facility_Build_Pad </Obstacle_Proxy_Type>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Icon_Name>i_button_refinery.tga</Icon_Name>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.125  0.125</Radar_Icon_Size>
+		<Radar_Show_Facing>No</Radar_Show_Facing>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Sabotage_Cost_Credits>2000</Sabotage_Cost_Credits>
+
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+		<Obstacle_Width>120.0</Obstacle_Width>
+		<Obstacle_Height>120.0</Obstacle_Height>
+		<Obstacle_X_Offset>-60.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-60.0</Obstacle_Y_Offset>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Select>Structure_Mining_Select_SFX</SFXEvent_Select>
+
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+
+
+
+		<CategoryMask> Structure </CategoryMask>
+		<Abilities SubObjectList="Yes">
+
+			<Force_Healing_Ability Name="Cis_Refining_Facility_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.003</Heal_Percent>  <!-- Change from .025 to .003 for MP-->
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs> <!-- change from 5.0 to 2.0 for MP-->
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="CL_Blaster_Gas_Refining_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>Battledroids, Squad_Battledroid, C_Field_Commander_Guard, Squad_C_Field_Commander_Guard, Destroyer_Droid, Generic_Field_Commander_Cis, Squad_Generic_Field_Commander_Cis, Super_Battledroids</Applicable_Unit_Types>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.25</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Planet_Income_Bonus_Ability Name="Cis_Refining_Income_Bonus">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_REFINING_FACILITIES</Specific_Mod_Source_Text>
+				<!-- 3% bonus to base planetary income -->
+				<Percentage_Income_Modifier>5</Percentage_Income_Modifier>
+				<!-- plus an absolute 0 credits to planetary income -->
+				<Absolute_Income_Modifier>20</Absolute_Income_Modifier>
+				<!-- net effect of +( (base income * 0%) + 20) credits -->
+				<Additional_Multiplier_On_Mining_Colonies>2.0</Additional_Multiplier_On_Mining_Colonies>
+				<!-- net result above multiplied by 2.0 if the affected planet is a mining colony -->
+			</Planet_Income_Bonus_Ability>
+
+		</Abilities>
+
+
+
+		<Score_Cost_Credits> 5000 </Score_Cost_Credits>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_REFINING_00  </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_MINING_00, MP_TEXT_ENCYCLOPEDIA_MINING_01  </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+	</SpecialStructure>
+
+
+
+
+	<SpecialStructure Name="Ground_Cantina_E">
+		<Select_Box_Scale>250</Select_Box_Scale>
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+		<Text_ID>TEXT_GROUND_CANTINA</Text_ID>
+		<Land_Model_Name>W_CANTINATAT.ALO</Land_Model_Name>
+		<GUI_Row> 0 </GUI_Row>
+		<Affiliation>Empire</Affiliation>
+
+		<Can_Contain_Heroes_During_Ground_Battle> Yes </Can_Contain_Heroes_During_Ground_Battle>
+		<Scale_Factor>0.75</Scale_Factor>
+		<Build_Requires_Initial_Placement>true</Build_Requires_Initial_Placement>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>600</Build_Cost_Credits>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+		<Size_Value>50</Size_Value>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Base_Position>Out_Base</Base_Position>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Tactical_Health>600</Tactical_Health>
+		<Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, DUMMY_LAND_BASE_LEVEL_COMPONENT, UNIT_AI,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Icon_Name>i_button_cantina.tga</Icon_Name>
+		<GUI_Model_Name>W_CANTINATAT.ALO</GUI_Model_Name>
+		<GUI_Distance>850</GUI_Distance>
+		<GUI_Offset>0 0 20</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+
+		<Sabotage_Cost_Credits>1200</Sabotage_Cost_Credits>
+
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> RHD_Cantina_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> RHD_Cantina_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select> Structure_Cantina_Select_SFX </SFXEvent_Select>
+
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_CANTINA_00 TEXT_TOOLTIP_REQUIRED_PLANETS_CANTINA </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_CANTINA_00  </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 6000 </Score_Cost_Credits>
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="E_Cantina_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.025</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Ground_Cantina_R">
+		<Select_Box_Scale>250</Select_Box_Scale>
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+		<Text_ID>TEXT_GROUND_CANTINA</Text_ID>
+		<Land_Model_Name>W_CANTINATAT.ALO</Land_Model_Name>
+		<GUI_Row> 0 </GUI_Row>
+		<Affiliation>Rebel</Affiliation>
+
+		<Can_Contain_Heroes_During_Ground_Battle> Yes </Can_Contain_Heroes_During_Ground_Battle>
+		<Scale_Factor>0.75</Scale_Factor>
+		<Build_Requires_Initial_Placement>true</Build_Requires_Initial_Placement>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>600</Build_Cost_Credits>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+		<Size_Value>50</Size_Value>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Base_Position>Out_Base</Base_Position>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Tactical_Health>600</Tactical_Health>
+		<Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, DUMMY_LAND_BASE_LEVEL_COMPONENT, UNIT_AI,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Icon_Name>i_button_cantina.tga</Icon_Name>
+		<GUI_Model_Name>W_CANTINATAT.ALO</GUI_Model_Name>
+		<GUI_Distance>850</GUI_Distance>
+		<GUI_Offset>0 0 20</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+
+		<Sabotage_Cost_Credits>1200</Sabotage_Cost_Credits>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> UHD_Cantina_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> UHD_Cantina_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select> Structure_Cantina_Select_SFX </SFXEvent_Select>
+
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_CANTINA_00 TEXT_TOOLTIP_REQUIRED_PLANETS_CANTINA </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_CANTINA_00  </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 6000 </Score_Cost_Credits>
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="R_Cantina_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.025</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+
+	</SpecialStructure>
+
+
+	<SpecialStructure Name="Ground_Hutt_Palace_E">
+		<GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
+		<Text_ID>TEXT_GROUND_HUTT_PALACE</Text_ID>
+		<Land_Model_Name>W_HUTTPALACE.ALO</Land_Model_Name>
+		<Icon_Name>i_button_jabba_palace.tga</Icon_Name>
+		<GUI_Row> 0 </GUI_Row>
+		<Affiliation>Empire</Affiliation>
+		<Scale_Factor>0.75</Scale_Factor>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Build_Cost_Credits>600</Build_Cost_Credits>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+		<Size_Value>50</Size_Value>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Build_Requires_Initial_Placement>true</Build_Requires_Initial_Placement>
+		<Base_Position>Out_Base</Base_Position>
+		<Can_Contain_Heroes_During_Ground_Battle> Yes </Can_Contain_Heroes_During_Ground_Battle>
+
+		<Tactical_Health>600</Tactical_Health>
+		<Armor_Type> Armor_Structure </Armor_Type>
+
+		<Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<Sabotage_Cost_Credits>1200</Sabotage_Cost_Credits>
+
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> RHD_Hutt_Palace_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> RHD_Hutt_Palace_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select> Structure_Hutt_Palace_Select_SFX </SFXEvent_Select>
+
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_HUTT_PALACE_00 TEXT_TOOLTIP_REQUIRED_PLANETS_HUTT_PALACE  </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 6000 </Score_Cost_Credits>
+
+		<Abilities SubObjectList="Yes">
+			<System_Spy_Ability Name="Hutt_Palace_System_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Minor_Stealth_Heroes>Yes</See_Minor_Stealth_Heroes>
+			</System_Spy_Ability>
+			<Force_Healing_Ability Name="Ground_Hutt_Palace_E_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.025</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+	<SpecialStructure Name="Ground_Hutt_Palace_R">
+		<GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
+		<Text_ID>TEXT_GROUND_HUTT_PALACE</Text_ID>
+		<Land_Model_Name>W_HUTTPALACE.ALO</Land_Model_Name>
+		<Icon_Name>i_button_jabba_palace.tga</Icon_Name>
+		<GUI_Row> 0 </GUI_Row>
+		<Affiliation>Rebel</Affiliation>
+		<Scale_Factor>0.75</Scale_Factor>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Build_Cost_Credits>600</Build_Cost_Credits>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+		<Size_Value>50</Size_Value>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Build_Requires_Initial_Placement>true</Build_Requires_Initial_Placement>
+		<Base_Position>Out_Base</Base_Position>
+
+		<Tactical_Health>600</Tactical_Health>
+		<Armor_Type> Armor_Structure </Armor_Type>
+
+		<Sabotage_Cost_Credits>1200</Sabotage_Cost_Credits>
+
+		<Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack> UHD_Hutt_Palace_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> UHD_Hutt_Palace_Destroyed </SFXEvent_Unit_Lost>	
+		<SFXEvent_Select> Structure_Hutt_Palace_Select_SFX </SFXEvent_Select>
+
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_HUTT_PALACE_00 TEXT_TOOLTIP_REQUIRED_PLANETS_HUTT_PALACE </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 6000 </Score_Cost_Credits>
+
+		<Abilities SubObjectList="Yes">
+			<System_Spy_Ability Name="Hutt_Palace_System_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Minor_Stealth_Heroes>Yes</See_Minor_Stealth_Heroes>
+			</System_Spy_Ability>
+			<Force_Healing_Ability Name="Ground_Hutt_Palace_R_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.025</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+	</SpecialStructure>	
+
+
+
+
+	<SpecialStructure Name="E_Ground_Research_Facility">
+		<GUI_Bounds_Scale>0.35</GUI_Bounds_Scale>
+		<Text_ID>TEXT_GROUND_RESEARCH_FACILITY</Text_ID>
+		<GUI_Row> 0 </GUI_Row>
+		<Land_Model_Name>RB_ResearchFacility.alo</Land_Model_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<SFXEvent_Ambient_Loop>Structure_Barracks_Loop</SFXEvent_Ambient_Loop>
+		<Behavior>DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,SELECTABLE, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,TERRAIN_TEXTURE_MODIFICATION,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		<Obstacle_Proxy_Type> E_Ground_Research_Facility_Build_Pad </Obstacle_Proxy_Type>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Can_Contain_Heroes_During_Ground_Battle> Yes </Can_Contain_Heroes_During_Ground_Battle>
+
+		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>			
+		<Terrain_Texture_Modifier_Join_Distance>1.0</Terrain_Texture_Modifier_Join_Distance>	
+		<Terrain_Texture_Modifier_Square>true</Terrain_Texture_Modifier_Square>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		<Is_Dummy>No</Is_Dummy>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+
+		<Destruction_Survivors> 
+			Republic_Clonetrooper_P1_Squad, 1.0
+
+		</Destruction_Survivors>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Affiliation>Empire</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>1800</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+		<Size_Value>50</Size_Value>
+		<Base_Position>In_Base</Base_Position>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>E_Ground_Barracks</Required_Special_Structures>
+		<Required_Planets>Alderaan, Anaxes, Bothawui, Cato_Neimoidia, Corulag, Coruscant, Ithor, Muunilinst, Naboo  </Required_Planets>
+		<Tactical_Health>750</Tactical_Health>
+		<Icon_Name>i_button_rb_researchfacility.tga</Icon_Name>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<Sabotage_Cost_Credits>5000</Sabotage_Cost_Credits>
+
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> RHD_Research_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> RHD_Research_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select>Structure_Research_Select_SFX</SFXEvent_Select>
+
+
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_RESEARCH_00  </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_RESEARCH_00, MP_TEXT_ENCYCLOPEDIA_RESEARCH_01 </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 12000 </Score_Cost_Credits>
+		<Property_Flags>InBase</Property_Flags>
+
+		<Tactical_Buildable_Objects_Campaign> 
+			Empire,
+			RL_Reinforced_Structures_Upgrade, 
+			RL_Enhanced_Turret_Firepower_L1_Upgrade,
+			RL_Enhanced_Turret_Firepower_L2_Upgrade,
+			RL_Weatherproof_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Empire,
+			RL_Reinforced_Structures_Upgrade, 
+			RL_Enhanced_Turret_Firepower_L1_Upgrade,
+			RL_Enhanced_Turret_Firepower_L2_Upgrade,
+			RL_Weatherproof_Upgrade
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="E_Research_Facility_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.025</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+			<Redirect_Blaster_Ability Name="E_Magnetically_Sealed_Structure">
+				<Initially_Enabled> No </Initially_Enabled>
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.30</Block_Chance>
+				<Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 30.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<!-- We can block/redirect shots from the following units types: -->
+				<Applicable_Unit_Categories>Hero | Infantry | Vehicle | Structure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="R_Ground_Research_Facility">
+		<GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
+		<!-- Added by CR -->
+		<Text_ID>TEXT_GROUND_RESEARCH_FACILITY_REBEL</Text_ID>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<GUI_Row> 0 </GUI_Row>
+		<Land_Model_Name>SeB_ResearchCenter.alo</Land_Model_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<SFXEvent_Ambient_Loop>Structure_Barracks_Loop</SFXEvent_Ambient_Loop>
+		<Behavior>DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,SELECTABLE, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,TERRAIN_TEXTURE_MODIFICATION,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		<Obstacle_Proxy_Type> R_Ground_Research_Facility_Build_Pad </Obstacle_Proxy_Type>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Can_Contain_Heroes_During_Ground_Battle> Yes </Can_Contain_Heroes_During_Ground_Battle>
+
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>			
+		<Terrain_Texture_Modifier_Join_Distance>1.0</Terrain_Texture_Modifier_Join_Distance>	
+		<Terrain_Texture_Modifier_Square>true</Terrain_Texture_Modifier_Square>			
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Select_Box_Scale>140</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		<Is_Dummy>No</Is_Dummy>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+
+		<Sabotage_Cost_Credits>5000</Sabotage_Cost_Credits>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+
+		<Destruction_Survivors> 
+			BattleDroid_Squad, 1.0
+		</Destruction_Survivors>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Affiliation>Rebel</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>1200</Build_Cost_Credits>
+		<Build_Time_Seconds>5</Build_Time_Seconds> <!--60-->
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+
+
+		<Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+		<Size_Value>50</Size_Value>
+		<Base_Position>In_Base</Base_Position>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>R_Ground_Barracks</Required_Special_Structures>
+		<Required_Planets>Alderaan, Anaxes, Bothawui, Cato_Neimoidia, Corulag, Coruscant, Ithor, Muunilinst, Naboo  </Required_Planets>
+		<Tactical_Health>750</Tactical_Health>
+		<Icon_Name>I_BUTTON_CIS_RESEARCHCENTER.TGA</Icon_Name>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> UHD_Research_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> UHD_Research_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select>Structure_Research_Select_SFX</SFXEvent_Select>
+
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_RESEARCH_01  </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_RESEARCH_00, MP_TEXT_ENCYCLOPEDIA_RESEARCH_01 </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 12000 </Score_Cost_Credits>
+		<Property_Flags>InBase</Property_Flags>
+
+		<!-- Note that there is no list of upgrades for campaign mode because this structure
+		cannot currently be built from galactic mode for the Rebels. -->
+
+		<Tactical_Buildable_Objects_Campaign> 
+			Rebel,
+			CL_Reinforced_Structures_Upgrade,
+			CL_Enhanced_Turret_Firepower_L1_Upgrade,
+			CL_Enhanced_Turret_Firepower_L2_Upgrade,
+			CL_Weatherproof_Upgrade
+
+		</Tactical_Buildable_Objects_Campaign>
+
+
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Rebel,
+			CL_Reinforced_Structures_Upgrade,
+			CL_Enhanced_Turret_Firepower_L1_Upgrade,
+			CL_Enhanced_Turret_Firepower_L2_Upgrade,
+			CL_Weatherproof_Upgrade
+
+
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="R_Research_Facility_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.025</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+			<Redirect_Blaster_Ability Name="R_Magnetically_Sealed_Structure">
+				<Initially_Enabled> No </Initially_Enabled>
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.30</Block_Chance>
+				<Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 30.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<!-- We can block/redirect shots from the following units types: -->
+				<Applicable_Unit_Categories>Hero | Infantry | Vehicle | Structure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+
+		</Abilities>
+	</SpecialStructure>
+
+
+
+
+</SpecialStructures_Economic>

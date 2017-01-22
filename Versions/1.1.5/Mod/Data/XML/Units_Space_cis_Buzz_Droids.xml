@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<Buzz_Droids_Data>
+
+	<SpaceUnit Name="Buzz_Droids">
+		<Text_ID>TEXT_TOOLTIP_ABILITY_BUZZ_DROIDS_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_ABILITY_BUZZ_DROIDS_DESCRIPTION</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_buzz_droid.tga</Icon_Name>
+
+		<Space_Model_Name>p_b_droids.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Select_Box_Scale>70</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-1</Select_Box_Z_Adjust>
+		<Mouse_Collide_Override_Sphere_Radius> 50.0 </Mouse_Collide_Override_Sphere_Radius>
+
+		<GUI_Row> 1 </GUI_Row>
+		<Mass>0.9995</Mass>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+        <Ranking_In_Category>7</Ranking_In_Category>
+		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
+
+		<Max_Speed>2.5</Max_Speed>
+		<Min_Speed>2.0</Min_Speed>
+		<MovementClass> Space </MovementClass>
+		<Space_Layer> None </Space_Layer>
+
+		<Armor_Type> Armor_Bomber </Armor_Type>
+        <Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+
+		<Affiliation>Rebel</Affiliation>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>20</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>300</Energy_Refresh_Rate>
+		<Damage>2</Damage> <!-- From 20 -->
+		<Autoresolve_Health>20</Autoresolve_Health> 
+		<Ship_Class>corvette</Ship_Class>
+		
+		<Number_per_Squadron>1</Number_per_Squadron>
+		<AI_Combat_Power>5</AI_Combat_Power>
+		<Size_Value>120</Size_Value>
+
+		<Behavior>DUMMY_STARSHIP, POWERED</Behavior>
+		<SpaceBehavior> BUZZ_DROIDS, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, DUMMY_TOOLTIP, IDLE,AMBIENT_SFX </SpaceBehavior>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Medium_Explosion_Space</Death_Explosions>
+
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+
+		<CategoryMask> Corvette | AntiFighter | AntiBomber </CategoryMask>
+
+		<SFXEvent_Ambient_Moving> Unit_Buzz_Droids_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 1 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 1 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>  </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		 
+		<MovementClass> Space </MovementClass>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<Population_Value>0</Population_Value>
+
+		<Special_Weapon_Valid_Targets>Fighter | Transport | Corvette | Frigate </Special_Weapon_Valid_Targets>
+		
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Is_Valid_Target>False</Is_Valid_Target>
+	
+	</SpaceUnit>
+
+</Buzz_Droids_Data>

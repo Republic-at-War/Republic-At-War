@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+
+
+<Vana_Sage_Data>
+
+
+
+
+	<UniqueUnit Name="Guardian_Mantis">
+		<Text_ID>TEXT_UNIT_VANA_SAGE</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_VANA_SAGE</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_PIRATE_MERCENARY </Encyclopedia_Unit_Class>
+	<Encyclopedia_Good_Against> Nantex Vulture_Droid_Fighter CIS_Bomber </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Hammer_Class_Picket Tri_Droid_Fighter Cis_Patrol_Frigate</Encyclopedia_Vulnerable_To>
+		<!--<Icon_Name>I_BUTTON_GUARDIAN_MANTIS.tga</Icon_Name>-->
+		<Icon_Name>I_BUTTON_VANA_SAGE.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Space_Model_Name>NV_Guardian_Mantis.ALO</Space_Model_Name>
+		<Scale_Factor>0.2</Scale_Factor>
+		<Select_Box_Scale>200</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-1</Select_Box_Z_Adjust>
+		<Mouse_Collide_Override_Sphere_Radius> 50.0 </Mouse_Collide_Override_Sphere_Radius>
+
+		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Mass>0.99</Mass>
+
+		<Max_Lift>4</Max_Lift>
+		<Max_Speed>5.5</Max_Speed>
+		<Min_Speed>3.5</Min_Speed>
+		<Max_Rate_Of_Turn>5.0</Max_Rate_Of_Turn>
+		<Max_Thrust>1.0</Max_Thrust>
+		<Max_Rate_Of_Roll>5.0</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>80</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>500.0</Begin_Turn_Towards_Distance>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.6</Hyperspace_Speed>
+		<Maintenance_Cost>0.1</Maintenance_Cost>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Shield_Points>500</Shield_Points>
+		<Tactical_Health>1500</Tactical_Health> <!-- From 750 -->
+		<Shield_Refresh_Rate>20</Shield_Refresh_Rate>
+		<Energy_Capacity>9999</Energy_Capacity>
+		<Energy_Refresh_Rate>9999</Energy_Refresh_Rate>
+		<Ship_Class>Fighter</Ship_Class>
+		<Armor_Type> Armor_Hero_Transport </Armor_Type>
+    <Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+                
+		<Formation_Priority>2</Formation_Priority>
+		<Size_Value>120</Size_Value>
+		<Is_Escort>yes</Is_Escort>
+		<Damage>5</Damage>
+		
+		<SpaceBehavior>ABILITY_COUNTDOWN, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, UNIT_AI, DAMAGE_TRACKING, REVEAL, NEBULA </SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+		<Land_FOW_Reveal_Range>130.0</Land_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range>600.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>900.0</Targeting_Max_Attack_Distance>
+		
+		<Turret_Rotate_Extent_Degrees>50</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>50</Turret_Elevate_Extent_Degrees>
+
+	  <Damage_Type>Damage_Fighter</Damage_Type>
+		<Projectile_Types>Proj_Ship_Small_Laser_Cannon_Green</Projectile_Types>
+		<Projectile_Fire_Pulse_Count>10</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>.8</Projectile_Fire_Recharge_Seconds>
+		
+		<Fire_Inaccuracy_Distance> Fighter, 1.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 1.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Transport, 1.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 30.0 </Fire_Inaccuracy_Distance>
+
+   	<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Autoresolve_Health>350</Autoresolve_Health>
+		<Build_Time_Seconds>15</Build_Time_Seconds>
+		<Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+    
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Vana</SFXEvent_Build_Complete>
+		
+		<SFXEvent_Select>Unit_Select_Vana</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Vana</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Move_Vana</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Vana</SFXEvent_Attack>
+		
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_Vana </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Vana </SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning> Unit_Enemy_Health_Low_Vana</SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning> nit_Enemy_Health_Critical_Vana </SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+				
+		<SFXEvent_Ambient_Moving> Unit_Guardian_Mantis_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 10 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Guardian_Mantis_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Death_SFXEvent_Start_Die>Unit_Y_Wing_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Death_Explosions>Small_Explosion_Space</Death_Explosions>
+		<Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
+
+		<CategoryMask> Fighter | SpaceHero | AntiFighter | AntiBomber </CategoryMask>
+		<Property_Flags> SmallShip </Property_Flags>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<MovementClass> Space </MovementClass>
+		<Minimum_Follow_Distance>60.0</Minimum_Follow_Distance>
+		
+		<AI_Combat_Power>1500</AI_Combat_Power>
+		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		
+		<Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+		<Spin_Away_On_Death_Chance>0.2</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Time>2.0f</Spin_Away_On_Death_Time>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space</Spin_Away_On_Death_Explosion>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_Y_Wing_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<Strafe_Distance>500.0</Strafe_Distance>
+		
+			<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>2000</Tactical_Build_Cost_Multiplayer> <!-- From 1500 -->
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		
+		<Population_Value>1</Population_Value>
+		
+	<Unit_Abilities_Data SubObjectList="Yes">
+            <Unit_Ability>
+                <Type>CORRUPT_SYSTEMS</Type>
+                <Recharge_Seconds>60.0</Recharge_Seconds>
+                <GUI_Activated_Ability_Name> Sage_Corrupt_Systems </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+                <Area_Effect_Decal_Distance> 400.0 </Area_Effect_Decal_Distance>
+                <SFXEvent_Target_Ability> Unit_Special_Vana</SFXEvent_Target_Ability>
+            </Unit_Ability>
+            
+               <Unit_Ability>
+                <Type>STEALTH</Type>
+				<Alternate_Icon_Name>i_sa_stealth.tga</Alternate_Icon_Name>
+                <GUI_Activated_Ability_Name>Stealth_Mantis</GUI_Activated_Ability_Name> 
+                <Recharge_Seconds>10.0</Recharge_Seconds>
+				<Expiration_Seconds>80.0</Expiration_Seconds>
+            <SFXEvent_GUI_Unit_Ability_Activated> Unit_Stealth_On_Tie_Phantom </SFXEvent_GUI_Unit_Ability_Activated>  				
+				<SFXEvent_GUI_Unit_Ability_Deactivated> Unit_Stealth_Off_Tie_Phantom </SFXEvent_GUI_Unit_Ability_Deactivated> 
+            </Unit_Ability>
+            
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+            <Corrupt_Systems_Ability Name="Sage_Corrupt_Systems">
+                <Activation_Style> User_Input </Activation_Style>
+                <Activation_Min_Range>20.0</Activation_Min_Range>
+                <Activation_Max_Range>350.0</Activation_Max_Range>
+                <Duration_In_Seconds>12</Duration_In_Seconds>
+                <Shield_Drain_Per_Second>60</Shield_Drain_Per_Second>
+                <Inaccuracy_Radius>500</Inaccuracy_Radius>
+				<Target_Particle_Effect>Corrupt_Systems_Effect</Target_Particle_Effect>
+				<Owner_Particle_Effect>Corrupt_Systems_Flare_Effect</Owner_Particle_Effect>
+                <SFXEvent_Activate>Unit_Special_Vana</SFXEvent_Activate>
+            </Corrupt_Systems_Ability>
+            
+            <Stealth_Ability Name="Stealth_Mantis">
+				<Activation_Style> User_Input </Activation_Style>
+                <Stealth_Color>255, 255, 255, 255</Stealth_Color>
+                <Stealth_Transition_Time>0.8</Stealth_Transition_Time>
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Stealth_Ability>
+            
+        </Abilities>
+
+	</UniqueUnit>
+
+
+	
+
+
+
+
+
+
+
+</Vana_Sage_Data>

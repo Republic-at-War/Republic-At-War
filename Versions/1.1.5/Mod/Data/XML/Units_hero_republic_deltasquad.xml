@@ -1,0 +1,1183 @@
+<?xml version="1.0"?>
+
+<!-- Code by Anakin -->
+
+<DeltaSquad_Data>
+
+	<HeroUnit Name="Boss">
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_BOSS</Text_ID>
+		<Land_Model_Name>REI_BOSS.ALO</Land_Model_Name>
+		<Icon_Name>I_BUTTON_BOSS.tga</Icon_Name>
+		<Encyclopedia_Text> TEXT_TOOLTIP_COMMANDER_BOSS TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ELITE_COMMANDO </Encyclopedia_Unit_Class>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.7</Scale_Factor> <!-- Temp scale change for scale test - change back once models resized -->
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Type>Walk</Type>
+		<Affiliation>Empire</Affiliation>
+		<Required_Timeline>4</Required_Timeline>
+		<IsBuildable>No</IsBuildable>
+		<Spawn_Planet>Coruscant</Spawn_Planet>
+		<Size_Value>75</Size_Value>
+		<Stealth_Capable>No</Stealth_Capable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<CanCellStack>yes</CanCellStack>
+		<Mass>1.0</Mass>
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+
+		<Movement_Animation_Speed> 0.8 </Movement_Animation_Speed>
+		<Max_Speed> 1.4 </Max_Speed>
+		<Max_Rate_Of_Turn> 25.0 </Max_Rate_Of_Turn>
+		<Rotation_Animation_Speed> 20.0 </Rotation_Animation_Speed>
+		<Walk_Animation_Speed> .366 </Walk_Animation_Speed>
+		<Crouch_Animation_Speed> .537 </Crouch_Animation_Speed>
+		<Custom_Soft_Footprint_Radius> 5.0 </Custom_Soft_Footprint_Radius>
+		<Custom_Hard_XExtent> 3.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 3.0 </Custom_Hard_YExtent>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> <!-- Temp scale change for scale test - change back once models resized -->
+		<MinimumPushReturnDistance> 10 </MinimumPushReturnDistance>
+		<Min_Speed> .1 </Min_Speed>
+		<OverrideAcceleration> .125 </OverrideAcceleration>
+		<OverrideDeceleration> .125 </OverrideDeceleration>
+
+		<Deploys>No</Deploys>
+		<Affiliation>Empire</Affiliation>
+
+		<Armor_Type> Armor_Hero </Armor_Type>
+		<Damage>35</Damage>
+		<Autoresolve_Health>650</Autoresolve_Health>
+		<Tactical_Health>550</Tactical_Health>
+
+		<GalacticBehavior>SELECTABLE</GalacticBehavior>
+		<LandBehavior>SELECTABLE, ABILITY_COUNTDOWN, SURFACE_FX, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,UNIT_AI</LandBehavior>
+		<SurfaceFX_Name>Generic_Footprint, Good_Ground</SurfaceFX_Name>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+		<Land_FOW_Reveal_Range>400.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>150.0</Targeting_Max_Attack_Distance>
+		<Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+
+		<Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+
+		<Projectile_Types>Proj_Hand_Blaster_Blue_X2</Projectile_Types>
+		<Damage_Type>Damage_Wookiee</Damage_Type> <!-- is deleted in original code -->
+		<Projectile_Damage>25.0</Projectile_Damage>  <!-- is deleted in original code -->
+		<Projectile_Fire_Recharge_Seconds>1.5</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>4</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+
+		<Targeting_Fire_Inaccuracy> Infantry, 1.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 5.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 10.0 </Targeting_Fire_Inaccuracy>
+
+		<CategoryMask> LandHero</CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+		<MovementClass>Infantry</MovementClass>
+
+		<OccupationStyle>1x1</OccupationStyle>
+		<FormationRaggedness> 1.0 </FormationRaggedness>
+		<WaitsForFormationFormup>false</WaitsForFormationFormup>
+		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+		<Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+		<Is_Squashable> No </Is_Squashable>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Victory_Relevant>yes</Victory_Relevant>
+
+		<Attach_To_Flagship_During_Space_Battle>yes</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>
+
+		<SFXEvent_Select>Unit_Select_Boss</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Boss</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Boss</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Boss</SFXEvent_Attack>
+		<SFXEvent_Guard></SFXEvent_Guard>
+		<SFXEvent_Fire>Unit_Z6_Fire</SFXEvent_Fire>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Boss </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Boss </SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die> Unit_Death_Boss </Death_SFXEvent_Start_Die>
+
+		<Select_Box_Scale>27</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<Selection_Blob_Material_Name>Selection_Empire_Hero</Selection_Blob_Material_Name>
+		<Highlight_Blob_Material_Name>Highlight_Empire_Hero</Highlight_Blob_Material_Name>
+
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<AI_Combat_Power>250</AI_Combat_Power>
+		<Idle_Chase_Range>100.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<!-- <Lua_Script>HanSolo</Lua_Script> -->
+
+		<Neutralization_Cost>1000.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+
+		<Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
+
+
+		<Death_Fade_Time>0.25</Death_Fade_Time>
+		<Death_Persistence_Duration>0.0</Death_Persistence_Duration>
+		<Target_Stealth_Units>No</Target_Stealth_Units>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>FOW_REVEAL_PING</Type>
+				<Recharge_Seconds> 30.0 </Recharge_Seconds>
+				<Spawned_Object_Type> Proj_Special_Land_FOW_Reveal_Ping_Blast </Spawned_Object_Type>
+				<Effective_Radius> 0.0 </Effective_Radius>
+				<!-- 0.0 means no distance factor, unlimited to entire map -->
+				<Area_Effect_Decal_Distance> 600.0 </Area_Effect_Decal_Distance>
+				<GUI_Activated_Ability_Name></GUI_Activated_Ability_Name>
+				<!-- GUI Command Bar support -->
+			</Unit_Ability>
+
+			<!-- Secondary ability -->
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Expiration_Seconds> 7.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 2.0f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated />
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+
+		<Abilities SubObjectList="Yes">
+
+			<Combat_Bonus_Ability Name="Boss_Land_Combat_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Unit_Strength_Category>Vehicle | Infantry | Air</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Vehicle | Infantry | Air</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Health_Bonus_Percentage>0.25</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.10</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.10</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.10</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Force_Healing_Ability Name="Boss_Self_Heal">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Heal_Range>5.0</Heal_Range>
+				<Heal_Amount> 0.0 </Heal_Amount>
+				<Heal_Percent> 0.02 </Heal_Percent>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>Boss</Applicable_Unit_Types>
+				<Excluded_Unit_Types />
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect />
+				<Target_Particle_Bone_Name>B_HEAD</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 2.0, 1.2</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 2.0, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+
+			<Galactic_Stealth_Ability Name="Boss_Galactic_Stealth">
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+
+			<System_Spy_Ability Name="Boss_Limited_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+				<See_Minor_Stealth_Heroes>Yes</See_Minor_Stealth_Heroes>
+				<See_Major_Stealth_Heroes>Yes</See_Major_Stealth_Heroes>
+			</System_Spy_Ability>
+
+		</Abilities>
+
+	</HeroUnit>
+
+	<!--FIXER-->
+	<HeroUnit Name="Fixer">
+		
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_FIXER</Text_ID>
+		<Land_Model_Name>REI_FIXER.ALO</Land_Model_Name>
+		<Icon_Name>I_BUTTON_FIXER.tga</Icon_Name>
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+		<Encyclopedia_Text> TEXT_TOOLTIP_COMMANDER_FIXER TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ELITE_COMMANDO </Encyclopedia_Unit_Class>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.7</Scale_Factor>
+		<Type>Walk</Type>
+		<Affiliation>Empire</Affiliation>
+		<Required_Timeline>4</Required_Timeline>
+		<IsBuildable>No</IsBuildable>
+		<Spawn_Planet>Coruscant</Spawn_Planet>
+		<Size_Value>75</Size_Value>
+		<Stealth_Capable>No</Stealth_Capable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<CanCellStack>yes</CanCellStack>
+		<Mass>1.0</Mass>
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+
+		<Movement_Animation_Speed> 0.8 </Movement_Animation_Speed>
+		<Max_Speed> 1.4 </Max_Speed>
+		<Max_Rate_Of_Turn> 25.0 </Max_Rate_Of_Turn>
+		<Rotation_Animation_Speed> 20.0 </Rotation_Animation_Speed>
+		<Walk_Animation_Speed> .366 </Walk_Animation_Speed>
+		<Crouch_Animation_Speed> .537 </Crouch_Animation_Speed>
+		<Custom_Soft_Footprint_Radius> 5.0 </Custom_Soft_Footprint_Radius>
+		<Custom_Hard_XExtent> 3.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 3.0 </Custom_Hard_YExtent>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> <!-- Temp scale change for scale test - change back once models resized -->
+		<MinimumPushReturnDistance> 10 </MinimumPushReturnDistance>
+		<Min_Speed> .1 </Min_Speed>
+		<OverrideAcceleration> .125 </OverrideAcceleration>
+		<OverrideDeceleration> .125 </OverrideDeceleration>
+
+		<Deploys>No</Deploys>
+		<Affiliation>Empire</Affiliation>
+
+		<Armor_Type> Armor_Hero </Armor_Type>
+		<Damage>35</Damage>
+		<Autoresolve_Health>650</Autoresolve_Health>
+		<Tactical_Health>550</Tactical_Health>
+
+		<GalacticBehavior>SELECTABLE</GalacticBehavior>
+		<LandBehavior>SELECTABLE, ABILITY_COUNTDOWN, SURFACE_FX, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,UNIT_AI</LandBehavior>
+		<SurfaceFX_Name>Generic_Footprint, Good_Ground</SurfaceFX_Name>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>150.0</Targeting_Max_Attack_Distance>
+		<Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+
+		<Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+
+		<Projectile_Types>Proj_Hand_Blaster_Blue_X2</Projectile_Types>
+		<Damage_Type>Damage_Wookiee</Damage_Type> <!-- is deleted in original code -->
+		<Projectile_Damage>25.0</Projectile_Damage>  <!-- is deleted in original code -->
+		<Projectile_Fire_Recharge_Seconds>1.5</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>4</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+
+		<Targeting_Fire_Inaccuracy> Infantry, 1.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 5.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 10.0 </Targeting_Fire_Inaccuracy>
+
+		<CategoryMask> LandHero</CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+		<MovementClass>Infantry</MovementClass>
+
+		<OccupationStyle>1x1</OccupationStyle>
+		<FormationRaggedness> 1.0 </FormationRaggedness>
+		<WaitsForFormationFormup>false</WaitsForFormationFormup>
+		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+		<Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+		<Is_Squashable> No </Is_Squashable>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Victory_Relevant>yes</Victory_Relevant>
+
+		<Attach_To_Flagship_During_Space_Battle>yes</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>
+
+		<SFXEvent_Select>Unit_Select_Fixer</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Fixer</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Fixer</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Fixer</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Clone_Trooper</SFXEvent_Guard>
+		<SFXEvent_Fire>Unit_Z6_Fire</SFXEvent_Fire>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Fixer </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Fixer </SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die> Unit_Death_Fixer </Death_SFXEvent_Start_Die>
+
+		<Select_Box_Scale>27</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<Selection_Blob_Material_Name>Selection_Empire_Hero</Selection_Blob_Material_Name>
+		<Highlight_Blob_Material_Name>Highlight_Empire_Hero</Highlight_Blob_Material_Name>
+
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<AI_Combat_Power>250</AI_Combat_Power>
+		<Idle_Chase_Range>100.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<!-- <Lua_Script>HanSolo</Lua_Script> -->
+
+		<Neutralization_Cost>1000.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+
+		<Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
+
+		<Score_Cost_Credits> 25000 </Score_Cost_Credits>
+
+		<Death_Fade_Time>0.25</Death_Fade_Time>
+		<Death_Persistence_Duration>0.0</Death_Persistence_Duration>
+		<Target_Stealth_Units>No</Target_Stealth_Units>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+
+			<Unit_Ability>
+				<Type>TARGETED_HACK</Type>
+				<Team_Member_With_Ability> Fixer </Team_Member_With_Ability>
+				<Recharge_Seconds>45.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Fixer_Hack_Ability </GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability> Unit_Hack_Fixer </SFXEvent_Target_Ability>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+
+			<Hack_Ability Name="Fixer_Hack_Ability">
+				<Team_Member_With_Ability> Fixer </Team_Member_With_Ability>
+				<Activation_Style> User_Input </Activation_Style>
+				<Activation_Min_Range> 5.0 </Activation_Min_Range>
+				<Activation_Max_Range> 30.0 </Activation_Max_Range>
+				<Applicable_Unit_Categories></Applicable_Unit_Categories>
+				<Applicable_Unit_Types>  
+					E_Ground_Turbolaser_Tower,
+					R_Ground_Flakgun,
+					Empire_Anti_Aircraft_Turret,
+					Empire_Anti_Infantry_Turret,
+					Empire_Anti_Vehicle_Turret,
+					Pirate_Anti_Infantry_Turret,
+					Pirate_Anti_Vehicle_Turret,
+					Rebel_Anti_Aircraft_Turret,
+					Rebel_Anti_Infantry_Turret,
+					Rebel_Anti_Vehicle_Turret,
+					Underworld_Mass_Driver_Turret,
+					Underworld_Torpedo_Turret,
+					Underworld_Rocket_Pod,
+					Empire_Grenade_Mortar,
+					Rebel_Rapid_Fire_Laser_Turret
+				</Applicable_Unit_Types>
+				<!-- <Damage_Amount> 0.0 </Damage_Amount> -->
+				<!-- <Damage_Application_Time_In_Secs> 2.3893 </Damage_Application_Time_In_Secs> -->
+				<Lightning_Effect_Name> Hack_Electicity_Zaps </Lightning_Effect_Name>
+				<Lightning_Source_Bone_Name></Lightning_Source_Bone_Name>
+				<Lightning_Target_Bone_Name> B_Turret </Lightning_Target_Bone_Name>
+				<Lightning_Max_Targets> 1 </Lightning_Max_Targets>
+				<Lightning_Targets_Radius> 0.0 </Lightning_Targets_Radius>
+				<SFXEvent_Activate> Unit_Force_Lightning </SFXEvent_Activate>
+				<!-- STUB PLACEHOLDER for Frank -->
+				<SFXEvent_Target_Affected />
+				<Target_Particle_Effect> Force_Lightning_Smoke </Target_Particle_Effect>
+				<!-- STUB PLACEHOLDER for Gary -->
+				<Target_Particle_Bone_Name> B_Turret </Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type> Linear_Pulse </Target_Light_Effect_Type>
+				<Target_Light_Effect_Color> 0.3, 0.3, 0.8 </Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration> 2.3893 </Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count> 25 </Target_Light_Effect_Pulse_Count>
+			</Hack_Ability>
+
+			<Force_Healing_Ability Name="Fixer_Repair">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Heal_Range>75.0</Heal_Range>
+				<Heal_Amount> 0.0 </Heal_Amount>
+				<Heal_Percent> 0.02 </Heal_Percent>
+				<Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+				<!-- We can heal the following unit types: -->
+				<Applicable_Unit_Categories>Vehicle</Applicable_Unit_Categories>
+				<Applicable_Unit_Types>Fixer</Applicable_Unit_Types>
+				<Excluded_Unit_Types />
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Unit_Healed_Particles</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>B_HEAD</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 2.0, 1.2</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 2.0, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+
+			<Galactic_Stealth_Ability Name="Fixer_Galactic_Stealth">
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+
+			<System_Spy_Ability Name="Fixer_Limited_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+				<See_Minor_Stealth_Heroes>Yes</See_Minor_Stealth_Heroes>
+				<See_Major_Stealth_Heroes>Yes</See_Major_Stealth_Heroes>
+			</System_Spy_Ability>
+
+		</Abilities>
+
+	</HeroUnit>
+
+	<!--Sev-->
+	<HeroUnit Name="Sev">
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_SEV</Text_ID>
+		<Land_Model_Name>REI_SEV.ALO</Land_Model_Name>
+		<Icon_Name>I_BUTTON_SEV.tga</Icon_Name>
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+		<Encyclopedia_Text> TEXT_TOOLTIP_COMMANDER_SEV TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ELITE_COMMANDO </Encyclopedia_Unit_Class>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.7</Scale_Factor>
+		<Type>Walk</Type>
+		<Affiliation>Empire</Affiliation>
+		<Required_Timeline>4</Required_Timeline>
+		<IsBuildable>No</IsBuildable>
+		<Spawn_Planet>Coruscant</Spawn_Planet>
+		<Size_Value>75</Size_Value>
+		<Stealth_Capable>No</Stealth_Capable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<CanCellStack>yes</CanCellStack>
+		<Mass>1.0</Mass>
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+
+		<Movement_Animation_Speed> 0.8 </Movement_Animation_Speed>
+		<Max_Speed> 1.4 </Max_Speed>
+		<Max_Rate_Of_Turn> 25.0 </Max_Rate_Of_Turn>
+		<Rotation_Animation_Speed> 20.0 </Rotation_Animation_Speed>
+		<Walk_Animation_Speed> .366 </Walk_Animation_Speed>
+		<Crouch_Animation_Speed> .537 </Crouch_Animation_Speed>
+		<Custom_Soft_Footprint_Radius> 5.0 </Custom_Soft_Footprint_Radius>
+		<Custom_Hard_XExtent> 3.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 3.0 </Custom_Hard_YExtent>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> <!-- Temp scale change for scale test - change back once models resized -->
+		<MinimumPushReturnDistance> 10 </MinimumPushReturnDistance>
+		<Min_Speed> .1 </Min_Speed>
+		<OverrideAcceleration> .125 </OverrideAcceleration>
+		<OverrideDeceleration> .125 </OverrideDeceleration>
+
+		<Deploys>No</Deploys>
+		<Affiliation>Empire</Affiliation>
+
+		<Armor_Type> Armor_Hero </Armor_Type>
+		<Damage>35</Damage>
+		<Autoresolve_Health>650</Autoresolve_Health>
+		<Tactical_Health>550</Tactical_Health>
+
+		<GalacticBehavior>SELECTABLE</GalacticBehavior>
+		<LandBehavior>SELECTABLE, ABILITY_COUNTDOWN, SURFACE_FX, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,UNIT_AI</LandBehavior>
+		<SurfaceFX_Name>Generic_Footprint, Good_Ground</SurfaceFX_Name>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>150.0</Targeting_Max_Attack_Distance>
+		<Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+
+		<Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+
+		<HardPoints>
+			HP_Deltasquad_Sev_00
+		</HardPoints>
+		<Damage_Type>Damage_Wookiee</Damage_Type> <!-- is deleted in original code -->
+		<Projectile_Damage>25.0</Projectile_Damage>  <!-- is deleted in original code -->
+		<Projectile_Types>Proj_Hand_Blaster_Blue_X2</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>1.5</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>4</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+		<Fire_Weapon_When_In_Rocket_Attack_Mode>No</Fire_Weapon_When_In_Rocket_Attack_Mode>
+		<Fire_Weapon_When_In_Normal_Attack_Mode>Yes</Fire_Weapon_When_In_Normal_Attack_Mode>
+
+		<Targeting_Fire_Inaccuracy> Infantry, 1.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 5.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 10.0 </Targeting_Fire_Inaccuracy>
+
+		<CategoryMask> LandHero</CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+		<MovementClass>Infantry</MovementClass>
+
+		<OccupationStyle>1x1</OccupationStyle>
+		<FormationRaggedness> 1.0 </FormationRaggedness>
+		<WaitsForFormationFormup>false</WaitsForFormationFormup>
+		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+		<Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+		<Is_Squashable> No </Is_Squashable>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Victory_Relevant>yes</Victory_Relevant>
+
+		<Attach_To_Flagship_During_Space_Battle>yes</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>
+
+		<SFXEvent_Select>Unit_Select_Sev</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Sev</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Sev</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Sev</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Clone_Trooper</SFXEvent_Guard>
+		<SFXEvent_Fire>Unit_Z6_Fire</SFXEvent_Fire>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Sev </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Sev </SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die> Unit_Death_Sev </Death_SFXEvent_Start_Die>
+
+		<Select_Box_Scale>27</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<Selection_Blob_Material_Name>Selection_Empire_Hero</Selection_Blob_Material_Name>
+		<Highlight_Blob_Material_Name>Highlight_Empire_Hero</Highlight_Blob_Material_Name>
+
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<AI_Combat_Power>250</AI_Combat_Power>
+		<Idle_Chase_Range>100.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<!-- <Lua_Script>HanSolo</Lua_Script> -->
+
+		<Neutralization_Cost>1000.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+
+		<Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
+
+		<Score_Cost_Credits> 25000 </Score_Cost_Credits>
+
+		<Death_Fade_Time>0.25</Death_Fade_Time>
+		<Death_Persistence_Duration>0.0</Death_Persistence_Duration>
+		<Target_Stealth_Units>No</Target_Stealth_Units>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Alternate_Icon_Name>i_sa_swap_weapons.tga</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_SEV_SNIPER_SWAP</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_SEV_SNIPER_SWAP_DESCRIPTION</Alternate_Description_Text>
+				<Targeting_Max_Attack_Distance>400</Targeting_Max_Attack_Distance>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+
+			<!-- Secondary ability -->
+			<Unit_Ability>
+				<Type>STEALTH</Type>
+				<Alternate_Name_Text>TEXT_TOOLTIP_TYBER_CLOAKING</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TYBER_CLOAKING_DESCRIPTION</Alternate_Description_Text>
+				<Recharge_Seconds>10.0</Recharge_Seconds>
+				<Expiration_Seconds>45.0</Expiration_Seconds>
+				<GUI_Activated_Ability_Name>Stealth_Sev</GUI_Activated_Ability_Name>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Stealth_On_Sev</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Stealth_Off_Sev</SFXEvent_GUI_Unit_Ability_Deactivated>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+
+			<Force_Healing_Ability Name="Sev_Self_Heal">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Heal_Range>5.0</Heal_Range>
+				<Heal_Amount> 0.0 </Heal_Amount>
+				<Heal_Percent> 0.02 </Heal_Percent>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>Sev</Applicable_Unit_Types>
+				<Excluded_Unit_Types />
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect />
+				<Target_Particle_Bone_Name>B_HEAD</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 2.0, 1.2</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 2.0, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+
+			<Stealth_Ability Name="Stealth_Sev">
+				<Activation_Style> User_Input </Activation_Style>
+				<Stealth_Color>255, 64, 64, 120</Stealth_Color>
+				<Stealth_Transition_Time>.6</Stealth_Transition_Time>
+			</Stealth_Ability>
+
+			<Galactic_Stealth_Ability Name="Sev_Galactic_Stealth">
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+
+			<System_Spy_Ability Name="Sev_Limited_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+				<See_Minor_Stealth_Heroes>Yes</See_Minor_Stealth_Heroes>
+				<See_Major_Stealth_Heroes>Yes</See_Major_Stealth_Heroes>
+			</System_Spy_Ability>
+
+		</Abilities>
+
+	</HeroUnit>
+
+	<!--SCORCH-->
+	<HeroUnit Name="Scorch">
+		
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_SCORCH</Text_ID>
+		<Land_Model_Name>REI_SCORCH.ALO</Land_Model_Name>
+		<Icon_Name>I_BUTTON_SCORCH.tga</Icon_Name>
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+		<Encyclopedia_Text> TEXT_TOOLTIP_SCORCH TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ELITE_COMMANDO </Encyclopedia_Unit_Class>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.7</Scale_Factor>
+		<Type>Walk</Type>
+		<Affiliation>Empire</Affiliation>
+		<Required_Timeline>4</Required_Timeline>
+		<IsBuildable>No</IsBuildable>
+		<Spawn_Planet>Coruscant</Spawn_Planet>
+		<Size_Value>75</Size_Value>
+		<Stealth_Capable>No</Stealth_Capable>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<CanCellStack>yes</CanCellStack>
+		<Mass>1.0</Mass>
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+
+		<Movement_Animation_Speed> 0.8 </Movement_Animation_Speed>
+		<Max_Speed> 1.4 </Max_Speed>
+		<Max_Rate_Of_Turn> 25.0 </Max_Rate_Of_Turn>
+		<Rotation_Animation_Speed> 20.0 </Rotation_Animation_Speed>
+		<Walk_Animation_Speed> .366 </Walk_Animation_Speed>
+		<Crouch_Animation_Speed> .537 </Crouch_Animation_Speed>
+		<Custom_Soft_Footprint_Radius> 5.0 </Custom_Soft_Footprint_Radius>
+		<Custom_Hard_XExtent> 3.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 3.0 </Custom_Hard_YExtent>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing> <!-- Temp scale change for scale test - change back once models resized -->
+		<MinimumPushReturnDistance> 10 </MinimumPushReturnDistance>
+		<Min_Speed> .1 </Min_Speed>
+		<OverrideAcceleration> .125 </OverrideAcceleration>
+		<OverrideDeceleration> .125 </OverrideDeceleration>
+
+		<Deploys>No</Deploys>
+		<Affiliation>Empire</Affiliation>
+
+		<Armor_Type> Armor_Hero </Armor_Type>
+		<Damage>35</Damage>
+		<Autoresolve_Health>650</Autoresolve_Health>
+		<Tactical_Health>550</Tactical_Health>
+
+		<GalacticBehavior>SELECTABLE</GalacticBehavior>
+		<LandBehavior>SELECTABLE, ABILITY_COUNTDOWN, SURFACE_FX, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,UNIT_AI</LandBehavior>
+		<SurfaceFX_Name>Generic_Footprint, Good_Ground</SurfaceFX_Name>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>150.0</Targeting_Max_Attack_Distance>
+		<Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+		<Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+
+		<HardPoints>
+			HP_Deltasquad_Scorch_00
+		</HardPoints>
+
+		<Damage_Type>Damage_Wookiee</Damage_Type> <!-- is deleted in original code -->
+		<Projectile_Damage>25.0</Projectile_Damage>  <!-- is deleted in original code -->
+		<Projectile_Types>Proj_Hand_Blaster_Blue_X2</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>1.5</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>4</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+		<Fire_Weapon_When_In_Rocket_Attack_Mode>No</Fire_Weapon_When_In_Rocket_Attack_Mode>
+		<Fire_Weapon_When_In_Normal_Attack_Mode>Yes</Fire_Weapon_When_In_Normal_Attack_Mode>
+
+		<Targeting_Fire_Inaccuracy> Infantry, 1.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 5.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 10.0 </Targeting_Fire_Inaccuracy>
+
+		<CategoryMask> LandHero</CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+		<MovementClass>Infantry</MovementClass>
+
+		<OccupationStyle>1x1</OccupationStyle>
+		<FormationRaggedness> 1.0 </FormationRaggedness>
+		<WaitsForFormationFormup>false</WaitsForFormationFormup>
+		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+		<Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+		<Is_Squashable> No </Is_Squashable>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Victory_Relevant>yes</Victory_Relevant>
+
+		<Attach_To_Flagship_During_Space_Battle>yes</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>
+
+		<SFXEvent_Select>Unit_Select_Scorch</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Scorch</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Scorch</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Scorch</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Clone_Trooper</SFXEvent_Guard>
+		<SFXEvent_Fire>Unit_Z6_Fire</SFXEvent_Fire>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Scorch</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Scorch </SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die> Unit_Death_Scorch </Death_SFXEvent_Start_Die>
+
+		<Select_Box_Scale>27</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<Selection_Blob_Material_Name>Selection_Empire_Hero</Selection_Blob_Material_Name>
+		<Highlight_Blob_Material_Name>Highlight_Empire_Hero</Highlight_Blob_Material_Name>
+
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<AI_Combat_Power>250</AI_Combat_Power>
+		<Idle_Chase_Range>100.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<!-- <Lua_Script>HanSolo</Lua_Script> -->
+
+		<Neutralization_Cost>1000.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+
+		<Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
+
+		<Score_Cost_Credits> 25000 </Score_Cost_Credits>
+
+		<Death_Fade_Time>0.25</Death_Fade_Time>
+		<Death_Persistence_Duration>0.0</Death_Persistence_Duration>
+		<Target_Stealth_Units>No</Target_Stealth_Units>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Alternate_Icon_Name>i_sa_swap_weapons.tga</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_SCORCH_LAUNCHER_SWAP</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_SCORCH_LAUNCHER_SWAP_DESCRIPTION</Alternate_Description_Text>
+				<Targeting_Max_Attack_Distance>200</Targeting_Max_Attack_Distance>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+
+			<!-- Secondary ability -->
+			<Unit_Ability>
+				<Type>PROXIMITY_MINES</Type>
+				<Recharge_Seconds>80.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Scorch_Proximity </GUI_Activated_Ability_Name>
+				<Effective_Radius> 500.0 </Effective_Radius>
+				<SFXEvent_Target_Ability />
+				<Area_Effect_Decal_Distance> 50.0 </Area_Effect_Decal_Distance>
+				<Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+
+			<Proximity_Mines_Ability Name="Scorch_Proximity">
+				<Activation_Style> User_Input </Activation_Style>
+				<Activation_Min_Range>0.0</Activation_Min_Range>
+				<Activation_Max_Range>70.0</Activation_Max_Range>
+				<Mine_Type>Proximity_Mine</Mine_Type>
+				<Trigger_Radius>30</Trigger_Radius>
+				<Number_Of_Mines>8</Number_Of_Mines>
+				<Activation_Time_In_Seconds>3</Activation_Time_In_Seconds>
+				<Activate_SFX>Unit_Lightsaber_Projectile_Block</Activate_SFX>
+				<Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+			</Proximity_Mines_Ability>
+
+			<Force_Healing_Ability Name="Scorch_Self_Heal">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Heal_Range>5.0</Heal_Range>
+				<Heal_Amount> 0.0 </Heal_Amount>
+				<Heal_Percent> 0.02 </Heal_Percent>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>Scorch</Applicable_Unit_Types>
+				<Excluded_Unit_Types />
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect />
+				<Target_Particle_Bone_Name>B_HEAD</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 2.0, 1.2</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 2.0, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+
+			<Galactic_Stealth_Ability Name="Scorch_Galactic_Stealth">
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+
+			<System_Spy_Ability Name="Scorch_Limited_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+				<See_Minor_Stealth_Heroes>Yes</See_Minor_Stealth_Heroes>
+				<See_Major_Stealth_Heroes>Yes</See_Major_Stealth_Heroes>
+			</System_Spy_Ability>
+
+		</Abilities>
+
+	</HeroUnit>
+
+
+	<HeroCompany Name="Deltasquad_Team">
+		<Text_ID>TEXT_HERO_DELTASQUAD</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_DELTASQUAD TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_COMMANDO </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_BOSS.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>50</Damage>
+		<Affiliation>Empire</Affiliation>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>2</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<LandBehavior>TARGETING</LandBehavior>
+		<Company_Transport_Unit>Delta_Trasport</Company_Transport_Unit>
+		<Company_Units>Boss, Fixer, Sev, Scorch</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Homogeneous>No</Is_Homogeneous>
+		<Is_Force_Sensitive>No</Is_Force_Sensitive>
+		<Is_Stealth_Company>Yes</Is_Stealth_Company>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Formation_Priority>2</Formation_Priority>
+		<Available_In_Skirmish>yes</Available_In_Skirmish>
+		<Can_Be_Only_One>true</Can_Be_Only_One>
+		<!-- <Lua_Script>HanSoloPlan</Lua_Script> -->
+		<Population_Value>1</Population_Value>
+		<CategoryMask>LandHero</CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>		
+		<SFXEvent_Build_Complete>Unit_Complete_Clone_Trooper</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Select_Boss</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Boss</SFXEvent_Fleet_Move>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FOW_REVEAL_PING</Type>
+				<Recharge_Seconds> 30.0 </Recharge_Seconds>
+				<Spawned_Object_Type> Proj_Special_Land_FOW_Reveal_Ping_Blast </Spawned_Object_Type>
+				<Effective_Radius> 0.0 </Effective_Radius>
+				<Area_Effect_Decal_Distance> 600.0 </Area_Effect_Decal_Distance>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Expiration_Seconds> 10.0 </Expiration_Seconds>
+				<Recharge_Seconds> 30.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 2.0f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>TARGETED_HACK</Type>
+				<Team_Member_With_Ability> Fixer </Team_Member_With_Ability>
+				<Recharge_Seconds>45.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Fixer_Hack_Ability </GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability> Unit_Hack_Fixer </SFXEvent_Target_Ability>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Targeting_Max_Attack_Distance>400</Targeting_Max_Attack_Distance>
+			</Unit_Ability>	
+			<Unit_Ability>
+				<Type>PROXIMITY_MINES</Type>
+				<Recharge_Seconds>80.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Scorch_Proximity </GUI_Activated_Ability_Name>
+				<Effective_Radius> 500.0 </Effective_Radius>
+				<SFXEvent_Target_Ability />
+				<Area_Effect_Decal_Distance> 50.0 </Area_Effect_Decal_Distance>
+				<Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+			
+		<Abilities SubObjectList="Yes">
+
+			<Hack_Ability Name="Fixer_Hack_Ability">
+				<Team_Member_With_Ability> Fixer </Team_Member_With_Ability>
+				<Activation_Style> User_Input </Activation_Style>
+				<Activation_Min_Range> 5.0 </Activation_Min_Range>
+				<Activation_Max_Range> 30.0 </Activation_Max_Range>
+				<Applicable_Unit_Categories></Applicable_Unit_Categories>
+				<Applicable_Unit_Types>  
+					E_Ground_Turbolaser_Tower,
+					Empire_Anti_Aircraft_Turret,
+					Empire_Anti_Infantry_Turret,
+					Empire_Anti_Vehicle_Turret,
+					Pirate_Anti_Infantry_Turret,
+					Pirate_Anti_Vehicle_Turret,
+					Rebel_Anti_Aircraft_Turret,
+					Rebel_Anti_Infantry_Turret,
+					Rebel_Anti_Vehicle_Turret,
+					Underworld_Mass_Driver_Turret,
+					Underworld_Torpedo_Turret,
+					Underworld_Rocket_Pod,
+					Empire_Grenade_Mortar,
+					Rebel_Rapid_Fire_Laser_Turret
+				</Applicable_Unit_Types>
+				<!-- <Damage_Amount> 0.0 </Damage_Amount> -->
+				<!-- <Damage_Application_Time_In_Secs> 2.3893 </Damage_Application_Time_In_Secs> -->
+				<Lightning_Effect_Name> Hack_Electicity_Zaps </Lightning_Effect_Name>
+				<Lightning_Source_Bone_Name></Lightning_Source_Bone_Name>
+				<Lightning_Target_Bone_Name> B_Turret </Lightning_Target_Bone_Name>
+				<Lightning_Max_Targets> 1 </Lightning_Max_Targets>
+				<Lightning_Targets_Radius> 0.0 </Lightning_Targets_Radius>
+				<SFXEvent_Activate> Unit_Force_Lightning </SFXEvent_Activate>
+				<!-- STUB PLACEHOLDER for Frank -->
+				<SFXEvent_Target_Affected />
+				<Target_Particle_Effect> Force_Lightning_Smoke </Target_Particle_Effect>
+				<!-- STUB PLACEHOLDER for Gary -->
+				<Target_Particle_Bone_Name> B_Turret </Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type> Linear_Pulse </Target_Light_Effect_Type>
+				<Target_Light_Effect_Color> 0.3, 0.3, 0.8 </Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration> 2.3893 </Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count> 25 </Target_Light_Effect_Pulse_Count>
+			</Hack_Ability>
+		</Abilities>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+		<Tactical_Build_Cost_Multiplayer>2000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+		
+
+	</HeroCompany>
+
+	<HeroUnit Name="Laat_Support_Gunship">
+		<Target_Bones> MISSILE_TARGET00, MISSILE_TARGET01, MISSILE_TARGET02 </Target_Bones>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>90.0, 50.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Text_ID>TEXT_UNIT_LAAT</Text_ID>
+		<Encyclopedia_Good_Against>MPTL T4B_Tank T2B_Tank</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>MAL_Rocket_Vehicle MPTL Plex_Soldier </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text>TEXT_TOOLTIP_LAAT</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GUNSHIP</Encyclopedia_Unit_Class>
+		<Land_Model_Name>REV_LAAT_1.ALO</Land_Model_Name>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.3</Scale_Factor>
+		<Deploys>Yes</Deploys>
+		<Auto_Deploys>No</Auto_Deploys>
+		<Affiliation>Empire</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Ranking_In_Category>6</Ranking_In_Category>
+		<Max_Speed>3.0</Max_Speed>
+		<Movement_Animation_Speed> 2.30 </Movement_Animation_Speed>
+		<Max_Rate_Of_Turn>10.0</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>40</Stopped_Rate_Of_Turn>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Attack_Animation_Is_Overlay>yes</Attack_Animation_Is_Overlay>
+		<Space_Layer> Land </Space_Layer>
+		<OverrideAcceleration> .1 </OverrideAcceleration>
+		<OverrideDeceleration> .1 </OverrideDeceleration>
+		<FormationSpacing>3.0</FormationSpacing>
+		<FormationOrder> 5 </FormationOrder>
+		<FormationGrouping> Solo </FormationGrouping>
+		<FormationRaggedness> 1 </FormationRaggedness>
+		<MaxJiggleDistance> 5 </MaxJiggleDistance>
+		<MinimumPushReturnDistance> 100 </MinimumPushReturnDistance>
+		<UseSecondaryFacing> true </UseSecondaryFacing>
+		<SecondaryTurnInPlaceROTCoefficient> .1</SecondaryTurnInPlaceROTCoefficient>
+		<SecondaryTurnAngle>180 </SecondaryTurnAngle>
+		<MinSecondaryTurnROTCoefficient> .1 </MinSecondaryTurnROTCoefficient>
+		<MaxSecondaryTurnROTCoefficient> .1</MaxSecondaryTurnROTCoefficient>
+		<SecondaryTurnLookaheadDistance> 60 </SecondaryTurnLookaheadDistance>
+		<Custom_Hard_XExtent> 20.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 15.0 </Custom_Hard_YExtent>
+		<Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<Ranged_Target_Z_Adjust>140.0</Ranged_Target_Z_Adjust>
+		<Armor_Type> Armor_Speeder </Armor_Type>
+		<Shield_Armor_Type>Shield_Tank</Shield_Armor_Type>
+		<Size_Value>60</Size_Value>
+		<Damage>10</Damage>
+		<Sensor_Range>80</Sensor_Range>
+		<Tactical_Health>260</Tactical_Health>
+		<Energy_Capacity>999</Energy_Capacity>
+		<Energy_Refresh_Rate>999</Energy_Refresh_Rate>
+		<Behavior> SELECTABLE </Behavior>
+		<LandBehavior>DYNAMIC_TRANSFORM, ABILITY_COUNTDOWN, GARRISON_VEHICLE, AFFECTED_BY_SHIELD, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, TURRET, POWERED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, WIND_DISTURBANCE, SURFACE_FX,DAMAGE_TRACKING</LandBehavior>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Num_Garrison_Slots>5</Num_Garrison_Slots>
+		<Garrison_Exit_Dist>0</Garrison_Exit_Dist>
+		<Garrison_Enter_Dist>0</Garrison_Enter_Dist>
+		<Garrison_Radius>30</Garrison_Radius>
+		<Property_Flags>GoodInfantryCrusher | CanContainGarrison</Property_Flags>
+		<Is_Affected_By_Gravity_Control_Field> Yes </Is_Affected_By_Gravity_Control_Field>
+		<Turret_Rotate_Extent_Degrees>120</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>60</Turret_Elevate_Extent_Degrees>
+		<Turret_Bone_Name>Turret_Bone</Turret_Bone_Name>
+		<Barrel_Bone_Name>Barrel_Bone</Barrel_Bone_Name>
+		<Turret_Rotate_Speed>5.0</Turret_Rotate_Speed>
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+		<Turret_Targets_Ground_Vehicles> 2</Turret_Targets_Ground_Vehicles>
+		<Turret_Targets_Ground_Infantry> 3</Turret_Targets_Ground_Infantry>
+		<Turret_Targets_Air_Vehicles> 1</Turret_Targets_Air_Vehicles>
+		<Turret_Targets_Anything_Else> 4</Turret_Targets_Anything_Else>
+		<Targeting_Fire_Inaccuracy> Infantry, 10.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 10.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 20.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 10.0 </Targeting_Fire_Inaccuracy>
+		<Projectile_Types>Proj_LAAT_Laser_Green</Projectile_Types>
+		<Projectile_Fire_Pulse_Count>6</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.15</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>1</Projectile_Fire_Recharge_Seconds>
+		<Land_FOW_Reveal_Range>500.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>400.0</Targeting_Max_Attack_Distance>
+		<Hardpoints>
+			HP_LAAT_00, 
+			HP_LAAT_01, 
+			HP_LAAT_02, 
+			HP_LAAT_03, 
+			HP_LAAT_04, 
+			HP_LAAT_05, 
+			HP_LAAT_06	
+		</Hardpoints>
+		<SurfaceFX_Name>Hover</SurfaceFX_Name>
+		<Death_Explosions>Medium_Explosion_Space</Death_Explosions>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<CategoryMask> Air </CategoryMask>
+		<Icon_Name>i_button_laati.tga</Icon_Name>
+		<MovementClass>Flying</MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>99</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>3</No_Refraction_Below_Detail_Level>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+		<Air_Vehicle_Turret_Target> Yes </Air_Vehicle_Turret_Target>
+		<Is_Squashable_By_Supercrusher>No</Is_Squashable_By_Supercrusher>
+		<Wind_Disturbance_Radius>50</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>10</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.4</Wind_Disturbance_Sphere_Alpha>
+		<SFXEvent_Fire>Unit_Lancet_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Lancet</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Lancet</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Lancet</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Lancet</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Lancet</SFXEvent_Guard>
+		<Death_SFXEvent_Start_Die>Unit_Snow_Speeder_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Ambient_Moving> Unit_Laat_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 7 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Laat_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<SFXEvent_Unit_Lost> EHD_Unit_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Tactical_Build_Started> EHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete> EHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
+		<SFXEvent_Tactical_Build_Cancelled> EHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Has_Land_Evaluator>Yes</Has_Land_Evaluator>
+		<AI_Combat_Power>450</AI_Combat_Power>
+		<Idle_Chase_Range>0.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>ATATAntiEverything</Targeting_Priority_Set>
+		<Autonomous_Move_Extension_Vs_Attacker>100.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Select_Box_Scale>80</Select_Box_Scale>
+		<Select_Box_Z_Adjust>150.0f</Select_Box_Z_Adjust>
+		<Weather_Category>Flying</Weather_Category>
+		<Score_Cost_Credits>125</Score_Cost_Credits>
+		<Base_Shield_Penetration_Particle>Shield_Penetration_Effect_Particle</Base_Shield_Penetration_Particle>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Garrison_Bone_Names>FL_DOOR_BONE</Garrison_Bone_Names>
+		<Converted_To_Enemy_Die_Time_Seconds>45</Converted_To_Enemy_Die_Time_Seconds>
+		<Tactical_Bribe_Cost>900</Tactical_Bribe_Cost>
+		<Dynamic_Transform_Delay_Seconds>0</Dynamic_Transform_Delay_Seconds>
+		<Dynamic_Transform_Start_Scale>.01</Dynamic_Transform_Start_Scale>
+		<Dynamic_Transform_End_Scale>1.3</Dynamic_Transform_End_Scale>
+		<Dynamic_Transform_Seconds>5</Dynamic_Transform_Seconds>
+		<Dynamic_Transform_Start_Color>1.0, 1.0, 1.0, 1.0</Dynamic_Transform_Start_Color>
+		<Dynamic_Transform_End_Color>1.0, 1.0, 1.0, 1.0</Dynamic_Transform_End_Color>
+
+	</HeroUnit>
+
+	<UniqueUnit Name="Delta_Trasport">
+		<Variant_Of_Existing_Type>Republic_Nu_Shuttle</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Icon_Name>I_BUTTON_BOSS.tga</Icon_Name>
+		<Text_ID>TEXT_HERO_DELTASQUAD</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ELITE_COMMANDO </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> TEXT_TOOLTIP_DELTASQUAD TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+		<Landing_Transport_Variant>Republic_Nu_Shuttle_Landing</Landing_Transport_Variant>
+	</UniqueUnit>
+	
+	
+</DeltaSquad_Data>

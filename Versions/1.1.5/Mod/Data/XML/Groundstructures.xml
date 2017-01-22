@@ -1,0 +1,3979 @@
+<?xml version="1.0"?>
+<GroundStructures>
+
+
+<!--							 			-->
+<!-- Indigenous Spawn Structures -->
+<!--							 			-->
+
+
+
+	<GroundStructure Name="Ewok_Spawn_House">
+		<GUI_Bounds_Scale>0.01</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_EWOK_TREEHOUSE</Text_ID>
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_EWOK</Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_EWOK  </Enemy_Spawn_Text>
+		<Land_Model_Name>NB_Ewok_tree.alo</Land_Model_Name>
+		<Icon_Name>i_button_nb_Ewok_tree.tga</Icon_Name>
+		
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<Behavior>UNIT_AI</Behavior>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+
+		<Spawned_Indigenous_Units_Type>Ewok_Hunter, Ewok_Hunter_B, Ewok_Hunter_C</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>80.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Endor_Ewok_Hunting_Party</Spawned_Indigenous_Pack_Type>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Empire</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_EWOK_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+
+  </GroundStructure>
+
+
+
+	<GroundStructure Name="Urban_Civilian_Spawn_House">
+		<Text_ID>TEXT_STRUCTURE_HUMAN_DWELLING</Text_ID>
+		<Land_Model_Name>W_Urban_CorBuild_A.alo</Land_Model_Name>
+		<Icon_Name>i_button_W_Urban_CorBuild_A.tga</Icon_Name>
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_HUMAN </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_HUMAN </Enemy_Spawn_Text>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Spawned_Indigenous_Units_Type> Urban_Civilian_A, Urban_Civilian_B, Urban_Civilian_C </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>150.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>180</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Civilian_Urban_Usable_Party</Spawned_Indigenous_Pack_Type>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+
+		<Loads_When_Faction_Present> True </Loads_When_Faction_Present>
+		<Affiliation>Neutral</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_HUMAN_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+	</GroundStructure>
+
+	<GroundStructure Name="Urban_Civilian_Spawn_House_Rebel">
+		<Variant_Of_Existing_Type>Urban_Civilian_Spawn_House</Variant_Of_Existing_Type>
+		<Spawned_Indigenous_Units_Type> Urban_Civ_A_Rebel, Urban_Civ_B_Rebel, Urban_Civ_C_Rebel </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Urban_Civilian_Team_Rebel</Spawned_Indigenous_Pack_Type>
+		<Affiliation>Rebel</Affiliation>
+	</GroundStructure>
+
+	<GroundStructure Name="Urban_Civilian_Spawn_House_Empire">
+		<Variant_Of_Existing_Type>Urban_Civilian_Spawn_House</Variant_Of_Existing_Type>
+		<Spawned_Indigenous_Units_Type> Urban_Civ_A_Empire, Urban_Civ_B_Empire, Urban_Civ_C_Empire </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Urban_Civilian_Team_Empire</Spawned_Indigenous_Pack_Type>
+		<Affiliation>Empire</Affiliation>
+	</GroundStructure>
+
+	<GroundStructure Name="Urban_Civilian_Spawn_House_Pirate">
+		<Variant_Of_Existing_Type>Urban_Civilian_Spawn_House</Variant_Of_Existing_Type>
+		<Spawned_Indigenous_Units_Type> Urban_Civ_A_Pirate, Urban_Civ_B_Pirate, Urban_Civ_C_Pirate </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Urban_Civilian_Team_Pirate</Spawned_Indigenous_Pack_Type>
+		<Affiliation>Pirates</Affiliation>
+	</GroundStructure>
+
+
+	
+
+	<GroundStructure Name="Volcanic_Civilian_Spawn_House_Independent_AI">
+		<Text_ID>TEXT_STRUCTURE_HUMAN_DWELLING</Text_ID>
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_HUMAN </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_HUMAN </Enemy_Spawn_Text>
+		<Land_Model_Name>NB_VCH.alo</Land_Model_Name>
+		<Icon_Name>i_button_NB_VCH.tga</Icon_Name>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+
+		<Spawned_Indigenous_Pack_Type>Civilian_Independent_AI_Party</Spawned_Indigenous_Pack_Type>
+		<Spawned_Indigenous_Units_Type> Civilian_Independent_AI </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Neutral</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_HUMAN_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+	</GroundStructure>
+
+	<GroundStructure Name="Volcanic_Civilian_Spawn_House_Indy_Rebel">
+		<Variant_Of_Existing_Type>Volcanic_Civilian_Spawn_House_Independent_AI</Variant_Of_Existing_Type>
+		<Spawned_Indigenous_Units_Type> Swamp_Civ_A_Rebel, Swamp_Civ_B_Rebel, Swamp_Civ_C_Rebel </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Swamp_Civilian_Team_Rebel</Spawned_Indigenous_Pack_Type>
+		<Affiliation>Rebel</Affiliation>
+	</GroundStructure>
+
+	<GroundStructure Name="Volcanic_Civilian_Spawn_House_Indy_Empire">
+		<Variant_Of_Existing_Type>Volcanic_Civilian_Spawn_House_Independent_AI</Variant_Of_Existing_Type>
+		<Spawned_Indigenous_Units_Type> Swamp_Civ_A_Empire, Swamp_Civ_B_Empire, Swamp_Civ_C_Empire </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Swamp_Civilian_Team_Empire</Spawned_Indigenous_Pack_Type>
+		<Affiliation>Empire</Affiliation>
+	</GroundStructure>
+
+	<GroundStructure Name="Volcanic_Civilian_Spawn_House_Indy_Pirate">
+		<Variant_Of_Existing_Type>Volcanic_Civilian_Spawn_House_Independent_AI</Variant_Of_Existing_Type>
+		<Spawned_Indigenous_Units_Type> Swamp_Civ_A_Pirate, Swamp_Civ_B_Pirate, Swamp_Civ_C_Pirate </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Swamp_Civilian_Team_Pirate</Spawned_Indigenous_Pack_Type>
+		<Affiliation>Pirates</Affiliation>
+	</GroundStructure>
+
+
+
+	<GroundStructure Name="Desert_Civilian_Spawn_House">
+		<GUI_Bounds_Scale>0.45</GUI_Bounds_Scale>
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_HUMAN </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_HUMAN </Enemy_Spawn_Text>
+		<Text_ID>TEXT_STRUCTURE_HUMAN_DWELLING</Text_ID>
+		<Land_Model_Name>NB_DCH.alo</Land_Model_Name>
+		<Icon_Name>i_button_NB_DCH.tga</Icon_Name>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		
+		<Spawned_Indigenous_Units_Type> Desert_Civilian_A </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>No</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Neutral</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_HUMAN_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+  </GroundStructure>
+
+	<GroundStructure Name="Desert_Civilian_Spawn_House_Rebel">
+		<Variant_Of_Existing_Type>Desert_Civilian_Spawn_House</Variant_Of_Existing_Type>
+		<Spawned_Indigenous_Units_Type>Desert_Civ_Rebel</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Desert_Civilian_Team_Rebel</Spawned_Indigenous_Pack_Type>
+		<Affiliation>Rebel</Affiliation>
+	</GroundStructure>
+
+	<GroundStructure Name="Desert_Civilian_Spawn_House_Empire">
+		<Variant_Of_Existing_Type>Desert_Civilian_Spawn_House</Variant_Of_Existing_Type>
+		<Spawned_Indigenous_Units_Type>Desert_Civ_Empire</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Desert_Civilian_Team_Empire</Spawned_Indigenous_Pack_Type>
+		<Affiliation>Empire</Affiliation>
+	</GroundStructure>
+
+	<GroundStructure Name="Desert_Civilian_Spawn_House_Pirate">
+		<Variant_Of_Existing_Type>Desert_Civilian_Spawn_House</Variant_Of_Existing_Type>
+		<Spawned_Indigenous_Units_Type>Desert_Civ_Pirate</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Desert_Civilian_Team_Pirate</Spawned_Indigenous_Pack_Type>
+		<Affiliation>Pirates</Affiliation>
+	</GroundStructure>
+
+
+	<GroundStructure Name="Swamp_Civilian_Spawn_House">
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_HUMAN_DWELLING</Text_ID>
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_HUMAN </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_HUMAN </Enemy_Spawn_Text>
+		<Land_Model_Name>NB_Swamp_hut.alo</Land_Model_Name>
+		<Icon_Name>i_button_NB_Swamp_hut.tga</Icon_Name>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Spawned_Indigenous_Units_Type> Swamp_Civilian_A, Swamp_Civilian_B, Swamp_Civilian_C </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>2.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Neutral</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_HUMAN_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+	</GroundStructure>
+
+	<GroundStructure Name="Swamp_Civilian_Spawn_House_Rebel">
+		<Variant_Of_Existing_Type>Swamp_Civilian_Spawn_House</Variant_Of_Existing_Type>
+		<Spawned_Indigenous_Units_Type> Swamp_Civ_A_Rebel, Swamp_Civ_B_Rebel, Swamp_Civ_C_Rebel </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Swamp_Civilian_Team_Rebel</Spawned_Indigenous_Pack_Type>
+		<Affiliation>Rebel</Affiliation>
+	</GroundStructure>
+
+	<GroundStructure Name="Swamp_Civilian_Spawn_House_Empire">
+		<Variant_Of_Existing_Type>Swamp_Civilian_Spawn_House</Variant_Of_Existing_Type>
+		<Spawned_Indigenous_Units_Type> Swamp_Civ_A_Empire, Swamp_Civ_B_Empire, Swamp_Civ_C_Empire </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Swamp_Civilian_Team_Empire</Spawned_Indigenous_Pack_Type>
+		<Affiliation>Empire</Affiliation>
+	</GroundStructure>
+
+	<GroundStructure Name="Swamp_Civilian_Spawn_House_Pirate">
+		<Variant_Of_Existing_Type>Swamp_Civilian_Spawn_House</Variant_Of_Existing_Type>
+		<Spawned_Indigenous_Units_Type> Swamp_Civ_A_Pirate, Swamp_Civ_B_Pirate, Swamp_Civ_C_Pirate </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Swamp_Civilian_Team_Pirate</Spawned_Indigenous_Pack_Type>
+		<Affiliation>Pirates</Affiliation>
+	</GroundStructure>
+
+
+	<GroundStructure Name="Temperate_Civilian_Spawn_House">
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_HUMAN_DWELLING</Text_ID>
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_HUMAN </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_HUMAN </Enemy_Spawn_Text>
+		<Land_Model_Name>NB_TCH.alo</Land_Model_Name>
+		<Icon_Name>i_button_NB_TCH.tga</Icon_Name>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Spawned_Indigenous_Units_Type> Swamp_Civilian_A, Swamp_Civilian_B, Swamp_Civilian_C </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>120.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>170</Max_Distance_From_Spawner>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.2</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Neutral</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_HUMAN_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+	</GroundStructure>
+
+	<GroundStructure Name="Temperate_Civilian_Spawn_House_Rebel">
+		<Variant_Of_Existing_Type>Temperate_Civilian_Spawn_House</Variant_Of_Existing_Type>
+		<Spawned_Indigenous_Units_Type> Swamp_Civ_A_Rebel, Swamp_Civ_B_Rebel, Swamp_Civ_C_Rebel </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Swamp_Civilian_Team_Rebel</Spawned_Indigenous_Pack_Type>
+		<Affiliation>Rebel</Affiliation>
+	</GroundStructure>
+
+	<GroundStructure Name="Temperate_Civilian_Spawn_House_Empire">
+		<Variant_Of_Existing_Type>Temperate_Civilian_Spawn_House</Variant_Of_Existing_Type>
+		<Spawned_Indigenous_Units_Type> Swamp_Civ_A_Empire, Swamp_Civ_B_Empire, Swamp_Civ_C_Empire </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Swamp_Civilian_Team_Empire</Spawned_Indigenous_Pack_Type>
+		<Affiliation>Empire</Affiliation>
+	</GroundStructure>
+
+	<GroundStructure Name="Temperate_Civilian_Spawn_House_Pirate">
+		<Variant_Of_Existing_Type>Temperate_Civilian_Spawn_House</Variant_Of_Existing_Type>
+		<Spawned_Indigenous_Units_Type> Swamp_Civ_A_Pirate, Swamp_Civ_B_Pirate, Swamp_Civ_C_Pirate </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Swamp_Civilian_Team_Pirate</Spawned_Indigenous_Pack_Type>
+		<Affiliation>Pirates</Affiliation>
+	</GroundStructure>
+
+
+	<GroundStructure Name="Arctic_Civilian_Spawn_House">
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_HUMAN_DWELLING</Text_ID>
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_HUMAN </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_HUMAN </Enemy_Spawn_Text>
+		<Land_Model_Name>NB_SCH.alo</Land_Model_Name>
+		<Icon_Name>i_botton_NB_SCH.tga</Icon_Name>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Spawned_Indigenous_Units_Type>Snow_Civilian_A</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Neutral</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_HUMAN_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+	</GroundStructure>
+
+	<GroundStructure Name="Arctic_Civilian_Spawn_House_Rebel">
+		<Variant_Of_Existing_Type>Arctic_Civilian_Spawn_House</Variant_Of_Existing_Type>
+		<Spawned_Indigenous_Units_Type>Snow_Civ_A_Rebel</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Snow_Civilian_Team_Rebel</Spawned_Indigenous_Pack_Type>
+		<Affiliation>Rebel</Affiliation>
+	</GroundStructure>
+
+	<GroundStructure Name="Arctic_Civilian_Spawn_House_Empire">
+		<Variant_Of_Existing_Type>Arctic_Civilian_Spawn_House</Variant_Of_Existing_Type>
+		<Spawned_Indigenous_Units_Type>Snow_Civ_A_Empire</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Snow_Civilian_Team_Empire</Spawned_Indigenous_Pack_Type>
+		<Affiliation>Empire</Affiliation>
+	</GroundStructure>
+
+	<GroundStructure Name="Arctic_Civilian_Spawn_House_Pirate">
+		<Variant_Of_Existing_Type>Arctic_Civilian_Spawn_House</Variant_Of_Existing_Type>
+		<Spawned_Indigenous_Units_Type>Snow_Civ_A_Pirate</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Snow_Civilian_Team_Pirate</Spawned_Indigenous_Pack_Type>
+		<Affiliation>Pirates</Affiliation>
+	</GroundStructure>
+
+
+
+
+
+	<GroundStructure Name="Volcanic_Civilian_Spawn_House">
+		<Text_ID>TEXT_STRUCTURE_HUMAN_DWELLING</Text_ID>
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_HUMAN </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_HUMAN </Enemy_Spawn_Text>
+		<Land_Model_Name>NB_VCH.alo</Land_Model_Name>
+		<Icon_Name>i_button_NB_VCH.tga</Icon_Name>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+	
+		<Spawned_Indigenous_Units_Type> Swamp_Civilian_A </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+	
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Neutral</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_HUMAN_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+	</GroundStructure>
+
+	<GroundStructure Name="Volcanic_Civilian_Spawn_House_Rebel">
+		<Variant_Of_Existing_Type>Volcanic_Civilian_Spawn_House</Variant_Of_Existing_Type>
+		<Spawned_Indigenous_Units_Type> Swamp_Civ_A_Rebel, Swamp_Civ_B_Rebel, Swamp_Civ_C_Rebel </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Swamp_Civilian_Team_Rebel</Spawned_Indigenous_Pack_Type>
+		<Affiliation>Rebel</Affiliation>
+	</GroundStructure>
+
+	<GroundStructure Name="Volcanic_Civilian_Spawn_House_Empire">
+		<Variant_Of_Existing_Type>Volcanic_Civilian_Spawn_House</Variant_Of_Existing_Type>
+		<Spawned_Indigenous_Units_Type> Swamp_Civ_A_Empire, Swamp_Civ_B_Empire, Swamp_Civ_C_Empire </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Swamp_Civilian_Team_Empire</Spawned_Indigenous_Pack_Type>
+		<Affiliation>Empire</Affiliation>
+	</GroundStructure>
+
+	<GroundStructure Name="Volcanic_Civilian_Spawn_House_Pirate">
+		<Variant_Of_Existing_Type>Volcanic_Civilian_Spawn_House</Variant_Of_Existing_Type>
+		<Spawned_Indigenous_Units_Type> Swamp_Civ_A_Pirate, Swamp_Civ_B_Pirate, Swamp_Civ_C_Pirate </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Swamp_Civilian_Team_Pirate</Spawned_Indigenous_Pack_Type>
+		<Affiliation>Pirates</Affiliation>
+	</GroundStructure>
+
+
+
+
+
+	<GroundStructure Name="Jawa_Sandcrawler">
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_JAWA_SANDCRAWLER</Text_ID>
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_JAWA </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text>TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_JAWA </Enemy_Spawn_Text>
+		<Land_Model_Name>NV_SAND_CRAWLER.ALO</Land_Model_Name>
+		<Icon_Name>i_button_NV_SAND_CRAWLER.tga</Icon_Name>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		
+		<Spawned_Indigenous_Units_Type>Jawa_Scout</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance> 1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Tatooine_Jawa_Scout_Team</Spawned_Indigenous_Pack_Type>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.15</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+		<Loads_When_Faction_Present> True </Loads_When_Faction_Present>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Rebel</Affiliation>
+		<!--<Base_Level_Available>0</Base_Level_Available>-->
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Ranged_Target_Z_Adjust>40.0</Ranged_Target_Z_Adjust>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Lua_Script>SandCrawler</Lua_Script>
+
+		<Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_JAWA_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+	</GroundStructure>
+
+
+	<GroundStructure Name="Rancor_Spawn_Cave">
+		<Text_ID>TEXT_STRUCTURE_RANCOR_ROCK</Text_ID>
+		<Land_Model_Name>NB_Rancor_cave.alo</Land_Model_Name>
+		<Icon_Name>i_button_NB_Rancor_cave.tga</Icon_Name>
+		
+		<Enemy_Spawn_Text>TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_RANCOR TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_RANCOR TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_U_RANCOR</Enemy_Spawn_Text>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, LAND_OBSTACLE, SPACE_OBSTACLE, SPAWN_INDIGENOUS_UNITS, HIDE_WHEN_FOGGED, DUMMY_TOOLTIP, SELECTABLE</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Spawned_Indigenous_Units_Type> Rancor </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>60.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>1</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>No</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>80.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.05  0.05</Radar_Icon_Size>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>600</Tactical_Health>
+		<Autoresolve_Health>600</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Hostile</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_RANCOR_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
+
+	</GroundStructure>
+	
+	<GroundStructure Name="Krayt_Spawn_Cave">
+		<Text_ID>TEXT_STRUCTURE_KRAYT_ROCK</Text_ID>
+		<Land_Model_Name>NB_Rancor_cave.alo</Land_Model_Name>
+		<Icon_Name>i_button_NB_Rancor_cave.tga</Icon_Name>
+		
+		<Enemy_Spawn_Text>TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_KRAYT TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_KRAYT TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_U_RANCOR</Enemy_Spawn_Text>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, LAND_OBSTACLE, SPACE_OBSTACLE, SPAWN_INDIGENOUS_UNITS, HIDE_WHEN_FOGGED, DUMMY_TOOLTIP, SELECTABLE</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Spawned_Indigenous_Units_Type> Krayt_Dragon </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>60.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>1</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>No</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>80.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.05  0.05</Radar_Icon_Size>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>600</Tactical_Health>
+		<Autoresolve_Health>600</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Hostile</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_KRAYT_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
+
+	</GroundStructure>
+	
+
+	<GroundStructure Name="Vornskr_Spawn_House">
+		<Text_ID>TEXT_STRUCTURE_VORNSKR_DEN</Text_ID>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_VORNSKR_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_VORNSKR TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_VORNSKR TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_U_VORNSKR </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_vornskr_den.alo</Land_Model_Name>
+		<Icon_Name>i_button_NB_Rancor_cave.tga</Icon_Name>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, LAND_OBSTACLE, SPACE_OBSTACLE, SPAWN_INDIGENOUS_UNITS, HIDE_WHEN_FOGGED, DUMMY_TOOLTIP, SELECTABLE</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Spawned_Indigenous_Units_Type> Vornskr_Wolf_Indig </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>10.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>3</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>No</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>80.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.05  0.05</Radar_Icon_Size>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>600</Tactical_Health>
+		<Autoresolve_Health>600</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Hostile</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
+
+	</GroundStructure>
+	
+
+	<GroundStructure Name="Wampa_Spawn_Cave">
+		<Text_ID>TEXT_STRUCTURE_WAMPA_CAVE</Text_ID>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_WAMPA TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_WAMPA TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_U_WAMPA </Enemy_Spawn_Text>
+		<Land_Model_Name>AI_WampaCave.alo</Land_Model_Name>
+		<Icon_Name>i_button_AI_WampaCave.tga</Icon_Name>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Spawned_Indigenous_Units_Type> Wampa </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>60.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>1</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>No</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>80.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+		
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.05  0.05</Radar_Icon_Size>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<!-- Passability must be manually painted by artists/designers to allow spawned unit to go inside the cave -->
+ 		<Obstacle_Width>0.1</Obstacle_Width>
+ 		<Obstacle_Height>0.1</Obstacle_Height>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>600</Tactical_Health>
+		<Autoresolve_Health>600</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Hostile</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_WAMPA_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
+
+	</GroundStructure>
+
+
+	<GroundStructure Name="Wookiee_Spawn_House">
+		<GUI_Bounds_Scale>0.01</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_WOOKIEE_TREEHOUSE</Text_ID>
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_WOOKIEE </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text>TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_WOOKIEE </Enemy_Spawn_Text>
+		<Land_Model_Name>NB_wookiee_tree.alo</Land_Model_Name>
+		<Icon_Name>i_button_NB_wookiee_tree.tga</Icon_Name>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, LAND_OBSTACLE, SPACE_OBSTACLE, REVEAL, SPAWN_INDIGENOUS_UNITS, HIDE_WHEN_FOGGED, DUMMY_TOOLTIP</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		
+		<Spawned_Indigenous_Units_Type>Wookie_Warrior</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>100.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Kashyyyk_Wookie_War_Party</Spawned_Indigenous_Pack_Type>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>800</Tactical_Health>
+		<Autoresolve_Health>800</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Empire</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 700 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_WOOKIEE_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+	</GroundStructure>
+
+	<GroundStructure Name="Wookiee_House"> 
+		<GUI_Bounds_Scale>0.01</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_WOOKIEE_TREEHOUSE</Text_ID>
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_WOOKIEE </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text>TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_WOOKIEE </Enemy_Spawn_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>NB_wookiee_tree.alo</Land_Model_Name>
+		<Icon_Name>i_button_NB_wookiee_tree.tga</Icon_Name>
+		
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<Behavior>UNIT_AI</Behavior>
+		<LandBehavior>IDLE, LAND_OBSTACLE, SPACE_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DUMMY_TOOLTIP</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar><!--jdg I need this guy visible-->
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>800</Tactical_Health>
+		<Autoresolve_Health>800</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Rebel, Empire</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 700 </Score_Cost_Credits>
+		<AI_Combat_Power> 50 </AI_Combat_Power>
+	
+	</GroundStructure>
+
+
+	<GroundStructure Name="Gungan_Spawn_House">
+		<Text_ID>TEXT_STRUCTURE_GUNGAN_BUNGALO</Text_ID>
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_GUNGAN</Friendly_Spawn_Text>
+		<Enemy_Spawn_Text>TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_GUNGAN</Enemy_Spawn_Text>
+		<Land_Model_Name>NB_Gunga_Building.alo</Land_Model_Name>
+		<Icon_Name>i_button_NB_Gunga_Building.tga</Icon_Name>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		
+		<Spawned_Indigenous_Units_Type>Gungan_Warrior</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>130.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Naboo_Gungan_Warrior_Troop</Spawned_Indigenous_Pack_Type>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+		
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Empire</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+		
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_GUNGAN_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+  </GroundStructure>
+
+
+	<GroundStructure Name="Sandpeople_Dwelling">
+		<GUI_Bounds_Scale>0.05</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_SANDPERSON_DWELLING</Text_ID>
+		<Enemy_Spawn_Text>TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_TUSCAN_RAIDER TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_TUSCAN_RAIDER TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_U_SANDPEOPLE</Enemy_Spawn_Text>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_SANDPEOPLE_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>NB_Sandpeople_Tent.alo</Land_Model_Name>
+		<Icon_Name>i_button_NB_Sandpeople_Tent.tga</Icon_Name>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Spawned_Indigenous_Units_Type>Sand_Person_Sniper_A, Sand_Person_Sniper_B</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>6</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>80.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Hostile</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+  </GroundStructure>
+
+	<GroundStructure Name="MonCalamari_Spawn_House">
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_MONCAL_DWELLING</Text_ID>
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_MONCAL </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text>TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_MONCAL</Enemy_Spawn_Text>
+		<Land_Model_Name>NB_moncal_building.alo</Land_Model_Name>
+		<Icon_Name>i_button_NB_moncal_bu.tga</Icon_Name>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		
+		<Spawned_Indigenous_Units_Type>Mon_Calamari_Civilian</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Mon_Calamari_Civ_Company</Spawned_Indigenous_Pack_Type>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Empire</Affiliation>
+
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_MONCAL_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+  </GroundStructure>
+
+
+
+	<GroundStructure Name="Geonosian_Spawn_House">
+		<GUI_Bounds_Scale>0.05</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_GEONOSIAN_HIVE</Text_ID>
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_GEONOSIAN </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text>TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_GEONOSIAN </Enemy_Spawn_Text>
+		<Land_Model_Name>w_Geonosis_Tower01.alo</Land_Model_Name>
+		<Icon_Name>i_button_w_Geonosis_Tower01.tga</Icon_Name>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Spawned_Indigenous_Units_Type>Geonosian</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>10.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>20</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>200.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>220</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Geonosian_Civ_Company</Spawned_Indigenous_Pack_Type>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>100</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+
+		<Affiliation>Rebel</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_GEONOSIAN_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+  </GroundStructure>
+
+
+
+
+	<GroundStructure Name="Bothan_Spawn_House">
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_BOTHAN_HOUSE</Text_ID>
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_BOTHAN </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text>TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_BOTHAN</Enemy_Spawn_Text>
+		<Land_Model_Name>NB_Bothan_building.alo</Land_Model_Name>
+		<Icon_Name>i_button_NB_Bothan_building.tga</Icon_Name>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<Behavior>UNIT_AI</Behavior>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		
+		<Spawned_Indigenous_Units_Type>Bothan_Civilian</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Bothan_Civ_Company</Spawned_Indigenous_Pack_Type>
+
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Empire</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_BOTHAN_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+	</GroundStructure>
+
+	<GroundStructure Name="Bothan_Spawn_House_Mission">
+		<Variant_Of_Existing_Type>Bothan_Spawn_House</Variant_Of_Existing_Type>
+		<Behavior>SELECTABLE</Behavior>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Victory_Relevant>Yes</Victory_Relevant>
+		<Spawned_Indigenous_Units_Type>Bothan_Civilian_Mission</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Pack_Type>Bothan_Civ_Company_Mission</Spawned_Indigenous_Pack_Type>
+	</GroundStructure>
+
+
+
+
+	<GroundStructure Name="Twilek_Spawn_House">
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_TWILEK_HOUSE</Text_ID>
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_TWILEK </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_TWILEK </Enemy_Spawn_Text>
+		<Land_Model_Name>NB_twilek_building.alo</Land_Model_Name>
+		<Icon_Name>i_button_NB_twilek_building.tga</Icon_Name>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<Behavior>UNIT_AI</Behavior>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		
+		<Spawned_Indigenous_Units_Type>Twilek_Female</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>12</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>80.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Twilek_Raiding_Party</Spawned_Indigenous_Pack_Type>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Underworld</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TWILEK_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+	</GroundStructure>
+
+
+	<GroundStructure Name="Hutt_Spawn_House">
+		<GUI_Bounds_Scale>0.45</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_HUTT_HOUSE</Text_ID>
+		<Friendly_Spawn_Text />
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_HUTT TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_HUTT TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_U_HUTT </Enemy_Spawn_Text>
+		<Land_Model_Name>W_Hutt_Spawnbuilding.alo</Land_Model_Name>
+		<Icon_Name>i_button_W_Hutt_Spawnbuilding.tga</Icon_Name>
+
+		<Scale_Factor>1.5</Scale_Factor>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		
+		<Behavior>UNIT_AI</Behavior>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		
+		<Spawned_Indigenous_Units_Type>Hutt_Civilian</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>5</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>80.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type />
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Hutts</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_HUTT_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+	</GroundStructure>
+
+
+
+
+	<GroundStructure Name="Sullust_Cave_Complex_Entry">
+		<GUI_Bounds_Scale>0.2</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_SULLUSTAN</Text_ID>
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_SULLUSTAN </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text>TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_SULLUSTAN</Enemy_Spawn_Text>
+		<Land_Model_Name>NB_Sullest_cave.alo</Land_Model_Name>
+		<Icon_Name>i_button_NB_Sullest_cave.tga</Icon_Name>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, LAND_OBSTACLE, SPACE_OBSTACLE, REVEAL, SPAWN_INDIGENOUS_UNITS, HIDE_WHEN_FOGGED, DUMMY_TOOLTIP</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Spawned_Indigenous_Units_Type>Sullustan_Civilian</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Sullustan_Civ_Company</Spawned_Indigenous_Pack_Type>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Empire</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_SULLUSTAN_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+	</GroundStructure>
+
+
+
+
+	<GroundStructure Name="Imperial_Guard_Spawner">
+		<GUI_Bounds_Scale>0.005</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_IMPERIAL_PALACE</Text_ID>
+		<Land_Model_Name>W_ImperialPalace.alo</Land_Model_Name>
+		<Icon_Name>i_button_W_ImperialPalace.tga</Icon_Name>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Spawned_Indigenous_Units_Type>Imperial_Elite_Guard</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>6</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>190.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>200</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Imperial_Guard_Company</Spawned_Indigenous_Pack_Type>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Empire</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_IMPERIAL_GUARD_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+	</GroundStructure>
+
+<!--<GroundStructure Name="Republic_Shock_Trooper_Spawner">
+		<GUI_Bounds_Scale>0.005</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_CHANCELLORS_OFFICE</Text_ID>
+		<Land_Model_Name>W_ImperialPalace.alo</Land_Model_Name>
+		<Icon_Name>i_button_W_ImperialPalace.tga</Icon_Name>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Spawned_Indigenous_Units_Type>Republic_Shock_Trooper</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>5</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>190.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>200</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Republic_Shock_Trooper_Company</Spawned_Indigenous_Pack_Type>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>2.5</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Empire</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_SHOCK_TROOPER_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+	</GroundStructure>
+
+<GroundStructure Name="Republic_Senate_Commando_Spawner">
+		<GUI_Bounds_Scale>0.005</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_SENATE_COMMANDO_HQ</Text_ID>
+		<Land_Model_Name>W_ImperialPalace.alo</Land_Model_Name>
+		<Icon_Name>i_button_W_ImperialPalace.tga</Icon_Name>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Spawned_Indigenous_Units_Type>Republic_Senate_Commando</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>5</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>190.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>200</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Republic_Senate_Commando_Company</Spawned_Indigenous_Pack_Type>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>2.5</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Empire</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_SENATE_COMMANDO_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+	</GroundStructure>-->
+
+
+	<GroundStructure Name="Pyngani_Spawn_House">
+		<Text_ID>TEXT_STRUCTURE_PYNGANI</Text_ID>
+		<Enemy_Spawn_Text>TEXT_DUMMY TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_PYNGANI TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_U_PYNGANI</Enemy_Spawn_Text>
+		<Land_Model_Name>NB_ICH.alo</Land_Model_Name>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Spawned_Indigenous_Units_Type>Pyngani_Warrior</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>15.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>50.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Neutral</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_PYNGANI_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+	</GroundStructure>
+
+	<GroundStructure Name="Pyngani_Prop_House">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>NB_ICH.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</GroundStructure>
+
+
+
+
+	<GroundStructure Name="Noghri_Spawn_House">
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_NOGHRI_DWELLING</Text_ID>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_NOGHRI_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_NOGHRI </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_NOGHRI</Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_Noghri_Hut.alo</Land_Model_Name>
+		<Icon_Name>i_button_nb_noghri_hut.tga</Icon_Name>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>40.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Spawned_Indigenous_Units_Type> Noghri_Indigenous </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>22.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>5</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawned_Indigenous_Pack_Type>Noghri_Indigenous_Company</Spawned_Indigenous_Pack_Type>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>2.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Empire</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+	</GroundStructure>
+
+
+	<GroundStructure Name="Mustafarian_Spawn_House">
+		<Text_ID>TEXT_STRUCTURE_MUSTAFARIAN_DWELLING</Text_ID>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_MUSTAFARIAN_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>NB_mustmushroom.alo</Land_Model_Name>
+		<Icon_Name>i_button_nb_mustmushroom.tga</Icon_Name>
+
+		<Friendly_Spawn_Text>TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_MUSTAFARIAN</Friendly_Spawn_Text>
+		<Enemy_Spawn_Text>TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_MUSTAFARIAN</Enemy_Spawn_Text>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+
+		<Spawned_Indigenous_Units_Type> Mustafarian_Indigenous </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>9</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawned_Indigenous_Pack_Type>Mustafarian_Indigenous_Company</Spawned_Indigenous_Pack_Type>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Rebel</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+	</GroundStructure>
+
+
+
+	<GroundStructure Name="Mandalorian_Spawn_House">
+		<Text_ID>TEXT_STRUCTURE_MANDALORIAN_DWELLING</Text_ID>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_MANDALORIAN_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>NB_mandalorian_barracks.alo</Land_Model_Name>
+		<Icon_Name>i_button_nb_mandalorian_barracks.tga</Icon_Name>
+
+		<Enemy_Spawn_Text>TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_MANDALORIAN TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_MANDALORIAN TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_U_MANDALORIAN </Enemy_Spawn_Text>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+
+		<Spawned_Indigenous_Units_Type> Mandalorian_Indigenous </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>9</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawned_Indigenous_Pack_Type>Mandalorian_Indigenous_Company</Spawned_Indigenous_Pack_Type>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>2.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Hostile</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+	</GroundStructure>
+
+
+
+
+
+	<GroundStructure Name="Nightsister_Spawn_House">
+		<Text_ID>TEXT_STRUCTURE_MANDALORIAN_DWELLING</Text_ID>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_MANDALORIAN_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>NB_NightSis_Hut.alo</Land_Model_Name>
+		<Icon_Name>i_button_W_Urban_CorBuild_A.tga</Icon_Name>
+
+		<Enemy_Spawn_Text>TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_NIGHTSISTERS TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_NIGHTSISTERS TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_U_NIGHTSISTERS</Enemy_Spawn_Text>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+
+		<Spawned_Indigenous_Units_Type> Dathomir_Night_Sister </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>9</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawned_Indigenous_Pack_Type>Mandalorian_Indigenous_Company</Spawned_Indigenous_Pack_Type>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Hostile</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+	</GroundStructure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--													   -->
+<!--	Walls and other Rebel/Empire decorative structures -->
+<!--													   -->
+
+
+
+  	<GroundStructure Name="Empire_Wall">
+		<Text_ID>TEXT_STRUCTURE_WALL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>EB_BaseWall-mid.alo</Land_Model_Name>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior />
+		<LandBehavior>WALL</LandBehavior>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+
+		<OverridePassability> EmpireWall </OverridePassability>
+		
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>200</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Empire</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Armor_Type> Armor_Wall </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+		<GUI_Hide_Health_Bar>true</GUI_Hide_Health_Bar>
+		
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+		
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>     
+		<Radar_Icon_Size>0.04  0.04</Radar_Icon_Size>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Proj_Wall_Destruction</Death_Explosions>
+		<CategoryMask>Wall</CategoryMask>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+   </GroundStructure>
+
+	<GroundStructure Name="Empire_Wall_Corner">
+		<Text_ID>TEXT_STRUCTURE_WALL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>EB_BaseWall-crn.alo</Land_Model_Name>
+		<Behavior />
+		<LandBehavior>WALL</LandBehavior>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+
+		<OverridePassability> EmpireWall </OverridePassability>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>200</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Empire</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Armor_Type> Armor_Wall </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+		<GUI_Hide_Health_Bar>true</GUI_Hide_Health_Bar>
+		
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+		
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.04  0.04</Radar_Icon_Size>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Proj_Wall_Destruction</Death_Explosions>
+		<CategoryMask>Wall</CategoryMask>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+   </GroundStructure>
+
+	<GroundStructure Name="Empire_Wall__Inside_Corner">
+		<Text_ID>TEXT_STRUCTURE_WALL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>EB_BaseWall-inside-crn.alo</Land_Model_Name>
+		<Behavior />
+		<LandBehavior>WALL</LandBehavior>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+
+		<OverridePassability> EmpireWall </OverridePassability>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>200</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Empire</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Armor_Type> Armor_Wall </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+		<GUI_Hide_Health_Bar>true</GUI_Hide_Health_Bar>
+		
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+		
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.04  0.04</Radar_Icon_Size>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Proj_Wall_Destruction</Death_Explosions>
+		<CategoryMask>Wall</CategoryMask>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+   </GroundStructure>
+
+	<GroundStructure Name="Comm_Jammer">
+		<Text_ID>TEXT_STRUCTURE_COMM_JAMMER_EMPIRE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>NB_Comm_Jamm.alo</Land_Model_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<SFXEvent_Ambient_Loop>Structure_Sensor_Array_Loop</SFXEvent_Ambient_Loop>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Medium_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>10.0</Ranged_Target_Z_Adjust>
+		<Behavior>SELECTABLE, TACTICAL_SELL</Behavior>
+		<LandBehavior>IDLE,LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED</LandBehavior>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>	
+
+		<Land_Damage_Thresholds>1, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation</Land_Damage_SFX>
+		<Remove_Upon_Death>false</Remove_Upon_Death>
+
+		<Tactical_Sell_Credits> 250 </Tactical_Sell_Credits>
+		<SFXEvent_Sold_Tactical> EHD_Sensor_Node_Sold </SFXEvent_Sold_Tactical>
+
+		<Required_Special_Structures>Communications_Array_E</Required_Special_Structures>
+		 
+		<Land_FOW_Reveal_Range>500.0</Land_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+		<Select_Box_Scale>50</Select_Box_Scale>
+
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>100</Tactical_Health>
+		<Affiliation>Empire</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+		<GUI_Bracket_Width>20</GUI_Bracket_Width>
+		<GUI_Bracket_Height>0</GUI_Bracket_Height>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size> 
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+	</GroundStructure>
+
+
+	<GroundStructure Name="Empire_Landing_Platform">
+		<Text_ID>TEXT_STRUCTURE_LANDING_PAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name> EB_ICC_landingpad.alo </Land_Model_Name>
+		<Behavior />
+		<LandBehavior>IDLE,LAND_OBSTACLE,REVEAL</LandBehavior>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Empire</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.2</Radar_Icon_Size>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+
+  		<Obstacle_Width>160.0</Obstacle_Width>
+		<Obstacle_Height>100.0</Obstacle_Height>
+		<Obstacle_X_Offset>-80.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-50.0</Obstacle_Y_Offset>
+
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<GUI_Bracket_Width>50</GUI_Bracket_Width>
+		<GUI_Bracket_Height>0</GUI_Bracket_Height>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+	</GroundStructure>
+	
+	<GroundStructure Name="Empire_Landing_Platform_2X">
+	
+		<Variant_Of_Existing_Type> Empire_Landing_Platform </Variant_Of_Existing_Type>
+		<LandBehavior>IDLE, REVEAL</LandBehavior>
+		<Scale_Factor>2.0</Scale_Factor>
+
+	</GroundStructure>
+
+
+<!-- Rebel Structures -->
+
+
+	<GroundStructure Name="Wall">
+		<Text_ID>TEXT_STRUCTURE_WALL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>RB_BASEWALL-MID.ALO</Land_Model_Name>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior />
+		<LandBehavior>WALL</LandBehavior>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		
+		<OverridePassability> RebelWall </OverridePassability>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>200</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Rebel</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Armor_Type> Armor_Wall </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+		<GUI_Hide_Health_Bar>true</GUI_Hide_Health_Bar>
+		
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+		
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>     
+		<Radar_Icon_Size>0.04  0.04</Radar_Icon_Size>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Proj_Wall_Destruction</Death_Explosions>
+		<CategoryMask>Wall</CategoryMask>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+	</GroundStructure>
+
+	<GroundStructure Name="Wall_Corner">
+		<Text_ID>TEXT_STRUCTURE_WALL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>RB_BASEWALL-corn.ALO</Land_Model_Name>
+		<Behavior />
+		<LandBehavior>WALL</LandBehavior>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<OverridePassability> RebelWall </OverridePassability>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>200</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Rebel</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Armor_Type> Armor_Wall </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+		<GUI_Hide_Health_Bar>true</GUI_Hide_Health_Bar>
+		
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+		
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.04  0.04</Radar_Icon_Size>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Proj_Wall_Destruction</Death_Explosions>
+		<CategoryMask>Wall</CategoryMask>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+	</GroundStructure>
+
+	<GroundStructure Name="Wall_Inside_Corner">
+		<Text_ID>TEXT_STRUCTURE_WALL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>RB_BASEWALL-Inside-crn.ALO</Land_Model_Name>
+		<Behavior />
+		<LandBehavior>WALL</LandBehavior>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<OverridePassability> RebelWall </OverridePassability>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>200</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Rebel</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Armor_Type> Armor_Wall </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+		<GUI_Hide_Health_Bar>true</GUI_Hide_Health_Bar>
+		
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+		
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.04  0.04</Radar_Icon_Size>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Proj_Wall_Destruction</Death_Explosions>
+		<CategoryMask>Wall</CategoryMask>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+	</GroundStructure>
+
+   <GroundStructure Name="Abstract_Sensor_Array">
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_SENSOR_NODE</Encyclopedia_Text>
+		<Land_Model_Name>NB_SensorNode.alo</Land_Model_Name>
+		<Icon_Name>i_button_sensor_node.tga</Icon_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		
+		<SFXEvent_Select>Structure_Sensor_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Structure_Sensor_Array_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Medium_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>10.0</Ranged_Target_Z_Adjust>
+		<Behavior>SELECTABLE, TACTICAL_SELL</Behavior>
+		<LandBehavior> IDLE, REVEAL, HIDE_WHEN_FOGGED, LAND_OBSTACLE </LandBehavior>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
+		 
+		<Land_FOW_Reveal_Range>500.0</Land_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+		<Select_Box_Scale>50</Select_Box_Scale>
+
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>100</Tactical_Health>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+		<GUI_Bracket_Width>20</GUI_Bracket_Width>
+		<GUI_Bracket_Height>0</GUI_Bracket_Height>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size> 
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Target_Stealth_Units>Yes</Target_Stealth_Units>
+  </GroundStructure>
+
+   <GroundStructure Name="Sensor_Array">
+   
+ 		<Variant_Of_Existing_Type> Abstract_Sensor_Array </Variant_Of_Existing_Type>
+  
+		<Text_ID>TEXT_STRUCTURE_SENSOR_REBEL</Text_ID>
+		
+		<Tactical_Sell_Credits> 500 </Tactical_Sell_Credits>
+		<SFXEvent_Sold_Tactical> UHD_Sensor_Node_Sold </SFXEvent_Sold_Tactical>
+
+		<Required_Special_Structures>Communications_Array_R</Required_Special_Structures>
+		 
+		<Affiliation>Rebel</Affiliation>
+
+		<Obstacle_Proxy_Type> Rebel_Build_Pad </Obstacle_Proxy_Type>
+
+  </GroundStructure>
+
+   <GroundStructure Name="Sensor_Array_Empire">
+
+ 		<Variant_Of_Existing_Type> Abstract_Sensor_Array </Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_STRUCTURE_SENSOR_EMPIRE</Text_ID>
+
+		<Tactical_Sell_Credits> 250 </Tactical_Sell_Credits>
+		<SFXEvent_Sold_Tactical> RHD_Sensor_Node_Sold </SFXEvent_Sold_Tactical>
+
+		<Required_Special_Structures>Communications_Array_E</Required_Special_Structures>
+		 
+		<Affiliation>Empire</Affiliation>
+
+		<Obstacle_Proxy_Type> Empire_Build_Pad </Obstacle_Proxy_Type>
+
+	</GroundStructure>
+
+   <GroundStructure Name="Sensor_Array_Underworld">
+
+ 		<Variant_Of_Existing_Type> Abstract_Sensor_Array </Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_STRUCTURE_SENSOR_UNDERWORLD</Text_ID>
+
+		<Tactical_Sell_Credits> 250 </Tactical_Sell_Credits>
+		<SFXEvent_Sold_Tactical> EHD_Sensor_Node_Sold </SFXEvent_Sold_Tactical>
+
+		<Required_Special_Structures>U_Ground_Palace</Required_Special_Structures>
+		 
+		<Affiliation>Underworld</Affiliation>
+
+		<Obstacle_Proxy_Type> Underworld_Build_Pad </Obstacle_Proxy_Type>
+
+	</GroundStructure>
+
+
+	<GroundStructure Name="Grounded_Xwing">
+		<Text_ID>TEXT_UNIT_X_WING</Text_ID>
+		<Land_Model_Name>Cin_rv_XWingProp.alo</Land_Model_Name>
+		<Icon_Name>i_button_x_wing.tga</Icon_Name>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>IDLE,LAND_OBSTACLE</LandBehavior>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>50</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Rebel</Affiliation>
+		<!--<Base_Level_Available>0</Base_Level_Available>-->
+		<Armor_Type> Armor_Vehicle_LT </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>     
+		<Radar_Icon_Size>0.05  0.05</Radar_Icon_Size>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Small_Explosion_Land</Death_Explosions>
+		<CategoryMask>Wall</CategoryMask>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FIGHTER </Encyclopedia_Unit_Class>
+	</GroundStructure>
+
+	<GroundStructure Name="Captureable_Xwing">
+      <Variant_Of_Existing_Type>Grounded_Xwing</Variant_Of_Existing_Type>
+		<Land_Model_Name>rv_xwing_mission01.alo</Land_Model_Name>
+		<Affiliation>Neutral</Affiliation>
+		<No_Colorization_Color> 200, 104, 59, 255 </No_Colorization_Color>
+   </GroundStructure>
+
+
+<!-- PIRATE STRUCTURES -->
+
+
+	<GroundStructure Name="Pirate_Wall">
+		<Text_ID>TEXT_STRUCTURE_WALL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>RB_BASEWALL-MID.ALO</Land_Model_Name>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior />
+		<LandBehavior>WALL</LandBehavior>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>200</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Pirates</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Armor_Type> Armor_Wall </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+		<GUI_Hide_Health_Bar>true</GUI_Hide_Health_Bar>
+
+		
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+		
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>     
+ 		<Radar_Icon_Size>0.04  0.04</Radar_Icon_Size>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Proj_Wall_Destruction</Death_Explosions>
+		<CategoryMask>Wall</CategoryMask>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+	</GroundStructure>
+
+	<GroundStructure Name="Pirate_Wall_Corner">
+		<Text_ID>TEXT_STRUCTURE_WALL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>RB_BASEWALL-corn.ALO</Land_Model_Name>
+		<Behavior />
+		<LandBehavior>WALL</LandBehavior>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>200</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Pirates</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Armor_Type> Armor_Wall </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+		<GUI_Hide_Health_Bar>true</GUI_Hide_Health_Bar>
+		
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+		
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.04  0.04</Radar_Icon_Size>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Proj_Wall_Destruction</Death_Explosions>
+		<CategoryMask>Wall</CategoryMask>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+	</GroundStructure>
+
+	<GroundStructure Name="Pirate_Wall_Inside_Corner">
+		<Text_ID>TEXT_STRUCTURE_WALL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>RB_BASEWALL-Inside-crn.ALO</Land_Model_Name>
+		<Behavior />
+		<LandBehavior>WALL</LandBehavior>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>200</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Pirates</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Armor_Type> Armor_Wall </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+		<GUI_Hide_Health_Bar>true</GUI_Hide_Health_Bar>
+		
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+		
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.04  0.04</Radar_Icon_Size>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Proj_Wall_Destruction</Death_Explosions>
+		<CategoryMask>Wall</CategoryMask>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+	</GroundStructure>
+
+
+
+
+
+
+
+
+<!-- Test structures - used for planning required base area; DO NOT use on final maps -->
+
+	
+	<GroundStructure Name="Test_Base_Hector">
+		<Text_ID>TEXT_STRUCTURE_PRODUCTION_01</Text_ID>
+		<Land_Model_Name>ALTTEST.ALO</Land_Model_Name>
+		<Select_Box_Scale>100</Select_Box_Scale>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>20.0</Ranged_Target_Z_Adjust>
+		<Behavior>SELECTABLE,DUMMY_LAND_BASE_LEVEL_COMPONENT</Behavior>
+		<LandBehavior>IDLE,LAND_OBSTACLE,REVEAL</LandBehavior>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>1000</Tactical_Health>
+		<Autoresolve_Health>1000</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Rebel</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Armor_Type> Armor_Wall </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+
+ <!--
+  		<Obstacle_Width>260.0</Obstacle_Width>
+		<Obstacle_Height>380.0</Obstacle_Height>
+		<Obstacle_X_Offset>-170.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-190.0</Obstacle_Y_Offset>
+-->
+		<GUI_Bracket_Width>60</GUI_Bracket_Width>
+		<GUI_Bracket_Height>0</GUI_Bracket_Height>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+   </GroundStructure>
+
+
+
+	<GroundStructure Name="Invisible_Reveal_Object">
+		<Text_ID />
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Select_Box_Scale>100</Select_Box_Scale>
+		<Behavior />
+		<LandBehavior> REVEAL</LandBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>999999</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Neutral</Affiliation>
+		<!--<Base_Level_Available>0</Base_Level_Available>-->
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<CategoryMask>Wall</CategoryMask>
+	</GroundStructure>
+
+
+
+	<GroundStructure Name="Gallofree_Stationary">
+		<Text_ID />
+		<Land_Model_Name>RV_TRANSPORT.ALO</Land_Model_Name>
+		<Select_Box_Scale>100</Select_Box_Scale>
+		<Behavior />
+		<LandBehavior>IDLE, LAND_OBSTACLE</LandBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>999999</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Neutral</Affiliation>
+		<!--<Base_Level_Available>0</Base_Level_Available>-->
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<CategoryMask>Wall</CategoryMask>
+	</GroundStructure>
+
+	<GroundStructure Name="Imperial_Observation_Bunker">
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_EMPIRE_BUNKER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>EB_TEstbunker.alo</Land_Model_Name>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<Behavior>SELECTABLE, UNIT_AI</Behavior>
+		<LandBehavior>IDLE, LAND_OBSTACLE, SPACE_OBSTACLE, REVEAL</LandBehavior>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+
+		<Affiliation>Empire</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>		
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+		<AI_Combat_Power> 5 </AI_Combat_Power>
+
+	</GroundStructure>
+
+
+	<GroundStructure Name="Landed_Empire_Shuttle">
+		<Text_ID> TEXT_UNIT_TYDERIUM_SHUTTLE </Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TRANSPORT</Encyclopedia_Unit_Class>
+		<Land_Model_Name>EV_LAMBDASHUTTLE.ALO</Land_Model_Name>
+		<Select_Box_Scale>100</Select_Box_Scale>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>IDLE, LAND_OBSTACLE, UNIT_AI</LandBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>2.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>100</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Empire</Affiliation>
+		<!--<Base_Level_Available>0</Base_Level_Available>-->
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<CategoryMask>Structure</CategoryMask>
+		<AI_Combat_Power> 5 </AI_Combat_Power>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+	</GroundStructure>
+
+
+	<GroundStructure Name="Droid_Interface_Station">
+		<Text_ID>TEXT_STRUCTURE_DROID_INTERFACE_STATION</Text_ID>
+		<Land_Model_Name>W_R2_Terminal.alo</Land_Model_Name>
+		<Select_Box_Scale>30</Select_Box_Scale>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.8</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>100</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Empire</Affiliation>
+		<!--<Base_Level_Available>0</Base_Level_Available>-->
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<CategoryMask>Structure</CategoryMask>
+		<AI_Combat_Power> 5 </AI_Combat_Power>
+		<Death_Explosions>Small_Explosion_Land</Death_Explosions>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+
+		</GroundStructure>
+
+	<GroundStructure Name="Uplink_Station">
+		<Icon_Name>i_button_uplink_station.tga</Icon_Name>
+		<GUI_Bounds_Scale>0.15</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_UPLINK_STATION</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>w_uplink_station.alo</Land_Model_Name>
+		<Select_Box_Scale>30</Select_Box_Scale>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>LAND_OBSTACLE, EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Affiliation>Empire</Affiliation>
+		<!--<Base_Level_Available>0</Base_Level_Available>-->
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<CategoryMask>Structure</CategoryMask>
+		<AI_Combat_Power> 5 </AI_Combat_Power>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+	</GroundStructure>
+
+
+	<GroundStructure Name="Uplink_Station_Abandoned">
+		<Variant_Of_Existing_Type>Uplink_Station</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_COMM_ARRAY</Text_ID>		
+		<Encyclopedia_Text> TEXT_STRUCTURE_ABANDONED_UPLINK_STATION  </Encyclopedia_Text>
+		<Land_Model_Name>w_uplink_station_abandon.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+		
+	</GroundStructure>
+	
+	<GroundStructure Name="Empire_Gate_Large">
+		<Variant_Of_Existing_Type>Empire_Wall</Variant_Of_Existing_Type>
+		<!--<Land_Model_Name>EB_BaseWall-mid.alo</Land_Model_Name>-->
+		
+		<Text_ID>TEXT_STRUCTURE_GATE</Text_ID>
+
+		<CategoryMask>Structure</CategoryMask>
+		<Behavior> SELECTABLE </Behavior>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, DUMMY_TOOLTIP, DAMAGE_TRACKING,</LandBehavior>
+		
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<GUI_Hide_Health_Bar>false</GUI_Hide_Health_Bar>
+		
+		<Scale_Factor>4.0</Scale_Factor>
+		<Is_Squashable_By_Supercrusher>No</Is_Squashable_By_Supercrusher>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>1500</Tactical_Health>
+		<Affiliation>Empire</Affiliation>
+		<Death_Clone>Damage_Normal, Empire_Gate_Large_Death_Clone</Death_Clone>
+		<Death_Clone_Is_Obstacle> false </Death_Clone_Is_Obstacle>
+   </GroundStructure>
+   
+		<GroundStructure Name="Empire_Gate_Large_Death_Clone">
+			<Land_Model_Name>EB_CIN_Basewall-mid_D.alo </Land_Model_Name>
+			<Scale_Factor>4.0</Scale_Factor>
+			<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+			<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+			<Affiliation>Neutral</Affiliation>
+		</GroundStructure>
+   
+
+   
+   <GroundStructure Name="Empire_Gate_Large_Dest">
+		<Variant_Of_Existing_Type>Empire_Wall</Variant_Of_Existing_Type>
+		<Land_Model_Name>EB_BaseWall-mid_dest.alo</Land_Model_Name>
+		<LandBehavior>IDLE</LandBehavior>
+		
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+		<GUI_Hide_Health_Bar>true</GUI_Hide_Health_Bar>
+		
+		<Scale_Factor>4.0</Scale_Factor>
+		<Is_Squashable_By_Supercrusher>No</Is_Squashable_By_Supercrusher>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>0</Tactical_Health>
+		<Affiliation>Empire</Affiliation>
+   </GroundStructure>
+   
+   <GroundStructure Name="Empire_Gate_Large_Animated">
+		<Variant_Of_Existing_Type>Empire_Wall</Variant_Of_Existing_Type>
+		<Land_Model_Name>EB_CIN_BaseWall-mid.alo</Land_Model_Name>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, DUMMY_TOOLTIP</LandBehavior>
+		
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+		<GUI_Hide_Health_Bar>true</GUI_Hide_Health_Bar>
+		
+		<Scale_Factor>4.0</Scale_Factor>
+		<Is_Squashable_By_Supercrusher>No</Is_Squashable_By_Supercrusher>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>1500</Tactical_Health>
+		<Affiliation>Empire</Affiliation>
+   </GroundStructure>
+   
+   <GroundStructure Name="Empire_Gate_Medium_Animated">
+		<Variant_Of_Existing_Type>Empire_Wall</Variant_Of_Existing_Type>
+		<Land_Model_Name>EB_CIN_BaseWall-mid.alo</Land_Model_Name>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, DUMMY_TOOLTIP</LandBehavior>
+		
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+		<GUI_Hide_Health_Bar>true</GUI_Hide_Health_Bar>
+		
+		<Scale_Factor>2.0</Scale_Factor>
+		<Is_Squashable_By_Supercrusher>No</Is_Squashable_By_Supercrusher>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>1500</Tactical_Health>
+		<Affiliation>Empire</Affiliation>
+   </GroundStructure>
+   
+   <GroundStructure Name="Empire_Checkpoint">
+		<Land_Model_Name>EB_CheckPointStructure.alo</Land_Model_Name><!--jdg updated model 7/13/06 was NB_twilek_building.alo-->
+		<Text_ID>TEXT_STRUCTURE_WALL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+		<Is_Squashable_By_Supercrusher>No</Is_Squashable_By_Supercrusher>
+		
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, DUMMY_TOOLTIP</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Neutral</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+   </GroundStructure>
+
+<GroundStructure Name="Rodian_Civilian_Spawn_House">
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_RODIAN_DWELLING</Text_ID>
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_RODIAN </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_RODIAN </Enemy_Spawn_Text>
+		<Land_Model_Name>NB_VCH.alo</Land_Model_Name>
+		<Icon_Name>i_button_NB_VCH.tga</Icon_Name>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Spawned_Indigenous_Units_Type> Rodian_Civilian_B, Rodian_Civilian_A, Rodian_Civilian_C </Spawned_Indigenous_Units_Type>
+	<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Spawned_Indigenous_Pack_Type>Rodian_Civilian_Team</Spawned_Indigenous_Pack_Type>
+		<Max_Distance_From_Spawner>170</Max_Distance_From_Spawner>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.2</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Empire</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+    <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_RODIAN_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+	</GroundStructure>
+
+<GroundStructure Name="Trandoshan_Civilian_Spawn_House">
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_TRANDOSHAN_DWELLING</Text_ID>
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_TRANDOSHAN </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_TRANDOSHAN </Enemy_Spawn_Text>
+		<Land_Model_Name>NB_LCH.alo</Land_Model_Name>
+		<Icon_Name>i_button_NB_LCH.tga</Icon_Name>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Spawned_Indigenous_Units_Type> Trandoshan_Civilian_Militia_A, Trandoshan_Civilian_Militia_B, Trandoshan_Civilian_Militia_C</Spawned_Indigenous_Units_Type>
+	<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Spawned_Indigenous_Pack_Type>Trandoshan_Civilian_Team</Spawned_Indigenous_Pack_Type>
+		<Max_Distance_From_Spawner>170</Max_Distance_From_Spawner>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.2</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Rebel</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TRANDOSHAN_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+	</GroundStructure>
+
+<GroundStructure Name="Neimodian_Civilian_Spawn_House">
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_NEIMODIAN_DWELLING</Text_ID>
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_NEIMODIAN </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_NEIMODIAN </Enemy_Spawn_Text>
+		<Land_Model_Name>NB_NCH.alo</Land_Model_Name>
+		<Icon_Name>i_button_NB_NCH.tga</Icon_Name>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Spawned_Indigenous_Units_Type> Neimodian_Civilian_A, Neimodian_Civilian_B, Neimodian_Civilian_C </Spawned_Indigenous_Units_Type>
+	<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Spawned_Indigenous_Pack_Type>Neimodian_Indigenous_Company</Spawned_Indigenous_Pack_Type>
+		<Max_Distance_From_Spawner>170</Max_Distance_From_Spawner>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.2</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Rebel</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_NEIMODIAN_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+	</GroundStructure>
+
+<GroundStructure Name="Duros_Civilian_Spawn_House">
+		<Text_ID>TEXT_STRUCTURE_DUROS_DWELLING</Text_ID>
+		<Land_Model_Name>W_Urban_CorBuild_A.alo</Land_Model_Name>
+		<Icon_Name>i_button_W_Urban_CorBuild_A.tga</Icon_Name>
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_DUROS </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_DUROS </Enemy_Spawn_Text>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Spawned_Indigenous_Units_Type> Duros_Civilian_A, Duros_Civilian_B, Duros_Civilian_C </Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>150.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>180</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Duros_Indigenous_Company</Spawned_Indigenous_Pack_Type>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+
+		<Loads_When_Faction_Present> True </Loads_When_Faction_Present>
+		<Affiliation>Empire</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_DUROS_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+	</GroundStructure>
+
+<GroundStructure Name="Ithorian_Civilian_Spawn_House">
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_ITHORIAN_DWELLING</Text_ID>
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_ITHORIAN </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_ITHORIAN </Enemy_Spawn_Text>
+		<Land_Model_Name>NB_HCH.alo</Land_Model_Name>
+		<Icon_Name>i_botton_NB_HCH.tga</Icon_Name>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Spawned_Indigenous_Units_Type>Ithorian_Civilian_A</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+    <Spawned_Indigenous_Pack_Type>Ithorian_Indigenous_Company</Spawned_Indigenous_Pack_Type>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Empire</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_ITHORIAN_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+	</GroundStructure>
+
+<GroundStructure Name="Muun_Civilian_Spawn_House">
+		<Text_ID>TEXT_STRUCTURE_MUUN_DWELLING</Text_ID>
+		<Land_Model_Name>W_Urban_CorBuild_A.alo</Land_Model_Name>
+		<Icon_Name>i_button_W_Urban_CorBuild_A.tga</Icon_Name>
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_MUUN </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_MUUN </Enemy_Spawn_Text>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Spawned_Indigenous_Units_Type> Muun_Civilian_A, Muun_Civilian_B, Muun_Civilian_C</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>150.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>180</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Muun_Indigenous_Company</Spawned_Indigenous_Pack_Type>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+
+		<Loads_When_Faction_Present> True </Loads_When_Faction_Present>
+		<Affiliation>Rebel</Affiliation>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_MUUN_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+	</GroundStructure>
+	
+	<GroundStructure Name="Ishi_Tib_Civilian_Spawn_House">
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_ISHI_TIB_DWELLING</Text_ID>
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_E_ISHI_TIB </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_R_ISHI_TIB </Enemy_Spawn_Text>
+		<Land_Model_Name>Nb_tibrin_house.ALO</Land_Model_Name>
+		<Icon_Name>I_BUTTON_NB_ISHI.tga</Icon_Name>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Spawned_Indigenous_Units_Type>Ishi_Tib_Civilian</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+    <Spawned_Indigenous_Pack_Type>Ishi_Tib_Civ_Company</Spawned_Indigenous_Pack_Type>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Empire</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_ISHI_TIB_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+	</GroundStructure>
+
+</GroundStructures>

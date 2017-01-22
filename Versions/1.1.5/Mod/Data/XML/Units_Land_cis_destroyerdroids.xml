@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Destroyer_Droids_Data>
+	<GroundVehicle Name="Destroyer_Droid">
+		<LOD_Bias>4</LOD_Bias>
+		<Text_ID>TEXT_UNIT_DESTROYER_DROID</Text_ID>
+		<Encyclopedia_Good_Against> Clone_Trooper_P1 Clone_Trooper_P2  </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Arc_Trooper AT_PT Saber_Tank </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text>TEXT_TOOLTIP_DESTROYER_DROID</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_DROIDEKA.tga</Icon_Name>
+		<Land_Model_Name>SeV_droidekka_mk1.ALO</Land_Model_Name>
+		<Select_Box_Scale>60</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>AFFECTED_BY_SHIELD, WALK_LOCOMOTOR,TARGETING,IDLE,WEAPON,POWERED,SHIELDED,REVEAL,HIDE_WHEN_FOGGED,UNIT_AI,TELEKINESIS_TARGET,STUNNABLE,DAMAGE_TRACKING, GARRISON_UNIT, AFFECTED_BY_SHIELD</LandBehavior>
+		<Shielded_Only_When_Deployed>Yes</Shielded_Only_When_Deployed>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+		<Garrison_Category> Vehicle </Garrison_Category>
+		<Garrison_Value>2</Garrison_Value>
+		<Ranking_In_Category>7</Ranking_In_Category>
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.6</Scale_Factor>
+		<Base_Shield_Penetration_Particle>Shield_Penetration_Effect_Particle</Base_Shield_Penetration_Particle>
+		<Movement_Animation_Speed> 1.0 </Movement_Animation_Speed>
+		<Rotation_Animation_Speed> 1.0 </Rotation_Animation_Speed>
+		<Max_Speed>3.2</Max_Speed>
+		<Max_Rate_Of_Turn>15.5</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>15.5</Stopped_Rate_Of_Turn>
+		<OverrideAcceleration> .5 </OverrideAcceleration>
+		<OverrideDeceleration> .5 </OverrideDeceleration>
+		<Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<Min_Speed_Fraction_For_Turn> .1 </Min_Speed_Fraction_For_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Large Vehicle </UnitCollisionClass>
+		<Custom_Hard_XExtent> 8.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 6.0 </Custom_Hard_YExtent>
+		<MinimumPushReturnDistance> 100 </MinimumPushReturnDistance>
+		<FormationOrder> 4 </FormationOrder>
+		<FormationGrouping> Standard </FormationGrouping>
+		<FormationSpacing> 1 </FormationSpacing>
+		<FormationRaggedness> 2.5 </FormationRaggedness>
+		<MaxJiggleDistance> 5 </MaxJiggleDistance>
+		<Locomotor_Has_Animation_Priority>yes</Locomotor_Has_Animation_Priority>
+		<Attack_Animation_Is_Overlay>Yes</Attack_Animation_Is_Overlay>
+		<Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+		<Deploys>Yes</Deploys>
+		<Auto_Deploys>Yes</Auto_Deploys>
+		<Deployment_Anim_Rate>3.0</Deployment_Anim_Rate>
+		<Affiliation>Rebel</Affiliation>
+		<Size_Value>75</Size_Value>
+		<Armor_Type> Armor_Destroyer_Droid </Armor_Type>
+		<Damage>6</Damage>
+		<Shield_Points>250</Shield_Points> <!-- From 175 -->
+		<Tactical_Health>100</Tactical_Health>
+		<Shield_Refresh_Rate>15</Shield_Refresh_Rate>
+		<Energy_Capacity>9999</Energy_Capacity>
+		<Energy_Refresh_Rate>9999</Energy_Refresh_Rate>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Autoresolve_Health>375</Autoresolve_Health>
+		<Projectile_Types>Proj_Destroyer_Droid_Blaster_Cannon</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>0.2</Projectile_Fire_Recharge_Seconds> <!-- From 0.5 -->
+		<Projectile_Fire_Pulse_Count>16</Projectile_Fire_Pulse_Count> <!-- From 12 -->
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Fire_Inaccuracy_Distance> Infantry, 6.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 10.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 70.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 10.0 </Fire_Inaccuracy_Distance>
+		<Turret_Rotate_Extent_Degrees>45</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>45</Turret_Elevate_Extent_Degrees>
+		<Fire_Category_Restrictions> Air </Fire_Category_Restrictions>
+		<Fire_Weapon_When_In_Rocket_Attack_Mode>No</Fire_Weapon_When_In_Rocket_Attack_Mode>
+		<Fire_Weapon_When_In_Normal_Attack_Mode>Yes</Fire_Weapon_When_In_Normal_Attack_Mode>
+		<Fire_Weapon_When_Deployed>Yes</Fire_Weapon_When_Deployed>
+		<Fire_Weapon_When_Undeployed>No</Fire_Weapon_When_Undeployed>
+		<Land_FOW_Reveal_Range>180.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>150.0</Targeting_Max_Attack_Distance>
+		<Ranged_Target_Z_Adjust>8.0</Ranged_Target_Z_Adjust>
+		<Death_Explosions>Small_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_AT_ST_Death_SFX</Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<SFXEvent_Select>Unit_Select_Destroyer_Droid</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Destroyer_Droid</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Destroyer_Droid</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Move_Destroyer_Droid</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Move_Destroyer_Droid</SFXEvent_Guard>
+		<SFXEvent_Fire>Unit_Destroyer_Droid_Fire</SFXEvent_Fire>
+		<SFXEvent_Engine_Idle_Loop></SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Destroyer_Droid_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Assist_Move />
+		<SFXEvent_Assist_Attack />
+		<SFXEvent_Unit_Lost> UHD_Unit_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Tactical_Build_Started> UHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete> UHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
+		<SFXEvent_Tactical_Build_Cancelled> UHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+		<CategoryMask> Vehicle | AntiVehicle</CategoryMask>
+		<MovementClass>Infantry</MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>99</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>3</No_Refraction_Below_Detail_Level>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+		<Ground_Vehicle_Turret_Target> Yes </Ground_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Overall_Length>20.0</Overall_Length>
+		<!-- Hand tweaked for vehicle pitching up and down on terrain -->
+		<Overall_Width>0.0</Overall_Width>
+		<!-- 0.0 means don't roll left and right on terrain -->
+		<Has_Land_Evaluator>Yes</Has_Land_Evaluator>
+		<AI_Combat_Power>30</AI_Combat_Power> <!-- From 70 -->
+		<Idle_Chase_Range>0.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>Destroyer_Droid_Attack_Priority</Targeting_Priority_Set>
+		<Autonomous_Move_Extension_Vs_Attacker>150.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Weather_Category>Walker</Weather_Category>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>50.0, 50.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Score_Cost_Credits>37.5</Score_Cost_Credits>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
+		<Must_Face_Target_To_Attack_When_Deployed>Yes</Must_Face_Target_To_Attack_When_Deployed>
+		<Max_Dist_Walk_While_Deployed>150.0</Max_Dist_Walk_While_Deployed>
+		<Deployed_Walk_Anim_Speed>2</Deployed_Walk_Anim_Speed>
+		<Deployed_Walk_Speed>2.0</Deployed_Walk_Speed>
+		<Shield_Sub_Mesh>Sphere01</Shield_Sub_Mesh>
+	</GroundVehicle>
+	<GroundVehicle Name="Destroyer_Droid_Attack">
+		<Variant_Of_Existing_Type>Destroyer_Droid</Variant_Of_Existing_Type>
+		<Lua_Script>underworld_hunt</Lua_Script>
+	</GroundVehicle>
+	<GroundVehicle Name="Hacked_Destroyer_Droid">
+		<LOD_Bias>4</LOD_Bias>
+		<Text_ID>TEXT_UNIT_HACKED_DESTROYER_DROID</Text_ID>
+		<Encyclopedia_Good_Against> Battledroids Super_Battledroid Stap </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Homing_Spider_Droid Persuader_Droid_Enforcer AAT_Tank </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text>TEXT_TOOLTIP_HACKED_DESTROYER_DROID</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_DROIDEKA.tga</Icon_Name>
+		<Land_Model_Name>SeV_droidekka_mk1.ALO</Land_Model_Name>
+		<Select_Box_Scale>20</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>AFFECTED_BY_SHIELD, WALK_LOCOMOTOR,TARGETING,IDLE,WEAPON,POWERED,SHIELDED,REVEAL,HIDE_WHEN_FOGGED,UNIT_AI,TELEKINESIS_TARGET,STUNNABLE,DAMAGE_TRACKING, GARRISON_UNIT, AFFECTED_BY_SHIELD</LandBehavior>
+		<Shielded_Only_When_Deployed>Yes</Shielded_Only_When_Deployed>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+		<Garrison_Category> Vehicle </Garrison_Category>
+		<Garrison_Value>2</Garrison_Value>
+		<Ranking_In_Category>7</Ranking_In_Category>
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.6</Scale_Factor>
+		<Base_Shield_Penetration_Particle>Shield_Penetration_Effect_Particle</Base_Shield_Penetration_Particle>
+		<Movement_Animation_Speed> 1.0 </Movement_Animation_Speed>
+		<Rotation_Animation_Speed> 1.0 </Rotation_Animation_Speed>
+		<Max_Speed>3.6</Max_Speed>
+		<Max_Rate_Of_Turn>15.5</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>15.5</Stopped_Rate_Of_Turn>
+		<OverrideAcceleration> .5 </OverrideAcceleration>
+		<OverrideDeceleration> .5 </OverrideDeceleration>
+		<Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<Min_Speed_Fraction_For_Turn> .1 </Min_Speed_Fraction_For_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Large Vehicle </UnitCollisionClass>
+		<Custom_Hard_XExtent> 8.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 6.0 </Custom_Hard_YExtent>
+		<MinimumPushReturnDistance> 100 </MinimumPushReturnDistance>
+		<FormationOrder> 4 </FormationOrder>
+		<FormationGrouping> Standard </FormationGrouping>
+		<FormationSpacing> 1 </FormationSpacing>
+		<FormationRaggedness> 2.5 </FormationRaggedness>
+		<MaxJiggleDistance> 5 </MaxJiggleDistance>
+		<Locomotor_Has_Animation_Priority>yes</Locomotor_Has_Animation_Priority>
+		<Attack_Animation_Is_Overlay>Yes</Attack_Animation_Is_Overlay>
+		<Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+		<Deploys>Yes</Deploys>
+		<Auto_Deploys>Yes</Auto_Deploys>
+		<Deployment_Anim_Rate>3.0</Deployment_Anim_Rate>
+		<Affiliation>Empire</Affiliation>
+		<Size_Value>75</Size_Value>
+		<Armor_Type> Armor_Destroyer_Droid </Armor_Type>
+		<Damage>6</Damage>
+		<Shield_Points>250</Shield_Points> <!-- From 175 -->
+		<Tactical_Health>100</Tactical_Health>
+		<Shield_Refresh_Rate>15</Shield_Refresh_Rate>
+		<Energy_Capacity>9999</Energy_Capacity>
+		<Energy_Refresh_Rate>9999</Energy_Refresh_Rate>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Autoresolve_Health>375</Autoresolve_Health>
+		<Projectile_Types>Proj_Destroyer_Droid_Blaster_Cannon</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>0.2</Projectile_Fire_Recharge_Seconds> <!-- From 0.5 -->
+		<Projectile_Fire_Pulse_Count>16</Projectile_Fire_Pulse_Count> <!-- From 12 -->
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Fire_Inaccuracy_Distance> Infantry, 3.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 5.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 70.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 10.0 </Fire_Inaccuracy_Distance>
+		<Turret_Rotate_Extent_Degrees>45</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>45</Turret_Elevate_Extent_Degrees>
+		<Fire_Category_Restrictions> Air </Fire_Category_Restrictions>
+		<Fire_Weapon_When_In_Rocket_Attack_Mode>No</Fire_Weapon_When_In_Rocket_Attack_Mode>
+		<Fire_Weapon_When_In_Normal_Attack_Mode>Yes</Fire_Weapon_When_In_Normal_Attack_Mode>
+		<Fire_Weapon_When_Deployed>Yes</Fire_Weapon_When_Deployed>
+		<Fire_Weapon_When_Undeployed>No</Fire_Weapon_When_Undeployed>
+		<Land_FOW_Reveal_Range>180.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>150.0</Targeting_Max_Attack_Distance>
+		<Ranged_Target_Z_Adjust>8.0</Ranged_Target_Z_Adjust>
+		<Death_Explosions>Small_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_AT_ST_Death_SFX</Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<SFXEvent_Select>Unit_Select_Destroyer_Droid</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Destroyer_Droid</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Destroyer_Droid</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Move_Destroyer_Droid</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Move_Destroyer_Droid</SFXEvent_Guard>
+		<SFXEvent_Fire>Unit_Destroyer_Droid_Fire</SFXEvent_Fire>
+		<SFXEvent_Engine_Idle_Loop></SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Destroyer_Droid_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Assist_Move />
+		<SFXEvent_Assist_Attack />
+		<SFXEvent_Unit_Lost> RHD_Unit_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Tactical_Build_Started> RHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete> RHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
+		<SFXEvent_Tactical_Build_Cancelled> RHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+		<CategoryMask> Vehicle | AntiVehicle</CategoryMask>
+		<MovementClass>Infantry</MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>99</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>3</No_Refraction_Below_Detail_Level>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+		<Ground_Vehicle_Turret_Target> Yes </Ground_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Overall_Length>20.0</Overall_Length>
+		<!-- Hand tweaked for vehicle pitching up and down on terrain -->
+		<Overall_Width>0.0</Overall_Width>
+		<!-- 0.0 means don't roll left and right on terrain -->
+		<Has_Land_Evaluator>Yes</Has_Land_Evaluator>
+		<AI_Combat_Power>30</AI_Combat_Power> <!-- From 70 -->
+		<Idle_Chase_Range>0.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>Destroyer_Droid_Attack_Priority</Targeting_Priority_Set>
+		<Autonomous_Move_Extension_Vs_Attacker>150.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Weather_Category>Walker</Weather_Category>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>50.0, 50.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Score_Cost_Credits>37.5</Score_Cost_Credits>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
+		<Must_Face_Target_To_Attack_When_Deployed>Yes</Must_Face_Target_To_Attack_When_Deployed>
+		<Max_Dist_Walk_While_Deployed>150.0</Max_Dist_Walk_While_Deployed>
+		<Deployed_Walk_Anim_Speed>2</Deployed_Walk_Anim_Speed>
+		<Deployed_Walk_Speed>2.0</Deployed_Walk_Speed>
+		<Shield_Sub_Mesh>Sphere01</Shield_Sub_Mesh>
+	</GroundVehicle>
+	<GroundVehicle Name="Hacked_Destroyer_Droid_Attack">
+		<Variant_Of_Existing_Type>Hacked_Destroyer_Droid</Variant_Of_Existing_Type>
+		<Lua_Script>underworld_hunt</Lua_Script>
+	</GroundVehicle>
+	<GroundCompany Name="Destroyer_Droid_Company">
+		<LOD_Bias>4</LOD_Bias>
+		<Text_ID>TEXT_DESTROYER_DROID_COMPANY</Text_ID>
+		<Encyclopedia_Good_Against> Clone_Trooper_P1 Clone_Trooper_P2  </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Arc_Trooper AT_PT Saber_Tank </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text>TEXT_TOOLTIP_DESTROYER_DROID</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_DROIDEKA.tga</Icon_Name>
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>36</Damage>
+		<Autoresolve_Health>100</Autoresolve_Health>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Cost_Credits>400</Build_Cost_Credits> <!-- From 350 -->
+		<Build_Time_Seconds>9</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>R_ground_barracks</Required_Special_Structures>
+		<Required_Planets />
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>6</Formation_Priority>
+		<Is_Escort>no</Is_Escort>
+		<Ship_Class>infantry</Ship_Class>
+		<Company_Transport_Unit>Cis_Hardcell_Transport</Company_Transport_Unit>
+		<Company_Units>Destroyer_Droid, Destroyer_Droid, Destroyer_Droid, Destroyer_Droid, Destroyer_Droid, Destroyer_Droid, Destroyer_Droid, Destroyer_Droid </Company_Units> <!-- From 6 to 8 -->
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_Destroyer_Droid</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Destroyer_Droid</SFXEvent_Fleet_Move>
+		<Score_Cost_Credits>650</Score_Cost_Credits>
+		<Maintenance_Cost>0.05</Maintenance_Cost>
+		<Population_Value>1</Population_Value>
+		<Cheap_Bribe_Cost>50</Cheap_Bribe_Cost>
+		<Expensive_Bribe_Cost>100</Expensive_Bribe_Cost>
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>400</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>RC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+	</GroundCompany>
+	<GroundCompany Name="Hacked_Destroyer_Droid_Company">
+		<LOD_Bias>4</LOD_Bias>
+		<Text_ID>TEXT_HACKED_DESTROYER_DROID_COMPANY</Text_ID>
+		<Encyclopedia_Good_Against> Battledroids Super_Battledroid Stap </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Homing_Spider_Droid Persuader_Droid_Enforcer AAT_Tank </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text>TEXT_TOOLTIP_HACKED_DESTROYER_DROID</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_DROIDEKA.tga</Icon_Name>
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>60</Damage>
+		<Autoresolve_Health>100</Autoresolve_Health>
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>440</Build_Cost_Credits> <!-- From 1200 -->
+		<Build_Time_Seconds>15</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Tech_Level>2</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>Skirmish_Ground_Republic_Merc_Hq</Required_Special_Structures>
+		<Required_Planets />
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>6</Formation_Priority>
+		<Is_Escort>no</Is_Escort>
+		<Ship_Class>infantry</Ship_Class>
+		<Company_Transport_Unit>Merc_Infantry_Droid_Shuttle_Rep_VFX</Company_Transport_Unit>
+		<Company_Units>Hacked_Destroyer_Droid, Hacked_Destroyer_Droid, Hacked_Destroyer_Droid, Hacked_Destroyer_Droid, Hacked_Destroyer_Droid, Hacked_Destroyer_Droid, Hacked_Destroyer_Droid, Hacked_Destroyer_Droid  </Company_Units> <!-- From 6 to 8 -->
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_Destroyer_Droid</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Destroyer_Droid</SFXEvent_Fleet_Move>
+		<Score_Cost_Credits>650</Score_Cost_Credits>
+		<Maintenance_Cost>0.05</Maintenance_Cost>
+		<Population_Value>1</Population_Value>
+		<Cheap_Bribe_Cost>50</Cheap_Bribe_Cost>
+		<Expensive_Bribe_Cost>100</Expensive_Bribe_Cost>
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>440</Tactical_Build_Cost_Multiplayer> <!-- From 800 -->
+		<Tactical_Build_Time_Seconds>18</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>RL_Merc_Stolen_Equipment_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+	</GroundCompany>
+</Destroyer_Droids_Data>

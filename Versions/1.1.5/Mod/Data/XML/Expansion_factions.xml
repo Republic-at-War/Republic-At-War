@@ -1,0 +1,790 @@
+<?xml version="1.0"?>
+<Factions>
+
+	  <Faction Name="Underworld">
+		<Is_Debug_Switchable_To> Yes </Is_Debug_Switchable_To>
+		<Create_Player_In_Multiplayer_Games> No </Create_Player_In_Multiplayer_Games>
+		<Text_ID> TEXT_FACTION_UNDERWORLD </Text_ID>
+		<Text_Nickname_ID> TEXT_FACTION_UNDERWORLD_NICKNAME </Text_Nickname_ID>
+		<Icon_Name> i_icon_pirate.tga </Icon_Name>
+		<Alternate_Icon_Name> pirate_icon.tga </Alternate_Icon_Name>
+		<Ground_Base_Icon_Name> groundbase_icon.tga </Ground_Base_Icon_Name>
+		<Star_Base_Icon_Name> spacestation_icon.tga </Star_Base_Icon_Name>
+		<Ground_Transport_Icon_Name> trooper_icon.tga </Ground_Transport_Icon_Name>
+		<Fleet_Icon_Name> i_icon_fleet.tga </Fleet_Icon_Name>
+		<Ship_Icon_Name> g_fleet.tga </Ship_Icon_Name>
+		<Squadron_Icon_Name> g_squad.tga </Squadron_Icon_Name>
+		<!--<Color> 247, 201, 13, 255 </Color>-->
+		<Color> 251, 250, 252, 255 </Color>
+		<!--<Color> 142, 21, 150, 255 </Color>-->
+		<No_Colorization_Color> 231, 221, 67, 255 </No_Colorization_Color>
+		<Display_Font_Color> 251, 250, 252, 255 </Display_Font_Color>
+		<Big_Fleet_Color> 251, 250, 252, 150 </Big_Fleet_Color>
+		<Credits_Accumulation_Factor> 0.95 </Credits_Accumulation_Factor>
+		<Planet_Icon_Scale> 10.0 </Planet_Icon_Scale>
+		<Planet_Icon_Offset> 10.0, 10.0, -1.1 </Planet_Icon_Offset>
+		<Is_Playable>false</Is_Playable>
+		<Primary_Enemy />
+		<Hyperspace_Speed_Factor>0.07</Hyperspace_Speed_Factor>
+		<Is_Neutral> No </Is_Neutral>
+		<Force_Alignment>Dark</Force_Alignment>
+		<Minimum_Visible_Base_Level>1</Minimum_Visible_Base_Level>
+		<Basic_AI> AI_Player_Underworld </Basic_AI>
+		<Can_Win_By_Destroying_Super_Weapon>Yes</Can_Win_By_Destroying_Super_Weapon>
+		<Faction_Super_Weapon />
+		<Skirmish_Land_Bomber>Skipray_Bombing_Run</Skirmish_Land_Bomber>
+		<Space_Tactical_Unit_Cap>35</Space_Tactical_Unit_Cap>
+		<Maintenance_Cost>0.25</Maintenance_Cost>
+		<Scatters_From_Crushers> true </Scatters_From_Crushers>
+		<!-- Gameplay effects of planetary corruption on this faction. -->
+		<Benefits_From_Corruption> Yes </Benefits_From_Corruption>
+		<Corruption_Galactic_Production_Time_Multipliers> 1.0, 1.0 </Corruption_Galactic_Production_Time_Multipliers>
+		<Corruption_Galactic_Production_Price_Multipliers> 1.0, 1.0 </Corruption_Galactic_Production_Price_Multipliers>
+		<Corruption_Tactical_Production_Time_Multipliers> 1.0, 1.0 </Corruption_Tactical_Production_Time_Multipliers>
+		<Corruption_Tactical_Production_Price_Multipliers> 1.0, 1.0 </Corruption_Tactical_Production_Price_Multipliers>
+		<Corruption_Tactical_Build_Pad_Time_Multipliers> 1.0, 1.0 </Corruption_Tactical_Build_Pad_Time_Multipliers>
+		<Corruption_Tactical_Build_Pad_Price_Multipliers> 1.0, 1.0 </Corruption_Tactical_Build_Pad_Price_Multipliers>
+		<Automatic_Planetary_Corruption_Upgrade_Type> 
+			Generic_Intimidation_Corruption_Upgrade,
+			Generic_Piracy_Corruption_Upgrade,
+			Generic_Kidnapping_Corruption_Upgrade,
+			Underworld_Racketeering_Corruption_Upgrade,
+			Generic_Corrupt_Militia_Corruption_Upgrade,
+			Generic_Bribery_Corruption_Upgrade,
+			Generic_Black_Market_Corruption_Upgrade,
+			Generic_Bonded_Citizens_Corruption_Upgrade,
+		</Automatic_Planetary_Corruption_Upgrade_Type>
+		<!--<Displayed_Tech_Level_Adjustment> 0 </Displayed_Tech_Level_Adjustment>-->
+		<Infantry_Icon_Name>i_button_pirate_soldier.tga</Infantry_Icon_Name>
+		<Vehicle_Icon_Name>i_r_vehicle.tga</Vehicle_Icon_Name>
+		<Carrier_Icon_Name>i_r_carrier.tga</Carrier_Icon_Name>
+		<Frigate_Icon_Name>i_r_frigate.tga</Frigate_Icon_Name>
+		<Corvette_Icon_Name>i_r_corvette.tga</Corvette_Icon_Name>
+		<Fighter_Icon_Name>i_button_virago.tga</Fighter_Icon_Name>
+		<Tech_Tree_Dialog_Name>IDD_TECH_TREE_BLACKMARKET</Tech_Tree_Dialog_Name>
+		<Helper_Icon_Name>i_underworld_help_droid.tga</Helper_Icon_Name>
+		<Space_Retreat_Countdown_Seconds> 4.99 </Space_Retreat_Countdown_Seconds>
+		<Space_Retreat_Pursue_Max_Speed_Mod_Factor> 2.0 </Space_Retreat_Pursue_Max_Speed_Mod_Factor>
+		<Space_Retreat_Units_Damaged_Mod_Factor> 2.0 </Space_Retreat_Units_Damaged_Mod_Factor>
+		<Space_Retreat_Flight_Move_Increment> 500.0 </Space_Retreat_Flight_Move_Increment>
+		<Space_Retreat_Unit_Increment_Wait_Frames> 1 </Space_Retreat_Unit_Increment_Wait_Frames>
+		<Space_Retreat_Off_Map_Dest_Pos> 12000.0, 12000.0, 0.0 </Space_Retreat_Off_Map_Dest_Pos> <!-- WARNING: For some reason, non-0.0 Z can cause problems? -->
+		<Space_Retreat_Countdown_Color_RGBA> 255, 255, 255, 255 </Space_Retreat_Countdown_Color_RGBA>
+		<Space_Retreat_Countdown_Text_ID> TEXT_RETREAT_SPACE_UNDERWORLD_COUNTDOWN </Space_Retreat_Countdown_Text_ID>
+		<Space_Retreat_Begin_SFXEvent> UHD_Retreat_Started_Space </Space_Retreat_Begin_SFXEvent>
+		<Space_Retreat_Enemy_Begin_SFXEvent> Unit_Enemy_Retreat_Underworld_Soldier </Space_Retreat_Enemy_Begin_SFXEvent>
+		<Space_Retreat_Cancel_SFXEvent> UHD_Retreat_Cancelled </Space_Retreat_Cancel_SFXEvent>
+		<Space_Retreat_Not_Allowed_SFXEvent> UHD_Retreat_Not_Allowed </Space_Retreat_Not_Allowed_SFXEvent>
+		<Space_Retreat_Not_Allowed_Reason_1_SFXEvent> UHD_Retreat_Interdictor </Space_Retreat_Not_Allowed_Reason_1_SFXEvent> <!-- Reason 1: Gravity Well -->
+		<Space_Retreat_Not_Allowed_Reason_2_SFXEvent /> <!-- Reason 2: Friendly Hero Preventing -->
+		<Space_Retreat_Not_Allowed_Reason_3_SFXEvent /> <!-- Reason 3: Tactical Superweaper Present -->
+		<Space_Forced_Retreat_Due_To_Superweapon> Unit_Victory_DS_Retreat_Underworld_Soldier </Space_Forced_Retreat_Due_To_Superweapon>
+		<Space_Surrender_SFXEvent> UHD_Retreat_Started_Space </Space_Surrender_SFXEvent>
+		<Land_Retreat_Countdown_Seconds> 4.99 </Land_Retreat_Countdown_Seconds>
+		<Land_Retreat_Pursue_Max_Speed_Mod_Factor> 2.0 </Land_Retreat_Pursue_Max_Speed_Mod_Factor>
+		<Land_Retreat_Units_Damaged_Mod_Factor> 2.0 </Land_Retreat_Units_Damaged_Mod_Factor>
+		<Land_Retreat_Countdown_Color_RGBA> 255, 255, 255, 255 </Land_Retreat_Countdown_Color_RGBA>
+		<Land_Retreat_Countdown_Text_ID> TEXT_RETREAT_LAND_UNDERWORLD_COUNTDOWN </Land_Retreat_Countdown_Text_ID>
+		<Land_Retreat_Begin_SFXEvent> UHD_Retreat_Started_land  </Land_Retreat_Begin_SFXEvent>
+		<Land_Retreat_Enemy_Begin_SFXEvent> Unit_Enemy_Retreat_Underworld_Soldier </Land_Retreat_Enemy_Begin_SFXEvent>
+		<Land_Retreat_Cancel_SFXEvent> UHD_Retreat_Cancelled </Land_Retreat_Cancel_SFXEvent>
+		<Land_Retreat_Not_Allowed_SFXEvent> UHD_Retreat_Not_Allowed </Land_Retreat_Not_Allowed_SFXEvent>
+		<Land_Retreat_Not_Allowed_Reason_1_SFXEvent /> <!-- Reason 1: Gravity Well -->
+		<Land_Retreat_Not_Allowed_Reason_2_SFXEvent /> <!-- Reason 2: Friendly Hero Preventing -->
+		<Land_Retreat_Not_Allowed_Reason_3_SFXEvent /> <!-- Reason 3: Tactical Superweaper Present -->
+		<Land_Surrender_SFXEvent> UHD_Retreat_Started_land </Land_Surrender_SFXEvent>
+		<Reinforcements_Selection_SFXEvent> UHD_Choose_Reinforcements </Reinforcements_Selection_SFXEvent>
+		<Reinforcements_Pick_Landing_Zone_SFXEvent />
+		<Reinforcements_Enroute_SFXEvent> UHD_Reinforcements_En_Route </Reinforcements_Enroute_SFXEvent>
+		<Reinforcements_Cancelled_SFXEvent> UHD_Reinforcements_Cancelled </Reinforcements_Cancelled_SFXEvent>
+		<Reinforcements_Requesting_SFXEvent> UHD_Request_Assistance </Reinforcements_Requesting_SFXEvent>
+		<Reinforcements_Ready_SFXEvent> UHD_Reinforcements_Available </Reinforcements_Ready_SFXEvent>
+		<Reinforcements_Shadow_Blob_Material_Name> Reinforcement_Overlay_Underworld </Reinforcements_Shadow_Blob_Material_Name>
+		<Bombing_Run_Shadow_Blob_Material_Name> Bombing_Run_Rebel </Bombing_Run_Shadow_Blob_Material_Name>
+		<Bombing_Run_Blob_Size> 100.0 </Bombing_Run_Blob_Size>
+
+		<!-- BOMBARDMENT DATA -->
+		<Bombardment_Shadow_Blob_Material_Name> Bombardment_Underworld </Bombardment_Shadow_Blob_Material_Name>
+		<Bombardment_Blob_Size> 200.0 </Bombardment_Blob_Size>
+		<Bombardment_Required_Orbital_Ships> Krayt_Class_Destroyer, The_Peacebringer </Bombardment_Required_Orbital_Ships>
+		<Bombardment_Projectile> Proj_Krayt_Bombardment_Ion Proj_Krayt_Bombardment_Damage </Bombardment_Projectile>
+		<Bombardment_Particle> Bombard_Particle_Effect </Bombardment_Particle>
+		<Bombardment_Number_Of_Salvos> 2 </Bombardment_Number_Of_Salvos>
+		<Bombardment_Shots_Per_Salvo> 1 </Bombardment_Shots_Per_Salvo>
+		<Bombardment_Shot_Delay> 0.2 </Bombardment_Shot_Delay>
+		<Bombardment_Salvo_Delay> 3 </Bombardment_Salvo_Delay>
+		<Bombardment_Initial_Delay> 4.0 </Bombardment_Initial_Delay>
+
+		<!-- color, intensity, and time for the lighting effects.  -->
+		<!-- Each of these is a list that should have the same number of entries as the Bombard_Projectile list -->
+		<Bombardment_Lighting_Color_List>0.0,0.0,0.0,1.0,0.2,0.2</Bombardment_Lighting_Color_List>
+		<Bombardment_Lighting_Intensity_List>0.2 0.4</Bombardment_Lighting_Intensity_List>
+		<Bombardment_Lighting_Seconds_List>2 2</Bombardment_Lighting_Seconds_List>
+		<Land_Mode_Selection_Blob_Material_Name>Selection_Rebel_Land</Land_Mode_Selection_Blob_Material_Name>
+		<Space_Mode_Selection_Blob_Material_Name>Selection_Rebel_Space</Space_Mode_Selection_Blob_Material_Name>
+		<Land_Mode_Garrison_Selection_Blob_Material_Name>Selection_Garrison_Land</Land_Mode_Garrison_Selection_Blob_Material_Name>
+		<Space_Mode_Garrison_Selection_Blob_Material_Name>Selection_Garrison_Land</Space_Mode_Garrison_Selection_Blob_Material_Name>
+		<Selection_Blob_RGBA>0,255,0,255</Selection_Blob_RGBA>
+		<Space_Skirmish_Unit_Buy_Credits> 100000 </Space_Skirmish_Unit_Buy_Credits>
+		<Space_Skirmish_AI_Default_Forces> 
+			StarViper_Squadron, StarViper_Squadron
+		</Space_Skirmish_AI_Default_Forces>
+		<Land_Skirmish_Unit_Buy_Credits> 50000 </Land_Skirmish_Unit_Buy_Credits>
+		<Land_Skirmish_AI_Default_Forces> 
+			Underworld_Merc_Squad, Underworld_Merc_Squad
+		</Land_Skirmish_AI_Default_Forces>
+		<Land_Skirmish_Unit_Cap_By_Player_Count>
+			0,10,
+			1,10,
+			8,5,
+		</Land_Skirmish_Unit_Cap_By_Player_Count>
+		<Debug_Ground_Structures>
+			U_Ground_Barracks
+		</Debug_Ground_Structures>
+		
+		<Superweapon_Win_Movie />
+		<Generic_Win_Movie />
+		<Finale_Movie>Underworld_Win_Story_Campaign</Finale_Movie>
+		<Finale_Movie_2>Underworld_Win_Story_Campaign_Part2</Finale_Movie_2>
+		<Post_Credits_Movie />
+		
+		<Victory_Text>TEXT_UNDERWORLD_VICTORY</Victory_Text>
+		<Defeat_Text>TEXT_UNDERWORLD_DEFEAT</Defeat_Text>
+		<Space_Win_Image>i_us_win.tga</Space_Win_Image>
+		<Space_Lose_Image>i_us_lose.tga</Space_Lose_Image>
+		<Land_Win_Image>i_ul_win.tga</Land_Win_Image>
+		<Land_Lose_Image>i_ul_lose.tga</Land_Lose_Image>
+		<Faction_Leader> Tyber_Zann </Faction_Leader>
+		<Faction_Leader_Company> Tyber_Zann_Team </Faction_Leader_Company>
+		<!-- Overlay ring used by Obiwan when targeting with his "force distact" ping ability, this is the ring around the cursor location to show victims in range of click -->
+		<Land_Area_Effect_Range_Overlay_Material_Name> Rebel_Land_Area_Effect_Range_Overlay </Land_Area_Effect_Range_Overlay_Material_Name> <!-- In ShadowBlobMaterials.xml -->
+		<Land_Area_Effect_Range_Overlay_RGBA> 128, 255, 128, 128 </Land_Area_Effect_Range_Overlay_RGBA>
+		<Land_Area_Effect_Range_Overlay_Scale_Factor> 1.20 </Land_Area_Effect_Range_Overlay_Scale_Factor> <!-- Compensate for ring ednge not being full bounds of texture size -->
+		<!-- Overlay ring used by Obiwan when targeting with his "force distact" ping ability, this is the ring around Obiwan to show click target terrain range -->
+		<Land_Ability_Targeting_Range_Overlay_Material_Name> Rebel_Land_Ability_Targeting_Range_Overlay </Land_Ability_Targeting_Range_Overlay_Material_Name> <!-- In ShadowBlobMaterials.xml -->
+		<Land_Ability_Targeting_Range_Overlay_RGBA> 255, 255, 64, 128 </Land_Ability_Targeting_Range_Overlay_RGBA>
+		<Land_Ability_Targeting_Range_Overlay_Scale_Factor> 1.20 </Land_Ability_Targeting_Range_Overlay_Scale_Factor> <!-- Compensate for ring ednge not being full bounds of texture size -->
+		<!-- Allow special weapon firing in tactical maps that have no parent galactic mode -->
+		<Standalone_Space_Maps_Special_Weapon_A />	<!-- Underworld special weapon is an inherent property of their level 3+ starbase -->
+		<Standalone_Space_Maps_Special_Weapon_B />
+
+		<!-- SFXEvents -->
+		<SFXEvent_GUI_Start_Campaign> GUI_Select_Underworld_SFX </SFXEvent_GUI_Start_Campaign>
+		<SFXEvent_Max_Credits_Limit_Reached> UHD_Credit_Capacity </SFXEvent_Max_Credits_Limit_Reached>
+		<SFXEvent_Land_Invasion_Commencing> UHD_Invasion_Commencing </SFXEvent_Land_Invasion_Commencing>
+		<SFXEvent_Tactical_Corruption_Mission_Commencing> Urai_Invasion_Commencing </SFXEvent_Tactical_Corruption_Mission_Commencing>
+		<SFXEvent_Build_Impossible_Location_Blockaded> UHD_System_Blockaded </SFXEvent_Build_Impossible_Location_Blockaded> <!-- In this case, enemy ships in orbit so can't build space station -->
+		<SFXEvent_New_Construction_Options_Available> UHD_New_Construction </SFXEvent_New_Construction_Options_Available> <!-- Can be Tactical or Galactic -->
+		<SFXEvent_Mission_Added> UHD_Mission_Updated </SFXEvent_Mission_Added> <!-- A new mission has been added to the holocron - the incoming transmission radar movie (and audio) is also playing -->
+		<SFXEvent_Base_Shield_Absorb_Damage> SFX_Shield_Absorb_Detonation </SFXEvent_Base_Shield_Absorb_Damage> <!-- Tactical: When the base shield absorbs damage, most likely by a projectile -->
+		<SFXEvent_Tactical_Unit_Cap_Reached> UHD_Unit_Cap_Reached </SFXEvent_Tactical_Unit_Cap_Reached> <!-- Tactical: We you can drag in anymore tactical units from the reinforcement palette -->
+		<SFXEvent_Arrive_From_Hyperspace> Unit_Ship_Hyperspace_Enter </SFXEvent_Arrive_From_Hyperspace>
+		<SFXEvent_Exit_Into_Hyperspace> Unit_Ship_Hyperspace_Exit </SFXEvent_Exit_Into_Hyperspace>
+		<SFXEvent_Space_Base_Under_Attack_Announcement> UHD_Space_Station_Under_Attack </SFXEvent_Space_Base_Under_Attack_Announcement>
+		<SFXEvent_Land_Base_Under_Attack_Announcement> UHD_Base_Under_Attack </SFXEvent_Land_Base_Under_Attack_Announcement>
+		<SFXEvent_Enemy_Fleet_Approaching_Planet>UHD_Enemy_Fleet_Approaching </SFXEvent_Enemy_Fleet_Approaching_Planet>
+		<SFXEvent_Strategic_Pop_Cap_Reached> UHD_Unit_Cap_Reached </SFXEvent_Strategic_Pop_Cap_Reached>
+		<SFXEvent_Tactical_Pop_Cap_Reached> UHD_Unit_Cap_Reached </SFXEvent_Tactical_Pop_Cap_Reached>
+		<SFXEvent_Planet_Corrupted> GUI_Corruption </SFXEvent_Planet_Corrupted>
+		<SFXEvent_Corruption_Removed> UHD_Corruption_Removed </SFXEvent_Corruption_Removed>
+		<SFXEvent_Bunker_Garrisoned> Structure_Garrison_SFX </SFXEvent_Bunker_Garrisoned>
+		<SFXEvent_Bunker_Vacated> Structure_UnGarrison_SFX </SFXEvent_Bunker_Vacated>
+		<SFXEvent_Sabotage_Success> Unit_Sabotage_Death_SFX </SFXEvent_Sabotage_Success>
+		<SFXEvent_Hack_Success> Planet_Death_SFX </SFXEvent_Hack_Success>
+		<!-- MusicEvents -->
+		<Strategic_Map_Music_Event> Galactic_Map_Underworld_Music_Event </Strategic_Map_Music_Event>
+		<Music_Event_Battle_Load_Screen> Tactical_Battle_Loading_Loop_Event </Music_Event_Battle_Load_Screen>
+
+		<!-- ============================================= -->
+		<!-- UNDERWORLD WIN/LOSE MUSIC EVENTS              -->
+		<!-- ============================================= -->
+
+		<!-- Specific vs. Factions -->
+		<Music_Event_Tactical_Win_Vs_Faction> Rebel,  	Underworld_Win_Tactical_Event </Music_Event_Tactical_Win_Vs_Faction>
+		<Music_Event_Tactical_Win_Vs_Faction> Empire, 	Underworld_Win_Tactical_Event </Music_Event_Tactical_Win_Vs_Faction>
+		<Music_Event_Tactical_Win_Vs_Faction> Pirates,	Underworld_Win_Tactical_Event </Music_Event_Tactical_Win_Vs_Faction>
+
+		<Music_Event_Tactical_Lose_Vs_Faction> Rebel,  	Lose_To_Rebel_Event </Music_Event_Tactical_Lose_Vs_Faction>
+		<Music_Event_Tactical_Lose_Vs_Faction> Empire, 	Lose_To_Empire_Event </Music_Event_Tactical_Lose_Vs_Faction>
+		<Music_Event_Tactical_Lose_Vs_Faction> Pirates,  Lose_To_Underworld_Event </Music_Event_Tactical_Lose_Vs_Faction>
+		<Music_Event_Tactical_Lose_Vs_Faction> Underworld,  Lose_To_Underworld_Event </Music_Event_Tactical_Lose_Vs_Faction>
+
+		<Music_Event_Strategic_Win_Vs_Faction> Rebel,  	Underworld_Win_Strategic_Event </Music_Event_Strategic_Win_Vs_Faction>
+		<Music_Event_Strategic_Win_Vs_Faction> Empire, 	Underworld_Win_Strategic_Event </Music_Event_Strategic_Win_Vs_Faction>
+		<Music_Event_Strategic_Win_Vs_Faction> Pirates, Underworld_Win_Strategic_Event </Music_Event_Strategic_Win_Vs_Faction>
+
+		<Music_Event_Strategic_Lose_Vs_Faction> Rebel,  	 Lose_To_Rebel_Event </Music_Event_Strategic_Lose_Vs_Faction>
+		<Music_Event_Strategic_Lose_Vs_Faction> Empire, 	 Lose_To_Empire_Event</Music_Event_Strategic_Lose_Vs_Faction>
+		<Music_Event_Strategic_Lose_Vs_Faction> Pirates,	 Lose_To_Underworld_Event </Music_Event_Strategic_Lose_Vs_Faction>
+		<Music_Event_Strategic_Lose_Vs_Faction> Underworld,	 Lose_To_Underworld_Event </Music_Event_Strategic_Lose_Vs_Faction>
+
+		<!-- Generic -->
+		<Music_Event_Tactical_Win> Underworld_Win_Tactical_Event </Music_Event_Tactical_Win>
+		<Music_Event_Tactical_Lose> Rebel_Lose_Tactical_Event </Music_Event_Tactical_Lose>
+		<Music_Event_Strategic_Win> Underworld_Win_Strategic_Event </Music_Event_Strategic_Win>
+		<Music_Event_Strategic_Lose> Rebel_Lose_Strategic_Event </Music_Event_Strategic_Lose>
+
+		<!-- ====================================================================== -->
+		<!-- UNDERWORLD SUPERWEAPON PRESENT MUSIC EVENTS - Overrides to map events below -->
+		<!-- ====================================================================== -->
+		<Music_Event_Space_Ambient_Super_Weapon />
+		<Music_Event_Space_Battle_Super_Weapon> Space_Map_Rebel_Battle_Death_Star_Music_Event </Music_Event_Space_Battle_Super_Weapon>
+		<Music_Event_Land_Ambient_Super_Weapon />
+		<Music_Event_Land_Battle_Super_Weapon />
+
+		<!-- ====================================================================== -->
+		<!-- UNDERWORLD TACTICAL BATTLE PENDING AUDIO EVENTS                             -->
+		<!-- ====================================================================== -->
+		<SFX_Event_Tactical_Land_Battle_Pending> UHD_Battle_Pending </SFX_Event_Tactical_Land_Battle_Pending>
+		<SFX_Event_Tactical_Space_Battle_Pending> UHD_Battle_Pending </SFX_Event_Tactical_Space_Battle_Pending>
+		<Music_Event_Tactical_Land_Battle_Pending> Tactical_Battle_Loading_Loop_Event </Music_Event_Tactical_Land_Battle_Pending>
+		<Music_Event_Tactical_Space_Battle_Pending> Tactical_Battle_Loading_Loop_Event </Music_Event_Tactical_Space_Battle_Pending>
+
+		<!-- ============================================== -->
+		<!-- UNDERWORLD MAPS MUSIC EVENTS - AMBIENT (NON-BATTLE) -->
+		<!-- ============================================== -->
+		<!-- Rebel: Space maps: Music events for ambient (non-battle) -->
+		<Music_Event_List_Ambient> Space, Space_Map_Rebel_Ambient_Music_Event </Music_Event_List_Ambient>
+		<!-- Rebel: Temperate land maps: Music events for ambient (non-battle) -->
+		<Music_Event_List_Ambient> Temperate, Temperate_Land_Rebel_Ambient_Music_Event </Music_Event_List_Ambient>
+		<!-- Rebel: Arctic land maps: Music events for ambient (non-battle) -->
+		<Music_Event_List_Ambient> Arctic, Ice_Land_Rebel_Ambient_Music_Event </Music_Event_List_Ambient>
+		<!-- Rebel: Desert land maps: Music events for ambient (non-battle) -->
+		<Music_Event_List_Ambient> Desert, Desert_Land_Rebel_Ambient_Music_Event </Music_Event_List_Ambient>
+		<!-- Rebel: Forest land maps: Music events for ambient (non-battle) -->
+		<Music_Event_List_Ambient> Forest, Temperate_Land_Rebel_Ambient_Music_Event </Music_Event_List_Ambient>
+		<!-- Rebel: Swamp land maps: Music events for ambient (non-battle) -->
+		<Music_Event_List_Ambient> Swamp, Swamp_Land_Rebel_Ambient_Music_Event </Music_Event_List_Ambient>
+		<!-- Rebel: Volcanic land maps: Music events for ambient (non-battle) -->
+		<Music_Event_List_Ambient> Volcanic, Volcanic_Land_Rebel_Ambient_Music_Event </Music_Event_List_Ambient>
+		<!-- Rebel: Urban land maps: Music events for ambient (non-battle) -->
+		<Music_Event_List_Ambient> Urban, Urban_Land_Rebel_Ambient_Music_Event </Music_Event_List_Ambient>
+
+		<!-- ================================ -->
+		<!-- UNDERWORLD MAPS MUSIC EVENTS - BATTLE -->
+		<!-- ================================ -->
+		<!-- Rebel: Space maps: Music events for battle -->
+		<Music_Event_List_Battle> Space, Space_Map_Rebel_Battle_Music_Event </Music_Event_List_Battle>
+		<!-- Rebel: Temperate land maps: Music evnts for battle -->
+		<Music_Event_List_Battle> Temperate, Temperate_Land_Rebel_Battle_Music_Event </Music_Event_List_Battle>
+		<!-- Rebel: Arctic land maps: Music events for battle -->
+		<Music_Event_List_Battle> Arctic, Ice_Land_Rebel_Battle_Music_Event </Music_Event_List_Battle>
+		<!-- Rebel: Desert land maps: Music events for battle -->
+		<Music_Event_List_Battle> Desert, Desert_Land_Rebel_Battle_Music_Event </Music_Event_List_Battle>
+		<!-- Rebel: Forest land maps: Music events for battle -->
+		<Music_Event_List_Battle> Forest, Temperate_Land_Rebel_Battle_Music_Event </Music_Event_List_Battle>
+		<!-- Rebel: Swamp land maps: Music events for battle -->
+		<Music_Event_List_Battle> Swamp, Swamp_Land_Rebel_Battle_Music_Event </Music_Event_List_Battle>
+		<!-- Rebel: Volcanic land maps: Music evets for battle -->
+		<Music_Event_List_Battle> Volcanic, Volcanic_Land_Rebel_Battle_Music_Event </Music_Event_List_Battle>
+		<!-- Rebel: Urban land maps: Music events for battle -->
+		<Music_Event_List_Battle> Urban, Urban_Land_Rebel_Battle_Music_Event </Music_Event_List_Battle>
+
+		<!-- ============================================== -->
+		<!-- OBJECT SPOTTED ANNOUNCEMENTS	                -->
+		<!-- ============================================== -->
+		<SFXEvent_Unit_Type_Spotted>Generic_Field_Commander_Empire,     Unit_Announce_Enemy_Field_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
+		<SFXEvent_Unit_Type_Spotted>Emperor_Palpatine,					Unit_Announce_Emperor_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
+		<SFXEvent_Unit_Type_Spotted>Boba_Fett,							Unit_Announce_Fett_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
+		<SFXEvent_Unit_Type_Spotted>Kyle_Katarn,						Unit_Announce_Katarn_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
+		<SFXEvent_Unit_Type_Spotted>Obi_Wan_Kenobi,						Unit_Announce_ObiWan_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
+		<SFXEvent_Unit_Type_Spotted>Generic_Field_Commander_Rebel,	    Unit_Announce_Enemy_Field_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
+		<SFXEvent_Unit_Type_Spotted>Han_Solo,							Unit_Announce_Solo_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
+		<SFXEvent_Unit_Type_Spotted>Darth_Vader,						Unit_Announce_Vader_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
+		<SFXEvent_Unit_Type_Spotted>General_Veers,						Unit_Announce_Veers_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
+
+        <SFXEvent_Unit_Type_Spotted>Tyber_Zann,		                    Unit_Announce_Tyber_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
+        <SFXEvent_Unit_Type_Spotted>The_Peacebringer,		            Unit_Announce_Tyber_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
+        <SFXEvent_Unit_Type_Spotted>Generic_Field_Commander_Underworld,	Unit_Announce_U_Field_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
+        <SFXEvent_Unit_Type_Spotted>IG-88,                              Unit_Announce_IG88_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
+
+        <SFXEvent_Unit_Type_Spotted>Silri,		                        Unit_Announce_Silri_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
+        <SFXEvent_Unit_Type_Spotted>Grand_Admiral_Thrawn,		        Unit_Announce_Thrawn_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
+        <SFXEvent_Unit_Type_Spotted>Executor_Super_Star_Destroyer,		Unit_Announce_Executor_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
+        <SFXEvent_Unit_Type_Spotted>Yoda,		                        Unit_Announce_Yoda_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
+        <SFXEvent_Unit_Type_Spotted>Luke_Skywalker_Jedi,		        Unit_Announce_Luke_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
+        <SFXEvent_Unit_Type_Spotted>Gargantuan_Battle_Platform,		    Unit_Announce_Gargantuan_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
+
+        <SFXEvent_Enemy_Spotted> Unit_See_Enemy_Underworld_Soldier </SFXEvent_Enemy_Spotted>
+
+		<!-- ============================================== -->
+		<!-- UNDERWORLD SUPERWEAPON ANNOUNCEMENTS                -->
+		<!-- ============================================== -->
+		<SpeechEvent_Super_Weapon_Moving_Into_Range />
+		<SpeechEvent_Super_Weapon_Moving_Range_60_Seconds />
+		<SpeechEvent_Super_Weapon_Moving_Range_30_Seconds />
+		<SpeechEvent_Super_Weapon_Moving_Range_15_Seconds />
+		<SpeechEvent_Super_Weapon_Moving_Range_05_Seconds />
+		<SpeechEvent_Super_Weapon_Moved_Into_Range />
+		<SpeechEvent_Super_Weapon_Enemy_Moving_Into_Range> UHD_Death_Star_Begin_Approach </SpeechEvent_Super_Weapon_Enemy_Moving_Into_Range>
+		<SpeechEvent_Super_Weapon_Enemy_Moving_Range_60_Seconds> UHD_Death_Star_1_Minute </SpeechEvent_Super_Weapon_Enemy_Moving_Range_60_Seconds>
+		<SpeechEvent_Super_Weapon_Enemy_Moving_Range_30_Seconds> UHD_Death_Star_30_Seconds </SpeechEvent_Super_Weapon_Enemy_Moving_Range_30_Seconds>
+		<SpeechEvent_Super_Weapon_Enemy_Moving_Range_15_Seconds> UHD_Death_Star_15_Seconds</SpeechEvent_Super_Weapon_Enemy_Moving_Range_15_Seconds>
+		<SpeechEvent_Super_Weapon_Enemy_Moving_Range_05_Seconds> UHD_Death_Star_5_Seconds </SpeechEvent_Super_Weapon_Enemy_Moving_Range_05_Seconds>
+		<SpeechEvent_Super_Weapon_Enemy_Moved_Into_Range> UHD_Death_Star_Cleared </SpeechEvent_Super_Weapon_Enemy_Moved_Into_Range>
+		<!-- Event to play when a local player captures or loses control of a planet -->
+		<SFXEvent_Planet_Gained_Control> UHD_Planet_Gained </SFXEvent_Planet_Gained_Control> <!-- Plays anytime control is gained -->
+		<SFXEvent_Planet_Lost_Control> UHD_Planet_Lost </SFXEvent_Planet_Lost_Control> <!-- Plays only when control is lost from other player -->
+		<!-- Events to play when toggling non-hero ability states from the GUI / Command Bar -->
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>DEFEND, GUI_Toggle_Shields_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>DEFEND, GUI_Toggle_Shields_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<!-- Interdict -->
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>INTERDICT, GUI_Toggle_Grav_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>INTERDICT, GUI_Toggle_Grav_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<!-- BARRAGE -->
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>BARRAGE, </SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>BARRAGE, </SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<!-- HUNT -->
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>HUNT, GUI_Toggle_Hunt_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>HUNT, GUI_Toggle_Hunt_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<!-- SPREAD_OUT -->
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>SPREAD_OUT, </SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>SPREAD_OUT, </SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<!-- ABILITY_LURE -->
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>LURE, GUI_Toggle_Lure_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>LURE, GUI_Toggle_Lure_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<!-- ABILITY_ROCKET_ATTACK -->
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>ROCKET_ATTACK, GUI_Toggle_Rocket_Attack_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>ROCKET_ATTACK, GUI_Toggle_Rocket_Attack_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<!-- HARASS -->
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>HARASS, GUI_Toggle_Harass_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>HARASS, GUI_Toggle_Harass_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<!-- Scout -->
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>AVOID_DANGER, GUI_Toggle_Scout_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>AVOID_DANGER, GUI_Toggle_Scout_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<!-- Deploy -->
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>DEPLOY, GUI_Toggle_Deploy_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>DEPLOY, GUI_Toggle_Deploy_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<!-- Turbo -->
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>TURBO, GUI_Toggle_Turbo_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>TURBO, GUI_Toggle_Turbo_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<!-- Spoiler Lock -->
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>SPOILER_LOCK, GUI_Toggle_Turbo_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>SPOILER_LOCK, GUI_Toggle_Turbo_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<!-- Harmonic Bomb -->
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>HARMONIC_BOMB, Unit_Attack_Rebel_Infiltrator</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off />
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>INVULNERABILITY, GUI_Toggle_Shields_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<!-- Force Cloak -->
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>FORCE_CLOAK, Unit_Cloaking</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>FORCE_CLOAK, Unit_Cloaking</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<!-- Stealth -->
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>STEALTH, Unit_Stealth</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>STEALTH, Unit_Stealth</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<!-- STIM_PACK -->
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>STIM_PACK, GUI_Stim_Pack_SFX</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>STIM_PACK, GUI_Stim_Pack_SFX</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<!-- SENSOR JAMMING -->
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>SENSOR_JAMMING, GUI_Sensor_Jamming_SFX</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off></SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<!-- BUZZ DROIDS -->
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>BUZZ_DROIDS, GUI_Buzz_Droids_SFX</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off></SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<!-- SWAP WEAPONS -->
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>SWAP_WEAPONS, GUI_Swap_Weapons_SFX</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off></SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<!-- BLAST -->
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>BLAST, GUI_Weapon_Boost_SFX</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off></SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+
+
+		<!-- Events to play when enemy is toggling non-hero ability states from the GUI / Command Bar -->
+		<!-- Power to shields -->
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>DEFEND, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>DEFEND, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<!-- Interdict -->
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>INTERDICT, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>INTERDICT, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<!-- BARRAGE -->
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>BARRAGE, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>BARRAGE, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<!-- HUNT -->
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>HUNT,</SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>HUNT, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<!-- SPREAD_OUT -->
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>SPREAD_OUT, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>SPREAD_OUT, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<!-- ABILITY_LURE -->
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>ABILITY_LURE, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>ABILITY_LURE, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<!-- ABILITY_ROCKET_ATTACK -->
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>ABILITY_ROCKET_ATTACK, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>ABILITY_ROCKET_ATTACK, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<!-- HARASS -->
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>HARASS, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>HARASS, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<!-- Scout -->
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>AVOID_DANGER, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>AVOID_DANGER, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<!-- Deploy -->
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>DEPLOY, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>DEPLOY, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<!-- Turbo -->
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>TURBO, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>TURBO, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<!-- STIM_PACK -->
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>STIM_PACK, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>STIM_PACK, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+
+
+		<!-- Rebel HUD Tactical Battle Audio -->
+		<SFXEvent_HUD_Landing_Zone_Captured> UHD_Landing_Zone_Captured </SFXEvent_HUD_Landing_Zone_Captured> <!-- We captured a landing soze -->
+		<SFXEvent_HUD_Landing_Zone_Lost> UHD_Landing_Zone_Lost </SFXEvent_HUD_Landing_Zone_Lost> <!-- We lost one of our landing zones -->
+		<SFXEvent_HUD_Last_Landing_Zone_Lost> UHD_Last_Landing_Zone_Lost </SFXEvent_HUD_Last_Landing_Zone_Lost> <!-- We lost our last landing zone -->
+		<SFXEvent_HUD_Build_Pad_Captured> UHD_Build_Pad_Captured </SFXEvent_HUD_Build_Pad_Captured> <!-- We captured a build pad -->
+		<SFXEvent_HUD_Build_Pad_Lost> UHD_Build_Pad_Lost </SFXEvent_HUD_Build_Pad_Lost> <!-- We lost one of our build pads -->
+		<SFXEvent_HUD_Base_Shield_Offline> UHD_Base_Shield_Offline </SFXEvent_HUD_Base_Shield_Offline> <!-- Our base shield just went offline -->
+		<SFXEvent_HUD_Enemy_Base_Shield_Offline> UHD_Enemy_Base_Shield_Offline </SFXEvent_HUD_Enemy_Base_Shield_Offline> <!-- The enemies base shield just went offline -->
+		<SFXEvent_HUD_Base_Shield_Online> UHD_Base_Shields_Up </SFXEvent_HUD_Base_Shield_Online> <!-- Our base shield just went back online -->
+		<SFXEvent_HUD_Enemy_Base_Shield_Online> UHD_Enemy_Base_Shields_Up </SFXEvent_HUD_Enemy_Base_Shield_Online> <!-- The enemies base shield just went back online -->
+		<SFXEvent_HUD_Base_Shield_Penetrated> UHD_Base_Shield_Penetrated </SFXEvent_HUD_Base_Shield_Penetrated> <!-- Our base shield was just penetrated by the enemy -->
+		<SFXEvent_HUD_Enemy_Base_Shield_Penetrated> UHD_Enemy_Base_Shield_Penetrated </SFXEvent_HUD_Enemy_Base_Shield_Penetrated> <!-- We just penetrated then enemies base shield -->
+		<SFXEvent_HUD_Won_Land_Battle> UHD_Battle_End </SFXEvent_HUD_Won_Land_Battle> <!-- We won the land battle -->
+		<SFXEvent_HUD_Lost_Land_Battle> UHD_Defeated </SFXEvent_HUD_Lost_Land_Battle> <!-- We lost the land battle -->
+		<SFXEvent_HUD_Won_Space_Battle> UHD_Battle_End </SFXEvent_HUD_Won_Space_Battle> <!-- We won the space battle -->
+		<SFXEvent_HUD_Lost_Space_Battle> UHD_Defeated </SFXEvent_HUD_Lost_Space_Battle> <!-- We lost the space battle -->
+		<SFXEvent_HUD_Won_Tactical_Corruption_Mission> Tyber_Battle_End </SFXEvent_HUD_Won_Tactical_Corruption_Mission> <!-- We won the corruption mission -->
+		<SFXEvent_HUD_Lost_Tactical_Corruption_Mission> UHD_Defeated </SFXEvent_HUD_Lost_Tactical_Corruption_Mission> <!-- We lost the corruption mission -->
+		<SFXEvent_HUD_Won_Land_Battle_Enemy_TSW_Present> UHD_Battle_End </SFXEvent_HUD_Won_Land_Battle_Enemy_TSW_Present> <!-- We won the land battle with enemy tactical superweapon present -->
+		<SFXEvent_HUD_Lost_Land_Battle_Enemy_TSW_Present> UHD_Defeated </SFXEvent_HUD_Lost_Land_Battle_Enemy_TSW_Present> <!-- We lost the land battle with enemy tactical superweapon present -->
+		<SFXEvent_HUD_Won_Space_Battle_Enemy_TSW_Present> UHD_Battle_End </SFXEvent_HUD_Won_Space_Battle_Enemy_TSW_Present> <!-- We won the space battle with enemy tactical superweapon present -->
+		<SFXEvent_HUD_Lost_Space_Battle_Enemy_TSW_Present> UHD_Defeated </SFXEvent_HUD_Lost_Space_Battle_Enemy_TSW_Present> <!-- We lost the space battle with enemy tactical superweapon present -->
+		<SFXEvent_HUD_Tactical_Victory_Near> Unit_Near_Victory_Underworld_Soldier </SFXEvent_HUD_Tactical_Victory_Near> <!-- PLACERHOLDER FOR FRANK --> <!-- We are outnumbering our enemy significantly and the FOW has been pushed back to help us exterminate the opposition -->
+		<SFXEvent_HUD_Repairing> UHD_Repairing </SFXEvent_HUD_Repairing> <!-- Repair is underway on something -->
+		<SFXEvent_HUD_Gravity_Control_Generator_On> Unit_GravGen_On_Underworld_Soldier </SFXEvent_HUD_Gravity_Control_Generator_On> <!-- The gravity control generator is switched on from off -->
+		<SFXEvent_HUD_Gravity_Control_Generator_Off> Unit_GravGen_Off_Underworld_Soldier </SFXEvent_HUD_Gravity_Control_Generator_Off> <!-- The gravity control generator is switched off from on -->
+		<SFXEvent_HUD_Special_Weapon_Ready> UHD_Hypervelocity_Available </SFXEvent_HUD_Special_Weapon_Ready> <!-- Index 0 = Hypervelocity Gun -->
+		<SFXEvent_HUD_Special_Weapon_Ready> UHD_Ion_Cannon_Available </SFXEvent_HUD_Special_Weapon_Ready> <!-- Index 1 = Ion Cannon - If entry here, must have 1 above even if stub -->
+		<SFXEvent_HUD_Special_Weapon_Ready /> <!-- Index 2 = Magnepulse Cannon - If entry here, must have 2 above even if stub -->
+		<SFXEvent_HUD_Special_Weapon_Charging> UHD_Hypervelocity_Charging </SFXEvent_HUD_Special_Weapon_Charging> <!-- Index 0 = Hypervelocity Gun -->
+		<SFXEvent_HUD_Special_Weapon_Charging> UHD_Ion_Cannon_Charging </SFXEvent_HUD_Special_Weapon_Charging> <!-- Index 1 = Ion Cannon - If entry here, must have 1 above even if stub -->
+		<SFXEvent_HUD_Special_Weapon_Charging /> <!-- Index 2 = Magnepulse Cannon - If entry here, must have 2 above even if stub -->
+		<SFXEvent_HUD_Special_Weapon_Firing> UHD_Hypervelocity_Firing </SFXEvent_HUD_Special_Weapon_Firing> <!-- Index 0 = Hypervelocity Gun -->
+		<SFXEvent_HUD_Special_Weapon_Firing> UHD_Ion_Cannon_Firing </SFXEvent_HUD_Special_Weapon_Firing> <!-- Index 1 = Ion Cannon - If entry here, must have 1 above even if stub -->
+		<SFXEvent_HUD_Special_Weapon_Firing /> <!-- Index 2 = Magnepulse Cannon - If entry here, must have 2 above even if stub -->
+		<SFXEvent_HUD_Enemy_Special_Weapon_Ready /> <!-- Index 0 = Hypervelocity Gun -->
+		<SFXEvent_HUD_Enemy_Special_Weapon_Ready /> <!-- Index 1 = Ion Cannon - If entry here, must have 1 above even if stub -->
+		<SFXEvent_HUD_Enemy_Special_Weapon_Ready /> <!-- Index 2 = Magnepulse Cannon - If entry here, must have 2 above even if stub -->
+		<SFXEvent_HUD_Enemy_Special_Weapon_Charging /> <!-- Index 0 = Hypervelocity Gun -->
+		<SFXEvent_HUD_Enemy_Special_Weapon_Charging /> <!-- Index 1 = Ion Cannon - If entry here, must have 1 above even if stub -->
+		<SFXEvent_HUD_Enemy_Special_Weapon_Charging /> <!-- Index 2 = Magnepulse Cannon - If entry here, must have 2 above even if stub -->
+		<SFXEvent_HUD_Enemy_Special_Weapon_Firing> UHD_Hypervelocity_Firing </SFXEvent_HUD_Enemy_Special_Weapon_Firing> <!-- Index 0 = Hypervelocity Gun -->
+		<SFXEvent_HUD_Enemy_Special_Weapon_Firing> UHD_Ion_Cannon_Firing </SFXEvent_HUD_Enemy_Special_Weapon_Firing> <!-- Index 1 = Ion Cannon - If entry here, must have 1 above even if stub -->
+		<SFXEvent_HUD_Enemy_Special_Weapon_Firing /> <!-- Index 2 = Magnepulse Cannon - If entry here, must have 2 above even if stub -->
+		<SFXEvent_HUD_Reinforcement_Point_Owned_60_Seconds> UHD_Control_Point_60_Seconds </SFXEvent_HUD_Reinforcement_Point_Owned_60_Seconds>
+		<SFXEvent_HUD_Reinforcement_Point_Owned_30_Seconds> UHD_Control_Point_30_Seconds </SFXEvent_HUD_Reinforcement_Point_Owned_30_Seconds>
+		<SFXEvent_HUD_Reinforcement_Point_Owned_15_Seconds> UHD_Control_Point_15_Seconds</SFXEvent_HUD_Reinforcement_Point_Owned_15_Seconds>
+		<SFXEvent_HUD_Reinforcement_Point_Owned_05_Seconds> UHD_Control_Point_5_Seconds</SFXEvent_HUD_Reinforcement_Point_Owned_05_Seconds>
+		<SFXEvent_HUD_Reinforcement_Point_Ally_Owned_60_Seconds> UHD_Control_Point_60_Seconds </SFXEvent_HUD_Reinforcement_Point_Ally_Owned_60_Seconds>
+		<SFXEvent_HUD_Reinforcement_Point_Ally_Owned_30_Seconds> UHD_Control_Point_30_Seconds </SFXEvent_HUD_Reinforcement_Point_Ally_Owned_30_Seconds>
+		<SFXEvent_HUD_Reinforcement_Point_Ally_Owned_15_Seconds> UHD_Control_Point_15_Seconds </SFXEvent_HUD_Reinforcement_Point_Ally_Owned_15_Seconds>
+		<SFXEvent_HUD_Reinforcement_Point_Ally_Owned_05_Seconds> UHD_Control_Point_5_Seconds </SFXEvent_HUD_Reinforcement_Point_Ally_Owned_05_Seconds>
+		<SFXEvent_HUD_Reinforcement_Point_Enemy_Owned_60_Seconds> UHD_Enemy_Control_Point_60_Seconds </SFXEvent_HUD_Reinforcement_Point_Enemy_Owned_60_Seconds>
+		<SFXEvent_HUD_Reinforcement_Point_Enemy_Owned_30_Seconds> UHD_Enemy_Control_Point_30_Seconds </SFXEvent_HUD_Reinforcement_Point_Enemy_Owned_30_Seconds>
+		<SFXEvent_HUD_Reinforcement_Point_Enemy_Owned_15_Seconds> UHD_Enemy_Control_Point_15_Seconds </SFXEvent_HUD_Reinforcement_Point_Enemy_Owned_15_Seconds>
+		<SFXEvent_HUD_Reinforcement_Point_Enemy_Owned_05_Seconds> UHD_Enemy_Control_Point_5_Seconds </SFXEvent_HUD_Reinforcement_Point_Enemy_Owned_05_Seconds>
+		<SFXEvent_HUD_Reinforcement_Point_Contested> UHD_Reinforcement_Contested </SFXEvent_HUD_Reinforcement_Point_Contested>
+		<SFXEvent_Tactical_Lose_Friendly_Control> Reinforcement_Point, UHD_Landing_Zone_Lost </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control> Reinforcement_Point, UHD_Landing_Zone_Captured </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control> Skirmish_Build_Pad, UHD_Build_Pad_Lost  </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control> Skirmish_Build_Pad, UHD_Build_Pad_Captured </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control> Secondary_Mining_Facility, UHD_Lost_Mining </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control> Secondary_Mining_Facility, UHD_Capture_Mining </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control> Secondary_Heavy_Factory_R, UHD_Lost_Heavy_Vehicle </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control> Secondary_Heavy_Factory_R, UHD_Capture_Heavy_Vehicle </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control> Secondary_Heavy_Factory_E, UHD_Lost_Heavy_Vehicle </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control> Secondary_Heavy_Factory_E, UHD_Capture_Heavy_Vehicle </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control> Secondary_Abandoned_Sensor, UHD_Lost_Sensor </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control> Secondary_Abandoned_Sensor, UHD_Capture_Sensor </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control> Secondary_Abandoned_Turbolaser_Tower, UHD_Lost_Turbo </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control> Secondary_Abandoned_Turbolaser_Tower, UHD_Capture_Turbo </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control> Secondary_Mercenary_Outfitter, UHD_Lost_Mercenaries </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control> Secondary_Mercenary_Outfitter, UHD_Capture_Mercenaries </SFXEvent_Tactical_Gain_Friendly_Control>
+
+<!--
+		<SFXEvent_Tactical_Lose_Friendly_Control>Garrison_Bunker_Capturable, UHD_Lost_Bunker </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Garrison_Bunker_Capturable, UHD_Capture_Bunker </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Skirmish_Hutt_Asteroid_Base, UHD_Lost_Hutt_Asteroid </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Skirmish_Hutt_Asteroid_Base, UHD_Capture_Hutt_Asteroid </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>N_Gravity_Well_Station, UHD_Lost_GravWell </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>N_Gravity_Well_Station, UHD_Capture_GravWell </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>N_Remote_Sensor_Pod, UHD_Lost_Sensor </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>N_Remote_Sensor_Pod, UHD_Capture_Sensor </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Skirmish_Outpost_Pad, UHD_Lost_Outpost_Pad </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Skirmish_Outpost_Pad, UHD_Capture_Outpost_Pad </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Skirrmish_Mineral_Processor_Pad, UHD_Lost_MinProc </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Skirrmish_Mineral_Processor_Pad, UHD_Capture_MinProc </SFXEvent_Tactical_Gain_Friendly_Control>
+-->
+		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus1_Cap, UHD_Landing_Zone_Lost </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus1_Cap, UHD_Landing_Zone_Captured </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus2_Cap, UHD_Landing_Zone_Lost </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus2_Cap, UHD_Landing_Zone_Captured </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus3_Cap, UHD_Landing_Zone_Lost </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus3_Cap, UHD_Landing_Zone_Captured </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus4_Cap, UHD_Landing_Zone_Lost </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus4_Cap, UHD_Landing_Zone_Captured </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus5_Cap, UHD_Landing_Zone_Lost </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus5_Cap, UHD_Landing_Zone_Captured </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus10_Cap, UHD_Landing_Zone_Lost </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus10_Cap, UHD_Landing_Zone_Captured </SFXEvent_Tactical_Gain_Friendly_Control>
+
+
+
+
+		<!-- Faction-based tactical constuction world 3D SFX - these are not HUD responses, but physical sound effects -->
+		<SFXEvent_Tactical_Object_Building_Started> Structure_Buildable_Start </SFXEvent_Tactical_Object_Building_Started> <!-- An object is just starting construction in the world -->
+		<SFXEvent_Tactical_Object_Building_Loop> Structure_Buildable_Loop </SFXEvent_Tactical_Object_Building_Loop> <!-- An object is currently under construction (loop) in the world -->
+		<SFXEvent_Tactical_Object_Building_Complete> Structure_Buildable_Stop </SFXEvent_Tactical_Object_Building_Complete> <!-- An object has just completed construction in the world -->
+		<SFXEvent_Tactical_Object_Sold> Structure_Buildable_Sold </SFXEvent_Tactical_Object_Sold> <!-- An object is sold in the world -->
+
+		<!-- Weather begin/end audio cues: Rain, Snow, Sandstorm, Ash -->
+		<SFXEvent_Weather_Begin> RAIN,       	Unit_Rain_Underworld_Soldier			</SFXEvent_Weather_Begin>
+		<SFXEvent_Weather_Begin> SNOW,			Unit_Snowstorm_Underworld_Soldier 	</SFXEvent_Weather_Begin>
+		<SFXEvent_Weather_Begin> SANDSTORM,  	Unit_Sandstorm_Underworld_Soldier 	</SFXEvent_Weather_Begin>
+		<SFXEvent_Weather_Begin> ASH,			Unit_Ashfall_Underworld_Soldier		</SFXEvent_Weather_Begin>
+		<SFXEvent_Weather_End>   RAIN,       									</SFXEvent_Weather_End>
+		<SFXEvent_Weather_End>   SNOW,       									</SFXEvent_Weather_End>
+		<SFXEvent_Weather_End>   SANDSTORM,  									</SFXEvent_Weather_End>
+		<SFXEvent_Weather_End>   ASH,        									</SFXEvent_Weather_End>
+
+		<!-- Bombing runs becoming available cues -->
+		<SFXEvent_Bombing_Run_Available> UHD_Bombing_Run_Available </SFXEvent_Bombing_Run_Available>
+		<SFXEvent_Bombing_Run_Ally_Available> UHD_Bombing_Run_Available </SFXEvent_Bombing_Run_Ally_Available>
+		<SFXEvent_Bombing_Run_Enemy_Available />
+		<SFXEvent_Bombing_Run_Cancelled> UHD_Bombing_Run_Canceled </SFXEvent_Bombing_Run_Cancelled>
+		<SFXEvent_Bombing_Run_Begin_Crosstalk> Unit_Bomb_Land_Skipray_1 </SFXEvent_Bombing_Run_Begin_Crosstalk>
+
+		<!-- Bombiard becoming available cues -->
+		<SFXEvent_Bombard_Available> UHD_Bombard_Available </SFXEvent_Bombard_Available>
+		<SFXEvent_Bombard_Ally_Available> UHD_Bombard_Ally_Available </SFXEvent_Bombard_Ally_Available>
+		<SFXEvent_Bombard_Enemy_Available>UHD_Bombard_Enemy_Available </SFXEvent_Bombard_Enemy_Available>
+		<SFXEvent_Bombard_Cancelled> UHD_Bombard_Canceled </SFXEvent_Bombard_Cancelled>
+
+		<!-- Starbase upgrading cues -->
+		<SFXEvent_Starbase_Upgraded> UHD_Space_Station_Upgraded </SFXEvent_Starbase_Upgraded>
+		<SFXEvent_Starbase_Enemy_Upgraded> UHD_Enemy_Space_Station_Upgraded</SFXEvent_Starbase_Enemy_Upgraded>
+		<SFXEvent_Starbase_Ally_Upgraded> UHD_Space_Station_Upgraded </SFXEvent_Starbase_Ally_Upgraded>
+
+		<!-- Player taunt SFXEvents variable sized list for taunt hot keys -->
+		<SFXEvent_Player_Taunt> Unit_Taunt_Tyber_Zann </SFXEvent_Player_Taunt>
+		<SFXEvent_Player_Taunt> Unit_Taunt_IG88   </SFXEvent_Player_Taunt>
+		<SFXEvent_Player_Taunt> Unit_Taunt_Silri </SFXEvent_Player_Taunt>
+
+		<!-- Sandbox tactical battle introduction Command Bar movie -->
+		<Tactical_Intro_Command_Bar_Movie_Name> Underworld_soldier_Loop </Tactical_Intro_Command_Bar_Movie_Name>
+
+		<!-- Sandbox tactical battle introduction SpeechEvents -->
+		<SpeechEvent_Tactical_Intro_Land_Attacker> GUS_INTRO_LAND_ATTACK_U_00 </SpeechEvent_Tactical_Intro_Land_Attacker> <!-- Default case for land battle as attacker -->
+		<SpeechEvent_Tactical_Intro_Land_Defender> GUS_INTRO_LAND_DEFEND_U_00  </SpeechEvent_Tactical_Intro_Land_Defender> <!-- Default case for land battle as defender -->
+		<SpeechEvent_Tactical_Intro_Space_Attacker> GUS_INTRO_SPACE_ATTACK_U_00 </SpeechEvent_Tactical_Intro_Space_Attacker> <!-- Default case for space battle as attacker -->
+		<SpeechEvent_Tactical_Intro_Space_Defender> GUS_INTRO_SPACE_DEFEND_U_00 </SpeechEvent_Tactical_Intro_Space_Defender> <!-- Default case for space battle as defender -->
+		<SpeechEvent_Tactical_Intro_Land_Raid_Attacker /> <!-- N/A for Underworld since they cannot raid -->
+		<SpeechEvent_Tactical_Intro_Land_Raid_Defender> GUS_INTRO_LAND_DEFEND_U_02 </SpeechEvent_Tactical_Intro_Land_Raid_Defender>
+		<SpeechEvent_Tactical_Intro_Land_Attacker_Last_Location> GUS_INTRO_SPACE_ATTACK_U_05 </SpeechEvent_Tactical_Intro_Land_Attacker_Last_Location>
+		<SpeechEvent_Tactical_Intro_Land_Defender_Last_Location> GUS_INTRO_LAND_DEFEND_U_05 </SpeechEvent_Tactical_Intro_Land_Defender_Last_Location>
+
+
+		<!--  Note that conditionals will be evaluated in the order below, so order/priority is important!	-->
+		<!--																								-->
+		<!-- Luke object types (4) :		Luke_Skywalker, Luke_Team, Luke_XWing, Red_Squadron				-->
+		<!-- Mon Mothma object types (2):  	Mon_Mothma, Mon_Mothma_Team										-->
+		<!-- Emperor Palpatine types (2):  	Emperor_Palpatine, Emperor_Palpatine_Team						-->
+		<!-- Death Star types (1):			Death_star														-->
+		<!--																								-->
+		<!-- ...Conditional_Or:  A (or) B present and C not present											-->
+		<!-- ...Conditional_And: A (and) B present and C not present										-->
+		<!--																								-->
+		<!-- Conditionals: 	 		(A) Present, 			  	(B) Present, 		(C) Not Present			-->
+		<!-- A and B present and C not present 
+		<SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or>  Death_Star,			None, 				None,			 	GUS_INTRO_SPACE_DEFEND_U_05 </SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or>  Death Star present, Luke not present -->
+		<!-- A or B present and C not present 
+		<SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or> 	Tyber_Zann,			None, 				None, 				GUS_INTRO_SPACE_DEFEND_U_04 </SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or>  Just Tyber Zann present -->
+		<!-- A or B present and C not present 
+		<SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or> 	Emperor_Palpatine,	Mon_Mothma, 		None, 				GUS_INTRO_SPACE_ATTACK_U_05 </SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or>  Empoeror Palpatine present or Mon Mothma present -->
+		<!-- A or B present and C not present 
+		<SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or> 	Tyber_Zann,			None, 				None, 				GUS_INTRO_SPACE_ATTACK_U_04 </SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or>  Just Tyber Zann present -->
+		<!-- A or B present and C not present 
+		<SpeechEvent_Tactical_Intro_Land_Defender_Conditional_Or> 	Tyber_Zann,			None, 				None, 				GUS_INTRO_LAND_DEFEND_U_04 </SpeechEvent_Tactical_Intro_Land_Defender_Conditional_Or>  Just Tyber Zann present -->
+		<!-- End Sandbox tactical battle introduction SpeechEvents -->
+
+
+		<!-- ============================================== -->
+		<!-- REBEL DROID ADVISOR TEXT		                -->
+		<!-- ============================================== -->
+		<Galactic_Advisor_Hints>
+				TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_01,
+				TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_03,
+				TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_04,
+				TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_05,
+				TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_06,
+				TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_07,
+				TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_08,
+				TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_09,
+				TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_10,
+				TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_11,
+				TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_13,
+				TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_14,
+				TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_15,
+				TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_16,
+				TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_17,
+				TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_18,
+				TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_19,
+				TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_22,
+				TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_23,
+				TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_24,
+				TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_25,
+				TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_26,				
+				TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_27
+		</Galactic_Advisor_Hints>
+		<Space_Advisor_Hints>
+				TEXT_DROID_ADVISOR_UNDERWORLD_SPACE_02,
+				TEXT_DROID_ADVISOR_UNDERWORLD_SPACE_03,
+				TEXT_DROID_ADVISOR_UNDERWORLD_SPACE_04,
+				TEXT_DROID_ADVISOR_UNDERWORLD_SPACE_05,
+				TEXT_DROID_ADVISOR_UNDERWORLD_SPACE_06,
+				TEXT_DROID_ADVISOR_UNDERWORLD_SPACE_07,
+				TEXT_DROID_ADVISOR_UNDERWORLD_SPACE_08,
+				TEXT_DROID_ADVISOR_UNDERWORLD_SPACE_09,
+				TEXT_DROID_ADVISOR_UNDERWORLD_SPACE_10,
+				TEXT_DROID_ADVISOR_UNDERWORLD_SPACE_11,
+				TEXT_DROID_ADVISOR_UNDERWORLD_SPACE_13,
+				TEXT_DROID_ADVISOR_UNDERWORLD_SPACE_14
+		</Space_Advisor_Hints>
+		<Land_Advisor_Hints>
+				TEXT_DROID_ADVISOR_UNDERWORLD_LAND_00,
+				TEXT_DROID_ADVISOR_UNDERWORLD_LAND_01,
+				TEXT_DROID_ADVISOR_UNDERWORLD_LAND_02,
+				TEXT_DROID_ADVISOR_UNDERWORLD_LAND_03,
+				TEXT_DROID_ADVISOR_UNDERWORLD_LAND_04,
+				TEXT_DROID_ADVISOR_UNDERWORLD_LAND_05,
+				TEXT_DROID_ADVISOR_UNDERWORLD_LAND_06,
+				TEXT_DROID_ADVISOR_UNDERWORLD_LAND_07,
+				TEXT_DROID_ADVISOR_UNDERWORLD_LAND_08,
+				TEXT_DROID_ADVISOR_UNDERWORLD_LAND_09,
+				TEXT_DROID_ADVISOR_UNDERWORLD_LAND_10,
+				TEXT_DROID_ADVISOR_UNDERWORLD_LAND_11,
+				TEXT_DROID_ADVISOR_UNDERWORLD_LAND_12,
+				TEXT_DROID_ADVISOR_UNDERWORLD_LAND_13,
+				TEXT_DROID_ADVISOR_UNDERWORLD_LAND_14,
+				TEXT_DROID_ADVISOR_UNDERWORLD_LAND_15,
+				TEXT_DROID_ADVISOR_LAND_12,
+				TEXT_DROID_ADVISOR_LAND_13,
+				TEXT_DROID_ADVISOR_LAND_14
+		</Land_Advisor_Hints>
+		<!-- End Droid Advisor Speech/Text -->
+		<Allies />
+		<Enemies>Empire, Rebel, Pirates, Hostile, Sarlacc, Hutts</Enemies>
+		<Can_Control_Planets>true</Can_Control_Planets>
+		<Garrison_Reinforcement_Delay_Seconds>20.0</Garrison_Reinforcement_Delay_Seconds>
+		<Multiplayer_Beacon_Type>R_Multiplayer_Beacon</Multiplayer_Beacon_Type>
+		<Default_Transmission_Message>TEXT_ENCYCLOPEDIA_HOLOCRON_UPDATED</Default_Transmission_Message>
+		<SFXEvent_HUD_Advisor_Message>GUI_Droid_Hint_SFX</SFXEvent_HUD_Advisor_Message>
+		<SFXEvent_HUD_Advisor_Urgent>GUI_R2_Urgent_Hint_SFX</SFXEvent_HUD_Advisor_Urgent>
+		<SFXEvent_HUD_Advisor_Hint>GUI_Droid_Hint_SFX</SFXEvent_HUD_Advisor_Hint>
+		<Multiplayer_Campaign_Heroes />
+        <Bribed_Color>155, 153, 119, 255</Bribed_Color>
+
+		<Multiplayer_Map_Preview_Icon>I_MULTIPLAY_UNDERWORLD.TGA</Multiplayer_Map_Preview_Icon>
+    
+     <Tech_Level_Icon_Name> i_button_r_tech_upgrade_ </Tech_Level_Icon_Name>	
+	
+      <Alternate_Icon_Prefix> u_ </Alternate_Icon_Prefix>
+
+	</Faction>
+
+
+
+	<Faction Name="Hutts">
+
+		<Is_Debug_Switchable_To> No </Is_Debug_Switchable_To>
+		<Create_Player_In_Multiplayer_Games> Yes </Create_Player_In_Multiplayer_Games>
+
+		<Text_ID> TEXT_FACTION_HUTTS_02 </Text_ID>
+		<Icon_Name> i_button_command_bar_jabba_symbol.tga </Icon_Name>
+		<Alternate_Icon_Name> i_button_command_bar_jabba_symbol.tga </Alternate_Icon_Name>
+		<Ground_Base_Icon_Name> groundbase_icon.tga </Ground_Base_Icon_Name>
+		<Star_Base_Icon_Name> spacestation_icon.tga </Star_Base_Icon_Name>
+		<Ground_Transport_Icon_Name> trooper_icon.tga </Ground_Transport_Icon_Name>
+		<Fleet_Icon_Name> i_icon_fleet.tga </Fleet_Icon_Name>
+		<Ship_Icon_Name> g_fleet.tga </Ship_Icon_Name>
+		<Squadron_Icon_Name> g_squad.tga </Squadron_Icon_Name>
+		
+		<Color> 255, 128, 0, 255 </Color>
+		<No_Colorization_Color> 231, 221, 67, 255 </No_Colorization_Color>
+		<Display_Font_Color> 255, 128, 0, 255 </Display_Font_Color>
+		<Big_Fleet_Color> 255, 128, 0, 150 </Big_Fleet_Color>
+
+		<Credits_Accumulation_Factor> 1.0 </Credits_Accumulation_Factor>
+		<Planet_Icon_Scale> 10.0 </Planet_Icon_Scale>
+		<Planet_Icon_Offset> 10.0, 10.0, -1.1 </Planet_Icon_Offset>
+		<Is_Playable>False</Is_Playable>
+		<Primary_Enemy> Underworld </Primary_Enemy>
+		<Hyperspace_Speed_Factor>0.07</Hyperspace_Speed_Factor>
+		<Is_Neutral> No </Is_Neutral>
+		<Force_Alignment>Neutral</Force_Alignment>
+		<Strategic_Map_Music_Event> </Strategic_Map_Music_Event>
+		<Space_Tactical_Unit_Cap>60</Space_Tactical_Unit_Cap>
+		<Maintenance_Cost>0.0</Maintenance_Cost>
+		<Land_Mode_Garrison_Selection_Blob_Material_Name>Selection_Garrison_Land</Land_Mode_Garrison_Selection_Blob_Material_Name>
+		<Space_Mode_Garrison_Selection_Blob_Material_Name>Selection_Garrison_Land</Space_Mode_Garrison_Selection_Blob_Material_Name>
+		<Selection_Blob_RGBA>255, 128, 0, 255</Selection_Blob_RGBA>
+
+		<Debug_Ground_Structures>Hutt_Command_Center_Palace</Debug_Ground_Structures>
+		<Scatters_From_Crushers> true </Scatters_From_Crushers>
+
+		<Allies />
+		<Enemies>Empire, Rebel, Hostile, Sarlacc, Underworld</Enemies>
+		<Easily_Bribed> Yes </Easily_Bribed>
+
+		<Can_Control_Planets>true</Can_Control_Planets>
+
+	</Faction>
+
+
+
+<Faction Name="Civilian">
+
+		<Is_Debug_Switchable_To> No </Is_Debug_Switchable_To>
+		<Create_Player_In_Multiplayer_Games> Yes </Create_Player_In_Multiplayer_Games>
+
+		<Text_ID> TEXT_FACTION_CIVILIAN </Text_ID>
+		<Icon_Name> </Icon_Name>
+		<Alternate_Icon_Name> </Alternate_Icon_Name>
+		<Ground_Base_Icon_Name> groundbase_icon.tga </Ground_Base_Icon_Name>
+		<Star_Base_Icon_Name> spacestation_icon.tga </Star_Base_Icon_Name>
+		<Ground_Transport_Icon_Name> trooper_icon.tga </Ground_Transport_Icon_Name>
+		<Fleet_Icon_Name> galacticfleeticon.tga </Fleet_Icon_Name>
+		<Ship_Icon_Name> g_fleet.tga </Ship_Icon_Name>
+		<Squadron_Icon_Name> g_squad.tga </Squadron_Icon_Name>
+		<Color> 100, 100, 100, 255 </Color>
+		<No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+		<Display_Font_Color> 128, 128, 128, 255 </Display_Font_Color>
+		<Big_Fleet_Color> 128, 128, 128, 100 </Big_Fleet_Color>
+		<Credits_Accumulation_Factor> 1.0 </Credits_Accumulation_Factor>
+		<Planet_Icon_Scale> 10.0 </Planet_Icon_Scale>
+		<Planet_Icon_Offset> 13.0, 10.0, -1.1 </Planet_Icon_Offset>
+		<Is_Playable>false</Is_Playable>
+		<Primary_Enemy>  </Primary_Enemy>
+		<Hyperspace_Speed_Factor>0.07</Hyperspace_Speed_Factor>
+		<Is_Neutral> No </Is_Neutral>
+		<Force_Alignment>Neutral</Force_Alignment>
+		<Strategic_Map_Music_Event> </Strategic_Map_Music_Event>
+		<Space_Tactical_Unit_Cap>40</Space_Tactical_Unit_Cap>
+		<Maintenance_Cost>0.0</Maintenance_Cost>
+		<Land_Mode_Garrison_Selection_Blob_Material_Name>Selection_Garrison_Land</Land_Mode_Garrison_Selection_Blob_Material_Name>
+		<Space_Mode_Garrison_Selection_Blob_Material_Name>Selection_Garrison_Land</Space_Mode_Garrison_Selection_Blob_Material_Name>
+		<Selection_Blob_RGBA>0,255,0,255</Selection_Blob_RGBA>
+
+		<Scatters_From_Crushers> true </Scatters_From_Crushers>
+		<Allies />
+		<Enemies />
+
+	</Faction>
+
+
+
+
+
+
+
+</Factions>

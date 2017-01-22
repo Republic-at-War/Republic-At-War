@@ -1,0 +1,280 @@
+<?xml version="1.0"?>
+
+
+<Siege_Mortar_Data>
+
+
+
+<GroundVehicle Name="Siege_Mortar">
+		<LOD_Bias>1</LOD_Bias>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>125.0, 75.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Text_ID>TEXT_UNIT_SIEGE_MORTAR</Text_ID>
+		<Encyclopedia_Good_Against>  AT-TE_Walker E_Ground_Turbolaser_Tower Arc_Trooper </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> LAAT AT_RT_Walker AT_AP </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text>TEXT_TOOLTIP_SIEGE_MORTAR</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ARTILLERY</Encyclopedia_Unit_Class>
+
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		<Land_Model_Name>SeV_siege_mortar.alo</Land_Model_Name>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Affiliation>Rebel</Affiliation>
+		<Political_Control>0</Political_Control>
+
+    <Wind_Disturbance_Radius>300</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>10</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.4</Wind_Disturbance_Sphere_Alpha>
+    
+		<Movement_Animation_Speed> 1.0 </Movement_Animation_Speed>
+    <Ranking_In_Category>6</Ranking_In_Category>
+		<Rotation_Animation_Speed> 1.0 </Rotation_Animation_Speed>
+		<Max_Speed> 1.1 </Max_Speed>
+		<Max_Rate_Of_Turn>2.0</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn> 1.0 </Stopped_Rate_Of_Turn>
+	
+		<Min_Speed_Fraction_For_Turn> .25 </Min_Speed_Fraction_For_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Giant Vehicle </UnitCollisionClass>
+		<Custom_Hard_XExtent> 100.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 50.0 </Custom_Hard_YExtent>
+		<FormationGrouping> Solo </FormationGrouping>
+		
+		<MinimumPushReturnDistance> 100 </MinimumPushReturnDistance>
+	  <Is_Affected_By_Gravity_Control_Field> Yes </Is_Affected_By_Gravity_Control_Field>
+		<Should_Reinforcements_Move> false </Should_Reinforcements_Move>
+		<SurfaceFX_Name>Hover</SurfaceFX_Name>
+		<Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+
+    <Is_Supercrusher>Yes</Is_Supercrusher>
+		<Armor_Type> Armor_SPMAT </Armor_Type>
+		<Size_Value>150</Size_Value>
+		<Damage>40</Damage>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>1000</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>999</Energy_Capacity>
+		<Energy_Refresh_Rate>999</Energy_Refresh_Rate>
+
+		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>ABILITY_COUNTDOWN,AFFECTED_BY_SHIELD,TURRET,TARGETING,LOBBING_SUPERWEAPON, WALK_LOCOMOTOR,IDLE,WEAPON,POWERED,REVEAL,HIDE_WHEN_FOGGED,UNIT_AI,DAMAGE_TRACKING, SQUASH</LandBehavior>
+		
+		<Deploys>Yes</Deploys>
+		
+		<Special_Weapon_Index>2</Special_Weapon_Index>
+		<Special_Weapon_Target_Action_Index> 2 </Special_Weapon_Target_Action_Index> <!-- HV Gun = 0, Ion Cannon = 1, Magnepulse Cannon = 2 -->
+		<Projectile_Fire_Recharge_Seconds>30.0</Projectile_Fire_Recharge_Seconds>
+		<Lobbing_Superweapon_Chargeup_Particle>Magnepulse_Chargeup_Particles</Lobbing_Superweapon_Chargeup_Particle>
+		<Lobbing_Superweapon_Chargeup_Particle_Bone_Name>attack_cool_bone</Lobbing_Superweapon_Chargeup_Particle_Bone_Name>
+		<Lobbing_Superweapon_SFXEvent_Chargeup>Structure_Magnepulse_Charge</Lobbing_Superweapon_SFXEvent_Chargeup>
+		<Lobbing_Superweapon_SFXEvent_Fire>Unit_Magnepulse_Fire</Lobbing_Superweapon_SFXEvent_Fire>
+		<Lobbing_Superweapon_Chargeup_Frames>90</Lobbing_Superweapon_Chargeup_Frames>
+		
+		
+		<Deployment_Anim_Rate>1.0</Deployment_Anim_Rate>
+		<Fire_Weapon_When_Deployed>Yes</Fire_Weapon_When_Deployed>
+		<Fire_Weapon_When_Undeployed>No</Fire_Weapon_When_Undeployed>
+
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>80</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Speed>2.0</Turret_Rotate_Speed>
+		<Turret_Bone_Name>Turret_00</Turret_Bone_Name>
+		<Barrel_Bone_Name>Barrel_00</Barrel_Bone_Name>
+		<Turret_Rest_Angle>0.0, 0.0, 0.0</Turret_Rest_Angle>
+		<Turret_Deployed_Rest_Angle>0.0, -50, 0.0</Turret_Deployed_Rest_Angle>
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>0</Apply_Y_Turret_Rotate_To_Axis>
+
+		<!--<Turret_Targets_Ground_Infantry> 3 </Turret_Targets_Ground_Infantry>
+		<Turret_Targets_Ground_Vehicles> 2 </Turret_Targets_Ground_Vehicles>
+		<Turret_Targets_Air_Vehicles> 9999 </Turret_Targets_Air_Vehicles>       
+		<Turret_Targets_Anything_Else> 1 </Turret_Targets_Anything_Else>
+		
+		<Targeting_Fire_Inaccuracy> Infantry, 80.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 40.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 1.0 </Targeting_Fire_Inaccuracy>-->
+		
+		<Land_FOW_Reveal_Range>1500.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1500.0</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance> 300.0 </Targeting_Min_Attack_Distance>
+
+        
+		<Projectile_Types>Proj_Ground_Siege_Mortar_Nuke</Projectile_Types>
+		<!--<Projectile_Fire_Recharge_Seconds>5.0</Projectile_Fire_Recharge_Seconds>-->
+		<!--<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>10.0</Projectile_Fire_Pulse_Delay_Seconds>-->
+	
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+
+		<Death_SFXEvent_Start_Die>Unit_AT_AT_Death_SFX</Death_SFXEvent_Start_Die>
+    <SFXEvent_Turret_Rotating_Loop> Structure_Turret_Motor </SFXEvent_Turret_Rotating_Loop>
+    
+		<SFXEvent_Select>Unit_Select_Battle_Droid</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Battle_Droid</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Battle_Droid</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Siege_Mortar</SFXEvent_Attack>
+	
+	  <SFXEvent_Special_Weapon_Ready>Siege_Mortar_Available</SFXEvent_Special_Weapon_Ready>
+
+		<SFXEvent_Unit_Lost> UHD_Unit_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Tactical_Build_Started> UHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>		
+		<SFXEvent_Tactical_Build_Complete> UHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>		
+		<SFXEvent_Tactical_Build_Cancelled> UHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+
+    
+		<CategoryMask> Vehicle | AntiStructure | AntiVehicle | AntiInfantry</CategoryMask>
+		<Icon_Name>I_BUTTON_SIEGE_MORTAR.tga</Icon_Name>
+		<MovementClass>LargeHover</MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>99</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>3</No_Refraction_Below_Detail_Level>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+		
+		<Ground_Vehicle_Turret_Target> Yes </Ground_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Overall_Length>60.0</Overall_Length>
+		  <Overall_Width>60.0</Overall_Width>
+		<Has_Land_Evaluator>Yes</Has_Land_Evaluator>
+		<AI_Combat_Power>300</AI_Combat_Power>
+		
+			
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+
+		<Select_Box_Scale>80</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<Weather_Category>LargeWalker</Weather_Category>
+
+		
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			
+		
+		<Unit_Ability>
+				<Type>DEPLOY</Type>
+			</Unit_Ability>
+
+	<!--<Unit_Ability>
+				<Type>SWAP_WEAPONS</Type>
+				<Alternate_Name_Text>TEXT_TOOLTIP_SIEGE_MORTAR_SWAP</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_SIEGE_SWAP_DESCRIPTION</Alternate_Description_Text>
+                <Must_Be_Bought_On_Black_Market>Yes</Must_Be_Bought_On_Black_Market>
+                <GUI_Activated_Ability_Name>Siege_Mortar_Swap_Weapon</GUI_Activated_Ability_Name> 
+					 <SFXEvent_GUI_Unit_Ability_Activated>GUI_Toggle_Rocket_Attack_On </SFXEvent_GUI_Unit_Ability_Activated> 
+			</Unit_Ability>	-->
+
+<Unit_Ability>
+				<Type>FIRE_LOBBING_SUPERWEAPON</Type>
+				<!--<Alternate_Name_Text>TEXT_TOOLTIP_SIEGE_MORTAR_FIRE</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_SIEGE_MORTAR_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_BLAST.TGA</Alternate_Icon_Name>-->
+				<!-- Oksana: Make sure it matches this tag: <Projectile_Fire_Recharge_Seconds> or it will ASSERT-->
+				<Recharge_Seconds>30</Recharge_Seconds>  
+				
+	         <Area_Effect_Decal_Distance> 200.0 </Area_Effect_Decal_Distance>
+				<!--AJA - This broke the rendering code when I tried to enable it. <Effective_Radius>1500.0</Effective_Radius>-->
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+		<Score_Cost_Credits>333</Score_Cost_Credits>
+		<Base_Shield_Penetration_Particle>Shield_Penetration_Effect_Particle</Base_Shield_Penetration_Particle>
+
+		
+        <Converted_To_Enemy_Die_Time_Seconds>60</Converted_To_Enemy_Die_Time_Seconds>
+	</GroundVehicle>
+
+	
+
+
+
+	
+			
+			
+	<GroundCompany Name="Siege_Mortar_Squad">
+	<Text_ID>TEXT_UNIT_SIEGE_MORTAR</Text_ID>
+		<Encyclopedia_Good_Against>  AT-TE_Walker E_Ground_Turbolaser_Tower Arc_Trooper </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> LAAT AT_RT_Walker AT_AP </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text>TEXT_TOOLTIP_SIEGE_MORTAR</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ARTILLERY</Encyclopedia_Unit_Class>
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>60</Damage>
+		<Autoresolve_Health>100</Autoresolve_Health>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>80</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>R_Ground_Heavy_Vehicle_Factory</Required_Special_Structures>
+		<Required_Planets />
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>6</Formation_Priority>
+		<Is_Escort>no</Is_Escort>
+		<Ship_Class>artillery</Ship_Class>
+		<Company_Transport_Unit>C9979_Landing_Craft</Company_Transport_Unit>
+		<Company_Units>Siege_Mortar</Company_Units>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Icon_Name>I_BUTTON_SIEGE_MORTAR.tga</Icon_Name>
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>GUI_Toggle_Rocket_Attack_On</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Battle_Droid</SFXEvent_Fleet_Move>
+		<Score_Cost_Credits>650</Score_Cost_Credits>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1100</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+		
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			
+	
+			
+				<Unit_Ability>
+				<Type>DEPLOY</Type>
+			</Unit_Ability>
+			
+		
+
+			
+		</Unit_Abilities_Data>
+		
+			
+	
+		<Maintenance_Cost>0.05</Maintenance_Cost>
+
+		<Population_Value>3</Population_Value>
+	</GroundCompany>
+
+
+
+
+	
+</Siege_Mortar_Data>

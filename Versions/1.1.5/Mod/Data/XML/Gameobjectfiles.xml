@@ -1,0 +1,319 @@
+<?xml version="1.0" ?>
+
+<Game_Object_Files>
+
+	<File>TransportUnits.xml</File>
+
+	<File>TechBuilding.xml</File>		
+	<File>GroundBases.xml</File>
+	<File>GroundStructures.xml</File>
+	<File>GroundTurrets.xml</File>
+	<File>GroundInfantry.xml</File>
+	<File>GroundVehicles.xml</File>
+	<File>GroundCompaniesRebel.xml</File>
+	<File>GroundCompaniesEmpire.xml</File>
+	<File>GroundIndigenous.xml</File>
+	<File>GroundCompaniesIndigenous.xml</File>
+	<File>GroundBuildablesRebel.xml</File>
+	<File>GroundBuildablesEmpire.xml</File>
+	<File>GroundBuildablesPirate.xml</File>
+	<File>GroundBuildablesSkirmish.xml</File>
+
+	<File>SpaceProps.xml</File>
+	<File>Spaceindigenous.xml</File>
+	<File>SpaceUnitsFighters.xml</File>
+	<File>SpaceUnitsCorvettes.xml</File>
+	<!--<File>SpaceUnitsFrigates.xml</File>-->
+	<File>Spaceunitscapital.xml</File>
+	<File>SpaceUnitsSupers.xml</File>
+	<File>SpacePrimarySkydomes.xml</File>
+	<File>SpaceSecondarySkydomes.xml</File>
+	<File>SpaceBuildablesSkirmish.xml</File>
+	<File>SpaceBuildables_Battlepads.xml</File>
+	
+	<File>NamedHeroUnits.xml</File>
+	<File>GenericHeroUnits.xml</File>
+	<File>HeroCompanies.xml</File>
+
+	<File>LandPrimarySkydomes.xml</File>
+	<File>LandSecondarySkydomes.xml</File>
+
+	<File>LandBombingRunUnits.xml</File>
+
+  <File>Engineerpads.xml</File>
+  <File>Engineerturrets.xml</File>
+	
+	<File>SpecialStructures.xml</File>
+	<File>SpecialStructures_Defense.xml</File>
+	<File>SpecialStructures_Economic.xml</File>
+	<File>SpecialStructures_Production.xml</File>
+	<File>SpecialStructures_Space.xml</File>
+	<File>SpecialStructures_Unique.xml</File>
+	<File>SpecialStructures_Battlefield.xml</File>
+	
+	<File>StarBases.xml</File>
+
+	<File>Squadrons.xml</File>
+
+	<File>Planets.xml</File>
+
+	<File>Projectiles.xml</File>
+	<File>SpecialEffects.xml</File>
+	<File>Particles.xml</File>
+	<File>Markers.xml</File>
+	<File>UniqueUnits.xml</File>
+	<File>Containers.xml</File>
+	<File>ScriptMarkers.xml</File>
+  <File>Triggers.xml</File>
+
+	<File>MiscObjects.xml</File>
+	<File>UpgradeObjects.xml</File>
+	<File>SecondaryStructures.xml</File>
+
+	<File>Props_Temperate.xml</File>
+	<File>Props_Swamp.xml</File>
+	<File>Props_Volcanic.xml</File>
+	<File>Props_Forest.xml</File>
+	<File>Props_Jungle.xml</File>
+	<File>Props_Junk.xml</File>
+	<File>Props_Snow.xml</File>
+	<File>Props_Desert.xml</File>
+	<File>Props_Urban.xml</File>
+	<File>Props_Industrial.xml</File>
+	<File>Props_Ordmantell.xml</File>
+	<File>Props_Generic.xml</File>
+	<File>Props_Story.xml</File>	
+  <File>Props_Bastion.xml</File>
+
+	<File>CIN_SpaceUnitsCapital.xml</File>
+	<File>CIN_SpaceUnitsFighters.xml</File>
+	<File>CIN_SpaceUnitsCorvettes.xml</File>
+	<File>CIN_SpaceUnitsFrigates.xml</File>
+	<File>CIN_GroundInfantry.xml</File>
+	<File>CIN_GroundVehicles.xml</File>
+	<File>CIN_SpaceProps.xml</File>
+	<File>CIN_TransportUnits.xml</File>
+	<File>CIN_Projectiles.xml</File>
+	<File>CIN_GroundProps.xml</File>
+	<File>CIN_GroundTurrets.xml</File>
+
+	<File>MOV_Cinematics.xml</File>
+
+
+
+
+
+
+	<!-- Expansion Units: Republic -->
+
+	
+ 
+	
+	
+
+	
+	
+	<File>Units_hero_republic_chancellor_palpatine.xml</File>
+	<File>Units_hero_republic_mace_windu.xml</File>
+  <File>Units_Hero_Republic_Yoda.xml</File>
+  <File>Units_hero_republic_plokoon.xml</File>
+  <File>Units_Hero_republic_anakinskywalker.xml</File>
+  <File>Units_hero_republic_obiwan.xml</File>
+  <File>Units_hero_republic_deltasquad.xml</File>
+  <File>Units_hero_republic_commander_cody.xml</File>
+  <File>Units_hero_republic_barris_offee.xml</File>
+  <File>Units_hero_republic_aayla_secura.xml</File>
+  <File>Units_hero_republic_luminara.xml</File>
+  <File>Units_hero_republic_shaak_ti.xml</File>
+  <File>Units_hero_Republic_kit_fisto.xml</File>
+  
+  
+	
+	<File>Units_Space_Republic_V19_Torrent_Fighter.xml</File>
+	<File>Units_space_republic_arc_170_fighter.xml</File>
+	<File>Units_space_republic_vwing_fighter.xml</File>
+	<File>Units_Space_republic_n1_fighter.xml</File>
+	<File>Units_Space_republic_ntb_630_fighter.xml</File>
+	<File>Units_Space_Republic_Light_Assault_Cruiser.xml</File>
+	<File>Units_Space_Republic_Light_Frigate.xml</File>
+	<File>Units_Space_Republic_Cr90.xml</File>
+	<File>Units_space_republic_carrack.xml</File>
+	<File>Units_Space_Republic_Acclamator.xml</File>
+	<File>Units_Space_republic_centax.xml</File>
+	<File>Units_Space_Republic_Dreadnaught.xml</File>
+	<File>Units_Space_Republic_Victory_Class_Stardestroyer.xml</File>
+	<File>Units_Space_Republic_Venator_Class.xml</File>
+  <File>Units_Space_Republic_Mandator.xml</File>
+  <File>Units_Space_Republic_Nu_Shuttle.xml</File>
+	<File>Units_Space_republic_cr20.xml</File>
+	<File>Units_Space_Republic_Botajef.xml</File>
+	<File>Units_Space_Republic_Acclamator_Transport.xml</File>
+	<File>Units_Space_Republic_Red_Squadron.xml</File>
+	<File>Units_Space_Republic_Shadow_Squadron.xml</File>
+	<File>Units_Space_Republic_Razor_Squadron.xml</File>
+	<File>Units_Space_Republic_Saesee_Tiin.xml</File>
+	<File>Units_Space_Republic_Havoc.xml</File>
+	<File>Units_Space_Republic_Freefall.xml</File>
+	<File>Units_Space_Republic_Guardian_Mantis.xml</File>
+	<File>Units_Space_Republic_Mere_Cruiser.xml</File>
+	<File>Units_Space_Republic_G400_Fighter.xml</File>
+	<File>Units_Space_republic_Drones.xml</File>
+	
+	
+	
+ 
+  <File>Units_Land_Republic_Clone_Troopers_P1.xml</File>
+  <File>Units_land_republic_clone_troopers_p2.xml</File>
+  <File>Units_land_republic_7th_Sky_Corp.xml</File>
+  <File>Units_land_republic_41st.xml</File>
+  <File>Units_land_republic_212th.xml</File>
+  <File>Units_land_republic_327th_Star_Corp.xml</File>
+  <File>Units_land_republic_501st.xml</File>
+  <File>Units_Land_Republic_Field_Commander_P1.xml</File>
+  <File>Units_land_republic_field_commander_p2.xml</File>
+  <File>Units_Land_Republic_Medicaldroid.xml</File>
+  <File>Units_land_republic_clonecommandos.xml</File>
+  <File>Units_land_republic_clonesnipers.xml</File>
+  <File>Units_land_republic_wookie_warriors.xml</File>
+  <File>Units_land_republic_arc_troopers.xml</File>
+  <File>Units_land_republic_barc_speeder.xml</File>
+  <File>Units_Land_Republic_At_Rt.xml</File>
+  <File>Units_Land_Republic_At_Pt.xml</File>
+  <File>Units_Land_Republic_Saber_Tank.xml</File>
+  <File>Units_Land_Republic_At_Ap.xml</File>
+  <File>Units_Land_Republic_AV_7_AntiVehicle_Cannon.xml</File>
+  <File>Units_land_republic_at_te.xml</File>
+  <File>Units_land_republic_laat.xml</File>
+  <File>Units_land_republic_arc_gunship.xml</File>
+  <File>Units_land_republic_a6_juggernaut.xml</File>
+  
+ 
+
+	
+	
+	<!-- Expansion Units: CIS -->
+	
+
+	<File>Units_Hero_Cis_Nute_Gunray.xml</File>
+	<File>Units_Hero_Cis_Aurra_Sing.xml</File>
+	<File>Units_Hero_Cis_Count_Dooku.xml</File>
+  <File>Units_hero_cis_cad_bane.xml</File>
+  <File>Units_Hero_Cis_Bossk.xml</File>
+  <File>Units_Hero_Cis_Asajj_Ventress.xml</File>
+  <File>Units_Hero_Cis_Durge.xml</File>
+  <File>Units_Hero_Cis_Grievous.xml</File>
+  <File>Units_Hero_Cis_Cad_Bane.xml</File>
+  <File>Units_Space_cis_Buzz_Droids.xml</File>
+  <File>Units_Space_Cis_Vulture_Droid.xml</File>
+  <File>Units_space_cis_tri_droid.xml</File>
+  <File>Units_Space_Cis_Nantex.xml</File>
+  <File>Units_Space_Sabaoth_Fighter.xml</File>
+  <File>Units_Space_CIS_Bomber.xml</File>
+  <File>Units_Space_Sabaoth_Bomber.xml</File>
+  <File>Units_Space_Cis_Hammer_Picket.xml</File>
+	<File>Units_Space_Cis_Patrol_Frigate.xml</File>
+  <File>Units_Space_Sabaoth_Deployer.xml</File>
+  <File>Units_Space_Cis_Carrier.xml</File>
+  <File>Units_Space_Cis_Munificent_Frigate.xml</File>
+  <File>Units_Space_Cis_Recusant_Frigate.xml</File>
+  <File>Units_Space_Cis_Technounion_Frigate.xml</File>
+  <File>Units_Space_Sabaoth_Destroyer.xml</File>
+  <File>Units_space_cis_bulwark.xml</File>
+  <File>Units_space_cis_providence.xml</File>
+  <File>Units_Space_Cis_Lucrehulk.xml</File>
+  <File>Units_space_cis_malevolence.xml</File>
+  <File>Units_Space_cis_sheathipede.xml</File>
+	<File>Units_Space_cis_c9979.xml</File>
+	
+	
+	
+	<File>Units_Land_Cis_Battledroid.xml</File>
+	<File>Units_Land_Cis_Field_Commander.xml</File>
+	<File>Units_land_cis_super_battledroid.xml</File>
+	<File>Units_Land_Cis_Repairdroid.xml</File>
+	<File>Units_Land_Cis_Magnaguards.xml</File>
+	<File>Units_Land_Cis_Bx_Commando.xml</File>
+	<File>Units_Land_Cis_Battledroid_Engineer.xml</File>
+	<File>Units_land_cis_darkside_adepts.xml</File>
+	<File>Units_Land_Cis_Stap.xml</File>
+	<File>Units_Land_Cis_DestroyerDroids.xml</File>
+	<File>Units_land_Cis_Crabdroid.xml</File>
+	<File>Units_Land_Cis_Aat_Tank.xml</File>
+	<File>Units_land_cis_enforcer_tank.xml</File>
+	<File>Units_Land_Cis_Hailfire_Tank.xml</File>
+	<File>Units_land_cis_hag.xml</File>
+	<!--<File>Units_Land_Cis_Siege_Mortar.xml</File>-->
+	<File>Units_Land_Cis_Mtt.xml</File>
+  <File>Units_Land_Cis_Homing_Spider_Walker.xml</File>
+	<File>Units_Land_Cis_Hmp.xml</File>
+	
+	<!--Merc Units-->
+	<File>Mercenary_TransportUnits.xml</File>
+	<File>Mercenary_Infantry.xml</File>
+	<File>Merc_Mandalorians.xml</File>
+	<File>Mercenary_IG86.xml</File>
+	
+	
+	<!-- Expansion Units: Underworld -->
+
+	<!--<File>Units_Hero_Underworld_IG88.xml</File>
+	<File>Units_Hero_Underworld_Bossk.xml</File>
+	<File>Units_Hero_Underworld_Tyber_Zann.xml</File>
+	<File>Units_Hero_Underworld_Silri.xml</File>
+	<File>Units_Hero_Underworld_Urai_Fen.xml</File>
+  <File>Units_Hero_Underworld_Guri.xml</File>
+  
+
+	<File>Units_Land_Underworld_MercenaryInf.xml</File>
+	<File>Units_Land_Underworld_DisruptorInf.xml</File>
+	<File>Units_Land_Underworld_DestroyerDroids.xml</File>
+	<File>Units_Land_Underworld_Vornskr.xml</File>
+	<File>Units_Land_Underworld_F9TZ_Transport.xml</File>
+	<File>Units_Land_Underworld_MAL.xml</File>
+	<File>Units_Land_Underworld_PulseTank.xml</File>
+	<File>Units_Land_Underworld_Canderous_Tank.xml</File>
+	<File>Units_Land_Underworld_ScavengerDroids.xml</File>
+	<File>Units_Land_Underworld_NightSister.xml</File>
+	<File>Units_Land_Underworld_Ewok_Bomber.xml</File>
+ 
+ 
+	
+	
+	<File>Units_Space_Underworld_StarViper.xml</File>
+	<File>Units_Space_Underworld_Skipray.xml</File>
+	<File>Units_Space_Underworld_Crusader_Gunship.xml</File>
+	<File>Units_Space_Underworld_Interceptor4.xml</File>
+	<File>Units_Space_Underworld_Vengeance.xml</File>	
+	<File>Units_Space_Underworld_Kadalbe_Battleship.xml</File>
+	<File>Units_Space_Underworld_Krayt_Destroyer.xml</File>
+	<File>Units_Space_Underworld_Buzz_Droids.xml</File>-->
+  <!--<File>SpecialStructures_Underworld.xml</File>-->
+	<!--<File>StarBases_Underworld.xml</File>-->
+
+
+	<!-- Expansion Units: Neutral -->
+
+	<File>Units_Space_Neutral_Eclipse.xml</File>
+	<File>Hutt_Faction_Units.xml</File>
+	<File>Units_Space_Hutts_Kimogila_Heavy_Fighter.xml</File>
+	<File>Units_Space_Hutts_Scyk_Fighter.xml</File>
+	<File>Units_Space_Pirate_Gozanti.xml</File>
+  <File>GroundBuildablesHutts.xml</File>
+
+
+	<!-- Expansion General Files -->
+	
+	<File>SpaceProps_Underworld.xml</File>
+	<File>Underworld_TransportUnits.xml</File>
+	<File>Minor_Heroes_Expansion.xml</File>
+	<File>Props_Felucia.xml</File>
+	<File>GroundBuildablesUnderworld.xml</File>
+	<File>GroundStructures_Underworld.xml</File>
+	<!--<File>Mobile_Defense_Units.XML</File>-->
+	<File>Multiplayer_Structure_Markers.XML</File>
+	<File>UpgradeObjects_Underworld.XML</File>
+	<File>Corruption_Special_Units.XML</File>
+
+
+
+</Game_Object_Files>

@@ -1,0 +1,1252 @@
+<?xml version="1.0"?>
+
+<SFXEvents>
+	
+	<!-- ======================================= -->
+	<!--  									GALACTIC SFX		 							-->
+	<!-- ======================================= -->
+
+	<SFXEvent Name="GUI_Corruption">
+			  <Use_Preset>Preset_GUI</Use_Preset>
+			  <Samples>GUI_Corruption_1.wav</Samples>
+	</SFXEvent>
+
+	<SFXEvent Name="GUI_Corruption_Remove">
+			  <Use_Preset>Preset_GUI</Use_Preset>
+			  <Samples>GUI_Corruption_Remove_1.wav</Samples>
+	</SFXEvent>
+
+	<SFXEvent Name="GUI_Bribe_SFX">
+			  <Use_Preset>Preset_GUI</Use_Preset>
+			  <Samples>GUI_Bribe_1.wav</Samples>
+	</SFXEvent>
+
+	<SFXEvent Name="GUI_Stim_Pack_SFX">
+			  <Use_Preset>Preset_GUI</Use_Preset>
+			  <Samples>GUI_Injection_1.wav</Samples>
+	</SFXEvent>
+
+	<SFXEvent Name="GUI_Sensor_Jamming_SFX">
+			  <Use_Preset>Preset_GUI</Use_Preset>
+			  <Samples>GUI_Toggle_UW_3.wav</Samples>
+	</SFXEvent>
+
+	<SFXEvent Name="GUI_Buzz_Droids_SFX">
+			  <Use_Preset>Preset_GUI</Use_Preset>
+			  <Samples>GUI_Buzz_Droid_1.wav</Samples>
+	</SFXEvent>
+
+		 <SFXEvent Name="GUI_Swap_Weapons_SFX">
+				 <Use_Preset>Preset_GUI</Use_Preset>
+				 <Samples>GUN_Tyber_Draw_Blaster_1.wav</Samples> 	
+		  </SFXEvent>
+
+		 <SFXEvent Name="GUI_Weapon_Boost_SFX">
+				 <Use_Preset>Preset_GUI</Use_Preset>
+				 <Samples>GUI_Toggle_UW_2.wav</Samples> 	
+		  </SFXEvent>
+
+
+
+
+
+
+	<!-- ======================================= -->
+	<!--  									MISC SFX		 										 -->
+	<!-- ======================================= -->
+
+	<SFXEvent Name="Structure_Garrison_SFX">
+			  <Use_Preset>Preset_BDS</Use_Preset>
+			  <Samples>STR_Garrison_1.wav</Samples> 
+	</SFXEvent>
+
+	<SFXEvent Name="Structure_UnGarrison_SFX">
+			  <Use_Preset>Preset_BDS</Use_Preset>
+			  <Samples>STR_UnGarrison_1.wav</Samples> 
+	</SFXEvent>
+
+	<SFXEvent Name="Structure_Cage_Select_SFX">
+			  <Use_Preset>Preset_BDS</Use_Preset>
+			  <Samples>STR_Cage_1.wav</Samples> 
+	</SFXEvent>
+
+
+
+
+
+
+	<SFXEvent Name="Unit_Select_MDU">
+			  <Use_Preset>Preset_BDS</Use_Preset>
+			  <Samples>MDU_Select_1.wav</Samples>
+	</SFXEvent>
+
+	<SFXEvent Name="Unit_Move_MDU">
+			  <Use_Preset>Preset_BDS</Use_Preset>
+			  <Samples>MDU_Move_1.wav</Samples>
+	</SFXEvent>
+
+	<SFXEvent Name="Unit_Attack_MDU">
+			  <Use_Preset>Preset_BDS</Use_Preset>
+			  <Samples>MDU_Attack_1.wav</Samples>
+	</SFXEvent>
+
+
+
+
+
+ 	<SFXEvent Name="Static_On">
+			  <Use_Preset>Preset_GUNV</Use_Preset>
+			  <Samples>Static_On.wav</Samples>
+	</SFXEvent>
+
+ 	<SFXEvent Name="Static_Off">
+			  <Use_Preset>Preset_GUNV</Use_Preset>
+			  <Samples>Static_Off.wav</Samples>
+	</SFXEvent>
+
+
+
+	<SFXEvent Name="Unit_Random_Mouse_Droid">
+			  <Use_Preset>Preset_GUNV</Use_Preset>
+			  <Samples>Mouse_Droid_1.wav Mouse_Droid_2.wav Mouse_Droid_3.wav Mouse_Droid_4.wav</Samples>
+	</SFXEvent>
+
+	<SFXEvent Name="Unit_Panic_Mouse_Droid">
+			  <Use_Preset>Preset_GUNV</Use_Preset>
+			  <Samples>Mouse_Droid_Panic_1.wav</Samples>
+	</SFXEvent>
+
+
+
+
+
+
+
+		 <SFXEvent Name="Unit_Expansion_Test">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>GUN_X_Wing_1.wav</Samples>
+		 </SFXEvent>
+
+
+		 <SFXEvent Name="SFX_UMP_TyberFreePrisoner">
+					<Use_Preset>Preset_HERO</Use_Preset>
+					<Samples>Placement.wav</Samples>
+		 </SFXEvent>
+
+		 <SFXEvent Name="SFX_UMP_EmpireDropshipsArriving">
+					<Use_Preset>Preset_HERO</Use_Preset>
+					<Samples>GUN_X_Wing_1.wav</Samples>
+		 </SFXEvent>
+
+		 <SFXEvent Name="SFX_UMP_EmpireKesselAlarm">
+					<Use_Preset>Preset_HERO</Use_Preset>
+					<Samples>Orbital_Alarm_1.wav</Samples>
+		 </SFXEvent>
+
+		 <SFXEvent Name="SFX_Crate_Pickup">
+					<Use_Preset>Preset_BDS</Use_Preset>
+					<Samples>BDS_Crate_Pickup_2.wav</Samples>
+		 </SFXEvent>
+
+
+		 <SFXEvent Name="SFX_UM02_MagneticSealedDoor">
+					<Use_Preset>Preset_HERO</Use_Preset>
+			<Samples> Orbital_Alarm_1.wav GUN_Rebel_Ricochet_1.wav GUN_Rebel_Ricochet_2.wav GUN_Rebel_Ricochet_3.wav GUN_Empire_Ricochet_1.wav GUN_Empire_Ricochet_2.wav GUN_Empire_Ricochet_3.wav GUN_Empire_Ricochet_4.wav </Samples>    
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Yoda_Whoosh">
+				<Use_Preset>Preset_GUN</Use_Preset>
+				<Samples>Yoda_Whoosh_1.wav Yoda_Whoosh_2.wav Yoda_Whoosh_3.wav Yoda_Whoosh_4.wav </Samples>
+				<Min_Volume>100</Min_Volume>
+				<Max_Volume>100</Max_Volume>
+		 </SFXEvent>
+
+
+		 <SFXEvent Name="Unit_Juggernaut_Door_Start">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>Juggernaut_Door_Start.wav</Samples>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Juggernaut_Door_Open">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>Juggernaut_Door_Open_1.wav</Samples>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Juggernaut_Door_Close">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>Juggernaut_Door_Close.wav</Samples>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Juggernaut_Door_Stop">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>Juggernaut_Door_Stop.wav</Samples>
+		 </SFXEvent>
+
+
+		 <SFXEvent Name="SFX_Anim_Felucia_Plant_Prep_1">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>Felucia_Plant_Prep_1.wav</Samples>
+		 </SFXEvent>
+
+		 <SFXEvent Name="SFX_Anim_Felucia_Plant_Prep_2">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>Felucia_Plant_Prep_2.wav</Samples>
+		 </SFXEvent>
+
+		 <SFXEvent Name="SFX_Anim_Felucia_Plant_Shoot_1">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>Felucia_Plant_Shoot_1A.wav</Samples>
+		 </SFXEvent>
+
+		 <SFXEvent Name="SFX_Anim_Felucia_Plant_Shoot_2">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>Felucia_Plant_Shoot_2.wav</Samples>
+		 </SFXEvent>
+
+		 <SFXEvent Name="SFX_Anim_Beetle_Footsteps">
+				<Use_Preset>Preset_FSI</Use_Preset>
+				<Samples>FS_Beetle_1.wav FS_Beetle_2.wav FS_Beetle_3.wav FS_Beetle_4.wav</Samples>
+		 </SFXEvent>
+
+		 <SFXEvent Name="SFX_Anim_Beetle_Attack">
+				<Use_Preset>Preset_DTH</Use_Preset>
+				<Samples>Beetle_Attack_1.wav</Samples>
+		 </SFXEvent>
+
+		 <SFXEvent Name="SFX_Anim_Beetle_Grunt">
+				<Use_Preset>Preset_DTH</Use_Preset>
+				<Samples>Beetle_1.wav</Samples>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Stealth">
+				<Use_Preset>Preset_EXPC</Use_Preset>	 
+				<Samples>Cloaking_3.wav</Samples>
+				<Max_Instances>1</Max_Instances>
+		</SFXEvent>
+
+		 <SFXEvent Name="Unit_Cloaking">
+				<Use_Preset>Preset_EXPC</Use_Preset>	 
+				<Samples>Cloaking_2.wav</Samples>
+				<Max_Instances>1</Max_Instances>
+		</SFXEvent>
+
+		 <SFXEvent Name="SFX_Stealth_Reveal">
+				<Use_Preset>Preset_EXPC</Use_Preset>	 
+				<Samples>Cloaking_Reveal_1.wav</Samples>
+				<Max_Instances>2</Max_Instances>
+		</SFXEvent>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		 <!-- ======================================= -->
+		 <!--  									WEAPONS  											-->
+		 <!-- ======================================= -->
+
+
+			<SFXEvent Name="Unit_Silri_Light_Saber_Swing">
+				  <Use_Preset>Preset_GUN</Use_Preset>
+				  <Samples>LS_Whip_Swing_1.wav LS_Whip_Swing_2.wav LS_Whip_Swing_3.wav LS_Whip_Swing_4.wav LS_Whip_Swing_5.wav</Samples>
+				  <Min_Volume>80</Min_Volume>
+				  <Max_Volume>80</Max_Volume>
+			</SFXEvent>
+
+		 <SFXEvent Name="Unit_Silri_Light_Saber_Hit">
+				 <Use_Preset>Preset_GUN</Use_Preset>
+				 <Samples>LS_Whip_Hit_1.wav LS_Whip_Hit_2.wav LS_Whip_Hit_3.wav LS_Whip_Hit_4.wav LS_Whip_Hit_5.wav</Samples>
+				 <Min_Volume>100</Min_Volume>
+				 <Max_Volume>100</Max_Volume>
+		  </SFXEvent>
+
+		 <SFXEvent Name="Unit_Silri_Lightsaber_Idle_Loop">
+			 <Samples> LS_Vader_Hum.wav </Samples>
+			 <Priority> 1 </Priority>
+			 <Max_Instances> 1 </Max_Instances>
+			 <Play_Count> -1 </Play_Count>
+			 <Min_Volume> 50 </Min_Volume>
+			 <Max_Volume> 50 </Max_Volume>
+			 <Volume_Saturation_Distance> 150.0 </Volume_Saturation_Distance>
+			 <Localize> No </Localize>
+			 <Loop_Fade_In_Seconds> 0.00 </Loop_Fade_In_Seconds>
+			 <Loop_Fade_Out_Seconds> 0.50 </Loop_Fade_Out_Seconds>
+		 </SFXEvent>
+
+
+
+
+		 <SFXEvent Name="Unit_Underworld_Infantry_Fire">
+				 <Use_Preset>Preset_GUN</Use_Preset>
+				 <Samples>GUN_Underworld_Blaster_1.wav</Samples> 	
+		  </SFXEvent>
+
+		 <SFXEvent Name="Unit_Disruptor_Fire">
+				 <Use_Preset>Preset_GUN</Use_Preset>
+				 <Samples>GUN_Disruptor_1.wav</Samples>  
+				 <Min_Volume>80</Min_Volume>
+				 <Max_Volume>80</Max_Volume>
+		  </SFXEvent>
+
+
+		 <SFXEvent Name="Unit_Tyber_Fire">
+				 <Use_Preset>Preset_GUNV</Use_Preset>
+				 <Samples>GUN_Tyber_Blaster_1.wav</Samples> 	
+		  </SFXEvent>
+
+		 <SFXEvent Name="Unit_Anim_Urai_Blade_Swing">
+				 <Use_Preset>Preset_GUN</Use_Preset>
+				 <Samples>GUN_Urai_Blade_1.wav GUN_Urai_Blade_2.wav</Samples> 	
+		  </SFXEvent>
+
+		 <SFXEvent Name="Unit_Dark_Trooper_Blade_Swing">
+				 <Use_Preset>Preset_GUN</Use_Preset>
+				 <Samples>GUN_Urai_Blade_1.wav GUN_Urai_Blade_2.wav</Samples> 	
+		  </SFXEvent>
+
+
+
+		 <SFXEvent Name="Unit_Tyber_Draw_Blaster">
+				 <Use_Preset>Preset_GUN</Use_Preset>
+				 <Samples>GUN_Tyber_Draw_Blaster_1.wav</Samples> 	
+		  </SFXEvent>
+
+
+
+
+		 <SFXEvent Name="Unit_MAL_Carbonite_Fire">
+				 <Use_Preset>Preset_GUNV</Use_Preset>
+				 <Samples>GUN_Carbonite_Missile_1.wav </Samples> 	
+		  </SFXEvent>
+
+		 <SFXEvent Name="Unit_Point_Laser_Fire">
+				 <Use_Preset>Preset_GUNV</Use_Preset>
+				 <Samples>GUN_Point_Laser_1.wav GUN_Point_Laser_2.wav GUN_Point_Laser_3.wav</Samples> 	
+		  </SFXEvent>
+
+
+
+		 <SFXEvent Name="Unit_Destroyer_Droid_Fire">
+				 <Use_Preset>Preset_GUNV</Use_Preset>
+				 <Samples>GUN_Destroyer_Droid_1.wav GUN_Destroyer_Droid_2.wav</Samples> 	
+		  </SFXEvent>
+
+		 <SFXEvent Name="Unit_Star_Viper_Fire">
+				 <Use_Preset>Preset_GUNV</Use_Preset>
+				 <Samples>GUN_Star_Viper_1.wav GUN_Star_Viper_2.wav GUN_Star_Viper_3.wav</Samples>        
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Underworld_Ship_Laser_Fire">
+				 <Use_Preset>Preset_GUNV</Use_Preset>
+				 <Samples>GUN_Star_Viper_1.wav GUN_Star_Viper_2.wav GUN_Star_Viper_3.wav</Samples>        
+		 </SFXEvent>
+
+
+		 <SFXEvent Name="Unit_Underworld_Turbo_Fire">
+				 <Use_Preset>Preset_GUNS</Use_Preset>
+				 <Samples>GUN_Underworld_Turbo_1.wav</Samples>        
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Underworld_Plasma_Fire">
+				 <Use_Preset>Preset_EXPC</Use_Preset>
+				 <Samples>GUN_Underworld_Plasma_1.wav</Samples>        
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Underworld_Ion_Fire">
+				 <Use_Preset>Preset_EXPC</Use_Preset>
+				 <Samples>GUN_Underworld_Ion_1.wav</Samples>        
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Houndstooth_Fire">
+				 <Use_Preset>Preset_GUNV</Use_Preset>
+				 <Samples>GUN_Houndstooth_1.wav</Samples>        
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_IG2000_Fire">
+				 <Use_Preset>Preset_GUNV</Use_Preset>
+				 <Samples>GUN_IG2000_1.wav</Samples>        
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_IG88_Contamination_Loop">
+				<Use_Preset>Preset_EGL_Land</Use_Preset>
+				<Samples>EGL_Contaminate_Loop_2.wav</Samples>
+				<Min_Volume>90</Min_Volume>
+				<Max_Volume>90</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_IG88_Infect_Loop">
+				<Use_Preset>Preset_EGL_Land</Use_Preset>
+				<Samples>EGL_Infect_Loop_1.wav</Samples>
+				<Min_Volume>90</Min_Volume>
+				<Max_Volume>90</Max_Volume>
+		 </SFXEvent>
+
+         <SFXEvent Name="Unit_IG88_Corrupt_Systems">
+                <Use_Preset>Preset_EXPC</Use_Preset>
+                <Samples>EXP_Weaken_1.wav</Samples>
+         </SFXEvent>
+
+         <SFXEvent Name="Shield_Flare_SFX_Event">
+                <Use_Preset>Preset_EXPC</Use_Preset>
+                <Samples>EXP_Weaken_1.wav</Samples>
+         </SFXEvent>
+
+
+         
+		 <SFXEvent Name="Unit_Bombard_Projectile_Loop">
+				<Use_Preset>Preset_EGL_Land</Use_Preset>
+				<Samples>EGL_Contaminate_Loop_1.wav</Samples>
+				<Min_Volume>90</Min_Volume>
+				<Max_Volume>90</Max_Volume>
+		 </SFXEvent>
+
+
+		 <SFXEvent Name="Unit_Yoda_Force_Sight_Loop">
+				<Use_Preset>Preset_EGLC</Use_Preset>
+				<Samples>EGL_Force_Reveal_Map_Loop_2.wav</Samples>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Force_Summon">
+				<Use_Preset>Preset_EXPC</Use_Preset>
+				<Samples>Force_Summon_3.wav</Samples>
+		 </SFXEvent>
+
+
+		 <SFXEvent Name="Unit_Lancet_Fire">
+			  <Use_Preset>Preset_GUNV</Use_Preset>
+			  <Samples>GUN_Shuttle_1.wav</Samples>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Pulse_Cannon_Fire">
+			  <Use_Preset>Preset_GUNV</Use_Preset>
+			  <Samples>GUN_Pulse_Cannon_1.wav</Samples>
+			  <Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Pulse_Cannon_PowerUp">
+			  <Use_Preset>Preset_GUNV</Use_Preset>
+			  <Samples>GUN_Pulse_PowerUp_2.wav</Samples>
+			  <Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+		 </SFXEvent>
+
+
+
+
+		 <SFXEvent Name="Unit_Death_Star_2_Fire">
+					<Use_Preset>Preset_INSANE_LOOP</Use_Preset>
+					<Samples>GUN_Superlaser_2.wav</Samples>
+					<Max_Instances>3</Max_Instances>
+					<Loop_Fade_In_Seconds> 0.0 </Loop_Fade_In_Seconds> 						
+					<Loop_Fade_Out_Seconds> 0.5 </Loop_Fade_Out_Seconds>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Death_Star_2_Pre_Fire">
+					<Use_Preset>Preset_INSANE</Use_Preset>
+					<Samples>GUN_Superlaser_2.wav</Samples>
+		 </SFXEvent>
+
+
+         <SFXEvent Name="Unit_MC30_Launch_Cluster_Bomb">
+                 <Use_Preset>Preset_GUNV</Use_Preset>
+                 <Samples>Felucia_Plant_Shoot_2.wav</Samples>        
+         </SFXEvent>
+
+
+		 <!-- ======================================= -->
+		 <!--  						RAW WEAPONS SFX	 						-->
+		 <!-- ======================================= -->
+
+
+ <SFXEvent Name="Unit_Enforcer_Tank_Fire">
+        <Use_Preset>Preset_GUNV</Use_Preset>
+      	<Samples>GUN_Enforcer_Cannon.wav</Samples>
+         <Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+</SFXEvent>
+
+ <SFXEvent Name="Unit_Vulture_Droid_Fire">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>GUN_vulture_fire.wav</Samples>        
+		     <Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+		 </SFXEvent>
+
+<SFXEvent Name="Unit_Jango_Fire">
+				 <Use_Preset>Preset_GUN</Use_Preset>
+				 <Samples>GUN_Jango_fire.wav</Samples> 	
+		     <Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+		  </SFXEvent>
+
+<SFXEvent Name="Unit_Z6_Fire">
+				 <Use_Preset>Preset_GUN</Use_Preset>
+				 <Samples>GUN_Z6.wav</Samples> 	
+		     <Min_Volume>70</Min_Volume>
+			  <Max_Volume>70</Max_Volume>
+		  </SFXEvent>
+
+<SFXEvent Name="Unit_Providence_Artillery_Fire">
+			  <Use_Preset>Preset_GUNS</Use_Preset>
+			  <Samples>GUN_Providence_artillery_fire.wav</Samples>
+		     <Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+		 </SFXEvent>
+
+<SFXEvent Name="Unit_Venator_Turret_Fire">
+			<Use_Preset>Preset_GUNS</Use_Preset>
+			<Samples>GUN_Blaster_Cannon_1.wav</Samples>
+       <Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+    </SFXEvent>
+
+<SFXEvent Name="Unit_Venator_SPHA_Fire">
+			<Use_Preset>Preset_EXPC</Use_Preset>
+			<Samples>GUN_Hypervelocity_1.wav</Samples>
+			<Max_Instances>10</Max_Instances>
+          <Min_Volume>100</Min_Volume>
+			    <Max_Volume>100</Max_Volume>
+         <Volume_Saturation_Distance>10000.0</Volume_Saturation_Distance>
+    </SFXEvent>
+
+<SFXEvent Name="Unit_Venator_Artillery_Fire">
+			  <Use_Preset>Preset_GUNS</Use_Preset>
+			  <Samples>GUN_Venator_Side_1.wav</Samples>
+		     <Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+		 </SFXEvent>
+
+<SFXEvent Name="Unit_Clone_Infantry_Fire">
+				 <Use_Preset>Preset_GUN</Use_Preset>
+				 <Samples>GUN_Republic_Dc17_1.wav</Samples> 	
+		  </SFXEvent>
+
+<SFXEvent Name="Unit_Bx_Commando_Fire">
+				 <Use_Preset>Preset_GUN</Use_Preset>
+				 <Samples>GUN_bx_commando.wav</Samples> 
+				  <Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>	
+		  </SFXEvent>
+
+<SFXEvent Name="Unit_Cis_Cannon_Small">
+			<Use_Preset>Preset_GUNS</Use_Preset>
+			<Samples>GUN_Cis_Cannon_Small.wav</Samples>
+       <Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+    </SFXEvent>
+
+<SFXEvent Name="Unit_Rep_Cannon_Small">
+			<Use_Preset>Preset_GUNS</Use_Preset>
+			<Samples>GUN_Rep_Cannon_Small.wav</Samples>
+       <Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+    </SFXEvent>
+
+<SFXEvent Name="Unit_Sabaoth_Laser_Heavy">
+			<Use_Preset>Preset_GUNS</Use_Preset>
+			<Samples>GUN_Sabaoth_Heavy_Laser.wav</Samples>
+       <Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+    </SFXEvent>
+
+<SFXEvent Name="Unit_Sabaoth_Laser">
+			<Use_Preset>Preset_GUNS</Use_Preset>
+			<Samples>GUN_Sabaoth_Laser.wav</Samples>
+       <Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+    </SFXEvent>
+
+<SFXEvent Name="Unit_Ion_Cannon_00">
+			<Use_Preset>Preset_GUNS</Use_Preset>
+			<Samples>GUN_Ion_2.wav</Samples>
+       <Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+    </SFXEvent>
+
+<SFXEvent Name="Unit_Concussion_Missile_00">
+			<Use_Preset>Preset_GUNS</Use_Preset>
+			<Samples>GUN_Concussion_Missile_1.wav</Samples>
+       <Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+    </SFXEvent>
+
+<SFXEvent Name="Unit_Proton_Torpedo">
+			<Use_Preset>Preset_GUNS</Use_Preset>
+			<Samples>GUN_Proton_1.wav</Samples>
+       <Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+    </SFXEvent>
+
+<SFXEvent Name="Unit_Sabertank_Guns">
+			<Use_Preset>Preset_GUNS</Use_Preset>
+			<Samples>Gun_Sabertank_Guns_1.wav</Samples>
+       <Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+    </SFXEvent>
+
+<SFXEvent Name="Unit_Beam_Cannon">
+			<Use_Preset>Preset_GUNS</Use_Preset>
+			<Samples>Gun_Beam_Cannon_1.wav</Samples>
+       <Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+    </SFXEvent>
+
+<SFXEvent Name="Unit_Rocket_Launch">
+			<Use_Preset>Preset_GUNS</Use_Preset>
+			<Samples>Gun_rocket_1.wav</Samples>
+       <Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+    </SFXEvent>
+
+<SFXEvent Name="Unit_Magna_Pike_Swing_00">
+			<Use_Preset>Preset_GUNS</Use_Preset>
+			<Samples>GUN_magnapike_swing_00.wav</Samples>
+       <Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+    </SFXEvent>
+
+<SFXEvent Name="Unit_Magna_Pike_Swing_01">
+			<Use_Preset>Preset_GUNS</Use_Preset>
+			<Samples>GUN_magnapike_swing_01.wav</Samples>
+       <Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+    </SFXEvent>
+
+<SFXEvent Name="Unit_Magna_Pike_Swing_02">
+			<Use_Preset>Preset_GUNS</Use_Preset>
+			<Samples>GUN_magnapike_swing_02.wav</Samples>
+       <Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+    </SFXEvent>
+
+<SFXEvent Name="Unit_Magna_Pike_Swing_03">
+			<Use_Preset>Preset_GUNS</Use_Preset>
+			<Samples>GUN_magnapike_swing_03.wav</Samples>
+       <Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+    </SFXEvent>
+    
+    <SFXEvent Name="Unit_Cyan_Laser">
+			<Use_Preset>Preset_GUNS</Use_Preset>
+			<Samples>GUN_cyan_1.wav</Samples>
+       <Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+    </SFXEvent>
+    
+      <SFXEvent Name="Unit_G400_Laser">
+			<Use_Preset>Preset_GUNS</Use_Preset>
+			<Samples>GUN_g400_1.wav</Samples>
+       <Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+    </SFXEvent>
+
+<SFXEvent Name="Unit_Lok_Torpedo">
+			<Use_Preset>Preset_GUNS</Use_Preset>
+			<Samples>GUN_lok_torpedo_1.wav</Samples>
+       <Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+    </SFXEvent>
+    
+      <SFXEvent Name="Unit_Havoc_Laser">
+			<Use_Preset>Preset_GUNS</Use_Preset>
+			<Samples>GUN_havoc_1.wav</Samples>
+       <Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+    </SFXEvent>
+
+		 <!-- ======================================= -->
+		 <!--  									ENGINES		 											-->
+		 <!-- ======================================= -->
+
+
+		 <SFXEvent Name="Unit_Star_Viper_Fly_By">
+				 <Use_Preset>Preset_EGB</Use_Preset>
+				 <Samples>EGB_Star_Viper_By_1.wav</Samples>
+				 <Min_Pitch>100</Min_Pitch>
+				 <Max_Pitch>110</Max_Pitch>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Star_Viper_Spinning_By">
+				 <Use_Preset>Preset_EGB_Land</Use_Preset>
+				 <Samples>EGL_Star_Viper_Spinning_1.wav</Samples>
+				 <Min_Pitch>100</Min_Pitch>
+				 <Max_Pitch>110</Max_Pitch>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Star_Viper_Cinematic_Engine_Loop"> <!-- Used by cinematic camera focus -->
+				 <Use_Preset>Preset_EGL_CIN</Use_Preset>
+				 <Samples>EGL_Star_Viper_1.wav</Samples>
+		 </SFXEvent>
+
+
+		 <SFXEvent Name="Unit_Hounds_Tooth_Fly_By">
+				 <Use_Preset>Preset_EGB</Use_Preset>
+				 <Samples>EGB_Hounds_Tooth_1.wav</Samples>
+				 <Min_Pitch>100</Min_Pitch>
+				 <Max_Pitch>110</Max_Pitch>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Hounds_Tooth_Cinematic_Engine_Loop"> <!-- Used by cinematic camera focus -->
+				 <Use_Preset>Preset_EGL_CIN</Use_Preset>
+				 <Samples>EGL_Hounds_Tooth_1.wav</Samples>
+		 </SFXEvent>
+
+
+
+		 <SFXEvent Name="Unit_IG2000_Fly_By">
+				 <Use_Preset>Preset_EGB</Use_Preset>
+				 <Samples>EGB_IG2000_1.wav</Samples>
+				 <Min_Pitch>100</Min_Pitch>
+				 <Max_Pitch>110</Max_Pitch>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_IG2000_Cinematic_Engine_Loop"> <!-- Used by cinematic camera focus -->
+				 <Use_Preset>Preset_EGL_CIN</Use_Preset>
+				 <Samples>EGL_IG2000_1.wav</Samples>
+		 </SFXEvent>
+
+
+
+		 <SFXEvent Name="Unit_Buzz_Droids_Fly_By">
+				 <Use_Preset>Preset_EGB</Use_Preset>
+				 <Samples>Buzz_Droids_1.wav Buzz_Droids_2.wav Buzz_Droids_3.wav Buzz_Droids_4.wav Buzz_Droids_5.wav</Samples>
+				 <Min_Pitch>100</Min_Pitch>
+				 <Max_Pitch>110</Max_Pitch>
+		 </SFXEvent>
+
+
+
+
+		 <SFXEvent Name="Unit_Mouse_Droid_Moving_Engine_Loop">
+				<Use_Preset>Preset_EGL_Land</Use_Preset>
+				<Samples>EGL_Mouse_Droid_1.wav</Samples>
+				<Min_Volume>50</Min_Volume>
+				<Max_Volume>50</Max_Volume>
+		 </SFXEvent>
+
+
+ 		 <SFXEvent Name="Unit_Juggernaut_Moving_Engine_Loop">
+				<Use_Preset>Preset_EGL_Land</Use_Preset>
+				<Samples>EGL_Juggernaut_2.wav</Samples>
+				<Min_Volume>90</Min_Volume>
+				<Max_Volume>90</Max_Volume>
+		 </SFXEvent>
+
+ 		 <SFXEvent Name="Unit_Juggernaut_Idle_Engine_Loop">
+				<Use_Preset>Preset_EGL_Land</Use_Preset>
+				<Samples>EGL_Tracked_Idle.wav</Samples>
+				<Min_Volume>70</Min_Volume>
+				<Max_Volume>70</Max_Volume>
+				<Min_Pitch>60</Min_Pitch>
+				<Max_Pitch>60</Max_Pitch>
+		 </SFXEvent>
+
+
+
+ 		 <SFXEvent Name="Unit_Gargantuan_Idle_Engine_Loop">
+				<Use_Preset>Preset_EGL_Land</Use_Preset>
+				<Samples>EGL_Gargantuan_1.wav</Samples>
+				<Min_Volume>80</Min_Volume>
+				<Max_Volume>80</Max_Volume>
+		 </SFXEvent>
+
+ 		 <SFXEvent Name="Unit_Gargantuan_Moving_Engine_Loop">
+				<Use_Preset>Preset_EGL_Land</Use_Preset>
+				<Samples>EGL_Gargantuan_1.wav</Samples>
+				<Min_Volume>90</Min_Volume>
+				<Max_Volume>90</Max_Volume> 				
+				<Min_Pitch>125</Min_Pitch>
+				<Max_Pitch>125</Max_Pitch>
+		 </SFXEvent>
+
+
+
+
+		 <SFXEvent Name="Unit_MDU_Moving_Engine_Loop">
+				<Use_Preset>Preset_EGL_Land</Use_Preset>
+				<Samples>EGL_MDU_1.wav</Samples>
+				<Min_Volume>50</Min_Volume>
+				<Max_Volume>50</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_MDU_Idle_Engine_Loop">
+				<Use_Preset>Preset_EGL_Land</Use_Preset>
+				<Samples>EGL_MDU_Idle_1.wav</Samples>
+				<Min_Volume>50</Min_Volume>
+				<Max_Volume>50</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_EM_Field_Generator_Loop">
+			 <Use_Preset>Preset_BDL</Use_Preset>
+			 <Samples>EGL_Shutter_Sheild_Generator.wav</Samples>
+		 </SFXEvent>
+
+
+
+
+		 <SFXEvent Name="Unit_Destroyer_Droid_Moving_Engine_Loop">
+				<Use_Preset>Preset_EGL_Land</Use_Preset>
+				<Samples>EGL_Destroyer_Droid_1.wav</Samples>
+				<Min_Volume>50</Min_Volume>
+				<Max_Volume>50</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Destroyer_Droid_Anim_Unfold">
+				<Use_Preset>Preset_FSI</Use_Preset>
+				<Samples>Destroyer_Droid_Unfold_1.wav</Samples>
+				<Min_Volume>100</Min_Volume>
+				<Max_Volume>100</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Select_Destroyer_Droid">
+				<Use_Preset>Preset_FSI</Use_Preset>
+				<Samples>Destroyer_Droid_Select_1.wav</Samples>
+				<Min_Volume>100</Min_Volume>
+				<Max_Volume>100</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Move_Destroyer_Droid">
+				<Use_Preset>Preset_FSI</Use_Preset>
+				<Samples>Destroyer_Droid_Move_1.wav</Samples>
+				<Min_Volume>100</Min_Volume>
+				<Max_Volume>100</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Fleet_Move_Destroyer_Droid">
+				<Use_Preset>Preset_FSI</Use_Preset>
+				<Samples>Destroyer_Droid_Move_1.wav</Samples>
+				<Min_Volume>100</Min_Volume>
+				<Max_Volume>100</Max_Volume>
+		 </SFXEvent>
+
+
+		 <SFXEvent Name="Unit_Lancet_Fly_By">
+				  <Use_Preset>Preset_EGB_Land</Use_Preset>
+				  <Samples>EGB_Lancet_By_1.wav EGB_Lancet_By_2.wav</Samples>
+			</SFXEvent>
+
+		 <SFXEvent Name="Unit_Lancet_Cinematic_Engine_Loop">  <!-- Used by cinematic camera focus -->
+			 <Use_Preset>Preset_EGL_CIN</Use_Preset>
+			 <Samples>EGL_Lancet_1.wav</Samples>
+		 </SFXEvent>
+
+
+		<SFXEvent Name="Unit_Cloud_Car_Fly_By">
+			<Use_Preset>Preset_EGB_Land</Use_Preset>
+			<Samples>EGB_Cloud_Car_1.wav EGB_Cloud_Car_2.wav</Samples>
+		</SFXEvent>
+
+		 <SFXEvent Name="Unit_Cloud_Car_Cinematic_Engine_Loop">  <!-- Used by cinematic camera focus -->
+			 <Use_Preset>Preset_EGL_CIN</Use_Preset>
+			 <Samples>EGL_Cloud_Car_1.wav</Samples>
+		 </SFXEvent>
+
+
+
+
+		 <SFXEvent Name="Unit_DT_Jet_Pack_Takeoff">
+			<Use_Preset>Preset_EGB_Land</Use_Preset>
+			<Samples>EGB_DT_JetPack_1.wav</Samples>			 
+			<Min_Volume>90</Min_Volume>
+			<Max_Volume>90</Max_Volume>
+		</SFXEvent>
+
+		 <SFXEvent Name="Unit_DT_Jet_Pack_Engine_Loop">
+				 <Use_Preset>Preset_EGL_Land</Use_Preset>
+				 <Samples>EGL_JetPack_Loop_1.wav</Samples>
+				 <Min_Volume>85</Min_Volume>
+				 <Max_Volume>85</Max_Volume>
+				 <Loop_Fade_In_Seconds> 0.5</Loop_Fade_In_Seconds> <!-- Give the take-off sound enough time to be prominent -->
+				 <Loop_Fade_Out_Seconds> 0.5</Loop_Fade_Out_Seconds> <!-- Give the take-off sound enough time to be prominent -->
+		 </SFXEvent>
+
+
+
+
+		 <SFXEvent Name="Unit_ZC_Self_Destruct">
+					 <Use_Preset>Preset_EXP</Use_Preset>
+					 <Samples>EGL_Self_Destruct_4.wav</Samples>
+					 <Min_Volume>100</Min_Volume>
+					 <Max_Volume>100</Max_Volume>
+		  </SFXEvent>
+
+
+		 <SFXEvent Name="Unit_Large_Wing_Flap">
+				 <Use_Preset>Preset_EGB_Land</Use_Preset>
+				 <Samples>Wing_Flap_1.wav Wing_Flap_2.wav Wing_Flap_3.wav</Samples>
+				 <Min_Pitch>100</Min_Pitch>
+				 <Max_Pitch>110</Max_Pitch>
+		 </SFXEvent>
+
+ <!-- ================================================= -->
+ <!--  						RAW MISC VEHICLE SFX	 				    		-->
+ <!-- ================================================= -->
+
+ <SFXEvent Name="Unit_Mtt_Deploy_Start">
+				<Use_Preset>Preset_FSV</Use_Preset>
+				<Min_Volume>100</Min_Volume>
+					 <Max_Volume>100</Max_Volume>
+				<Samples>mtt_deploy1.wav</Samples>
+		 </SFXEvent>
+
+<SFXEvent Name="Unit_Siege_Mortar_Start">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>siegemortar_chargeup.wav</Samples>
+		 </SFXEvent>
+
+		 <!-- ======================================= -->
+		 <!--  						RAW ENGINE SFX	 						-->
+		 <!-- ======================================= -->
+
+ <SFXEvent Name="Unit_Laat_Fly_By">
+				  <Use_Preset>Preset_EGB_Land</Use_Preset>
+				  <Samples>EGL_Laat_By_01.wav EGL_Laat_By_02.wav EGL_Laat_By_Lng_03.wav EGL_Laat_By_Lng_04.wav EGL_Laat_By_Lng_05.wav</Samples>
+			</SFXEvent>
+
+		 <SFXEvent Name="Unit_Laat_Cinematic_Engine_Loop">  <!-- Used by cinematic camera focus -->
+			 <Use_Preset>Preset_EGL_CIN</Use_Preset>
+			 <Samples>EGL_Laat_Engine_1.wav</Samples>
+		 </SFXEvent>
+
+	<SFXEvent Name="Unit_LAAT_Deploy_Start">
+			    <Use_Preset>Preset_FSV</Use_Preset>
+				 <Samples>EGL_LAAT_Deploy_Start.wav</Samples>
+	  </SFXEvent>
+
+
+		<SFXEvent Name="Unit_LAAT_Undeploy_Start">
+			    <Use_Preset>Preset_FSV</Use_Preset>
+				 <Samples>EGL_LAAT_Undeploy_Start.wav</Samples>
+	  </SFXEvent>
+
+	<SFXEvent Name="Unit_LAAT_Move_Start">
+			    <Use_Preset>Preset_FSV</Use_Preset>
+				 <Samples>EGL_LAAT_Move_Start.wav</Samples>
+	  </SFXEvent>
+
+
+		<SFXEvent Name="Unit_LAAT_Move_Stop">
+			    <Use_Preset>Preset_FSV</Use_Preset>
+				 <Samples>EGL_LAAT_Move_Stop.wav</Samples>
+	  </SFXEvent>
+
+ <SFXEvent Name="Unit_AAT_Moving_Engine_Loop">
+				<Use_Preset>Preset_EGL_Land</Use_Preset>
+				<Samples>EGL_AAT_1.wav</Samples>
+				<Min_Volume>75</Min_Volume>
+				<Max_Volume>75</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_AAT_Idle_Engine_Loop">
+				<Use_Preset>Preset_EGL_Land</Use_Preset>
+				<Samples>EGL_AAT_Idle.wav</Samples>
+				<Min_Volume>75</Min_Volume>
+				<Max_Volume>75</Max_Volume>
+		 </SFXEvent>
+
+<SFXEvent Name="Unit_STAP_Moving_Engine_Loop">
+				<Use_Preset>Preset_EGL_Land</Use_Preset>
+				<Samples>EGL_STAP_1.wav</Samples>
+				<Min_Volume>40</Min_Volume>
+				<Max_Volume>40</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_STAP_Idle_Engine_Loop">
+				<Use_Preset>Preset_EGL_Land</Use_Preset>
+				<Samples>EGL_STAP_idle.wav</Samples>
+				<Min_Volume>40</Min_Volume>
+				<Max_Volume>40</Max_Volume>
+		 </SFXEvent>
+		 
+		 <SFXEvent Name="Unit_Vulture_Fly_By">
+				<Use_Preset>Preset_EGB_1</Use_Preset>
+            <Samples>Egl_droid_fighters_by1.wav</Samples>
+            <Min_Pitch>100</Min_Pitch>
+				 <Max_Pitch>110</Max_Pitch>
+    </SFXEvent> 
+    
+    <SFXEvent Name="Unit_Freefall_Fly_By">
+				<Use_Preset>Preset_EGB_1</Use_Preset>
+            <Samples>Egl_freefall_by_1.wav</Samples>
+            <Min_Pitch>100</Min_Pitch>
+				 <Max_Pitch>110</Max_Pitch>
+    </SFXEvent> 
+    
+    <SFXEvent Name="Unit_Freefall_Cinematic_Engine_Loop"> <!-- Used by cinematic camera focus -->
+				 <Use_Preset>Preset_EGL_CIN_1</Use_Preset>
+				 <Samples>EGL_g400_1.wav</Samples>
+		 </SFXEvent>
+		 
+		   <SFXEvent Name="Unit_Cis_Cap_Ship_Cinematic_Engine_Loop"> <!-- Used by cinematic camera focus -->
+				 <Use_Preset>Preset_EGL_CIN_1</Use_Preset>
+				 <Samples>EGL_providence_1.wav</Samples>
+		 </SFXEvent>
+		 
+			 
+		 	<SFXEvent Name="Unit_Cis_Cap_Ship_Idle_Engine_Loop">
+		<Use_Preset>Preset_EGL_Idle_1</Use_Preset>
+		<Samples>EGL_providence_1.wav</Samples>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>90</Max_Pitch>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Cis_Cap_Ship_Moving_Engine_Loop">
+		<Use_Preset>Preset_EGL_1</Use_Preset>
+		<Samples>EGL_providence_1.wav</Samples>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>90</Max_Pitch>
+	</SFXEvent>
+	
+	  <SFXEvent Name="Unit_Venator_Cinematic_Engine_Loop"> <!-- Used by cinematic camera focus -->
+				 <Use_Preset>Preset_EGL_CIN_1</Use_Preset>
+				 <Samples>EGL_venator_1.wav</Samples>
+		 </SFXEvent>
+		 
+		  	<SFXEvent Name="Unit_Venator_Idle_Engine_Loop">
+		<Use_Preset>Preset_EGL_Idle_1</Use_Preset>
+		<Samples>EGL_venator_1.wav</Samples>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>90</Max_Pitch>
+	</SFXEvent>
+		 
+		 	 
+		  	<SFXEvent Name="Unit_Venator_Moving_Engine_Loop">
+		<Use_Preset>Preset_EGL_1</Use_Preset>
+		<Samples>EGL_venator_1.wav</Samples>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>90</Max_Pitch>
+	</SFXEvent>
+		 
+		    <SFXEvent Name="Unit_Guardian_Mantis_Fly_By">
+				<Use_Preset>Preset_EGB_1</Use_Preset>
+            <Samples>EGL_guardian_by_1.wav</Samples>
+            <Min_Pitch>100</Min_Pitch>
+				 <Max_Pitch>110</Max_Pitch>
+    </SFXEvent> 
+    
+    <SFXEvent Name="Unit_Guardian_Mantis_Cinematic_Engine_Loop"> <!-- Used by cinematic camera focus -->
+				 <Use_Preset>Preset_EGL_CIN_1</Use_Preset>
+				 <Samples>EGL_guardian_1.wav</Samples>
+		 </SFXEvent>
+		 
+		   <SFXEvent Name="Unit_G400_Fly_By">
+				<Use_Preset>Preset_EGB_1</Use_Preset>
+            <Samples>EGL_g400_by_1.wav</Samples>
+            <Min_Pitch>100</Min_Pitch>
+				 <Max_Pitch>110</Max_Pitch>
+    </SFXEvent> 
+    
+    <SFXEvent Name="Unit_G400_Cinematic_Engine_Loop"> <!-- Used by cinematic camera focus -->
+				 <Use_Preset>Preset_EGL_CIN_1</Use_Preset>
+				 <Samples>Egl_Freefall_1.wav</Samples>
+		 </SFXEvent>
+    
+     <SFXEvent Name="Unit_Delta_7_Fly_By">
+				<Use_Preset>Preset_EGB_1</Use_Preset>
+            <Samples>EGL_Delta_By_1.wav EGL_Delta_By_2.wav </Samples>
+            <Min_Volume>110</Min_Volume>
+					  <Max_Volume>110</Max_Volume>
+    </SFXEvent>
+
+<SFXEvent Name="Unit_E_Wing_Fly_By">
+				<Use_Preset>Preset_EGB_1</Use_Preset>
+            <Samples>EGL_E_Wing_By_1.wav EGL_E_Wing_By_2.wav </Samples>
+            <Min_Volume>110</Min_Volume>
+					  <Max_Volume>110</Max_Volume>
+    </SFXEvent>
+
+<SFXEvent Name="Unit_Mtt_Moving_Engine_Loop">
+				<Use_Preset>Preset_EGL_Land</Use_Preset>
+            <Samples>EGL_MTT_1.wav EGL_MTT_1.wav</Samples>
+		</SFXEvent>   
+		
+			<SFXEvent Name="Unit_Freighter_Takeoff">
+	  <Use_Preset>Preset_EXP</Use_Preset>
+	  <Samples>freighter_takeoff.wav</Samples>
+</SFXEvent>    
+		
+		<SFXEvent Name="Unit_C9979_Takeoff">
+	  <Use_Preset>Preset_EXP3</Use_Preset>
+	  <Samples>c9979_takeoff4.wav</Samples>
+</SFXEvent>
+
+	<SFXEvent Name="Unit_C9979_Land">
+	  <Use_Preset>Preset_EXP</Use_Preset>
+	 <Samples>c9979_land1.wav</Samples>
+	 <Min_Volume>100</Min_Volume>
+					  <Max_Volume>100</Max_Volume>
+</SFXEvent>
+
+<SFXEvent Name="Unit_Ship_Alarm">
+	  <Use_Preset>Preset_EXP</Use_Preset>
+	  <Samples>ship_alarm.wav</Samples>
+</SFXEvent>
+
+		 <!-- ======================================= -->
+		 <!--  									DEATHS		 											-->
+		 <!-- ======================================= -->
+
+		 <SFXEvent Name="Unit_BodyFall_IG88">
+				<Use_Preset>Preset_FSI</Use_Preset>
+				<Samples>BF_IG88_1.wav</Samples>
+				<Min_Volume>50</Min_Volume>
+				<Max_Volume>50</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Death_Mouse_Droid">
+				<Use_Preset>Preset_EXP</Use_Preset>
+				<Samples>EXP_Mouse_Droid_1.wav</Samples>
+		 </SFXEvent>
+
+
+		 <SFXEvent Name="SFX_Death_Bombard">
+					<Use_Preset>Preset_INSANE</Use_Preset>
+					<Samples>EXP_Bombard_3.wav</Samples>
+		 </SFXEvent>
+
+		 <SFXEvent Name="SFX_Death_Bombard_Ion">
+					<Use_Preset>Preset_INSANE</Use_Preset>
+					<Samples>EXP_Bombard_Ion_1.wav</Samples>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_IG88_Contamination_Hit">
+				<Use_Preset>Preset_EXPC</Use_Preset>
+				<Samples>EXP_Contaminate_3.wav EXP_Contaminate_4.wav</Samples>
+				<Min_Predelay>4000</Min_Predelay>
+				<Max_Predelay>4000</Max_Predelay>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Sabotage_Death_SFX">
+				 <Use_Preset>Preset_GUNV</Use_Preset>
+				 <Samples>EXP_Building_5.wav EXP_Building_6.wav EXP_Building_7.wav EXP_Building_8.wav</Samples>
+		  </SFXEvent>
+
+		 <SFXEvent Name="Rancor_Damage_Vehicle_SFX">
+				 <Use_Preset>Preset_GUNV</Use_Preset>
+				 <Samples>EXP_Asteroid_Ship_1.wav EXP_Asteroid_Ship_2.wav EXP_Asteroid_Ship_3.wav EXP_Asteroid_Ship_4.wav</Samples>      
+                 <Min_Volume>100</Min_Volume>
+				<Max_Volume>100</Max_Volume>
+		  </SFXEvent>
+
+
+
+		 <SFXEvent Name="Ambient_Riot_Loop_High">
+				<Use_Preset>Preset_EGLC</Use_Preset>
+				<Samples>AMB_Riot_Loop_1.wav</Samples>
+				<Min_Volume>1</Min_Volume>
+				<Max_Volume>1</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Ambient_Riot_Loop_Low">
+				<Use_Preset>Preset_EGLC</Use_Preset>
+				<Samples>AMB_Riot_Loop_1.wav</Samples>
+				<Min_Volume>1</Min_Volume>
+				<Max_Volume>1</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Riot_Infantry_Loop">
+				<Use_Preset>Preset_BDL</Use_Preset>
+				<Samples>AMB_Riot_Loop_2.wav</Samples>
+				<Max_Instances>2</Max_Instances>
+				<Min_Volume>80</Min_Volume>
+				<Max_Volume>80</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Riot_Infantry_Loop_Low">
+				<Use_Preset>Preset_BDL</Use_Preset>
+				<Samples>AMB_Riot_Loop_Low_1.wav</Samples>
+            <Max_Instances>2</Max_Instances>
+				<Min_Volume>60</Min_Volume>
+				<Max_Volume>60</Max_Volume>
+		 </SFXEvent>
+
+
+		 
+			<SFXEvent Name="UMP_Unit_Rebel_Soldier_Death">
+				 <Use_Preset>Preset_DTH</Use_Preset>
+				 <Samples>REB_Death_1.wav REB_Death_2.wav REB_Death_3.wav REB_Death_4.wav REB_Death_5.wav REB_Death_6.wav REB_Death_7.wav REB_Death_8.wav REB_Death_9.wav REB_Death_10.wav REB_Death_21.wav REB_Death_22.wav REB_Death_23.wav REB_Death_24.wav REB_Death_25.wav </Samples>
+				<Min_Volume>400</Min_Volume>
+				<Max_Volume>450</Max_Volume>
+			</SFXEvent>
+			
+			<SFXEvent Name="UMP_Unit_Rebel_Soldier_2_Death">
+				 <Use_Preset>Preset_DTH</Use_Preset>
+				 <Samples>REB_Death_11.wav REB_Death_12.wav REB_Death_13.wav REB_Death_14.wav REB_Death_15.wav REB_Death_16.wav REB_Death_17.wav REB_Death_18.wav REB_Death_19.wav REB_Death_20.wav REB_Death_26.wav REB_Death_27.wav REB_Death_28.wav REB_Death_29.wav REB_Death_30.wav</Samples>
+				<Min_Volume>400</Min_Volume>
+				<Max_Volume>450</Max_Volume>
+			</SFXEvent>
+			
+			<SFXEvent Name="UMP_Unit_Rebel_Soldier_3_Death">
+				 <Use_Preset>Preset_DTH</Use_Preset>
+				 <Samples>REB_Death_21.wav REB_Death_22.wav REB_Death_23.wav REB_Death_24.wav REB_Death_25.wav REB_Death_26.wav REB_Death_27.wav REB_Death_28.wav REB_Death_29.wav REB_Death_30.wav</Samples>
+				<Min_Volume>400</Min_Volume>
+				<Max_Volume>450</Max_Volume>
+			</SFXEvent>
+
+			<SFXEvent Name="Unit_Infantry_Coughing">
+				 <Use_Preset>Preset_DTH</Use_Preset>
+				 <Samples>REB_Cough_01.wav REB_Cough_02.wav REB_Cough_03.wav REB_Cough_04.wav REB_Cough_05.wav REB_Cough_06.wav </Samples>
+			</SFXEvent>
+
+			<SFXEvent Name="Unit_Infantry_Infected_Death">
+				 <Use_Preset>Preset_DTH</Use_Preset>
+				 <Samples>REB_Gasp_01.wav REB_Gasp_02.wav REB_Gasp_03.wav REB_Gasp_04.wav REB_Gasp_05.wav REB_Gasp_06.wav </Samples>
+			</SFXEvent>
+
+
+
+
+			<SFXEvent Name="Unit_Rebel_Soldier_Bomb_Death">
+				<Use_Preset>Preset_DTH</Use_Preset>
+				<Samples>REB_Death_Scream_1.wav REB_Death_Scream_2.wav REB_Death_Scream_3.wav REB_Death_2.wav REB_Death_3.wav REB_Death_4.wav REB_Death_7.wav </Samples>
+			</SFXEvent>
+
+			<SFXEvent Name="Unit_Stormtrooper_Bomb_Death">
+				<Use_Preset>Preset_DTH</Use_Preset>
+				<Samples>TRP_Death_Scream_1.wav TRP_Death_Scream_2.wav TRP_Death_Scream_3.wav TRP_Death_13.wav </Samples>
+			</SFXEvent>
+
+			<SFXEvent Name="Unit_Underworld_Soldier_Bomb_Death">
+				<Use_Preset>Preset_DTH</Use_Preset>
+				<Samples>UWS_Death_Scream_1.wav UWS_Death_Scream_2.wav UWS_Death_Scream_3.wav UWS_Death_Scream_4.wav UWS_Death_Scream_5.wav</Samples>
+			</SFXEvent>
+
+
+			<SFXEvent Name="Unit_Ewok_Bomb_Death">
+				<Use_Preset>Preset_DTH</Use_Preset>
+				<Samples>EWK_Death_Fire_1.wav EWK_Death_Fire_2.wav EWK_Death_Fire_3.wav EWK_Death_Fire_4.wav EWK_Death_Fire_5.wav EWK_Death_Fire_6.wav EWK_Death_Fire_7.wav EWK_Death_Fire_8.wav EWK_Death_Fire_9.wav EWK_Death_Fire_10.wav</Samples>
+				<Play_Sequentially> Yes </Play_Sequentially>
+			</SFXEvent>
+
+
+
+			<SFXEvent Name="Unit_Underworld_Soldier_Death">
+				<Use_Preset>Preset_DTH</Use_Preset>
+				<Samples>UWS_Death_1.wav UWS_Death_2.wav UWS_Death_3.wav UWS_Death_4.wav UWS_Death_5.wav UWS_Death_6.wav UWS_Death_7.wav UWS_Death_8.wav UWS_Death_9.wav</Samples>
+			</SFXEvent>
+
+			<SFXEvent Name="Unit_Underworld_Soldier_2_Death">
+				<Use_Preset>Preset_DTH</Use_Preset>
+				<Samples> UWS_Death_10.wav UWS_Death_11.wav UWS_Death_12.wav UWS_Death_13.wav UWS_Death_14.wav UWS_Death_15.wav UWS_Death_16.wav UWS_Death_17.wav UWS_Death_18.wav</Samples>
+			</SFXEvent>
+
+            
+
+
+
+
+
+
+
+
+
+</SFXEvents>

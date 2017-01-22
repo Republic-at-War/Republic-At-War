@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+
+<SFXEvents>
+	
+
+    <SFXEvent Name="Structure_Barracks_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_Barracks_On_1.wav</Samples> 
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+    <SFXEvent Name="Structure_Light_Factory_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_Light_Factory_On_1.wav</Samples>  
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+    <SFXEvent Name="Structure_Heavy_Factory_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_Heavy_Factory_On_1.wav</Samples> 
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+    <SFXEvent Name="Structure_Advanced_Factory_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_Advanced_On_1.wav</Samples>
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+    <SFXEvent Name="Structure_Command_Center_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_Command_Center_On_1.wav</Samples> 
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+    <SFXEvent Name="Structure_Mining_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_Mining_On_1.wav</Samples>
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+    <SFXEvent Name="Structure_Mineral_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_Mineral_On_1.wav</Samples>  
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+    <SFXEvent Name="Structure_Research_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_Research_On_1.wav</Samples>  
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+    <SFXEvent Name="Structure_Ion_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_Ion_On_1.wav</Samples>   
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+    <SFXEvent Name="Structure_Hyper_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_Hyper_On_1.wav</Samples>   
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+    <SFXEvent Name="Structure_Shield_Gen_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_Hyper_On_1.wav</Samples>   
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+
+    <SFXEvent Name="Structure_Turret_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_Turret_On_1.wav</Samples>
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+    <SFXEvent Name="Structure_Bacta_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_Bacta_On_1.wav</Samples>    
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+    <SFXEvent Name="Structure_Sensor_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_Sensor_1.wav</Samples> 
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+    <SFXEvent Name="Structure_Repair_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>Repair_Deploy.wav</Samples>    
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+
+
+    <SFXEvent Name="Structure_Power_Gen_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_Power_Gen_On_1.wav</Samples>    
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+    <SFXEvent Name="Structure_Comm_Array_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_Comm_Array_On_1.wav</Samples>   
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+    <SFXEvent Name="Structure_Scanner_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_Comm_Array_On_1.wav</Samples>    
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+
+    <SFXEvent Name="Structure_Jamming_Station_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_Radar_On_1.wav</Samples>    
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+    <SFXEvent Name="Structure_Space_Factory_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_Space_Factory_On_1.wav</Samples>   
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+    <SFXEvent Name="Structure_Cantina_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_Cantina_On_1.wav BDS_Cantina_On_2.wav BDS_Cantina_On_3.wav BDS_Cantina_On_4.wav BDS_Cantina_On_5.wav</Samples>  
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+    <SFXEvent Name="Structure_Hutt_Palace_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_Hutt_Palace_On_1.wav</Samples>  
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+    <SFXEvent Name="Structure_Arena_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_Grand_Arena_On_1.wav</Samples>    
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+    <SFXEvent Name="Structure_Prison_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_Prison_On_1.wav</Samples> 
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+ <SFXEvent Name="Structure_Field_Hospital_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_Field_Hospital_On_1.wav</Samples> 
+			<Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+ <SFXEvent Name="Structure_Engineering_Platform_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_Engineering_On_1.wav</Samples> 
+				<Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+ <SFXEvent Name="Structure_Forward_Commandpost_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_Forwardcommand_On_2.wav</Samples> 
+				<Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+<SFXEvent Name="Structure_Droid_Center_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_droid_center_on_1.wav</Samples> 
+				<Min_Volume>100</Min_Volume>
+			  <Max_Volume>100</Max_Volume>
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+    
+     <SFXEvent Name="Structure_Space_Casino_Select_SFX">
+				<Use_Preset>Preset_BDS</Use_Preset>
+            <Samples>BDS_Space_Casino_On_1.wav</Samples>    
+				<Overlap_Test> Unit_Structure_Select </Overlap_Test>
+    </SFXEvent>
+
+      
+</SFXEvents>

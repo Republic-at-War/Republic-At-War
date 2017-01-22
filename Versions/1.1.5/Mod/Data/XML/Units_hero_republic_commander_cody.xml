@@ -1,0 +1,289 @@
+<?xml version="1.0"?>
+<Commander_Cody_Data>
+
+
+	
+<HeroUnit Name="Commander_Cody">
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Force_Sensitive>No</Is_Force_Sensitive>
+		<Text_ID>TEXT_HERO_COMMANDER_CODY</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_COMMANDER_CODY TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_COMMANDER </Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>REI_CODY.ALO</Land_Model_Name>
+		<Icon_Name>I_BUTTON_CODY.tga</Icon_Name>
+
+		<GalacticBehavior> SELECTABLE </GalacticBehavior>
+		<LandBehavior> SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, REVEAL, HIDE_WHEN_FOGGED, TARGETING, WEAPON, DAMAGE_TRACKING, UNIT_AI, ABILITY_COUNTDOWN, IMPOSING_PRESENCE, HOLSTER_WEAPON, GARRISON_UNIT </LandBehavior>
+		<!--<Lua_Script>Cody</Lua_Script>-->
+		<Garrison_Category> Infantry </Garrison_Category>
+			
+
+		<SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<CanCellStack>yes</CanCellStack>
+		 <Movement_Animation_Speed> 0.8 </Movement_Animation_Speed>
+		<Rotation_Animation_Speed> 20.0 </Rotation_Animation_Speed>
+		<Walk_Animation_Speed> .366 </Walk_Animation_Speed>
+		<Crouch_Animation_Speed> .537 </Crouch_Animation_Speed>
+		<Max_Speed>0.8</Max_Speed>
+		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+		<Custom_Soft_Footprint_Radius> 3.5 </Custom_Soft_Footprint_Radius>
+		<Custom_Hard_XExtent> 2.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 2.0 </Custom_Hard_YExtent>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing>
+		<MinimumPushReturnDistance> 10 </MinimumPushReturnDistance>
+		<OverrideAcceleration> 0.05 </OverrideAcceleration>
+		<OverrideDeceleration> 0.05 </OverrideDeceleration>
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+		<Select_Box_Scale>50</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<Selection_Blob_Material_Name>Selection_Empire_Hero</Selection_Blob_Material_Name>
+        <Highlight_Blob_Material_Name>Highlight_Empire_Hero</Highlight_Blob_Material_Name>
+		
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.7</Scale_Factor> <!-- Temp scale change for scale test - change back once models resized -->
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Type>Walk</Type>
+		<Affiliation>Empire</Affiliation>
+		<!-- If you want heroes to contribute to political control, use Political_Control_Bonus_Ability -->
+		<Political_Faction>Empire</Political_Faction>
+		<IsBuildable>No</IsBuildable>
+		<Spawn_Planet>Coruscant</Spawn_Planet>
+		<Size_Value>75</Size_Value>
+
+		<Armor_Type> Armor_Hero </Armor_Type>
+		<Damage>20</Damage>
+		<Sensor_Range>40</Sensor_Range>
+		<Autoresolve_Health>300</Autoresolve_Health>
+		<Tactical_Health>250</Tactical_Health>
+
+		<Is_Stationary_When_Attacking>Yes</Is_Stationary_When_Attacking>
+		<Projectile_Types>Proj_Hand_Blaster_Blue_Sniper</Projectile_Types>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+		<Targeting_Max_Attack_Distance>150.0</Targeting_Max_Attack_Distance>
+		<Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+		<Projectile_Fire_Recharge_Seconds>1.5</Projectile_Fire_Recharge_Seconds>
+
+    <Targeting_Fire_Inaccuracy> Infantry, 1.0 </Targeting_Fire_Inaccuracy> <!-- from 1.0 to make them more innacurate -->
+		<Targeting_Fire_Inaccuracy> Vehicle, 5.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 10.0 </Targeting_Fire_Inaccuracy>
+
+		<SFXEvent_Select>Unit_Select_Clone_Commander</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Clone_Commander</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_Clone_Commander</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Move_Clone_Commander</SFXEvent_Guard>
+		<SFXEvent_Group_Move>Unit_Move_Clone_Commander</SFXEvent_Group_Move>
+		<SFXEvent_Group_Attack>Unit_Attack_Clone_Commander</SFXEvent_Group_Attack>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Clone_Commander</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Clone_Commander </SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Fire>Unit_Clone_Infantry_Fire</SFXEvent_Fire>
+		<Death_SFXEvent_Start_Die> Unit_Stormtrooper_Death </Death_SFXEvent_Start_Die>
+
+		<Stealth_Capable>No</Stealth_Capable>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<CategoryMask> LandHero </CategoryMask>
+		<Ranking_In_Category> 1 </Ranking_In_Category>
+		<MovementClass>Infantry</MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+		<Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+		<Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>
+		
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<AI_Combat_Power>250</AI_Combat_Power>
+
+		<Idle_Chase_Range>100.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Neutralization_Cost>1500.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+
+		<Score_Cost_Credits> 25000 </Score_Cost_Credits>
+		
+
+		<Death_Fade_Time>0.25</Death_Fade_Time>
+		<Death_Persistence_Duration>0.0</Death_Persistence_Duration>
+
+		<!-- Controls the range within which Palpatine has an effect on other units' animations -->
+		<Presence_Range>100.0</Presence_Range>
+	
+		<Target_Stealth_Units>Yes</Target_Stealth_Units>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>AREA_EFFECT_STUN</Type>
+				<Recharge_Seconds>40.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+				<Spawned_Object_Type> Proj_Special_Han_Solo_Stun_Blast </Spawned_Object_Type>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+			<!-- Secondary ability -->
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Expiration_Seconds> 7.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 2.0f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated/>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+
+		<Abilities SubObjectList="Yes">
+
+					
+
+			<Combat_Bonus_Ability Name="Cody_Land_Combat_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Unit_Strength_Category>Vehicle | Infantry | Air</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Vehicle | Infantry | Air</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Health_Bonus_Percentage>0.25</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.10</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.10</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.10</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+					  
+		  <Galactic_Stealth_Ability Name="Cody_Galactic_Stealth">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+			
+			<System_Spy_Ability Name="Cody_Limited_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+			</System_Spy_Ability>
+		  
+			
+		</Abilities>
+	</HeroUnit>
+
+
+	<HeroCompany Name="Commander_Cody_Team">
+		<Text_ID>TEXT_HERO_COMMANDER_CODY</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_COMMANDER_CODY TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_COMMANDER </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_CODY.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>20</Damage>
+		<Affiliation>Empire</Affiliation>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Theta_Shuttle</Company_Transport_Unit>
+		<Company_Units>Commander_Cody</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Force_Sensitive>No</Is_Force_Sensitive>
+		<Available_In_Skirmish>yes</Available_In_Skirmish>
+		<Can_Be_Only_One>true</Can_Be_Only_One>
+		<Score_Cost_Credits> 25000 </Score_Cost_Credits>
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>		
+		<SFXEvent_Build_Complete>Unit_Complete_Clone_Commander</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Complete_Clone_Commander</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Clone_Commander</SFXEvent_Fleet_Move>
+<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>AREA_EFFECT_STUN</Type>
+				<Recharge_Seconds>40.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+				<Spawned_Object_Type> Proj_Special_Han_Solo_Stun_Blast </Spawned_Object_Type>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+			<!-- Secondary ability -->
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Expiration_Seconds> 7.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 2.0f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated/>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+		<Tactical_Build_Cost_Multiplayer>1500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		
+		
+		<CategoryMask>LandHero</CategoryMask>
+		<Ranking_In_Category> 1 </Ranking_In_Category>
+		<Population_Value>1</Population_Value>
+	</HeroCompany>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Commander_Cody_Data>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Repair_Droid_Data>
+  <GroundInfantry Name="Repair_Droid">
+    <Text_ID>TEXT_UNIT_LE_REPAIR_DROID</Text_ID>
+    <No_Colorization_Color> 237, 149, 78, 255 </No_Colorization_Color>
+    <Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To> Clone_Trooper_P1 AT_RT_Walker AT_AP </Encyclopedia_Vulnerable_To>
+    <Encyclopedia_Text>TEXT_TOOLTIP_LE_REPAIR_DROID TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+    <Land_Model_Name>SeI_repair_droid.ALO</Land_Model_Name>
+    <Icon_Name>I_BUTTON_CIS_REPAIR_DROID.TGA</Icon_Name>
+    <Behavior>SELECTABLE</Behavior>
+    <LandBehavior>SURFACE_FX,WALK_LOCOMOTOR,IDLE, STUNNABLE, REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING, GARRISON_UNIT</LandBehavior>
+    <Garrison_Category> Infantry </Garrison_Category>
+    <SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
+    <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+    <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+    <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+    <CanCellStack>yes</CanCellStack>
+    <Select_Box_Scale>0</Select_Box_Scale>
+    <Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+    <Mass>1.0</Mass>
+    <GUI_Bracket_Width>5</GUI_Bracket_Width>
+    <GUI_Bracket_Height>0</GUI_Bracket_Height>
+    <GUI_Bracket_Size>0</GUI_Bracket_Size>
+    <Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+    <Influences_Capture_Point>True</Influences_Capture_Point>
+    <Movement_Animation_Speed> 0.8 </Movement_Animation_Speed>
+    <Rotation_Animation_Speed> 20.0 </Rotation_Animation_Speed>
+    <Max_Speed>1</Max_Speed>
+    <Max_Rate_Of_Turn>10.0</Max_Rate_Of_Turn>
+    <Custom_Soft_Footprint_Radius> 3.5 </Custom_Soft_Footprint_Radius>
+    <Custom_Hard_XExtent> 2.0 </Custom_Hard_XExtent>
+    <Custom_Hard_YExtent> 2.0 </Custom_Hard_YExtent>
+    <Space_Layer> Land </Space_Layer>
+    <UnitCollisionClass> Infantry </UnitCollisionClass>
+    <FormationSpacing> .5 </FormationSpacing>
+    <MinimumPushReturnDistance> 10 </MinimumPushReturnDistance>
+    <Min_Speed> .1 </Min_Speed>
+    <OverrideAcceleration> .1 </OverrideAcceleration>
+    <OverrideDeceleration> .1 </OverrideDeceleration>
+    <FormationOrder> 2 </FormationOrder>
+    <FormationGrouping> Standard </FormationGrouping>
+    <Scale_Factor>1.7</Scale_Factor>
+    <!--<Is_Sprite>No</Is_Sprite>-->
+    <Affiliation>Neutral</Affiliation>
+    <Required_Timeline>0</Required_Timeline>
+    <IsBuildable>No</IsBuildable>
+    <!--<Is_Sprite>No</Is_Sprite>-->
+    <Size_Value>10</Size_Value>
+    <Armor_Type> Armor_Infantry </Armor_Type>
+    <Damage>0</Damage>
+    <Tactical_Health>20</Tactical_Health>
+    <Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+    <Blob_Shadow_Scale>10.0, 10.0</Blob_Shadow_Scale>
+    <Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+    <Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+    <Land_FOW_Reveal_Range>150.0</Land_FOW_Reveal_Range>
+    <Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+    <SFXEvent_Select>Unit_Select_Repair_Droid</SFXEvent_Select>
+    <SFXEvent_Move>Unit_Move_Repair_Droid</SFXEvent_Move>
+    <SFXEvent_Guard>Unit_Guard_Repair_Droid</SFXEvent_Guard>
+    <Death_SFXEvent_Start_Die>Unit_Defeat_Repair_Droid</Death_SFXEvent_Start_Die>
+    <MovementClass>Infantry</MovementClass>
+    <CategoryMask> Infantry </CategoryMask>
+    <Victory_Relevant>No</Victory_Relevant>
+    <Weather_Category>Infantry</Weather_Category>
+    <Death_Clone>Damage_Force_Whirlwind, Repair_Droid_Force_Whirlwind_Death_Clone</Death_Clone>
+    <Death_Clone>Damage_Force_Lightning, Repair_Droid_Force_Lightning_Death_Clone</Death_Clone>
+    <OccupationStyle>1x1</OccupationStyle>
+    <Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+    <Is_Squashable> Yes </Is_Squashable>
+    <Death_Fade_Time>0.25</Death_Fade_Time>
+    <Death_Persistence_Duration>0.0</Death_Persistence_Duration>
+    <AI_Combat_Power>5</AI_Combat_Power>
+    <Movie_Object>false</Movie_Object>
+    <Abilities SubObjectList="Yes">
+      <Force_Healing_Ability Name="Repair_Droid_Repairing">
+        <Activation_Style>Ground_Automatic</Activation_Style>
+        <Heal_Range>80.0</Heal_Range> <!-- From 50 -->
+        <Heal_Amount> 0.0 </Heal_Amount>
+        <Heal_Percent> 0.20 </Heal_Percent>
+        <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+        <Single_Target_Heal>Yes</Single_Target_Heal>
+        <Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+        <!-- We can heal the following unit types: -->
+        <Applicable_Unit_Categories>Infantry | Vehicle | Structure</Applicable_Unit_Categories>
+        <Applicable_Unit_Types />
+        <Excluded_Unit_Types></Excluded_Unit_Types>
+        <SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+        <Target_Particle_Effect>Unit_Healed_Particles</Target_Particle_Effect>
+        <Target_Particle_Bone_Name>B_HEAD</Target_Particle_Bone_Name>
+        <Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+        <Target_Light_Effect_Color>1.2, 2.0, 1.2</Target_Light_Effect_Color>
+        <Target_Light_Effect_Color2 />
+        <Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+        <Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+        <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+        <Owner_Light_Effect_Color>1.2, 2.0, 1.2</Owner_Light_Effect_Color>
+        <Owner_Light_Effect_Color2 />
+        <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+        <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+      </Force_Healing_Ability>
+    </Abilities>
+  </GroundInfantry>
+  <GroundInfantry Name="Repair_Droid_Force_Whirlwind_Death_Clone">
+    <Variant_Of_Existing_Type>Repair_Droid</Variant_Of_Existing_Type>
+    <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+    <Specific_Death_Anim_Index />
+  </GroundInfantry>
+  <GroundInfantry Name="Repair_Droid_Force_Lightning_Death_Clone">
+    <Variant_Of_Existing_Type>Repair_Droid</Variant_Of_Existing_Type>
+    <Specific_Death_Anim_Type>FL_DIE</Specific_Death_Anim_Type>
+    <Specific_Death_Anim_Index />
+  </GroundInfantry>
+  <GroundInfantry Name="Spawned_Repairdroid">
+    <Variant_Of_Existing_Type>Repair_Droid</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_UNIT_LE_REPAIR_DROID</Text_ID>
+    <Behavior>SELECTABLE</Behavior>
+    <LandBehavior>SURFACE_FX,WALK_LOCOMOTOR,IDLE,TARGETING,WEAPON, STUNNABLE, REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING, GARRISON_UNIT</LandBehavior>
+    <Victory_Relevant>no</Victory_Relevant>
+    <Is_Squashable> Yes </Is_Squashable>
+    <Space_Layer> None </Space_Layer>
+  </GroundInfantry>
+  <GroundCompany Name="Repair_Droid_Squad">
+    <Text_ID>TEXT_UNIT_LE_REPAIR_DROID</Text_ID>
+    <Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To> Clone_Trooper_P1 AT_RT_Walker AT_AP </Encyclopedia_Vulnerable_To>
+    <Encyclopedia_Text>TEXT_TOOLTIP_LE_REPAIR_DROID TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+    <GUI_Row> 1 </GUI_Row>
+    <Is_Dummy>Yes</Is_Dummy>
+    <Damage>0</Damage>
+    <Autoresolve_Health>50</Autoresolve_Health>
+    <Affiliation>Rebel</Affiliation>
+    <Build_Cost_Credits>250</Build_Cost_Credits>
+    <!--1500-->
+    <Build_Time_Seconds>15</Build_Time_Seconds>
+    <!--<Build_Time_Seconds>15</Build_Time_Seconds>-->
+    <Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+    <Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+    <Tech_Level>0</Tech_Level>
+    <!--<Required_Orbiting_Units>Commander_Cody_Team, Commander_Cody</Required_Orbiting_Units>-->
+    <Required_Timeline>0</Required_Timeline>
+    <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>0</Required_Star_Base_Level>
+    <Required_Special_Structures>R_Ground_Barracks</Required_Special_Structures>
+    <!--<Required_Planets>Carida</Required_Planets>-->
+    <Behavior>DUMMY_GROUND_COMPANY</Behavior>
+    <Formation_Priority>1</Formation_Priority>
+    <Is_Escort>yes</Is_Escort>
+    <Ship_Class>infantry</Ship_Class>
+    <Company_Transport_Unit>Sheathipede_Shuttle</Company_Transport_Unit>
+    <Company_Units> Repair_Droid, Repair_Droid </Company_Units>
+    <Max_Squad_Size> 1 </Max_Squad_Size>
+    <Icon_Name>I_BUTTON_CIS_REPAIR_DROID.TGA</Icon_Name>
+    <GUI_Model_Name>SeI_repair_droid.ALO</GUI_Model_Name>
+    <Land_Model_Name>SeI_repair_droid.ALO</Land_Model_Name>
+    <Scale_Factor>5</Scale_Factor>
+    <GUI_Offset>0 0 5</GUI_Offset>
+    <GUI_Velocity>45</GUI_Velocity>
+    <SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+    <SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+    <SFXEvent_Build_Complete>Unit_Complete_Repair_Droid</SFXEvent_Build_Complete>
+    <SFXEvent_Fleet_Move>Unit_Fleet_Move_Repair_Droid</SFXEvent_Fleet_Move>
+    <Abilities SubObjectList="Yes">
+      <Force_Healing_Ability Name="Repair_Droid_Repairing">
+        <Activation_Style>Ground_Automatic</Activation_Style>
+        <Heal_Range>80.0</Heal_Range> <!-- From 50 -->
+        <Heal_Amount> 0.0 </Heal_Amount>
+        <Heal_Percent> 0.20 </Heal_Percent>
+        <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+        <Single_Target_Heal>Yes</Single_Target_Heal>
+        <Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+        <!-- We can heal the following unit types: -->
+        <Applicable_Unit_Categories>Infantry | Vehicle | Structure</Applicable_Unit_Categories>
+        <Applicable_Unit_Types />
+        <Excluded_Unit_Types></Excluded_Unit_Types>
+        <SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+        <Target_Particle_Effect>Unit_Healed_Particles</Target_Particle_Effect>
+        <Target_Particle_Bone_Name>B_HEAD</Target_Particle_Bone_Name>
+        <Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+        <Target_Light_Effect_Color>1.2, 2.0, 1.2</Target_Light_Effect_Color>
+        <Target_Light_Effect_Color2 />
+        <Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+        <Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+        <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+        <Owner_Light_Effect_Color>1.2, 2.0, 1.2</Owner_Light_Effect_Color>
+        <Owner_Light_Effect_Color2 />
+        <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+        <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+      </Force_Healing_Ability>
+    </Abilities>
+    <Maintenance_Cost>0.05</Maintenance_Cost>
+    <Population_Value>0</Population_Value>
+    <Score_Cost_Credits>54</Score_Cost_Credits>
+  </GroundCompany>
+  <GroundCompany Name="Repair_Droid_Squad_Skirmish">
+    <Text_ID>TEXT_UNIT_LE_REPAIR_DROID</Text_ID>
+    <Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To> Clone_Trooper_P1 AT_RT_Walker AT_AP </Encyclopedia_Vulnerable_To>
+    <Encyclopedia_Text>TEXT_TOOLTIP_LE_REPAIR_DROID TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+    <GUI_Row> 1 </GUI_Row>
+    <Is_Dummy>Yes</Is_Dummy>
+    <Damage>0</Damage>
+    <Autoresolve_Health>50</Autoresolve_Health>
+    <Affiliation>Rebel</Affiliation>
+    <Build_Cost_Credits>250</Build_Cost_Credits>
+    <!--1500-->
+    <Build_Time_Seconds>15</Build_Time_Seconds>
+    <!--<Build_Time_Seconds>15</Build_Time_Seconds>-->
+    <Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+    <Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+    <Tech_Level>2</Tech_Level>
+    <!--<Required_Orbiting_Units>Commander_Cody_Team, Commander_Cody</Required_Orbiting_Units>-->
+    <Required_Timeline>0</Required_Timeline>
+    <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>0</Required_Star_Base_Level>
+    <Required_Special_Structures>Skirmish_Ground_Cis_Droid_Center</Required_Special_Structures>
+    <!--<Required_Planets>Carida</Required_Planets>-->
+    <Behavior>DUMMY_GROUND_COMPANY</Behavior>
+    <Formation_Priority>1</Formation_Priority>
+    <Is_Escort>yes</Is_Escort>
+    <Ship_Class>infantry</Ship_Class>
+    <Company_Transport_Unit>Sheathipede_Shuttle</Company_Transport_Unit>
+    <Company_Units> Repair_Droid, Repair_Droid </Company_Units>
+    <Max_Squad_Size> 1 </Max_Squad_Size>
+    <Icon_Name>I_BUTTON_CIS_REPAIR_DROID.TGA</Icon_Name>
+    <GUI_Model_Name>SeI_repair_droid.ALO</GUI_Model_Name>
+    <Land_Model_Name>SeI_repair_droid.ALO</Land_Model_Name>
+    <Scale_Factor>5</Scale_Factor>
+    <GUI_Offset>0 0 5</GUI_Offset>
+    <GUI_Velocity>45</GUI_Velocity>
+    <SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+    <SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+    <SFXEvent_Build_Complete>Unit_Select_Civilian</SFXEvent_Build_Complete>
+    <SFXEvent_Fleet_Move>Unit_Select_Civilian</SFXEvent_Fleet_Move>
+    <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+    <Tactical_Build_Cost_Multiplayer>200</Tactical_Build_Cost_Multiplayer>
+    <Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+    <Tactical_Build_Prerequisites />
+    <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+    <Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
+    <Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+    <!--<MULTIPLAYER SKIRMISH VALUES END>-->
+    <Abilities SubObjectList="Yes">
+      <Force_Healing_Ability Name="Repair_Droid_Repairing">
+        <Activation_Style>Ground_Automatic</Activation_Style>
+        <Heal_Range>80.0</Heal_Range> <!-- From 50 -->
+        <Heal_Amount> 0.0 </Heal_Amount>
+        <Heal_Percent> 0.20 </Heal_Percent>
+        <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+        <Single_Target_Heal>Yes</Single_Target_Heal>
+        <Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+        <!-- We can heal the following unit types: -->
+        <Applicable_Unit_Categories>Infantry | Vehicle | Structure</Applicable_Unit_Categories>
+        <Applicable_Unit_Types />
+        <Excluded_Unit_Types></Excluded_Unit_Types>
+        <SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+        <Target_Particle_Effect>Unit_Healed_Particles</Target_Particle_Effect>
+        <Target_Particle_Bone_Name>B_HEAD</Target_Particle_Bone_Name>
+        <Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+        <Target_Light_Effect_Color>1.2, 2.0, 1.2</Target_Light_Effect_Color>
+        <Target_Light_Effect_Color2 />
+        <Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+        <Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+        <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+        <Owner_Light_Effect_Color>1.2, 2.0, 1.2</Owner_Light_Effect_Color>
+        <Owner_Light_Effect_Color2 />
+        <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+        <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+      </Force_Healing_Ability>
+    </Abilities>
+    <Maintenance_Cost>0.05</Maintenance_Cost>
+    <Population_Value>1</Population_Value>
+    <Score_Cost_Credits>54</Score_Cost_Credits>
+  </GroundCompany>
+</Repair_Droid_Data>

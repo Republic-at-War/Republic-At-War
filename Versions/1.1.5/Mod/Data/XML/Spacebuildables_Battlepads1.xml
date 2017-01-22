@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+
+<Space_Battlepads>
+
+
+
+<SpaceBuildable Name="Republic_Satellite_Build_Pad">
+		<Select_Box_Scale>330</Select_Box_Scale>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		<Behavior> SPACE_OBSTACLE, TACTICAL_BUILD_OBJECTS, REVEAL, CAPTURE_POINT, HIDE_WHEN_FOGGED </Behavior>
+		
+		<Tactical_Buildable_Objects_Multiplayer>
+		Empire, 
+			UC_Empire_Build_Republic_High_Command,
+			UC_Empire_Build_Republic_Open_Circle_Fleet,
+			UC_Empire_Build_Republic_Lok_Revenants,
+		Rebel,
+				UC_Rebel_Build_Cis_High_Command,
+				UC_Rebel_Build_Cis_Mercenary_Relay,
+				UC_Rebel_Build_Cis_Sabaoth_Squadron
+	</Tactical_Buildable_Objects_Multiplayer>
+	
+	<Tactical_Buildable_Objects_Campaign> 
+			Empire, 
+		UC_Empire_Build_Republic_High_Command,
+		UC_Empire_Build_Republic_Open_Circle_Fleet,
+		UC_Empire_Build_Republic_Lok_Revenants
+		</Tactical_Buildable_Objects_Campaign>
+		
+		<Text_ID> TEXT_ORBITAL_SATELLITE_BUILD_PAD </Text_ID>
+		<Space_Model_Name>NV_LDS_pad.ALO</Space_Model_Name>
+		<Icon_Name>I_BUTTON_BPS.tga</Icon_Name>
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Affiliation>Neutral,Empire</Affiliation>
+		<Size_Value>30</Size_Value>
+		
+		<Space_FOW_Reveal_Range>275</Space_FOW_Reveal_Range>
+		
+		<GUI_Model_Name>NV_LDS_pad.ALO</GUI_Model_Name>
+		<GUI_Distance>1000</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<CategoryMask> Structure </CategoryMask>
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+				
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Hides_When_Built_On>True</Hides_When_Built_On>
+		<Immune_To_Damage>True</Immune_To_Damage>
+		
+		<Loop_Idle_Anim_00> No </Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living> No </Collidable_By_Projectile_Living>
+		
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Show_Facing>No</Radar_Show_Facing>
+		<Radar_Icon_Name>MINI_MAP_BATTLEPAD.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		
+		<Select_Box_Scale> 50 </Select_Box_Scale>
+		<Scale_Factor> 1.5 </Scale_Factor>
+		<Victory_Relevant> No </Victory_Relevant>
+		<Custom_Soft_Footprint_Radius> 100 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+	
+		<Tactical_Respawn_Time_In_Secs>38</Tactical_Respawn_Time_In_Secs>
+		<Tactical_Health>1200</Tactical_Health>
+		<Score_Cost_Credits> 5000 </Score_Cost_Credits>
+		<Capture_Point_Radius>550.0</Capture_Point_Radius>
+		<Capture_Point_Transition_Time_Seconds>5</Capture_Point_Transition_Time_Seconds>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Last_State_Visible_Under_FOW> False </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
+	</SpaceBuildable>
+	
+<SpaceBuildable Name="UC_Empire_Build_Republic_High_Command">
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		<Select_Box_Scale>600</Select_Box_Scale>
+		<Behavior>SPACE_OBSTACLE, TACTICAL_UNDER_CONSTRUCTION, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED</Behavior>
+		<Tactical_Buildable_Constructed> Republic_High_Command </Tactical_Buildable_Constructed>
+		<Tactical_Build_Start_Lower_Z> 0.0 </Tactical_Build_Start_Lower_Z>
+		<Scale_Factor> 1.5 </Scale_Factor>
+
+		<Text_ID> TEXT_ORBITAL_SATELLITE_BUILD_PAD </Text_ID>
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Space_Model_Name>nv_space_build_center.ALO</Space_Model_Name>
+		<Icon_Name>I_BUTTON_BUILD_REP_HIGH_COMMAND.tga</Icon_Name>
+		<Select_Box_Scale>330</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Affiliation>Empire</Affiliation>
+		<Size_Value>30</Size_Value>
+		<Space_FOW_Reveal_Range>275</Space_FOW_Reveal_Range>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Victory_Relevant>Yes</Victory_Relevant>
+		<GUI_Model_Name>nv_space_build_center.ALO</GUI_Model_Name>
+		<GUI_Distance>1000</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<CategoryMask> Structure </CategoryMask>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Custom_Soft_Footprint_Radius> 275 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+  
+		<Tactical_Health>1800</Tactical_Health>
+		<Tactical_Build_Cost_Multiplayer> 2100 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds> 25 </Tactical_Build_Time_Seconds>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_REP_HIGH_COMMAND_00 </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_REP_HIGH_COMMAND_00 </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+  
+	</SpaceBuildable>
+	
+<SpaceBuildable Name="UC_Empire_Build_Republic_Open_Circle_Fleet">
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		<Select_Box_Scale>600</Select_Box_Scale>
+		<Behavior>SPACE_OBSTACLE, TACTICAL_UNDER_CONSTRUCTION, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED</Behavior>
+		<Tactical_Buildable_Constructed> Republic_Open_Circle_Fleet </Tactical_Buildable_Constructed>
+		<Tactical_Build_Start_Lower_Z> 0.0 </Tactical_Build_Start_Lower_Z>
+		<Scale_Factor> 1.5 </Scale_Factor>
+		<Is_Community_Property>Yes</Is_Community_Property>
+
+		<Text_ID> TEXT_ORBITAL_SATELLITE_BUILD_PAD </Text_ID>
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Space_Model_Name>nv_space_build_center.ALO</Space_Model_Name>
+		<Icon_Name>I_BUTTON_BUILD_REP_OPEN_CIRCLE_FLEET.tga</Icon_Name>
+		<Select_Box_Scale>330</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Affiliation>Empire</Affiliation>
+		<Size_Value>30</Size_Value>
+		<Space_FOW_Reveal_Range>275</Space_FOW_Reveal_Range>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Victory_Relevant>Yes</Victory_Relevant>
+		<GUI_Model_Name>nv_space_build_center.ALO</GUI_Model_Name>
+		<GUI_Distance>1000</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<CategoryMask> Structure </CategoryMask>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Custom_Soft_Footprint_Radius> 275 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+  
+		<Tactical_Health>1800</Tactical_Health>
+		<Tactical_Build_Cost_Multiplayer> 2100 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds> 25 </Tactical_Build_Time_Seconds>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+			<Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_REP_OPEN_CIRCLE_FLEET_00 </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_REP_OPEN_CIRCLE_FLEET_00 </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+  
+	</SpaceBuildable>
+	
+<SpaceBuildable Name="UC_Empire_Build_Republic_Lok_Revenants">
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		<Select_Box_Scale>600</Select_Box_Scale>
+		<Behavior>SPACE_OBSTACLE, TACTICAL_UNDER_CONSTRUCTION, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED</Behavior>
+		<Tactical_Buildable_Constructed> Republic_Lok_Revenants </Tactical_Buildable_Constructed>
+		<Tactical_Build_Start_Lower_Z> 0.0 </Tactical_Build_Start_Lower_Z>
+		<Scale_Factor> 1.5 </Scale_Factor>
+
+		<Text_ID> TEXT_ORBITAL_SATELLITE_BUILD_PAD </Text_ID>
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Space_Model_Name>nv_space_build_center.ALO</Space_Model_Name>
+		<Icon_Name>I_BUTTON_BUILD_LOK_REVENANTS.tga</Icon_Name>
+		<Select_Box_Scale>330</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Affiliation>Empire</Affiliation>
+		<Size_Value>30</Size_Value>
+		<Space_FOW_Reveal_Range>275</Space_FOW_Reveal_Range>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Victory_Relevant>No</Victory_Relevant>
+		<GUI_Model_Name>nv_space_build_center.ALO</GUI_Model_Name>
+		<GUI_Distance>1000</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<CategoryMask> Structure </CategoryMask>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Custom_Soft_Footprint_Radius> 275 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+  
+		<Tactical_Health>1800</Tactical_Health>
+		<Tactical_Build_Cost_Multiplayer> 2100 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds> 25 </Tactical_Build_Time_Seconds>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+			<Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_REP_LOK_PIRATES_00 </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_REP_LOK_PIRATES_00 </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+  
+	</SpaceBuildable>				
+			
+
+	
+	
+	</Space_Battlepads>	

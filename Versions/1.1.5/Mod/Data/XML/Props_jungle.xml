@@ -1,0 +1,766 @@
+<?xml version="1.0" ?>
+<Props_Jungle>
+
+	<Prop_Jungle Name="Prop_Jungle_Palm_Large_Cluster_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TreePalm_NS_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>4.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Palm_Medium_Cluster_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TreePalm_NS_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Palm_Small_Cluster_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TreePalm_NS_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>2.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Palm_Thin_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Seluca.ALO</Land_Model_Name>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+
+	<Prop_Jungle Name="Prop_Jungle_Palm_Thin_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Seluca.ALO</Land_Model_Name>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+
+	<Prop_Jungle Name="Prop_Jungle_Palm_Thin_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Seluca.ALO</Land_Model_Name>
+		<Scale_Factor>4.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Tree_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Alien_00_HI.ALO</Land_Model_Name>
+		<Scale_Factor>1.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Tree_A_Cluster">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Alien_NS_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Jungle>
+
+
+
+	<Prop_Jungle Name="Prop_Jungle_Palm_Regular_Obstacle">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TreePalm_A.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> High Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 3.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 3.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 0.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> 0.0 </Custom_Hard_YExtent_Offset>
+
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+
+<Prop_Jungle Name="Prop_Jungle_Palm_Regular">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TreePalm_A.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+
+<Prop_Jungle Name="Prop_Jungle_Palm_Regular_Cluster">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TreePalm_A_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+
+<Prop_Jungle Name="Prop_Jungle_Palm_Regular_Cluster_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TreePalm_NS_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+
+
+	<Prop_Jungle Name="Prop_Jungle_Tree_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Gnarl_00_HI.ALO</Land_Model_Name>
+		<Scale_Factor>2.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow_Light</Blob_Shadow_Material_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Tree_Medium">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Gnarl_00_HI.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow_Light</Blob_Shadow_Material_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Tree_Obstacle">
+			<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Gnarl_00_HI.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> High Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 10.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 10.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 0.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> 0.0 </Custom_Hard_YExtent_Offset>
+
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow_Light</Blob_Shadow_Material_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Palm_Tropical_Large_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_treejungle1_ns.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Palm_Tropical_Medium_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_treejungle1_ns.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Palm_Tropical_Small_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_treejungle1_ns.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Palm_Tropical_Large_Cluster_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_tree_jungle1_cluster_ns.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Palm_Tropical_Medium_Cluster_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_tree_jungle1_cluster_ns.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Palm_Tropical_Small_Cluster_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_tree_jungle1_cluster_ns.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+	
+	
+	
+	
+	
+	
+	
+	<Prop_Jungle Name="Prop_Jungle_Palm_Tropical_Short_Large_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_treejungle2_ns.ALO</Land_Model_Name>
+		<Scale_Factor>7.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Palm_Tropical_Short_Medium_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_treejungle2_ns.ALO</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Palm_Tropical_Short_Small_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_treejungle2_ns.ALO</Land_Model_Name>
+		<Scale_Factor>5.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Palm_Tropical_Short_Large_Cluster_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_tree_jungle2_cluster_ns.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Palm_Tropical_Short_Medium_Cluster_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_tree_jungle2_cluster_ns.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Palm_Tropical_Short_Small_Cluster_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_tree_jungle2_cluster_ns.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Canopy">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Dec_Canopy_A.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>75.0, 75.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name></Blob_Shadow_Material_Name>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+
+	<Prop_Jungle Name="Prop_Jungle_Ground_Cover_Grass">
+	<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_GrndCvr_A.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Jungle>
+
+<Prop_Jungle Name="Prop_Jungle_Ground_Cover_Grass_Thick_Tall">
+	<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_GrndCvr_Felucia_tall.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Jungle>
+
+	<Prop_Jungle Name="Prop_Jungle_Ground_Cover_Weeds">
+	<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Temp_Cattail.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Ground_Cover_Leafy">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_GrndCvr_H.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Ground_Cover_Flower_Red">
+			<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_GrndCvr_G.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Ground_Cover_Flower_Orange">
+			<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_GrndCvr_F.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Jungle>
+
+	<Prop_Jungle Name="Prop_Jungle_Ground_Cover_Flower_Yellow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_GrndCvr_E.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Bamboo">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Bamboo_00_HI.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow_Light</Blob_Shadow_Material_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Bamboo_Cluster">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Bamboo_00_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow_Light</Blob_Shadow_Material_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Jungle>
+
+	<Prop_Jungle Name="Prop_Jungle_Bamboo_Cluster_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Bamboo_NS_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow_Light</Blob_Shadow_Material_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Bush_Fern_Leafy_Small">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Fern00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>99</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>25.0, 25.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+
+	<Prop_Jungle Name="Prop_Jungle_Bush_Fern_Leafy_Medium">
+			<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Fern00.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Jungle>
+	
+<Prop_Jungle Name="Prop_Jungle_Bush_Fern_Leafy_Large_Dark_Green">
+			<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Fern03.ALO</Land_Model_Name>
+		<Scale_Factor>4.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Jungle>
+
+	<Prop_Jungle Name="Prop_Jungle_Bush_Fern_Leafy_Medium_Dark_Green">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Fern03.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Bush_Fern_Small">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Fern01.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>99</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>25.0, 25.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+
+	<Prop_Jungle Name="Prop_Jungle_Bush_Fern_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Fern01.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Bush_Small">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LeafBush00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>99</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>30.0, 30.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Bush_Flower_Medium">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Bush_Temp02.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Bush_Thick_Medium">
+			<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Bush_Temp00.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Bush_Tulip">
+			<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_01.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Mushroom_Cap">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_03.alo</Land_Model_Name>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Mushrooms">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_felucia_plant_06.alo</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Rocks_Small">
+			<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_EndrRockClstr02.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Jungle>
+	
+<Prop_Jungle Name="Prop_Jungle_Rocks_Medium">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_EndrRockClstr01.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Rocks_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_EndrRockClstr03.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Rocks_Dark_Small">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LavaRockClstr00.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Rocks_Dark_Large">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LavaRockClstr01.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Mountains">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TempMntRnge00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Wildlife_Sketto_Spawn">
+	<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ROCKCLSTR02.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<LandBehavior> SPAWN_INDIGENOUS_UNITS </LandBehavior>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> Medium Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 15.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 14.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 2.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> -2.0 </Custom_Hard_YExtent_Offset>
+		
+		<Spawned_Indigenous_Units_Type>Desert_Sketto</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>5</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>No</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>80.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>0.9f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>0</Max_Distance_From_Spawner>
+
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Is_Indigenous_Unit_Corruptible>False</Is_Indigenous_Unit_Corruptible>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Wildlife_Bird_Spawn">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TempRockClstr00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<LandBehavior>SPAWN_INDIGENOUS_UNITS</LandBehavior>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> Medium Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 18.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 25.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 3.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> -5.0 </Custom_Hard_YExtent_Offset>
+		
+		<Spawned_Indigenous_Units_Type>Bird_Black_Color, Bird_Medium_Color</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>5</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>No</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>80.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>0</Max_Distance_From_Spawner>
+
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Is_Indigenous_Unit_Corruptible>False</Is_Indigenous_Unit_Corruptible>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Vines_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_SwampVine00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Vines_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_SwampVine01.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Lightbeams">
+			<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_lightbeams.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Waterfall_Spray">
+			<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Waterfallspray_top.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Power_Generator">
+			<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_paddlewheel.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Loop_Idle_Anim_00> Yes </Loop_Idle_Anim_00>
+		<Idle_Anim_00_Rate_Mod>1.0</Idle_Anim_00_Rate_Mod>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		
+		<Is_Decoration>No</Is_Decoration>
+	</Prop_Jungle>
+	
+	<Prop_Jungle Name="Prop_Jungle_Shed">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>LoW_R1_Prop_Shed.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>4.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Prop_Jungle>
+	
+	
+	<Prop_Jungle Name="Prop_Jungle_Palm_Beach_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_beach_palm.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+	
+		<Prop_Jungle Name="Prop_Jungle_Palm_Beach_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_beach_palm.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+	
+		<Prop_Jungle Name="Prop_Jungle_Palm_Beach_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_beach_palm.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Jungle>
+	
+	
+</Props_Jungle>

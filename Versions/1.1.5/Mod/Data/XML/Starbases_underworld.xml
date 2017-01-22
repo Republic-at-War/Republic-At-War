@@ -1,0 +1,2211 @@
+<?xml version="1.0"?>
+<StarBases>
+
+
+
+
+	<StarBase Name="Underworld_Star_Base_1">
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+		<Text_ID>TEXT_REBEL_STAR_BASE_1</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_STATION1 TEXT_TOOLTIP_GARRISON_US_01</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STATION</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_ub_station.tga</Icon_Name>
+
+		<GUI_Row> 0 </GUI_Row>
+		<Space_Model_Name>UB_01_STATION.ALO</Space_Model_Name>
+		<Galactic_Model_Name>i_ub_01_station.alo</Galactic_Model_Name>
+		<Select_Box_Scale>1000</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Is_Dummy>No</Is_Dummy>
+		<Affiliation>Underworld</Affiliation>
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<AI_Combat_Power>5000</AI_Combat_Power>
+		<Build_Time_Seconds>15</Build_Time_Seconds>
+		<Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+		<Size_Value>10</Size_Value>
+		<Tech_Level>0</Tech_Level>
+		<Base_Level>1</Base_Level>
+		<Prev_Level_Base />
+		<Next_Level_Base>Underworld_Star_Base_2</Next_Level_Base>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<CategoryMask> Capital </CategoryMask>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+
+		<Armor_Type> Armor_Station </Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<!-- Set to contuously spawn until fighter bay hard point is destroyed -->
+		<Starting_Spawned_Units_Tech_0>StarViper_Squadron, 8</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>StarViper_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Skipray_Squadron, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Skipray_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+		
+		<Tactical_Buildable_Objects_Campaign>
+			Underworld,
+				US_Reinforced_Structure_L1_Upgrade,
+				US_Magnetically_Sealed_Armor_L1_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Autoresolve_Health>750</Autoresolve_Health>
+		<Damage>35</Damage>
+		<Shield_Points>300</Shield_Points>
+		<Tactical_Health>1600</Tactical_Health>
+		<Shield_Refresh_Rate>60</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>800.0</Targeting_Max_Attack_Distance>
+
+		<HardPoints>
+			HP_Underworld_Station_L1_Supply_Dock_Dummy,
+			HP_Underworld_Station_L1_Comm_Array_Dummy,
+			HP_Underworld_Station_L1_Fighter_Bay,
+			HP_Underworld_Station_L1_ShieldGen,
+			HP_Underworld_Station_L1_Mass_Driver_00,
+			HP_Underworld_Station_L1_LC_00,
+			HP_Underworld_Station_L1_TBL_00
+		</HardPoints>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_All_Weapons_Destroyed> </SFXEvent_Hardpoint_All_Weapons_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Unit_Under_Attack> UHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Custom_Soft_Footprint_Radius> 300 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Layer_Z_Adjust>-650.0</Layer_Z_Adjust>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Radar_Icon_Size>0.12  0.12</Radar_Icon_Size>
+		<Radar_Icon_Name>i_radar_station1_u.tga</Radar_Icon_Name>
+		<Score_Cost_Credits> 1500</Score_Cost_Credits>
+		<Victory_Relevant>yes</Victory_Relevant>
+
+		<Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_1_Rebel</Retreat_Self_Destruct_Explosion>
+		
+		<Death_Clone>Damage_Normal, Underworld_Star_Base_1_Death_Clone</Death_Clone>
+		<Additional_Population_Capacity>10</Additional_Population_Capacity>
+	</StarBase>
+
+	<StarBase Name="Underworld_Star_Base_1_Death_Clone">
+		<Text_ID>TEXT_REBEL_STAR_BASE_1</Text_ID>
+		<Space_Model_Name>UB_01_STATION_D.ALO</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<CategoryMask> Capital </CategoryMask>
+		<Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+		<Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+	</StarBase>
+
+
+
+
+
+	<StarBase Name="Underworld_Star_Base_2">
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+		<Text_ID>TEXT_REBEL_STAR_BASE_2</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_STATION2 TEXT_TOOLTIP_GARRISON_US_02</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STATION</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_ub_station.tga</Icon_Name>
+
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>No</Is_Dummy>
+		<Space_Model_Name>UB_02_STATION.ALO</Space_Model_Name>
+		<Galactic_Model_Name>i_ub_02_station.alo</Galactic_Model_Name>
+		<Select_Box_Scale>1000</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Affiliation>Underworld</Affiliation>
+		<Build_Cost_Credits>1600</Build_Cost_Credits>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+		<Build_Time_Seconds>25</Build_Time_Seconds>
+		<Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+		<Size_Value>20</Size_Value>
+		<Tech_Level>0</Tech_Level>
+		<Base_Level>2</Base_Level>
+		<Prev_Level_Base>Underworld_Star_Base_1</Prev_Level_Base>
+		<Next_Level_Base>Underworld_Star_Base_3</Next_Level_Base>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<CategoryMask> Capital </CategoryMask>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Autoresolve_Health>1250</Autoresolve_Health>
+		<Damage>45</Damage>
+		<Shield_Points>1500</Shield_Points>
+		<Tactical_Health>3500</Tactical_Health>
+		<Shield_Refresh_Rate>100</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Armor_Type> Armor_Station </Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+
+		<!-- Set to contuously spawn until fighter bay hard point is destroyed -->
+		<Starting_Spawned_Units_Tech_0>StarViper_Squadron, 10</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>StarViper_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Skipray_Squadron, 5</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Skipray_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Crusader_Gunship, 2</Starting_Spawned_Units_Tech_0>	
+		<Reserve_Spawned_Units_Tech_0>Crusader_Gunship, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Underworld,
+				US_Reinforced_Structure_L1_Upgrade,
+				US_Magnetically_Sealed_Armor_L1_Upgrade,
+				US_BlackMarket_Reactors_L1_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>800.0</Targeting_Max_Attack_Distance>
+		
+		<HardPoints>
+			HP_Underworld_Station_L1_Supply_Dock_Dummy,
+			HP_Underworld_Station_L1_Comm_Array_Dummy,
+			HP_Underworld_Station_L1_Fighter_Bay,
+			HP_Underworld_Station_L1_ShieldGen,
+			HP_Underworld_Station_L1_Mass_Driver_00,
+			HP_Underworld_Station_L1_LC_00,
+			HP_Underworld_Station_L1_TBL_00,
+			HP_Underworld_Station_L2_LC_01,
+			HP_Underworld_Station_L2_TBL_01,
+			HP_Underworld_Station_L2_PRT_00
+		</HardPoints>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Unit_Under_Attack> UHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Custom_Soft_Footprint_Radius> 450 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Radar_Icon_Name>i_radar_station1_u.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.12  0.12</Radar_Icon_Size>
+		<Score_Cost_Credits> 3000</Score_Cost_Credits>
+
+		<Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_2_Rebel</Retreat_Self_Destruct_Explosion>
+		<Death_Clone>Damage_Normal, Underworld_Star_Base_2_Death_Clone</Death_Clone>
+		<Additional_Population_Capacity>13</Additional_Population_Capacity>
+	</StarBase>
+
+	<StarBase Name="Underworld_Star_Base_2_Death_Clone">
+		<Text_ID>TEXT_REBEL_STAR_BASE_2</Text_ID>
+		<Space_Model_Name>UB_02_STATION_D.ALO</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<CategoryMask> Capital </CategoryMask>
+		<Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+		<Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+	</StarBase>
+
+
+
+
+
+	<StarBase Name="Underworld_Star_Base_3">
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+		<Text_ID>TEXT_REBEL_STAR_BASE_3</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_STATION3 TEXT_TOOLTIP_GARRISON_US_03</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STATION</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_ub_station.tga</Icon_Name>
+		
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>No</Is_Dummy>
+		<Space_Model_Name>UB_03_STATION.ALO</Space_Model_Name>
+		<Galactic_Model_Name>i_ub_03_station.alo</Galactic_Model_Name>
+		<Select_Box_Scale>1000</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Affiliation>Underworld</Affiliation>
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+		<AI_Combat_Power>15000</AI_Combat_Power>
+		<Build_Time_Seconds>35</Build_Time_Seconds>
+		<Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+		<Size_Value>30</Size_Value>
+		<Tech_Level>0</Tech_Level>
+		<Base_Level>3</Base_Level>
+		<Prev_Level_Base>Underworld_Star_Base_2</Prev_Level_Base>
+		<Next_Level_Base>Underworld_Star_Base_4</Next_Level_Base>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<CategoryMask> Capital </CategoryMask>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Autoresolve_Health>1750</Autoresolve_Health>
+		<Damage>55</Damage>
+		<Shield_Points>3000</Shield_Points>
+		<Tactical_Health>4000</Tactical_Health>
+		<Shield_Refresh_Rate>100</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>Yes</Build_Can_Be_Unlocked_By_Slicer>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Armor_Type> Armor_Station </Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+		
+		<!-- Set to contuously spawn until fighter bay hard point is destroyed -->
+		<Starting_Spawned_Units_Tech_0>StarViper_Squadron, 12</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>StarViper_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Skipray_Squadron, 6</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Skipray_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Crusader_Gunship, 3</Starting_Spawned_Units_Tech_0>	
+		<Reserve_Spawned_Units_Tech_0>Crusader_Gunship, -1</Reserve_Spawned_Units_Tech_0>
+		
+		
+		<Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Underworld,
+				US_Magnetically_Sealed_Armor_L1_Upgrade,
+				US_Magnetically_Sealed_Armor_L2_Upgrade,
+				US_BlackMarket_Reactors_L1_Upgrade,
+				US_BlackMarket_Reactors_L2_Upgrade,
+				US_Carbonite_Coolant_Systems_L1_Upgrade,
+				US_Reinforced_Structure_L1_Upgrade,
+				US_Reinforced_Structure_L2_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>2500.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>800.0</Targeting_Max_Attack_Distance>
+		
+		<HardPoints>
+			HP_Underworld_Station_L1_Supply_Dock_Dummy,
+			HP_Underworld_Station_L1_Comm_Array_Dummy,
+			HP_Underworld_Station_L1_Fighter_Bay,
+			HP_Underworld_Station_L1_ShieldGen,
+			HP_Underworld_Station_L1_Mass_Driver_00,
+			HP_Underworld_Station_L1_LC_00,
+			HP_Underworld_Station_L1_TBL_00,
+			HP_Underworld_Station_L2_LC_01,
+			HP_Underworld_Station_L2_TBL_01,
+			HP_Underworld_Station_L2_PRT_00,
+			HP_Underworld_Station_L3_IC_00,
+			HP_Underworld_Station_L3_Mass_Driver_01,
+			HP_Underworld_Station_L3_PRT_01,
+			HP_Underworld_L3_Station_Main_Cannon
+		</HardPoints>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Unit_Under_Attack> UHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Custom_Soft_Footprint_Radius> 450 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Radar_Icon_Name>i_radar_station1_u.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.12  0.12</Radar_Icon_Size>
+		<Score_Cost_Credits> 6000</Score_Cost_Credits>
+		
+		<Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_3_Rebel</Retreat_Self_Destruct_Explosion>
+		
+		<Death_Clone>Damage_Normal, Underworld_Star_Base_3_Death_Clone</Death_Clone>
+		<Additional_Population_Capacity>15</Additional_Population_Capacity>
+	</StarBase>
+
+	<StarBase Name="Underworld_Star_Base_3_Death_Clone">
+		<Text_ID>TEXT_REBEL_STAR_BASE_3</Text_ID>
+		<Space_Model_Name>UB_03_STATION_D.ALO</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<CategoryMask> Capital </CategoryMask>
+		<Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+		<Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+	</StarBase>
+
+
+
+
+
+	<StarBase Name="Underworld_Star_Base_4">
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+		<Text_ID>TEXT_REBEL_STAR_BASE_4</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_STATION4 TEXT_TOOLTIP_GARRISON_US_04</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STATION</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_ub_station.tga</Icon_Name>
+		
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>No</Is_Dummy>
+		<Space_Model_Name>UB_04_STATION.ALO</Space_Model_Name>
+		<Galactic_Model_Name>i_ub_04_station.alo</Galactic_Model_Name>
+		<Select_Box_Scale>1200</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Affiliation>Underworld</Affiliation>
+		<Build_Cost_Credits>5800</Build_Cost_Credits>
+		<AI_Combat_Power>20000</AI_Combat_Power>
+		<Build_Time_Seconds>45</Build_Time_Seconds>
+		<Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+		<Size_Value>40</Size_Value>
+		<Tech_Level>0</Tech_Level>
+		<Base_Level>4</Base_Level>
+		<Prev_Level_Base>Underworld_Star_Base_3</Prev_Level_Base>
+		<Next_Level_Base>Underworld_Star_Base_5</Next_Level_Base>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>3</Required_Star_Base_Level>
+		<CategoryMask> Capital </CategoryMask>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Autoresolve_Health>2250</Autoresolve_Health>
+		<Damage>65</Damage>
+		<Shield_Points>5000</Shield_Points>
+		<Tactical_Health>6000</Tactical_Health>
+		<Shield_Refresh_Rate>160</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>Yes</Build_Can_Be_Unlocked_By_Slicer>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Armor_Type> Armor_Station </Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+
+		<!-- Set to contuously spawn until fighter bay hard point is destroyed -->
+		<Starting_Spawned_Units_Tech_0>StarViper_Squadron, 12</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>StarViper_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Skipray_Squadron, 8</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Skipray_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Crusader_Gunship, 3</Starting_Spawned_Units_Tech_0>	
+		<Reserve_Spawned_Units_Tech_0>Crusader_Gunship, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Interceptor4_Frigate, 2</Starting_Spawned_Units_Tech_0>	
+		<Reserve_Spawned_Units_Tech_0>Interceptor4_Frigate, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Underworld,
+				US_Targeting_Systems_L1_Upgrade,
+				US_Targeting_Systems_L2_Upgrade,
+				US_Magnetically_Sealed_Armor_L1_Upgrade,
+				US_Magnetically_Sealed_Armor_L2_Upgrade,
+				US_BlackMarket_Reactors_L1_Upgrade,
+				US_BlackMarket_Reactors_L2_Upgrade,
+				US_BlackMarket_Reactors_L3_Upgrade,
+				US_Carbonite_Coolant_Systems_L1_Upgrade,
+				US_Carbonite_Coolant_Systems_L2_Upgrade,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>2500.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>700.0</Targeting_Max_Attack_Distance>
+		
+		<HardPoints>
+			HP_Underworld_Station_L1_Supply_Dock_Dummy,
+			HP_Underworld_Station_L1_Comm_Array_Dummy,
+			HP_Underworld_Station_L1_Fighter_Bay,
+			HP_Underworld_Station_L1_ShieldGen,
+			HP_Underworld_Station_L1_Mass_Driver_00,
+			HP_Underworld_Station_L1_LC_00,
+			HP_Underworld_Station_L1_TBL_00,
+			HP_Underworld_Station_L2_LC_01,
+			HP_Underworld_Station_L2_TBL_01,
+			HP_Underworld_Station_L2_PRT_00,
+			HP_Underworld_Station_L3_IC_00,
+			HP_Underworld_Station_L3_Mass_Driver_01,
+			HP_Underworld_Station_L3_PRT_01,
+			HP_Underworld_L3_Station_Main_Cannon,
+			HP_Underworld_Station_L4_IC_01,
+			HP_Underworld_Station_L4_Plasma_00,
+			HP_Underworld_Station_L4_TBL_02,
+
+
+		</HardPoints>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Unit_Under_Attack> UHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<Custom_Soft_Footprint_Radius> 550 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Radar_Icon_Name>i_radar_station4_u.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.12  0.12</Radar_Icon_Size>
+		<Space_Layer> StaticObject </Space_Layer>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<Score_Cost_Credits> 12000</Score_Cost_Credits>
+
+		<Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_4_Rebel</Retreat_Self_Destruct_Explosion>
+		
+		<Death_Clone>Damage_Normal, Underworld_Star_Base_4_Death_Clone</Death_Clone>
+		<Additional_Population_Capacity>16</Additional_Population_Capacity>
+	</StarBase>
+
+	<StarBase Name="Underworld_Star_Base_4_Death_Clone">
+		<Text_ID>TEXT_REBEL_STAR_BASE_4</Text_ID>
+		<Space_Model_Name>UB_04_STATION_D.ALO</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<CategoryMask> Capital </CategoryMask>
+		<Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+		<Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+	</StarBase>
+
+
+
+
+
+
+	<StarBase Name="Underworld_Star_Base_5">
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+		<Text_ID>TEXT_REBEL_STAR_BASE_5</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_STATION5 TEXT_TOOLTIP_GARRISON_US_05</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STATION</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_ub_station.tga</Icon_Name>
+		
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>No</Is_Dummy>
+		<Space_Model_Name>UB_05_STATION.ALO</Space_Model_Name>
+		<Galactic_Model_Name>i_ub_05_station.alo</Galactic_Model_Name>
+		<Select_Box_Scale>1200</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Affiliation>Underworld</Affiliation>
+		<Build_Cost_Credits>7500</Build_Cost_Credits>
+		<AI_Combat_Power>35000</AI_Combat_Power>
+		<Build_Time_Seconds>55</Build_Time_Seconds>
+		<Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+		<Size_Value>50</Size_Value>
+		<Tech_Level>0</Tech_Level>
+		<Base_Level>5</Base_Level>
+		<Prev_Level_Base>Underworld_Star_Base_4</Prev_Level_Base>
+		<Next_Level_Base />
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>4</Required_Star_Base_Level>
+		<CategoryMask> Capital </CategoryMask>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Autoresolve_Health>2750</Autoresolve_Health>
+		<Damage>75</Damage>
+		<Shield_Points>10000</Shield_Points>
+		<Tactical_Health>9000</Tactical_Health>
+		<Shield_Refresh_Rate>160</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>Yes</Build_Can_Be_Unlocked_By_Slicer>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Armor_Type> Armor_Station </Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+		
+		<!-- Set to contuously spawn until fighter bay hard point is destroyed -->
+		<Starting_Spawned_Units_Tech_0>StarViper_Squadron, 14</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>StarViper_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Skipray_Squadron, 10</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Skipray_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Crusader_Gunship, 5</Starting_Spawned_Units_Tech_0>	
+		<Reserve_Spawned_Units_Tech_0>Crusader_Gunship, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Interceptor4_Frigate, 4</Starting_Spawned_Units_Tech_0>	
+		<Reserve_Spawned_Units_Tech_0>Interceptor4_Frigate, -1</Reserve_Spawned_Units_Tech_0>
+		
+		<Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Underworld,
+				US_Targeting_Systems_L1_Upgrade,
+				US_Targeting_Systems_L2_Upgrade,
+				US_Targeting_Systems_L3_Upgrade,
+				US_Magnetically_Sealed_Armor_L1_Upgrade,
+				US_Magnetically_Sealed_Armor_L2_Upgrade,
+				US_Magnetically_Sealed_Armor_L3_Upgrade,
+				US_BlackMarket_Reactors_L1_Upgrade,
+				US_BlackMarket_Reactors_L2_Upgrade,
+				US_BlackMarket_Reactors_L3_Upgrade,
+				US_Carbonite_Coolant_Systems_L1_Upgrade,
+				US_Carbonite_Coolant_Systems_L2_Upgrade,
+				US_Reinforced_Structure_L1_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>2500.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>800.0</Targeting_Max_Attack_Distance>
+		
+		<HardPoints>
+			HP_Underworld_Station_L1_Supply_Dock_Dummy,
+			HP_Underworld_Station_L1_Comm_Array_Dummy,
+			HP_Underworld_Station_L1_Fighter_Bay,
+			HP_Underworld_Station_L1_ShieldGen,
+			HP_Underworld_Station_L1_Mass_Driver_00,
+			HP_Underworld_Station_L1_LC_00,
+			HP_Underworld_Station_L1_TBL_00,
+			HP_Underworld_Station_L2_LC_01,
+			HP_Underworld_Station_L2_TBL_01,
+			HP_Underworld_Station_L2_PRT_00,
+			HP_Underworld_Station_L3_IC_00,
+			HP_Underworld_Station_L3_Mass_Driver_01,
+			HP_Underworld_Station_L3_PRT_01,
+			HP_Underworld_L3_Station_Main_Cannon,
+			HP_Underworld_Station_L4_IC_01,
+			HP_Underworld_Station_L4_Plasma_00,
+			HP_Underworld_Station_L4_TBL_02,
+			HP_Underworld_Station_L5_IC_02,
+			HP_Underworld_Station_L5_Mass_Driver_02,
+			HP_Underworld_Station_L5_Plasma_01,
+			HP_Underworld_Station_L5_PRT_02,
+			HP_Underworld_Station_L5_TBL_03
+		</HardPoints>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Unit_Under_Attack> UHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Custom_Soft_Footprint_Radius> 550 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Radar_Icon_Name>i_radar_station5_u.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.12  0.12</Radar_Icon_Size>
+		<Score_Cost_Credits> 24000</Score_Cost_Credits>
+		
+		<Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_5_Rebel</Retreat_Self_Destruct_Explosion>
+		
+		<Death_Clone>Damage_Normal, Underworld_Star_Base_5_Death_Clone</Death_Clone>
+		<Additional_Population_Capacity>17</Additional_Population_Capacity>
+	</StarBase>
+
+	<StarBase Name="Underworld_Star_Base_5_Death_Clone">
+		<Text_ID>TEXT_REBEL_STAR_BASE_5</Text_ID>
+		<Space_Model_Name>UB_05_STATION_D.ALO</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<CategoryMask> Capital </CategoryMask>
+		<Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+		<Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+	</StarBase>
+
+
+
+	
+	
+	
+	
+	<!-- Underworld Skirmish Starbases -->
+	<StarBase Name="Skirmish_Underworld_Star_Base_1">
+		<Variant_Of_Existing_Type>Underworld_Star_Base_1</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Icon_Name>i_button_ub_station1.tga</Icon_Name>
+
+		<!-- Replacement List of Hardpoints -->
+		<HardPoints>			
+			HP_Underworld_Station_L1_Supply_Dock,
+			HP_Underworld_Station_L1_Comm_Array,
+			HP_Underworld_Station_L1_Fighter_Bay,
+			HP_Underworld_Station_L1_ShieldGen,
+			HP_Underworld_Station_L1_Mass_Driver_00,
+			HP_Underworld_Station_L1_LC_00,
+			HP_Underworld_Station_L1_TBL_00
+		</HardPoints>
+
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Underworld,
+				StarViper_Squadron, 
+				Skipray_Squadron,
+				Cloakshape_Squadron,
+				US_Reinforced_Structure_L1_Upgrade,
+				US_Magnetically_Sealed_Armor_L1_Upgrade,
+				US_Level_Two_Starbase_Upgrade,
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<!-- Base upgrade sequence -->
+		<Prev_Level_Base />
+		<Next_Level_Base>Skirmish_Underworld_Star_Base_2</Next_Level_Base>
+		
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="U_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>30</Base_Income_Value>
+				<Base_Interval_In_Secs>10</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="U_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>20</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_Underworld_Star_Base_1</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="U_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+
+	<StarBase Name="Skirmish_Underworld_Star_Base_2">
+		<Variant_Of_Existing_Type>Underworld_Star_Base_2</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Icon_Name>i_button_ub_station2.tga</Icon_Name>
+
+		<!-- Replacement List of Hardpoints -->
+		<HardPoints>
+			HP_Underworld_Station_L1_Supply_Dock,
+			HP_Underworld_Station_L1_Comm_Array,
+			HP_Underworld_Station_L1_Fighter_Bay,
+			HP_Underworld_Station_L1_ShieldGen,
+			HP_Underworld_Station_L1_Mass_Driver_00,
+			HP_Underworld_Station_L1_LC_00,
+			HP_Underworld_Station_L1_TBL_00,
+			HP_Underworld_Station_L2_LC_01,
+			HP_Underworld_Station_L2_TBL_01,
+			HP_Underworld_Station_L2_PRT_00
+		</HardPoints>
+
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Underworld,
+				StarViper_Squadron, 
+				Crusader_Gunship,
+				Skipray_Squadron,
+				Interceptor4_Frigate,
+				Bossk_Team_Space_MP,
+				Cloakshape_Squadron,
+				Corellian_Frigate,
+				US_Reinforced_Structure_L1_Upgrade,
+				US_Magnetically_Sealed_Armor_L1_Upgrade,
+				US_BlackMarket_Reactors_L1_Upgrade,
+				US_Level_Three_Starbase_Upgrade,				
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<!-- Base upgrade sequence -->
+		<Prev_Level_Base>Skirmish_Underworld_Star_Base_1</Prev_Level_Base>
+		<Next_Level_Base>Skirmish_Underworld_Star_Base_3</Next_Level_Base>
+			
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="U_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>35.0</Base_Income_Value>
+				<Base_Interval_In_Secs>12</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="U_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>25.0</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_Underworld_Star_Base_2</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="U_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+
+	<StarBase Name="Skirmish_Underworld_Star_Base_3">
+		<Variant_Of_Existing_Type>Underworld_Star_Base_3</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Icon_Name>i_button_ub_station3.tga</Icon_Name>
+
+		<!-- Replacement List of Hardpoints -->
+		<HardPoints>
+			HP_Underworld_Station_L1_Supply_Dock,
+			HP_Underworld_Station_L1_Comm_Array,
+			HP_Underworld_Station_L1_Fighter_Bay,
+			HP_Underworld_Station_L1_ShieldGen,
+			HP_Underworld_Station_L1_Mass_Driver_00,
+			HP_Underworld_Station_L1_LC_00,
+			HP_Underworld_Station_L1_TBL_00,
+			HP_Underworld_Station_L2_LC_01,
+			HP_Underworld_Station_L2_TBL_01,
+			HP_Underworld_Station_L2_PRT_00,
+			HP_Underworld_Station_L3_IC_00,
+			HP_Underworld_Station_L3_Mass_Driver_01,
+			HP_Underworld_Station_L3_PRT_01,
+			HP_Underworld_L3_Station_Main_Cannon
+		</HardPoints>
+		
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Underworld,
+				StarViper_Squadron, 
+				Crusader_Gunship,
+				Skipray_Squadron,
+				Interceptor4_Frigate,
+				Vengeance_Frigate,
+				Bossk_Team_Space_MP,
+				IG88_Team_Space_MP,
+				Cloakshape_Squadron,
+				Corellian_Frigate,
+				Munificent_Frigate,
+				Vulture_Droid_Squadron,
+				Tri_Droid_Squadron,
+				US_Targeting_Systems_L1_Upgrade,
+				US_Magnetically_Sealed_Armor_L1_Upgrade,
+				US_Magnetically_Sealed_Armor_L2_Upgrade,
+				US_BlackMarket_Reactors_L1_Upgrade,
+				US_BlackMarket_Reactors_L2_Upgrade,
+				US_Carbonite_Coolant_Systems_L1_Upgrade,
+				US_Reinforced_Structure_L1_Upgrade,
+				US_Reinforced_Structure_L2_Upgrade,
+				US_Cloaking_Generator_L1_Upgrade,
+				US_Plasma_Cannon_Use_Upgrade,
+				US_Level_Four_Starbase_Upgrade,
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<!-- Base upgrade sequence -->
+		<Prev_Level_Base>Skirmish_Underworld_Star_Base_2</Prev_Level_Base>
+		<Next_Level_Base>Skirmish_Underworld_Star_Base_4</Next_Level_Base>
+		
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="U_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>40.0</Base_Income_Value>
+				<Base_Interval_In_Secs>14</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="U_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>30</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_Underworld_Star_Base_3</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="U_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+
+	<StarBase Name="Skirmish_Underworld_Star_Base_4">
+		<Variant_Of_Existing_Type>Underworld_Star_Base_4</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Icon_Name>i_button_ub_station4.tga</Icon_Name>
+
+		<!-- Replacement List of Hardpoints -->
+		<HardPoints>
+			HP_Underworld_Station_L1_Supply_Dock,
+			HP_Underworld_Station_L1_Comm_Array,
+			HP_Underworld_Station_L1_Fighter_Bay,
+			HP_Underworld_Station_L1_ShieldGen,
+			HP_Underworld_Station_L1_Mass_Driver_00,
+			HP_Underworld_Station_L1_LC_00,
+			HP_Underworld_Station_L1_TBL_00,
+			HP_Underworld_Station_L2_LC_01,
+			HP_Underworld_Station_L2_TBL_01,
+			HP_Underworld_Station_L2_PRT_00,
+			HP_Underworld_Station_L3_IC_00,
+			HP_Underworld_Station_L3_Mass_Driver_01,
+			HP_Underworld_Station_L3_PRT_01,
+			HP_Underworld_L3_Station_Main_Cannon,
+			HP_Underworld_Station_L4_IC_01,
+			HP_Underworld_Station_L4_Plasma_00,
+			HP_Underworld_Station_L4_TBL_02
+		</HardPoints>
+
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Underworld,
+				StarViper_Squadron, 
+				Crusader_Gunship,
+				Skipray_Squadron,
+				Interceptor4_Frigate,
+				Vengeance_Frigate,
+				Bossk_Team_Space_MP,
+				IG88_Team_Space_MP,
+				Krayt_Class_Destroyer,
+				Cloakshape_Squadron,
+				Corellian_Frigate,
+				Munificent_Frigate,
+				Vulture_Droid_Squadron,
+				Corellian_Destroyer,
+				Recusant_Frigate,
+				Howlrunner_Squadron,
+				Tri_Droid_Squadron,
+				US_Targeting_Systems_L1_Upgrade,
+				US_Targeting_Systems_L2_Upgrade,
+				US_Magnetically_Sealed_Armor_L1_Upgrade,
+				US_Magnetically_Sealed_Armor_L2_Upgrade,
+				US_BlackMarket_Reactors_L1_Upgrade,
+				US_BlackMarket_Reactors_L2_Upgrade,
+				US_BlackMarket_Reactors_L3_Upgrade,
+				US_Carbonite_Coolant_Systems_L1_Upgrade,
+				US_Carbonite_Coolant_Systems_L2_Upgrade,
+				US_Reinforced_Structure_L1_Upgrade,
+				US_Reinforced_Structure_L2_Upgrade,
+				US_Cloaking_Generator_L1_Upgrade,
+				US_Plasma_Cannon_Use_Upgrade,
+				US_Level_Five_Starbase_Upgrade,
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<!-- Base upgrade sequence -->
+		<Prev_Level_Base>Skirmish_Underworld_Star_Base_3</Prev_Level_Base>
+		<Next_Level_Base>Skirmish_Underworld_Star_Base_5</Next_Level_Base>
+			
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="U_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>45.0</Base_Income_Value>
+				<Base_Interval_In_Secs>16</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="U_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>35</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_Underworld_Star_Base_4</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="U_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+
+
+
+	<StarBase Name="Skirmish_Underworld_Star_Base_5">
+		<Variant_Of_Existing_Type>Underworld_Star_Base_5</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Icon_Name>i_button_ub_station5.tga</Icon_Name>
+
+		<!-- Replacement List of Hardpoints -->
+		<HardPoints>
+			HP_Underworld_Station_L1_Supply_Dock,
+			HP_Underworld_Station_L1_Comm_Array,
+			HP_Underworld_Station_L1_Fighter_Bay,
+			HP_Underworld_Station_L1_ShieldGen,
+			HP_Underworld_Station_L1_Mass_Driver_00,
+			HP_Underworld_Station_L1_LC_00,
+			HP_Underworld_Station_L1_TBL_00,
+			HP_Underworld_Station_L2_LC_01,
+			HP_Underworld_Station_L2_TBL_01,
+			HP_Underworld_Station_L2_PRT_00,
+			HP_Underworld_Station_L3_IC_00,
+			HP_Underworld_Station_L3_Mass_Driver_01,
+			HP_Underworld_Station_L3_PRT_01,
+			HP_Underworld_L3_Station_Main_Cannon,
+			HP_Underworld_Station_L4_IC_01,
+			HP_Underworld_Station_L4_Plasma_00,
+			HP_Underworld_Station_L4_TBL_02,
+			HP_Underworld_Station_L5_IC_02,
+			HP_Underworld_Station_L5_Mass_Driver_02,
+			HP_Underworld_Station_L5_Plasma_01,
+			HP_Underworld_Station_L5_PRT_02,
+			HP_Underworld_Station_L5_TBL_03
+		</HardPoints>
+
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Underworld,
+				StarViper_Squadron, 
+				Crusader_Gunship,
+				Skipray_Squadron,
+				Interceptor4_Frigate,
+				Vengeance_Frigate,
+				Bossk_Team_Space_MP,
+				IG88_Team_Space_MP,
+				Kedalbe_Battleship,
+				Krayt_Class_Destroyer,
+				The_Peacebringer,
+				Cloakshape_Squadron,
+				Corellian_Frigate,
+				Munificent_Frigate,
+				Vulture_Droid_Squadron,
+				Corellian_Destroyer,
+				Recusant_Frigate,
+				Howlrunner_Squadron,
+				Providence_Class_Carrier,
+				Corellian_BattleCruiser,
+				Lucrehulk_Battleship,
+				Tri_Droid_Squadron,
+				US_Targeting_Systems_L1_Upgrade,
+				US_Targeting_Systems_L2_Upgrade,
+				US_Targeting_Systems_L3_Upgrade,
+				US_Magnetically_Sealed_Armor_L1_Upgrade,
+				US_Magnetically_Sealed_Armor_L2_Upgrade,
+				US_Magnetically_Sealed_Armor_L3_Upgrade,
+				US_BlackMarket_Reactors_L1_Upgrade,
+				US_BlackMarket_Reactors_L2_Upgrade,
+				US_BlackMarket_Reactors_L3_Upgrade,
+				US_Carbonite_Coolant_Systems_L1_Upgrade,
+				US_Carbonite_Coolant_Systems_L2_Upgrade,
+				US_Reinforced_Structure_L1_Upgrade,
+				US_Reinforced_Structure_L2_Upgrade,
+				US_Reinforced_Structure_L3_Upgrade,
+				US_Cloaking_Generator_L1_Upgrade,
+				US_Cloaking_Generator_L2_Upgrade,
+				US_Plasma_Cannon_Use_Upgrade,
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<!-- Base upgrade sequence -->
+		<Prev_Level_Base>Skirmish_Underworld_Star_Base_4</Prev_Level_Base>
+		<Next_Level_Base />
+		
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="U_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>55</Base_Income_Value>
+				<Base_Interval_In_Secs>18</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="U_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>45</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_Underworld_Star_Base_5</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="U_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+
+
+
+
+<!-- ================== Skirmish Space Shipyard  =================== -->  
+
+
+	<StarBase Name="Underworld_Shipyard">
+		<GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
+		<Text_ID>TEXT_SHIPYARD</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_SHIPYARD</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STATION</Encyclopedia_Unit_Class>
+		<Scale_Factor>0.4</Scale_Factor>
+		
+		<GUI_Row> 0 </GUI_Row>
+		<Space_Model_Name>F_Shipyard.ALO</Space_Model_Name>
+		<Galactic_Model_Name>F_Shipyard.ALO</Galactic_Model_Name>
+		<Select_Box_Scale>1000</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Is_Dummy>No</Is_Dummy>
+		<Affiliation>Underworld</Affiliation>
+		<Build_Cost_Credits>600</Build_Cost_Credits>
+		<AI_Combat_Power>1000</AI_Combat_Power>
+		<Build_Time_Seconds>25</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Size_Value>10</Size_Value>
+		<Base_Level>1</Base_Level>
+		<Prev_Level_Base />
+		<Next_Level_Base></Next_Level_Base>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>4</Required_Star_Base_Level>
+		<CategoryMask> Capital | AntiCapital | AntiFighter | AntiBomber </CategoryMask>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Reinforcement_Prevention_Radius> 500 </Reinforcement_Prevention_Radius>
+		<Tech_Level>99</Tech_Level>  
+		<Armor_Type> Armor_Station </Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+
+		<Tactical_Buildable_Objects_Campaign> 
+			Underworld,
+				
+
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Autoresolve_Health>750</Autoresolve_Health>
+		<Damage>50</Damage>
+		<Shield_Points>5000</Shield_Points>
+		<Tactical_Health>6000</Tactical_Health>
+		<Shield_Refresh_Rate>60</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1800.0</Targeting_Max_Attack_Distance>
+
+				
+		<!-- Comm Array and Supply dock should be replaced by dummy hard points -->
+		
+		<GUI_Model_Name>F_Shipyard.ALO</GUI_Model_Name>
+		<GUI_Distance>4700</GUI_Distance>
+		<GUI_Offset>0 0 -300</GUI_Offset>
+		<GUI_Angles>90 0 0</GUI_Angles>
+		<GUI_Velocity>45</GUI_Velocity>
+		<GUI_X_Rot>0</GUI_X_Rot>
+		<Victory_Relevant>yes</Victory_Relevant>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_All_Weapons_Destroyed> </SFXEvent_Hardpoint_All_Weapons_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Unit_Under_Attack> UHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<Custom_Soft_Footprint_Radius> 300 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        	<Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Radar_Icon_Size>0.12  0.12</Radar_Icon_Size>
+		<!-- <Radar_Icon_Name>i_radar_station1_r.tga</Radar_Icon_Name>-->
+
+		<Icon_Name>i_button_Shipyard.tga</Icon_Name>
+		<Score_Cost_Credits> 1500</Score_Cost_Credits>
+		
+		<Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_1_Rebel</Retreat_Self_Destruct_Explosion>
+		
+		<Death_Clone>Damage_Normal, Underworld_Shipyard_Death_Clone</Death_Clone>
+		<Additional_Population_Capacity>10</Additional_Population_Capacity>
+	</StarBase>
+
+	<StarBase Name="Underworld_Shipyard_Death_Clone">
+		<Text_ID>TEXT_SHIPYARD</Text_ID>
+		<Space_Model_Name>F_Shipyard.alo</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<CategoryMask> Capital </CategoryMask>
+		<Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+		<Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+		<Scale_Factor>0.4</Scale_Factor>
+		<Death_Persistence_Duration> 0 </Death_Persistence_Duration>
+	</StarBase>
+
+
+<StarBase Name="Underworld_Shipyard_2">
+		<GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
+		<Text_ID>TEXT_SHIPYARD</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_SHIPYARD</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STATION</Encyclopedia_Unit_Class>
+		<Scale_Factor>0.5</Scale_Factor>
+		
+		<GUI_Row> 0 </GUI_Row>
+		<Space_Model_Name>F_Shipyard.ALO</Space_Model_Name>
+		<Galactic_Model_Name>F_Shipyard.ALO</Galactic_Model_Name>
+		<Select_Box_Scale>1000</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Is_Dummy>No</Is_Dummy>
+		<Affiliation>Underworld</Affiliation>
+		<Build_Cost_Credits>600</Build_Cost_Credits>
+		<AI_Combat_Power>1000</AI_Combat_Power>
+		<Build_Time_Seconds>25</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Size_Value>10</Size_Value>
+		<Base_Level>1</Base_Level>
+		<Prev_Level_Base />
+		<Next_Level_Base></Next_Level_Base>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>4</Required_Star_Base_Level>
+		<CategoryMask> Capital | AntiCapital | AntiFighter | AntiBomber </CategoryMask>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Reinforcement_Prevention_Radius> 500 </Reinforcement_Prevention_Radius>
+		<Tech_Level>99</Tech_Level>  
+		<Armor_Type> Armor_Station </Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+
+		<Tactical_Buildable_Objects_Campaign> 
+			Underworld,
+				
+
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Autoresolve_Health>750</Autoresolve_Health>
+		<Damage>50</Damage>
+		<Shield_Points>5000</Shield_Points>
+		<Tactical_Health>6000</Tactical_Health>
+		<Shield_Refresh_Rate>60</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1800.0</Targeting_Max_Attack_Distance>
+
+				
+		<!-- Comm Array and Supply dock should be replaced by dummy hard points -->
+		
+		<GUI_Model_Name>F_Shipyard.ALO</GUI_Model_Name>
+		<GUI_Distance>4700</GUI_Distance>
+		<GUI_Offset>0 0 -300</GUI_Offset>
+		<GUI_Angles>90 0 0</GUI_Angles>
+		<GUI_Velocity>45</GUI_Velocity>
+		<GUI_X_Rot>0</GUI_X_Rot>
+		<Victory_Relevant>yes</Victory_Relevant>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_All_Weapons_Destroyed> </SFXEvent_Hardpoint_All_Weapons_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Unit_Under_Attack> UHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<Custom_Soft_Footprint_Radius> 300 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        	<Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Radar_Icon_Size>0.12  0.12</Radar_Icon_Size>
+		<!-- <Radar_Icon_Name>i_radar_station1_r.tga</Radar_Icon_Name>-->
+
+		<Icon_Name>i_button_Shipyard.tga</Icon_Name>
+		<Score_Cost_Credits> 1500</Score_Cost_Credits>
+		
+		<Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_1_Rebel</Retreat_Self_Destruct_Explosion>
+		
+		<Death_Clone>Damage_Normal, Underworld_Shipyard_Death_Clone_2</Death_Clone>
+		<Additional_Population_Capacity>10</Additional_Population_Capacity>
+	</StarBase>
+
+	<StarBase Name="Underworld_Shipyard_Death_Clone_2">
+		<Text_ID>TEXT_SHIPYARD</Text_ID>
+		<Space_Model_Name>F_Shipyard.alo</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<CategoryMask> Capital </CategoryMask>
+		<Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+		<Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Death_Persistence_Duration> 0 </Death_Persistence_Duration>
+	</StarBase>
+
+<StarBase Name="Underworld_Shipyard_3">
+		<GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
+		<Text_ID>TEXT_SHIPYARD</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_SHIPYARD</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STATION</Encyclopedia_Unit_Class>
+		<Scale_Factor>0.6</Scale_Factor>
+		
+		<GUI_Row> 0 </GUI_Row>
+		<Space_Model_Name>F_Shipyard.ALO</Space_Model_Name>
+		<Galactic_Model_Name>F_Shipyard.ALO</Galactic_Model_Name>
+		<Select_Box_Scale>1000</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Is_Dummy>No</Is_Dummy>
+		<Affiliation>Underworld</Affiliation>
+		<Build_Cost_Credits>600</Build_Cost_Credits>
+		<AI_Combat_Power>1000</AI_Combat_Power>
+		<Build_Time_Seconds>25</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Size_Value>10</Size_Value>
+		<Base_Level>1</Base_Level>
+		<Prev_Level_Base />
+		<Next_Level_Base></Next_Level_Base>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>4</Required_Star_Base_Level>
+		<CategoryMask> Capital | AntiCapital | AntiFighter | AntiBomber </CategoryMask>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Reinforcement_Prevention_Radius> 500 </Reinforcement_Prevention_Radius>
+		<Tech_Level>99</Tech_Level>  
+		<Armor_Type> Armor_Station </Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+
+		<Tactical_Buildable_Objects_Campaign> 
+			Underworld,
+				
+
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Autoresolve_Health>750</Autoresolve_Health>
+		<Damage>50</Damage>
+		<Shield_Points>5000</Shield_Points>
+		<Tactical_Health>6000</Tactical_Health>
+		<Shield_Refresh_Rate>60</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1800.0</Targeting_Max_Attack_Distance>
+
+				
+		<!-- Comm Array and Supply dock should be replaced by dummy hard points -->
+		
+		<GUI_Model_Name>F_Shipyard.ALO</GUI_Model_Name>
+		<GUI_Distance>4700</GUI_Distance>
+		<GUI_Offset>0 0 -300</GUI_Offset>
+		<GUI_Angles>90 0 0</GUI_Angles>
+		<GUI_Velocity>45</GUI_Velocity>
+		<GUI_X_Rot>0</GUI_X_Rot>
+		<Victory_Relevant>yes</Victory_Relevant>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_All_Weapons_Destroyed> </SFXEvent_Hardpoint_All_Weapons_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Unit_Under_Attack> UHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<Custom_Soft_Footprint_Radius> 300 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        	<Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Radar_Icon_Size>0.12  0.12</Radar_Icon_Size>
+		<!-- <Radar_Icon_Name>i_radar_station1_r.tga</Radar_Icon_Name>-->
+
+		<Icon_Name>i_button_Shipyard.tga</Icon_Name>
+		<Score_Cost_Credits> 1500</Score_Cost_Credits>
+		
+		<Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_1_Rebel</Retreat_Self_Destruct_Explosion>
+		
+		<Death_Clone>Damage_Normal, Underworld_Shipyard_Death_Clone_3</Death_Clone>
+		<Additional_Population_Capacity>10</Additional_Population_Capacity>
+	</StarBase>
+
+	<StarBase Name="Underworld_Shipyard_Death_Clone_3">
+		<Text_ID>TEXT_SHIPYARD</Text_ID>
+		<Space_Model_Name>F_Shipyard.alo</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<CategoryMask> Capital </CategoryMask>
+		<Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+		<Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+		<Scale_Factor>0.6</Scale_Factor>
+		<Death_Persistence_Duration> 0 </Death_Persistence_Duration>
+	</StarBase>
+
+<StarBase Name="Underworld_Shipyard_4">
+		<GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
+		<Text_ID>TEXT_SHIPYARD</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_SHIPYARD</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STATION</Encyclopedia_Unit_Class>
+		<Scale_Factor>0.7</Scale_Factor>
+		
+		<GUI_Row> 0 </GUI_Row>
+		<Space_Model_Name>F_Shipyard.ALO</Space_Model_Name>
+		<Galactic_Model_Name>F_Shipyard.ALO</Galactic_Model_Name>
+		<Select_Box_Scale>1000</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Is_Dummy>No</Is_Dummy>
+		<Affiliation>Underworld</Affiliation>
+		<Build_Cost_Credits>600</Build_Cost_Credits>
+		<AI_Combat_Power>1000</AI_Combat_Power>
+		<Build_Time_Seconds>25</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Size_Value>10</Size_Value>
+		<Base_Level>1</Base_Level>
+		<Prev_Level_Base />
+		<Next_Level_Base></Next_Level_Base>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>4</Required_Star_Base_Level>
+		<CategoryMask> Capital | AntiCapital | AntiFighter | AntiBomber </CategoryMask>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Reinforcement_Prevention_Radius> 500 </Reinforcement_Prevention_Radius>
+		<Tech_Level>99</Tech_Level>  
+		<Armor_Type> Armor_Station </Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+
+		<Tactical_Buildable_Objects_Campaign> 
+			Underworld,
+				
+
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Autoresolve_Health>750</Autoresolve_Health>
+		<Damage>50</Damage>
+		<Shield_Points>5000</Shield_Points>
+		<Tactical_Health>6000</Tactical_Health>
+		<Shield_Refresh_Rate>60</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1800.0</Targeting_Max_Attack_Distance>
+
+				
+		<!-- Comm Array and Supply dock should be replaced by dummy hard points -->
+		
+		<GUI_Model_Name>F_Shipyard.ALO</GUI_Model_Name>
+		<GUI_Distance>4700</GUI_Distance>
+		<GUI_Offset>0 0 -300</GUI_Offset>
+		<GUI_Angles>90 0 0</GUI_Angles>
+		<GUI_Velocity>45</GUI_Velocity>
+		<GUI_X_Rot>0</GUI_X_Rot>
+		<Victory_Relevant>yes</Victory_Relevant>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_All_Weapons_Destroyed> </SFXEvent_Hardpoint_All_Weapons_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Unit_Under_Attack> UHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<Custom_Soft_Footprint_Radius> 300 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        	<Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Radar_Icon_Size>0.12  0.12</Radar_Icon_Size>
+		<!-- <Radar_Icon_Name>i_radar_station1_r.tga</Radar_Icon_Name>-->
+
+		<Icon_Name>i_button_Shipyard.tga</Icon_Name>
+		<Score_Cost_Credits> 1500</Score_Cost_Credits>
+		
+		<Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_1_Rebel</Retreat_Self_Destruct_Explosion>
+		
+		<Death_Clone>Damage_Normal, Underworld_Shipyard_Death_Clone_4</Death_Clone>
+		<Additional_Population_Capacity>10</Additional_Population_Capacity>
+	</StarBase>
+
+	<StarBase Name="Underworld_Shipyard_Death_Clone_4">
+		<Text_ID>TEXT_SHIPYARD</Text_ID>
+		<Space_Model_Name>F_Shipyard.alo</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<CategoryMask> Capital </CategoryMask>
+		<Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+		<Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+		<Scale_Factor>0.7</Scale_Factor>
+		<Death_Persistence_Duration> 0 </Death_Persistence_Duration>
+	</StarBase>
+
+<StarBase Name="Underworld_Shipyard_5">
+		<GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
+		<Text_ID>TEXT_SHIPYARD</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_SHIPYARD</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STATION</Encyclopedia_Unit_Class>
+		<Scale_Factor>0.7</Scale_Factor>
+		
+		<GUI_Row> 0 </GUI_Row>
+		<Space_Model_Name>F_Shipyard_2.ALO</Space_Model_Name>
+		<Galactic_Model_Name>F_Shipyard_2.ALO</Galactic_Model_Name>
+		<Select_Box_Scale>1000</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Is_Dummy>No</Is_Dummy>
+		<Affiliation>Underworld</Affiliation>
+		<Build_Cost_Credits>600</Build_Cost_Credits>
+		<AI_Combat_Power>1000</AI_Combat_Power>
+		<Build_Time_Seconds>25</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Size_Value>10</Size_Value>
+		<Base_Level>1</Base_Level>
+		<Prev_Level_Base />
+		<Next_Level_Base></Next_Level_Base>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>4</Required_Star_Base_Level>
+		<CategoryMask> Capital | AntiCapital | AntiFighter | AntiBomber </CategoryMask>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Reinforcement_Prevention_Radius> 500 </Reinforcement_Prevention_Radius>
+		<Tech_Level>99</Tech_Level>  
+		<Armor_Type> Armor_Station </Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		
+			<HardPoints>
+		 HP_Imp_Shipyard_05,
+			HP_Imp_Shipyard_06,
+			HP_Imp_Shipyard_07,
+			HP_Imp_Shipyard_08,
+     
+		</HardPoints>
+		
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+
+		<Tactical_Buildable_Objects_Campaign> 
+			Underworld,
+				
+
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Autoresolve_Health>750</Autoresolve_Health>
+		<Damage>50</Damage>
+		<Shield_Points>5000</Shield_Points>
+		<Tactical_Health>6000</Tactical_Health>
+		<Shield_Refresh_Rate>60</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1800.0</Targeting_Max_Attack_Distance>
+
+				
+		<!-- Comm Array and Supply dock should be replaced by dummy hard points -->
+		
+		<GUI_Model_Name>F_Shipyard_2.ALO</GUI_Model_Name>
+		<GUI_Distance>4700</GUI_Distance>
+		<GUI_Offset>0 0 -300</GUI_Offset>
+		<GUI_Angles>90 0 0</GUI_Angles>
+		<GUI_Velocity>45</GUI_Velocity>
+		<GUI_X_Rot>0</GUI_X_Rot>
+		<Victory_Relevant>yes</Victory_Relevant>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_All_Weapons_Destroyed> </SFXEvent_Hardpoint_All_Weapons_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Unit_Under_Attack> UHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<Custom_Soft_Footprint_Radius> 300 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        	<Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Radar_Icon_Size>0.12  0.12</Radar_Icon_Size>
+		<!-- <Radar_Icon_Name>i_radar_station1_r.tga</Radar_Icon_Name>-->
+
+		<Icon_Name>i_button_Shipyard.tga</Icon_Name>
+		<Score_Cost_Credits> 1500</Score_Cost_Credits>
+		
+		<Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_1_Rebel</Retreat_Self_Destruct_Explosion>
+		
+		<Death_Clone>Damage_Normal, Underworld_Shipyard_Death_Clone_5</Death_Clone>
+		<Additional_Population_Capacity>10</Additional_Population_Capacity>
+	</StarBase>
+
+	<StarBase Name="Underworld_Shipyard_Death_Clone_5">
+		<Text_ID>TEXT_SHIPYARD</Text_ID>
+		<Space_Model_Name>F_Shipyard_2.alo</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<CategoryMask> Capital </CategoryMask>
+		<Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+		<Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+		<Scale_Factor>0.7</Scale_Factor>
+		<Death_Persistence_Duration> 0 </Death_Persistence_Duration>
+	</StarBase>
+
+
+
+
+<!-- SKIRMISH SPECIFIC STARBASES DEFINED BELOW -->
+	
+	<StarBase Name="Skirmish_Underworld_Shipyard">
+		<Variant_Of_Existing_Type>Underworld_Shipyard</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Scale_Factor>0.4</Scale_Factor>
+
+		<Damage>50</Damage>
+		<Shield_Points>5000</Shield_Points>
+		<Tactical_Health>6000</Tactical_Health>
+		<Shield_Refresh_Rate>70</Shield_Refresh_Rate>
+
+	
+
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Underworld,
+				Ginivex_Squadron,
+				Nantex_Squadron,
+				US_Level_Two_Shipyard_Upgrade
+		</Tactical_Buildable_Objects_Multiplayer>
+				
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Reinforcement_Prevention_Radius> 500 </Reinforcement_Prevention_Radius>
+
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<!-- Base upgrade sequence -->
+		<Prev_Level_Base />
+		<Next_Level_Base>Skirmish_Underworld_Shipyard_2</Next_Level_Base>
+		
+		
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+
+<StarBase Name="Skirmish_Underworld_Shipyard_2">
+		<Variant_Of_Existing_Type>Underworld_Shipyard_2</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Scale_Factor>0.5</Scale_Factor>
+
+		<Damage>50</Damage>
+		<Shield_Points>7000</Shield_Points>
+		<Tactical_Health>9000</Tactical_Health>
+		<Shield_Refresh_Rate>70</Shield_Refresh_Rate>
+
+	
+
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Underworld,
+				Ginivex_Squadron,
+				Nantex_Squadron,
+				Mankvim_Squadron,
+				Cloakshape_Squadron,
+				US_Level_Three_Shipyard_Upgrade
+		</Tactical_Buildable_Objects_Multiplayer>
+				
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Reinforcement_Prevention_Radius> 500 </Reinforcement_Prevention_Radius>
+
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<!-- Base upgrade sequence -->
+		<Prev_Level_Base>Skirmish_Underworld_Shipyard</Prev_Level_Base>
+		<Next_Level_Base>Skirmish_Underworld_Shipyard_3</Next_Level_Base>
+		
+		
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+
+<StarBase Name="Skirmish_Underworld_Shipyard_3">
+		<Variant_Of_Existing_Type>Underworld_Shipyard_3</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Scale_Factor>0.6</Scale_Factor>
+
+		<Damage>50</Damage>
+		<Shield_Points>9000</Shield_Points>
+		<Tactical_Health>10000</Tactical_Health>
+		<Shield_Refresh_Rate>70</Shield_Refresh_Rate>
+
+	
+
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Underworld,
+				Ginivex_Squadron,
+				Nantex_Squadron,
+				Mankvim_Squadron,
+				Cloakshape_Squadron,
+				Corellian_Frigate,
+				Technounion_Frigate,
+				Vulture_Droid_Squadron,
+				US_Level_Four_Shipyard_Upgrade
+		</Tactical_Buildable_Objects_Multiplayer>
+				
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Reinforcement_Prevention_Radius> 500 </Reinforcement_Prevention_Radius>
+
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<!-- Base upgrade sequence -->
+		<Prev_Level_Base>Skirmish_Underworld_Shipyard_2</Prev_Level_Base>
+		<Next_Level_Base>Skirmish_Underworld_Shipyard_4</Next_Level_Base>
+		
+		
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+
+<StarBase Name="Skirmish_Underworld_Shipyard_4">
+		<Variant_Of_Existing_Type>Underworld_Shipyard_4</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Scale_Factor>0.7</Scale_Factor>
+
+		<Damage>50</Damage>
+		<Shield_Points>10000</Shield_Points>
+		<Tactical_Health>10000</Tactical_Health>
+		<Shield_Refresh_Rate>70</Shield_Refresh_Rate>
+
+	
+
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Underworld,
+				Ginivex_Squadron,
+				Nantex_Squadron,
+				Mankvim_Squadron,
+				Cloakshape_Squadron,
+				Corellian_Frigate,
+				Technounion_Frigate,
+				Munificent_Frigate,
+				Recusant_Frigate,
+				Corellian_Destroyer,
+				Lucrehulk_Battleship,
+				Tri_Droid_Squadron,
+				Vulture_Droid_Squadron,
+				US_Level_Five_Shipayard_Upgrade
+		</Tactical_Buildable_Objects_Multiplayer>
+				
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Reinforcement_Prevention_Radius> 500 </Reinforcement_Prevention_Radius>
+
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<!-- Base upgrade sequence -->
+		<Prev_Level_Base>Skirmish_Underworld_Shipyard_3</Prev_Level_Base>
+		<Next_Level_Base>Skirmish_Underworld_Shipyard_5</Next_Level_Base>
+		
+		
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+
+<StarBase Name="Skirmish_Underworld_Shipyard_5">
+		<Variant_Of_Existing_Type>Underworld_Shipyard_5</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Scale_Factor>0.7</Scale_Factor>
+
+		<Damage>50</Damage>
+		<Shield_Points>10000</Shield_Points>
+		<Tactical_Health>10000</Tactical_Health>
+		<Shield_Refresh_Rate>70</Shield_Refresh_Rate>
+
+    	<HardPoints>
+		 HP_Imp_Shipyard_05,
+			HP_Imp_Shipyard_06,
+			HP_Imp_Shipyard_07,
+			HP_Imp_Shipyard_08,
+     
+		</HardPoints>
+	
+
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Underworld,
+				Ginivex_Squadron,
+				Nantex_Squadron,
+				Mankvim_Squadron,
+				Cloakshape_Squadron,
+				Corellian_Frigate,
+				Technounion_Frigate,
+				Munificent_Frigate,
+				Recusant_Frigate,
+				Corellian_Destroyer,
+				Lucrehulk_Battleship,
+				Tri_Droid_Squadron,
+				Vulture_Droid_Squadron,
+				Pinnace,
+				Providence_Class_Carrier,
+				Corellian_BattleCruiser
+				
+		</Tactical_Buildable_Objects_Multiplayer>
+				
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Reinforcement_Prevention_Radius> 500 </Reinforcement_Prevention_Radius>
+
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<!-- Base upgrade sequence -->
+		<Prev_Level_Base>Skirmish_Underworld_Shipyard_4</Prev_Level_Base>
+		<Next_Level_Base/>
+		
+		
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+
+
+</StarBases>

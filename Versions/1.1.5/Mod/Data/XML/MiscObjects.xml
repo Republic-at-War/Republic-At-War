@@ -1,0 +1,353 @@
+<?xml version="1.0"?>
+<MiscObjects>
+
+	<MiscObject Name="Demolition_Bomb">
+		<Text_ID>TEXT_OBJECT_BOMB</Text_ID>
+		<Land_Model_Name>w_smallbomb.alo</Land_Model_Name>
+		<LandBehavior>BOMB</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Death_Explosions>Small_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Katarn_Building_Bomb_SFX</Death_SFXEvent_Start_Die>
+   </MiscObject>
+
+
+
+
+	<!--
+	Oksana [5/30/2005]:
+	Currect system can't target a position, only an object, so we
+	setup this dummy invisible object so that barrage mode can target it without having to rewrite entire hardpoint,
+	team and weapon targeting systems. -->
+	<MiscObject Name="Dummy_Barrage_Target">
+		<Text_ID></Text_ID>
+		<Model_Name>w_smallbomb.alo</Model_Name>
+		<LandBehavior>MARKER</LandBehavior>
+		<SpaceBehavior>MARKER</SpaceBehavior>
+		<Scale_Factor>100.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<CategoryMask> Corvette  </CategoryMask>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+        <Influences_Capture_Point>no</Influences_Capture_Point>
+   </MiscObject>
+
+   <MiscObject Name="Credit_Power_Up">
+		<Text_ID></Text_ID>
+		<Land_Model_Name>W_PICK_UP_COINS.ALO</Land_Model_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Is_Decoration>No</Is_Decoration>
+		<Scale_Factor>1.0</Scale_Factor>
+ 		<Is_Visible_On_Radar>True</Is_Visible_On_Radar>
+ 		<Lua_Script>CreditPowerUp</Lua_Script>
+  </MiscObject>
+  
+  <MiscObject Name="Credit_Penalty">
+		<Text_ID></Text_ID>
+		<Land_Model_Name>W_PICK_UP_COINS.ALO</Land_Model_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Is_Decoration>No</Is_Decoration>
+		<Scale_Factor>1.0</Scale_Factor>
+ 		<Is_Visible_On_Radar>True</Is_Visible_On_Radar>
+ 		<Lua_Script>Deathpenalty</Lua_Script>
+  </MiscObject>
+  
+  <MiscObject Name="Credit_Penalty_Space">
+		<Text_ID></Text_ID>
+		<Space_Model_Name>W_PICK_UP_COINS.ALO</Space_Model_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Is_Decoration>No</Is_Decoration>
+		<Scale_Factor>1.0</Scale_Factor>
+ 		<Is_Visible_On_Radar>True</Is_Visible_On_Radar>
+ 		<Lua_Script>Deathpenalty</Lua_Script>
+  </MiscObject>
+  
+  <MiscObject Name="Credit_Penalty_Space_Large">
+		<Text_ID></Text_ID>
+		<Space_Model_Name>W_PICK_UP_COINS.ALO</Space_Model_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Is_Decoration>No</Is_Decoration>
+		<Scale_Factor>1.0</Scale_Factor>
+ 		<Is_Visible_On_Radar>True</Is_Visible_On_Radar>
+ 		<Lua_Script>Deathpenalty1</Lua_Script>
+  </MiscObject>
+  
+  <MiscObject Name="Tech_Power_Up">
+		<Text_ID></Text_ID>
+		<Land_Model_Name>W_FLAG_MARKER_RED.ALO</Land_Model_Name>
+		<Is_Decoration>No</Is_Decoration>
+		<Scale_Factor>1.0</Scale_Factor>
+ 		<Is_Visible_On_Radar>True</Is_Visible_On_Radar>
+ 		<Lua_Script>TechPowerUp</Lua_Script>
+  </MiscObject>
+  
+  
+	<MiscObject Name="R_Multiplayer_Beacon">
+		<Affiliation>Rebel</Affiliation>
+		<Text_ID>TEXT_MULTIPLAYER_BEACON</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_MULTIPLAYER_BEACON  </Encyclopedia_Text>
+		<Behavior>MULTIPLAYER_BEACON, IDLE</Behavior>
+		<Land_Model_Name>i_multiplayer_beacon.alo</Land_Model_Name>
+		<Space_Model_Name>i_multiplayer_beacon.alo</Space_Model_Name>
+		<Is_Visible_On_Radar>True</Is_Visible_On_Radar>
+		<Radar_Icon_Name>i_icon_minimap_ping.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Tactical_Health> 100 </Tactical_Health>
+		<Beacon_Radar_Map_Event_Name> Default_Beacon_Placement </Beacon_Radar_Map_Event_Name>
+		<Beacon_Lifetime_In_Secs> 10.0 </Beacon_Lifetime_In_Secs>
+		<SFXEvent_Beacon_Placed>GUI_Toggle_Lure_On</SFXEvent_Beacon_Placed>
+	</MiscObject>
+	
+	<MiscObject Name="E_Multiplayer_Beacon">
+		<Variant_Of_Existing_Type>R_Multiplayer_Beacon</Variant_Of_Existing_Type>
+	</MiscObject>
+
+    <MiscObject Name="Radioactive_Contamination">
+        <Land_Model_Name>p_contamination_cloud.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<LandBehavior>ABILITY_COUNTDOWN, SELF_DESTRUCT</LandBehavior>
+		<Is_Decoration>No</Is_Decoration>
+        <Remove_Upon_Death>Yes</Remove_Upon_Death>
+        <Unit_Abilities_Data SubObjectList="Yes">
+
+            <Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>18</Expiration_Seconds>
+				<Spawned_Object_Type> Small_Steam_Ground </Spawned_Object_Type>
+            </Unit_Ability>
+
+        </Unit_Abilities_Data>
+        <Abilities SubObjectList="Yes">
+
+            <Force_Healing_Ability Name="Radioactive_Contamination_Infantry">
+                <Activation_Style>Ground_Automatic</Activation_Style>
+                <Heal_Range>125.0</Heal_Range>
+                <Heal_Amount>-1.8</Heal_Amount> <!-- Negative damage means inflict pain on others -->
+                <Heal_Interval_In_Secs>.10</Heal_Interval_In_Secs>
+                <Applicable_Unit_Categories> Infantry | Vehicle | Hero </Applicable_Unit_Categories>
+            </Force_Healing_Ability>
+
+            <!--<Force_Healing_Ability Name="Radioactive_Contamination_Vehicles">
+                <Activation_Style>Ground_Automatic</Activation_Style>
+                <Heal_Range>75.0</Heal_Range>
+                <Heal_Amount>-20.0</Heal_Amount>
+                <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+                <Applicable_Unit_Categories> Vehicle </Applicable_Unit_Categories>
+            </Force_Healing_Ability>
+
+            <Force_Healing_Ability Name="Radioactive_Contamination_Structures">
+                <Activation_Style>Ground_Automatic</Activation_Style>
+                <Heal_Range>75.0</Heal_Range>
+                <Heal_Amount>-1.0</Heal_Amount>
+                <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+                <Applicable_Unit_Categories> Structure </Applicable_Unit_Categories>
+            </Force_Healing_Ability>-->
+
+		</Abilities>
+    </MiscObject>
+
+    <MiscObject Name="Proximity_Mine">
+		<Land_Model_Name>w_landmine.alo</Land_Model_Name>
+        <Scale_Factor>2.0</Scale_Factor>
+		<Behavior>SELECTABLE, PROXIMITY_MINE</Behavior>
+        <LandBehavior>DAMAGE_TRACKING, HIDE_WHEN_FOGGED</LandBehavior>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+        <Is_Decoration>No</Is_Decoration>
+        <Remove_Upon_Death>Yes</Remove_Upon_Death>
+		<Death_Explosions> Proximity_Mine_Blast_Effect </Death_Explosions>
+		<Tactical_Health>1</Tactical_Health>
+        <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+        <Space_Layer> Land </Space_Layer>
+        <UnitCollisionClass> Infantry </UnitCollisionClass>
+        <CanCellStack>yes</CanCellStack>
+        <Mass>1.0</Mass>
+        <Mouse_Collide_Override_Sphere_Radius>5</Mouse_Collide_Override_Sphere_Radius>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<CategoryMask> Infantry </CategoryMask>
+		<Text_ID>TEXT_PROXIMITY_MINE</Text_ID>
+		<Encyclopedia_Text>TEXT_PROXIMITY_MINE_DESC</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_BOMB_CLASS</Encyclopedia_Unit_Class>
+        <IsDeathCloneObstacle>Yes</IsDeathCloneObstacle>
+        <Avoidance_Disabled>Yes</Avoidance_Disabled>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+        <Not_Really_Selectable>True</Not_Really_Selectable>
+    </MiscObject>
+    
+     <MiscObject Name="Proximity_Mine_Space">
+		<Space_Model_Name>w_landmine.alo</Space_Model_Name>
+        <Scale_Factor>4.0</Scale_Factor>
+		<Behavior>SELECTABLE, PROXIMITY_MINE</Behavior>
+        <LandBehavior>DAMAGE_TRACKING, HIDE_WHEN_FOGGED</LandBehavior>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+        <Is_Decoration>No</Is_Decoration>
+        <Remove_Upon_Death>Yes</Remove_Upon_Death>
+		<Death_Explosions> Proximity_Mine_Blast_Effect_Space </Death_Explosions>
+		<Tactical_Health>1</Tactical_Health>
+        <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+        <Space_Layer> Frigate </Space_Layer>
+        <UnitCollisionClass> Frigate | Capital | Super | Corvette </UnitCollisionClass>
+        <CanCellStack>yes</CanCellStack>
+        <Mass>1.0</Mass>
+        <Mouse_Collide_Override_Sphere_Radius>5</Mouse_Collide_Override_Sphere_Radius>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<CategoryMask> Frigate | Capital | Super | Corvette </CategoryMask>
+		<Text_ID>TEXT_PROXIMITY_MINE</Text_ID>
+		<Encyclopedia_Text>TEXT_PROXIMITY_MINE_DESC</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_BOMB_CLASS</Encyclopedia_Unit_Class>
+        <IsDeathCloneObstacle>Yes</IsDeathCloneObstacle>
+        <Avoidance_Disabled>Yes</Avoidance_Disabled>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+        <Not_Really_Selectable>True</Not_Really_Selectable>
+    </MiscObject>
+
+    <MiscObject Name="Plasma_Grenade_Contamination">
+        <Land_Model_Name>p_contamination_cloud.alo</Land_Model_Name>
+        <Scale_Factor>1.0</Scale_Factor>
+        <LandBehavior>ABILITY_COUNTDOWN, SELF_DESTRUCT</LandBehavior>
+        <Is_Decoration>No</Is_Decoration>
+        <Remove_Upon_Death>Yes</Remove_Upon_Death>
+        <Unit_Abilities_Data SubObjectList="Yes">
+
+            <Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>8</Expiration_Seconds>
+                <Spawned_Object_Type> Small_Steam_Ground </Spawned_Object_Type>
+            </Unit_Ability>
+
+        </Unit_Abilities_Data>
+        <Abilities SubObjectList="Yes">
+
+            <Force_Healing_Ability Name="Plasma_Grenade_Contamination_Infantry">
+                <Activation_Style>Ground_Automatic</Activation_Style>
+                <Heal_Range>75.0</Heal_Range>
+                <Heal_Amount>-10.0</Heal_Amount> <!-- Negative damage means inflict pain on others -->
+                <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+                <Applicable_Unit_Categories> Infantry </Applicable_Unit_Categories>
+            </Force_Healing_Ability>
+
+            <Force_Healing_Ability Name="Plasma_Grenade_Contamination_Vehicles">
+                <Activation_Style>Ground_Automatic</Activation_Style>
+                <Heal_Range>75.0</Heal_Range>
+                <Heal_Amount>-5.0</Heal_Amount> <!-- Negative damage means inflict pain on others -->
+                <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+                <Applicable_Unit_Categories> Vehicle </Applicable_Unit_Categories>
+            </Force_Healing_Ability>
+
+            <Force_Healing_Ability Name="Plasma_Grenade_Contamination_Structures">
+                <Activation_Style>Ground_Automatic</Activation_Style>
+                <Heal_Range>75.0</Heal_Range>
+                <Heal_Amount>-20.0</Heal_Amount> <!-- Negative damage means inflict pain on others -->
+                <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+                <Applicable_Unit_Categories> Structure </Applicable_Unit_Categories>
+            </Force_Healing_Ability>
+
+        </Abilities>
+    </MiscObject>
+
+	<MiscObject Name="Space_Special_Weapon_Source_Marker">
+		<Text_ID />
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration> <!-- Anything with a behavior other than IDLE can not be tagged as a decoration -->
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Behavior> DUMMY_SPECIAL_WEAPON_SOURCE </Behavior>
+		<Layer_Z_Adjust>-2500.0</Layer_Z_Adjust>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</MiscObject>							 
+
+<MiscObject Name="Space_Havoc_Mine">
+<GUI_Bounds_Scale>.35</GUI_Bounds_Scale>
+		<Select_Box_Scale>200</Select_Box_Scale>
+		<Text_ID>TEXT_HAVOC_SPACE_MINE</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_MINE </Encyclopedia_Unit_Class>
+		<Loop_Idle_Anim_00> Yes </Loop_Idle_Anim_00>
+		<Idle_Anim_00_Rate_Mod>1.0</Idle_Anim_00_Rate_Mod>
+		<Space_Model_Name>W_space_mine.ALO</Space_Model_Name>
+		<Scale_Factor>.15</Scale_Factor>
+		<Property_Flags>NotOpportunityTarget</Property_Flags>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, UNIT_AI, IDLE, SPACE_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED</Behavior>
+		<Space_FOW_Reveal_Range>100.0</Space_FOW_Reveal_Range>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<Mass>1.0</Mass>
+		
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+     
+     <Space_Obstacle_Radius> 100 </Space_Obstacle_Radius>
+     <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+     <Space_Layer> StaticObject </Space_Layer>
+     
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>50</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Hostile</Affiliation>
+		<Base_Level_Available>0</Base_Level_Available>
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>     
+    <Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Ranged_Target_Z_Adjust>10.0</Ranged_Target_Z_Adjust>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Death_Projectiles>Proj_Space_Mine_Detonation</Death_Projectiles>
+		<Influences_Capture_Point>false</Influences_Capture_Point>
+		
+		<Lua_Script>Spacemine</Lua_Script>
+		<CategoryMask>Structure</CategoryMask>
+		<Radar_Icon_Size>0.05  0.05</Radar_Icon_Size>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		</MiscObject>
+		
+				<MiscObject Name="Space_Mine_Lrg">
+<GUI_Bounds_Scale>.35</GUI_Bounds_Scale>
+		<Select_Box_Scale>200</Select_Box_Scale>
+		<Text_ID>TEXT_SPACE_MINE</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_MINE </Encyclopedia_Unit_Class>
+		<Space_Model_Name>W_space_mine.ALO</Space_Model_Name>
+		<Scale_Factor>.45</Scale_Factor>
+		<Property_Flags>NotOpportunityTarget</Property_Flags>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, UNIT_AI, IDLE, SPACE_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED</Behavior>
+		<Space_FOW_Reveal_Range>100.0</Space_FOW_Reveal_Range>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<Mass>1.0</Mass>
+		
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+     
+     <Space_Obstacle_Radius> 100 </Space_Obstacle_Radius>
+     <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+     <Space_Layer> StaticObject </Space_Layer>
+     
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>50</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Hostile</Affiliation>
+		<Base_Level_Available>0</Base_Level_Available>
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>     
+    <Death_SFXEvent_Start_Die>Unit_Juggernaut_Death</Death_SFXEvent_Start_Die>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Ranged_Target_Z_Adjust>10.0</Ranged_Target_Z_Adjust>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Death_Projectiles>Proj_Space_Mine_Detonation</Death_Projectiles>
+		<Influences_Capture_Point>false</Influences_Capture_Point>
+		
+		<Lua_Script>Spacemine</Lua_Script>
+		<CategoryMask>Structure</CategoryMask>
+		<Radar_Icon_Size>0.05  0.05</Radar_Icon_Size>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		</MiscObject>
+
+</MiscObjects>

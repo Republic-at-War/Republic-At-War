@@ -1,0 +1,1087 @@
+<?xml version="1.0"?>
+<GenericHeroUnits>
+
+
+	<GenericHeroUnit Name="Underworld_Saboteur">
+		<LOD_Bias>5</LOD_Bias>
+		<Text_ID>TEXT_HERO_UNIT_SABOTEUR</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_SABOTEUR TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR</Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against> Stormtrooper Rebel_Anti_Vehicle_Turret Rebel_Mobile_Defense_Unit </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Dark_Trooper_PhaseII Rebel_Infiltrator UC_Rebel_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<Icon_Name>I_button_saboteur.tga</Icon_Name>
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+
+		<Land_Model_Name>UI_Saboteur.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<GUI_Row> 1 </GUI_Row>
+		<Mass>1.0</Mass>
+		<Size_Value>75</Size_Value>
+
+		<Movement_Animation_Speed> 0.8 </Movement_Animation_Speed>
+		<Rotation_Animation_Speed> 20.0 </Rotation_Animation_Speed>
+		<Crouch_Animation_Speed> .537 </Crouch_Animation_Speed>
+		<Max_Speed>0.8</Max_Speed>
+		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+		<Custom_Soft_Footprint_Radius> 3.5 </Custom_Soft_Footprint_Radius>
+		<Custom_Hard_XExtent> 2.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 2.0 </Custom_Hard_YExtent>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> 0.3 </FormationSpacing>
+		<OverrideAcceleration> .05 </OverrideAcceleration>
+		<OverrideDeceleration> .05 </OverrideDeceleration>
+		<FormationOrder> 2 </FormationOrder>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>SURFACE_FX,WALK_LOCOMOTOR,IDLE,WEAPON, STUNNABLE, REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING, ABILITY_COUNTDOWN, TARGETING, GARRISON_UNIT</LandBehavior>
+
+		<SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<CanCellStack>yes</CanCellStack>
+		<Mass>1.0</Mass>
+
+		<Affiliation>Underworld</Affiliation>
+		<Armor_Type> Armor_Hero </Armor_Type>
+		<Tactical_Health>300</Tactical_Health>
+		<Autoresolve_Health>30</Autoresolve_Health>
+		<Shield_Points>0</Shield_Points>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Damage>4</Damage>
+		<Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+
+		<Projectile_Types>Proj_Infiltrator_Blaster</Projectile_Types>
+		<Land_FOW_Reveal_Range>200</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>150.0</Targeting_Max_Attack_Distance>
+		<Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+		<Projectile_Fire_Recharge_Seconds>1.5</Projectile_Fire_Recharge_Seconds>
+
+		<Targeting_Fire_Inaccuracy> Infantry, 3.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 10.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 10.0 </Targeting_Fire_Inaccuracy>
+
+		<SFXEvent_Select>Unit_Select_Sabateur</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Sabateur</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_Sabateur</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Sabateur</SFXEvent_Guard>
+		<SFXEvent_Group_Move>Unit_Assist_Move_Sabateur</SFXEvent_Group_Move>
+		<SFXEvent_Group_Attack>Unit_Assist_Attack_Sabateur</SFXEvent_Group_Attack>
+		<SFXEvent_Fire>Unit_Underworld_Infantry_Fire</SFXEvent_Fire>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Sabateur</SFXEvent_Fleet_Move>
+		<Death_SFXEvent_Start_Die>Unit_Rebel_Soldier_2_Death</Death_SFXEvent_Start_Die>
+		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
+
+		<CategoryMask> LandHero </CategoryMask>
+		<Ranking_In_Category> 21 </Ranking_In_Category>
+		<MovementClass> Infantry </MovementClass>
+
+		<OccupationStyle>1x1</OccupationStyle>
+		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+		<No_Reflection_Below_Detail_Level>2</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>2</No_Refraction_Below_Detail_Level>
+		<Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+		<Is_Squashable> No </Is_Squashable>
+		<Create_Team>No</Create_Team>
+
+		<Select_Box_Scale>27</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Execute_Script_On_Type>true</Execute_Script_On_Type>
+		<Attach_To_Flagship_During_Space_Battle>No</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>
+		<AI_Combat_Power>50</AI_Combat_Power>
+
+		<Neutralization_Cost>100.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+
+		<Death_Clone>Damage_Disruptor_Hand, Infantry_Disruptor_Death_Clone_00</Death_Clone>
+		<Death_Clone>Damage_Disruptor_Hand, Infantry_Disruptor_Death_Clone_01</Death_Clone>
+		<Death_Clone>Damage_Infection, Infantry_Melt_Death_Clone_00</Death_Clone>
+
+		<Death_Fade_Time>0.25</Death_Fade_Time>
+		<Death_Persistence_Duration>0.0</Death_Persistence_Duration>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+
+			<Unit_Ability>
+				<Type>PLACE_REMOTE_BOMB</Type>
+				<Recharge_Seconds>18.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name>Saboteur_Remote_Bomb_Attack</GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability> Unit_Thermal_Sabateur </SFXEvent_Target_Ability>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>DETONATE_REMOTE_BOMB</Type>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+
+			<Galactic_Stealth_Ability Name="Saboteur_Galactic_Stealth">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+
+			<Galactic_Sabotage_Ability Name="Saboteur_Galactic_Sabotage">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Activated</Activation_Style>
+				<Causes_Despawn>Yes</Causes_Despawn>
+				<Can_Destroy_Special_Structure>True</Can_Destroy_Special_Structure>
+				<Sabotage_Cost_Increase_Factor> 2.0 </Sabotage_Cost_Increase_Factor>
+			</Galactic_Sabotage_Ability>
+
+			<!--Old-style corruption
+			<Corrupt_Planet_Ability Name="Corruptor_Corrupt_Planet_1">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Activated</Activation_Style>
+				<Causes_Despawn>Yes</Causes_Despawn>
+				<Required_Corruption_Level> 0 </Required_Corruption_Level>
+				<Transition_Time_In_Secs> 15.0 </Transition_Time_In_Secs>
+				<Gameplay_Effect_Ability_Names>  </Gameplay_Effect_Ability_Names>
+				<SFXEvent_Activate> Unit_Corrupt_Sabateur</SFXEvent_Activate>
+			</Corrupt_Planet_Ability>
+			-->
+			
+			<!-- New-style corruption -->
+			<Corruption_Ability Name="Saboteur_Corruption">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Activated</Activation_Style>
+				<Causes_Despawn>Yes</Causes_Despawn>
+				<SFXEvent_Activate>Unit_Corrupt_Sabateur</SFXEvent_Activate>
+			</Corruption_Ability>
+ 
+			<System_Spy_Ability Name="Saboteur_Limited_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+			</System_Spy_Ability>
+
+			<Remote_Bomb_Ability Name="Saboteur_Remote_Bomb_Attack"> 
+				<Activation_Style> User_Input </Activation_Style> 
+				<Activation_Min_Range>5.0</Activation_Min_Range>
+				<Activation_Max_Range>130.0</Activation_Max_Range>
+				<Bomb_Type>Proj_Remote_Bomb</Bomb_Type>
+				<Toss_Anim>BOMBTOSS</Toss_Anim>
+				<Spawn_Frame>12.0</Spawn_Frame>
+				<Spawn_Bone>MuzzleB_00</Spawn_Bone>
+			</Remote_Bomb_Ability>
+
+		</Abilities>
+
+	</GenericHeroUnit>
+
+
+
+
+
+	<HeroCompany Name="Underworld_Saboteur_Team">
+		<Text_ID>TEXT_HERO_UNIT_SABOTEUR</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_SABOTEUR</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR</Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against> Stormtrooper Rebel_Anti_Vehicle_Turret Rebel_Mobile_Defense_Unit </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Dark_Trooper_PhaseII Rebel_Infiltrator UC_Rebel_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<Icon_Name>I_button_saboteur.tga</Icon_Name>
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+
+		<GUI_Row>1</GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+
+		<Affiliation>Underworld</Affiliation>
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> No </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Heroes>Yes</Build_Tab_Heroes>
+		<Combat_Power_Value>5</Combat_Power_Value>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>U_Ground_Palace</Required_Special_Structures>
+		<Required_Planets />
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+
+		<Company_Transport_Unit>Underworld_Hero_Shuttle</Company_Transport_Unit>
+		<Company_Units> Underworld_Saboteur </Company_Units>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<SFXEvent_Build_Complete>Unit_Complete_Sabateur</SFXEvent_Build_Complete>
+		<SFXEvent_Build_Started>UHD_Build_Commander</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+
+		<Population_Value>1</Population_Value>
+		<CategoryMask>LandHero</CategoryMask>
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Cheap_Bribe_Cost>0</Cheap_Bribe_Cost>
+		<Expensive_Bribe_Cost>0</Expensive_Bribe_Cost>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+		<Tactical_Build_Cost_Multiplayer>1100</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+
+			<Unit_Ability>
+				<Type>PLACE_REMOTE_BOMB</Type>
+				<Recharge_Seconds>18.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name>Saboteur_Remote_Bomb_Attack</GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability> Unit_Thermal_Sabateur </SFXEvent_Target_Ability>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>DETONATE_REMOTE_BOMB</Type>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+
+			<Remote_Bomb_Ability Name="Saboteur_Remote_Bomb_Attack"> 
+				<Activation_Style> User_Input </Activation_Style> 
+				<Activation_Min_Range>5.0</Activation_Min_Range>
+				<Activation_Max_Range>130.0</Activation_Max_Range>
+				<Bomb_Type>Proj_Remote_Bomb</Bomb_Type>
+				<Toss_Anim>BOMBTOSS</Toss_Anim>
+				<Spawn_Frame>12.0</Spawn_Frame>
+				<Spawn_Bone>MuzzleB_00</Spawn_Bone>
+			</Remote_Bomb_Ability>
+
+		</Abilities>
+
+	</HeroCompany>
+
+
+
+
+
+
+
+
+
+<GenericHeroUnit Name="Underworld_Saboteur_Exec_Demo">
+		<LOD_Bias>5</LOD_Bias>
+		<Text_ID>TEXT_HERO_UNIT_SABOTEUR</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_SABOTEUR TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR</Encyclopedia_Unit_Class>
+		<Icon_Name>I_button_saboteur.tga</Icon_Name>
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+
+		<Land_Model_Name>UI_Saboteur.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<GUI_Row> 1 </GUI_Row>
+		<Mass>1.0</Mass>
+		<Size_Value>75</Size_Value>
+
+		<Movement_Animation_Speed> 0.8 </Movement_Animation_Speed>
+		<Rotation_Animation_Speed> 20.0 </Rotation_Animation_Speed>
+		<Crouch_Animation_Speed> .537 </Crouch_Animation_Speed>
+		<Max_Speed>0.8</Max_Speed>
+		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+		<Custom_Soft_Footprint_Radius> 3.5 </Custom_Soft_Footprint_Radius>
+		<Custom_Hard_XExtent> 2.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 2.0 </Custom_Hard_YExtent>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> 0.3 </FormationSpacing>
+		<OverrideAcceleration> .05 </OverrideAcceleration>
+		<OverrideDeceleration> .05 </OverrideDeceleration>
+		<FormationOrder> 2 </FormationOrder>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>SURFACE_FX,WALK_LOCOMOTOR,IDLE,WEAPON, STUNNABLE, REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING, ABILITY_COUNTDOWN, TARGETING, GARRISON_UNIT</LandBehavior>
+
+		<SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<CanCellStack>yes</CanCellStack>
+		<Mass>1.0</Mass>
+
+		<Affiliation>Underworld</Affiliation>
+		<Armor_Type> Armor_Hero </Armor_Type>
+		<Tactical_Health>300</Tactical_Health>
+		<Autoresolve_Health>30</Autoresolve_Health>
+		<Shield_Points>0</Shield_Points>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Damage>4</Damage>
+		<Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+
+		<Projectile_Types>Proj_Infiltrator_Blaster</Projectile_Types>
+		<Land_FOW_Reveal_Range>200</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>150.0</Targeting_Max_Attack_Distance>
+		<Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+		<Projectile_Fire_Recharge_Seconds>1.5</Projectile_Fire_Recharge_Seconds>
+
+		<Targeting_Fire_Inaccuracy> Infantry, 3.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 10.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 10.0 </Targeting_Fire_Inaccuracy>
+
+		<SFXEvent_Select>Unit_Select_Sabateur</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Sabateur</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_Sabateur</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Sabateur</SFXEvent_Guard>
+		<SFXEvent_Group_Move>Unit_Assist_Move_Sabateur</SFXEvent_Group_Move>
+		<SFXEvent_Group_Attack>Unit_Assist_Attack_Sabateur</SFXEvent_Group_Attack>
+		<SFXEvent_Fire>Unit_Underworld_Infantry_Fire</SFXEvent_Fire>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Sabateur</SFXEvent_Fleet_Move>
+		<Death_SFXEvent_Start_Die>Unit_Rebel_Soldier_2_Death</Death_SFXEvent_Start_Die>
+		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
+
+		<CategoryMask> LandHero </CategoryMask>
+		<Ranking_In_Category> 21 </Ranking_In_Category>
+		<MovementClass> Infantry </MovementClass>
+
+		<OccupationStyle>1x1</OccupationStyle>
+		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+		<No_Reflection_Below_Detail_Level>2</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>2</No_Refraction_Below_Detail_Level>
+		<Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+		<Is_Squashable> Yes </Is_Squashable>
+		<Create_Team>No</Create_Team>
+
+		<Select_Box_Scale>27</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Execute_Script_On_Type>true</Execute_Script_On_Type>
+		<Attach_To_Flagship_During_Space_Battle>No</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>
+		<AI_Combat_Power>50</AI_Combat_Power>
+
+		<Neutralization_Cost>100.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+
+		<Death_Clone>Damage_Disruptor_Hand, Infantry_Disruptor_Death_Clone_00</Death_Clone>
+		<Death_Clone>Damage_Disruptor_Hand, Infantry_Disruptor_Death_Clone_01</Death_Clone>
+		<Death_Clone>Damage_Infection, Infantry_Melt_Death_Clone_00</Death_Clone>
+
+		<Death_Fade_Time>0.25</Death_Fade_Time>
+		<Death_Persistence_Duration>0.0</Death_Persistence_Duration>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+
+			<Unit_Ability>
+				<Type>PLACE_REMOTE_BOMB</Type>
+				<Recharge_Seconds>2.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name>Saboteur_Remote_Bomb_Attack</GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability> Unit_Thermal_Sabateur </SFXEvent_Target_Ability>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>DETONATE_REMOTE_BOMB</Type>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+
+			<Galactic_Stealth_Ability Name="Saboteur_Galactic_Stealth">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+
+			<Galactic_Sabotage_Ability Name="Saboteur_Galactic_Sabotage">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Activated</Activation_Style>
+				<Causes_Despawn>Yes</Causes_Despawn>
+				<Can_Destroy_Special_Structure>True</Can_Destroy_Special_Structure>
+				<Sabotage_Cost_Increase_Factor> 2.0 </Sabotage_Cost_Increase_Factor>
+			</Galactic_Sabotage_Ability>
+
+			 <!--Old-style corruption
+			<Corrupt_Planet_Ability Name="Corruptor_Corrupt_Planet_1">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Activated</Activation_Style>
+				<Causes_Despawn>Yes</Causes_Despawn>
+				<Required_Corruption_Level> 0 </Required_Corruption_Level>
+				<Transition_Time_In_Secs> 15.0 </Transition_Time_In_Secs>
+				<Gameplay_Effect_Ability_Names>  </Gameplay_Effect_Ability_Names>
+				<SFXEvent_Activate> Unit_Corrupt_Sabateur</SFXEvent_Activate>
+			</Corrupt_Planet_Ability>
+			-->
+			<!-- New-style corruption -->
+			<Corruption_Ability Name="Saboteur_Corruption">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Activated</Activation_Style>
+				<Causes_Despawn>Yes</Causes_Despawn>
+				<SFXEvent_Activate>Unit_Corrupt_Sabateur</SFXEvent_Activate>
+			</Corruption_Ability>
+
+			<System_Spy_Ability Name="Saboteur_Limited_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+			</System_Spy_Ability>
+
+			<Remote_Bomb_Ability Name="Saboteur_Remote_Bomb_Attack"> 
+				<Activation_Style> User_Input </Activation_Style> 
+				<Activation_Min_Range>5.0</Activation_Min_Range>
+				<Activation_Max_Range>250.0</Activation_Max_Range>
+				<Bomb_Type>Proj_Remote_Bomb</Bomb_Type>
+				<Toss_Anim>BOMBTOSS</Toss_Anim>
+				<Spawn_Frame>12.0</Spawn_Frame>
+				<Spawn_Bone>MuzzleB_00</Spawn_Bone>
+			</Remote_Bomb_Ability>
+
+		</Abilities>
+
+	</GenericHeroUnit>
+
+
+	<HeroCompany Name="Underworld_Saboteur_Team_Exec_Demo">
+		<Text_ID>TEXT_HERO_UNIT_SABOTEUR</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_SABOTEUR</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR</Encyclopedia_Unit_Class>
+		<Icon_Name>I_button_saboteur.tga</Icon_Name>
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+
+		<GUI_Row>1</GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+
+		<Affiliation>Underworld</Affiliation>
+		<Combat_Power_Value>5</Combat_Power_Value>
+		<Tech_Level>99</Tech_Level>
+		<Required_Planets />
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+
+		<Company_Transport_Unit>Underworld_Hero_Shuttle</Company_Transport_Unit>
+		<Company_Units> Underworld_Saboteur_Exec_Demo </Company_Units>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<SFXEvent_Build_Complete>Unit_Complete_Sabateur</SFXEvent_Build_Complete>
+		<SFXEvent_Build_Started>UHD_Build_Commander</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+
+		<Population_Value>1</Population_Value>
+		<CategoryMask>LandHero</CategoryMask>
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Cheap_Bribe_Cost>0</Cheap_Bribe_Cost>
+		<Expensive_Bribe_Cost>0</Expensive_Bribe_Cost>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+		<Tactical_Build_Cost_Multiplayer>1800</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+
+			<Unit_Ability>
+				<Type>PLACE_REMOTE_BOMB</Type>
+				<Recharge_Seconds>30.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name>Saboteur_Remote_Bomb_Attack</GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability> Unit_Thermal_Sabateur </SFXEvent_Target_Ability>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>DETONATE_REMOTE_BOMB</Type>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+
+			<Remote_Bomb_Ability Name="Saboteur_Remote_Bomb_Attack"> 
+				<Activation_Style> User_Input </Activation_Style> 
+				<Activation_Min_Range>5.0</Activation_Min_Range>
+				<Activation_Max_Range>75.0</Activation_Max_Range>
+				<Bomb_Type>Proj_Remote_Bomb</Bomb_Type>
+				<Toss_Anim>BOMBTOSS</Toss_Anim>
+				<Spawn_Frame>12.0</Spawn_Frame>
+				<Spawn_Bone>MuzzleB_00</Spawn_Bone>
+			</Remote_Bomb_Ability>
+
+		</Abilities>
+</HeroCompany>
+
+<GenericHeroUnit Name="Generic_Smuggler_U">
+		<Text_ID>TEXT_HERO_UNIT_SMUGGLER</Text_ID>
+		<GUI_Row> 1 </GUI_Row>
+		<Icon_Name>i_button_smuggler.tga</Icon_Name>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Sprite>No</Is_Sprite>
+		<Type>Walk</Type>
+		<Affiliation>Underworld</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Size_Value>75</Size_Value>
+		<!--  <Damage>2</Damage> -->
+		<Autoresolve_Health>30</Autoresolve_Health>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>Yes</Stay_In_Transport_During_Ground_Battle>
+		<Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+
+		<Neutralization_Cost>50.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+
+		<CategoryMask> NonCombatHero </CategoryMask>
+		<Ranking_In_Category> 24 </Ranking_In_Category>
+
+		<Encyclopedia_Text>TEXT_TOOLTIP_SMUGGLER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR</Encyclopedia_Unit_Class>
+
+		<Death_SFXEvent_Start_Die>EHD_Smuggler_Lost</Death_SFXEvent_Start_Die>
+
+
+		<Abilities SubObjectList="Yes">
+
+			<Galactic_Stealth_Ability Name="Smuggler_Galactic_Stealth">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+
+			<Siphon_Credits_Ability Name="Smuggler_Siphon_Credits">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Activated</Activation_Style>
+				<Causes_Despawn>Yes</Causes_Despawn>
+				<Min_Siphon_Percentage>0.8</Min_Siphon_Percentage>
+				<Max_Siphon_Percentage>0.8</Max_Siphon_Percentage>
+				<Siphon_Duration_In_Cycles>10</Siphon_Duration_In_Cycles>
+				<SFXEvent_Activate> Unit_Galactic_Siphon_Smuggler</SFXEvent_Activate>
+			</Siphon_Credits_Ability>
+
+			<System_Spy_Ability Name="Smuggler_Limited_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+			</System_Spy_Ability>
+		</Abilities>
+	</GenericHeroUnit>
+	
+	<HeroCompany Name="Smuggler_Team_U">
+		<Text_ID>TEXT_HERO_UNIT_SMUGGLER</Text_ID>
+		<Icon_Name>i_button_smuggler.tga</Icon_Name>
+		<GUI_Row>1</GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Underworld</Affiliation>
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Heroes>Yes</Build_Tab_Heroes>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+			<Required_Special_Structures>Ground_Saloon</Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+	  <Company_Transport_Unit>Underworld_Hero_Shuttle</Company_Transport_Unit>
+		<Company_Units>Generic_Smuggler_U</Company_Units>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Is_Stealth_Company>Yes</Is_Stealth_Company>
+		<SFXEvent_Build_Complete>Unit_Galactic_Announce_Smuggler</SFXEvent_Build_Complete>
+		<SFXEvent_Build_Started>EHD_Build_Smuggler</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> TEXT_TOOLTIP_SMUGGLER </Encyclopedia_Text>
+		<CategoryMask>NonCombatHero</CategoryMask>
+		<Population_Value>1</Population_Value>
+	</HeroCompany>
+	
+	<GenericHeroUnit Name="Generic_Bounty_Hunter_U">
+		<Text_ID>TEXT_HERO_UNIT_BOUNTY_HUNTER</Text_ID>
+		<GUI_Row> 1 </GUI_Row>
+		<Icon_Name>i_button_bounty_hunter.tga</Icon_Name>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Sprite>No</Is_Sprite>
+		<Type>Walk</Type>
+		<Affiliation>Underworld</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Size_Value>75</Size_Value>
+		<Autoresolve_Health>30</Autoresolve_Health>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>Yes</Stay_In_Transport_During_Ground_Battle>
+		<Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+
+		<Neutralization_Cost>50.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+		<!--AJA 11/28/2005 - Since these are manually buildable now it makes no sense to tie their respawn to the cantina <Respawn_Tied_To_Structure>Ground_Cantina_E</Respawn_Tied_To_Structure>-->
+
+		<Encyclopedia_Text>TEXT_TOOLTIP_BOUNTYHUNTER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR</Encyclopedia_Unit_Class>
+
+		<CategoryMask> NonCombatHero </CategoryMask>
+		<Ranking_In_Category> 23 </Ranking_In_Category>
+
+		<Death_SFXEvent_Start_Die>EHD_Bounty_Hunter_Lost</Death_SFXEvent_Start_Die>
+
+		<Abilities SubObjectList="Yes">
+			<Galactic_Stealth_Ability Name="Bounty_Hunter_Galactic_Stealth">
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+			<Neutralize_Hero_Ability Name="Bounty_Hunter_Neutralize_Hero">
+				<Cost_Mod_By_Base_Level>0.0,0.0, 5.0,1.0</Cost_Mod_By_Base_Level>
+				<Cost_Mod_By_Previous_Neutralizations>0.0,0.0, 1000.0,750.0</Cost_Mod_By_Previous_Neutralizations>
+				<Cost_Mod_By_Planetary_Corruption_Level>0.0,0.0, 1.0,0.25</Cost_Mod_By_Planetary_Corruption_Level>
+				<General_Minor_Hero_Cost_Mod>1.0</General_Minor_Hero_Cost_Mod>
+				<General_Major_Hero_Cost_Mod>2.0</General_Major_Hero_Cost_Mod>
+				<Owner_Respawn_Time_In_Secs>240.0, 300.0</Owner_Respawn_Time_In_Secs>
+				<Target_Respawn_Time_In_Secs>240.0, 300.0</Target_Respawn_Time_In_Secs>
+				<Can_Neutralize_Minor_Heroes>Yes</Can_Neutralize_Minor_Heroes>
+				<Can_Neutralize_Major_Heroes>No</Can_Neutralize_Major_Heroes> <!-- AJA 11/28/2005 - Joe says generic bounty hunters cannot neutralize major heroes -->
+				<SFXEvent_Activate> Unit_Galactic_Eliminate_Bounty_Hunter </SFXEvent_Activate>
+			</Neutralize_Hero_Ability>
+			<System_Spy_Ability Name="Bounty_Hunter_Limited_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+				<See_Minor_Stealth_Heroes>Yes</See_Minor_Stealth_Heroes>
+				<See_Major_Stealth_Heroes>Yes</See_Major_Stealth_Heroes>
+			</System_Spy_Ability>
+		</Abilities>
+	</GenericHeroUnit>
+
+
+<HeroCompany Name="Bounty_Hunter_Team_U">
+		<GUI_Row>1</GUI_Row>
+		<Text_ID>TEXT_HERO_UNIT_BOUNTY_HUNTER</Text_ID>
+		<Icon_Name>i_button_bounty_hunter.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Underworld</Affiliation>
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<Build_Time_Seconds>70</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Heroes>Yes</Build_Tab_Heroes>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>Ground_Saloon</Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		 <Company_Transport_Unit>Underworld_Hero_Shuttle</Company_Transport_Unit>
+		<Company_Units>Generic_Bounty_Hunter_U</Company_Units>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Is_Stealth_Company>Yes</Is_Stealth_Company>
+		<SFXEvent_Hero_Respawned>Unit_Galactic_Announce_Bounty_Hunter</SFXEvent_Hero_Respawned>
+		<SFXEvent_Build_Complete>Unit_Galactic_Announce_Bounty_Hunter</SFXEvent_Build_Complete>
+		<SFXEvent_Build_Started>EHD_Build_Bounty_Hunter</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>	
+		<Lua_Script>GenericBountyHunter</Lua_Script>
+		
+		<Encyclopedia_Text> TEXT_TOOLTIP_BOUNTYHUNTER </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MINOR </Encyclopedia_Unit_Class>
+		<CategoryMask>NonCombatHero</CategoryMask>
+		<Population_Value>1</Population_Value>
+	</HeroCompany>
+
+<GenericHeroUnit Name="Bothan_Spy">
+		<Text_ID>TEXT_HERO_UNIT_BOTHAN_SPY</Text_ID>
+		<!-- AJA 11/28/2005 - These are NOT named heroes. If you need some functionality that this flag provides, add a new flag. <Is_Named_Hero>Yes</Is_Named_Hero>-->
+		<Encyclopedia_Text>TEXT_TOOLTIP_BOTHAN_SPY TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPY</Encyclopedia_Unit_Class>
+		<GUI_Row> 1 </GUI_Row>
+		<Land_Model_Name>NI_Bothan.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>RI_INFANTRY.ALO</Land_Model_Anim_Override_Name>
+		
+		<Icon_Name>i_button_bothan_civilian.tga</Icon_Name>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Sprite>No</Is_Sprite>
+
+		<Affiliation>Rebel</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Size_Value>75</Size_Value>
+
+		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>SURFACE_FX,WALK_LOCOMOTOR,IDLE,TARGETING,WEAPON,REVEAL,HIDE_WHEN_FOGGED</LandBehavior>
+		<SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<CanCellStack>yes</CanCellStack>
+		<Mass>1.0</Mass>
+		<Armor_Type> Armor_Hero </Armor_Type>
+		
+		<Movement_Animation_Speed> 0.65 </Movement_Animation_Speed>
+		<Walk_Animation_Speed> .366 </Walk_Animation_Speed>
+		<Crouch_Animation_Speed> .537 </Crouch_Animation_Speed>
+		<Max_Speed>1.1</Max_Speed>
+		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+		<Custom_Soft_Footprint_Radius> 3.5 </Custom_Soft_Footprint_Radius>
+		<Custom_Hard_XExtent> 2.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 2.0 </Custom_Hard_YExtent>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> 0.3 </FormationSpacing>
+		<OverrideAcceleration> .07 </OverrideAcceleration>
+		<OverrideDeceleration> .07 </OverrideDeceleration>
+		<FormationOrder> 2 </FormationOrder>
+
+		<Scale_Factor>1.5</Scale_Factor>
+		<Is_Sprite>No</Is_Sprite>
+		<Shield_Points>0</Shield_Points>
+		<Autoresolve_Health>30</Autoresolve_Health>
+		<Tactical_Health>30</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Victory_Relevant>yes</Victory_Relevant>
+
+		<Damage>5</Damage>
+		<Projectile_Types>Proj_Infiltrator_Blaster</Projectile_Types>
+		<Land_FOW_Reveal_Range>75.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>150.0</Targeting_Max_Attack_Distance>
+		<Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+		<Projectile_Fire_Recharge_Seconds>1.5</Projectile_Fire_Recharge_Seconds>
+
+		<Targeting_Fire_Inaccuracy> Infantry, 3.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 10.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 10.0 </Targeting_Fire_Inaccuracy>
+
+		<SFXEvent_Select>Unit_Select_Bothan</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Bothan</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_Bothan</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Rebel_Field</SFXEvent_Guard>
+		<SFXEvent_Guard>Unit_Guard_Bothan</SFXEvent_Guard>
+		<SFXEvent_Assist_Attack>Unit_Assist_Attack_Bothan</SFXEvent_Assist_Attack>
+		<SFXEvent_Fire>Unit_Rebel_Infantry_Fire</SFXEvent_Fire>
+
+		<CategoryMask> LandHero </CategoryMask>
+		<Ranking_In_Category> 21 </Ranking_In_Category>
+		<MovementClass> Infantry </MovementClass>
+
+		<OccupationStyle>1x1</OccupationStyle>
+		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+		<No_Reflection_Below_Detail_Level>2</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>2</No_Refraction_Below_Detail_Level>
+		<Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+		<Is_Squashable> Yes </Is_Squashable>
+		<Create_Team>Yes</Create_Team>
+
+		<Select_Box_Scale>27</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Execute_Script_On_Type>true</Execute_Script_On_Type>
+		<Lua_Script>FieldCommander</Lua_Script>
+		<Attach_To_Flagship_During_Space_Battle>No</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>
+		<AI_Combat_Power>50</AI_Combat_Power>
+		
+		
+
+		<Neutralization_Cost>100.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+
+		<Death_Clone>Damage_Force_Whirlwind, Bothan_Civ_Force_Whirlwind_Death_Clone</Death_Clone>
+		<Death_Clone>Damage_Force_Lightning, Bothan_Civ_Force_Lightning_Death_Clone</Death_Clone>
+
+		<Death_Clone>Damage_Disruptor_Hand, Infantry_Disruptor_Death_Clone_00</Death_Clone>
+		<Death_Clone>Damage_Disruptor_Hand, Infantry_Disruptor_Death_Clone_01</Death_Clone>
+		<Death_Clone>Damage_Infection, Infantry_Melt_Death_Clone_00</Death_Clone>
+
+		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+
+		<Death_Fade_Time>0.25</Death_Fade_Time>
+		<Death_Persistence_Duration>0.0</Death_Persistence_Duration>
+
+		<Abilities SubObjectList="Yes">
+			
+			<Galactic_Stealth_Ability Name="Bothan_Spy_Galactic_Stealth">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+			
+			<Galactic_Sabotage_Ability Name="Bothan_Spy_Galactic_Sabotage">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Activated</Activation_Style>
+				<Causes_Despawn>Yes</Causes_Despawn>
+				<Can_Destroy_Special_Structure>True</Can_Destroy_Special_Structure>
+				<Sabotage_Cost_Increase_Factor> 2.0 </Sabotage_Cost_Increase_Factor>
+			</Galactic_Sabotage_Ability>
+			
+			<System_Spy_Ability Name="Bothan_Spy_Limited_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+				<See_Minor_Stealth_Heroes>Yes</See_Minor_Stealth_Heroes>
+				<See_Major_Stealth_Heroes>Yes</See_Major_Stealth_Heroes>
+			</System_Spy_Ability>
+			
+			<Enhance_Defense_Ability Name="Rebel_Bothan_Spy_Enhance_Defense">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Enhancement_Percentage>0.25</Enhancement_Percentage>
+				<Apply_To_All_Allies>No</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+				<Unit_Strength_Category>Vehicle | Air | Infantry</Unit_Strength_Category>
+			</Enhance_Defense_Ability>
+			<Battlefield_Modifier_Ability Name="Rebel_Bothan_Spy_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>5.5</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</GenericHeroUnit>
+
+<HeroCompany Name="Bothan_Spy_Team">
+		<GUI_Row>1</GUI_Row>
+	  <Text_ID>TEXT_HERO_UNIT_BOTHAN_SPY</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_BOTHAN_SPY TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+	  <Encyclopedia_Good_Against> Stormtrooper </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> TIE_Crawler UC_Empire_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+	  <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPY</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_bothan_civilian.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Cost_Credits>1500</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> No </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Heroes>Yes</Build_Tab_Heroes>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>Bothan_Spynet_Listening_Post</Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+		<Company_Units> Bothan_Spy</Company_Units>
+		<Is_Homogeneous>No</Is_Homogeneous>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<!--<Create_Team_Type> Rebel_Bothan_Spy_Team </Create_Team_Type>-->
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<SFXEvent_Build_Complete>GUI_R_Field_Commander_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Build_Started>RHD_Build_Commander</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Rebel_Field</SFXEvent_Fleet_Move>
+
+		
+				
+				<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+		<Tactical_Build_Cost_Multiplayer>550</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>RC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		<Population_Value>1</Population_Value>
+		<CategoryMask>LandHero</CategoryMask>
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+	
+		<Abilities SubObjectList="Yes">
+			
+			<Galactic_Stealth_Ability Name="Bothan_Spy_Galactic_Stealth">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+			
+			<Galactic_Sabotage_Ability Name="Bothan_Spy_Galactic_Sabotage">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Activated</Activation_Style>
+				<Causes_Despawn>Yes</Causes_Despawn>
+				<Can_Destroy_Special_Structure>True</Can_Destroy_Special_Structure>
+				<Sabotage_Cost_Increase_Factor> 2.0 </Sabotage_Cost_Increase_Factor>
+			</Galactic_Sabotage_Ability>
+			
+			<System_Spy_Ability Name="Bothan_Spy_Limited_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+				<See_Minor_Stealth_Heroes>Yes</See_Minor_Stealth_Heroes>
+				<See_Major_Stealth_Heroes>Yes</See_Major_Stealth_Heroes>
+			</System_Spy_Ability>
+			
+			<Enhance_Defense_Ability Name="Rebel_Bothan_Spy_Enhance_Defense">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Enhancement_Percentage>0.25</Enhancement_Percentage>
+				<Apply_To_All_Allies>No</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+				<Unit_Strength_Category>Vehicle | Air | Infantry</Unit_Strength_Category>
+			</Enhance_Defense_Ability>
+			<Battlefield_Modifier_Ability Name="Rebel_Bothan_Spy_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>5.5</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	
+	</HeroCompany>
+
+<!--<Container Name="Rebel_Bothan_Spy_Team">
+		<Text_ID>TEXT_HERO_UNIT_BOTHAN_SPY</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_BOTHAN_SPY  TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against> Stormtrooper </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> TIE_Crawler UC_Empire_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Garrison_Category> Infantry </Garrison_Category>
+
+		<Max_Speed> 1.1 </Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing>
+		<FormationOrder> 2 </FormationOrder>
+		<MovementClass> Infantry </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable> true </Is_Squashable>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>	
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<Override_Acceleration> .08 </Override_Acceleration>
+		<Override_Deceleration> .08 </Override_Deceleration>
+		
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Icon_Name>i_button_bothan_civilian.tga</Icon_Name>
+
+		<Targeting_Max_Attack_Distance>150.0</Targeting_Max_Attack_Distance>
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>130.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>150</Tactical_Bribe_Cost>
+		
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+       
+		<Unit_Abilities_Data SubObjectList="Yes">
+		
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+	</Container>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</GenericHeroUnits>

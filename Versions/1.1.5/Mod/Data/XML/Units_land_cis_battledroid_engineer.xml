@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Battledroid_Engineer_Data>
+  <GroundInfantry Name="Battledroid_Engineer">
+    <LOD_Bias>5</LOD_Bias>
+    <Text_ID>TEXT_UNIT_BATTLEDROID_ENGINEER</Text_ID>
+    <Encyclopedia_Good_Against> Clone_Trooper_P1 Arc_Trooper </Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To> AV_7_Antivehicle_Cannon AT_PT LAAT </Encyclopedia_Vulnerable_To>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+    <Encyclopedia_Text> TEXT_UNIT_BDE_ENCYC TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+    <Land_Model_Name>SeI_battledroid_engineer.ALO</Land_Model_Name>
+    <Icon_Name>I_BUTTON_B1_BATTLEDROID_ENGINEER.tga</Icon_Name>
+    <Behavior>SELECTABLE</Behavior>
+    <LandBehavior>ABILITY_COUNTDOWN,SURFACE_FX,WALK_LOCOMOTOR,IDLE,TARGETING,WEAPON, STUNNABLE, REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING, GARRISON_UNIT</LandBehavior>
+    <Garrison_Category> Infantry </Garrison_Category>
+    <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+    <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+    <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+    <CanCellStack>yes</CanCellStack>
+    <Mass>1.0</Mass>
+    <SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier, High_Ground</SurfaceFX_Name>
+    <Movement_Animation_Speed> 0.7 </Movement_Animation_Speed>
+    <Rotation_Animation_Speed> 20.0 </Rotation_Animation_Speed>
+    <Walk_Animation_Speed> .366 </Walk_Animation_Speed>
+    <Crouch_Animation_Speed> .537 </Crouch_Animation_Speed>
+    <Max_Speed>1.0</Max_Speed>
+    <Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+    <Custom_Soft_Footprint_Radius> 3.5 </Custom_Soft_Footprint_Radius>
+    <Custom_Hard_XExtent> 2.0 </Custom_Hard_XExtent>
+    <Custom_Hard_YExtent> 2.0 </Custom_Hard_YExtent>
+    <Space_Layer> Land </Space_Layer>
+    <UnitCollisionClass> Infantry </UnitCollisionClass>
+    <FormationSpacing> .4 </FormationSpacing>
+    <MinimumPushReturnDistance> 10 </MinimumPushReturnDistance>
+    <OverrideAcceleration> .05 </OverrideAcceleration>
+    <OverrideDeceleration> .05 </OverrideDeceleration>
+    <FormationOrder> 2 </FormationOrder>
+    <Scale_Factor>1.55</Scale_Factor>
+    <!-- Temp scale change for scale test - change back once models resized -->
+    <!--<Is_Sprite>No</Is_Sprite>-->
+    <Type>Walk</Type>
+    <Deploys>No</Deploys>
+    <Affiliation>Rebel</Affiliation>
+    <!--<Is_Sprite>No</Is_Sprite>-->
+    <Political_Control>0</Political_Control>
+    <Size_Value>10</Size_Value>
+    <Damage>8</Damage>
+    <Sensor_Range>20</Sensor_Range>
+    <Shield_Points>0</Shield_Points>
+    <Tactical_Health>35</Tactical_Health>
+    <Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+    <Energy_Capacity>0</Energy_Capacity>
+    <Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+    <Stealth_Capable>No</Stealth_Capable>
+    <Lua_Script>Sundered_Heart</Lua_Script>
+    <Armor_Type> Armor_Infantry </Armor_Type>
+    <Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+    <Blob_Shadow_Scale>10.0, 10.0</Blob_Shadow_Scale>
+    <Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+    <Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+    <Victory_Relevant>yes</Victory_Relevant>
+    <Projectile_Types>Proj_Hand_Blaster_Red</Projectile_Types>
+    <Land_FOW_Reveal_Range>150.0</Land_FOW_Reveal_Range>
+    <Select_Box_Scale>28</Select_Box_Scale>
+    <Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+    <Selection_Blob_Material_Name>Selection_Rebel_Hero</Selection_Blob_Material_Name>
+    <Highlight_Blob_Material_Name>Highlight_Rebel_Hero</Highlight_Blob_Material_Name>
+    <Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+    <Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+    <Projectile_Fire_Recharge_Seconds>0.6</Projectile_Fire_Recharge_Seconds>
+    <Targeting_Fire_Inaccuracy> Infantry, 4.0 </Targeting_Fire_Inaccuracy>
+    <!-- from 1.0 to make them more innacurate -->
+    <Targeting_Fire_Inaccuracy> Vehicle, 10.0 </Targeting_Fire_Inaccuracy>
+    <Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
+    <Targeting_Fire_Inaccuracy> Structure, 10.0 </Targeting_Fire_Inaccuracy>
+    <SFXEvent_Select>Unit_Select_Battle_Droid</SFXEvent_Select>
+    <SFXEvent_Move>Unit_Move_Battle_Droid</SFXEvent_Move>
+    <SFXEvent_Fleet_Move>Unit_Fleet_Move_Battle_Droid</SFXEvent_Fleet_Move>
+    <SFXEvent_Attack>Unit_Attack_Battle_Droid</SFXEvent_Attack>
+    <SFXEvent_Guard>Unit_Guard_Battle_Droid</SFXEvent_Guard>
+    <SFXEvent_Fire>Unit_Storm_Trooper_Fire</SFXEvent_Fire>
+    <Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+    <SFXEvent_Assist_Move> Unit_Assist_Move_Battle_Droid </SFXEvent_Assist_Move>
+    <SFXEvent_Assist_Attack> Unit_Assist_Attack_Battle_Droid</SFXEvent_Assist_Attack>
+    <SFXEvent_Tactical_Build_Started> UHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
+    <SFXEvent_Tactical_Build_Complete> UHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
+    <SFXEvent_Tactical_Build_Cancelled> UHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+    <CategoryMask> Infantry </CategoryMask>
+    <MovementClass> Infantry </MovementClass>
+    <Property_Flags>Fodder</Property_Flags>
+    <OccupationStyle>1x1</OccupationStyle>
+    <No_Reflection_Below_Detail_Level>99</No_Reflection_Below_Detail_Level>
+    <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+    <Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+    <Is_Squashable> Yes </Is_Squashable>
+    <AI_Combat_Power>7</AI_Combat_Power>
+    <Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+    <Targeting_Priority_Set>AvoidAntiInfantryTurrets</Targeting_Priority_Set>
+    <Targeting_Max_Attack_Distance>140.0</Targeting_Max_Attack_Distance>
+    <Idle_Chase_Range>50.0</Idle_Chase_Range>
+    <Guard_Chase_Range>200.0</Guard_Chase_Range>
+    <Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+    <Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+    <Surface_Type_Cover_Damage_Shield>.5</Surface_Type_Cover_Damage_Shield>
+    <Weather_Category>Infantry</Weather_Category>
+    <Death_Clone>Damage_Force_Whirlwind, Battledroid_Engineer_Force_Whirlwind_Death_Clone</Death_Clone>
+    <Death_Clone>Damage_Crush, Battledroid_Engineer_Crush_Death_Clone</Death_Clone>
+    <Death_Clone>Damage_Bomb, Battledroid_Engineer_Dismemberment_Death_Clone_00</Death_Clone>
+    <Death_Clone>Damage_Bomb, Battledroid_Engineer_Dismemberment_Death_Clone_01</Death_Clone>
+    <Death_Clone>Damage_Bomb, Battledroid_Engineer_Dismemberment_Death_Clone_02</Death_Clone>
+    <Death_Clone>Damage_Explosion, Battledroid_Engineer_Dismemberment_Death_Clone_00</Death_Clone>
+    <Death_Clone>Damage_Explosion, Battledroid_Engineer_Dismemberment_Death_Clone_01</Death_Clone>
+    <Death_Clone>Damage_Explosion, Battledroid_Engineer_Dismemberment_Death_Clone_02</Death_Clone>
+    <Death_Clone>Damage_Remote_Bomb, Battledroid_Engineer_Dismemberment_Death_Clone_00</Death_Clone>
+    <Death_Clone>Damage_Remote_Bomb, Battledroid_Engineer_Dismemberment_Death_Clone_01</Death_Clone>
+    <Death_Clone>Damage_Remote_Bomb, Battledroid_Engineer_Dismemberment_Death_Clone_02</Death_Clone>
+    <Death_Clone>Damage_StickyBomb, Battledroid_Engineer_Dismemberment_Death_Clone_00</Death_Clone>
+    <Death_Clone>Damage_StickyBomb, Battledroid_Engineer_Dismemberment_Death_Clone_01</Death_Clone>
+    <Death_Clone>Damage_StickyBomb, Battledroid_Engineer_Dismemberment_Death_Clone_02</Death_Clone>
+    <Death_Clone>Damage_Lightsaber, Battledroid_Engineer_Dismemberment_Death_Clone_00</Death_Clone>
+    <Death_Clone>Damage_Lightsaber, Battledroid_Engineer_Dismemberment_Death_Clone_01</Death_Clone>
+    <Death_Clone>Damage_Lightsaber, Battledroid_Engineer_Dismemberment_Death_Clone_02</Death_Clone>
+    <Death_Clone>Damage_Lightsaber, Battledroid_Engineer_Lightsaber_Death_Clone_00</Death_Clone>
+    <Death_Fade_Time>0.25</Death_Fade_Time>
+    <Death_Persistence_Duration>0.0</Death_Persistence_Duration>
+    <Movie_Object>false</Movie_Object>
+    <Unit_Abilities_Data SubObjectList="Yes">
+      <!-- Primary ability -->
+      <Unit_Ability>
+        <Type>WEAKEN_ENEMY</Type>
+        <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_CONSTRUCT_NAME</Alternate_Name_Text>
+        <Alternate_Icon_Name>I_SA_BUILD_PAD.tga</Alternate_Icon_Name>
+        <Alternate_Description_Text>TEXT_ENGINEERBUILD_DESCRIPTION</Alternate_Description_Text>
+        <Recharge_Seconds>60</Recharge_Seconds>
+        <!-- This is the radius within which we can "drop" the projectile (targeting radius) -->
+        <!-- The actual radius of ability is in projectile XML -->
+        <!-- <Spawned_Object_Type>Empire_Turret_Pad</Spawned_Object_Type> -->
+        <Spawned_Object_Type>Engineer_Pad</Spawned_Object_Type>
+        <Effective_Radius> 50.0 </Effective_Radius>
+        <Spawned_Object_Type>Rebel_Turret_Pad</Spawned_Object_Type>
+        <SFXEvent_Target_Ability> GUI_Toggle_Rocket_Attack_On </SFXEvent_Target_Ability>
+        <SFXEvent_GUI_Unit_Ability_Activated>Structure_Engineering_Platform_Select_SFX</SFXEvent_GUI_Unit_Ability_Activated>
+        <SFXEvent_GUI_Unit_Ability_Deactivated />
+        <!-- Area effect decal size depends on "Antills_Weaken_Enemy_Effect" -->
+        <Area_Effect_Decal_Distance> 50 </Area_Effect_Decal_Distance>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+  </GroundInfantry>
+  <GroundInfantry Name="Battledroid_Engineer_Force_Whirlwind_Death_Clone">
+    <Variant_Of_Existing_Type>Battledroid_Engineer</Variant_Of_Existing_Type>
+    <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+    <Specific_Death_Anim_Index />
+  </GroundInfantry>
+  <GroundInfantry Name="Battledroid_Engineer_Crush_Death_Clone">
+    <Variant_Of_Existing_Type>Battledroid_Engineer</Variant_Of_Existing_Type>
+    <Specific_Death_Anim_Type>Crushed</Specific_Death_Anim_Type>
+    <Specific_Death_Anim_Index />
+  </GroundInfantry>
+  <GroundInfantry Name="Battledroid_Engineer_Dismemberment_Death_Clone_00">
+    <Land_Model_Name>SeI_battledroid_disemberment.ALO</Land_Model_Name>
+    <Scale_Factor>1.55</Scale_Factor>
+    <Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+    <Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+  </GroundInfantry>
+  <GroundInfantry Name="Battledroid_Engineer_Dismemberment_Death_Clone_01">
+    <Land_Model_Name>SeI_battledroid_dismemberment2.ALO</Land_Model_Name>
+    <Scale_Factor>1.55</Scale_Factor>
+    <Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+    <Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+  </GroundInfantry>
+  <GroundInfantry Name="Battledroid_Engineer_Dismemberment_Death_Clone_02">
+    <Land_Model_Name>SeI_battledroid_dismemberment3.ALO</Land_Model_Name>
+    <Scale_Factor>1.55</Scale_Factor>
+    <Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+    <Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+  </GroundInfantry>
+  <GroundInfantry Name="Battledroid_Engineer_Lightsaber_Death_Clone_00">
+    <Variant_Of_Existing_Type>Battledroid_Engineer</Variant_Of_Existing_Type>
+    <Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+    <Specific_Death_Anim_Index />
+  </GroundInfantry>
+  <GroundCompany Name="BattleDroid_Engineer_Squad">
+    <Text_ID>TEXT_UNIT_BATTLEDROID_ENGINEER</Text_ID>
+    <Encyclopedia_Good_Against> Clone_Trooper_P1 Arc_Trooper </Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To> AV_7_Antivehicle_Cannon AT_PT LAAT </Encyclopedia_Vulnerable_To>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+    <Encyclopedia_Text> TEXT_UNIT_BDE_ENCYC TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+    <Icon_Name>I_BUTTON_B1_BATTLEDROID_ENGINEER.tga</Icon_Name>
+    <GUI_Row> 1 </GUI_Row>
+    <Is_Dummy>Yes</Is_Dummy>
+    <Damage>8</Damage>
+    <Autoresolve_Health>100</Autoresolve_Health>
+    <!-- changed to reflect the real health of the units-->
+    <Affiliation>Rebel</Affiliation>
+    <Build_Cost_Credits>25</Build_Cost_Credits>
+    <Build_Time_Seconds>2</Build_Time_Seconds>
+    <!--<Build_Time_Seconds>15</Build_Time_Seconds>-->
+    <Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+    <Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+    <Tech_Level>1</Tech_Level>
+    <Required_Timeline>0</Required_Timeline>
+    <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>0</Required_Star_Base_Level>
+    <Required_Special_Structures>Skirmish_Ground_Cis_Droid_Center</Required_Special_Structures>
+    <!--<Required_Planets>Carida</Required_Planets>-->
+    <Behavior>DUMMY_GROUND_COMPANY</Behavior>
+    <Formation_Priority>1</Formation_Priority>
+    <Is_Escort>yes</Is_Escort>
+    <Ship_Class>infantry</Ship_Class>
+    <Company_Transport_Unit>Sheathipede_Shuttle</Company_Transport_Unit>
+    <Company_Units> 
+		Battledroid_Engineer
+	 </Company_Units>
+    <Max_Squad_Size> 1 </Max_Squad_Size>
+    <SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+    <SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+    <SFXEvent_Build_Complete>Unit_Complete_Battle_Droid</SFXEvent_Build_Complete>
+    <SFXEvent_Fleet_Move>Unit_Fleet_Move_Battle_Droid</SFXEvent_Fleet_Move>
+    <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+    <Tactical_Build_Cost_Multiplayer>300</Tactical_Build_Cost_Multiplayer>
+    <Tactical_Build_Time_Seconds>5</Tactical_Build_Time_Seconds>
+    <Tactical_Build_Prerequisites />
+    <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+    <Build_Limit_Current_Per_Player>2</Build_Limit_Current_Per_Player>
+    <Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+    <!--<MULTIPLAYER SKIRMISH VALUES END>-->
+    <Maintenance_Cost>0.05</Maintenance_Cost>
+    <Population_Value>1</Population_Value>
+    <Score_Cost_Credits>54</Score_Cost_Credits>
+  </GroundCompany>
+</Battledroid_Engineer_Data>

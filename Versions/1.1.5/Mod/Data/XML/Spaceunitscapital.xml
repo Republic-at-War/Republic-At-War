@@ -1,0 +1,745 @@
+<?xml version="1.0"?>
+<SpaceUnitsCapital>
+
+
+	<!--<SpaceUnit Name="Calamari_Cruiser">
+		<Text_ID>TEXT_UNIT_CALAMARI_CRUISER</Text_ID>
+		<Encyclopedia_Good_Against> Victory_Destroyer Acclamator_Assault_Ship Interceptor4_Frigate </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> TIE_Bomber Skipray_Blastboat </Encyclopedia_Vulnerable_To>
+		<GUI_Row> 1 </GUI_Row>
+		<Space_Model_Name>RV_MONCALCRUISER.ALO</Space_Model_Name>
+		<Select_Box_Scale>600</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Mass>0.995</Mass>
+		<Scale_Factor>1.1</Scale_Factor>
+		<Damage>60</Damage>
+		<Dense_FOW_Reveal_Range_Multiplier>0.24</Dense_FOW_Reveal_Range_Multiplier>
+		<Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Ranking_In_Category>5</Ranking_In_Category>
+		<Max_Speed>1.5</Max_Speed>
+		<Max_Rate_Of_Turn>0.4</Max_Rate_Of_Turn>
+		<MovementClass> Space </MovementClass>
+		<Space_Layer> Capital </Space_Layer>
+		<Layer_Z_Adjust>-290.0</Layer_Z_Adjust>
+		<OverrideAcceleration> .02 </OverrideAcceleration>
+		<OverrideDeceleration> .02 </OverrideDeceleration>
+
+		<Armor_Type> Armor_Calamari_Cruiser </Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+		<Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>25</Bank_Turn_Angle>	
+		<Max_Thrust>0.2</Max_Thrust>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1</Hyperspace_Speed>
+		<Maintenance_Cost>0.3</Maintenance_Cost>
+
+		<Death_Clone>Damage_Normal, Calamari_Cruiser_Death_Clone</Death_Clone>
+
+		<Affiliation>Rebel</Affiliation>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Slice_Cost_Credits>2000</Slice_Cost_Credits>
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures>Moncal_Shipyards</Required_Special_Structures>
+		<Required_Planets>MonCalimari</Required_Planets>
+		<Autoresolve_Health>2500</Autoresolve_Health>
+		<Tactical_Health>8500</Tactical_Health>
+		<Shield_Points>2000</Shield_Points>
+		<Shield_Refresh_Rate>50</Shield_Refresh_Rate>
+		<Energy_Capacity>8000</Energy_Capacity>
+		<Energy_Refresh_Rate>800</Energy_Refresh_Rate>
+		<Ship_Class>capital</Ship_Class>
+		<Formation_Priority>5</Formation_Priority>
+		<Political_Faction>Rebel</Political_Faction>
+		<Squadron_Capacity>40</Squadron_Capacity>
+		<Build_Cost_Credits>4000</Build_Cost_Credits>
+		<Piracy_Value_Credits>250</Piracy_Value_Credits>
+		<AI_Combat_Power>4250</AI_Combat_Power>
+		<Build_Time_Seconds>90</Build_Time_Seconds>
+		<Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+		<Size_Value>360</Size_Value>
+		<Behavior> SELECTABLE, DUMMY_STARSHIP </Behavior>
+		<SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDED, TARGETING, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
+		<No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+
+		<Space_FOW_Reveal_Range>1200.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+		<Death_Clone />
+		<CategoryMask> Capital | AntiFrigate </CategoryMask>
+
+		<HardPoints> 
+			HP_Calamari_Cruiser_Weapon_FL, HP_Calamari_Cruiser_Weapon_FR, HP_Calamari_Cruiser_Weapon_BL, HP_Calamari_Cruiser_Weapon_BR, HP_Calamari_Cruiser_Weapon_ML, HP_Calamari_Cruiser_Weapon_MR, HP_Calamari_Cruiser_Engines
+		</HardPoints>
+
+		<Icon_Name>i_button_mon_calimari_cruiser.tga</Icon_Name>
+		<GUI_Model_Name>RV_moncalcruiser.ALO</GUI_Model_Name>
+		<GUI_Distance>1650</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Calamari</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Calamari_Moving_Engine_Loop</SFXEvent_Ambient_Loop>
+
+		<SFXEvent_Select>Unit_Select_Calamari</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Calamari</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Calamari</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Calamari</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Calamari</SFXEvent_Guard>
+		<SFXEvent_Stop>Unit_Stop_Calamari</SFXEvent_Stop>
+		<SFXEvent_Barrage>Unit_Barrage_Calamari</SFXEvent_Barrage>
+		<SFXEvent_Move_Into_Asteroid_Field> Unit_Asteroids_Calamari </SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Move_Into_Nebula> Unit_Nebula_Calamari </SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Damaged_By_Asteroid> SFX_Asteroid_Detonation </SFXEvent_Damaged_By_Asteroid>
+		<SFXEvent_Bombard_Select_Target>	RHD_Bombard_Select_Target </SFXEvent_Bombard_Select_Target>
+		<SFXEvent_Bombard_Incoming> RHD_Bombard_Incoming  </SFXEvent_Bombard_Incoming>
+
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Calamari </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Calamari </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Calamari </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Calamari </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Calamari </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Calamari </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Calamari </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Calamari </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Calamari </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Lost_Engines_Calamari </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Engine_Idle_Loop> Unit_Calamari_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Calamari_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Calamari_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Death_SFXEvent_Start_Die>Unit_Calamari_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Space_Full_Stop_Command> Yes </Space_Full_Stop_Command>
+        
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>1.0</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>1.0</Radar_Icon_Scale_Space>
+		<Radar_Icon_Name>i_radar_capital_ship.tga</Radar_Icon_Name>
+		
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>0.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>400.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>Capital</Targeting_Priority_Set>
+
+		<Tactical_Bribe_Cost>3000</Tactical_Bribe_Cost>
+
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+			
+			<Unit_Ability>
+				<Type>DEFEND</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,	0.10f</Mod_Multiplier> 
+				<Mod_Multiplier>ENERGY_REGEN_INTERVAL_MULTIPLIER,	0.10f</Mod_Multiplier> 
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		0.8f</Mod_Multiplier>
+				<Recharge_Seconds>40</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Defend_Calamari</SFXEvent_GUI_Unit_Ability_Activated>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+			
+		</Unit_Abilities_Data>
+       
+		<Encyclopedia_Text> TEXT_TOOLTIP_MON_CALAMARI_CRUISER TEXT_TOOLTIP_REQUIRED_PLANETS_CAPITAL_SHIPS</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_CAPITAL </Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 42500 </Score_Cost_Credits>
+
+		
+		<Tactical_Build_Cost_Multiplayer>4500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		
+		
+	
+		<Population_Value>4</Population_Value>
+		<Lua_Script>ObjectScript_PowerToShields</Lua_Script>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Calamari_Cruiser_Death_Clone">
+		<Text_ID> TEXT_UNIT_CALAMARI_CRUISER </Text_ID>
+		<Space_Model_Name>RV_MONCALCRUISER_D.ALO</Space_Model_Name>
+		<Death_SFXEvent_Start_Die> Unit_Calamari_Death_SFX </Death_SFXEvent_Start_Die>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Layer_Z_Adjust> -290.0 </Layer_Z_Adjust>
+		<Max_Speed> 0.25 </Max_Speed>
+		<Max_Rate_Of_Turn> 0.4 </Max_Rate_Of_Turn>
+		<Max_Thrust> 0.05 </Max_Thrust>
+		<Max_Rate_Of_Roll> 0.02 </Max_Rate_Of_Roll>
+		<Bank_Turn_Angle> 5 </Bank_Turn_Angle>
+		<Affiliation> Rebel </Affiliation>
+		<Ship_Class> capital_ship </Ship_Class>
+		<Glory_Cinematics> CAM_Calamari_Cruiser_Die.tec </Glory_Cinematics>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceUnit>-->
+
+
+
+	<SpaceUnit Name="Generic_Star_Destroyer">
+		<Text_ID>TEXT_UNIT_STAR_DESTROYER</Text_ID>
+		<Encyclopedia_Good_Against> Munificent_Frigate CIS_Carrier Providence_Class_Carrier </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> CIS_Bomber Hyena_Bomber Malevolence </Encyclopedia_Vulnerable_To>
+		<GUI_Row> 1 </GUI_Row>
+		<Lua_Script>ObjectScript_Gargantuan</Lua_Script>
+		<Space_Model_Name>EV_StarDestroyer_MKI.ALO</Space_Model_Name>
+
+		<Ranking_In_Category>5</Ranking_In_Category>
+	
+	   <GUI_Bracket_Height>500</GUI_Bracket_Height>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+
+		<Select_Box_Scale>425</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+
+		<Scale_Factor>3.5</Scale_Factor> <!-- 3.0 for canon -->
+		<Mass>0.999</Mass>
+		<Dense_FOW_Reveal_Range_Multiplier>0.24</Dense_FOW_Reveal_Range_Multiplier>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		
+		<Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Armor_Type> Armor_Star_Destroyer </Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+
+		<Max_Speed>1.4</Max_Speed>
+		<Max_Rate_Of_Turn>0.3</Max_Rate_Of_Turn>
+		<MovementClass> Space </MovementClass>
+		<Space_Layer> Capital </Space_Layer>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<Max_Rate_Of_Roll>0.1</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>5</Bank_Turn_Angle>
+		<OverrideAcceleration> .02 </OverrideAcceleration>
+		<OverrideDeceleration> .02 </OverrideDeceleration>
+		
+		<Max_Thrust>0.1</Max_Thrust>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1</Hyperspace_Speed>
+		<Maintenance_Cost>0.3</Maintenance_Cost>
+
+		<Affiliation>Empire</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets>Kuat</Required_Planets>
+		<Damage>70</Damage>
+		<Autoresolve_Health>7500</Autoresolve_Health>
+		<Shield_Points>2000</Shield_Points>
+		<Tactical_Health>7500</Tactical_Health>
+		<Shield_Refresh_Rate>50</Shield_Refresh_Rate>
+		<Energy_Capacity>8000</Energy_Capacity>
+		<Energy_Refresh_Rate>800</Energy_Refresh_Rate>
+		<Ship_Class>capital</Ship_Class>
+		<Surface_Bombardment_Capable>yes</Surface_Bombardment_Capable>
+		
+		<Political_Faction>Empire</Political_Faction>
+		<Squadron_Capacity>40</Squadron_Capacity>
+		<Build_Cost_Credits>8000</Build_Cost_Credits> <!-- From 6800 -->
+		<Piracy_Value_Credits>250</Piracy_Value_Credits>
+		<AI_Combat_Power>8500</AI_Combat_Power>
+		<Build_Time_Seconds>90</Build_Time_Seconds>
+		<Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+		<Size_Value>8</Size_Value>
+		
+	
+		<Starting_Spawned_Units_Tech_0>Republic_VWing_Squadron, 4</Starting_Spawned_Units_Tech_0> <!-- From 2 -->
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Reserve_Spawned_Units_Tech_0>Republic_VWing_Squadron, 10</Reserve_Spawned_Units_Tech_0> <!-- From 8 -->
+		
+
+		
+		<Behavior> SELECTABLE, DUMMY_STARSHIP </Behavior>
+		<SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+		
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space_Empire</Death_Explosions>
+		<Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
+
+		<Death_Clone>Damage_Normal, Star_Destroyer_Death_Clone</Death_Clone>
+		<Space_FOW_Reveal_Range>1200.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+
+			<HardPoints>
+		HP_NEWISD_Engines
+		HP_NEWISD_Shields
+		HP_NEWISD_Tractor_Beam
+		HP_NEWISD_Fighter_Bay
+		HP_NEWISD_01
+		HP_NEWISD_02
+		HP_NEWISD_03
+		HP_NEWISD_04
+		HP_NEWISD_05
+		HP_NEWISD_06
+		HP_NEWISD_07
+		HP_NEWISD_08
+		HP_NEWISD_09
+		HP_NEWISD_10
+		HP_NEWISD_11
+		HP_NEWISD_12
+		<!-- HP_NEWISD_13 IS ONE OF THE PROBLEMS -->
+		HP_NEWISD_14
+		<!-- HP_NEWISD_15 IS ONE OF THE PROBLEMS -->
+		HP_NEWISD_16
+		HP_NEWISD_17
+		HP_NEWISD_18
+		HP_NEWISD_19
+		HP_NEWISD_20
+		HP_NEWISD_21
+		HP_NEWISD_22
+		HP_NEWISD_23
+		HP_NEWISD_24
+		HP_NEWISD_25
+		HP_NEWISD_26
+		HP_NEWISD_27
+		HP_NEWISD_28
+		HP_NEWISD_29
+		</HardPoints>
+
+		<SFXEvent_Select>Unit_Select_Star_Destroyer</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Star_Destroyer</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Star_Destroyer</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Star_Destroyer</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Star_Destroyer</SFXEvent_Guard>
+		<SFXEvent_Move_Opposite>Unit_Move_Opposite_Star_Destroyer</SFXEvent_Move_Opposite>
+		<SFXEvent_Barrage>Unit_Barrage_Star_Destroyer</SFXEvent_Barrage>
+		<SFXEvent_Stop>Unit_Stop_Star_Destroyer</SFXEvent_Stop>
+		<SFXEvent_Move_Into_Asteroid_Field> Unit_Asteroids_Star_Destroyer </SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Move_Into_Nebula> Unit_Nebula_Star_Destroyer </SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Damaged_By_Asteroid> SFX_Asteroid_Detonation </SFXEvent_Damaged_By_Asteroid>
+		<SFXEvent_Bombard_Select_Target>	EHD_Bombard_Select_Target </SFXEvent_Bombard_Select_Target>
+		<SFXEvent_Bombard_Incoming> EHD_Bombard_Incoming  </SFXEvent_Bombard_Incoming>
+
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Star_Destroyer </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Star_Destroyer </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Star_Destroyer </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Star_Destroyer </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Star_Destroyer </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Star_Destroyer </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Ambient_Loop>Unit_Star_Destroyer_Idle_Engine_Loop</SFXEvent_Ambient_Loop>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Star_Destroyer </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Star_Destroyer </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Star_Destroyer </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Lost_Engines_Star_Destroyer </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Star_Destroyer </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+         
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Star_Destroyer</SFXEvent_Build_Complete>
+
+		<SFXEvent_Engine_Idle_Loop> Unit_Star_Destroyer_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Star_Destroyer_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Star_Destroyer_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<CategoryMask> Capital | AntiFrigate </CategoryMask>
+		<Icon_Name>i_button_imperator.tga</Icon_Name>
+		<GUI_Model_Name>EV_StarDestroyer_hulk.ALO</GUI_Model_Name>
+		<GUI_Distance>2300</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Space_Full_Stop_Command> Yes </Space_Full_Stop_Command>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		 
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>0.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>400.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>Capital</Targeting_Priority_Set>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Name>i_radar_capital_ship_empire.tga</Radar_Icon_Name>
+		<Radar_Icon_Scale_Land>1.0</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>1.0</Radar_Icon_Scale_Space>
+
+		<Tactical_Bribe_Cost>4000</Tactical_Bribe_Cost>
+
+		
+	   <Unit_Abilities_Data SubObjectList="Yes">
+	      
+	      <Unit_Ability>
+	            <Type>TRACTOR_BEAM</Type>
+	            <Mod_Multiplier>SPEED_MULTIPLIER, 0.8f</Mod_Multiplier>
+	            <GUI_Activated_Ability_Name> SD_Tractor_Beam_Attack_Ability </GUI_Activated_Ability_Name>
+	            <Recharge_Seconds>25</Recharge_Seconds>
+	            <SFXEvent_GUI_Unit_Ability_Activated>Unit_Tractor_Beam_Star_Destroyer</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_Special_Ability_Loop> Unit_Star_Destroyer_Tractor_Beam </SFXEvent_Special_Ability_Loop>
+				<Supports_Autofire>True</Supports_Autofire>
+	      </Unit_Ability>
+	   </Unit_Abilities_Data>
+
+	   <Abilities SubObjectList="Yes">
+	      <Tractor_Beam_Attack_Ability Name="SD_Tractor_Beam_Attack_Ability">
+	            <Activation_Style> User_Input </Activation_Style>
+	            <Applicable_Unit_Categories>Transport | Corvette | Frigate</Applicable_Unit_Categories>
+	            <Applicable_Unit_Types>Millennium_Falcon</Applicable_Unit_Types>
+				<Excluded_Unit_Types>Buzz_Droids</Excluded_Unit_Types>
+	            <Activation_Min_Range>10</Activation_Min_Range>
+	            <Activation_Max_Range>1000</Activation_Max_Range>
+
+
+	            
+	            <Target_Speed_Decrease_Percent>0.75</Target_Speed_Decrease_Percent>
+	            <Stacking_Category>0</Stacking_Category>            
+	      </Tractor_Beam_Attack_Ability>
+
+	   </Abilities>
+
+		<Encyclopedia_Text> TEXT_TOOLTIP_STAR_DESTROYER TEXT_TOOLTIP_REQUIRED_PLANETS_CAPITAL_SHIPS</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_CAPITAL </Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 45000</Score_Cost_Credits>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>8000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>45</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>RS_Prototype_Level_Three_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>3</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+	
+	</SpaceUnit>
+
+
+
+	<SpaceUnit Name="Star_Destroyer">
+		<Variant_Of_Existing_Type>Generic_Star_Destroyer</Variant_Of_Existing_Type>
+		<Tech_Level>5</Tech_Level>
+		<Build_Limit_Current_Per_Player>3</Build_Limit_Current_Per_Player>
+
+			<HardPoints>
+		<!--HP_NEWISD_Engines
+		HP_NEWISD_Shields
+		HP_NEWISD_Tractor_Beam
+		HP_NEWISD_Fighter_Bay -->
+		<!-- HP_NEWISD_01
+		HP_NEWISD_02
+		HP_NEWISD_03
+		HP_NEWISD_04
+		HP_NEWISD_05
+		HP_NEWISD_06
+		HP_NEWISD_07
+		HP_NEWISD_08
+		HP_NEWISD_09
+		HP_NEWISD_10
+		HP_NEWISD_11
+		HP_NEWISD_12
+		HP_NEWISD_13 -->
+		<!--HP_NEWISD_14
+		HP_NEWISD_15
+		HP_NEWISD_16
+		HP_NEWISD_17
+		HP_NEWISD_18
+		HP_NEWISD_19
+		HP_NEWISD_20
+		HP_NEWISD_21
+		HP_NEWISD_22
+		HP_NEWISD_23
+		HP_NEWISD_24
+		HP_NEWISD_25
+		HP_NEWISD_26
+		HP_NEWISD_27
+		HP_NEWISD_28
+		HP_NEWISD_29 -->
+		</HardPoints>
+		<Population_Value>4</Population_Value>
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Star_Destroyer_Death_Clone">
+		<Text_ID>TEXT_UNIT_STAR_DESTROYER</Text_ID>
+		<Space_Model_Name>EV_StarDestroyer_MKI_D.ALO</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Scale_Factor>1.3</Scale_Factor> <!-- From 3 for canon, from 3.2 -->
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<Max_Speed>0.25</Max_Speed>
+		<Max_Rate_Of_Turn>0.4</Max_Rate_Of_Turn>
+		<Max_Thrust>0.05</Max_Thrust>
+		<Max_Rate_Of_Roll>0.02</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>5</Bank_Turn_Angle>
+		<Affiliation>Empire</Affiliation>
+		<Ship_Class>capital_ship</Ship_Class>
+		<Glory_Cinematics>CAM_SDestroyer_Glory01.tec</Glory_Cinematics>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceUnit>
+
+	<SpaceUnit Name="Star_Destroyer_Tractor_Fighters">
+		<Variant_Of_Existing_Type>Generic_Star_Destroyer</Variant_Of_Existing_Type>
+		
+		
+	   <Unit_Abilities_Data SubObjectList="Yes">
+	     
+	      <Unit_Ability>
+	            <Type>TRACTOR_BEAM</Type>
+	            <Mod_Multiplier>SPEED_MULTIPLIER, 0.8f</Mod_Multiplier>
+	            <GUI_Activated_Ability_Name> SD_Tractor_Beam_Attack_Ability </GUI_Activated_Ability_Name>
+	         
+	            <Recharge_Seconds>20</Recharge_Seconds>
+	      </Unit_Ability>
+	   </Unit_Abilities_Data>
+
+		
+	   <Abilities SubObjectList="Yes">
+	      <Tractor_Beam_Attack_Ability Name="SD_Tractor_Beam_Attack_Ability">
+	            <Activation_Style> User_Input </Activation_Style>
+	            <Applicable_Unit_Categories>Fighter</Applicable_Unit_Categories>
+	            <Applicable_Unit_Types />
+				<Excluded_Unit_Types>Buzz_Droids</Excluded_Unit_Types>
+	            <Activation_Min_Range>10</Activation_Min_Range>
+	            <Activation_Max_Range>2000</Activation_Max_Range>
+
+
+	           
+	            <Target_Speed_Decrease_Percent>.83</Target_Speed_Decrease_Percent>
+	            <Stacking_Category>0</Stacking_Category>            
+	      </Tractor_Beam_Attack_Ability>
+	   </Abilities>
+		
+
+	</SpaceUnit>
+
+
+	<SpaceUnit Name="Star_Destroyer_E3">
+		<Variant_Of_Existing_Type>Star_Destroyer</Variant_Of_Existing_Type>
+		<SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+		
+		<Shield_Points>1000</Shield_Points>
+		<Tech_Level>10</Tech_Level>
+		<Tactical_Health>2000</Tactical_Health>
+
+		
+		
+
+	</SpaceUnit>
+
+<!--<SpaceUnit Name="Eclipse_Star_Destroyer">
+		<GUI_Bounds_Scale>0.01</GUI_Bounds_Scale>
+		<Text_ID>TEXT_UNIT_SSD_ECLIPSE</Text_ID>
+		
+		<Encyclopedia_Good_Against> Calamari_Cruiser Rebel_Star_Base_5 </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Y-wing B-Wing </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text> TEXT_TOOLTIP_ECLIPSE </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SSD </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_EV_Eclipse.tga</Icon_Name>
+
+		<GUI_Row> 1 </GUI_Row>
+		<Space_Model_Name>UV_Eclipse.alo</Space_Model_Name>
+
+		<In_Background> No </In_Background>
+
+		<Ranking_In_Category>5</Ranking_In_Category>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+
+		<Select_Box_Scale>2200</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+
+		<Scale_Factor>1.0</Scale_Factor>
+		<Mass>0.999</Mass>
+		<Dense_FOW_Reveal_Range_Multiplier>0.24</Dense_FOW_Reveal_Range_Multiplier>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+
+		<Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Armor_Type> Armor_Star_Destroyer </Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+
+		<Max_Speed>0.5</Max_Speed>
+		<Max_Rate_Of_Turn>0.03</Max_Rate_Of_Turn>
+		<MovementClass> Space </MovementClass>
+		<Space_Layer> SuperCapital </Space_Layer>
+
+        <Custom_Hard_XExtent> 100.0 </Custom_Hard_XExtent>
+        <Custom_Hard_YExtent> 100.0 </Custom_Hard_YExtent>
+
+		<Layer_Z_Adjust>-600.0</Layer_Z_Adjust>
+		<Max_Rate_Of_Roll>0.1</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>2</Bank_Turn_Angle>
+		<OverrideAcceleration> .02 </OverrideAcceleration>
+		<OverrideDeceleration> .02 </OverrideDeceleration>
+		
+		<Max_Thrust>0.05</Max_Thrust>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1</Hyperspace_Speed>
+		<Maintenance_Cost>0.3</Maintenance_Cost>
+
+		<Affiliation>Empire</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures>Empire_Kuat_Drive_Yards</Required_Special_Structures>
+		<Required_Planets>Kuat</Required_Planets>
+		<Damage>70</Damage>
+		<Autoresolve_Health>18000</Autoresolve_Health>
+		<Shield_Points>10000</Shield_Points>
+		<Tactical_Health>50000</Tactical_Health>
+		<Shield_Refresh_Rate>1500</Shield_Refresh_Rate>
+		<Energy_Capacity>9999</Energy_Capacity>
+		<Energy_Refresh_Rate>60</Energy_Refresh_Rate>
+		<Ship_Class>capital</Ship_Class>
+		<Surface_Bombardment_Capable>yes</Surface_Bombardment_Capable>
+
+		<Squadron_Capacity>40</Squadron_Capacity>
+		<Build_Cost_Credits>15000</Build_Cost_Credits>
+		<AI_Combat_Power>5900</AI_Combat_Power>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Time_Seconds>240</Build_Time_Seconds>
+		<Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+		<Size_Value>8</Size_Value>
+		
+		<Build_Countdown_Timer> Yes </Build_Countdown_Timer>
+		<Build_Countdown_Text_ID> TEXT_ECLIPSE_COUNTDOWN_TIMER </Build_Countdown_Text_ID>
+		<Build_Countdown_Text_RGBA> 64, 128, 255, 255 </Build_Countdown_Text_RGBA>
+		<Build_Music_Completed> Galactic_Death_Star_Complete_Music_Event </Build_Music_Completed>
+		
+		<Tactical_Bribe_Cost>9999</Tactical_Bribe_Cost>
+
+		<Behavior> DUMMY_STARSHIP, SELECTABLE </Behavior>
+		<Not_Really_Selectable>True</Not_Really_Selectable>
+		<SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDED, REVEAL, TARGETING, DUMMY_TOOLTIP, DAMAGE_TRACKING  </SpaceBehavior>
+		
+		<Is_Valid_Target>Yes</Is_Valid_Target>
+		<Target_Bones> Target_00, Target_01, Target_02, Target_03, Target_04 </Target_Bones>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		
+		<Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
+
+
+		
+		<Death_Clone>Damage_Normal, Eclipse_Super_Star_Destroyer_Death_Clone</Death_Clone>
+		<Space_FOW_Reveal_Range>15000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>2200.0</Targeting_Max_Attack_Distance>
+
+    <SFXEvent_Select>Unit_Select_Star_Destroyer</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Star_Destroyer</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Emperor</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Emperor</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Star_Destroyer</SFXEvent_Guard>
+		<SFXEvent_Move_Opposite>Unit_Move_Opposite_Star_Destroyer</SFXEvent_Move_Opposite>
+		<SFXEvent_Barrage>Unit_Barrage_Star_Destroyer</SFXEvent_Barrage>
+		<SFXEvent_Stop>Unit_Stop_Star_Destroyer</SFXEvent_Stop>
+		<SFXEvent_Move_Into_Asteroid_Field> Unit_Asteroids_Star_Destroyer </SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Move_Into_Nebula> Unit_Nebula_Star_Destroyer </SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Damaged_By_Asteroid> SFX_Asteroid_Detonation </SFXEvent_Damaged_By_Asteroid>
+		<SFXEvent_Bombard_Select_Target>	EHD_Bombard_Select_Target </SFXEvent_Bombard_Select_Target>
+		<SFXEvent_Bombard_Incoming> EHD_Bombard_Incoming  </SFXEvent_Bombard_Incoming>
+		<SFXEvent_Ambient_Loop>Unit_Star_Destroyer_Idle_Engine_Loop</SFXEvent_Ambient_Loop>
+
+		<CategoryMask> Capital | AntiFrigate </CategoryMask>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Space_Full_Stop_Command> Yes </Space_Full_Stop_Command>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		 
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>0.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>400.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>Capital</Targeting_Priority_Set>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Name>i_radar_Executor.tga</Radar_Icon_Name>
+		<Radar_Icon_Scale_Land>1.0</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>1.0</Radar_Icon_Scale_Space>
+		<Radar_Icon_Size>0.4  0.4</Radar_Icon_Size>
+		<Score_Cost_Credits> 100000</Score_Cost_Credits>
+		<Radar_Register_As_Foreground_Object>Yes</Radar_Register_As_Foreground_Object>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+			
+			<Unit_Ability>
+				<Type>SUPER_LASER</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 0.8f</Mod_Multiplier>
+				<GUI_Activated_Ability_Name> Eclipse_Super_Laser_Attack_Ability </GUI_Activated_Ability_Name> 
+				<Recharge_Seconds>10</Recharge_Seconds>
+				<Expiration_Seconds>10</Expiration_Seconds>
+				<SFXEvent_Target_Ability> Unit_Attack_Emperor</SFXEvent_Target_Ability>
+				<SFXEvent_Special_Ability_Loop> Unit_Death_Star_2_Fire </SFXEvent_Special_Ability_Loop> 
+				<Alternate_Description_Text>TEXT_TOOLTIP_ECLIPSE_SL_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+
+			<Super_Laser_Ability Name="Eclipse_Super_Laser_Attack_Ability">
+				<Activation_Style> User_Input </Activation_Style>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ECLIPSE_SL_DESCRIPTION</Alternate_Description_Text>
+				<Applicable_Unit_Categories> Capital | Corvette | Frigate | Structure </Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+                <Owner_Particle_Effect>Piet_Powerup_Particle_Effect</Owner_Particle_Effect>
+                <Owner_Particle_Bone_Name>MuzzleA_00</Owner_Particle_Bone_Name>
+				<Activation_Min_Range>0</Activation_Min_Range>
+	            <Activation_Max_Range>20000</Activation_Max_Range>
+
+				
+				<Damage_Per_Frame>400</Damage_Per_Frame>			
+				<Fire_Frame>106</Fire_Frame>
+				<Beam_Texture_Name>tractor_beam01.tga</Beam_Texture_Name>
+				<Num_Anim_Frames>5</Num_Anim_Frames>
+				<Line_Width>45</Line_Width>
+				<Line_Color>0 237 119 255</Line_Color>
+			</Super_Laser_Ability>
+
+		</Abilities>
+		
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Eclipse_Star_Destroyer_Death_Clone">
+		<Text_ID>NONE</Text_ID>
+		<Space_Model_Name>UV_Eclipse_UC_DC.alo</Space_Model_Name>
+		<Death_SFXEvent_Start_Die> Unit_Calamari_Death_SFX </Death_SFXEvent_Start_Die>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Layer_Z_Adjust>-350.0</Layer_Z_Adjust>
+		
+		
+		<Max_Speed> 0.25 </Max_Speed>
+		<Max_Rate_Of_Turn> 0.4 </Max_Rate_Of_Turn>
+		<Max_Thrust> 0.05 </Max_Thrust>
+		<Max_Rate_Of_Roll> 0.02 </Max_Rate_Of_Roll>
+		<Bank_Turn_Angle> 5 </Bank_Turn_Angle>
+		<Affiliation> Empire </Affiliation>
+		<Ship_Class> capital </Ship_Class>
+		<Glory_Cinematics />
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceUnit>
+	-->
+
+
+
+</SpaceUnitsCapital>

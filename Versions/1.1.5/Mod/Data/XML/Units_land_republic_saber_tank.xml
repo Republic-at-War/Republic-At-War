@@ -1,0 +1,331 @@
+<?xml version="1.0"?>
+<Saber_Tank_Data>
+
+
+	<GroundVehicle Name="Saber_Tank">
+		<Target_Bones> main, Turret_00 </Target_Bones>
+		<LOD_Bias>0.5</LOD_Bias>
+		<Text_ID>TEXT_UNIT_SABERTANK</Text_ID>
+		<Encyclopedia_Good_Against>  STAP Crab_Droid AAT_Tank </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>Hailfire_Tank Homing_Spider_Droid Persuader_Droid_Enforcer  </Encyclopedia_Vulnerable_To>
+  		<Encyclopedia_Text>TEXT_TOOLTIP_SABERTANK</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_TANK</Encyclopedia_Unit_Class>
+			<Icon_Name> I_BUTTON_SABERTANK.TGA </Icon_Name>
+			
+		<Land_Model_Name>REV_SABERTANK.ALO</Land_Model_Name>
+	<Mass>1.0</Mass>
+		<Scale_Factor>1.3</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Type>Hover</Type>
+		<Deploys>No</Deploys>
+		<Affiliation>Empire</Affiliation>
+		<Political_Control>0</Political_Control>
+
+    <Ranking_In_Category>6</Ranking_In_Category>
+		<Max_Speed>4.5</Max_Speed>
+		<Movement_Animation_Speed> 2.30 </Movement_Animation_Speed>
+		<Max_Rate_Of_Turn>2.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Vehicle </UnitCollisionClass>
+		<OverrideAcceleration> .1 </OverrideAcceleration>
+		<OverrideDeceleration> .1 </OverrideDeceleration>
+		<FormationSpacing> 2.5 </FormationSpacing>
+		<FormationOrder> 5 </FormationOrder>
+		<FormationGrouping> Standard </FormationGrouping>
+		<FormationRaggedness> 1 </FormationRaggedness>
+		<MaxJiggleDistance> 5 </MaxJiggleDistance>
+		<MinimumPushReturnDistance> 100 </MinimumPushReturnDistance>
+		<UseSecondaryFacing> false </UseSecondaryFacing>
+		<SecondaryTurnInPlaceROTCoefficient> .4 </SecondaryTurnInPlaceROTCoefficient>
+		<SecondaryTurnAngle> 45 </SecondaryTurnAngle>
+		<MinSecondaryTurnROTCoefficient> .4 </MinSecondaryTurnROTCoefficient>
+		<MaxSecondaryTurnROTCoefficient> .9 </MaxSecondaryTurnROTCoefficient>
+		<SecondaryTurnLookaheadDistance> 60 </SecondaryTurnLookaheadDistance>
+		<Custom_Hard_XExtent> 20.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 15.0 </Custom_Hard_YExtent>
+		
+		<Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+        <Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<Ranged_Target_Z_Adjust>12.0</Ranged_Target_Z_Adjust>
+		<Armor_Type> Armor_2M </Armor_Type>
+    <Shield_Armor_Type>Shield_Tank</Shield_Armor_Type>
+		<Size_Value>60</Size_Value>
+		<Damage>6</Damage>
+		<Sensor_Range>80</Sensor_Range>
+		<Shield_Points>50</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Shield_Refresh_Rate>8</Shield_Refresh_Rate>
+		<Energy_Capacity>999</Energy_Capacity>
+		<Energy_Refresh_Rate>999</Energy_Refresh_Rate>
+
+	<Behavior> SELECTABLE </Behavior>
+		 <LandBehavior>AFFECTED_BY_SHIELD, SHIELDED, TREAD_SCROLL, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, POWERED, REVEAL, HIDE_WHEN_FOGGED, SQUASH, SURFACE_FX, UNIT_AI, TELEKINESIS_TARGET,STUNNABLE,DAMAGE_TRACKING</LandBehavior>
+		<Property_Flags>GoodInfantryCrusher</Property_Flags>
+
+		<Is_Affected_By_Gravity_Control_Field> Yes </Is_Affected_By_Gravity_Control_Field>	<!-- This is considered a repulsorlift-driven unit -->
+	
+		
+		<Projectile_Types>Proj_Blaster_Cannon_Medium_Blue</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>1.4</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>4</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.15</Projectile_Fire_Pulse_Delay_Seconds>
+		<Ranged_Target_Z_Adjust>30.0</Ranged_Target_Z_Adjust>
+
+		<Targeting_Fire_Inaccuracy> Infantry, 10.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 5.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 2.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Max_Attack_Distance>200.0</Targeting_Max_Attack_Distance>
+		
+		
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+				<Hardpoints>
+				HP_SABER_00, 
+				HP_SABER_01,
+				HP_SABER_02
+				</Hardpoints>
+
+		<SurfaceFX_Name>Hover</SurfaceFX_Name>
+		<Death_Explosions>Medium_Explosion_Land</Death_Explosions>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+
+		<CategoryMask> Vehicle </CategoryMask>
+		
+		<MovementClass>Hover</MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>99</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>3</No_Refraction_Below_Detail_Level>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+		
+		<Ground_Vehicle_Turret_Target> Yes </Ground_Vehicle_Turret_Target>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+
+     <Death_Clone>Damage_Normal, Sabertank_Death_Clone</Death_Clone>
+		<Death_Clone>Damage_Force_Telekinesis, Sabertank_Telekinesis_Death_Clone</Death_Clone>
+
+		<Wind_Disturbance_Radius>50</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>10</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.4</Wind_Disturbance_Sphere_Alpha>
+
+		<SFXEvent_Fire>Unit_Sabertank_Guns</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Sabertank</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Sabertank</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Sabertank</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Sabertank</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Move_Sabertank</SFXEvent_Guard>
+
+		<SFXEvent_Turret_Rotating_Loop> Vehicle_Turret_Motor </SFXEvent_Turret_Rotating_Loop>
+
+		<SFXEvent_Engine_Idle_Loop> Unit_2M_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_2M_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+
+		<SFXEvent_Assist_Move> Unit_Move_Sabertank </SFXEvent_Assist_Move>		
+		<SFXEvent_Assist_Attack>Unit_Attack_Sabertank</SFXEvent_Assist_Attack>
+
+		<SFXEvent_Unit_Lost> RHD_Unit_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Tactical_Build_Started> RHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>		
+		<SFXEvent_Tactical_Build_Complete> RHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>		
+		<SFXEvent_Tactical_Build_Cancelled> RHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+
+		<Death_SFXEvent_Start_Die>Unit_Tank_Death_SFX</Death_SFXEvent_Start_Die>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Overall_Length>40.0</Overall_Length> <!-- For vehicle pitching up and down on terrain -->
+		<Overall_Width>25.0</Overall_Width> <!-- For vehicle rolling left and right on terrain (30 by geometry)-->
+		<Has_Land_Evaluator>Yes</Has_Land_Evaluator>
+		<AI_Combat_Power>150</AI_Combat_Power>
+
+		<Idle_Chase_Range>0.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>ATATAntiEverything</Targeting_Priority_Set>
+		<Autonomous_Move_Extension_Vs_Attacker>100.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Select_Box_Scale>75</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Weather_Category>Walker</Weather_Category>
+		<Score_Cost_Credits>125</Score_Cost_Credits>
+		
+		<Base_Shield_Penetration_Particle>Shield_Penetration_Effect_Particle</Base_Shield_Penetration_Particle>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+
+		<Tactical_Bribe_Cost>125</Tactical_Bribe_Cost>
+
+		<Abilities SubObjectList="Yes">
+			<Redirect_Blaster_Ability Name="RL_Heavy_Reflective_Armor_L1_Bonus">
+				<Initially_Enabled> No </Initially_Enabled>		<!-- Must be enabled via the EL_Heavy_Reflective_Armor_L1_Upgrade -->
+				<Activation_Style>Take_Damage</Activation_Style>
+				<!-- Redirection chance is rolled first. If failed, we roll block chance. If failed, we take the damage. -->
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.15</Block_Chance>
+				<Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 30.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<!-- We can block/redirect shots from the following units types: -->
+				<Applicable_Unit_Categories>Infantry | LandHero | Vehicle | Air | Structure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+			<Redirect_Blaster_Ability Name="RL_Heavy_Reflective_Armor_L2_Bonus">
+				<Initially_Enabled> No </Initially_Enabled>		<!-- Must be enabled via the EL_Heavy_Reflective_Armor_L2_Upgrade -->
+				<Activation_Style>Take_Damage</Activation_Style>
+				<!-- Redirection chance is rolled first. If failed, we roll block chance. If failed, we take the damage. -->
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.30</Block_Chance>
+				<Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 30.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<!-- We can block/redirect shots from the following units types: -->
+				<Applicable_Unit_Categories>Infantry | LandHero | Vehicle | Air | Structure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+					
+			
+		</Abilities>
+		
+        <Converted_To_Enemy_Die_Time_Seconds>45</Converted_To_Enemy_Die_Time_Seconds>
+	</GroundVehicle>
+       
+        
+        
+
+   <GroundVehicle Name="Sabertank_Death_Clone">
+		<Variant_Of_Existing_Type>Saber_Tank</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Land_Model_Name>ReV_sabertank_dc.ALO</Land_Model_Name>
+		<Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
+		<LandBehavior>HIDE_WHEN_FOGGED,LAND_OBSTACLE</LandBehavior>
+		<Obstacle_Width>40.0</Obstacle_Width>
+		<Obstacle_Height>40.0</Obstacle_Height>
+		<Obstacle_X_Offset>0.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-20.0</Obstacle_Y_Offset>
+		<Death_Persistence_Duration> 20 </Death_Persistence_Duration>
+		<Death_Explosions_End>Large_Explosion_Land</Death_Explosions_End>
+		<Death_SFXEvent_End_Die>Unit_Calamari_Death_SFX</Death_SFXEvent_End_Die>
+		<IsDeathClone> true </IsDeathClone>
+		<Specific_Death_Anim_Index /> 
+	</GroundVehicle>
+
+<GroundVehicle Name="Sabertank_Telekinesis_Death_Clone">
+		<Variant_Of_Existing_Type>Saber_Tank</Variant_Of_Existing_Type>
+		<Death_Clone_Is_Obstacle>no</Death_Clone_Is_Obstacle>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<Specific_Death_Anim_Type>FTK_DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+      
+		<Custom_Hard_XExtent> 30.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 20.0 </Custom_Hard_YExtent>
+		
+		<Death_Persistence_Duration> 0 </Death_Persistence_Duration>
+		<Death_Explosions_End>Large_Explosion_Land</Death_Explosions_End>
+		<Death_SFXEvent_End_Die>Unit_Calamari_Death_SFX</Death_SFXEvent_End_Die>
+		<IsDeathCloneObstacle> true </IsDeathCloneObstacle>
+		<IsDeathClone> true </IsDeathClone>
+	</GroundVehicle>	
+		
+
+		
+        
+
+	
+
+
+	
+
+
+
+
+
+
+	<GroundCompany Name="Sabertank_Company">
+		<LOD_Bias>0.5</LOD_Bias>
+		<Text_ID>TEXT_UNIT_SABERTANK</Text_ID>
+		<Encyclopedia_Good_Against>  STAP CrabDroid Dwarf_Spider_Droid</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>Hailfire_Tank Homing_Spider_Droid Persuader_Droid_Enforcer  </Encyclopedia_Vulnerable_To>
+  		<Encyclopedia_Text>TEXT_TOOLTIP_SABERTANK</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_TANK</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_SABERTANK.TGA</Icon_Name>
+
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>18</Damage>
+		<Autoresolve_Health>100</Autoresolve_Health>
+		
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>575</Build_Cost_Credits>
+		<Build_Time_Seconds>25</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Slice_Cost_Credits>1400</Slice_Cost_Credits>
+		<Tech_Level>2</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>E_Ground_Light_Vehicle_Factory</Required_Special_Structures>
+		<Required_Planets />
+		
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>3</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Ship_Class>walker</Ship_Class>
+		
+		<Company_Transport_Unit>Republic_Botajef</Company_Transport_Unit>
+		<Company_Units>Saber_Tank, Saber_Tank, Saber_Tank</Company_Units>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Sabertank</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Sabertank</SFXEvent_Fleet_Move>
+		
+		<Score_Cost_Credits>600</Score_Cost_Credits>
+        <Maintenance_Cost>0.05</Maintenance_Cost>
+		<Population_Value>2</Population_Value>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>--> 
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+        
+		<!-- Non-Hero unit abilities description -->
+		
+
+	</GroundCompany>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Saber_Tank_Data>

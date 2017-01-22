@@ -1,0 +1,1812 @@
+<?xml version="1.0" ?>
+<Props_Generic>
+
+	<Props_Generic Name="Prop_AllShaders">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_AllShaders.ALO</Land_Model_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE,IDLE</LandBehavior>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_AllShadersNoText">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_AllShaders_NoText.alo</Land_Model_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE,IDLE</LandBehavior>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_ElectricBox_00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Prop_ElecBox.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_ConcretePad_00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Prop_ConcretePad.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Generator00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Prop_Generator.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_PwrBox00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Prop_PwrBox.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Snowspeeder_dmg">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>RV_Snowspeeder_dmg.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<!-- Used on Thyferra and Manaan to auto-heal all defending units in tactical combat -->
+	<Props_Generic Name="Prop_DefenderInfantryAutoHeal">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Prop_ElecBox.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<Is_Discardable>No</Is_Discardable>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Obstacle_Width>20.0</Obstacle_Width>
+		<Obstacle_Height>20.0</Obstacle_Height>
+		<Obstacle_X_Offset>-10.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-10.0</Obstacle_Y_Offset>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Planetary_Infantry_AutoHeal">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Heal_Range>100000.0</Heal_Range>
+				<Heal_Amount>5.0</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories>Infantry | LandHero</Applicable_Unit_Categories>
+				<Applicable_Unit_Types></Applicable_Unit_Types>
+				
+				<Excluded_Unit_Types>
+						Battledroids,
+						Squad_Battledroid,
+						Battledroid_Engineer,
+						Bx_Commando,
+						Generic_Field_Commander_Cis,
+						Squad_Generic_Field_Commander_Cis,
+						Spawned_Battledroid,
+						C_Field_Commander_Guard,
+						Squad_C_Field_Commander_Guard,
+						Magnaguard,
+						Repair_Droid,
+						Super_Battledroid, 
+						Medical_Droid,
+						Proximity_Mine
+				</Excluded_Unit_Types> 
+				
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Unit_Healed_Particles</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>B_HEAD</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Smooth_Pulse</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 1.2, 2.0</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+	</Props_Generic>
+
+
+
+	<!-- Used on Shola for damaging infantry due to caustic atmosphere -->
+	<Props_Generic Name="Prop_InfantryAutoDamage">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Lava_Heat_Particle1.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<Is_Branched_Map_Discardable>No</Is_Branched_Map_Discardable>
+		<LandBehavior>LAND_OBSTACLE, IDLE,DUMMY_UPGRADE</LandBehavior>
+		<Obstacle_Width>20.0</Obstacle_Width>
+		<Obstacle_Height>20.0</Obstacle_Height>
+		<Obstacle_X_Offset>-10.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-10.0</Obstacle_Y_Offset>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+
+		<Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_encyclopedia_weather_fire.tga</Icon_Name>
+	
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Planetary_Infantry_AutoDamage">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Heal_Range>100000.0</Heal_Range>
+				<Heal_Amount>-2.0</Heal_Amount>
+				<Heal_Interval_In_Secs>10.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				
+				<Applicable_Unit_Categories>Infantry | LandHero</Applicable_Unit_Categories>
+				<Applicable_Unit_Types>Scout_Trooper,Pirate_Soldier, Pirate_Plex</Applicable_Unit_Types>
+				
+				<Excluded_Unit_Types>
+						Battledroids,
+						Squad_Battledroid,
+						Battledroid_Engineer,
+						Bx_Commando,
+						Generic_Field_Commander_Cis,
+						Squad_Generic_Field_Commander_Cis,
+						Spawned_Battledroid,
+						C_Field_Commander_Guard,
+						Squad_C_Field_Commander_Guard,
+						Magnaguard,
+						Repair_Droid,
+						Super_Battledroid, 
+						Medical_Droid,
+						Durge,
+						General_Grievous,
+						Yoda,
+						Jango_Fett,
+						Darth_Vader,
+						Proximity_Mine
+				</Excluded_Unit_Types> 
+					
+				<SFXEvent_Target_Affected>Weather_Ambient_Heavy_Ash_Intermittent</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Environmental_Fire_Damage_Particles</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>ROOT</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Smooth_Pulse</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>2.0, 0.6, 0.6</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>1.0</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				
+			</Force_Healing_Ability>
+		</Abilities>
+	</Props_Generic>
+
+
+
+
+
+
+
+	<Props_Generic Name="Prop_RebelHeroEnhancement">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Prop_ElecBox.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Obstacle_Width>20.0</Obstacle_Width>
+		<Obstacle_Height>20.0</Obstacle_Height>
+		<Obstacle_X_Offset>-10.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-10.0</Obstacle_Y_Offset>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Planetary_Rebel_Hero_Enhancement">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Unit_Strength_Category>LandHero</Unit_Strength_Category>
+				<Applicable_Unit_Categories>LandHero</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Specific_Faction>Rebel</Specific_Faction>
+				<Health_Bonus_Percentage>0.50</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.25</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_EmpireHeroEnhancement">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Prop_ElecBox.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Obstacle_Width>20.0</Obstacle_Width>
+		<Obstacle_Height>20.0</Obstacle_Height>
+		<Obstacle_X_Offset>-10.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-10.0</Obstacle_Y_Offset>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Planetary_Empire_Hero_Enhancement">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Unit_Strength_Category>LandHero</Unit_Strength_Category>
+				<Applicable_Unit_Categories>LandHero</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Specific_Faction>Empire</Specific_Faction>
+				<Health_Bonus_Percentage>0.50</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.25</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate_Cis_Lrg_00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crate_large_cis.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate_Cis_Lrg_01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crate_large_cis.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.8</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate_Cis_Lrg_02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crate_large_cis.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate_Rep_Lrg_00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crate_large_rep.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate_Rep_Lrg_01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crate_large_rep.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.8</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate_Rep_Lrg_02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crate_large_rep.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Crate01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates01.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Crate02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates02.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate03">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates03.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate04">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates04.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate04_Big">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates04.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Crate05">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates05.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate05_Big">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates05.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Crate06">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates06.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate06_Big">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates06.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Crate07">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates07.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate07_Big">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates07.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Crate08">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates08.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate08_Big">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates08.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Crate09">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates09.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate10">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates10.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate11">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates11.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate12">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates12.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate13">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates13.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate14">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates14.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate15">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates15.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate16">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates16.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate17">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates17.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate18_Parts">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates18.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate19_Parts">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates19.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate20">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates20.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate21">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates21.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate22_Parts">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates22.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate23_Wooden">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates23.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate24_Parts">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates24.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate25_Parts">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates25.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate26">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates26.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate27_Wooden">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates27.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate28">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates28.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Crate29_Wooden">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_crates29.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Gungan_Head_Statue">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_GunganHead.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Gungan_Head_Statue_Obstacle">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_GunganHead.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> High Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 25.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 25.0 </Custom_Hard_YExtent>
+
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Fuel_Pipe_1">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_fuel_pipe00.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Fuel_Pipe_2">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_fuel_pipe01.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Fuel_Pipe_3">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_fuel_pipe02.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Droid_Steam">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_droid_steam.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Fuel_Cell_1">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_fuel_cell_1.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Fuel_Cell_2">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_fuel_cell_2.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Fuel_Cell_3">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_fuel_cell_3.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Massassi_Temple">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Massassi_Temple.alo</Land_Model_Name>
+		<Behavior>LAND_OBSTACLE, SPACE_OBSTACLE</Behavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Is_Decoration>No</Is_Decoration>
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Massassi_ObservationTower">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_observation_tower.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.75</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+
+	<SpaceProp Name="Prop_Land_Movement_Compass">
+		<Text_ID />
+		<Land_Model_Name> I_FACING_ARROW.ALO </Land_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+    <Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> .33f </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+	</SpaceProp>
+	
+	<Props_Generic Name="Prop_Crashed_Shuttle">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>EV_crashed_tyderium.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Generic>
+
+	<Props_Generic Name="Fish">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_fish.alo</Land_Model_Name>
+		<LandBehavior>IDLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>0</No_Refraction_Below_Detail_Level>
+	</Props_Generic>
+	
+	<Props_Generic Name="Fish_Tropical">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_fish_tropical.ALO</Land_Model_Name>
+		<LandBehavior>IDLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>0</No_Refraction_Below_Detail_Level>
+	</Props_Generic>
+	
+	<Props_Generic Name="Fish_Tropical_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_fish_tropical_a.ALO</Land_Model_Name>
+		<LandBehavior>IDLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>0</No_Refraction_Below_Detail_Level>
+	</Props_Generic>
+	
+		<Props_Generic Name="Fish_Tropical_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_fish_tropical_b.ALO</Land_Model_Name>
+		<LandBehavior>IDLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>0</No_Refraction_Below_Detail_Level>
+	</Props_Generic>
+
+
+	<Props_Generic Name="Prop_Good_Ground_Area">
+		<Text_ID>TEXT_GROUND_BUNKER</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_GROUND_BUNKER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<LandBehavior>DUMMY_TOOLTIP</LandBehavior>
+		<Land_Model_Name>W_GoodGround_Bags.alo</Land_Model_Name>
+		<Scale_Factor>.8</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<Affiliation>Neutral</Affiliation>
+		<LandBehavior>UNIT_AI</LandBehavior>
+		<CategoryMask>Wall</CategoryMask>
+		<Space_Layer> Land </Space_Layer>
+		<Avoidance_Disabled> true </Avoidance_Disabled>
+		<Custom_Hard_XExtent> 60.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 60.0 </Custom_Hard_YExtent>		
+		<Snap_Movement_Orders_To_Center> true </Snap_Movement_Orders_To_Center>
+	</Props_Generic>
+
+
+	<Props_Generic Name="Land_Speeder">
+		<Text_ID>TEXT_INDIG_LAND_SPEEDER</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_LIGHT_VEHICLE </Encyclopedia_Text>
+		<Land_Model_Name>NV_Sandspeeder.alo</Land_Model_Name>
+		<Icon_Name> </Icon_Name>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Deploys>No</Deploys>
+		<Affiliation>Neutral</Affiliation>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Political_Control>0</Political_Control>
+		
+		<Max_Speed>2.3</Max_Speed>
+		<Movement_Animation_Speed> 2.3 </Movement_Animation_Speed>
+		<Max_Rate_Of_Turn>7.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Vehicle </UnitCollisionClass>
+		<OverrideAcceleration> .2 </OverrideAcceleration>
+		<OverrideDeceleration> .2 </OverrideDeceleration>
+		<FormationSpacing> .75 </FormationSpacing>
+		<FormationOrder> 4 </FormationOrder>
+		<FormationGrouping> Standard </FormationGrouping>
+		<MinimumPushReturnDistance> 100 </MinimumPushReturnDistance>
+
+		<Armor_Type> Armor_Vehicle_LT </Armor_Type>
+		<Size_Value>70</Size_Value>
+		<Damage>1</Damage>
+		<Tactical_Health>20</Tactical_Health>
+
+		<Behavior> </Behavior>
+		<LandBehavior> WALK_LOCOMOTOR, IDLE, SURFACE_FX, TELEKINESIS_TARGET, STUNNABLE, WIND_DISTURBANCE, DAMAGE_TRACKING</LandBehavior>
+
+		<Is_Affected_By_Gravity_Control_Field> Yes </Is_Affected_By_Gravity_Control_Field>	<!-- This is considered a repulsorlift-driven unit -->
+
+		<SurfaceFX_Name>Hover</SurfaceFX_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+
+		<Death_Explosions>Medium_Explosion_Land</Death_Explosions>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+
+		<Wind_Disturbance_Radius>50</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>10</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.4</Wind_Disturbance_Sphere_Alpha>
+
+		<Death_SFXEvent_Start_Die>Unit_Tank_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Engine_Idle_Loop> Unit_Skiff_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Skiff_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Occlusion_Silhouette_Enabled>0</Occlusion_Silhouette_Enabled>
+		
+		<CategoryMask> Vehicle </CategoryMask>
+		<MovementClass>Hover</MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Ground_Vehicle_Turret_Target> No </Ground_Vehicle_Turret_Target>
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Overall_Length>45.0</Overall_Length> <!-- For vehicle pitching up and down on terrain -->
+		<Overall_Width>20.0</Overall_Width> <!-- For vehicle rolling left and right on terrain value (20 by geometry)-->
+		<Has_Land_Evaluator>No</Has_Land_Evaluator>
+		<AI_Combat_Power>1</AI_Combat_Power>
+
+		<Weather_Category>Hover</Weather_Category>
+		
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE </Encyclopedia_Text>
+		<Score_Cost_Credits> 20 </Score_Cost_Credits>
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Rancor_Prison">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Icon_Name>i_button_cage.tga</Icon_Name>
+		<Land_Model_Name>NB_Cage.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Acclamator_Wreck">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>EV_ACCLAMATOR.ALO</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Acclamator_Wreck_1">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>EV_ACCLAMATOR_wreck_a01.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Acclamator_Wreck_2">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>EV_ACCLAMATOR_wreck_a.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Venator_Wreck">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>NV_JEDICRUISER.ALO</Land_Model_Name>
+		<Scale_Factor>10.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Venator_HP_BM">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>NV_JEDICRUISER_HP_B-M.ALO</Land_Model_Name>
+		<Scale_Factor>10.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Venator_HP_FL">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>NV_JEDICRUISER_HP_F-L.ALO</Land_Model_Name>
+		<Scale_Factor>10.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Venator_HP_FR">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>NV_JEDICRUISER_HP_F-R.ALO</Land_Model_Name>
+		<Scale_Factor>10.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Krayt_Cine_Unit">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>UV_KRAYTCLASSDESTROYER_CINE.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Variant_Of_Existing_Type>Shuttle_Tyderium</Variant_Of_Existing_Type>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Cinematic_Object_Only> Yes </Cinematic_Object_Only>		
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Interceptor_Cine_Unit">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>UV_InterceptorIV_cine.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Felucia_Planet_Cine_Unit">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_planet_Endor_High.ALO</Land_Model_Name>
+		<Scale_Factor>200.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Kessel_Planet_Cine_Unit">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<!-- Jeff S: if this is being used outside of the mission 1 cine please let me know and I'll revert this change -->
+		<!-- <Land_Model_Name>W_planet_kessel_cine.alo</Land_Model_Name> -->
+		<Land_Model_Name>w_kessel_ships.alo</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+	
+	
+	
+	<Props_Generic Name="Prop_Stars_Skydome">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_stars_cine_noflare.alo</Land_Model_Name>
+		<Scale_Factor>0.10</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_LRS_Wreck">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Behavior>SPACE_OBSTACLE</Behavior>
+		<Land_Model_Name>NV_LRS.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_GirderWall_Small">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_space_girder00.alo</Land_Model_Name>
+		<Scale_Factor>0.50</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_GirderWall_Big">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_space_girder00.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Debris_Acc_01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>EV_Acclamator_HP00_F-L.alo</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Debris_Acc_02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>EV_Acclamator_HP00_F-R.alo</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Debris_Acc_03">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>EV_Acclamator_HP00_F-C.alo</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Debris_Acc_05">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>EV_Acclamator_HP00_B-R.alo</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Debris_Acc_11">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>EV_Acclamator_HP00_F-L.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Debris_Acc_12">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>EV_Acclamator_HP00_F-R.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Debris_Acc_13">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>EV_Acclamator_HP00_F-C.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Debris_Acc_15">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>EV_Acclamator_HP00_B-R.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Debris_Gen_00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>Nb_apbase_hp_shg.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Debris_Gen_01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>Nb_apbase_hp_shg.alo</Land_Model_Name>
+		<Scale_Factor>4.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Debris_Gen_02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>RB_Station_05_HP05_PRT.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Debris_Gen_03">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>RB_Station_01_HP01_SHG.alo</Land_Model_Name>
+		<Scale_Factor>0.50</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Debris_Gen_04">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>NV_Jedicruiser_HP_B-M.alo</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Debris_Gen_05">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>RB_Station_05_HP05_PRT.alo</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Debris_Gen_06">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>RB_Station_04_HP04_IC.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Debris_Gen_07">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>RB_Station_04_HP04_TBL.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Debris_Gen_08">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>RB_Station_01_HP01_CA.alo</Land_Model_Name>
+		<Scale_Factor>0.50</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Debris_Gen_09">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_concussion_missile.alo</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="Prop_Generic_Generator00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_generic_generator.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+<Props_Generic Name="Prop_Audio_Emitter_Factory_Droids">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_audio_emitter.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Behavior>IDLE</Behavior>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	  <SFXEvent_Engine_Idle_Loop> Ambient_Droid_Factory_Loop </SFXEvent_Engine_Idle_Loop>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Generic>
+
+<Props_Generic Name="Prop_Audio_Emitter_Factory_Basic">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_audio_emitter.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Behavior>IDLE</Behavior>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	  <SFXEvent_Engine_Idle_Loop> Ambient_Factory_Loop </SFXEvent_Engine_Idle_Loop>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Generic>
+
+<Props_Generic Name="Prop_Audio_Emitter_Nature_Waterfall">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_audio_emitter.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Behavior>IDLE</Behavior>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	  <SFXEvent_Engine_Idle_Loop> Ambient_Waterfall_Loop</SFXEvent_Engine_Idle_Loop>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Generic>
+
+<Props_Generic Name="Prop_Audio_Emitter_Nature_Ocean">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_audio_emitter.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Behavior>IDLE</Behavior>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	  <SFXEvent_Engine_Idle_Loop> Ambient_Ocean_Loop</SFXEvent_Engine_Idle_Loop>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Generic>
+
+<Props_Generic Name="Prop_Audio_Emitter_Nature_River">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_audio_emitter.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Behavior>IDLE</Behavior>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	  <SFXEvent_Engine_Idle_Loop> Ambient_River_Loop</SFXEvent_Engine_Idle_Loop>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Generic>
+
+<Props_Generic Name="Prop_Audio_Emitter_Nature_Desert">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_audio_emitter.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Behavior>IDLE</Behavior>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	  <SFXEvent_Engine_Idle_Loop> Ambient_Desert_Loop</SFXEvent_Engine_Idle_Loop>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Generic>
+
+<Props_Generic Name="Prop_Audio_Emitter_Nature_Forest">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_audio_emitter.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Behavior>IDLE</Behavior>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	  <SFXEvent_Engine_Idle_Loop> Ambient_Forest_Loop</SFXEvent_Engine_Idle_Loop>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Generic>
+
+<Props_Generic Name="Prop_Audio_Emitter_Nature_Forest_Night">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_audio_emitter.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Behavior>IDLE</Behavior>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	  <SFXEvent_Engine_Idle_Loop> Ambient_Forest_Night_Loop</SFXEvent_Engine_Idle_Loop>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Generic>
+
+<Props_Generic Name="Prop_Audio_Emitter_Nature_Jungle">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_audio_emitter.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Behavior>IDLE</Behavior>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	  <SFXEvent_Engine_Idle_Loop> Ambient_Jungle_Loop</SFXEvent_Engine_Idle_Loop>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Generic>
+
+<Props_Generic Name="Prop_Audio_Emitter_Nature_Lakeshore">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_audio_emitter.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Behavior>IDLE</Behavior>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	  <SFXEvent_Engine_Idle_Loop>Ambient_Lakeshore_Loop</SFXEvent_Engine_Idle_Loop>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Generic>
+
+<Props_Generic Name="Prop_Audio_Emitter_Nature_Lava">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_audio_emitter.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Behavior>IDLE</Behavior>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	  <SFXEvent_Engine_Idle_Loop>Ambient_Lava_Loop</SFXEvent_Engine_Idle_Loop>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Generic>
+
+<Props_Generic Name="Prop_Audio_Emitter_Nature_Swamp">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_audio_emitter.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Behavior>IDLE</Behavior>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	  <SFXEvent_Engine_Idle_Loop>Ambient_Swamp_Loop</SFXEvent_Engine_Idle_Loop>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Generic>
+
+<Props_Generic Name="Prop_Audio_Emitter_Urban_Cantina">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_audio_emitter.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Behavior>IDLE</Behavior>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	  <SFXEvent_Engine_Idle_Loop>Ambient_Cantina_Loop</SFXEvent_Engine_Idle_Loop>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Generic>
+
+<Props_Generic Name="Prop_Audio_Emitter_Urban_City">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_audio_emitter.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Behavior>IDLE</Behavior>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	  <SFXEvent_Engine_Idle_Loop>Ambient_City_Loop</SFXEvent_Engine_Idle_Loop>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Generic>
+
+<Props_Generic Name="Prop_Audio_Emitter_Urban_Crowd">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_audio_emitter.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Behavior>IDLE</Behavior>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	  <SFXEvent_Engine_Idle_Loop>Ambient_Crowd_Loop</SFXEvent_Engine_Idle_Loop>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Generic>
+
+<Props_Generic Name="Prop_Audio_Emitter_Urban_Crowd_Small">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_audio_emitter.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Behavior>IDLE</Behavior>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	  <SFXEvent_Engine_Idle_Loop>Ambient_Crowd_Small_Loop</SFXEvent_Engine_Idle_Loop>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Generic>
+
+<Props_Generic Name="Prop_Audio_Emitter_Urban_Crowd_Cheering">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_audio_emitter.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Behavior>IDLE</Behavior>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	  <SFXEvent_Engine_Idle_Loop>Ambient_Crowd_Cheering_Loop</SFXEvent_Engine_Idle_Loop>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Generic>
+
+<Props_Generic Name="Prop_Audio_Emitter_Urban_Junk">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_audio_emitter.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Behavior>IDLE</Behavior>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	  <SFXEvent_Engine_Idle_Loop>Ambient_Junk_Loop</SFXEvent_Engine_Idle_Loop>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Generic>
+
+<Props_Generic Name="Prop_Audio_Emitter_Urban_Power_Generator">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_audio_emitter.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Behavior>IDLE</Behavior>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	  <SFXEvent_Engine_Idle_Loop>Ambient_Power_Generator_Loop</SFXEvent_Engine_Idle_Loop>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Generic>
+
+<Props_Generic Name="Prop_Audio_Emitter_Urban_Steam">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_audio_emitter.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Behavior>IDLE</Behavior>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	  <SFXEvent_Engine_Idle_Loop>Ambient_Steam_Loop</SFXEvent_Engine_Idle_Loop>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Generic>
+
+<Props_Generic Name="Prop_Audio_Emitter_Urban_Mining">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_audio_emitter.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Behavior>IDLE</Behavior>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	  <SFXEvent_Engine_Idle_Loop>Ambient_Mining_Loop</SFXEvent_Engine_Idle_Loop>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Generic>
+
+<Props_Generic Name="Prop_Audio_Emitter_Urban_Market">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_audio_emitter.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Behavior>IDLE</Behavior>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	  <SFXEvent_Engine_Idle_Loop>Ambient_Market_Loop</SFXEvent_Engine_Idle_Loop>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Generic>
+
+<Props_Generic Name="Prop_Audio_Emitter_Urban_Starport">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_audio_emitter.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Behavior>IDLE</Behavior>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	  <SFXEvent_Engine_Idle_Loop>Ambient_Starport_Loop</SFXEvent_Engine_Idle_Loop>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Generic>
+
+<Props_Generic Name="Prop_Audio_Emitter_Urban_Fountain">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_audio_emitter.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Behavior>IDLE</Behavior>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	  <SFXEvent_Engine_Idle_Loop>Ambient_Fountain_Loop</SFXEvent_Engine_Idle_Loop>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Generic>
+
+    <Props_Generic Name="Exploding_Container">
+		<GUI_Bounds_Scale>.35</GUI_Bounds_Scale>
+		<Select_Box_Scale>200</Select_Box_Scale>
+		<Text_ID>TEXT_PROP_EXPLODING_CONTAINER</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE </Encyclopedia_Unit_Class>
+		<Land_Model_Name>w_explosive_crate.alo</Land_Model_Name>
+		<Scale_Factor>.35</Scale_Factor>
+		<Property_Flags>NotOpportunityTarget</Property_Flags>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, UNIT_AI, IDLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED</Behavior>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<Mass>1.0</Mass>
+		
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>50</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Hostile</Affiliation>
+		<Base_Level_Available>0</Base_Level_Available>
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>     
+        <Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Ranged_Target_Z_Adjust>10.0</Ranged_Target_Z_Adjust>
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<Death_Projectiles>Proj_Exploding_Land_Barrel_Detonation</Death_Projectiles>
+		
+		<CategoryMask>Structure</CategoryMask>
+		<Radar_Icon_Size>0.05  0.05</Radar_Icon_Size>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</Props_Generic>
+
+    <Props_Generic Name="Exploding_Doorway">
+		<GUI_Bounds_Scale>.5</GUI_Bounds_Scale>
+		<Select_Box_Scale>200</Select_Box_Scale>
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE </Encyclopedia_Unit_Class>
+		<Land_Model_Name>EB_BaseWall-mid.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Property_Flags>NotOpportunityTarget</Property_Flags>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, UNIT_AI, IDLE, LAND_OBSTACLE, REVEAL</Behavior>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<Mass>1.0</Mass>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>50</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Hostile</Affiliation>
+		<Base_Level_Available>0</Base_Level_Available>
+		<Armor_Type> Armor_Satellite </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>     
+	        <Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Ranged_Target_Z_Adjust>10.0</Ranged_Target_Z_Adjust>
+		<Death_Explosions>Small_Explosion_Land</Death_Explosions>
+		<CategoryMask>Structure</CategoryMask>
+		<Radar_Icon_Size>0.05  0.05</Radar_Icon_Size>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</Props_Generic>
+
+	<Props_Generic Name="Droid_Factory_Hole">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>test_wall.alo</Land_Model_Name>
+		<Scale_Factor>5.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+<Props_Generic Name="Droid_Factory_Hole_Medium">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>test_wall.alo</Land_Model_Name>
+		<Scale_Factor>4.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+<Props_Generic Name="Droid_Factory_Hole_Small">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>test_wall.alo</Land_Model_Name>
+		<Scale_Factor>2.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="PropOnly_Pipe_1m">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_fuel_pipe00.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="PropOnly_Pipe_2m">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_fuel_pipe01.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="PropOnly_Pipe_3m">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_fuel_pipe02.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="PropOnly_Pipe_1s">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_fuel_pipe00.alo</Land_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="PropOnly_Pipe_2s">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_fuel_pipe01.alo</Land_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="PropOnly_Pipe_3s">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_fuel_pipe02.alo</Land_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="PropOnly_Pipe_1b">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_fuel_pipe00.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="PropOnly_Pipe_2b">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_fuel_pipe01.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="PropOnly_Pipe_3b">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_fuel_pipe02.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+
+	<Props_Generic Name="Alpha_Girders">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_AlphaGirder.alo</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+	
+	<Props_Generic Name="Prop_Artifact_Pedestal">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_SithArtifact_pedestal.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+	</Props_Generic>
+	
+	<Props_Generic Name="Dathomir_Backdrop_NightCloak">
+		<Text_ID />
+		<Space_Model_Name>w_orbital_nightcloak.alo</Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Loop_Idle_Anim_00> Yes </Loop_Idle_Anim_00>
+		<Idle_Anim_00_Rate_Mod> 1.0 </Idle_Anim_00_Rate_Mod>
+		<Scale_Factor>8</Scale_Factor>
+		<Behavior> IDLE </Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<In_Background> Yes </In_Background>
+		<Layer_Z_Adjust>-2500.0</Layer_Z_Adjust>
+		<Radar_Icon_Name>i_radar_planet.tga</Radar_Icon_Name> 
+		<Is_Visible_On_Radar> Yes </Is_Visible_On_Radar>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+
+		<!-- When destroyed by tactical super weapon - Death Star -->
+		<Death_Explosions> Tactical_Planet_Explode_300x_Particle </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Planet_Death_SFX </Death_SFXEvent_Start_Die>
+		<Death_By_TSW_Replacements> Destroyed_Planet_Remains_Part_1, Destroyed_Planet_Remains_Part_2 </Death_By_TSW_Replacements>
+	</Props_Generic>
+	
+	<Props_Generic Name="Rock_Gh">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_rock_gh.alo</Land_Model_Name>
+		<Scale_Factor>1.1</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Generic>
+	
+	
+		<Props_Generic Name="Sailboat_Red">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sailboat_red.ALO</Land_Model_Name>
+		<LandBehavior>IDLE</LandBehavior>
+		<Scale_Factor>20.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>0</No_Refraction_Below_Detail_Level>
+	</Props_Generic>
+	
+	<Props_Generic Name="Sailboat_Blue">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_sailboat_blue.ALO</Land_Model_Name>
+		<LandBehavior>IDLE</LandBehavior>
+		<Scale_Factor>20.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>0</No_Refraction_Below_Detail_Level>
+	</Props_Generic>
+	
+</Props_Generic>

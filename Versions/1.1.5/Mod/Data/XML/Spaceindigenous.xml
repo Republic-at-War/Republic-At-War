@@ -1,0 +1,1419 @@
+<?xml version="1.0"?>
+<Space_Indigenous_Units>
+
+
+
+<!-- **************  SENTIENT BEINGS ************** -->
+
+<Space_Indigenous_Unit Name="Merchant_Station_Destroyable">
+		<GUI_Bounds_Scale>0.1</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_ORBITAL_MERCHANT_STATION</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_STRUCTURE_ORBITAL_MERCHANT_STATION_DESC</Encyclopedia_Text>
+		<Space_Model_Name>EB_construction_pod.alo</Space_Model_Name>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE</Behavior>
+		<SpaceBehavior>IDLE, SPACE_OBSTACLE</SpaceBehavior>
+		<Space_FOW_Reveal_Range>100.0</Space_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>15000</Tactical_Health><!-- jdg was 1800 -->
+		<Ranged_Target_Z_Adjust>30.0</Ranged_Target_Z_Adjust>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Civilian</Affiliation>
+		<Base_Level_Available>0</Base_Level_Available>
+		<Armor_Type> Armor_Fighter </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>     
+        <Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Death_Explosions>Friggin_Huge_Explosion_Space</Death_Explosions>
+		<Death_Projectiles>Proj_Construction_Pod_Detonation</Death_Projectiles><!-- jdg test -->
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<CategoryMask>Structure</CategoryMask>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+
+		<Space_Obstacle_Radius> 130 </Space_Obstacle_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+		<Destruction_Survivors> Credit_Penalty_Space_Large, 1.0 </Destruction_Survivors>
+		<Property_Flags>NotOpportunityTarget</Property_Flags>
+
+		
+        
+	</Space_Indigenous_Unit>
+
+
+<!--Ships-->
+
+<Space_Indigenous_Unit Name="Freighter_1">
+		<Text_ID>TEXT_INDIG_FREIGHTER</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_FREIGHTER </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FREIGHTER</Encyclopedia_Unit_Class>
+		<Space_Model_Name>NV_Freighter_01</Space_Model_Name>
+		
+		<Select_Box_Scale>280</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+            
+		<Behavior> DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+		<SpaceBehavior> SIMPLE_SPACE_LOCOMOTOR, IDLE, SELECTABLE, REVEAL, UNIT_AI, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.8</Scale_Factor>
+		
+		<Max_Speed>2.3</Max_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Space_Layer> Frigate </Space_Layer>
+		<Layer_Z_Adjust>-55.0</Layer_Z_Adjust>
+		
+		
+		<Max_Rate_Of_Roll>0.5</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<OverrideAcceleration> .065 </OverrideAcceleration>
+		<OverrideDeceleration> .065 </OverrideDeceleration>
+		
+		<Political_Control>0</Political_Control>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Tech_Structure />
+		<Required_Planets />
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Size_Value>150</Size_Value>
+		<Damage>1</Damage>
+		<Tactical_Health>500</Tactical_Health>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
+		<Shield_Points>100</Shield_Points>
+		
+		<Armor_Type> Armor_Default </Armor_Type>
+    <Shield_Armor_Type>Shield_Corvette</Shield_Armor_Type>
+		
+		<SFXEvent_Select />
+		<SFXEvent_Move />
+		<SFXEvent_Attack />
+		
+		<CategoryMask> Frigate </CategoryMask>
+		<Victory_Relevant>No</Victory_Relevant>
+		<MovementClass> Space </MovementClass>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Is_Valid_Target>Yes</Is_Valid_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+		<AI_Combat_Power>1</AI_Combat_Power>
+
+		<!-- need these to be able to move this object -->
+		
+		
+    <Affiliation>Civilian</Affiliation>		
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	  <Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Engine_Idle_Loop> Unit_Tartan_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Tartan_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Tartan_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Destruction_Survivors> Credit_Penalty_Space, 1.0 </Destruction_Survivors>
+		
+		<Property_Flags>NotOpportunityTarget</Property_Flags>
+		<Lua_Script>Tasked_1</Lua_Script>
+		</Space_Indigenous_Unit>
+		
+		<Space_Indigenous_Unit Name="Freighter_2">
+		<Text_ID>TEXT_INDIG_FREIGHTER</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_FREIGHTER </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FREIGHTER</Encyclopedia_Unit_Class>
+		<Space_Model_Name>NV_Freighter_02</Space_Model_Name>
+		
+		<Select_Box_Scale>280</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+            
+		<Behavior> DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+		<SpaceBehavior> SIMPLE_SPACE_LOCOMOTOR, IDLE, SELECTABLE, REVEAL, UNIT_AI, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.8</Scale_Factor>
+		
+		<Max_Speed>2.3</Max_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Space_Layer> Frigate </Space_Layer>
+		<Layer_Z_Adjust>-55.0</Layer_Z_Adjust>
+		
+		
+		<Max_Rate_Of_Roll>0.5</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<OverrideAcceleration> .065 </OverrideAcceleration>
+		<OverrideDeceleration> .065 </OverrideDeceleration>
+		
+		<Political_Control>0</Political_Control>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Tech_Structure />
+		<Required_Planets />
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Size_Value>150</Size_Value>
+		<Damage>1</Damage>
+		<Tactical_Health>500</Tactical_Health>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
+		<Shield_Points>100</Shield_Points>
+		
+		<Armor_Type> Armor_Default </Armor_Type>
+    <Shield_Armor_Type>Shield_Corvette</Shield_Armor_Type>
+		
+		<SFXEvent_Select />
+		<SFXEvent_Move />
+		<SFXEvent_Attack />
+		
+		<CategoryMask> Frigate </CategoryMask>
+		<Victory_Relevant>No</Victory_Relevant>
+		<MovementClass> Space </MovementClass>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Is_Valid_Target>Yes</Is_Valid_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+		<AI_Combat_Power>1</AI_Combat_Power>
+
+		<!-- need these to be able to move this object -->
+		
+		
+    <Affiliation>Civilian</Affiliation>		
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	  <Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Engine_Idle_Loop> Unit_Tartan_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Tartan_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Tartan_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Destruction_Survivors> Credit_Penalty_Space, 1.0 </Destruction_Survivors>
+		
+		<Property_Flags>NotOpportunityTarget</Property_Flags>
+		<Lua_Script>Tasked_2</Lua_Script>
+		</Space_Indigenous_Unit>
+		
+		<Space_Indigenous_Unit Name="Freighter_3">
+		<Text_ID>TEXT_INDIG_FREIGHTER</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_FREIGHTER </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FREIGHTER</Encyclopedia_Unit_Class>
+		<Space_Model_Name>NV_Freighter_03</Space_Model_Name>
+		
+		<Select_Box_Scale>280</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+            
+		<Behavior> DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+		<SpaceBehavior> SIMPLE_SPACE_LOCOMOTOR, IDLE, SELECTABLE, REVEAL, UNIT_AI, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.8</Scale_Factor>
+		
+		<Max_Speed>2.3</Max_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Space_Layer> Frigate </Space_Layer>
+		<Layer_Z_Adjust>-55.0</Layer_Z_Adjust>
+		
+		
+		<Max_Rate_Of_Roll>0.5</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<OverrideAcceleration> .065 </OverrideAcceleration>
+		<OverrideDeceleration> .065 </OverrideDeceleration>
+		
+		<Political_Control>0</Political_Control>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Tech_Structure />
+		<Required_Planets />
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Size_Value>150</Size_Value>
+		<Damage>1</Damage>
+		<Tactical_Health>500</Tactical_Health>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
+		<Shield_Points>100</Shield_Points>
+		
+		<Armor_Type> Armor_Default </Armor_Type>
+    <Shield_Armor_Type>Shield_Corvette</Shield_Armor_Type>
+		
+		<SFXEvent_Select />
+		<SFXEvent_Move />
+		<SFXEvent_Attack />
+		
+		<CategoryMask> Frigate </CategoryMask>
+		<Victory_Relevant>No</Victory_Relevant>
+		<MovementClass> Space </MovementClass>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Is_Valid_Target>Yes</Is_Valid_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+		<AI_Combat_Power>1</AI_Combat_Power>
+
+		<!-- need these to be able to move this object -->
+		
+		
+    <Affiliation>Civilian</Affiliation>		
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	  <Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Engine_Idle_Loop> Unit_Tartan_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Tartan_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Tartan_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Destruction_Survivors> Credit_Penalty_Space, 1.0 </Destruction_Survivors>
+		
+		<Property_Flags>NotOpportunityTarget</Property_Flags>
+		<Lua_Script>Tasked_3</Lua_Script>
+		</Space_Indigenous_Unit>
+		
+		<Space_Indigenous_Unit Name="Freighter_4">
+		<Text_ID>TEXT_INDIG_FREIGHTER</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_FREIGHTER </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FREIGHTER</Encyclopedia_Unit_Class>
+		<Space_Model_Name>NV_Freighter_04</Space_Model_Name>
+		
+		<Select_Box_Scale>280</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+            
+		<Behavior> DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+		<SpaceBehavior> SIMPLE_SPACE_LOCOMOTOR, IDLE, SELECTABLE, REVEAL, UNIT_AI, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.8</Scale_Factor>
+		
+		<Max_Speed>2.3</Max_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Space_Layer> Frigate </Space_Layer>
+		<Layer_Z_Adjust>-55.0</Layer_Z_Adjust>
+		
+		
+		<Max_Rate_Of_Roll>0.5</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<OverrideAcceleration> .065 </OverrideAcceleration>
+		<OverrideDeceleration> .065 </OverrideDeceleration>
+		
+		<Political_Control>0</Political_Control>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Tech_Structure />
+		<Required_Planets />
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Size_Value>150</Size_Value>
+		<Damage>1</Damage>
+		<Tactical_Health>500</Tactical_Health>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
+		<Shield_Points>100</Shield_Points>
+		
+		<Armor_Type> Armor_Default </Armor_Type>
+    <Shield_Armor_Type>Shield_Corvette</Shield_Armor_Type>
+		
+		<SFXEvent_Select />
+		<SFXEvent_Move />
+		<SFXEvent_Attack />
+		
+		<CategoryMask> Frigate </CategoryMask>
+		<Victory_Relevant>No</Victory_Relevant>
+		<MovementClass> Space </MovementClass>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Is_Valid_Target>Yes</Is_Valid_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+		<AI_Combat_Power>1</AI_Combat_Power>
+
+		<!-- need these to be able to move this object -->
+		
+		
+    <Affiliation>Civilian</Affiliation>		
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	  <Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Engine_Idle_Loop> Unit_Tartan_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Tartan_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Tartan_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Destruction_Survivors> Credit_Penalty_Space, 1.0 </Destruction_Survivors>
+		
+		<Property_Flags>NotOpportunityTarget</Property_Flags>
+		<Lua_Script>Tasked_4</Lua_Script>
+		</Space_Indigenous_Unit>
+		
+		<Space_Indigenous_Unit Name="Freighter_5">
+		<Text_ID>TEXT_INDIG_FREIGHTER</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_FREIGHTER </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FREIGHTER</Encyclopedia_Unit_Class>
+		<Space_Model_Name>NV_Freighter_05</Space_Model_Name>
+		
+		<Select_Box_Scale>280</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+            
+		<Behavior> DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+		<SpaceBehavior> SIMPLE_SPACE_LOCOMOTOR, IDLE, SELECTABLE, REVEAL, UNIT_AI, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.8</Scale_Factor>
+		
+		<Max_Speed>2.3</Max_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Space_Layer> Frigate </Space_Layer>
+		<Layer_Z_Adjust>-55.0</Layer_Z_Adjust>
+		
+		
+		<Max_Rate_Of_Roll>0.5</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<OverrideAcceleration> .065 </OverrideAcceleration>
+		<OverrideDeceleration> .065 </OverrideDeceleration>
+		
+		<Political_Control>0</Political_Control>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Tech_Structure />
+		<Required_Planets />
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Size_Value>150</Size_Value>
+		<Damage>1</Damage>
+		<Tactical_Health>500</Tactical_Health>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
+		<Shield_Points>100</Shield_Points>
+		
+		<Armor_Type> Armor_Default </Armor_Type>
+    <Shield_Armor_Type>Shield_Corvette</Shield_Armor_Type>
+		
+		<SFXEvent_Select />
+		<SFXEvent_Move />
+		<SFXEvent_Attack />
+		
+		<CategoryMask> Frigate </CategoryMask>
+		<Victory_Relevant>No</Victory_Relevant>
+		<MovementClass> Space </MovementClass>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Is_Valid_Target>Yes</Is_Valid_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+		<AI_Combat_Power>1</AI_Combat_Power>
+
+		<!-- need these to be able to move this object -->
+		
+		
+    <Affiliation>Civilian</Affiliation>		
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	  <Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Engine_Idle_Loop> Unit_Tartan_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Tartan_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Tartan_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Destruction_Survivors> Credit_Penalty_Space, 1.0 </Destruction_Survivors>
+		
+		<Property_Flags>NotOpportunityTarget</Property_Flags>
+		<Lua_Script>Tasked_5</Lua_Script>
+						
+	</Space_Indigenous_Unit>
+	
+		<Space_Indigenous_Unit Name="Freighter_6">
+		<Text_ID>TEXT_INDIG_FREIGHTER</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_FREIGHTER </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FREIGHTER</Encyclopedia_Unit_Class>
+		<Space_Model_Name>NV_Freighter_06</Space_Model_Name>
+		
+		<Select_Box_Scale>280</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+            
+		<Behavior> DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+		<SpaceBehavior> SIMPLE_SPACE_LOCOMOTOR, IDLE, SELECTABLE, REVEAL, UNIT_AI, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.8</Scale_Factor>
+		
+		<Max_Speed>2.3</Max_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Space_Layer> Frigate </Space_Layer>
+		<Layer_Z_Adjust>-55.0</Layer_Z_Adjust>
+		
+		
+		<Max_Rate_Of_Roll>0.5</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<OverrideAcceleration> .065 </OverrideAcceleration>
+		<OverrideDeceleration> .065 </OverrideDeceleration>
+		
+		<Political_Control>0</Political_Control>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Tech_Structure />
+		<Required_Planets />
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Size_Value>150</Size_Value>
+		<Damage>1</Damage>
+		<Tactical_Health>500</Tactical_Health>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
+		<Shield_Points>100</Shield_Points>
+		
+		<Armor_Type> Armor_Default </Armor_Type>
+    <Shield_Armor_Type>Shield_Corvette</Shield_Armor_Type>
+		
+		<SFXEvent_Select />
+		<SFXEvent_Move />
+		<SFXEvent_Attack />
+		
+		<CategoryMask> Frigate </CategoryMask>
+		<Victory_Relevant>No</Victory_Relevant>
+		<MovementClass> Space </MovementClass>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Is_Valid_Target>Yes</Is_Valid_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+		<AI_Combat_Power>1</AI_Combat_Power>
+
+		<!-- need these to be able to move this object -->
+		
+		
+    <Affiliation>Civilian</Affiliation>		
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	  <Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Engine_Idle_Loop> Unit_Tartan_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Tartan_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Tartan_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Destruction_Survivors> Credit_Penalty_Space, 1.0 </Destruction_Survivors>
+		
+		<Property_Flags>NotOpportunityTarget</Property_Flags>
+		<Lua_Script>Tasked_6</Lua_Script>
+						
+	</Space_Indigenous_Unit>
+	
+	<Space_Indigenous_Unit Name="Freighter_7">
+		<Text_ID>TEXT_INDIG_FREIGHTER</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_FREIGHTER </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FREIGHTER</Encyclopedia_Unit_Class>
+		<Space_Model_Name>NV_Freighter_07</Space_Model_Name>
+		
+		<Select_Box_Scale>280</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+            
+		<Behavior> DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+		<SpaceBehavior> SIMPLE_SPACE_LOCOMOTOR, IDLE, SELECTABLE, REVEAL, UNIT_AI, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.8</Scale_Factor>
+		
+		<Max_Speed>2.3</Max_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Space_Layer> Frigate </Space_Layer>
+		<Layer_Z_Adjust>-55.0</Layer_Z_Adjust>
+		
+		
+		<Max_Rate_Of_Roll>0.5</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<OverrideAcceleration> .065 </OverrideAcceleration>
+		<OverrideDeceleration> .065 </OverrideDeceleration>
+		
+		<Political_Control>0</Political_Control>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Tech_Structure />
+		<Required_Planets />
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Size_Value>150</Size_Value>
+		<Damage>1</Damage>
+		<Tactical_Health>500</Tactical_Health>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
+		<Shield_Points>100</Shield_Points>
+		
+		<Armor_Type> Armor_Default </Armor_Type>
+    <Shield_Armor_Type>Shield_Corvette</Shield_Armor_Type>
+		
+		<SFXEvent_Select />
+		<SFXEvent_Move />
+		<SFXEvent_Attack />
+		
+		<CategoryMask> Frigate </CategoryMask>
+		<Victory_Relevant>No</Victory_Relevant>
+		<MovementClass> Space </MovementClass>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Is_Valid_Target>Yes</Is_Valid_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+		<AI_Combat_Power>1</AI_Combat_Power>
+
+		<!-- need these to be able to move this object -->
+		
+		
+    <Affiliation>Civilian</Affiliation>		
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	  <Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Engine_Idle_Loop> Unit_Tartan_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Tartan_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Tartan_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Destruction_Survivors> Credit_Penalty_Space, 1.0 </Destruction_Survivors>
+		
+		<Property_Flags>NotOpportunityTarget</Property_Flags>
+		<Lua_Script>Tasked_7</Lua_Script>
+						
+	</Space_Indigenous_Unit>
+	
+	<Space_Indigenous_Unit Name="Freighter_8">
+		<Text_ID>TEXT_INDIG_FREIGHTER</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_FREIGHTER </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FREIGHTER</Encyclopedia_Unit_Class>
+		<Space_Model_Name>NV_Freighter_08</Space_Model_Name>
+		
+		<Select_Box_Scale>280</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+            
+		<Behavior> DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+		<SpaceBehavior> SIMPLE_SPACE_LOCOMOTOR, IDLE, SELECTABLE, REVEAL, UNIT_AI, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.8</Scale_Factor>
+		
+		<Max_Speed>2.3</Max_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Space_Layer> Frigate </Space_Layer>
+		<Layer_Z_Adjust>-55.0</Layer_Z_Adjust>
+		
+		
+		<Max_Rate_Of_Roll>0.5</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<OverrideAcceleration> .065 </OverrideAcceleration>
+		<OverrideDeceleration> .065 </OverrideDeceleration>
+		
+		<Political_Control>0</Political_Control>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Tech_Structure />
+		<Required_Planets />
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Size_Value>150</Size_Value>
+		<Damage>1</Damage>
+		<Tactical_Health>500</Tactical_Health>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
+		<Shield_Points>100</Shield_Points>
+		
+		<Armor_Type> Armor_Default </Armor_Type>
+    <Shield_Armor_Type>Shield_Corvette</Shield_Armor_Type>
+		
+		<SFXEvent_Select />
+		<SFXEvent_Move />
+		<SFXEvent_Attack />
+		
+		<CategoryMask> Frigate </CategoryMask>
+		<Victory_Relevant>No</Victory_Relevant>
+		<MovementClass> Space </MovementClass>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Is_Valid_Target>Yes</Is_Valid_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+		<AI_Combat_Power>1</AI_Combat_Power>
+
+		<!-- need these to be able to move this object -->
+		
+		
+    <Affiliation>Civilian</Affiliation>		
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	  <Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Engine_Idle_Loop> Unit_Tartan_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Tartan_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Tartan_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Destruction_Survivors> Credit_Penalty_Space, 1.0 </Destruction_Survivors>
+		
+		<Property_Flags>NotOpportunityTarget</Property_Flags>
+		<Lua_Script>Tasked_8</Lua_Script>
+						
+	</Space_Indigenous_Unit>
+	
+	<Space_Indigenous_Unit Name="Freighter_9">
+		<Text_ID>TEXT_INDIG_FREIGHTER</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_FREIGHTER </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FREIGHTER</Encyclopedia_Unit_Class>
+		<Space_Model_Name>NV_Freighter_09</Space_Model_Name>
+		
+		<Select_Box_Scale>280</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+            
+		<Behavior> DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+		<SpaceBehavior> SIMPLE_SPACE_LOCOMOTOR, IDLE, SELECTABLE, REVEAL, UNIT_AI, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.8</Scale_Factor>
+		
+		<Max_Speed>2.3</Max_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Space_Layer> Frigate </Space_Layer>
+		<Layer_Z_Adjust>-55.0</Layer_Z_Adjust>
+		
+		
+		<Max_Rate_Of_Roll>0.5</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<OverrideAcceleration> .065 </OverrideAcceleration>
+		<OverrideDeceleration> .065 </OverrideDeceleration>
+		
+		<Political_Control>0</Political_Control>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Tech_Structure />
+		<Required_Planets />
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Size_Value>150</Size_Value>
+		<Damage>1</Damage>
+		<Tactical_Health>500</Tactical_Health>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
+		<Shield_Points>100</Shield_Points>
+		
+		<Armor_Type> Armor_Default </Armor_Type>
+    <Shield_Armor_Type>Shield_Corvette</Shield_Armor_Type>
+		
+		<SFXEvent_Select />
+		<SFXEvent_Move />
+		<SFXEvent_Attack />
+		
+		<CategoryMask> Frigate </CategoryMask>
+		<Victory_Relevant>No</Victory_Relevant>
+		<MovementClass> Space </MovementClass>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Is_Valid_Target>Yes</Is_Valid_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+		<AI_Combat_Power>1</AI_Combat_Power>
+
+		<!-- need these to be able to move this object -->
+		
+		
+    <Affiliation>Civilian</Affiliation>		
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	  <Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Engine_Idle_Loop> Unit_Tartan_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Tartan_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Tartan_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Destruction_Survivors> Credit_Penalty_Space, 1.0 </Destruction_Survivors>
+		
+		<Property_Flags>NotOpportunityTarget</Property_Flags>
+		<Lua_Script>Tasked_9</Lua_Script>
+						
+	</Space_Indigenous_Unit>
+	
+	<Space_Indigenous_Unit Name="Freighter_10">
+		<Text_ID>TEXT_INDIG_FREIGHTER</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_FREIGHTER </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FREIGHTER</Encyclopedia_Unit_Class>
+		<Space_Model_Name>NV_Freighter_10</Space_Model_Name>
+		
+		<Select_Box_Scale>280</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+            
+		<Behavior> DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+		<SpaceBehavior> SIMPLE_SPACE_LOCOMOTOR, IDLE, SELECTABLE, REVEAL, UNIT_AI, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.8</Scale_Factor>
+		
+		<Max_Speed>2.3</Max_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Space_Layer> Frigate </Space_Layer>
+		<Layer_Z_Adjust>-55.0</Layer_Z_Adjust>
+		
+		
+		<Max_Rate_Of_Roll>0.5</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<OverrideAcceleration> .065 </OverrideAcceleration>
+		<OverrideDeceleration> .065 </OverrideDeceleration>
+		
+		<Political_Control>0</Political_Control>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Tech_Structure />
+		<Required_Planets />
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Size_Value>150</Size_Value>
+		<Damage>1</Damage>
+		<Tactical_Health>500</Tactical_Health>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
+		<Shield_Points>100</Shield_Points>
+		
+		<Armor_Type> Armor_Default </Armor_Type>
+    <Shield_Armor_Type>Shield_Corvette</Shield_Armor_Type>
+		
+		<SFXEvent_Select />
+		<SFXEvent_Move />
+		<SFXEvent_Attack />
+		
+		<CategoryMask> Frigate </CategoryMask>
+		<Victory_Relevant>No</Victory_Relevant>
+		<MovementClass> Space </MovementClass>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Is_Valid_Target>Yes</Is_Valid_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+		<AI_Combat_Power>1</AI_Combat_Power>
+
+		<!-- need these to be able to move this object -->
+		
+		
+    <Affiliation>Civilian</Affiliation>		
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	  <Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Engine_Idle_Loop> Unit_Tartan_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Tartan_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Tartan_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Destruction_Survivors> Credit_Penalty_Space, 1.0 </Destruction_Survivors>
+		
+		<Property_Flags>NotOpportunityTarget</Property_Flags>
+		<Lua_Script>Tasked_10</Lua_Script>
+						
+	</Space_Indigenous_Unit>
+	
+	<Space_Indigenous_Unit Name="Freighter_11">
+		<Text_ID>TEXT_INDIG_FREIGHTER</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_FREIGHTER </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FREIGHTER</Encyclopedia_Unit_Class>
+		<Space_Model_Name>NV_Freighter_11</Space_Model_Name>
+		
+		<Select_Box_Scale>280</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+            
+		<Behavior> DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+		<SpaceBehavior> SIMPLE_SPACE_LOCOMOTOR, IDLE, SELECTABLE, REVEAL, UNIT_AI, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.8</Scale_Factor>
+		
+		<Max_Speed>2.3</Max_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Space_Layer> Frigate </Space_Layer>
+		<Layer_Z_Adjust>-55.0</Layer_Z_Adjust>
+		
+		
+		<Max_Rate_Of_Roll>0.5</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<OverrideAcceleration> .065 </OverrideAcceleration>
+		<OverrideDeceleration> .065 </OverrideDeceleration>
+		
+		<Political_Control>0</Political_Control>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Tech_Structure />
+		<Required_Planets />
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Size_Value>150</Size_Value>
+		<Damage>1</Damage>
+		<Tactical_Health>500</Tactical_Health>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
+		<Shield_Points>100</Shield_Points>
+		
+		<Armor_Type> Armor_Default </Armor_Type>
+    <Shield_Armor_Type>Shield_Corvette</Shield_Armor_Type>
+		
+		<SFXEvent_Select />
+		<SFXEvent_Move />
+		<SFXEvent_Attack />
+		
+		<CategoryMask> Frigate </CategoryMask>
+		<Victory_Relevant>No</Victory_Relevant>
+		<MovementClass> Space </MovementClass>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Is_Valid_Target>Yes</Is_Valid_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+		<AI_Combat_Power>1</AI_Combat_Power>
+
+		<!-- need these to be able to move this object -->
+		
+		
+    <Affiliation>Civilian</Affiliation>		
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	  <Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Engine_Idle_Loop> Unit_Tartan_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Tartan_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Tartan_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Destruction_Survivors> Credit_Penalty_Space, 1.0 </Destruction_Survivors>
+		
+		<Property_Flags>NotOpportunityTarget</Property_Flags>
+		<Lua_Script>Tasked_11</Lua_Script>
+						
+	</Space_Indigenous_Unit>
+	
+	<Space_Indigenous_Unit Name="Freighter_12">
+		<Text_ID>TEXT_INDIG_FREIGHTER</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_FREIGHTER </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FREIGHTER</Encyclopedia_Unit_Class>
+		<Space_Model_Name>NV_Freighter_12</Space_Model_Name>
+		
+		<Select_Box_Scale>280</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+            
+		<Behavior> DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+		<SpaceBehavior> SIMPLE_SPACE_LOCOMOTOR, IDLE, SELECTABLE, REVEAL, UNIT_AI, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.8</Scale_Factor>
+		
+		<Max_Speed>2.3</Max_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Space_Layer> Frigate </Space_Layer>
+		<Layer_Z_Adjust>-55.0</Layer_Z_Adjust>
+		
+		
+		<Max_Rate_Of_Roll>0.5</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<OverrideAcceleration> .065 </OverrideAcceleration>
+		<OverrideDeceleration> .065 </OverrideDeceleration>
+		
+		<Political_Control>0</Political_Control>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Tech_Structure />
+		<Required_Planets />
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Size_Value>150</Size_Value>
+		<Damage>1</Damage>
+		<Tactical_Health>500</Tactical_Health>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
+		<Shield_Points>100</Shield_Points>
+		
+		<Armor_Type> Armor_Default </Armor_Type>
+    <Shield_Armor_Type>Shield_Corvette</Shield_Armor_Type>
+		
+		<SFXEvent_Select />
+		<SFXEvent_Move />
+		<SFXEvent_Attack />
+		
+		<CategoryMask> Frigate </CategoryMask>
+		<Victory_Relevant>No</Victory_Relevant>
+		<MovementClass> Space </MovementClass>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Is_Valid_Target>Yes</Is_Valid_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+		<AI_Combat_Power>1</AI_Combat_Power>
+
+		<!-- need these to be able to move this object -->
+		
+		
+    <Affiliation>Civilian</Affiliation>		
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	  <Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Engine_Idle_Loop> Unit_Tartan_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Tartan_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Tartan_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Destruction_Survivors> Credit_Penalty_Space, 1.0 </Destruction_Survivors>
+		
+		<Property_Flags>NotOpportunityTarget</Property_Flags>
+		<Lua_Script>Tasked_12</Lua_Script>
+						
+	</Space_Indigenous_Unit>
+	
+	<Space_Indigenous_Unit Name="Freighter_13">
+		<Text_ID>TEXT_INDIG_FREIGHTER</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_FREIGHTER </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FREIGHTER</Encyclopedia_Unit_Class>
+		<Space_Model_Name>NV_Dusty_Duck.ALO</Space_Model_Name>
+		
+		<Select_Box_Scale>280</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+            
+		<Behavior> DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+		<SpaceBehavior> SIMPLE_SPACE_LOCOMOTOR, IDLE, SELECTABLE, REVEAL, UNIT_AI, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.8</Scale_Factor>
+		
+		<Max_Speed>2.3</Max_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Space_Layer> Frigate </Space_Layer>
+		<Layer_Z_Adjust>-55.0</Layer_Z_Adjust>
+		
+		
+		<Max_Rate_Of_Roll>0.5</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<OverrideAcceleration> .065 </OverrideAcceleration>
+		<OverrideDeceleration> .065 </OverrideDeceleration>
+		
+		<Political_Control>0</Political_Control>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Tech_Structure />
+		<Required_Planets />
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Size_Value>150</Size_Value>
+		<Damage>1</Damage>
+		<Tactical_Health>500</Tactical_Health>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
+		<Shield_Points>100</Shield_Points>
+		
+		<Armor_Type> Armor_Default </Armor_Type>
+    <Shield_Armor_Type>Shield_Corvette</Shield_Armor_Type>
+		
+		<SFXEvent_Select />
+		<SFXEvent_Move />
+		<SFXEvent_Attack />
+		
+		<CategoryMask> Frigate </CategoryMask>
+		<Victory_Relevant>No</Victory_Relevant>
+		<MovementClass> Space </MovementClass>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Is_Valid_Target>Yes</Is_Valid_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+		<AI_Combat_Power>1</AI_Combat_Power>
+
+		<!-- need these to be able to move this object -->
+		
+		
+    <Affiliation>Civilian</Affiliation>		
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	  <Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Engine_Idle_Loop> Unit_Tartan_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Tartan_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Tartan_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Destruction_Survivors> Credit_Penalty_Space, 1.0 </Destruction_Survivors>
+		
+		<Property_Flags>NotOpportunityTarget</Property_Flags>
+		
+						
+	</Space_Indigenous_Unit>
+	
+	<Space_Indigenous_Unit Name="Freighter_14">
+		<Text_ID>TEXT_INDIG_FREIGHTER</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_FREIGHTER </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FREIGHTER</Encyclopedia_Unit_Class>
+		<Space_Model_Name>NV_yu-410.ALO</Space_Model_Name>
+		
+		<Select_Box_Scale>280</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+            
+		<Behavior> DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+		<SpaceBehavior> SIMPLE_SPACE_LOCOMOTOR, IDLE, SELECTABLE, REVEAL, UNIT_AI, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.8</Scale_Factor>
+		
+		<Max_Speed>2.3</Max_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Space_Layer> Frigate </Space_Layer>
+		<Layer_Z_Adjust>-55.0</Layer_Z_Adjust>
+		
+		
+		<Max_Rate_Of_Roll>0.5</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<OverrideAcceleration> .065 </OverrideAcceleration>
+		<OverrideDeceleration> .065 </OverrideDeceleration>
+		
+		<Political_Control>0</Political_Control>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Tech_Structure />
+		<Required_Planets />
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Size_Value>150</Size_Value>
+		<Damage>1</Damage>
+		<Tactical_Health>500</Tactical_Health>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
+		<Shield_Points>100</Shield_Points>
+		
+		<Armor_Type> Armor_Default </Armor_Type>
+    <Shield_Armor_Type>Shield_Corvette</Shield_Armor_Type>
+		
+		<SFXEvent_Select />
+		<SFXEvent_Move />
+		<SFXEvent_Attack />
+		
+		<CategoryMask> Frigate </CategoryMask>
+		<Victory_Relevant>No</Victory_Relevant>
+		<MovementClass> Space </MovementClass>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Is_Valid_Target>Yes</Is_Valid_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+		<AI_Combat_Power>1</AI_Combat_Power>
+
+		<!-- need these to be able to move this object -->
+		
+		
+    <Affiliation>Civilian</Affiliation>		
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	  <Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Engine_Idle_Loop> Unit_Tartan_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Tartan_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Tartan_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Destruction_Survivors> Credit_Penalty_Space, 1.0 </Destruction_Survivors>
+		
+		<Property_Flags>NotOpportunityTarget</Property_Flags>
+		
+						
+	</Space_Indigenous_Unit>
+	
+	<Space_Indigenous_Unit Name="Freighter_15">
+		<Text_ID>TEXT_INDIG_FREIGHTER</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_FREIGHTER </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FREIGHTER</Encyclopedia_Unit_Class>
+		<Space_Model_Name>NV_yv-100.ALO</Space_Model_Name>
+		
+		<Select_Box_Scale>280</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+            
+		<Behavior> DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+		<SpaceBehavior> SIMPLE_SPACE_LOCOMOTOR, IDLE, SELECTABLE, REVEAL, UNIT_AI, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.8</Scale_Factor>
+		
+		<Max_Speed>2.3</Max_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Space_Layer> Frigate </Space_Layer>
+		<Layer_Z_Adjust>-55.0</Layer_Z_Adjust>
+		
+		
+		<Max_Rate_Of_Roll>0.5</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<OverrideAcceleration> .065 </OverrideAcceleration>
+		<OverrideDeceleration> .065 </OverrideDeceleration>
+		
+		<Political_Control>0</Political_Control>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Tech_Structure />
+		<Required_Planets />
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Size_Value>150</Size_Value>
+		<Damage>1</Damage>
+		<Tactical_Health>500</Tactical_Health>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
+		<Shield_Points>100</Shield_Points>
+		
+		<Armor_Type> Armor_Default </Armor_Type>
+    <Shield_Armor_Type>Shield_Corvette</Shield_Armor_Type>
+		
+		<SFXEvent_Select />
+		<SFXEvent_Move />
+		<SFXEvent_Attack />
+		
+		<CategoryMask> Frigate </CategoryMask>
+		<Victory_Relevant>No</Victory_Relevant>
+		<MovementClass> Space </MovementClass>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Is_Valid_Target>Yes</Is_Valid_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+		<AI_Combat_Power>1</AI_Combat_Power>
+
+		<!-- need these to be able to move this object -->
+		
+		
+    <Affiliation>Civilian</Affiliation>		
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	  <Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Engine_Idle_Loop> Unit_Tartan_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Tartan_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Tartan_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Destruction_Survivors> Credit_Penalty_Space, 1.0 </Destruction_Survivors>
+		
+		<Property_Flags>NotOpportunityTarget</Property_Flags>
+		
+						
+	</Space_Indigenous_Unit>
+	
+	<Space_Indigenous_Unit Name="Freighter_16">
+		<Text_ID>TEXT_INDIG_FREIGHTER</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_FREIGHTER </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FREIGHTER</Encyclopedia_Unit_Class>
+		<Space_Model_Name>NV_yv-330.ALO</Space_Model_Name>
+		
+		<Select_Box_Scale>280</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+            
+		<Behavior> DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+		<SpaceBehavior> SIMPLE_SPACE_LOCOMOTOR, IDLE, SELECTABLE, REVEAL, UNIT_AI, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.8</Scale_Factor>
+		
+		<Max_Speed>2.3</Max_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Space_Layer> Frigate </Space_Layer>
+		<Layer_Z_Adjust>-55.0</Layer_Z_Adjust>
+		
+		
+		<Max_Rate_Of_Roll>0.5</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<OverrideAcceleration> .065 </OverrideAcceleration>
+		<OverrideDeceleration> .065 </OverrideDeceleration>
+		
+		<Political_Control>0</Political_Control>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Tech_Structure />
+		<Required_Planets />
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Size_Value>150</Size_Value>
+		<Damage>1</Damage>
+		<Tactical_Health>500</Tactical_Health>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
+		<Shield_Points>100</Shield_Points>
+		
+		<Armor_Type> Armor_Default </Armor_Type>
+    <Shield_Armor_Type>Shield_Corvette</Shield_Armor_Type>
+		
+		<SFXEvent_Select />
+		<SFXEvent_Move />
+		<SFXEvent_Attack />
+		
+		<CategoryMask> Frigate </CategoryMask>
+		<Victory_Relevant>No</Victory_Relevant>
+		<MovementClass> Space </MovementClass>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Is_Valid_Target>Yes</Is_Valid_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+		<AI_Combat_Power>1</AI_Combat_Power>
+
+		<!-- need these to be able to move this object -->
+		
+		
+    <Affiliation>Civilian</Affiliation>		
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	  <Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Engine_Idle_Loop> Unit_Tartan_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Tartan_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Tartan_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Destruction_Survivors> Credit_Penalty_Space, 1.0 </Destruction_Survivors>
+		
+		<Property_Flags>NotOpportunityTarget</Property_Flags>
+		
+						
+	</Space_Indigenous_Unit>
+	
+	<Space_Indigenous_Unit Name="Freighter_17">
+		<Text_ID>TEXT_INDIG_FREIGHTER</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_FREIGHTER </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FREIGHTER</Encyclopedia_Unit_Class>
+		<Space_Model_Name>NV_yv-929.ALO</Space_Model_Name>
+		
+		<Select_Box_Scale>280</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+            
+		<Behavior> DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+		<SpaceBehavior> SIMPLE_SPACE_LOCOMOTOR, IDLE, SELECTABLE, REVEAL, UNIT_AI, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.8</Scale_Factor>
+		
+		<Max_Speed>2.3</Max_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Space_Layer> Frigate </Space_Layer>
+		<Layer_Z_Adjust>-55.0</Layer_Z_Adjust>
+		
+		
+		<Max_Rate_Of_Roll>0.5</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<OverrideAcceleration> .065 </OverrideAcceleration>
+		<OverrideDeceleration> .065 </OverrideDeceleration>
+		
+		<Political_Control>0</Political_Control>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Tech_Structure />
+		<Required_Planets />
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Size_Value>150</Size_Value>
+		<Damage>1</Damage>
+		<Tactical_Health>500</Tactical_Health>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
+		<Shield_Points>100</Shield_Points>
+		
+		<Armor_Type> Armor_Default </Armor_Type>
+    <Shield_Armor_Type>Shield_Corvette</Shield_Armor_Type>
+		
+		<SFXEvent_Select />
+		<SFXEvent_Move />
+		<SFXEvent_Attack />
+		
+		<CategoryMask> Frigate </CategoryMask>
+		<Victory_Relevant>No</Victory_Relevant>
+		<MovementClass> Space </MovementClass>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Is_Valid_Target>Yes</Is_Valid_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+		<AI_Combat_Power>1</AI_Combat_Power>
+
+		<!-- need these to be able to move this object -->
+		
+		
+    <Affiliation>Civilian</Affiliation>		
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	  <Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Engine_Idle_Loop> Unit_Tartan_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Tartan_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Tartan_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Destruction_Survivors> Credit_Penalty_Space, 1.0 </Destruction_Survivors>
+		
+		<Property_Flags>NotOpportunityTarget</Property_Flags>
+		
+						
+	</Space_Indigenous_Unit>
+
+
+	
+	
+	
+
+</Space_Indigenous_Units>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

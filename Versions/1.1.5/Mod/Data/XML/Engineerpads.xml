@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+
+
+
+<Engineer_Pad_Data>
+
+
+
+<GroundVehicle Name="Engineer_Pad">
+		<Text_ID>TEXT_REBEL_BUILD_PAD</Text_ID>
+		<Icon_Name> I_BUTTON_COMMAND_BAR_REBEL_SYMBOL.TGA </Icon_Name>
+		
+		<!-- This is a list of the buildable objects at this pad (defined below) - that will be under construction -->
+		<Tactical_Buildable_Objects_Campaign> Rebel, UC_Rebel_Sensor_Scrambler, UC_Rebel_EM_Field_Generator, UC_Rebel_Mobile_Shield_Generator, UC_Rebel_Rapid_Fire_Laser_Turret</Tactical_Buildable_Objects_Campaign>
+		<Tactical_Buildable_Objects_Multiplayer>Rebel, UC_Rebel_Sensor_Scrambler, UC_Rebel_EM_Field_Generator, UC_Rebel_Mobile_Shield_Generator, UC_Rebel_Rapid_Fire_Laser_Turret</Tactical_Buildable_Objects_Multiplayer>
+
+		<Land_Model_Name>NB_BasePad_Rebelle.alo</Land_Model_Name>
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.8</Scale_Factor>
+		<Select_Box_Scale>540</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Affiliation>Rebel</Affiliation>
+        
+		<Max_Speed>0</Max_Speed>
+		<Movement_Animation_Speed> 1.0 </Movement_Animation_Speed>
+		<Max_Rate_Of_Turn>4.5</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<Size_Value>60</Size_Value>
+		<UnitCollisionClass> Build Pad </UnitCollisionClass>
+		<OverrideAcceleration> .1 </OverrideAcceleration>
+		<OverrideDeceleration> .1 </OverrideDeceleration>
+
+		<Behavior> SELECTABLE </Behavior>
+		<LandBehavior>TACTICAL_BUILD_OBJECTS, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED </LandBehavior>
+		
+		<Hides_When_Built_On>False</Hides_When_Built_On>
+		<Destroy_When_Child_Dies>True</Destroy_When_Child_Dies>
+
+		<Is_Affected_By_Gravity_Control_Field> Yes </Is_Affected_By_Gravity_Control_Field>
+		<Base_Shield_Penetration_Particle>Shield_Penetration_Effect_Particle</Base_Shield_Penetration_Particle>
+
+		<Armor_Type> Armor_T4B </Armor_Type>
+		
+		<Target_Bones> Camera01.Target </Target_Bones>
+
+		<Tactical_Health>50</Tactical_Health>
+		<Shield_Points>0</Shield_Points>
+		<Shield_Refresh_Rate>17</Shield_Refresh_Rate>
+		<Energy_Capacity>999</Energy_Capacity>
+		<Energy_Refresh_Rate>999</Energy_Refresh_Rate>
+		<Ranged_Target_Z_Adjust>12.0</Ranged_Target_Z_Adjust>
+		<Damage>10</Damage>
+
+		
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+
+		<SurfaceFX_Name>Hover</SurfaceFX_Name>
+		<Death_Explosions>Tiny_Explosion_Space</Death_Explosions>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+
+
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+        <Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<CategoryMask> Vehicle </CategoryMask>
+		<MovementClass>Hover</MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>99</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>3</No_Refraction_Below_Detail_Level>
+		<Occlusion_Silhouette_Enabled>0</Occlusion_Silhouette_Enabled>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>65.0, 65.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Ground_Vehicle_Turret_Target> Yes </Ground_Vehicle_Turret_Target>
+		<Is_Squashable_By_Supercrusher>No</Is_Squashable_By_Supercrusher>
+
+		<Wind_Disturbance_Radius>50</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>10</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.4</Wind_Disturbance_Sphere_Alpha>
+
+		<SFXEvent_Fire/>
+		<SFXEvent_Select/>
+		<SFXEvent_Move/>
+		<SFXEvent_Fleet_Move/>
+		<SFXEvent_Attack/>
+		<SFXEvent_Guard/>
+		<SFXEvent_Turret_Rotating_Loop>  </SFXEvent_Turret_Rotating_Loop>
+		<SFXEvent_Engine_Idle_Loop> </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop/>
+		<SFXEvent_Assist_Move> </SFXEvent_Assist_Move>		
+		<SFXEvent_Assist_Attack/>
+		<SFXEvent_Unit_Lost/>
+		<SFXEvent_Tactical_Build_Started>  </SFXEvent_Tactical_Build_Started>		
+		<SFXEvent_Tactical_Build_Complete> </SFXEvent_Tactical_Build_Complete>		
+		<SFXEvent_Tactical_Build_Cancelled>  </SFXEvent_Tactical_Build_Cancelled>
+
+        <Ranking_In_Category>6</Ranking_In_Category>
+        <FormationSpacing> 2.75 </FormationSpacing>
+		<FormationOrder> 5 </FormationOrder>
+		<FormationGrouping> Standard </FormationGrouping>
+		<FormationRaggedness> 1 </FormationRaggedness>
+		<MaxJiggleDistance> 0 </MaxJiggleDistance>
+		<MinimumPushReturnDistance> 100 </MinimumPushReturnDistance>
+		<UseSecondaryFacing> true </UseSecondaryFacing>
+		<SecondaryTurnInPlaceROTCoefficient> .4 </SecondaryTurnInPlaceROTCoefficient>
+		<SecondaryTurnAngle> 90 </SecondaryTurnAngle>
+		<MinSecondaryTurnROTCoefficient> .4 </MinSecondaryTurnROTCoefficient>
+		<MaxSecondaryTurnROTCoefficient> .9 </MaxSecondaryTurnROTCoefficient>
+		<SecondaryTurnLookaheadDistance> 60 </SecondaryTurnLookaheadDistance>
+		<Custom_Hard_XExtent> 55.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 35.0 </Custom_Hard_YExtent>
+
+		<Death_SFXEvent_Start_Die>Unit_Tank_Death_SFX</Death_SFXEvent_Start_Die>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Overall_Length>40.0</Overall_Length> <!-- For vehicle pitching up and down on terrain -->
+		<Overall_Width>25.0</Overall_Width> <!-- For vehicle rolling left and right on terrain (30 by geometry)-->
+		<Has_Land_Evaluator>No</Has_Land_Evaluator>
+		<AI_Combat_Power>0</AI_Combat_Power>
+
+		<Idle_Chase_Range>0.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>Anti_All_Attack_Priority</Targeting_Priority_Set>
+		<Autonomous_Move_Extension_Vs_Attacker>100.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Weather_Category>Hover</Weather_Category>
+		<Score_Cost_Credits>125</Score_Cost_Credits>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		
+		<Minimum_Time_Before_Pad_Can_Build_Again> 15 </Minimum_Time_Before_Pad_Can_Build_Again>
+
+	</GroundVehicle>
+	
+	
+
+
+
+</Engineer_Pad_Data>

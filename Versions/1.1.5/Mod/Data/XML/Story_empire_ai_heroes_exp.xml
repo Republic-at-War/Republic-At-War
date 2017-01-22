@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+
+<Story>
+
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<!--<Event Name="Advance_Tech_2">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ADVANCE_TECH_2</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Advance_Tech_3">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ADVANCE_TECH_3</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Advance_Tech_4">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ADVANCE_TECH_4</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Advance_Tech_5">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ADVANCE_TECH_5</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>-->
+	
+	<Event Name="Story_Advance_Tech_2">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>240</Event_Param1>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Rep_Rewards_Spawn_Venator_1">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Venator</Reward_Param1>
+		<Prereq>Story_Advance_Tech_2</Prereq>
+	</Event>
+	
+		<Event Name="Rep_Rewards_Spawn_Venator_2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Venator</Reward_Param1>
+		<Prereq>Story_Advance_Tech_2</Prereq>
+	</Event>
+	
+		<Event Name="Rep_Rewards_Spawn_Venator_3">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Venator</Reward_Param1>
+		<Prereq>Story_Advance_Tech_2</Prereq>
+	</Event>
+	
+	<Event Name="Story_Advance_Tech_3">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>300</Event_Param1>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>
+		<Prereq>Story_Advance_Tech_2</Prereq>
+	</Event>
+	
+	<Event Name="Rep_Rewards_Spawn_Venator_4">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Venator</Reward_Param1>
+		<Prereq>Story_Advance_Tech_3</Prereq>
+	</Event>
+	
+		<Event Name="Rep_Rewards_Spawn_Venator_5">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Venator</Reward_Param1>
+		<Prereq>Story_Advance_Tech_3</Prereq>
+	</Event>	
+	
+		<Event Name="Rep_Rewards_Spawn_Venator_6">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Venator</Reward_Param1>
+		<Prereq>Story_Advance_Tech_3</Prereq>
+	</Event>		
+	
+	<Event Name="Story_Advance_Tech_4">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>600</Event_Param1>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>
+		<Prereq>Story_Advance_Tech_3</Prereq>
+	</Event>
+	
+		<Event Name="Rep_Rewards_Spawn_Venator_7">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Venator</Reward_Param1>
+		<Prereq>Story_Advance_Tech_4</Prereq>
+	</Event>		
+	
+		<Event Name="Rep_Rewards_Spawn_Venator_8">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Venator</Reward_Param1>
+		<Prereq>Story_Advance_Tech_4</Prereq>
+	</Event>
+	
+		<Event Name="Rep_Rewards_Spawn_Venator_9">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Venator</Reward_Param1>
+		<Prereq>Story_Advance_Tech_4</Prereq>
+	</Event>				
+	
+	<Event Name="Story_Advance_Tech_5">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>900</Event_Param1>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>
+		<Prereq>Story_Advance_Tech_4</Prereq>
+	</Event>
+	
+		<Event Name="Rep_Rewards_Spawn_Venator_10">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Venator</Reward_Param1>
+		<Prereq>Story_Advance_Tech_5</Prereq>
+	</Event>	
+	
+			<Event Name="Rep_Rewards_Spawn_Venator_11">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Venator</Reward_Param1>
+		<Prereq>Story_Advance_Tech_5</Prereq>
+	</Event>		
+	
+			<Event Name="Rep_Rewards_Spawn_Venator_12">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Venator</Reward_Param1>
+		<Prereq>Story_Advance_Tech_5</Prereq>
+	</Event>									
+	
+
+<!-- Empire Hero Release -->
+
+
+	<!-- Spawn Starting Heroes -->
+
+	<Event Name="Empire_AI_Unlock_Research_Facility">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>E_Ground_Research_Facility</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	
+
+	<Event Name="Empire_AI_Heroes_02">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Chancellor_Palpatine_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+
+
+
+	<!-- Spawn Tech Level 1 Heroes -->
+
+	<Event Name="Empire_Enters_Tech_01">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>1</Event_Param1>
+	</Event>
+  
+  <Event Name="Spawn_Yoda">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Yoda_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Empire_Enters_Tech_01</Prereq>
+	</Event>
+
+<Event Name="Spawn_Mace_Windu">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+        <Reward_Type>SPAWN_HERO</Reward_Type>
+        <Reward_Param1>Mace_Windu_Team</Reward_Param1>
+        <Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Empire_Enters_Tech_01</Prereq>
+	</Event>
+  
+	
+
+
+
+
+	<!-- Spawn Time Era 2 Heroes -->
+
+	<Event Name="Empire_Enters_Tech_02">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+
+	<Event Name="Spawn_Anakin">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Anakin_Skywalker_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Empire_Enters_Tech_02</Prereq>
+	</Event>
+
+<Event Name="Spawn_Obiwan">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Obiwan_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Empire_Enters_Tech_02</Prereq>
+	</Event>
+
+	
+
+
+
+
+	<!-- Spawn Time Era 3 Heroes -->
+
+	<Event Name="Empire_Enters_Tech_03">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>3</Event_Param1>
+	</Event>
+
+<Event Name="Spawn_Deltasquad">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Deltasquad_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Empire_Enters_Tech_03</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Plo_Koon">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+        <Reward_Type>SPAWN_HERO</Reward_Type>
+        <Reward_Param1>Plokoon_Team</Reward_Param1>
+        <Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Empire_Enters_Tech_03</Prereq>
+	</Event>
+
+		<Event Name="Spawn_Admiral_Yularen">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Admiral_Yularen</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Empire_Enters_Tech_03</Prereq>
+	</Event>
+
+
+
+	<!-- Spawn Time Era 4 Heroes -->
+
+		<Event Name="Empire_Enters_Tech_04">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>4</Event_Param1>
+	</Event>
+    	
+	 <Event Name="Lock_V19">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+        <Reward_Type>LOCK_UNIT</Reward_Type>
+        <Reward_Param1>V19_Squadron</Reward_Param1>
+     <Prereq>Empire_Enters_Tech_04</Prereq>
+  </Event>
+	
+	<Event Name="Spawn_Commander_Cody">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Commander_Cody_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Empire_Enters_Tech_04</Prereq>
+	</Event>
+  
+
+  
+  
+  
+
+  
+	
+
+
+
+	<!-- Spawn Time Era 5 Heroes -->
+	
+		<Event Name="Empire_Enters_Tech_05">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>5</Event_Param1>
+	</Event>
+
+<Event Name="Lock_P1_Clone_Squad">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+        <Reward_Type>LOCK_UNIT</Reward_Type>
+        <Reward_Param1>Republic_Clonetrooper_P1_Squad</Reward_Param1>
+     <Prereq>Empire_Enters_Tech_05</Prereq>
+  </Event>
+  
+  <Event Name="Lock_P1_Clone_Platoon">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+        <Reward_Type>LOCK_UNIT</Reward_Type>
+        <Reward_Param1>Republic_Clonetrooper_P1_Platoon</Reward_Param1>
+     <Prereq>Empire_Enters_Tech_05</Prereq>
+ </Event>
+  
+  <Event Name="Lock_P1_Clone_Company">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+         <Reward_Type>LOCK_UNIT</Reward_Type>
+        <Reward_Param1>Republic_Clonetrooper_P1_Company</Reward_Param1>
+     <Prereq>Empire_Enters_Tech_05</Prereq>
+  </Event>
+	
+	 <Event Name="Lock_P1_Clone_Commander">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+         <Reward_Type>LOCK_UNIT</Reward_Type>
+        <Reward_Param1>Field_Com_Republic_P1_Team</Reward_Param1>
+     <Prereq>Empire_Enters_Tech_05</Prereq>
+  </Event>
+	
+
+
+
+
+
+</Story>

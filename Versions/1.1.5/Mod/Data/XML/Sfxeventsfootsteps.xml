@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+
+<SFXEvents>
+	
+
+	<SFXEvent Name="Unit_Anim_AT_AT_Foot_Plant">
+			<Use_Preset>Preset_FSV</Use_Preset>
+			<Samples>FS_ATAT_1.wav FS_ATAT_2.wav FS_ATAT_3.wav FS_ATAT_4.wav FS_ATAT_5.wav FS_ATAT_6.wav FS_ATAT_7.wav FS_ATAT_8.wav</Samples>
+			<Volume_Saturation_Distance>700.0</Volume_Saturation_Distance>
+    </SFXEvent>
+
+	<SFXEvent Name="Unit_Anim_AT_AT_Water_Foot_Plant">
+			<Use_Preset>Preset_FSV</Use_Preset>
+			<Samples>FS_ATAT_Water_1.wav FS_ATAT_Water_2.wav FS_ATAT_Water_3.wav FS_ATAT_Water_4.wav</Samples>
+			<Volume_Saturation_Distance>700.0</Volume_Saturation_Distance>
+    </SFXEvent>
+
+
+	<SFXEvent Name="Unit_Anim_AT_AT_Walk_Hydraulics">
+			<Use_Preset>Preset_FSV</Use_Preset>
+			<Samples>FS_ATAT_Hydraulic_1.wav FS_ATAT_Hydraulic_2.wav</Samples>  	
+			<Max_Instances>2</Max_Instances>
+         <Min_Pitch>85</Min_Pitch>
+			<Max_Pitch>115</Max_Pitch>
+			<Min_Volume>46</Min_Volume>
+			<Max_Volume>66</Max_Volume>
+    </SFXEvent>
+
+	<SFXEvent Name="Unit_Anim_AT_ST_Foot_Plant">
+			<Use_Preset>Preset_FSV</Use_Preset>
+			<Samples>FS_ATST_1.wav FS_ATST_2.wav FS_ATST_3.wav FS_ATST_4.wav</Samples>
+			<Min_Volume>70</Min_Volume>
+			<Max_Volume>70</Max_Volume>
+    </SFXEvent>
+
+	<SFXEvent Name="Unit_Anim_AT_ST_Water_Foot_Plant">
+			<Use_Preset>Preset_FSV</Use_Preset>
+			<Samples>FS_ATST_Water_1.wav FS_ATST_Water_2.wav FS_ATST_Water_3.wav FS_ATST_Water_4.wav</Samples>
+			<Min_Volume>70</Min_Volume>
+			<Max_Volume>70</Max_Volume>
+    </SFXEvent>
+
+
+
+
+
+	<SFXEvent Name="Unit_Anim_SPMAT_Foot_Plant">
+			<Use_Preset>Preset_FSV</Use_Preset>
+			<Samples>FS_SPMAT_1.wav FS_SPMAT_2.wav FS_SPMAT_3.wav FS_SPMAT_4.wav</Samples>
+    </SFXEvent>
+
+
+
+
+
+
+	<SFXEvent Name="Unit_Anim_Snow_Infantry_Foot_Plant">
+			<Use_Preset>Preset_FSI</Use_Preset>
+			<Samples>FS_Snow_1.wav FS_Snow_2.wav FS_Snow_3.wav FS_Snow_4.wav FS_Snow_5.wav FS_Snow_6.wav FS_Snow_7.wav FS_Snow_8.wav</Samples>
+       </SFXEvent>
+
+
+       <SFXEvent Name="Unit_Anim_Dirt_Infantry_Foot_Plant">
+			<Use_Preset>Preset_FSI</Use_Preset>
+			<Samples>FS_Dirt_1.wav FS_Dirt_2.wav FS_Dirt_3.wav FS_Dirt_4.wav FS_Dirt_5.wav FS_Dirt_6.wav FS_Dirt_7.wav FS_Dirt_8.wav</Samples>
+		  </SFXEvent>
+
+	
+       <SFXEvent Name="Unit_Anim_Concrete_Infantry_Foot_Plant">
+			      <Use_Preset>Preset_FSI</Use_Preset>
+			      <Samples>FS_Concrete_1.wav FS_Concrete_2.wav FS_Concrete_3.wav FS_Concrete_4.wav FS_Concrete_5.wav FS_Concrete_6.wav FS_Concrete_7.wav FS_Concrete_8.wav</Samples>
+            </SFXEvent>
+
+	
+       <SFXEvent Name="Unit_Anim_Grass_Infantry_Foot_Plant">
+				<Use_Preset>Preset_FSI</Use_Preset>
+				<Samples>FS_Grass_1.wav FS_Grass_2.wav FS_Grass_3.wav FS_Grass_4.wav FS_Grass_5.wav FS_Grass_6.wav FS_Grass_7.wav FS_Grass_8.wav</Samples>
+        </SFXEvent>
+
+	
+           <SFXEvent Name="Unit_Anim_Mud_Infantry_Foot_Plant">
+					<Use_Preset>Preset_FSI</Use_Preset>
+					<Samples>FS_Mud_1.wav FS_Mud_2.wav FS_Mud_3.wav FS_Mud_4.wav FS_Mud_5.wav FS_Mud_6.wav FS_Mud_7.wav FS_Mud_8.wav</Samples>
+            </SFXEvent>
+
+
+           <SFXEvent Name="Unit_Anim_Water_Infantry_Foot_Plant">
+					<Use_Preset>Preset_FSI</Use_Preset>
+					<Samples>FS_Water_1.wav FS_Water_2.wav FS_Water_3.wav FS_Water_4.wav FS_Water_5.wav FS_Water_6.wav FS_Water_7.wav FS_Water_8.wav</Samples>
+            </SFXEvent>
+
+
+
+
+           <SFXEvent Name="Unit_Anim_C3PO_Foot_Motor">
+					<Use_Preset>Preset_FSI</Use_Preset>
+					<Samples>FS_C3PO_1.wav FS_C3PO_2.wav FS_C3PO_3.wav</Samples>
+            </SFXEvent>
+
+           <SFXEvent Name="Unit_Anim_R2_Head_Motor">
+					<Use_Preset>Preset_FSI</Use_Preset>
+					<Samples>FS_R2_Head_1.wav FS_R2_Head_2.wav FS_R2_Head_3.wav</Samples>
+					<Min_Volume> 40 </Min_Volume>
+					<Max_Volume> 40 </Max_Volume>
+            </SFXEvent>
+
+
+
+
+
+
+
+           <SFXEvent Name="Unit_Anim_Rancor_Foot_Plant">
+					<Use_Preset>Preset_FSV</Use_Preset>
+					<Samples>FS_Rancor_1.wav</Samples>
+            </SFXEvent>
+
+
+
+
+
+
+		<SFXEvent Name="Unit_MPTL_Tank_Deploy_Start">
+			    <Use_Preset>Preset_FSV</Use_Preset>
+				 <Samples>MPTL_Tank_Deploy_Start.wav</Samples>
+	  </SFXEvent>
+
+		<SFXEvent Name="Unit_MPTL_Tank_Deploy_Stop">
+			    <Use_Preset>Preset_FSV</Use_Preset>
+				 <Samples>MPTL_Tank_Deploy_Stop.wav</Samples>
+				 <Kills_Previous_Object_SFX>Yes</Kills_Previous_Object_SFX>
+	  </SFXEvent>
+
+
+		<SFXEvent Name="Unit_MPTL_Tank_Undeploy_Start">
+			    <Use_Preset>Preset_FSV</Use_Preset>
+				 <Samples>MPTL_Tank_Undeploy_Start.wav</Samples>
+	  </SFXEvent>
+
+		<SFXEvent Name="Unit_MPTL_Tank_Undeploy_Stop">
+				 <Use_Preset>Preset_FSV</Use_Preset>
+				 <Samples>MPTL_Tank_Undeploy_Stop.wav</Samples>
+				 <Kills_Previous_Object_SFX>Yes</Kills_Previous_Object_SFX>
+	  </SFXEvent>
+
+
+
+
+
+		<SFXEvent Name="Unit_SPMAT_Deploy_Start">
+			    <Use_Preset>Preset_FSV</Use_Preset>
+				 <Samples>SPMAT_Deploy_Start.wav</Samples>
+	  </SFXEvent>
+
+		<SFXEvent Name="Unit_SPMAT_Deploy_Stop">
+				 <Use_Preset>Preset_FSV</Use_Preset>
+				 <Samples>SPMAT_Deploy_Stop.wav</Samples>
+				 <Kills_Previous_Object_SFX>Yes</Kills_Previous_Object_SFX>
+	  </SFXEvent>
+
+
+
+
+		<SFXEvent Name="Unit_AT_AT_Rope_Drop">
+			    <Use_Preset>Preset_FSV</Use_Preset>
+				 <Samples>ATAT_Rope_Drop_1.wav</Samples>
+	  </SFXEvent>
+
+		<SFXEvent Name="Unit_AT_AT_Rope_Lift">
+				 <Use_Preset>Preset_FSV</Use_Preset>
+				 <Samples>ATAT_Rope_Lift_1.wav</Samples>
+	  </SFXEvent>
+
+
+
+		<SFXEvent Name="Unit_Anim_R2_Holo_Off_1">
+				 <Use_Preset>Preset_EXPC</Use_Preset>
+				 <Samples>R2_Holo_Off_Anim_1.wav</Samples>
+	  </SFXEvent>
+
+
+<SFXEvent Name="Unit_Anim_AT_PT_Foot_Plant">
+			<Use_Preset>Preset_FSV</Use_Preset>
+			<Samples>FS_SPMAT_2.wav FS_SPMAT_3.wav </Samples>
+			<Volume_Saturation_Distance>700.0</Volume_Saturation_Distance>
+    </SFXEvent>
+
+<SFXEvent Name="Unit_Anim_AT_TE_Foot_Plant">
+			<Use_Preset>Preset_FSV</Use_Preset>
+			<Samples>FS_atte_foot.wav </Samples>
+			<Volume_Saturation_Distance>700.0</Volume_Saturation_Distance>
+    </SFXEvent>
+
+	<SFXEvent Name="Unit_Anim_AT_TE_Water_Foot_Plant">
+			<Use_Preset>Preset_FSV</Use_Preset>
+			<Samples>FS_ATAT_Water_1.wav FS_ATAT_Water_2.wav FS_ATAT_Water_3.wav FS_ATAT_Water_4.wav</Samples>
+			<Volume_Saturation_Distance>700.0</Volume_Saturation_Distance>
+    </SFXEvent>
+
+
+	<SFXEvent Name="Unit_Anim_AT_TE_Walk_Hydraulics">
+			<Use_Preset>Preset_FSV</Use_Preset>
+			<Samples>FS_ATAT_Hydraulic_1.wav FS_ATAT_Hydraulic_2.wav</Samples>  	
+			<Max_Instances>2</Max_Instances>
+         <Min_Pitch>85</Min_Pitch>
+			<Max_Pitch>115</Max_Pitch>
+			<Min_Volume>46</Min_Volume>
+			<Max_Volume>66</Max_Volume>
+    </SFXEvent>
+  
+      
+</SFXEvents>

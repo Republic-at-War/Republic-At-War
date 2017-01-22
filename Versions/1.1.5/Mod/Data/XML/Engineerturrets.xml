@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<Engineer_Turrets_Data>
+
+<!-- **************************************************** --> 
+<!-- *****     MOBILE BUILD PAD TURRETS/OBJECTS     ***** -->
+<!-- **************************************************** --> 
+
+ <GroundStructure Name="Rebel_Sensor_Scrambler">
+   		<Text_ID>TEXT_STRUCTURE_SENSOR_SCRAMBLER</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_SENSOR_SCRAMBLER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against> MPTL Plex_Soldier </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> T2B_Tank AT_ST_Walker </Encyclopedia_Vulnerable_To>		
+
+		<Land_Model_Name>UV_MDU_Sensor.alo</Land_Model_Name>
+		<Icon_Name>i_button_uv_mdu_sensor.tga</Icon_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+
+		<Affiliation> Rebel </Affiliation>
+
+		<SFXEvent_Select>Structure_Sensor_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Structure_Sensor_Array_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Medium_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>10.0</Ranged_Target_Z_Adjust>
+		<Behavior>SELECTABLE, TACTICAL_SELL</Behavior>
+		<LandBehavior> IDLE, REVEAL, HIDE_WHEN_FOGGED, LAND_OBSTACLE </LandBehavior>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
+		 
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+		<Select_Box_Scale>50</Select_Box_Scale>
+
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.5</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>100</Tactical_Health>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+		<GUI_Bracket_Width>20</GUI_Bracket_Width>
+		<GUI_Bracket_Height>0</GUI_Bracket_Height>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size> 
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		
+		<Modifies_Reveal_Range>yes</Modifies_Reveal_Range>
+		<Reveal_Range_Modifier>-.75</Reveal_Range_Modifier>
+
+		<Passive_Missile_Shield_Radius> 300.0 </Passive_Missile_Shield_Radius>
+
+		<Abilities SubObjectList="Yes">
+
+			<Sensor_Jamming_Ability Name="Reb_Sensor_Jamming">
+				<Activation_Style> COMBAT_AUTOMATIC </Activation_Style>
+				<Duration_In_Secs>15.0</Duration_In_Secs>
+				<Blob_Color>200, 50, 200, 128</Blob_Color>
+				<Blob_Material_Name>Sensor_Jamming_Blob</Blob_Material_Name>
+			</Sensor_Jamming_Ability>
+
+		</Abilities>
+
+	</GroundStructure>
+	
+	<GroundBuildable Name="UC_Rebel_Sensor_Scrambler">
+
+		<Variant_Of_Existing_Type> UC_Rebel_Buildable_Abstract_Type </Variant_Of_Existing_Type>
+
+   		<Text_ID>TEXT_STRUCTURE_SENSOR_SCRAMBLER</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_SENSOR_SCRAMBLER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+		<Affiliation> Rebel </Affiliation>
+
+		<Tactical_Buildable_Constructed>Rebel_Sensor_Scrambler </Tactical_Buildable_Constructed>
+		<Tactical_Build_Cost_Multiplayer> 100 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>130</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 5 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Start_Lower_Z> 0 </Tactical_Build_Start_Lower_Z>
+		<Tactical_Health> 100 </Tactical_Health>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+		<Land_Model_Name> UV_MDU_Sensor.alo </Land_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+
+		<SFXEvent_Build_Started>UHD_Turret_Build</SFXEvent_Build_Started>
+		<SFXEvent_Select>Structure_Sensor_Select_SFX</SFXEvent_Select>
+
+		<Death_Explosions>Medium_Explosion_Land</Death_Explosions>
+		<Icon_Name>i_button_uv_mdu_sensor.tga</Icon_Name>
+
+	</GroundBuildable>
+	
+	<GroundStructure Name="Rebel_EM_Field_Generator">
+   		<Text_ID>TEXT_STRUCTURE_EMF_GEN</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_EMF_GEN</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against> MPTL Plex_Soldier MAL_Rocket_Vehicle </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> T2B_Tank Destroyer_Droid </Encyclopedia_Vulnerable_To>	
+
+		<Land_Model_Name>EV_MDU_FieldGen.alo</Land_Model_Name>
+		<Scale_Factor>0.8</Scale_Factor>
+		<Icon_Name>i_button_ev_mdu_fieldgen.tga</Icon_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+		<Affiliation> Rebel </Affiliation>
+
+		<SFXEvent_Select>Structure_Sensor_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Structure_Sensor_Array_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Medium_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>10.0</Ranged_Target_Z_Adjust>
+		<Behavior>SELECTABLE, TACTICAL_SELL</Behavior>
+		<LandBehavior> IDLE, REVEAL, HIDE_WHEN_FOGGED, LAND_OBSTACLE </LandBehavior>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
+		 
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+		<Select_Box_Scale>50</Select_Box_Scale>
+
+		<Mass>1.0</Mass>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>100</Tactical_Health>
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+		<GUI_Bracket_Width>20</GUI_Bracket_Width>
+		<GUI_Bracket_Height>0</GUI_Bracket_Height>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size> 
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Passive_Missile_Shield_Radius> 100.0 </Passive_Missile_Shield_Radius>
+
+	</GroundStructure>
+
+	<GroundBuildable Name="UC_Rebel_EM_Field_Generator">
+
+		<Variant_Of_Existing_Type> UC_Rebel_Buildable_Abstract_Type </Variant_Of_Existing_Type>
+
+   		<Text_ID>TEXT_STRUCTURE_EMF_GEN</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_EMF_GEN</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_ev_mdu_fieldgen.tga</Icon_Name>
+
+		<Affiliation> Rebel </Affiliation>
+
+		<Tactical_Buildable_Constructed> Rebel_EM_Field_Generator </Tactical_Buildable_Constructed>
+		<Tactical_Build_Cost_Multiplayer> 150 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>20</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 10 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Start_Lower_Z> 0 </Tactical_Build_Start_Lower_Z>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<Land_Model_Name>EV_MDU_FieldGen.alo</Land_Model_Name>
+		<Scale_Factor>0.8</Scale_Factor>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Ambient_Loop>Unit_EM_Field_Generator_Loop</SFXEvent_Ambient_Loop>
+		<Armor_Type> Armor_Turret </Armor_Type>
+
+	</GroundBuildable>
+	
+	
+	
+	
+	</Engineer_Turrets_Data>

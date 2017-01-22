@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<Chancellor_Palpatine_Hero_Files>
+
+
+	<!-- MAIN SENATOR ORGANA HERO DATA -->
+
+
+
+<HeroUnit Name="Chancellor_Palpatine">
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_CHANCELLOR_PALPATINE</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_CHANCELLOR_PALPATINE </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_CHANCELLOR </Encyclopedia_Unit_Class>
+		
+		<Icon_Name>I_BUTTON_CHANCELLOR_PALPATINE.tga</Icon_Name>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Type>Walk</Type>
+		<Affiliation>Empire</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Political_Faction>Empire</Political_Faction>
+		<Required_Timeline>1</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<IsBuildable>No</IsBuildable>
+		<Spawn_Planet>Coruscant</Spawn_Planet>
+		<Size_Value>75</Size_Value>
+		<Damage>80</Damage>
+		<Autoresolve_Health>200</Autoresolve_Health>
+		<Lua_Script>Tarkin</Lua_Script>
+		<Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>Yes</Stay_In_Transport_During_Ground_Battle>
+		
+		<CategoryMask> NonCombatHero </CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+
+		<Neutralization_Cost>1500.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
+
+		<Abilities SubObjectList="Yes">
+
+				<Combat_Bonus_Ability Name="Chancellor_Space_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Capital | Corvette | Frigate | Fighter</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Capital | Corvette | Frigate | Fighter</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Health_Bonus_Percentage>0.25</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.25</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+			
+				<Combat_Bonus_Ability Name="Chancellor_Land_Combat_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Unit_Strength_Category>Vehicle | Infantry | Air</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Vehicle | Infantry | Air</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Health_Bonus_Percentage>0.25</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+			
+			<Reduce_Production_Price_Ability Name="Chancellor_Reduce_Production_Price">
+				<Unit_Strength_Category />
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Price_Reduction_Percentage>0.25</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+			
+			
+		</Abilities>
+	</HeroUnit>
+
+
+	<HeroCompany Name="Chancellor_Palpatine_Team">
+		<Text_ID>TEXT_HERO_CHANCELLOR_PALPATINE</Text_ID>
+		<Icon_Name>I_BUTTON_CHANCELLOR_PALPATINE.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>60</Damage>
+		<Affiliation>Empire</Affiliation>
+		<!-- <Build_Cost_Credits>-1</Build_Cost_Credits> -->
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>1</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Theta_Shuttle</Company_Transport_Unit>
+		<Company_Units>Chancellor_Palpatine</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	
+		
+		<Encyclopedia_Text> TEXT_TOOLTIP_CHANCELLOR_PALPATINE </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_CHANCELLOR </Encyclopedia_Unit_Class>
+	
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>		
+		<SFXEvent_Build_Complete>Unit_Respawn_Palpatine</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Respawn_Palpatine</SFXEvent_Hero_Respawned>
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
+		<CategoryMask>NonCombatHero</CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+		<Population_Value>1</Population_Value>
+	</HeroCompany>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Chancellor_Palpatine_Hero_Files>

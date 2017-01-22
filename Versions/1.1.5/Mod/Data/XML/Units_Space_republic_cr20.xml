@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<Republic_CR20_Transport>
+
+
+	<TransportUnit Name="Republic_CR20_Transport">
+		<Text_ID>TEXT_UNIT_REPUBLIC_CR20_TRANSPORT</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_CR20_TRANSPORT</Encyclopedia_Text>
+		<Land_Model_Name>REV_CR20.ALO</Land_Model_Name>
+		<Space_Model_Name>REV_CR20_SPACE.ALO</Space_Model_Name>
+		<Icon_Name>I_BUTTON_CR20.tga</Icon_Name>
+		<Select_Box_Scale>300</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Mass>0.995</Mass>
+		<Scale_Factor>0.4</Scale_Factor>
+		<No_Colorization_Color> 255, 0, 0, 255 </No_Colorization_Color>
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+
+		<Armor_Type> Armor_Transport </Armor_Type>
+		<Max_Speed>3.0</Max_Speed>
+		<Max_Rate_Of_Turn>.5</Max_Rate_Of_Turn>
+		<MovementClass> Space </MovementClass>
+		<Space_Layer> Corvette </Space_Layer>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<Use_Special_Submit_Rules> true </Use_Special_Submit_Rules>
+
+		<Max_Thrust>0.8</Max_Thrust>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+
+		<Affiliation>Empire</Affiliation>
+		<Ship_Class>Transport</Ship_Class>
+		<Formation_Priority>5</Formation_Priority>
+		<Is_Escort>no</Is_Escort>
+		<Autoresolve_Health>400</Autoresolve_Health>
+		<Damage>2</Damage>
+		<Shield_Points>20</Shield_Points>
+		<Tactical_Health>300</Tactical_Health>
+		<Shield_Refresh_Rate>2</Shield_Refresh_Rate>
+		<Energy_Capacity>300</Energy_Capacity>
+		<Energy_Refresh_Rate>300</Energy_Refresh_Rate>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Override_Bounty_SP>50</Override_Bounty_SP>
+		<Override_Bounty_MP>50</Override_Bounty_MP>
+		<Size_Value>120</Size_Value>
+
+		<Behavior>SELECTABLE, TRANSPORT</Behavior>
+		<SpaceBehavior> SIMPLE_SPACE_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, REVEAL, UNIT_AI, HIDE_WHEN_FOGGED, ASTEROID_FIELD_DAMAGE</SpaceBehavior>
+		<LandBehavior>SELECTABLE, REVEAL, HIDE_WHEN_FOGGED</LandBehavior> 
+		<TacticalBehavior> SELECTABLE </TacticalBehavior>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+
+
+		<Obstacle_Width>120.0</Obstacle_Width>
+		<Obstacle_Height>120.0</Obstacle_Height>
+		<Obstacle_X_Offset>-60.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-60.0</Obstacle_Y_Offset>
+
+		<Projectile_Types>Proj_Ship_Medium_Laser_Cannon_Green</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>5.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>4</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.5</Projectile_Fire_Pulse_Delay_Seconds>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+		<Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
+		<Death_Explosions>Medium_Explosion_Space_Empire</Death_Explosions>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range>900.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>800.0</Targeting_Max_Attack_Distance>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+
+		<Fire_Inaccuracy_Distance> Fighter, 5.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 5.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Transport, 5.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 70.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 30.0 </Fire_Inaccuracy_Distance>
+
+		<Fire_Category_Restrictions> Infantry, Vehicle, Structure, Air, Transport </Fire_Category_Restrictions>
+
+
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Hover_Offset>10.0</Hover_Offset>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>120.0, 90.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<SFXEvent_Fire>Unit_Shuttle_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_CR20</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_CR20</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_CR20</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_CR20</SFXEvent_Attack>
+		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Engine_Idle_Loop> Unit_Gallofree_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Gallofree_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Shuttle_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<CategoryMask>Transport</CategoryMask>
+		<Landing_Transport_Variant>Republic_CR20_Transport_Landing</Landing_Transport_Variant>
+		<AI_Combat_Power>10</AI_Combat_Power>
+
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_TRANSPORT </Encyclopedia_Unit_Class>
+
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+	</TransportUnit>
+
+
+
+	<TransportUnit Name="Republic_CR20_Transport_Landing">
+		<Variant_Of_Existing_Type>Republic_CR20_Transport</Variant_Of_Existing_Type>
+		<Behavior>TRANSPORT</Behavior>
+		<Scale_Factor>0.8</Scale_Factor>
+		<LandBehavior>HIDE_WHEN_FOGGED</LandBehavior> 
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<User_Bound_Min>-700, -700, 0</User_Bound_Min>
+		<User_Bound_Max>700, 700, 1500</User_Bound_Max>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<UnitCollisionClass>Landing Transport</UnitCollisionClass>	
+	</TransportUnit>
+
+
+
+
+</Republic_CR20_Transport>

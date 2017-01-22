@@ -1,0 +1,568 @@
+<?xml version="1.0"?>
+<Luminara_Unduli_Hero_Files>
+
+
+	<!-- MAIN LUMINARA HERO DATA -->
+
+
+
+	<HeroUnit Name="Luminara_Unduli">
+		<Text_ID>TEXT_HERO_LUMINARA_UNDULI</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_LUMINARA_UNDULI TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_JEDI_MASTER </Encyclopedia_Unit_Class>
+		<Land_Model_Name>REI_LUMINARA.ALO</Land_Model_Name>
+		 <Show_Hero_Head>Yes</Show_Hero_Head>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Icon_Name>I_BUTTON_LUMINARA.tga</Icon_Name>
+		<GalacticBehavior> SELECTABLE </GalacticBehavior>
+		<LandBehavior>SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, REVEAL, HIDE_WHEN_FOGGED, TARGETING, WEAPON, DAMAGE_TRACKING, UNIT_AI, ABILITY_COUNTDOWN, HOLSTER_WEAPON, GARRISON_UNIT </LandBehavior>
+
+
+		<!-- Lightsaber holstering data -->
+		<SFXEvent_Draw_Weapon> Unit_Light_Saber_On </SFXEvent_Draw_Weapon>
+		<SFXEvent_Holster_Weapon> Unit_Light_Saber_Off </SFXEvent_Holster_Weapon>
+		<Holster_Weapon_Bone_Name> b_saber </Holster_Weapon_Bone_Name>
+		<Holster_Drawn_Bone_Translation> 0.0, 0.0, 0.0 </Holster_Drawn_Bone_Translation>
+		<Holster_Holstered_Bone_Translation> 0.0, 5.8, 0.0 </Holster_Holstered_Bone_Translation>
+		<Holster_Transition_Time_In_Secs> 0.17 </Holster_Transition_Time_In_Secs>
+		<Holster_Minimum_Drawn_Time_In_Secs> 15.0 </Holster_Minimum_Drawn_Time_In_Secs>
+		<Holster_Disable_Engine_Loops> Yes </Holster_Disable_Engine_Loops>
+
+		<Garrison_Category> Infantry </Garrison_Category>
+		<SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
+		<!-- Special: PloKoon doesn't show up on enemy's radar map, but he does show up for allies. -->
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Is_Visible_On_Enemy_Radar>No</Is_Visible_On_Enemy_Radar>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<CanCellStack>yes</CanCellStack>
+		<Mass>1.0</Mass>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+		
+		<Movement_Animation_Speed> 0.4 </Movement_Animation_Speed>
+		<Max_Speed>1</Max_Speed>
+		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+		<Custom_Soft_Footprint_Radius> 6.5 </Custom_Soft_Footprint_Radius>
+		<Custom_Hard_XExtent> 2.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 2.0 </Custom_Hard_YExtent>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing>
+		<MinimumPushReturnDistance> 10 </MinimumPushReturnDistance>
+		<Min_Speed> .1 </Min_Speed>
+		<OverrideAcceleration> .1 </OverrideAcceleration>
+		<OverrideDeceleration> .25 </OverrideDeceleration>
+
+
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Is_Force_Sensitive>Yes</Is_Force_Sensitive>
+
+		<SFXEvent_Engine_Idle_Loop> Unit_Obiwan_Lightsaber_Idle_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Obiwan_Lightsaber_Moving_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Obiwan_Lightsaber_Cinematic_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>			
+		<Scale_Factor>1.75</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Type>Walk</Type>
+		<Deploys>No</Deploys>
+		<Affiliation>Empire</Affiliation>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Size_Value>10</Size_Value>
+		<Sensor_Range>20</Sensor_Range>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>800</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Damage>100</Damage>
+		<Stealth_Capable>No</Stealth_Capable>
+		<Victory_Relevant>yes</Victory_Relevant>
+
+		<Armor_Type> Armor_Hero </Armor_Type>
+		<Is_Stationary_When_Attacking>Yes</Is_Stationary_When_Attacking>
+		<Projectile_Types> Proj_Lightsaber </Projectile_Types>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+		<Targeting_Max_Attack_Distance>20.0</Targeting_Max_Attack_Distance>
+		<Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+		<Projectile_Fire_Recharge_Seconds>0.7</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+
+		<SFXEvent_Select>Unit_Select_Luminara</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Luminara</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Luminara</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Luminara</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Move_Luminara</SFXEvent_Guard>
+		<SFXEvent_Group_Move>Unit_Move_Luminara</SFXEvent_Group_Move>
+		<SFXEvent_Group_Attack>Unit_Attack_Luminara</SFXEvent_Group_Attack>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Luminara </SFXEvent_Health_Low_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Defeat_Luminara</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Tactical_Build_Started> RHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>		
+		<SFXEvent_Tactical_Build_Complete> RHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>		
+		<SFXEvent_Tactical_Build_Cancelled> RHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+
+		<CategoryMask> LandHero </CategoryMask>
+		<Ranking_In_Category> 2 </Ranking_In_Category>
+		<MovementClass>Infantry</MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+		<Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+		<Attach_To_Flagship_During_Space_Battle>No</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>		
+
+		<Select_Box_Scale>27</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<Selection_Blob_Material_Name>Selection_Empire_Hero</Selection_Blob_Material_Name>
+        <Highlight_Blob_Material_Name>Highlight_Empire_Hero</Highlight_Blob_Material_Name>
+
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<AI_Combat_Power>500</AI_Combat_Power>
+		<Idle_Chase_Range>100.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Neutralization_Cost>10000.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+
+		<!-- This Galactic_Influence_Range controls how far Obi-Wan's System Spy ability extends -->
+		<Galactic_Influence_Range>100.0</Galactic_Influence_Range>	<!-- the whole galaxy -->
+		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
+
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
+		<Death_Persistence_Duration>0.0</Death_Persistence_Duration>
+		<Death_Fade_Time>0.25</Death_Fade_Time>
+		<Lua_Script>ObiWanPlan</Lua_Script>
+
+		<Target_Stealth_Units>Yes</Target_Stealth_Units>
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+
+				<Unit_Ability>
+				<Type>FORCE_WHIRLWIND</Type>
+				<Recharge_Seconds>25.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Luminara_Force_Whirlwind </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+				<Effective_Radius> 500.0 </Effective_Radius>
+				<Spawned_Object_Type> Force_Whirlwind_Particles </Spawned_Object_Type>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+			
+			<!-- Secondary ability -->
+			<Unit_Ability>
+				<Type>FORCE_CONFUSE</Type>
+				<Recharge_Seconds>40.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Luminara_Confuse </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+				<Effective_Radius> 500.0 </Effective_Radius>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Luminara_Confuse</SFXEvent_GUI_Unit_Ability_Activated>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+
+   
+   <Force_Whirlwind_Ability Name="Luminara_Force_Whirlwind">
+				<!-- <Activation_Style>Special_Attack</Activation_Style> -->
+				<Activation_Style> User_Input </Activation_Style>
+				<!-- We need to be within this distance of the clicked target to consider activating Force Whirlwind -->
+				<Activation_Min_Range>0.0</Activation_Min_Range>
+				<Activation_Max_Range>75.0</Activation_Max_Range>
+				<Damage_Amount>500.0</Damage_Amount>
+				<Damage_Range>75.0</Damage_Range>
+				<!-- How long does it take for the shockwave to spread from the hero to the max range? -->
+				<Travel_Time_In_Secs>1.0</Travel_Time_In_Secs>
+				<!-- Percentage chance to activate given a certain number of valid targets in range. -->
+				<!-- First number in the pair is the number of valid targets, second is the chance to activate. -->
+				<Activation_Chance>0,0.0, 1,0.0, 5,1.0, 500,1.0</Activation_Chance>
+				<!--				<Activation_Chance>0,0.0, 500,0.0</Activation_Chance>	< ! - - never activate -->
+				<!-- We only consider the following unit types "valid targets": -->
+				<Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Force_Whirlwind</SFXEvent_Activate>
+				<Owner_Particle_Effect>Force_Whirlwind_Particles</Owner_Particle_Effect>
+				<Owner_Particle_Bone_Name />
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>2.0, 2.0, 2.0</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.5</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count />
+			</Force_Whirlwind_Ability>
+			
+			 <Force_Confuse_Ability Name="Luminara_Confuse">
+               <Activation_Style> User_Input </Activation_Style>
+   				<!-- We need to be within this distance of the clicked target to consider activating Stun -->
+   				<Activation_Min_Range>0.0</Activation_Min_Range>
+   				<Activation_Max_Range>132.0</Activation_Max_Range>
+   				<Confuse_Time_In_Secs>8.0</Confuse_Time_In_Secs>
+   				<Confuse_Range>132.0</Confuse_Range>
+   				<!-- How long does it take for the shockwave to spread from the hero to the max range? -->
+   				<Confuse_Travel_Time_In_Secs>1.2</Confuse_Travel_Time_In_Secs>
+                <Confuse_Effect> Confuse_Particle_Effect </Confuse_Effect>
+   				<!-- We only consider the following unit types "valid targets": -->
+   				<Applicable_Unit_Categories />
+   				<Applicable_Unit_Types>Desert_Civilian_A, Swamp_Civilian_A, Swamp_Civilian_B, Swamp_Civilian_C, Urban_Civilian_A, Urban_Civilian_B, Urban_Civilian_C, Snow_Civilian_A, Wookie_Warrior, Jawa_Scout, Sand_Person_Sniper_A, Sand_Person_Sniper_B, Hutt_Civilian, Twilek_Female, Geonosian, Sullustan_Civilian, Dathomir_Night_Sister, Mustafarian_Indigenous, Mandalorian_Indigenous, Wampa, Rancor, Neimodian_Civilian_A, Neimodian_Civilian_B, Trandoshan_Civilian_Militia_A, Trandoshan_Civilian_Militia_B, Trandoshan_Civilian_Militia_C, Muun_Civilian_A, Muun_Civilian_B, Krayt_Dragon, Felucia_Rancor, Bull_Rancor, Hostile_Sullustan_Civilian, Hostile_Ithorian_Civilian, Hostile_Duros_Civilian_A, Jango_Fett, Bossk, Cad_Bane, Aurra_Sing</Applicable_Unit_Types>
+   				<SFXEvent_Activate>Unit_Ability_Confuse</SFXEvent_Activate>
+   				<Owner_Particle_Effect>Jedi_Mind_Trick_Effect</Owner_Particle_Effect>
+   				<!--<Owner_Particle_Effect>Confuse_Ability_Particles</Owner_Particle_Effect>-->
+   				<Owner_Particle_Bone_Name />
+   				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+   				<Owner_Light_Effect_Color>2.0, 2.0, 2.0</Owner_Light_Effect_Color>
+   				<Owner_Light_Effect_Color2 />
+   				<Owner_Light_Effect_Duration>0.5</Owner_Light_Effect_Duration>
+   				<Owner_Light_Effect_Pulse_Count />
+   			</Force_Confuse_Ability>
+         
+			<!-- Redirect Blaster must appear in the special ability list before Absorb Blaster -->
+			<Redirect_Blaster_Ability Name="Luminara_Redirect_Blaster">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<!-- Redirection chance is rolled first. If failed, we roll block chance. If failed, we take the damage. -->
+				<Redirect_Chance>0.30</Redirect_Chance>
+				<Block_Chance>0.60</Block_Chance>
+				<Reaction_Arc_In_Degrees>180.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 135.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<!-- We can block/redirect shots from the following units types: -->
+			 <Applicable_Unit_Categories> Infantry</Applicable_Unit_Categories>
+               <Applicable_Unit_Types>Asajj_Ventress, Aurra_Sing, Bossk, Cad_Bane, Count_Dooku, Durge, General_Grievous, Darkside_Adepts, Squad_Generic_Field_Commander_Cis, Bx_Commando</Applicable_Unit_Types>
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+			
+				<Absorb_Blaster_Ability Name="Luminara_Absorb_Blaster">
+                <Activation_Style>Take_Damage</Activation_Style>
+                <Absorb_Chance>.4</Absorb_Chance>
+                <!-- Absorb Percentage and Amount work together in the following way: -->
+                <!-- Actual Amount healed = (Projectile Damage * Absorb Percentage) + Absorb Amount -->
+                <!-- Either value can be zero, but at least one should be non-zero. -->
+                <Damage_Absorb_Percentage>0.2</Damage_Absorb_Percentage>
+                <Damage_Absorb_Amount>.8</Damage_Absorb_Amount>
+                <!-- We can absorb shots from the following units types (but no missiles or grenades): -->
+                <Applicable_Unit_Categories> Infantry</Applicable_Unit_Categories>
+               <Applicable_Unit_Types>Asajj_Ventress, Aurra_Sing, Bossk, Cad_Bane, Count_Dooku, Durge, General_Grievous, Darkside_Adepts, Squad_Generic_Field_Commander_Cis, Bx_Commando</Applicable_Unit_Types>
+                <SFXEvent_Activate>Unit_Force_Absorb</SFXEvent_Activate>
+                <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+                <Owner_Light_Effect_Color>2.0, 0.4, 0.4</Owner_Light_Effect_Color>
+                <Owner_Light_Effect_Color2 />
+                <Owner_Light_Effect_Duration>0.5</Owner_Light_Effect_Duration>
+                <Owner_Light_Effect_Pulse_Count />
+            </Absorb_Blaster_Ability>
+
+		
+
+			<Earthquake_Attack_Ability Name="Luminara_Attack_Structures">
+				<Activation_Style>Special_Attack</Activation_Style>
+				<Terminate_Effect_On_Move_Command>Yes</Terminate_Effect_On_Move_Command>
+				<Activation_Min_Range>0.0</Activation_Min_Range>
+				<Activation_Max_Range>120.0</Activation_Max_Range>
+				<Activation_Chance>1.0</Activation_Chance>
+				<Damage_Amount>0.0</Damage_Amount>
+				<Damage_Percentage>0.04</Damage_Percentage>
+				<Damage_Interval_In_Secs>0.5</Damage_Interval_In_Secs>
+				<!-- Note: As well as matching the below Unit_Category/Unit_Type filters, the -->
+				<!-- target object must also have the EARTHQUAKE_TARGET behavior attached. -->
+				<Applicable_Unit_Categories>Structure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate />
+				<Target_Particle_Effect>Earthquake_Dust_Particles</Target_Particle_Effect>
+				<Target_Particle_Bone_Name />
+			</Earthquake_Attack_Ability>
+
+			<System_Spy_Ability Name="Luminara_System_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Force_Sensitive_Heroes>Yes</See_Force_Sensitive_Heroes>
+				<See_Super_Weapons>Yes</See_Super_Weapons>
+			</System_Spy_Ability>
+
+	<Galactic_Stealth_Ability Name="Luminara_Galactic_Stealth">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+
+		
+		
+			
+		</Abilities>
+
+
+	</HeroUnit>
+
+
+
+
+
+	<!-- LUMINARA COMPANY DATA -->
+
+
+	<HeroCompany Name="Luminara_Team">
+		<LOD_Bias>5</LOD_Bias>
+		<Text_ID>TEXT_HERO_LUMINARA_UNDULI</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_LUMINARA_UNDULI TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_JEDI_MASTER </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_LUMINARA.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>100</Damage>
+		<Affiliation>Empire</Affiliation>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>3</Tech_Level>
+		<Required_Timeline>5</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets>Yavin</Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Delta7b_Luminara</Company_Transport_Unit>
+		<Company_Units>Luminara_Unduli</Company_Units>
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Build_Tab_Heroes>Yes</Build_Tab_Heroes>
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<Build_Time_Seconds>35</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> No </Build_Time_Reduced_By_Multiple_Factories>
+		<Is_Force_Sensitive>Yes</Is_Force_Sensitive>
+		<Available_In_Skirmish>yes</Available_In_Skirmish>
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
+		<Can_Be_Only_One>true</Can_Be_Only_One>
+		
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>		
+		<SFXEvent_Build_Complete>Unit_Complete_Luminara</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Complete_Luminara</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Luminara</SFXEvent_Fleet_Move>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+		<Tactical_Build_Cost_Multiplayer>1900</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Four_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		
+		<Unit_Abilities_Data SubObjectList="Yes"> </Unit_Abilities_Data>
+		<CategoryMask>LandHero | SpaceHero</CategoryMask>
+		<Ranking_In_Category> 2 </Ranking_In_Category>
+		<Population_Value>1</Population_Value>
+	</HeroCompany>
+
+
+
+<HeroCompany Name="Luminara_Team_Space_MP">
+		<LOD_Bias>5</LOD_Bias>
+		<Text_ID>TEXT_HERO_LUMINARA_UNDULI</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_LUMINARA_DELTA7B </Encyclopedia_Text>
+		<Encyclopedia_Good_Against> Nantex Vulture_Droid_Fighter CIS_Bomber </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Hammer_Class_Picket Tri_Droid_Fighter Cis_Patrol_Frigate</Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_JEDI_MASTER </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_LUMINARA.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>100</Damage>
+		<Affiliation>Empire</Affiliation>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>5</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Delta7b_Luminara</Company_Transport_Unit>
+		<Company_Units>Luminara_Unduli</Company_Units>
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Build_Tab_Heroes>Yes</Build_Tab_Heroes>
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> No </Build_Time_Reduced_By_Multiple_Factories>
+		<Is_Force_Sensitive>Yes</Is_Force_Sensitive>
+		<Available_In_Skirmish>yes</Available_In_Skirmish>
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
+		<Can_Be_Only_One>true</Can_Be_Only_One>
+		
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>		
+		<SFXEvent_Build_Complete>Unit_Complete_Luminara</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Complete_Luminara</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Luminara</SFXEvent_Fleet_Move>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+		<Tactical_Build_Cost_Multiplayer>1800</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		
+		<Unit_Abilities_Data SubObjectList="Yes"> </Unit_Abilities_Data>
+		<CategoryMask>LandHero | SpaceHero</CategoryMask>
+		<Ranking_In_Category> 2 </Ranking_In_Category>
+		<Population_Value>1</Population_Value>
+	</HeroCompany>
+
+
+
+<UniqueUnit Name="Delta7b_Luminara">
+    <Text_ID>TEXT_HERO_LUMINARA_UNDULI</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FIGHTER </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_LUMINARA_DELTA7B </Encyclopedia_Text>
+		<Encyclopedia_Good_Against> Nantex Vulture_Droid_Fighter CIS_Bomber </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Hammer_Class_Picket Tri_Droid_Fighter Cis_Patrol_Frigate</Encyclopedia_Vulnerable_To>
+		<Icon_Name>I_BUTTON_LUMINARA.tga</Icon_Name>
+		<Space_Model_Name>ReV_delta7b_luminara.ALO</Space_Model_Name>
+		<Scale_Factor>0.05</Scale_Factor> <!-- From 0.1 -->
+		<Select_Box_Scale>300</Select_Box_Scale>
+		<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
+		<Mouse_Collide_Override_Sphere_Radius> 50.0 </Mouse_Collide_Override_Sphere_Radius>
+        <Damage_Type>Damage_Fighter</Damage_Type>
+		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
+		<Layer_Z_Adjust>-43</Layer_Z_Adjust>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Mass>0.98</Mass>
+		<Guard_Chase_Range>2000.0</Guard_Chase_Range> <!-- Added -->
+		<Idle_Chase_Range>1000.0</Idle_Chase_Range> <!-- Added -->
+		<Max_Speed>5.0</Max_Speed>
+		<Min_Speed>4.0</Min_Speed>
+		<Max_Rate_Of_Turn>6.0</Max_Rate_Of_Turn>
+		<Max_Thrust>1.0</Max_Thrust>
+		<Max_Rate_Of_Roll>6.0</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>60</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>800.0</Begin_Turn_Towards_Distance>
+		<Fires_Forward>no</Fires_Forward>
+		<Turret_Rotate_Extent_Degrees>20</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>40</Turret_Elevate_Extent_Degrees>
+		<Max_Lift>4.0f</Max_Lift> <!-- From 4 -->
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		<Maintenance_Cost>0.1</Maintenance_Cost>
+		<Affiliation>Empire</Affiliation>
+		<Shield_Points>600</Shield_Points> <!-- From 500 -->
+		<Tactical_Health>1000</Tactical_Health>
+		<Shield_Refresh_Rate>90</Shield_Refresh_Rate>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>300</Energy_Refresh_Rate>
+		<Ship_Class>fighter</Ship_Class>
+		<Armor_Type> Armor_Hero_Transport </Armor_Type>
+    <Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Political_Control>0</Political_Control>
+		<Squadron_Capacity>0</Squadron_Capacity>
+		<Number_per_Squadron>5</Number_per_Squadron>
+		<Tech_Level>99</Tech_Level>
+		<Build_Cost_Credits>6000</Build_Cost_Credits>
+		<Build_Time_Seconds>25</Build_Time_Seconds>
+		<Size_Value>8</Size_Value>
+		<Behavior>SELECTABLE, TRANSPORT</Behavior>
+		<SpaceBehavior>FIGHTER_LOCOMOTOR, TARGETING, WEAPON, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, NEBULA, DAMAGE_TRACKING, REVEAL, ABILITY_COUNTDOWN </SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Damage>40</Damage>
+					
+    <Projectile_Types>Proj_Ship_Small_Laser_Cannon_Red_X3</Projectile_Types> <!-- From Proj_Ship_Small_Laser_Cannon_Red -->
+		<Projectile_Fire_Pulse_Count>4</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+		<Land_FOW_Reveal_Range>130.0</Land_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range>500.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>450.0</Targeting_Max_Attack_Distance>
+		<Death_Explosions>Small_Explosion_Space</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_X_Wing_Death_SFX</Death_SFXEvent_Start_Die>
+		<Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
+
+		<SFXEvent_Fire>Unit_A_Wing_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Luminara</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Luminara</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_X_Wing</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Luminara</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Move_Luminara</SFXEvent_Guard>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Luminara </SFXEvent_Health_Low_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Defeat_Luminara</Death_SFXEvent_Start_Die>
+			
+		<SFXEvent_Ambient_Moving> Unit_Delta_7_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 10 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_A_Wing_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+			<CategoryMask> Fighter | SpaceHero | AntiFighter | AntiBomber </CategoryMask>
+		<Property_Flags> SmallShip </Property_Flags>
+		
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<Custom_Footprint_Radius> 7.0 </Custom_Footprint_Radius>
+		<MovementClass> Space </MovementClass>
+		<FormationOrder>2</FormationOrder>
+		<Out_Of_Combat_Defense_Adjustment>-1.0</Out_Of_Combat_Defense_Adjustment>
+		<Minimum_Follow_Distance>25.0</Minimum_Follow_Distance>
+		<AI_Combat_Power>60</AI_Combat_Power>
+		<Collision_Box_Modifier>2.0</Collision_Box_Modifier>
+		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+				
+		<Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+		<Spin_Away_On_Death_Chance>0.2</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Time>2.0f</Spin_Away_On_Death_Time>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space</Spin_Away_On_Death_Explosion>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_X_Wing_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+    <Landing_Transport_Variant>Theta_Shuttle_Landing</Landing_Transport_Variant>
+
+		<Strafe_Distance>500.0</Strafe_Distance>
+		<Population_Value>0</Population_Value>
+
+  	<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+		<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.50f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 2</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER , 2.5</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>10</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_STRIKE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_STRIKE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_ASSAULT.TGA</Alternate_Icon_Name>
+			</Unit_Ability>
+		
+		</Unit_Abilities_Data>
+		
+			<Abilities SubObjectList="Yes">
+		
+			<Combat_Bonus_Ability Name="Luminara_Space_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Fighter</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Fighter</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Health_Bonus_Percentage>0.25</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+		</Abilities>
+
+	</UniqueUnit>
+
+
+
+
+
+
+
+</Luminara_Unduli_Hero_Files>

@@ -1,0 +1,1474 @@
+<?xml version="1.0"?>
+
+
+<SpaceProps_UW>
+
+	<SpaceProp Name="Death_Star_Chunks">
+		<Text_ID>TEXT_UNIT_STAR_DESTROYER</Text_ID>
+		<Space_Model_Name>w_planet_DeathStar02_II_chunks.alo</Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+        <Is_Discardable> No </Is_Discardable>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Behavior>SPACE_OBSTACLE, IDLE</Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>-2500.0</Layer_Z_Adjust>
+		<Is_Visible_On_Radar> No </Is_Visible_On_Radar>
+		
+		<Is_Impassable_Asteroid> true </Is_Impassable_Asteroid>
+		<Space_Obstacle_Radius> 1600 </Space_Obstacle_Radius>
+		<Space_Obstacle_Offset> 100 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+	</SpaceProp>
+
+	<SpaceProp Name="Forest_Backdrop_Small">
+		<Text_ID />
+		<Space_Model_Name>w_planet_forest00.alo</Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Loop_Idle_Anim_00> Yes </Loop_Idle_Anim_00>
+		<Idle_Anim_00_Rate_Mod> 1.0 </Idle_Anim_00_Rate_Mod>
+		<Scale_Factor>100.0</Scale_Factor>
+		<Behavior> IDLE </Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<In_Background> Yes </In_Background>
+		<Layer_Z_Adjust>-300.0</Layer_Z_Adjust>
+		<Radar_Icon_Name>i_radar_planet.tga</Radar_Icon_Name> 
+		<Is_Visible_On_Radar> Yes </Is_Visible_On_Radar>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</SpaceProp>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- =================================================================================== -->
+	<!-- Break-off pieces from destroyed hard points, there are referenced in HardPoints.xml -->
+	<!-- NOTE: These all require the DEBRIS behavior                                         -->
+	<!-- =================================================================================== -->
+
+
+
+	<SpaceProp Name="Hardpoint_Breakoff_Executor_L_Turbo_00">
+		<Text_ID />
+		<Space_Model_Name> EV_ExecutorStarDestroyer_hp_L_trb00.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> -0.6, 0.0, -0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.9, 0.4, 0.3 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space_Empire </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Executor_L_Turbo_01">
+		<Text_ID />
+		<Space_Model_Name> EV_ExecutorStarDestroyer_hp_L_trb01.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> -0.6, 0.0, -0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 1.0, 0.6, 0.5 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space_Empire </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Executor_L_Turbo_02">
+		<Text_ID />
+		<Space_Model_Name> EV_ExecutorStarDestroyer_hp_L_trb02.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> -0.6, 0.0, -0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.7, 0.3, 0.4 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space_Empire </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Executor_L_Turbo_03">
+		<Text_ID />
+		<Space_Model_Name> EV_ExecutorStarDestroyer_hp_L_trb03.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> -0.6, 0.0, -0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.5, 0.6, 0.1 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space_Empire </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Executor_L_Ion_00">
+		<Text_ID />
+		<Space_Model_Name> EV_ExecutorStarDestroyer_hp_L_ion00.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> -0.6, 0.0, -0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.7, 0.5, 0.2 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space_Empire </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Executor_L_Ion_01">
+		<Text_ID />
+		<Space_Model_Name> EV_ExecutorStarDestroyer_hp_L_ion01.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> -0.6, 0.0, -0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.7, 0.2, 0.4 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space_Empire </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Executor_L_Ion_02">
+		<Text_ID />
+		<Space_Model_Name> EV_ExecutorStarDestroyer_hp_L_ion02.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> -0.6, 0.0, -0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.8, 0.8, 0.2 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space_Empire </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Executor_R_Turbo_00">
+		<Text_ID />
+		<Space_Model_Name> EV_ExecutorStarDestroyer_hp_R_trb00.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.6, 0.0, -0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 1.0, 0.2, 0.4 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space_Empire </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Executor_R_Turbo_01">
+		<Text_ID />
+		<Space_Model_Name> EV_ExecutorStarDestroyer_hp_R_trb01.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.6, 0.0, -0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.9, 0.4, 0.3 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space_Empire </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Executor_R_Turbo_02">
+		<Text_ID />
+		<Space_Model_Name> EV_ExecutorStarDestroyer_hp_R_trb02.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.6, 0.0, -0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.5, 0.1, 0.4 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space_Empire </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Executor_R_Turbo_03">
+		<Text_ID />
+		<Space_Model_Name> EV_ExecutorStarDestroyer_hp_R_trb03.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.6, 0.0, -0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.7, 0.3, 0.2 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space_Empire </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Executor_R_Ion_00">
+		<Text_ID />
+		<Space_Model_Name> EV_ExecutorStarDestroyer_hp_R_ion00.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.6, 0.0, -0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.3, 0.5, 0.5 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space_Empire </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Executor_R_Ion_01">
+		<Text_ID />
+		<Space_Model_Name> EV_ExecutorStarDestroyer_hp_R_ion01.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.6, 0.0, -0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 1.0, 0.5, 0.4 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space_Empire </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Executor_R_Ion_02">
+		<Text_ID />
+		<Space_Model_Name> EV_ExecutorStarDestroyer_hp_R_ion02.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.6, 0.0, -0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.9, 0.6, 0.1 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space_Empire </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+
+
+<!-- Break off parts for Krayt-Class Destroyer -->
+
+
+	<SpaceProp Name="Hardpoint_Breakoff_Krayt_Right_Turbo">
+		<Text_ID />
+		<Space_Model_Name> UV_KraytClassDestroyer_HP_LC_R_00.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.6, 0.0, -0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.9, 0.6, 0.1 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Krayt_Right_Turbo_Peacebringer">
+		<Variant_Of_Existing_Type>Hardpoint_Breakoff_Krayt_Right_Turbo</Variant_Of_Existing_Type>
+		<Space_Model_Name> UV_KraytClassDestroyer_HP_LC_R_00_Tyber.alo </Space_Model_Name>
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Krayt_Left_Turbo">
+		<Text_ID />
+		<Space_Model_Name> UV_KraytClassDestroyer_HP_LC_L_00.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> -0.6, 0.0, -0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.9, 0.6, 0.1 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Krayt_Left_Turbo_Peacebringer">
+		<Variant_Of_Existing_Type>Hardpoint_Breakoff_Krayt_Left_Turbo</Variant_Of_Existing_Type>
+		<Space_Model_Name> UV_KraytClassDestroyer_HP_LC_L_00_Tyber.alo </Space_Model_Name>
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Krayt_Shield_Gen">
+		<Text_ID />
+		<Space_Model_Name> UV_KraytClassDestroyer_hp_Shld_00.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.6, 0.0, 0.9 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.9, 0.6, 0.1 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Krayt_Megaweapon_Ion">
+		<Text_ID />
+		<Space_Model_Name> UV_KraytClassDestroyer_HP_ION_00.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.8, 0.1, -0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.9, 0.6, 0.1 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Krayt_Megaweapon_Damage">
+		<Text_ID />
+		<Space_Model_Name> UV_KraytClassDestroyer_HP_SW_00.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.8, -0.1, -0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.9, 0.6, 0.1 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+<!-- Breakoff Props for Vengeance-class Frigate -->
+
+
+	<SpaceProp Name="Hardpoint_Breakoff_Vengeance_MDC_Left">
+		<Text_ID />
+		<Space_Model_Name> UV_Vengeance_HP_LFT_MDC.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> -0.6, 0.0, -0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.9, 0.6, 0.1 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Vengeance_MDC_Right">
+		<Text_ID />
+		<Space_Model_Name> UV_Vengeance_HP_RGT_MDC.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.6, 0.0, -0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.9, 0.6, 0.1 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Vengeance_Turbo_Left">
+		<Text_ID />
+		<Space_Model_Name> UV_Vengeance_HP_LFT_TB.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> -0.6, 0.0, 0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.9, 0.6, 0.1 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Vengeance_Turbo_Right">
+		<Text_ID />
+		<Space_Model_Name> UV_Vengeance_HP_RGT_TB.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.5, 0.0, 0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.9, 0.6, 0.1 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+
+<!-- Interceptor IV Break Off Pieces -->
+
+
+	<SpaceProp Name="Hardpoint_Breakoff_InterceptorIV_BL">
+		<Text_ID />
+		<Space_Model_Name>UV_InterceptorIV_HP00_B-L.alo</Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Is_Discardable> No </Is_Discardable>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.0, 0.0, -0.5 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.7, 0.4, 0.7 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Huge </Debris_Attached_Particle>
+
+		<Death_Explosions> Medium_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_InterceptorIV_BR">
+		<Text_ID />
+		<Space_Model_Name>UV_InterceptorIV_HP00_B-R.alo</Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Is_Discardable> No </Is_Discardable>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.0, 0.0, -0.5 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.7, 0.4, 0.7 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Huge </Debris_Attached_Particle>
+
+		<Death_Explosions> Medium_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_InterceptorIV_F">
+		<Text_ID />
+		<Space_Model_Name>UV_InterceptorIV_HP00_F.alo</Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Is_Discardable> No </Is_Discardable>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.0, 0.0, -0.5 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.7, 0.4, 0.7 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Huge </Debris_Attached_Particle>
+
+		<Death_Explosions> Medium_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceProp>
+	
+	
+
+	<!-- KEDALBE BATTLESHIP BREAKOFF PIECES -->
+
+
+	<SpaceProp Name="Hardpoint_Breakoff_Kedalbe_L_Turbo_00">
+		<Text_ID />
+		<Space_Model_Name> UV_KedalbeBattleship_HP_TB_LFT_00.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> -0.6, 0.0, -0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.9, 0.4, 0.3 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Kedalbe_L_Turbo_01">
+		<Text_ID />
+		<Space_Model_Name> UV_KedalbeBattleship_HP_TB_LFT_01.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> -0.6, 0.0, -0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.9, 0.4, 0.3 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Kedalbe_R_Turbo_00">
+		<Text_ID />
+		<Space_Model_Name> UV_KedalbeBattleship_HP_TB_RGT_00.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.6, 0.0, -0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.7, 0.3, 0.2 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Kedalbe_R_Turbo_01">
+		<Text_ID />
+		<Space_Model_Name> UV_KedalbeBattleship_HP_TB_RGT_01.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.6, 0.0, -0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.7, 0.3, 0.2 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Kedalbe_L_Ion_00">
+		<Text_ID />
+		<Space_Model_Name> UV_KedalbeBattleship_HP_ION_LFT_00.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> -0.6, 0.0, -0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.7, 0.2, 0.4 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Kedalbe_R_Ion_00">
+		<Text_ID />
+		<Space_Model_Name> UV_KedalbeBattleship_HP_ION_RGT_00.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.6, 0.0, -0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 1.0, 0.5, 0.4 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+
+	<SpaceProp Name="Hardpoint_Breakoff_Kedalbe_MassDriver_Front">
+		<Text_ID />
+		<Space_Model_Name> UV_KedalbeBattleship_HP_MDB_FRNT_00.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.4, 0.4, -0.8 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 1.0, 0.5, 0.4 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Kedalbe_Shield_Leech">
+		<Text_ID />
+		<Space_Model_Name> UV_KedalbeBattleship_HP_SHL_00.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.6, 0.0, 0.9 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.9, 0.6, 0.1 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<!-- ARC HAMMER BREAKOFF PIECES -->
+
+	<SpaceProp Name="Hardpoint_Breakoff_Arc_Hammer_Laser_Left">
+		<Text_ID />
+		<Space_Model_Name> EV_ARCHAMMER_HP_LC_L_00.ALO </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> -0.5, 0.0, 0.7 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.4, 0.5, 0.1 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Arc_Hammer_Laser_Right">
+		<Text_ID />
+		<Space_Model_Name> EV_ARCHAMMER_HP_LC_R_00.ALO </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.6, 0.0, 0.5 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.7, 0.7, 0.2 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceProp>
+
+
+	<!-- Underworld Space Station Level 1 Breakoff Pieces -->
+
+
+	<SpaceProp Name="Hardpoint_Breakoff_Comm_Array">
+		<Text_ID />
+		<Space_Model_Name> UB_01_Station_HP01_COM.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.6, 0.0, 0.5 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.7, 0.7, 0.2 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_U_Station_Shield_Gen">
+		<Text_ID />
+		<Space_Model_Name> UB_01_Station_HP01_SHG.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.0, -0.5, -0.2 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.7, 0.7, 0.2 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_U_Station_L3_Torp">
+		<Text_ID />
+		<Space_Model_Name> UB_03_STATION_HP03_PT.ALO </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.2, -0.2, -0.2 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.7, 0.7, 0.2 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_U_Station_L3_Main_Gun">
+		<Text_ID />
+		<Space_Model_Name> UB_03_STATION_HP03_GUN.ALO </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.2, -0.2, 0.3 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.7, 0.7, 0.2 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_U_Station_L4_Plasma">
+		<Text_ID />
+		<Space_Model_Name> UB_04_STATION_HP04_PC.ALO </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.0, -0.5, -0.2 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.7, 0.7, 0.2 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_U_Station_L5_IC">
+		<Text_ID />
+		<Space_Model_Name> UB_05_STATION_HP05_IC.ALO </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.0, -0.5, 0.2 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.7, 0.7, 0.2 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_U_Station_L5_Torp">
+		<Text_ID />
+		<Space_Model_Name> UB_05_STATION_HP05_PT.ALO </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.2, -0.2, -0.2 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.7, 0.7, 0.2 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_U_Station_L5_Turbolaser">
+		<Text_ID />
+		<Space_Model_Name> UB_05_STATION_HP05_TBL.ALO </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.2, -0.2, -0.2 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.7, 0.7, 0.2 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceProp>
+
+
+<!-- BREAKOFF PIECES FOR THE GARGANTUAN (yes, I know it's not really a space unit...) -->
+
+
+	<SpaceProp Name="Hardpoint_Breakoff_Gargantuan_Left_Shield">
+		<Text_ID />
+		<Land_Model_Name> HP_leftshieldgen_00.alo </Land_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<LandBehavior> DEBRIS </LandBehavior>
+		<Debris_Movement_Vector> 0.0, -2.0, 2.4 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 1.0, 1.0, 0.5 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 1.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 1.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Small </Debris_Attached_Particle>
+
+		<Death_Explosions> Medium_Explosion_Land </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Gargantuan_Right_Shield">
+		<Text_ID />
+		<Land_Model_Name> HP_rightshieldgen_00.alo </Land_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<LandBehavior> DEBRIS </LandBehavior>
+		<Debris_Movement_Vector> 0.0, -2.0, 2.4 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 1.0, 1.0, 0.5 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 1.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 1.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Small </Debris_Attached_Particle>
+
+		<Death_Explosions> Medium_Explosion_Land </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Gargantuan_Main_Gun_Back">
+		<Text_ID />
+		<Land_Model_Name> HP_turret_back_00.alo </Land_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<LandBehavior> DEBRIS </LandBehavior>
+		<Debris_Movement_Vector> 0.0, -2.0, 2.0 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 1.0, 1.0, 0.5 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 1.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 1.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Small </Debris_Attached_Particle>
+
+		<Death_Explosions> Medium_Explosion_Land </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Gargantuan_Main_Gun_Front">
+		<Text_ID />
+		<Land_Model_Name> HP_turret_front_00.alo </Land_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<LandBehavior> DEBRIS </LandBehavior>
+		<Debris_Movement_Vector> 0.0, -2.0, 2.0 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 1.0, 1.0, 0.5 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 1.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 1.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Small </Debris_Attached_Particle>
+
+		<Death_Explosions> Medium_Explosion_Land </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Gargantuan_Small_Gun_Front_Left">
+		<Text_ID />
+		<Land_Model_Name> HP_turret_FRONT_L_00.alo </Land_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<LandBehavior> DEBRIS </LandBehavior>
+		<Debris_Movement_Vector> 0.0, -2.0, 2.0 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 1.0, 1.0, 0.5 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 1.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 1.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Small </Debris_Attached_Particle>
+
+		<Death_Explosions> Medium_Explosion_Land </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Gargantuan_Small_Gun_Front_Right">
+		<Text_ID />
+		<Land_Model_Name> HP_turret_FRONT_R_00.alo </Land_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<LandBehavior> DEBRIS </LandBehavior>
+		<Debris_Movement_Vector> 0.0, -2.0, 2.4 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 1.0, 1.0, 0.5 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 1.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 1.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Small </Debris_Attached_Particle>
+
+		<Death_Explosions> Medium_Explosion_Land </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Gargantuan_Small_Gun_Back_Left">
+		<Text_ID />
+		<Land_Model_Name> HP_turret_BACK_L_00.alo </Land_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<LandBehavior> DEBRIS </LandBehavior>
+		<Debris_Movement_Vector> 0.0, -2.0, 2.4 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 1.0, 1.0, 0.5 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 1.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 1.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Small </Debris_Attached_Particle>
+
+		<Death_Explosions> Medium_Explosion_Land </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Gargantuan_Small_Gun_Back_Right">
+		<Text_ID />
+		<Land_Model_Name> HP_turret_BACK_R_00.alo </Land_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<LandBehavior> DEBRIS </LandBehavior>
+		<Debris_Movement_Vector> 0.0, -2.0, 2.4 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 1.0, 1.0, 0.5 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 1.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 1.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Small </Debris_Attached_Particle>
+
+		<Death_Explosions> Medium_Explosion_Land </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceProp>
+
+
+<!-- PALACE BREAK OFF PIECES (once again, not space...) -->
+
+	<SpaceProp Name="Hardpoint_Breakoff_UW_Palace_Comm_Array">
+		<Text_ID />
+		<Land_Model_Name> UB_PALACE_HP_COMM.ALO </Land_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<LandBehavior> DEBRIS </LandBehavior>
+		<Debris_Movement_Vector> 0.0, -2.0, 2.4 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 1.0, 1.0, 0.5 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 1.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 1.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Small </Debris_Attached_Particle>
+
+		<Death_Explosions> Medium_Explosion_Land </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_UW_Palace_Power_Gen">
+		<Text_ID />
+		<Land_Model_Name> UB_PALACE_HP_GEN.ALO </Land_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<LandBehavior> DEBRIS </LandBehavior>
+		<Debris_Movement_Vector> 0.0, -2.0, 2.6 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 1.0, 1.0, 0.5 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 1.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 1.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Small </Debris_Attached_Particle>
+
+		<Death_Explosions> Medium_Explosion_Land </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceProp>
+
+
+
+
+	<!-- Star Destroyer Admonitor Break-off Pieces -->
+
+
+
+	<SpaceProp Name="Hardpoint_Breakoff_Thrawn_SD_Weapon_FL">
+		<Text_ID />
+		<Space_Model_Name> EV_StarDestroyer_Thrawn_HP00_L-F.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+    <Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> -0.2, 0.0, -0.5 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.9, 0.4, 0.3 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space_Empire </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Thrawn_SD_Weapon_FR">
+		<Text_ID />
+		<Space_Model_Name> EV_StarDestroyer_Thrawn_HP00_F-R.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+    <Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.2, 0.0, -0.5 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.5, 0.7, 0.3 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space_Empire </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Thrawn_SD_Weapon_BL">
+		<Text_ID />
+		<Space_Model_Name> EV_StarDestroyer_Thrawn_HP00_B-L.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+    <Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> -0.2, 0.0, -0.5 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.4, 0.7, 0.1 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space_Empire </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Thrawn_SD_Weapon_BR">
+		<Text_ID />
+		<Space_Model_Name> EV_StarDestroyer_Thrawn_HP00_B-R.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+    <Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.2, 0.0, -0.5 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.3, 0.7, 0.1 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Large_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space_Empire </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_Thrawn_SD_Shield_Gen">
+		<Text_ID />
+		<Space_Model_Name> EV_StarDestroyer_Thrawn_HP00_M-C.alo </Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+    <Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector> 0.5, 0.0, 0.5 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 0.6, 0.4, 0.1 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 15.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 25.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Huge_Empire </Debris_Attached_Particle>
+
+		<Death_Explosions> Large_Explosion_Space_Empire </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceProp>
+
+<SpaceProp Name="Hardpoint_Breakoff_A5_JUGGERNAUT_FRONT">
+		<Text_ID />
+		<Land_Model_Name> EV_JUGGA5_TURRET_00.ALO</Land_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<LandBehavior> DEBRIS </LandBehavior>
+		<Debris_Movement_Vector> 0.0, -2.0, 2.0 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 1.0, 1.0, 0.5 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 1.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 1.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Small </Debris_Attached_Particle>
+
+		<Death_Explosions> Medium_Explosion_Land </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceProp>
+
+<SpaceProp Name="Hardpoint_Breakoff_A5_JUGGERNAUT_TOP">
+		<Text_ID />
+		<Land_Model_Name> EV_JUGGA5_TURRET_01.ALO</Land_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<LandBehavior> DEBRIS </LandBehavior>
+		<Debris_Movement_Vector> 0.0, -2.0, 2.0 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 1.0, 1.0, 0.5 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 1.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 1.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Small </Debris_Attached_Particle>
+
+		<Death_Explosions> Medium_Explosion_Land </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceProp>
+
+<SpaceProp Name="Hardpoint_Breakoff_A5_JUGGERNAUT_LEFT">
+		<Text_ID />
+		<Land_Model_Name> EV_JUGGA5_TURRET_02.ALO</Land_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<LandBehavior> DEBRIS </LandBehavior>
+		<Debris_Movement_Vector> 0.0, -2.0, 2.0 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 1.0, 1.0, 0.5 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 1.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 1.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Small </Debris_Attached_Particle>
+
+		<Death_Explosions> Medium_Explosion_Land </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceProp>
+
+<SpaceProp Name="Hardpoint_Breakoff_A5_JUGGERNAUT_RIGHT">
+		<Text_ID />
+		<Land_Model_Name> EV_JUGGA5_TURRET_03.ALO</Land_Model_Name>
+		<Is_Decoration> No </Is_Decoration>
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Sort_Order_Adjust> -1 </Sort_Order_Adjust>
+		<Tactical_Health> 100 </Tactical_Health>
+
+		<LandBehavior> DEBRIS </LandBehavior>
+		<Debris_Movement_Vector> 0.0, -2.0, 2.0 </Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector> 1.0, 1.0, 0.5 </Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds> 1.0 </Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds> 1.0 </Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle> Space_Debris_Fire_Small </Debris_Attached_Particle>
+
+		<Death_Explosions> Medium_Explosion_Land </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceProp>
+
+</SpaceProps_UW>

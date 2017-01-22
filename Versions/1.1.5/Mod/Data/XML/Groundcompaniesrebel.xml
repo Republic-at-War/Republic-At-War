@@ -1,0 +1,702 @@
+<?xml version="1.0"?>
+<RebelGroundCompanies>
+	<GroundCompany Name="Rebel_Speeder_Wing">
+		<Text_ID>TEXT_REBEL_SPEEDER_WING</Text_ID>
+		<Encyclopedia_Good_Against> AT_AT_Walker </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> AT_AA_Walker UC_Empire_Buildable_Anti_Aircraft_Turret </Encyclopedia_Vulnerable_To>
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>24</Damage>
+		<Autoresolve_Health>40</Autoresolve_Health>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Cost_Credits>150</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>25</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Slice_Cost_Credits>2000</Slice_Cost_Credits>
+		<Tech_Level>3</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<!--<Required_Ground_Base_Level>2</Required_Ground_Base_Level>-->
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>R_Ground_Light_Vehicle_Factory</Required_Special_Structures>
+		<Required_Planets />
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Prority>1</Formation_Prority>
+		<Is_Escort>yes</Is_Escort>
+		<Ship_Class>walker</Ship_Class>
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+		<Company_Units>Snowspeeder, Snowspeeder, Snowspeeder</Company_Units>
+		<Icon_Name>i_button_rebel_speeder.tga</Icon_Name>
+		<GUI_Model>RV_snowspeeder.ALO</GUI_Model>
+		<GUI_Distance>70</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Assault_Speeder</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Assault_Speeder</SFXEvent_Fleet_Move>
+		<Score_Cost_Credits>225</Score_Cost_Credits>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>CABLE_ATTACK</Type>
+				<Recharge_Seconds>120</Recharge_Seconds>
+				<GUI_Activated_Ability_Name>Cable</GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+			</Unit_Ability>
+			
+		</Unit_Abilities_Data>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>16</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>RC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+  		
+  		<Encyclopedia_Text>TEXT_TOOLTIP_SPEEDER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPEEDER</Encyclopedia_Unit_Class>
+        <Maintenance_Cost>0.05</Maintenance_Cost>
+		<Population_Value>1</Population_Value>
+	</GroundCompany>
+	
+	
+	<GroundCompany Name="Rebel_Artillery_Brigade">
+		<Text_ID>TEXT_REBEL_ARTILLERY_BRIGADE</Text_ID>
+		<Encyclopedia_Good_Against> UC_Empire_Buildable_Anti_Vehicle_Turret UC_Empire_Buildable_Anti_Infantry_Turret Stormtrooper </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> AT_AT_Walker M1_Repulsor_Tank Scout_Trooper </Encyclopedia_Vulnerable_To>
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>50</Damage>
+		<Autoresolve_Health>100</Autoresolve_Health>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Cost_Credits>520</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>75</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<!--<Required_Ground_Base_Level>5</Required_Ground_Base_Level>-->
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>R_Ground_Heavy_Vehicle_Factory</Required_Special_Structures>
+		<Required_Planets />
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>6</Formation_Priority>
+		<Is_Escort>no</Is_Escort>
+		<Ship_Class>artillery</Ship_Class>
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+		<Company_Units>MPTL, MPTL, MPTL_Spotter, MPTL_Spotter</Company_Units>
+		<Is_Homogeneous>No</Is_Homogeneous>
+		<Ignore_For_Reoptimization>MPTL_Spotter</Ignore_For_Reoptimization>
+
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Icon_Name>i_button_MPTL_Tank.tga</Icon_Name>
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_MPTL</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_MPTL</SFXEvent_Fleet_Move>
+		<Score_Cost_Credits>550</Score_Cost_Credits>
+
+		<!-- <Unit_Ability>DEPLOY</Unit_Ability> Can't put abilities in companies with mixed units! -->
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>DEPLOY</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1100</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>18</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>RC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+  		<Encyclopedia_Text>TEXT_TOOLTIP_MPTL</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ARTILLERY</Encyclopedia_Unit_Class>
+		<Maintenance_Cost>0.05</Maintenance_Cost>
+		<Population_Value>1</Population_Value>
+
+	</GroundCompany>
+
+	
+	<GroundCompany Name="Rebel_Light_Tank_Brigade">
+		<Text_ID>TEXT_REBEL_LIGHT_TANK_BRIGADE</Text_ID>
+		<Encyclopedia_Good_Against> TIE_Crawler SPMAT_Walker UC_Empire_Buildable_Anti_Infantry_Turret </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> AT_AT_Walker M1_Repulsor_Tank UC_Empire_Buildable_Anti_Vehicle_Turret </Encyclopedia_Vulnerable_To>
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>30</Damage>
+		<Autoresolve_Health>100</Autoresolve_Health>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>45</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<!--<Required_Ground_Base_Level>3</Required_Ground_Base_Level>-->
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>R_Ground_Light_Vehicle_Factory</Required_Special_Structures>
+		<Required_Planets />
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>2</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Ship_Class>tank</Ship_Class>
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+		<Company_Units>T2B_Tank, T2B_Tank, T2B_Tank, T2B_Tank, T2B_Tank</Company_Units>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Icon_Name>i_button_t-1b_repulsor_tank.tga</Icon_Name>
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_T2B_Tank</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_T2B_Tank</SFXEvent_Fleet_Move>
+		<Score_Cost_Credits>500</Score_Cost_Credits>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1100</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>--> 
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		
+  		<Encyclopedia_Text>TEXT_TOOLTIP_T2B</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Maintenance_Cost>0.05</Maintenance_Cost>
+		<Population_Value>1</Population_Value>
+
+	</GroundCompany>
+	
+	<GroundCompany Name="Rebel_Heavy_Tank_Brigade">
+		<Text_ID>TEXT_REBEL_HEAVY_TANK_BRIGADE</Text_ID>
+		<Encyclopedia_Good_Against> M1_Repulsor_Tank AT_ST_Walker AT_AT_Walker </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> AT_AT_Walker </Encyclopedia_Vulnerable_To>
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>60</Damage>
+		<Autoresolve_Health>100</Autoresolve_Health>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Cost_Credits>600</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>90</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Slice_Cost_Credits>1400</Slice_Cost_Credits>
+		<Tech_Level>2</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<!--<Required_Ground_Base_Level>5</Required_Ground_Base_Level>-->
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>R_Ground_Heavy_Vehicle_Factory</Required_Special_Structures>
+		<Required_Planets />
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>3</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Ship_Class>walker</Ship_Class>
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+		<Company_Units>T4B_Tank, T4B_Tank, T4B_Tank</Company_Units>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Icon_Name>i_button_t-3b_repulsor_tank.tga</Icon_Name>
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_T4B_Tank</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_T4B_Tank</SFXEvent_Fleet_Move>
+		<Score_Cost_Credits>600</Score_Cost_Credits>
+		
+		
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		
+        
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1400</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>23</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>RC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>--> 
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+        
+  		<Encyclopedia_Text>TEXT_TOOLTIP_T4B</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+        <Maintenance_Cost>0.05</Maintenance_Cost>
+		<Population_Value>1</Population_Value>
+
+	</GroundCompany>
+	
+	<GroundCompany Name="Rebel_Infantry_Squad">
+		<Text_ID>TEXT_REBEL_INFANTRY_SQUAD</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_REBELSOLDIER TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against> Stormtrooper </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> TIE_Crawler Scout_Trooper UC_Empire_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>15</Damage>
+		<Autoresolve_Health>100</Autoresolve_Health> <!-- changed to reflect unit health w/ size-->
+		<Affiliation>Rebel</Affiliation>
+		<Build_Cost_Credits>52</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>10</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>R_Ground_Barracks</Required_Special_Structures>
+		<Required_Planets />
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Ship_Class>infantry</Ship_Class>
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+		<Create_Team_Type> Rebel_Trooper_Team </Create_Team_Type>
+        <!-- AI  Changed to 15 soldiers with 5 per troop -->
+		<Company_Units> Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper,Squad_Rebel_Trooper,Squad_Rebel_Trooper,Squad_Rebel_Trooper</Company_Units>
+		<Max_Squad_Size> 5 </Max_Squad_Size>
+		<Icon_Name>i_button_rebel_soldier.tga</Icon_Name>
+		<GUI_Model_Name>RI_INFANTRY.ALO</GUI_Model_Name>
+		<Land_Model_Name>RI_INFANTRY.ALO</Land_Model_Name>
+		<Scale_Factor>5.0</Scale_Factor>
+		<GUI_Offset>0 0 5</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<SFXEvent_Build_Started>RHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Rebel_Soldier</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Rebel_Soldier</SFXEvent_Fleet_Move>
+
+
+		<Score_Cost_Credits>45</Score_Cost_Credits>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>320</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>3</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>--> 
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		
+		<Maintenance_Cost>0.05</Maintenance_Cost>
+		<Population_Value>1</Population_Value>
+	</GroundCompany>
+	
+	<GroundCompany Name="Rebel_Mini_Infantry_Squad">
+		<Variant_Of_Existing_Type>Rebel_Infantry_Squad</Variant_Of_Existing_Type>
+		<Company_Units> Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper</Company_Units>
+		<Tech_Level>6</Tech_Level>
+		<Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+		<Max_Squad_Size> 5 </Max_Squad_Size>
+		<Damage>5</Damage> 
+	</GroundCompany>
+
+	<GroundCompany Name="Rebel_Tank_Buster_Squad">
+		<LOD_Bias>5</LOD_Bias>
+		<Text_ID>TEXT_REBEL_TANK_BUSTER_SQUAD</Text_ID>
+		<Encyclopedia_Good_Against> M1_Repulsor_Tank TIE_Crawler AT_AT_Walker </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> TIE_Crawler Stormtrooper UC_Empire_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text>TEXT_TOOLTIP_PLEX TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>6</Damage>
+		<Autoresolve_Health>100</Autoresolve_Health>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Cost_Credits>75</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>15</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<!--<Required_Ground_Base_Level>2</Required_Ground_Base_Level>-->
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>R_Ground_Barracks</Required_Special_Structures>
+		<Required_Planets />
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>2</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Ship_Class>walker</Ship_Class>
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+		<Create_Team_Type> Plex_Soldier_Team </Create_Team_Type>
+		<Company_Units> Squad_Plex_Soldier, Squad_Plex_Soldier, Squad_Plex_Soldier, Squad_Plex_Soldier, Squad_Plex_Soldier, Squad_Plex_Soldier </Company_Units>
+		<Max_Squad_Size> 3 </Max_Squad_Size>
+		<Icon_Name>i_button_plex_soldier.tga</Icon_Name>
+		<GUI_Model_Name>RI_PLEXSOLDIER.ALO</GUI_Model_Name>
+		<GUI_Offset>0 0 5</GUI_Offset>
+		<GUI_Velocity>90</GUI_Velocity>
+		<SFXEvent_Build_Started>RHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Plex_Soldier</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Plex_Soldier</SFXEvent_Fleet_Move>
+
+		<Score_Cost_Credits>55</Score_Cost_Credits>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>450</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>6</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>RC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>--> 
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		  			
+		<Maintenance_Cost>0.05</Maintenance_Cost>
+		<Population_Value>1</Population_Value>
+	</GroundCompany>
+	
+
+	
+	<!--  Oksana 08/25/2005:  Since this team has only one unit, and this unit is supposed to have a non-team ability,
+							  I am removing the team and will use the unit itself instead. Will keep this entry commented
+							  out in case we need to go back and look up some tags. -->
+
+	<!-- This unit is supposed to be SOLO.  DO NOT add another infiltrator to this team.  -PP 11/30/05 -->
+
+	 <GroundCompany Name="Rebel_Infiltrator_Team">
+		<Text_ID>TEXT_UNIT_REBEL_INFILTRATOR</Text_ID>
+		<Encyclopedia_Good_Against> Stormtrooper </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> TIE_Crawler UC_Empire_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>8</Damage>
+		<Autoresolve_Health>100</Autoresolve_Health>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Cost_Credits>100</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>15</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>2</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>Ground_Infiltrator_Facility</Required_Special_Structures>
+		<Required_Planets />
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+
+		<Company_Units> Rebel_Infiltrator, Rebel_Infiltrator</Company_Units>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>no</Is_Escort>
+		<Ship_Class>infantry</Ship_Class>
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+		<Icon_Name>i_button_infiltrator.tga</Icon_Name>
+		<SFXEvent_Build_Started>RHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Rebel_Infiltrator</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Rebel_Infiltrator</SFXEvent_Fleet_Move>
+
+
+		<Tactical_Build_Cost_Multiplayer>500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>RC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>--> 
+
+  		<Encyclopedia_Text>TEXT_TOOLTIP_INFILTRATOR TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		
+		<Maintenance_Cost>0.05</Maintenance_Cost>
+		<Score_Cost_Credits>120</Score_Cost_Credits>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>STICKY_BOMB</Type>
+				<Recharge_Seconds>30.0f </Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Infiltrator_Grenade_Attack </GUI_Activated_Ability_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		<Population_Value>1</Population_Value>
+	</GroundCompany>
+	
+
+	
+	
+	<GroundCompany Name="Rebel_Pod_Walker_Company">
+		<Text_ID>TEXT_UNIT_POD_WALKER_COMPANY</Text_ID>
+		<Encyclopedia_Good_Against> Stormtrooper Scout_Trooper </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> M1_Repulsor_Tank UC_Empire_Buildable_Anti_Vehicle_Turret  </Encyclopedia_Vulnerable_To>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>30</Damage>
+		<Autoresolve_Health>800</Autoresolve_Health>
+		<Affiliation>Rebel</Affiliation>
+		<!-- Not buildable in campaign mode right now, land multiplayer only.
+		<Build_Cost_Credits>4000</Build_Cost_Credits>
+		<Build_Time_Seconds>80</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Tech_Level>2</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>3</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		-->
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>3</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Ship_Class>tank</Ship_Class>
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+		<Company_Units>Pod_Walker_Rebel, Pod_Walker_Rebel, Pod_Walker_Rebel</Company_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		
+  		<Encyclopedia_Text>TEXT_TOOLTIP_PODWALKER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Icon_Name>i_button_pod_walker.tga</Icon_Name>
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Pod_Walker</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Pod_Walker</SFXEvent_Fleet_Move>
+
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>--> 
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		
+		<Population_Value>1</Population_Value>	
+	</GroundCompany>
+	
+	<!--multiplayer cantina-->
+	<GroundCompany Name="RN_Rebel_Pod_Walker_Company">
+		<Variant_Of_Existing_Type>Rebel_Pod_Walker_Company</Variant_Of_Existing_Type>
+		<Company_Units>Pod_Walker_Rebel, Pod_Walker_Rebel</Company_Units>
+		<Tactical_Build_Cost_Multiplayer>250</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>6</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+	</GroundCompany>
+	<!--multiplayer cantina-->
+
+
+	
+<!-- Used for exploding Rebel buildings -->
+
+	<GroundCompany Name="Rebel_Survivors_Small">
+		<Text_ID>TEXT_UNIT_REBEL_TROOPER</Text_ID>
+		
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>8</Damage>
+		<Autoresolve_Health>100</Autoresolve_Health>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>no</Is_Escort>
+		<Ship_Class>infantry</Ship_Class>
+		<Company_Units>Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper</Company_Units>
+		<Icon_Name>i_button_rebel_soldier.tga</Icon_Name>
+		<Score_Cost_Credits>15</Score_Cost_Credits>
+  		<Encyclopedia_Text>TEXT_TOOLTIP_REBELSOLDIER TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		
+		<Create_Team_Type> Rebel_Trooper_Team </Create_Team_Type>
+	</GroundCompany>	
+
+
+	<GroundCompany Name="Rebel_Survivors_Medium">
+		<Text_ID>TEXT_UNIT_REBEL_TROOPER</Text_ID>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>8</Damage>
+		<Autoresolve_Health>100</Autoresolve_Health>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>no</Is_Escort>
+		<Ship_Class>infantry</Ship_Class>
+		<Company_Units>Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper</Company_Units>
+		<Icon_Name>i_button_rebel_soldier.tga</Icon_Name>
+		<Score_Cost_Credits>30</Score_Cost_Credits>
+  		<Encyclopedia_Text>TEXT_TOOLTIP_REBELSOLDIER TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		
+		
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		<Create_Team_Type> Rebel_Trooper_Team </Create_Team_Type>
+	</GroundCompany>	
+
+
+	<GroundCompany Name="Rebel_Survivors_Large">
+		<Text_ID>TEXT_UNIT_REBEL_TROOPER</Text_ID>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>8</Damage>
+		<Autoresolve_Health>100</Autoresolve_Health>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>no</Is_Escort>
+		<Ship_Class>infantry</Ship_Class>
+		<Company_Units>Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper</Company_Units>
+		<Icon_Name>i_button_rebel_soldier.tga</Icon_Name>
+		<Score_Cost_Credits>45</Score_Cost_Credits>
+  		<Encyclopedia_Text>TEXT_TOOLTIP_REBELSOLDIER TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		
+		
+		<Create_Team_Type> Rebel_Trooper_Team </Create_Team_Type>
+	</GroundCompany>	
+
+
+	<GroundCompany Name="Rebel_Prisoner_Team">
+		<Text_ID>TEXT_UNIT_REBEL_TROOPER</Text_ID>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>8</Damage>
+		<Autoresolve_Health>100</Autoresolve_Health>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>no</Is_Escort>
+		<Ship_Class>infantry</Ship_Class>
+		<Company_Units>Prisoner_Rebel_01, Prisoner_Rebel_02, Prisoner_Rebel_03, Prisoner_Rebel_04, Prisoner_Rebel_05 Prisoner_Rebel_06 Prisoner_Rebel_07</Company_Units>
+		<Is_Homogeneous>No</Is_Homogeneous>
+		
+		<Icon_Name>i_button_rebel_soldier.tga</Icon_Name>
+		
+  		<Encyclopedia_Text>TEXT_TOOLTIP_PRISONER TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		
+		
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		
+		<Create_Team_Type> Rebel_Trooper_Team </Create_Team_Type>
+	</GroundCompany>	
+
+
+
+
+</RebelGroundCompanies>

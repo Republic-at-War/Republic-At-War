@@ -1,0 +1,4491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GUIDialogs>
+
+	<!--GUI texture names go here -->
+	<Textures File="MT_CommandBar" Compressed_File="MT_CommandBarCompressed">
+		<Default>
+			<!-- Dialog frame -->
+			<!-- Clockwise from top left -->
+			<Frame_Top_Left>i_dialogue_00.tga</Frame_Top_Left>
+			<Frame_Top_Transition_Left>i_dialogue_01.tga</Frame_Top_Transition_Left>
+			<Frame_Top>i_dialogue_02.tga</Frame_Top>
+			<Frame_Top_Transition_Right>i_dialogue_03.tga</Frame_Top_Transition_Right>
+			<Frame_Top_Right>i_dialogue_04.tga</Frame_Top_Right>
+			<Frame_Right_Transition_Top>i_dialogue_05.tga</Frame_Right_Transition_Top>
+			<Frame_Right>i_dialogue_06.tga</Frame_Right>
+			<Frame_Right_Transition_Bottom>i_dialogue_07.tga</Frame_Right_Transition_Bottom>
+			<Frame_Bottom_Right>i_dialogue_08.tga</Frame_Bottom_Right>
+			<Frame_Bottom_Transition_Right>i_dialogue_09.tga</Frame_Bottom_Transition_Right>
+			<Frame_Bottom>i_dialogue_10.tga</Frame_Bottom>
+			<Frame_Bottom_Transition_Left>i_dialogue_11.tga</Frame_Bottom_Transition_Left>
+			<Frame_Bottom_Left>i_dialogue_12.tga</Frame_Bottom_Left>
+			<Frame_Left_Transition_Bottom>i_dialogue_13.tga</Frame_Left_Transition_Bottom>
+			<Frame_Left>i_dialogue_14.tga</Frame_Left>
+			<Frame_Left_Transition_Top>i_dialogue_15.tga</Frame_Left_Transition_Top>
+			<Frame_Background>i_dialogue_frame_middle_thick.tga</Frame_Background>
+			
+			<!-- Gadget frame -->
+			<Small_Frame_Bottom>i_dialogue_frame_small_bottom.tga</Small_Frame_Bottom>
+			<Small_Frame_Bottom_Left>i_dialogue_frame_small_bottom_left.tga</Small_Frame_Bottom_Left>
+			<Small_Frame_Bottom_Right>i_dialogue_frame_small_bottom_right.tga</Small_Frame_Bottom_Right>
+			<Small_Frame_Left>i_dialogue_frame_small_left.tga</Small_Frame_Left>
+			<Small_Frame_Right>i_dialogue_frame_small_right.tga</Small_Frame_Right>
+			<Small_Frame_Top>i_dialogue_frame_small_top.tga</Small_Frame_Top>
+			<Small_Frame_Top_Left>i_dialogue_frame_small_top_left.tga</Small_Frame_Top_Left>
+			<Small_Frame_Top_Right>i_dialogue_frame_small_top_right.tga</Small_Frame_Top_Right>
+			<Small_Frame_Background>i_dialogue_frame_small_middle.tga</Small_Frame_Background>			
+		
+			<!-- Pushbutton -->
+			<Button_Left>i_dialogue_button_large_left.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_large_middle.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_large_right.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_large_left_mouse_over.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_large_middle_mouse_over.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_large_right_mouse_over.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_large_left_pressed.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_large_middle_pressed.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_large_right_pressed.tga</Button_Right_Pressed>
+			<Button_Left_Disabled>i_dialogue_button_large_left_off.tga</Button_Left_Disabled>
+			<Button_Middle_Disabled>i_dialogue_button_large_middle_off.tga</Button_Middle_Disabled>
+			<Button_Right_Disabled>i_dialogue_button_large_right_off.tga</Button_Right_Disabled>
+			
+			<!-- Checkbox -->
+			<Check_On>i_dialogue_check_on.tga</Check_On>
+			<Check_Off>i_dialogue_check_off.tga</Check_Off>
+			
+			<!-- Slider bar -->
+			<Dial_Left>i_dialogue_dial_left.tga</Dial_Left>
+			<Dial_Right>i_dialogue_dial_right.tga</Dial_Right>
+			<Dial_Middle>i_dialogue_dial_middle.tga</Dial_Middle>
+			<Dial_Tab>i_dialogue_dial_tab.tga</Dial_Tab>
+			<Dial_Plus>i_dialogue_dial_plus.tga</Dial_Plus>
+			<Dial_Minus>i_dialogue_dial_minus.tga</Dial_Minus>
+			<Dial_Plus_Mouse_Over>i_dialogue_dial_plus_mouse_over.tga</Dial_Plus_Mouse_Over>
+			<Dial_Plus_Pressed>i_dialogue_dial_plus_pressed.tga</Dial_Plus_Pressed>
+			<Dial_Minus_Mouse_Over>i_dialogue_dial_minus_mouse_over.tga</Dial_Minus_Mouse_Over>
+			<Dial_Minus_Pressed>i_dialogue_dial_minus_pressed.tga</Dial_Minus_Pressed>
+			
+			<!-- Scroll bar -->
+			<Scroll_Down_Button>i_dialogue_scroll_down.tga</Scroll_Down_Button>
+			<Scroll_Down_Button_Pressed>i_dialogue_scroll_down_pressed.tga</Scroll_Down_Button_Pressed>
+			<Scroll_Down_Button_Mouse_Over>i_dialogue_scroll_down_mouse_over.tga</Scroll_Down_Button_Mouse_Over>
+			<Scroll_Middle>i_dialogue_scroll_middle.tga</Scroll_Middle>
+			<Scroll_Tab>i_dialogue_scroll_tab.tga</Scroll_Tab>
+			<Scroll_Up_Button>i_dialogue_scroll_up.tga</Scroll_Up_Button>
+			<Scroll_Up_Button_Pressed>i_dialogue_scroll_up_pressed.tga</Scroll_Up_Button_Pressed>
+			<Scroll_Up_Button_Mouse_Over>i_dialogue_scroll_up_mouse_over.tga</Scroll_Up_Button_Mouse_Over>
+			<Scroll_Up_Button_Disabled>i_dialogue_blank.tga</Scroll_Up_Button_Disabled>
+			<Scroll_Down_Button_Disabled>i_dialogue_blank.tga</Scroll_Down_Button_Disabled>
+			<Scroll_Middle_Disabled>i_dialogue_blank.tga</Scroll_Middle_Disabled>
+			<Scroll_Tab_Disabled>i_dialogue_blank.tga</Scroll_Tab_Disabled>
+			
+			
+			<!-- Vertical Trackbar Slider-->
+			<Trackbar_Scroll_Down_Button>i_dialogue_scroll_down.tga</Trackbar_Scroll_Down_Button>
+			<Trackbar_Scroll_Down_Button_Pressed>i_dialogue_scroll_down_pressed.tga</Trackbar_Scroll_Down_Button_Pressed>
+			<Trackbar_Scroll_Down_Button_Mouse_Over>i_dialogue_scroll_down_mouse_over.tga</Trackbar_Scroll_Down_Button_Mouse_Over>
+			<Trackbar_Scroll_Middle>i_dialogue_scroll_middle.tga</Trackbar_Scroll_Middle>
+			<Trackbar_Scroll_Tab>i_dialogue_scroll_tab.tga</Trackbar_Scroll_Tab>
+			<Trackbar_Scroll_Up_Button>i_dialogue_scroll_up.tga</Trackbar_Scroll_Up_Button>
+			<Trackbar_Scroll_Up_Button_Pressed>i_dialogue_scroll_up_pressed.tga</Trackbar_Scroll_Up_Button_Pressed>
+			<Trackbar_Scroll_Up_Button_Mouse_Over>i_dialogue_scroll_up_mouse_over.tga</Trackbar_Scroll_Up_Button_Mouse_Over>
+			<Trackbar_Scroll_Up_Button_Disabled>i_dialogue_blank.tga</Trackbar_Scroll_Up_Button_Disabled>
+			<Trackbar_Scroll_Down_Button_Disabled>i_dialogue_blank.tga</Trackbar_Scroll_Down_Button_Disabled>
+			<Trackbar_Scroll_Middle_Disabled>i_dialogue_blank.tga</Trackbar_Scroll_Middle_Disabled>
+			<Trackbar_Scroll_Tab_Disabled>i_dialogue_blank.tga</Trackbar_Scroll_Tab_Disabled>
+			
+			
+			<!-- Combobox -->
+			<Combo_Box_Popdown_Button>i_dialogue_scroll_small_down.tga</Combo_Box_Popdown_Button>		
+			<Combo_Box_Popdown_Button_Mouse_Over>i_dialogue_scroll_small_down_mouse_over.tga</Combo_Box_Popdown_Button_Mouse_Over>		
+			<Combo_Box_Popdown_Button_Pressed>i_dialogue_scroll_small_down_pressed.tga</Combo_Box_Popdown_Button_Pressed>	
+			<Combo_Box_Text_Box>i_dialogue_combo_middle.tga</Combo_Box_Text_Box>	
+			<Combo_Box_Left_Cap>i_dialogue_combo_left.tga</Combo_Box_Left_Cap>
+			
+			<!-- Progress bar -->
+			<Progress_Bar_Left>i_dialogue_progress_left.tga</Progress_Bar_Left>
+			<Progress_Bar_Middle_Off>i_dialogue_progress_middle_off.tga</Progress_Bar_Middle_Off>
+			<Progress_Bar_Middle_On>i_dialogue_progress_middle_on.tga</Progress_Bar_Middle_On>
+			<Progress_Bar_Right>i_dialogue_progress_right.tga</Progress_Bar_Right>
+			
+			<!-- Radio button -->
+			<Radio_On>i_dialogue_radio_on.tga</Radio_On>
+			<Radio_Off>i_dialogue_radio_off.tga</Radio_Off>
+			<Radio_Mouse_Over>i_dialogue_radio_off.tga</Radio_Mouse_Over>
+			
+			<Scanlines>i_scan_lines.tga</Scanlines>
+		</Default>
+		
+		<!-- Insert override textures here.  Use the gadget ID from the .rc file-->
+		
+		<!--<IDD_STORY_DIALOG>
+			<Frame_Bottom>i_dialogue_frame_small_bottom.tga</Frame_Bottom>
+			<Frame_Bottom_Left>i_dialogue_frame_small_bottom_left.tga</Frame_Bottom_Left>
+			<Frame_Bottom_Right>i_dialogue_frame_small_bottom_right.tga</Frame_Bottom_Right>
+			<Frame_Left>i_dialogue_frame_small_left.tga</Frame_Left>
+			<Frame_Right>i_dialogue_frame_small_right.tga</Frame_Right>
+			<Frame_Top>i_dialogue_frame_small_top.tga</Frame_Top>
+			<Frame_Top_Left>i_dialogue_frame_small_top_left.tga</Frame_Top_Left>
+			<Frame_Top_Right>i_dialogue_frame_small_top_right.tga</Frame_Top_Right>
+			
+			<Frame_Top_Transition_Left>none</Frame_Top_Transition_Left>
+			<Frame_Top_Transition_Right>none</Frame_Top_Transition_Right>
+			<Frame_Bottom_Transition_Left>none</Frame_Bottom_Transition_Left>
+			<Frame_Bottom_Transition_Right>none</Frame_Bottom_Transition_Right>
+			<Frame_Left_Transition_Top>none</Frame_Left_Transition_Top>
+			<Frame_Left_Transition_Bottom>none</Frame_Left_Transition_Bottom>
+			<Frame_Right_Transition_Top>none</Frame_Right_Transition_Top>
+			<Frame_Right_Transition_Bottom>none</Frame_Right_Transition_Bottom>		
+		</IDD_STORY_DIALOG> -->
+
+		<IDD_LAN_STAGING_DIALOG>
+			<!-- Dialog frame -->
+			<!-- Clockwise from top left -->
+			<Frame_Top_Left>i_dialogue_thick_00.tga</Frame_Top_Left>
+			<Frame_Top_Transition_Left>i_dialogue_thick_01.tga</Frame_Top_Transition_Left>
+			<Frame_Top>i_dialogue_thick_02.tga</Frame_Top>
+			<Frame_Top_Transition_Right>i_dialogue_thick_03.tga</Frame_Top_Transition_Right>
+			<Frame_Top_Right>i_dialogue_thick_04.tga</Frame_Top_Right>
+			<Frame_Right_Transition_Top>i_dialogue_thick_05.tga</Frame_Right_Transition_Top>
+			<Frame_Right>i_dialogue_thick_06.tga</Frame_Right>
+			<Frame_Right_Transition_Bottom>i_dialogue_thick_07.tga</Frame_Right_Transition_Bottom>
+			<Frame_Bottom_Right>i_dialogue_thick_08.tga</Frame_Bottom_Right>
+			<Frame_Bottom_Transition_Right>i_dialogue_thick_09.tga</Frame_Bottom_Transition_Right>
+			<Frame_Bottom>i_dialogue_thick_10.tga</Frame_Bottom>
+			<Frame_Bottom_Transition_Left>i_dialogue_thick_11.tga</Frame_Bottom_Transition_Left>
+			<Frame_Bottom_Left>i_dialogue_thick_12.tga</Frame_Bottom_Left>
+			<Frame_Left_Transition_Bottom>i_dialogue_thick_13.tga</Frame_Left_Transition_Bottom>
+			<Frame_Left>i_dialogue_thick_14.tga</Frame_Left>
+			<Frame_Left_Transition_Top>i_dialogue_thick_15.tga</Frame_Left_Transition_Top>
+			<Frame_Background>i_dialogue_frame_middle_thick.tga</Frame_Background>
+		</IDD_LAN_STAGING_DIALOG>
+
+		<IDD_LAN_LOBBY_DIALOG>
+			<!-- Dialog frame -->
+			<!-- Clockwise from top left -->
+			<Frame_Top_Left>none</Frame_Top_Left>
+			<Frame_Top_Transition_Left>none</Frame_Top_Transition_Left>
+			<Frame_Top>none</Frame_Top>
+			<Frame_Top_Transition_Right>none</Frame_Top_Transition_Right>
+			<Frame_Top_Right>none</Frame_Top_Right>
+			<Frame_Right_Transition_Top>none</Frame_Right_Transition_Top>
+			<Frame_Right>none</Frame_Right>
+			<Frame_Right_Transition_Bottom>none</Frame_Right_Transition_Bottom>
+			<Frame_Bottom_Right>none</Frame_Bottom_Right>
+			<Frame_Bottom_Transition_Right>none</Frame_Bottom_Transition_Right>
+			<Frame_Bottom>none</Frame_Bottom>
+			<Frame_Bottom_Transition_Left>none</Frame_Bottom_Transition_Left>
+			<Frame_Bottom_Left>none</Frame_Bottom_Left>
+			<Frame_Left_Transition_Bottom>none</Frame_Left_Transition_Bottom>
+			<Frame_Left>none</Frame_Left>
+			<Frame_Left_Transition_Top>none</Frame_Left_Transition_Top>
+			<Frame_Background>multiplayer_lan.tga</Frame_Background>
+		</IDD_LAN_LOBBY_DIALOG>
+
+
+		<IDD_INTERNET_HOME_DIALOG>
+			<!-- Dialog frame -->
+			<!-- Clockwise from top left -->
+			<Frame_Top_Left>none</Frame_Top_Left>
+			<Frame_Top_Transition_Left>none</Frame_Top_Transition_Left>
+			<Frame_Top>none</Frame_Top>
+			<Frame_Top_Transition_Right>none</Frame_Top_Transition_Right>
+			<Frame_Top_Right>none</Frame_Top_Right>
+			<Frame_Right_Transition_Top>none</Frame_Right_Transition_Top>
+			<Frame_Right>none</Frame_Right>
+			<Frame_Right_Transition_Bottom>none</Frame_Right_Transition_Bottom>
+			<Frame_Bottom_Right>none</Frame_Bottom_Right>
+			<Frame_Bottom_Transition_Right>none</Frame_Bottom_Transition_Right>
+			<Frame_Bottom>none</Frame_Bottom>
+			<Frame_Bottom_Transition_Left>none</Frame_Bottom_Transition_Left>
+			<Frame_Bottom_Left>none</Frame_Bottom_Left>
+			<Frame_Left_Transition_Bottom>none</Frame_Left_Transition_Bottom>
+			<Frame_Left>none</Frame_Left>
+			<Frame_Left_Transition_Top>none</Frame_Left_Transition_Top>
+			<Frame_Background>multiplayer.tga</Frame_Background>
+		</IDD_INTERNET_HOME_DIALOG>
+
+		<IDD_INTERNET_STAGING_DIALOG>
+			<!-- Dialog frame -->
+			<!-- Clockwise from top left -->
+			<Frame_Top_Left>i_dialogue_thick_00.tga</Frame_Top_Left>
+			<Frame_Top_Transition_Left>i_dialogue_thick_01.tga</Frame_Top_Transition_Left>
+			<Frame_Top>i_dialogue_thick_02.tga</Frame_Top>
+			<Frame_Top_Transition_Right>i_dialogue_thick_03.tga</Frame_Top_Transition_Right>
+			<Frame_Top_Right>i_dialogue_thick_04.tga</Frame_Top_Right>
+			<Frame_Right_Transition_Top>i_dialogue_thick_05.tga</Frame_Right_Transition_Top>
+			<Frame_Right>i_dialogue_thick_06.tga</Frame_Right>
+			<Frame_Right_Transition_Bottom>i_dialogue_thick_07.tga</Frame_Right_Transition_Bottom>
+			<Frame_Bottom_Right>i_dialogue_thick_08.tga</Frame_Bottom_Right>
+			<Frame_Bottom_Transition_Right>i_dialogue_thick_09.tga</Frame_Bottom_Transition_Right>
+			<Frame_Bottom>i_dialogue_thick_10.tga</Frame_Bottom>
+			<Frame_Bottom_Transition_Left>i_dialogue_thick_11.tga</Frame_Bottom_Transition_Left>
+			<Frame_Bottom_Left>i_dialogue_thick_12.tga</Frame_Bottom_Left>
+			<Frame_Left_Transition_Bottom>i_dialogue_thick_13.tga</Frame_Left_Transition_Bottom>
+			<Frame_Left>i_dialogue_thick_14.tga</Frame_Left>
+			<Frame_Left_Transition_Top>i_dialogue_thick_15.tga</Frame_Left_Transition_Top>
+			<Frame_Background>i_dialogue_frame_middle_thick.tga</Frame_Background>
+		</IDD_INTERNET_STAGING_DIALOG>
+
+		<IDD_INTERNET_STAGING_DIALOG_ADVANCED_SKIRMISH_OPTIONS>
+			<!-- Dialog frame -->
+			<!-- Clockwise from top left -->
+			<Frame_Top_Left>i_dialogue_00.tga</Frame_Top_Left>
+			<Frame_Top_Transition_Left>i_dialogue_01.tga</Frame_Top_Transition_Left>
+			<Frame_Top>i_dialogue_02.tga</Frame_Top>
+			<Frame_Top_Transition_Right>i_dialogue_03.tga</Frame_Top_Transition_Right>
+			<Frame_Top_Right>i_dialogue_04.tga</Frame_Top_Right>
+			<Frame_Right_Transition_Top>i_dialogue_05.tga</Frame_Right_Transition_Top>
+			<Frame_Right>i_dialogue_06.tga</Frame_Right>
+			<Frame_Right_Transition_Bottom>i_dialogue_07.tga</Frame_Right_Transition_Bottom>
+			<Frame_Bottom_Right>i_dialogue_08.tga</Frame_Bottom_Right>
+			<Frame_Bottom_Transition_Right>i_dialogue_09.tga</Frame_Bottom_Transition_Right>
+			<Frame_Bottom>i_dialogue_10.tga</Frame_Bottom>
+			<Frame_Bottom_Transition_Left>i_dialogue_11.tga</Frame_Bottom_Transition_Left>
+			<Frame_Bottom_Left>i_dialogue_12.tga</Frame_Bottom_Left>
+			<Frame_Left_Transition_Bottom>i_dialogue_13.tga</Frame_Left_Transition_Bottom>
+			<Frame_Left>i_dialogue_14.tga</Frame_Left>
+			<Frame_Left_Transition_Top>i_dialogue_15.tga</Frame_Left_Transition_Top>
+			<Frame_Background>i_dialogue_frame_middle_thick.tga</Frame_Background>
+		</IDD_INTERNET_STAGING_DIALOG_ADVANCED_SKIRMISH_OPTIONS>
+
+		<IDD_CAMPAIGN_ADVANCED_OPTIONS_DIALOG>
+			<!-- Dialog frame -->
+			<!-- Clockwise from top left -->
+			<Frame_Top_Left>i_dialogue_00.tga</Frame_Top_Left>
+			<Frame_Top_Transition_Left>i_dialogue_01.tga</Frame_Top_Transition_Left>
+			<Frame_Top>i_dialogue_02.tga</Frame_Top>
+			<Frame_Top_Transition_Right>i_dialogue_03.tga</Frame_Top_Transition_Right>
+			<Frame_Top_Right>i_dialogue_04.tga</Frame_Top_Right>
+			<Frame_Right_Transition_Top>i_dialogue_05.tga</Frame_Right_Transition_Top>
+			<Frame_Right>i_dialogue_06.tga</Frame_Right>
+			<Frame_Right_Transition_Bottom>i_dialogue_07.tga</Frame_Right_Transition_Bottom>
+			<Frame_Bottom_Right>i_dialogue_08.tga</Frame_Bottom_Right>
+			<Frame_Bottom_Transition_Right>i_dialogue_09.tga</Frame_Bottom_Transition_Right>
+			<Frame_Bottom>i_dialogue_10.tga</Frame_Bottom>
+			<Frame_Bottom_Transition_Left>i_dialogue_11.tga</Frame_Bottom_Transition_Left>
+			<Frame_Bottom_Left>i_dialogue_12.tga</Frame_Bottom_Left>
+			<Frame_Left_Transition_Bottom>i_dialogue_13.tga</Frame_Left_Transition_Bottom>
+			<Frame_Left>i_dialogue_14.tga</Frame_Left>
+			<Frame_Left_Transition_Top>i_dialogue_15.tga</Frame_Left_Transition_Top>
+			<Frame_Background>i_dialogue_frame_middle_thick.tga</Frame_Background>
+		</IDD_CAMPAIGN_ADVANCED_OPTIONS_DIALOG>
+
+		<IDD_INTERNET_LOBBY_DIALOG>
+			<!-- Dialog frame -->
+			<!-- Clockwise from top left -->
+			<Frame_Top_Left>none</Frame_Top_Left>
+			<Frame_Top_Transition_Left>none</Frame_Top_Transition_Left>
+			<Frame_Top>none</Frame_Top>
+			<Frame_Top_Transition_Right>none</Frame_Top_Transition_Right>
+			<Frame_Top_Right>none</Frame_Top_Right>
+			<Frame_Right_Transition_Top>none</Frame_Right_Transition_Top>
+			<Frame_Right>none</Frame_Right>
+			<Frame_Right_Transition_Bottom>none</Frame_Right_Transition_Bottom>
+			<Frame_Bottom_Right>none</Frame_Bottom_Right>
+			<Frame_Bottom_Transition_Right>none</Frame_Bottom_Transition_Right>
+			<Frame_Bottom>none</Frame_Bottom>
+			<Frame_Bottom_Transition_Left>none</Frame_Bottom_Transition_Left>
+			<Frame_Bottom_Left>none</Frame_Bottom_Left>
+			<Frame_Left_Transition_Bottom>none</Frame_Left_Transition_Bottom>
+			<Frame_Left>none</Frame_Left>
+			<Frame_Left_Transition_Top>none</Frame_Left_Transition_Top>
+			<Frame_Background>multiplayer.tga</Frame_Background>
+		</IDD_INTERNET_LOBBY_DIALOG>
+
+		<IDD_INGAME_CHAT_DIALOG>
+			<!-- Dialog frame -->
+			<!-- Clockwise from top left -->
+			<Frame_Top_Left>none</Frame_Top_Left>
+			<Frame_Top_Transition_Left>none</Frame_Top_Transition_Left>
+			<Frame_Top>none</Frame_Top>
+			<Frame_Top_Transition_Right>none</Frame_Top_Transition_Right>
+			<Frame_Top_Right>none</Frame_Top_Right>
+			<Frame_Right_Transition_Top>none</Frame_Right_Transition_Top>
+			<Frame_Right>none</Frame_Right>
+			<Frame_Right_Transition_Bottom>none</Frame_Right_Transition_Bottom>
+			<Frame_Bottom_Right>none</Frame_Bottom_Right>
+			<Frame_Bottom_Transition_Right>none</Frame_Bottom_Transition_Right>
+			<Frame_Bottom>none</Frame_Bottom>
+			<Frame_Bottom_Transition_Left>none</Frame_Bottom_Transition_Left>
+			<Frame_Bottom_Left>none</Frame_Bottom_Left>
+			<Frame_Left_Transition_Bottom>none</Frame_Left_Transition_Bottom>
+			<Frame_Left>none</Frame_Left>
+			<Frame_Left_Transition_Top>none</Frame_Left_Transition_Top>
+			<Frame_Background>none</Frame_Background>
+		</IDD_INGAME_CHAT_DIALOG>
+
+		<IDD_MAIN_MENU_DIALOG>
+			<!-- Dialog frame -->
+			<!-- Clockwise from top left -->
+			<Frame_Top_Left>none</Frame_Top_Left>
+			<Frame_Top_Transition_Left>none</Frame_Top_Transition_Left>
+			<Frame_Top>none</Frame_Top>
+			<Frame_Top_Transition_Right>none</Frame_Top_Transition_Right>
+			<Frame_Top_Right>none</Frame_Top_Right>
+			<Frame_Right_Transition_Top>none</Frame_Right_Transition_Top>
+			<Frame_Right>none</Frame_Right>
+			<Frame_Right_Transition_Bottom>none</Frame_Right_Transition_Bottom>
+			<Frame_Bottom_Right>none</Frame_Bottom_Right>
+			<Frame_Bottom_Transition_Right>none</Frame_Bottom_Transition_Right>
+			<Frame_Bottom>none</Frame_Bottom>
+			<Frame_Bottom_Transition_Left>none</Frame_Bottom_Transition_Left>
+			<Frame_Bottom_Left>none</Frame_Bottom_Left>
+			<Frame_Left_Transition_Bottom>none</Frame_Left_Transition_Bottom>
+			<Frame_Left>none</Frame_Left>
+			<Frame_Left_Transition_Top>none</Frame_Left_Transition_Top>
+			<Frame_Background>MenuBack_overlay_panel.tga</Frame_Background>
+		</IDD_MAIN_MENU_DIALOG>
+
+		<IDD_MAIN_OPTIONS_DIALOG>
+			<!-- Dialog frame -->
+			<!-- Clockwise from top left -->
+			<Frame_Top_Left>none</Frame_Top_Left>
+			<Frame_Top_Transition_Left>none</Frame_Top_Transition_Left>
+			<Frame_Top>none</Frame_Top>
+			<Frame_Top_Transition_Right>none</Frame_Top_Transition_Right>
+			<Frame_Top_Right>none</Frame_Top_Right>
+			<Frame_Right_Transition_Top>none</Frame_Right_Transition_Top>
+			<Frame_Right>none</Frame_Right>
+			<Frame_Right_Transition_Bottom>none</Frame_Right_Transition_Bottom>
+			<Frame_Bottom_Right>none</Frame_Bottom_Right>
+			<Frame_Bottom_Transition_Right>none</Frame_Bottom_Transition_Right>
+			<Frame_Bottom>none</Frame_Bottom>
+			<Frame_Bottom_Transition_Left>none</Frame_Bottom_Transition_Left>
+			<Frame_Bottom_Left>none</Frame_Bottom_Left>
+			<Frame_Left_Transition_Bottom>none</Frame_Left_Transition_Bottom>
+			<Frame_Left>none</Frame_Left>
+			<Frame_Left_Transition_Top>none</Frame_Left_Transition_Top>
+			<Frame_Background>MenuBack_overlay_panel.tga</Frame_Background>
+		</IDD_MAIN_OPTIONS_DIALOG>
+
+		<IDD_SINGLE_PLAYER_GAMES_MENU_DIALOG>
+			<!-- Dialog frame -->
+			<!-- Clockwise from top left -->
+			<Frame_Top_Left>none</Frame_Top_Left>
+			<Frame_Top_Transition_Left>none</Frame_Top_Transition_Left>
+			<Frame_Top>none</Frame_Top>
+			<Frame_Top_Transition_Right>none</Frame_Top_Transition_Right>
+			<Frame_Top_Right>none</Frame_Top_Right>
+			<Frame_Right_Transition_Top>none</Frame_Right_Transition_Top>
+			<Frame_Right>none</Frame_Right>
+			<Frame_Right_Transition_Bottom>none</Frame_Right_Transition_Bottom>
+			<Frame_Bottom_Right>none</Frame_Bottom_Right>
+			<Frame_Bottom_Transition_Right>none</Frame_Bottom_Transition_Right>
+			<Frame_Bottom>none</Frame_Bottom>
+			<Frame_Bottom_Transition_Left>none</Frame_Bottom_Transition_Left>
+			<Frame_Bottom_Left>none</Frame_Bottom_Left>
+			<Frame_Left_Transition_Bottom>none</Frame_Left_Transition_Bottom>
+			<Frame_Left>none</Frame_Left>
+			<Frame_Left_Transition_Top>none</Frame_Left_Transition_Top>
+			<Frame_Background>MenuBack_overlay_panel.tga</Frame_Background>
+		</IDD_SINGLE_PLAYER_GAMES_MENU_DIALOG>
+	
+		<IDD_MULTIPLAYER_DIALOG>
+			<!-- Dialog frame -->
+			<!-- Clockwise from top left -->
+			<Frame_Top_Left>none</Frame_Top_Left>
+			<Frame_Top_Transition_Left>none</Frame_Top_Transition_Left>
+			<Frame_Top>none</Frame_Top>
+			<Frame_Top_Transition_Right>none</Frame_Top_Transition_Right>
+			<Frame_Top_Right>none</Frame_Top_Right>
+			<Frame_Right_Transition_Top>none</Frame_Right_Transition_Top>
+			<Frame_Right>none</Frame_Right>
+			<Frame_Right_Transition_Bottom>none</Frame_Right_Transition_Bottom>
+			<Frame_Bottom_Right>none</Frame_Bottom_Right>
+			<Frame_Bottom_Transition_Right>none</Frame_Bottom_Transition_Right>
+			<Frame_Bottom>none</Frame_Bottom>
+			<Frame_Bottom_Transition_Left>none</Frame_Bottom_Transition_Left>
+			<Frame_Bottom_Left>none</Frame_Bottom_Left>
+			<Frame_Left_Transition_Bottom>none</Frame_Left_Transition_Bottom>
+			<Frame_Left>none</Frame_Left>
+			<Frame_Left_Transition_Top>none</Frame_Left_Transition_Top>
+			<Frame_Background>MenuBack_overlay_panel.tga</Frame_Background>
+		</IDD_MULTIPLAYER_DIALOG>
+
+		<IDD_SPACE_BATTLE_LOAD_DIALOG>
+			<Frame_Bottom>i_dialogue_frame_small_bottom.tga</Frame_Bottom>
+			<Frame_Bottom_Left>i_dialogue_frame_small_bottom_left.tga</Frame_Bottom_Left>
+			<Frame_Bottom_Right>i_dialogue_frame_small_bottom_right.tga</Frame_Bottom_Right>
+			<Frame_Left>i_dialogue_frame_small_left.tga</Frame_Left>
+			<Frame_Right>i_dialogue_frame_small_right.tga</Frame_Right>
+			<Frame_Top>i_dialogue_frame_small_top.tga</Frame_Top>
+			<Frame_Top_Left>i_dialogue_frame_small_top_left.tga</Frame_Top_Left>
+			<Frame_Top_Right>i_dialogue_frame_small_top_right.tga</Frame_Top_Right>
+			
+			<Frame_Top_Transition_Left>none</Frame_Top_Transition_Left>
+			<Frame_Top_Transition_Right>none</Frame_Top_Transition_Right>
+			<Frame_Bottom_Transition_Left>none</Frame_Bottom_Transition_Left>
+			<Frame_Bottom_Transition_Right>none</Frame_Bottom_Transition_Right>
+			<Frame_Left_Transition_Top>none</Frame_Left_Transition_Top>
+			<Frame_Left_Transition_Bottom>none</Frame_Left_Transition_Bottom>
+			<Frame_Right_Transition_Top>none</Frame_Right_Transition_Top>
+			<Frame_Right_Transition_Bottom>none</Frame_Right_Transition_Bottom>
+			
+			<Frame_Background>loadmenuback.tga</Frame_Background>
+		</IDD_SPACE_BATTLE_LOAD_DIALOG>
+
+        <IDD_PLANET_INFO>
+			<Frame_Bottom>i_dialogue_frame_small_bottom.tga</Frame_Bottom>
+			<Frame_Bottom_Left>i_dialogue_frame_small_bottom_left.tga</Frame_Bottom_Left>
+			<Frame_Bottom_Right>i_dialogue_frame_small_bottom_right.tga</Frame_Bottom_Right>
+			<Frame_Left>i_dialogue_frame_small_left.tga</Frame_Left>
+			<Frame_Right>i_dialogue_frame_small_right.tga</Frame_Right>
+			<Frame_Top>i_dialogue_frame_small_top.tga</Frame_Top>
+			<Frame_Top_Left>i_dialogue_frame_small_top_left.tga</Frame_Top_Left>
+			<Frame_Top_Right>i_dialogue_frame_small_top_right.tga</Frame_Top_Right>
+			
+			<Frame_Top_Transition_Left>none</Frame_Top_Transition_Left>
+			<Frame_Top_Transition_Right>none</Frame_Top_Transition_Right>
+			<Frame_Bottom_Transition_Left>none</Frame_Bottom_Transition_Left>
+			<Frame_Bottom_Transition_Right>none</Frame_Bottom_Transition_Right>
+			<Frame_Left_Transition_Top>none</Frame_Left_Transition_Top>
+			<Frame_Left_Transition_Bottom>none</Frame_Left_Transition_Bottom>
+			<Frame_Right_Transition_Top>none</Frame_Right_Transition_Top>
+			<Frame_Right_Transition_Bottom>none</Frame_Right_Transition_Bottom>
+			
+			<Frame_Background>loadmenuback.tga</Frame_Background>
+        </IDD_PLANET_INFO>
+
+		<IDD_CAMPAIGN_SCORE_DIALOG>
+			<Frame_Bottom>i_dialogue_frame_small_bottom.tga</Frame_Bottom>
+			<Frame_Bottom_Left>i_dialogue_frame_small_bottom_left.tga</Frame_Bottom_Left>
+			<Frame_Bottom_Right>i_dialogue_frame_small_bottom_right.tga</Frame_Bottom_Right>
+			<Frame_Left>i_dialogue_frame_small_left.tga</Frame_Left>
+			<Frame_Right>i_dialogue_frame_small_right.tga</Frame_Right>
+			<Frame_Top>i_dialogue_frame_small_top.tga</Frame_Top>
+			<Frame_Top_Left>i_dialogue_frame_small_top_left.tga</Frame_Top_Left>
+			<Frame_Top_Right>i_dialogue_frame_small_top_right.tga</Frame_Top_Right>
+			
+			<Frame_Top_Transition_Left>none</Frame_Top_Transition_Left>
+			<Frame_Top_Transition_Right>none</Frame_Top_Transition_Right>
+			<Frame_Bottom_Transition_Left>none</Frame_Bottom_Transition_Left>
+			<Frame_Bottom_Transition_Right>none</Frame_Bottom_Transition_Right>
+			<Frame_Left_Transition_Top>none</Frame_Left_Transition_Top>
+			<Frame_Left_Transition_Bottom>none</Frame_Left_Transition_Bottom>
+			<Frame_Right_Transition_Top>none</Frame_Right_Transition_Top>
+			<Frame_Right_Transition_Bottom>none</Frame_Right_Transition_Bottom>
+			
+			<Frame_Background>victory.tga</Frame_Background>
+		</IDD_CAMPAIGN_SCORE_DIALOG>
+
+        <IDD_BATTLE_END_DIALOG>
+            <Frame_Bottom>i_dialogue_frame_small_bottom.tga</Frame_Bottom>
+            <Frame_Bottom_Left>i_dialogue_frame_small_bottom_left.tga</Frame_Bottom_Left>
+            <Frame_Bottom_Right>i_dialogue_frame_small_bottom_right.tga</Frame_Bottom_Right>
+            <Frame_Left>i_dialogue_frame_small_left.tga</Frame_Left>
+            <Frame_Right>i_dialogue_frame_small_right.tga</Frame_Right>
+            <Frame_Top>i_dialogue_frame_small_top.tga</Frame_Top>
+            <Frame_Top_Left>i_dialogue_frame_small_top_left.tga</Frame_Top_Left>
+            <Frame_Top_Right>i_dialogue_frame_small_top_right.tga</Frame_Top_Right>
+
+            <Frame_Top_Transition_Left>none</Frame_Top_Transition_Left>
+            <Frame_Top_Transition_Right>none</Frame_Top_Transition_Right>
+            <Frame_Bottom_Transition_Left>none</Frame_Bottom_Transition_Left>
+            <Frame_Bottom_Transition_Right>none</Frame_Bottom_Transition_Right>
+            <Frame_Left_Transition_Top>none</Frame_Left_Transition_Top>
+            <Frame_Left_Transition_Bottom>none</Frame_Left_Transition_Bottom>
+            <Frame_Right_Transition_Top>none</Frame_Right_Transition_Top>
+            <Frame_Right_Transition_Bottom>none</Frame_Right_Transition_Bottom>
+
+            <Frame_Background>battle_summary.tga</Frame_Background>
+        </IDD_BATTLE_END_DIALOG>
+
+		<IDD_LAND_BATTLE_LOAD_DIALOG>
+			<Frame_Bottom>i_dialogue_frame_small_bottom.tga</Frame_Bottom>
+			<Frame_Bottom_Left>i_dialogue_frame_small_bottom_left.tga</Frame_Bottom_Left>
+			<Frame_Bottom_Right>i_dialogue_frame_small_bottom_right.tga</Frame_Bottom_Right>
+			<Frame_Left>i_dialogue_frame_small_left.tga</Frame_Left>
+			<Frame_Right>i_dialogue_frame_small_right.tga</Frame_Right>
+			<Frame_Top>i_dialogue_frame_small_top.tga</Frame_Top>
+			<Frame_Top_Left>i_dialogue_frame_small_top_left.tga</Frame_Top_Left>
+			<Frame_Top_Right>i_dialogue_frame_small_top_right.tga</Frame_Top_Right>
+			
+			<Frame_Top_Transition_Left>none</Frame_Top_Transition_Left>
+			<Frame_Top_Transition_Right>none</Frame_Top_Transition_Right>
+			<Frame_Bottom_Transition_Left>none</Frame_Bottom_Transition_Left>
+			<Frame_Bottom_Transition_Right>none</Frame_Bottom_Transition_Right>
+			<Frame_Left_Transition_Top>none</Frame_Left_Transition_Top>
+			<Frame_Left_Transition_Bottom>none</Frame_Left_Transition_Bottom>
+			<Frame_Right_Transition_Top>none</Frame_Right_Transition_Top>
+			<Frame_Right_Transition_Bottom>none</Frame_Right_Transition_Bottom>
+			
+			<Frame_Background>loadmenuback.tga</Frame_Background>		
+				
+		</IDD_LAND_BATTLE_LOAD_DIALOG>
+		
+		<IDD_SKIRMISH_BATTLE_LOAD_DIALOG>
+			<Frame_Bottom>i_dialogue_frame_small_bottom.tga</Frame_Bottom>
+			<Frame_Bottom_Left>i_dialogue_frame_small_bottom_left.tga</Frame_Bottom_Left>
+			<Frame_Bottom_Right>i_dialogue_frame_small_bottom_right.tga</Frame_Bottom_Right>
+			<Frame_Left>i_dialogue_frame_small_left.tga</Frame_Left>
+			<Frame_Right>i_dialogue_frame_small_right.tga</Frame_Right>
+			<Frame_Top>i_dialogue_frame_small_top.tga</Frame_Top>
+			<Frame_Top_Left>i_dialogue_frame_small_top_left.tga</Frame_Top_Left>
+			<Frame_Top_Right>i_dialogue_frame_small_top_right.tga</Frame_Top_Right>
+			
+			<Frame_Top_Transition_Left>none</Frame_Top_Transition_Left>
+			<Frame_Top_Transition_Right>none</Frame_Top_Transition_Right>
+			<Frame_Bottom_Transition_Left>none</Frame_Bottom_Transition_Left>
+			<Frame_Bottom_Transition_Right>none</Frame_Bottom_Transition_Right>
+			<Frame_Left_Transition_Top>none</Frame_Left_Transition_Top>
+			<Frame_Left_Transition_Bottom>none</Frame_Left_Transition_Bottom>
+			<Frame_Right_Transition_Top>none</Frame_Right_Transition_Top>
+			<Frame_Right_Transition_Bottom>none</Frame_Right_Transition_Bottom>
+			
+			<Frame_Background>loadmenuback.tga</Frame_Background>
+		</IDD_SKIRMISH_BATTLE_LOAD_DIALOG>
+
+
+        <IDD_SPACE_MISSION_LOAD_DIALOG>
+            <Frame_Bottom>i_dialogue_frame_small_bottom.tga</Frame_Bottom>
+            <Frame_Bottom_Left>i_dialogue_frame_small_bottom_left.tga</Frame_Bottom_Left>
+            <Frame_Bottom_Right>i_dialogue_frame_small_bottom_right.tga</Frame_Bottom_Right>
+            <Frame_Left>i_dialogue_frame_small_left.tga</Frame_Left>
+            <Frame_Right>i_dialogue_frame_small_right.tga</Frame_Right>
+            <Frame_Top>i_dialogue_frame_small_top.tga</Frame_Top>
+            <Frame_Top_Left>i_dialogue_frame_small_top_left.tga</Frame_Top_Left>
+            <Frame_Top_Right>i_dialogue_frame_small_top_right.tga</Frame_Top_Right>
+
+            <Frame_Top_Transition_Left>none</Frame_Top_Transition_Left>
+            <Frame_Top_Transition_Right>none</Frame_Top_Transition_Right>
+            <Frame_Bottom_Transition_Left>none</Frame_Bottom_Transition_Left>
+            <Frame_Bottom_Transition_Right>none</Frame_Bottom_Transition_Right>
+            <Frame_Left_Transition_Top>none</Frame_Left_Transition_Top>
+            <Frame_Left_Transition_Bottom>none</Frame_Left_Transition_Bottom>
+            <Frame_Right_Transition_Top>none</Frame_Right_Transition_Top>
+            <Frame_Right_Transition_Bottom>none</Frame_Right_Transition_Bottom>
+
+            <Frame_Background>loadmenuback.tga</Frame_Background>
+        </IDD_SPACE_MISSION_LOAD_DIALOG>
+
+        <IDD_LAND_MISSION_LOAD_DIALOG>
+            <Frame_Bottom>i_dialogue_frame_small_bottom.tga</Frame_Bottom>
+            <Frame_Bottom_Left>i_dialogue_frame_small_bottom_left.tga</Frame_Bottom_Left>
+            <Frame_Bottom_Right>i_dialogue_frame_small_bottom_right.tga</Frame_Bottom_Right>
+            <Frame_Left>i_dialogue_frame_small_left.tga</Frame_Left>
+            <Frame_Right>i_dialogue_frame_small_right.tga</Frame_Right>
+            <Frame_Top>i_dialogue_frame_small_top.tga</Frame_Top>
+            <Frame_Top_Left>i_dialogue_frame_small_top_left.tga</Frame_Top_Left>
+            <Frame_Top_Right>i_dialogue_frame_small_top_right.tga</Frame_Top_Right>
+
+            <Frame_Top_Transition_Left>none</Frame_Top_Transition_Left>
+            <Frame_Top_Transition_Right>none</Frame_Top_Transition_Right>
+            <Frame_Bottom_Transition_Left>none</Frame_Bottom_Transition_Left>
+            <Frame_Bottom_Transition_Right>none</Frame_Bottom_Transition_Right>
+            <Frame_Left_Transition_Top>none</Frame_Left_Transition_Top>
+            <Frame_Left_Transition_Bottom>none</Frame_Left_Transition_Bottom>
+            <Frame_Right_Transition_Top>none</Frame_Right_Transition_Top>
+            <Frame_Right_Transition_Bottom>none</Frame_Right_Transition_Bottom>
+
+            <Frame_Background>loadmenuback.tga</Frame_Background>		
+
+        </IDD_LAND_MISSION_LOAD_DIALOG>
+        
+		<IDD_MAIN_CAMPAIGN_DIALOG>
+            <Frame_Background>pick_faction.tga</Frame_Background>			
+		</IDD_MAIN_CAMPAIGN_DIALOG>
+
+		<IDC_BUTTON_PLANETARY>
+			<!-- R2-Help Menus -->
+			<Button_Left>i_dialogue_button_large_blank.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_large_blank.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_large_blank.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_large_blank.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_large_blank.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_large_blank.tga</Button_Right_Pressed>
+			<Button_Left_Disabled>i_dialogue_button_large_blank.tga</Button_Left_Disabled>
+			<Button_Middle_Disabled>i_dialogue_button_large_blank.tga</Button_Middle_Disabled>
+			<Button_Right_Disabled>i_dialogue_button_large_blank.tga</Button_Right_Disabled>
+		</IDC_BUTTON_PLANETARY>
+
+		<IDC_BUTTON_LAND_FLEETS>
+			<!-- R2-Help Menus -->
+			<Button_Left>i_dialogue_button_large_blank.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_large_blank.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_large_blank.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_large_blank.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_large_blank.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_large_blank.tga</Button_Right_Pressed>
+			<Button_Left_Disabled>i_dialogue_button_large_blank.tga</Button_Left_Disabled>
+			<Button_Middle_Disabled>i_dialogue_button_large_blank.tga</Button_Middle_Disabled>
+			<Button_Right_Disabled>i_dialogue_button_large_blank.tga</Button_Right_Disabled>
+		</IDC_BUTTON_LAND_FLEETS>
+
+		<IDC_BUTTON_SPACE_FLEETS>
+			<!-- R2-Help Menus -->
+			<Button_Left>i_dialogue_button_large_blank.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_large_blank.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_large_blank.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_large_blank.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_large_blank.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_large_blank.tga</Button_Right_Pressed>
+			<Button_Left_Disabled>i_dialogue_button_large_blank.tga</Button_Left_Disabled>
+			<Button_Middle_Disabled>i_dialogue_button_large_blank.tga</Button_Middle_Disabled>
+			<Button_Right_Disabled>i_dialogue_button_large_blank.tga</Button_Right_Disabled>
+		</IDC_BUTTON_SPACE_FLEETS>
+
+		<IDC_BUTTON_POP_CAP>
+			<!-- R2-Help Menus -->
+			<Button_Left>i_dialogue_button_large_blank.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_large_blank.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_large_blank.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_large_blank.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_large_blank.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_large_blank.tga</Button_Right_Pressed>
+			<Button_Left_Disabled>i_dialogue_button_large_blank.tga</Button_Left_Disabled>
+			<Button_Middle_Disabled>i_dialogue_button_large_blank.tga</Button_Middle_Disabled>
+			<Button_Right_Disabled>i_dialogue_button_large_blank.tga</Button_Right_Disabled>
+		</IDC_BUTTON_POP_CAP>
+
+		<IDC_BUTTON_PRODUCING>
+			<!-- R2-Help Menus -->
+			<Button_Left>i_dialogue_button_large_blank.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_large_blank.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_large_blank.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_large_blank.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_large_blank.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_large_blank.tga</Button_Right_Pressed>
+			<Button_Left_Disabled>i_dialogue_button_large_blank.tga</Button_Left_Disabled>
+			<Button_Middle_Disabled>i_dialogue_button_large_blank.tga</Button_Middle_Disabled>
+			<Button_Right_Disabled>i_dialogue_button_large_blank.tga</Button_Right_Disabled>
+		</IDC_BUTTON_PRODUCING>
+
+		<IDC_BUTTON_UPGRADES>
+			<!-- R2-Help Menus -->
+			<Button_Left>i_dialogue_button_large_blank.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_large_blank.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_large_blank.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_large_blank.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_large_blank.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_large_blank.tga</Button_Right_Pressed>
+			<Button_Left_Disabled>i_dialogue_button_large_blank.tga</Button_Left_Disabled>
+			<Button_Middle_Disabled>i_dialogue_button_large_blank.tga</Button_Middle_Disabled>
+			<Button_Right_Disabled>i_dialogue_button_large_blank.tga</Button_Right_Disabled>
+		</IDC_BUTTON_UPGRADES>
+
+		<IDC_BUTTON_HEROES>
+			<!-- R2-Help Menus -->
+			<Button_Left>i_dialogue_button_large_blank.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_large_blank.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_large_blank.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_large_blank.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_large_blank.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_large_blank.tga</Button_Right_Pressed>
+			<Button_Left_Disabled>i_dialogue_button_large_blank.tga</Button_Left_Disabled>
+			<Button_Middle_Disabled>i_dialogue_button_large_blank.tga</Button_Middle_Disabled>
+			<Button_Right_Disabled>i_dialogue_button_large_blank.tga</Button_Right_Disabled>
+		</IDC_BUTTON_HEROES>
+
+		<IDC_BUTTON_TOTAL_INCOME>
+			<!-- R2-Help Menus -->
+			<Button_Left>i_dialogue_button_large_blank.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_large_blank.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_large_blank.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_large_blank.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_large_blank.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_large_blank.tga</Button_Right_Pressed>
+			<Button_Left_Disabled>i_dialogue_button_large_blank.tga</Button_Left_Disabled>
+			<Button_Middle_Disabled>i_dialogue_button_large_blank.tga</Button_Middle_Disabled>
+			<Button_Right_Disabled>i_dialogue_button_large_blank.tga</Button_Right_Disabled>
+		</IDC_BUTTON_TOTAL_INCOME>
+
+		<IDC_BUTTON_BASE_CREDIT_VALUE>
+			<!-- R2-Help Menus -->
+			<Button_Left>i_dialogue_button_large_blank.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_large_blank.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_large_blank.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_large_blank.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_large_blank.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_large_blank.tga</Button_Right_Pressed>
+			<Button_Left_Disabled>i_dialogue_button_large_blank.tga</Button_Left_Disabled>
+			<Button_Middle_Disabled>i_dialogue_button_large_blank.tga</Button_Middle_Disabled>
+			<Button_Right_Disabled>i_dialogue_button_large_blank.tga</Button_Right_Disabled>
+		</IDC_BUTTON_BASE_CREDIT_VALUE>
+
+		<IDC_BUTTON_TRADE_ROUTE_INCOME>
+			<!-- R2-Help Menus -->
+			<Button_Left>i_dialogue_button_large_blank.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_large_blank.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_large_blank.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_large_blank.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_large_blank.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_large_blank.tga</Button_Right_Pressed>
+			<Button_Left_Disabled>i_dialogue_button_large_blank.tga</Button_Left_Disabled>
+			<Button_Middle_Disabled>i_dialogue_button_large_blank.tga</Button_Middle_Disabled>
+			<Button_Right_Disabled>i_dialogue_button_large_blank.tga</Button_Right_Disabled>
+		</IDC_BUTTON_TRADE_ROUTE_INCOME>
+
+		<IDC_BUTTON_MINING_FACILITY_INCOME>
+			<!-- R2-Help Menus -->
+			<Button_Left>i_dialogue_button_large_blank.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_large_blank.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_large_blank.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_large_blank.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_large_blank.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_large_blank.tga</Button_Right_Pressed>
+			<Button_Left_Disabled>i_dialogue_button_large_blank.tga</Button_Left_Disabled>
+			<Button_Middle_Disabled>i_dialogue_button_large_blank.tga</Button_Middle_Disabled>
+			<Button_Right_Disabled>i_dialogue_button_large_blank.tga</Button_Right_Disabled>
+		</IDC_BUTTON_MINING_FACILITY_INCOME>
+
+		<IDC_MENU_CREDITS>
+			<!-- Game Credits -->
+			<Button_Left>i_button_credits_sliver.tga</Button_Left>
+			<Button_Middle>i_button_credits_sliver.tga</Button_Middle>
+			<Button_Right>i_button_credits.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_button_credits_sliver.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_button_credits_sliver.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_button_credits.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_button_credits_sliver.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_button_credits_sliver.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_button_credits.tga</Button_Right_Pressed>
+			<Button_Left_Disabled>i_button_credits_sliver.tga</Button_Left_Disabled>
+			<Button_Middle_Disabled>i_button_credits_sliver.tga</Button_Middle_Disabled>
+			<Button_Right_Disabled>i_button_credits.tga</Button_Right_Disabled>
+		</IDC_MENU_CREDITS>
+
+		<IDC_UNDEROWRLD_LOGO>
+			<!-- Game Credits -->
+			<Button_Left>i_button_credits_sliver.tga</Button_Left>
+			<Button_Middle>i_button_credits.tga</Button_Middle>
+			<Button_Right>i_button_credits_sliver.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_button_credits_sliver.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_button_credits.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_button_credits_sliver.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_button_credits_sliver.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_button_credits.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_button_credits_sliver.tga</Button_Right_Pressed>
+			<Button_Left_Disabled>i_button_credits_sliver.tga</Button_Left_Disabled>
+			<Button_Middle_Disabled>i_button_credits.tga</Button_Middle_Disabled>
+			<Button_Right_Disabled>i_button_credits_sliver.tga</Button_Right_Disabled>
+		</IDC_UNDEROWRLD_LOGO>
+
+
+		<IDC_DIALOG_CLOSE_BUTTON>
+			<!-- Special case.  All dialogs with frames have this button in the top right corner -->
+			<Button_Left>none</Button_Left>
+			<Button_Middle>i_dialogue_check_on.tga</Button_Middle>
+			<Button_Right>none</Button_Right>
+			<Button_Left_Mouse_Over>none</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_check_on.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>none</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>none</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_check_on.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>none</Button_Right_Pressed>			
+		</IDC_DIALOG_CLOSE_BUTTON>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<IDC_INTERNET_SERVER_NAME_BUTTON>
+			<!-- Special case.  Small button at top of column in internet lobby dialog --> 
+			<Button_Left>i_dialogue_button_large_blank.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_large_blank.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_large_blank.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_large_blank.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_large_blank.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_large_blank.tga</Button_Right_Pressed>
+			<Button_Left_Disabled>i_dialogue_button_large_blank.tga</Button_Left_Disabled>
+			<Button_Middle_Disabled>i_dialogue_button_large_blank.tga</Button_Middle_Disabled>
+			<Button_Right_Disabled>i_dialogue_button_large_blank.tga</Button_Right_Disabled>		
+		</IDC_INTERNET_SERVER_NAME_BUTTON>
+
+		<IDC_INTERNET_MAP_NAME_BUTTON>
+			<!-- Special case.  Small button at top of column in internet lobby dialog --> 
+			<Button_Left>i_dialogue_button_large_blank.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_large_blank.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_large_blank.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_large_blank.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_large_blank.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_large_blank.tga</Button_Right_Pressed>
+			<Button_Left_Disabled>i_dialogue_button_large_blank.tga</Button_Left_Disabled>
+			<Button_Middle_Disabled>i_dialogue_button_large_blank.tga</Button_Middle_Disabled>
+			<Button_Right_Disabled>i_dialogue_button_large_blank.tga</Button_Right_Disabled>		
+		</IDC_INTERNET_MAP_NAME_BUTTON>
+
+		<IDC_INTERNET_PING_BUTTON>
+			<!-- Special case.  Small button at top of column in internet lobby dialog --> 
+			<Button_Left>i_dialogue_button_large_blank.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_large_blank.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_large_blank.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_large_blank.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_large_blank.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_large_blank.tga</Button_Right_Pressed>
+			<Button_Left_Disabled>i_dialogue_button_large_blank.tga</Button_Left_Disabled>
+			<Button_Middle_Disabled>i_dialogue_button_large_blank.tga</Button_Middle_Disabled>
+			<Button_Right_Disabled>i_dialogue_button_large_blank.tga</Button_Right_Disabled>		
+		</IDC_INTERNET_PING_BUTTON>
+
+		<IDC_INTERNET_GAME_TYPE_BUTTON>
+			<!-- Special case.  Small button at top of column in internet lobby dialog --> 
+			<Button_Left>i_dialogue_button_large_blank.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_large_blank.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_large_blank.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_large_blank.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_large_blank.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_large_blank.tga</Button_Right_Pressed>
+			<Button_Left_Disabled>i_dialogue_button_large_blank.tga</Button_Left_Disabled>
+			<Button_Middle_Disabled>i_dialogue_button_large_blank.tga</Button_Middle_Disabled>
+			<Button_Right_Disabled>i_dialogue_button_large_blank.tga</Button_Right_Disabled>		
+		</IDC_INTERNET_GAME_TYPE_BUTTON>
+
+		<IDC_INTERNET_PLAYERS_BUTTON>
+			<!-- Special case.  Small button at top of column in internet lobby dialog --> 
+			<Button_Left>i_dialogue_button_large_blank.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_large_blank.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_large_blank.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_large_blank.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_large_blank.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_large_blank.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_large_blank.tga</Button_Right_Pressed>
+			<Button_Left_Disabled>i_dialogue_button_large_blank.tga</Button_Left_Disabled>
+			<Button_Middle_Disabled>i_dialogue_button_large_blank.tga</Button_Middle_Disabled>
+			<Button_Right_Disabled>i_dialogue_button_large_blank.tga</Button_Right_Disabled>		
+		</IDC_INTERNET_PLAYERS_BUTTON>
+
+		<IDC_BUTTON_KICK_PLAYER0>
+			<!-- Special case.  Kick button for disconnect dialog --> 
+			<Button_Left>i_dialogue_button_small_left.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_small_middle.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_small_right.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_small_left_mouse_over.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_small_middle_mouse_over.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_small_right_mouse_over.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_small_left_pressed.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_small_middle_pressed.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_small_right_pressed.tga</Button_Right_Pressed>			
+		</IDC_BUTTON_KICK_PLAYER0>
+
+		<IDC_BUTTON_KICK_PLAYER1>
+			<!-- Special case.  Kick button for disconnect dialog --> 
+			<Button_Left>i_dialogue_button_small_left.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_small_middle.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_small_right.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_small_left_mouse_over.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_small_middle_mouse_over.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_small_right_mouse_over.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_small_left_pressed.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_small_middle_pressed.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_small_right_pressed.tga</Button_Right_Pressed>			
+		</IDC_BUTTON_KICK_PLAYER1>
+
+		<IDC_BUTTON_KICK_PLAYER2>
+			<!-- Special case.  Kick button for disconnect dialog --> 
+			<Button_Left>i_dialogue_button_small_left.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_small_middle.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_small_right.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_small_left_mouse_over.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_small_middle_mouse_over.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_small_right_mouse_over.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_small_left_pressed.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_small_middle_pressed.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_small_right_pressed.tga</Button_Right_Pressed>			
+		</IDC_BUTTON_KICK_PLAYER2>
+
+		<IDC_BUTTON_KICK_PLAYER3>
+			<!-- Special case.  Kick button for disconnect dialog --> 
+			<Button_Left>i_dialogue_button_small_left.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_small_middle.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_small_right.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_small_left_mouse_over.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_small_middle_mouse_over.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_small_right_mouse_over.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_small_left_pressed.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_small_middle_pressed.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_small_right_pressed.tga</Button_Right_Pressed>			
+		</IDC_BUTTON_KICK_PLAYER3>
+
+		<IDC_BUTTON_KICK_PLAYER4>
+			<!-- Special case.  Kick button for disconnect dialog --> 
+			<Button_Left>i_dialogue_button_small_left.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_small_middle.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_small_right.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_small_left_mouse_over.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_small_middle_mouse_over.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_small_right_mouse_over.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_small_left_pressed.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_small_middle_pressed.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_small_right_pressed.tga</Button_Right_Pressed>			
+		</IDC_BUTTON_KICK_PLAYER4>
+
+		<IDC_BUTTON_KICK_PLAYER5>
+			<!-- Special case.  Kick button for disconnect dialog --> 
+			<Button_Left>i_dialogue_button_small_left.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_small_middle.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_small_right.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_small_left_mouse_over.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_small_middle_mouse_over.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_small_right_mouse_over.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_small_left_pressed.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_small_middle_pressed.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_small_right_pressed.tga</Button_Right_Pressed>			
+		</IDC_BUTTON_KICK_PLAYER5>
+
+		<IDC_BUTTON_KICK_PLAYER6>
+			<!-- Special case.  Kick button for disconnect dialog --> 
+			<Button_Left>i_dialogue_button_small_left.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_small_middle.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_small_right.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_small_left_mouse_over.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_small_middle_mouse_over.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_small_right_mouse_over.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_small_left_pressed.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_small_middle_pressed.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_small_right_pressed.tga</Button_Right_Pressed>			
+		</IDC_BUTTON_KICK_PLAYER6>
+
+		<IDC_BUTTON_KICK_PLAYER7>
+			<!-- Special case.  Kick button for disconnect dialog --> 
+			<Button_Left>i_dialogue_button_small_left.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_small_middle.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_small_right.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_small_left_mouse_over.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_small_middle_mouse_over.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_small_right_mouse_over.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_small_left_pressed.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_small_middle_pressed.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_small_right_pressed.tga</Button_Right_Pressed>			
+		</IDC_BUTTON_KICK_PLAYER7>
+
+		<IDC_DEBUG_LOAD_SKIRMISH_MAP_BUTTON>
+			<!-- Special case.  Debug load map button --> 
+			<Button_Left>i_dialogue_button_small_left.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_small_middle.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_small_right.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_small_left_mouse_over.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_small_middle_mouse_over.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_small_right_mouse_over.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_small_left_pressed.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_small_middle_pressed.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_small_right_pressed.tga</Button_Right_Pressed>			
+		</IDC_DEBUG_LOAD_SKIRMISH_MAP_BUTTON>
+
+
+
+		
+		<IDC_INTERNET_EXIT_BUTTON>
+			<!-- Special case.  Small button at top of column in internet lobby dialog --> 
+			<Button_Left>i_dialogue_button_small_left.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_small_middle.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_small_right.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_small_left_mouse_over.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_small_middle_mouse_over.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_small_right_mouse_over.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_small_left_pressed.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_small_middle_pressed.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_small_right_pressed.tga</Button_Right_Pressed>			
+		</IDC_INTERNET_EXIT_BUTTON>
+
+		<IDC_INTERNET_IGNORE_PLAYER_BUTTON>
+			<!-- Special case.  Small button underneath player list in internet lobby dialog --> 
+			<Button_Left>i_dialogue_button_small_left.tga</Button_Left>
+			<Button_Middle>i_dialogue_button_small_middle.tga</Button_Middle>
+			<Button_Right>i_dialogue_button_small_right.tga</Button_Right>
+			<Button_Left_Mouse_Over>i_dialogue_button_small_left_mouse_over.tga</Button_Left_Mouse_Over>
+			<Button_Middle_Mouse_Over>i_dialogue_button_small_middle_mouse_over.tga</Button_Middle_Mouse_Over>
+			<Button_Right_Mouse_Over>i_dialogue_button_small_right_mouse_over.tga</Button_Right_Mouse_Over>
+			<Button_Left_Pressed>i_dialogue_button_small_left_pressed.tga</Button_Left_Pressed>
+			<Button_Middle_Pressed>i_dialogue_button_small_middle_pressed.tga</Button_Middle_Pressed>
+			<Button_Right_Pressed>i_dialogue_button_small_right_pressed.tga</Button_Right_Pressed>			
+		</IDC_INTERNET_IGNORE_PLAYER_BUTTON>
+
+
+
+		
+		
+		<IDC_LIST_TACTICAL>
+			<Small_Frame_Bottom>i_dialogue_blank.tga</Small_Frame_Bottom>
+			<Small_Frame_Bottom_Left>i_dialogue_blank.tga</Small_Frame_Bottom_Left>
+			<Small_Frame_Bottom_Right>i_dialogue_blank.tga</Small_Frame_Bottom_Right>
+			<Small_Frame_Left>i_dialogue_blank.tga</Small_Frame_Left>
+			<Small_Frame_Right>i_dialogue_blank.tga</Small_Frame_Right>
+			<Small_Frame_Top>i_dialogue_blank.tga</Small_Frame_Top>
+			<Small_Frame_Top_Left>i_dialogue_blank.tga</Small_Frame_Top_Left>
+			<Small_Frame_Top_Right>i_dialogue_blank.tga</Small_Frame_Top_Right>			
+			<Small_Frame_Background>i_dialogue_blank.tga</Small_Frame_Background>
+		</IDC_LIST_TACTICAL>
+	
+		<IDC_LIST_ADVANTAGE>
+			<Small_Frame_Bottom>i_dialogue_blank.tga</Small_Frame_Bottom>
+			<Small_Frame_Bottom_Left>i_dialogue_blank.tga</Small_Frame_Bottom_Left>
+			<Small_Frame_Bottom_Right>i_dialogue_blank.tga</Small_Frame_Bottom_Right>
+			<Small_Frame_Left>i_dialogue_blank.tga</Small_Frame_Left>
+			<Small_Frame_Right>i_dialogue_blank.tga</Small_Frame_Right>
+			<Small_Frame_Top>i_dialogue_blank.tga</Small_Frame_Top>
+			<Small_Frame_Top_Left>i_dialogue_blank.tga</Small_Frame_Top_Left>
+			<Small_Frame_Top_Right>i_dialogue_blank.tga</Small_Frame_Top_Right>			
+			<Small_Frame_Background>i_dialogue_blank.tga</Small_Frame_Background>
+		</IDC_LIST_ADVANTAGE>	
+		
+		<IDC_LIST_REFERENCE>
+			<Small_Frame_Bottom>i_dialogue_blank.tga</Small_Frame_Bottom>
+			<Small_Frame_Bottom_Left>i_dialogue_blank.tga</Small_Frame_Bottom_Left>
+			<Small_Frame_Bottom_Right>i_dialogue_blank.tga</Small_Frame_Bottom_Right>
+			<Small_Frame_Left>i_dialogue_blank.tga</Small_Frame_Left>
+			<Small_Frame_Right>i_dialogue_blank.tga</Small_Frame_Right>
+			<Small_Frame_Top>i_dialogue_blank.tga</Small_Frame_Top>
+			<Small_Frame_Top_Left>i_dialogue_blank.tga</Small_Frame_Top_Left>
+			<Small_Frame_Top_Right>i_dialogue_blank.tga</Small_Frame_Top_Right>			
+			<Small_Frame_Background>i_dialogue_blank.tga</Small_Frame_Background>
+		</IDC_LIST_REFERENCE>
+
+		<IDC_MISSION_LIST>
+			<Small_Frame_Bottom>i_dialogue_blank.tga</Small_Frame_Bottom>
+			<Small_Frame_Bottom_Left>i_dialogue_blank.tga</Small_Frame_Bottom_Left>
+			<Small_Frame_Bottom_Right>i_dialogue_blank.tga</Small_Frame_Bottom_Right>
+			<Small_Frame_Left>i_dialogue_blank.tga</Small_Frame_Left>
+			<Small_Frame_Right>i_dialogue_blank.tga</Small_Frame_Right>
+			<Small_Frame_Top>i_dialogue_blank.tga</Small_Frame_Top>
+			<Small_Frame_Top_Left>i_dialogue_blank.tga</Small_Frame_Top_Left>
+			<Small_Frame_Top_Right>i_dialogue_blank.tga</Small_Frame_Top_Right>			
+			<Small_Frame_Background>i_dialogue_blank.tga</Small_Frame_Background>
+		</IDC_MISSION_LIST>
+
+		<IDC_LIST1>
+			<Small_Frame_Bottom>i_dialogue_blank.tga</Small_Frame_Bottom>
+			<Small_Frame_Bottom_Left>i_dialogue_blank.tga</Small_Frame_Bottom_Left>
+			<Small_Frame_Bottom_Right>i_dialogue_blank.tga</Small_Frame_Bottom_Right>
+			<Small_Frame_Left>i_dialogue_blank.tga</Small_Frame_Left>
+			<Small_Frame_Right>i_dialogue_blank.tga</Small_Frame_Right>
+			<Small_Frame_Top>i_dialogue_blank.tga</Small_Frame_Top>
+			<Small_Frame_Top_Left>i_dialogue_blank.tga</Small_Frame_Top_Left>
+			<Small_Frame_Top_Right>i_dialogue_blank.tga</Small_Frame_Top_Right>			
+			<Small_Frame_Background>i_dialogue_blank.tga</Small_Frame_Background>
+		</IDC_LIST1>
+
+		<IDC_VICTORY_LIST>
+			<Small_Frame_Bottom>i_dialogue_blank.tga</Small_Frame_Bottom>
+			<Small_Frame_Bottom_Left>i_dialogue_blank.tga</Small_Frame_Bottom_Left>
+			<Small_Frame_Bottom_Right>i_dialogue_blank.tga</Small_Frame_Bottom_Right>
+			<Small_Frame_Left>i_dialogue_blank.tga</Small_Frame_Left>
+			<Small_Frame_Right>i_dialogue_blank.tga</Small_Frame_Right>
+			<Small_Frame_Top>i_dialogue_blank.tga</Small_Frame_Top>
+			<Small_Frame_Top_Left>i_dialogue_blank.tga</Small_Frame_Top_Left>
+			<Small_Frame_Top_Right>i_dialogue_blank.tga</Small_Frame_Top_Right>			
+			<Small_Frame_Background>i_dialogue_blank.tga</Small_Frame_Background>
+		</IDC_VICTORY_LIST>	
+
+		<IDC_YOUR_LOSS_LIST>
+			<Small_Frame_Bottom>i_dialogue_frame_small_bottom.tga</Small_Frame_Bottom>
+			<Small_Frame_Bottom_Left>i_dialogue_frame_small_bottom_left.tga</Small_Frame_Bottom_Left>
+			<Small_Frame_Bottom_Right>i_dialogue_frame_small_bottom_right.tga</Small_Frame_Bottom_Right>
+			<Small_Frame_Left>i_dialogue_frame_small_left.tga</Small_Frame_Left>
+			<Small_Frame_Right>i_dialogue_frame_small_right.tga</Small_Frame_Right>
+			<Small_Frame_Top>i_dialogue_frame_small_top.tga</Small_Frame_Top>
+			<Small_Frame_Top_Left>i_dialogue_frame_small_top_left.tga</Small_Frame_Top_Left>
+			<Small_Frame_Top_Right>i_dialogue_frame_small_top_right.tga</Small_Frame_Top_Right>
+			<Small_Frame_Background>i_dialogue_blank.tga</Small_Frame_Background>
+		</IDC_YOUR_LOSS_LIST>	
+
+		<IDC_ENEMY_LOSS_LIST>
+			<Small_Frame_Bottom>i_dialogue_frame_small_bottom.tga</Small_Frame_Bottom>
+			<Small_Frame_Bottom_Left>i_dialogue_frame_small_bottom_left.tga</Small_Frame_Bottom_Left>
+			<Small_Frame_Bottom_Right>i_dialogue_frame_small_bottom_right.tga</Small_Frame_Bottom_Right>
+			<Small_Frame_Left>i_dialogue_frame_small_left.tga</Small_Frame_Left>
+			<Small_Frame_Right>i_dialogue_frame_small_right.tga</Small_Frame_Right>
+			<Small_Frame_Top>i_dialogue_frame_small_top.tga</Small_Frame_Top>
+			<Small_Frame_Top_Left>i_dialogue_frame_small_top_left.tga</Small_Frame_Top_Left>
+			<Small_Frame_Top_Right>i_dialogue_frame_small_top_right.tga</Small_Frame_Top_Right>
+			<Small_Frame_Background>i_dialogue_blank.tga</Small_Frame_Background>
+		</IDC_ENEMY_LOSS_LIST>
+
+		
+		<IDC_RADIO_EASY>
+			<Radio_On>i_button_difficulty.tga</Radio_On>
+			<Radio_Off>i_button_difficulty_off.tga</Radio_Off>
+			<Radio_Mouse_Over>i_button_difficulty_over.tga</Radio_Mouse_Over>
+		</IDC_RADIO_EASY>
+
+		<IDC_RADIO_EASY>
+			<Radio_On>i_button_difficulty.tga</Radio_On>
+			<Radio_Off>i_button_difficulty_off.tga</Radio_Off>
+			<Radio_Mouse_Over>i_button_difficulty_over.tga</Radio_Mouse_Over>
+		</IDC_RADIO_EASY>
+		
+		<IDC_RADIO_MEDIUM>
+			<Radio_On>i_button_difficulty.tga</Radio_On>
+			<Radio_Off>i_button_difficulty_off.tga</Radio_Off>
+			<Radio_Mouse_Over>i_button_difficulty_over.tga</Radio_Mouse_Over>
+		</IDC_RADIO_MEDIUM>
+		
+		<IDC_RADIO_HARD>
+			<Radio_On>i_button_difficulty.tga</Radio_On>
+			<Radio_Off>i_button_difficulty_off.tga</Radio_Off>
+			<Radio_Mouse_Over>i_button_difficulty_over.tga</Radio_Mouse_Over>
+		</IDC_RADIO_HARD>
+
+		<IDC_RADIO_CUSTOM_EASY>
+			<Radio_On>i_button_difficulty.tga</Radio_On>
+			<Radio_Off>i_button_difficulty_off.tga</Radio_Off>
+			<Radio_Mouse_Over>i_button_difficulty_over.tga</Radio_Mouse_Over>
+		</IDC_RADIO_CUSTOM_EASY>
+		
+		<IDC_RADIO_CUSTOM_MEDIUM>
+			<Radio_On>i_button_difficulty.tga</Radio_On>
+			<Radio_Off>i_button_difficulty_off.tga</Radio_Off>
+			<Radio_Mouse_Over>i_button_difficulty_over.tga</Radio_Mouse_Over>
+		</IDC_RADIO_CUSTOM_MEDIUM>
+		
+		<IDC_RADIO_CUSTOM_HARD>
+			<Radio_On>i_button_difficulty.tga</Radio_On>
+			<Radio_Off>i_button_difficulty_off.tga</Radio_Off>
+			<Radio_Mouse_Over>i_button_difficulty_over.tga</Radio_Mouse_Over>
+		</IDC_RADIO_CUSTOM_HARD>
+		
+
+		<IDC_PLAY_FACTION_A_BUTTON_BIG>
+			<Button_Middle>underworld_logo_off.tga</Button_Middle>
+			<Button_Middle_Mouse_Over>underworld_logo_rollover.tga</Button_Middle_Mouse_Over>
+			<Button_Middle_Pressed>underworld_logo_selected.tga</Button_Middle_Pressed>
+		</IDC_PLAY_FACTION_A_BUTTON_BIG>
+		
+		<IDC_PLAY_FACTION_B_BUTTON_BIG>
+			<Button_Middle>imperial_logo_off.tga</Button_Middle>
+			<Button_Middle_Mouse_Over>imperial_logo_rollover.tga</Button_Middle_Mouse_Over>
+			<Button_Middle_Pressed>imperial_logo_selected.tga</Button_Middle_Pressed>		
+		</IDC_PLAY_FACTION_B_BUTTON_BIG>
+		
+		<IDC_RADIO_ACTIVE>
+			<Radio_On>i_dialogue_button_tab_wide_on.tga</Radio_On>
+			<Radio_Off>i_dialogue_button_tab_wide_off.tga</Radio_Off>
+			<Radio_Mouse_Over>i_dialogue_button_tab_wide_rollover.tga</Radio_Mouse_Over>
+		</IDC_RADIO_ACTIVE>
+		
+		<IDC_RADIO_COMPLETED>
+			<Radio_On>i_dialogue_button_tab_wide_on.tga</Radio_On>
+			<Radio_Off>i_dialogue_button_tab_wide_off.tga</Radio_Off>
+			<Radio_Mouse_Over>i_dialogue_button_tab_wide_rollover.tga</Radio_Mouse_Over>
+		</IDC_RADIO_COMPLETED>
+		
+		<!-- Key board options -->
+		<IDC_KEYBOARD_OPTIONS_1>
+			<Radio_On>i_dialogue_button_tab_on.tga</Radio_On>
+			<Radio_Off>i_dialogue_button_tab_off.tga</Radio_Off>
+			<Radio_Mouse_Over>i_dialogue_button_tab_rollover.tga</Radio_Mouse_Over>
+		</IDC_KEYBOARD_OPTIONS_1>
+		
+		<IDC_KEYBOARD_OPTIONS_2>
+			<Radio_On>i_dialogue_button_tab_on.tga</Radio_On>
+			<Radio_Off>i_dialogue_button_tab_off.tga</Radio_Off>
+			<Radio_Mouse_Over>i_dialogue_button_tab_rollover.tga</Radio_Mouse_Over>
+		</IDC_KEYBOARD_OPTIONS_2>
+		
+		<IDC_KEYBOARD_OPTIONS_3>
+			<Radio_On>i_dialogue_button_tab_on.tga</Radio_On>
+			<Radio_Off>i_dialogue_button_tab_off.tga</Radio_Off>
+			<Radio_Mouse_Over>i_dialogue_button_tab_rollover.tga</Radio_Mouse_Over>
+		</IDC_KEYBOARD_OPTIONS_3>
+		
+		<IDC_KEYBOARD_OPTIONS_4>
+			<Radio_On>i_dialogue_button_tab_on.tga</Radio_On>
+			<Radio_Off>i_dialogue_button_tab_off.tga</Radio_Off>
+			<Radio_Mouse_Over>i_dialogue_button_tab_rollover.tga</Radio_Mouse_Over>
+		</IDC_KEYBOARD_OPTIONS_4>
+
+		<IDC_KEYBOARD_OPTIONS_5>
+			<Radio_On>i_dialogue_button_tab_on.tga</Radio_On>
+			<Radio_Off>i_dialogue_button_tab_off.tga</Radio_Off>
+			<Radio_Mouse_Over>i_dialogue_button_tab_rollover.tga</Radio_Mouse_Over>
+		</IDC_KEYBOARD_OPTIONS_5>
+
+
+        <!-- summary screen -->
+		<IDC_DROID_LOG_RADIO>
+			<Radio_On>i_dialogue_button_tab_wide_on.tga</Radio_On>
+			<Radio_Off>i_dialogue_button_tab_wide_off.tga</Radio_Off>
+			<Radio_Mouse_Over>i_dialogue_button_tab_wide_rollover.tga</Radio_Mouse_Over>
+        </IDC_DROID_LOG_RADIO>
+		
+		<IDC_DATA_CHART_RADIO>
+			<Radio_On>i_dialogue_button_tab_wide_on.tga</Radio_On>
+			<Radio_Off>i_dialogue_button_tab_wide_off.tga</Radio_Off>
+			<Radio_Mouse_Over>i_dialogue_button_tab_wide_rollover.tga</Radio_Mouse_Over>
+        </IDC_DATA_CHART_RADIO>
+		
+		<IDC_TECH_TREE_RADIO>
+			<Radio_On>i_dialogue_button_tab_wide_on.tga</Radio_On>
+			<Radio_Off>i_dialogue_button_tab_wide_off.tga</Radio_Off>
+			<Radio_Mouse_Over>i_dialogue_button_tab_wide_rollover.tga</Radio_Mouse_Over>
+        </IDC_TECH_TREE_RADIO>
+		
+		<IDC_SUMMARY_SCREEN_RADIO>
+			<Radio_On>i_dialogue_button_tab_wide_on.tga</Radio_On>
+			<Radio_Off>i_dialogue_button_tab_wide_off.tga</Radio_Off>
+			<Radio_Mouse_Over>i_dialogue_button_tab_wide_rollover.tga</Radio_Mouse_Over>
+        </IDC_SUMMARY_SCREEN_RADIO>
+		
+		<IDC_HINT_LIST>
+			<Small_Frame_Bottom>i_dialogue_blank.tga</Small_Frame_Bottom>
+			<Small_Frame_Bottom_Left>i_dialogue_blank.tga</Small_Frame_Bottom_Left>
+			<Small_Frame_Bottom_Right>i_dialogue_blank.tga</Small_Frame_Bottom_Right>
+			<Small_Frame_Left>i_dialogue_blank.tga</Small_Frame_Left>
+			<Small_Frame_Right>i_dialogue_blank.tga</Small_Frame_Right>
+			<Small_Frame_Top>i_dialogue_blank.tga</Small_Frame_Top>
+			<Small_Frame_Top_Left>i_dialogue_blank.tga</Small_Frame_Top_Left>
+			<Small_Frame_Top_Right>i_dialogue_blank.tga</Small_Frame_Top_Right>
+			<Small_Frame_Background>i_dialogue_blank.tga</Small_Frame_Background>
+		</IDC_HINT_LIST>
+
+	</Textures>
+	
+	<!-- GUI fonts go here.  Note color format is RGBA, no spaces! -->	
+	<Fonts>
+		<Default>
+			<!-- Special case - this font will be applied to any text that has no other font specified -->
+			<Global_Default>
+				<Name>EmpireAtWar-Medium</Name>
+				<Size>7</Size>
+				<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+				<Emboss>No</Emboss>
+				<Outline>No</Outline>
+			</Global_Default>
+			
+			<!--Default fonts by gadget type -->
+			<Push_Button>
+				<Name>EmpireAtWar-Bold</Name>
+				<Character_Padding>0</Character_Padding>
+				<Stretch_Factor>1</Stretch_Factor>
+				<Size>8</Size>
+				<Bottom_Color>253,248,212,255</Bottom_Color>
+				<Top_Color>253,248,212,255</Top_Color>
+				<Emboss>Yes</Emboss>
+				<Outline>No</Outline>
+			</Push_Button>
+
+			<List_Box>
+				<!-- Oksana: need a unicode font here -->
+				<Name>Arial Unicode MS</Name>
+				<Character_Padding>0</Character_Padding>
+				<Stretch_Factor>1</Stretch_Factor>
+				<Size>8</Size>
+				<Top_Color>255,255,255,255</Top_Color>
+				<Bottom_Color>255,255,255,255</Bottom_Color>
+				<Emboss>No</Emboss>
+				<Outline>No</Outline>
+			</List_Box>
+			
+			<Combo_Box>
+				<!-- Oksana: need a unicode font here -->
+				<Name>Arial Unicode MS</Name>
+				<Character_Padding>0</Character_Padding>
+				<Stretch_Factor>1</Stretch_Factor>
+				<Size>8</Size>
+				<Top_Color>255,255,255,255</Top_Color>
+				<Bottom_Color>255,255,255,255</Bottom_Color>
+				<Emboss>No</Emboss>
+				<Outline>No</Outline>
+			</Combo_Box>
+						
+			<Edit_Box>
+				<!-- Oksana: need a unicode font here -->
+				<Name>Arial Unicode MS</Name>
+				<Character_Padding>0</Character_Padding>
+				<Stretch_Factor>1</Stretch_Factor>
+				<Size>9</Size>
+				<Top_Color>255,255,255,255</Top_Color>
+				<Bottom_Color>255,255,255,255</Bottom_Color>
+				<Emboss>No</Emboss>
+				<Outline>No</Outline>
+			</Edit_Box>	
+			
+			<IME_Edit_Box>
+				<!-- Oksana: need a unicode font here -->
+				<Name>Arial Unicode MS</Name>
+				<Character_Padding>0</Character_Padding>
+				<Stretch_Factor>1</Stretch_Factor>
+				<Size>9</Size>
+				<Top_Color>255,255,255,255</Top_Color>
+				<Bottom_Color>255,255,255,255</Bottom_Color>
+				<Emboss>No</Emboss>
+				<Outline>No</Outline>
+			</IME_Edit_Box>
+			
+			<L_Text>
+				<Name>EmpireAtWar-Medium</Name>
+				<Character_Padding>0</Character_Padding>
+				<Stretch_Factor>1.3</Stretch_Factor>
+				<Size>7</Size>
+				<Top_Color>253,248,212,255</Top_Color>
+				<Bottom_Color>253,248,212,255</Bottom_Color>
+				<Emboss>No</Emboss>
+				<Outline>No</Outline>
+			</L_Text>
+
+			<R_Text>
+				<Name>EmpireAtWar-Medium</Name>
+				<Character_Padding>0</Character_Padding>
+				<Stretch_Factor>1.3</Stretch_Factor>
+				<Size>7</Size>
+				<Top_Color>253,248,212,255</Top_Color>
+				<Bottom_Color>253,248,212,255</Bottom_Color>
+				<Emboss>No</Emboss>
+				<Outline>No</Outline>
+			</R_Text>
+
+			<Overlay_Caption_Text>
+				<Name>Arial Bold</Name>
+				<Character_Padding>0</Character_Padding>
+				<Stretch_Factor>1</Stretch_Factor>
+				<Size>8</Size>
+				<Top_Color>255,255,255,255</Top_Color>
+				<Bottom_Color>255,255,255,255</Bottom_Color>
+				<Emboss>No</Emboss>
+				<Outline>Yes</Outline>
+			</Overlay_Caption_Text>	
+													
+		</Default>
+		
+		<!-- Insert override fonts here.  Use the gadget ID from the .rc file -->
+
+		<IDC_HINT_LIST>
+			<!-- Oksana: need a unicode font here -->
+			<Name>Arial Unicode MS</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>7</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_HINT_LIST>
+
+		<IDC_YOUR_UNIT_NAME0>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.2</Stretch_Factor>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_YOUR_UNIT_NAME0>
+
+		<IDC_YOUR_UNIT_NAME1>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.2</Stretch_Factor>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_YOUR_UNIT_NAME1>
+
+		<IDC_YOUR_UNIT_NAME2>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.2</Stretch_Factor>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_YOUR_UNIT_NAME2>
+
+		<IDC_YOUR_UNIT_NAME3>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.2</Stretch_Factor>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_YOUR_UNIT_NAME3>
+
+		<IDC_YOUR_UNIT_NAME4>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.2</Stretch_Factor>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_YOUR_UNIT_NAME4>
+
+		<IDC_YOUR_UNIT_NAME5>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.2</Stretch_Factor>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_YOUR_UNIT_NAME5>
+
+		<IDC_YOUR_UNIT_NAME6>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.2</Stretch_Factor>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_YOUR_UNIT_NAME6>
+
+		<IDC_YOUR_UNIT_NAME7>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.2</Stretch_Factor>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_YOUR_UNIT_NAME7>
+
+		<IDC_YOUR_UNIT_NAME8>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.2</Stretch_Factor>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_YOUR_UNIT_NAME8>
+
+		<IDC_YOUR_UNIT_NAME9>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.2</Stretch_Factor>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_YOUR_UNIT_NAME9>
+
+		<IDC_YOUR_UNIT_NAME10>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.2</Stretch_Factor>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_YOUR_UNIT_NAME10>
+
+		<IDC_YOUR_UNIT_NAME11>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.2</Stretch_Factor>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_YOUR_UNIT_NAME11>
+
+
+		<IDC_ENEMY_UNIT_NAME0>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.2</Stretch_Factor>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_ENEMY_UNIT_NAME0>
+
+		<IDC_ENEMY_UNIT_NAME1>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.2</Stretch_Factor>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_ENEMY_UNIT_NAME1>
+
+		<IDC_ENEMY_UNIT_NAME2>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.2</Stretch_Factor>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_ENEMY_UNIT_NAME2>
+
+		<IDC_ENEMY_UNIT_NAME3>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.2</Stretch_Factor>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_ENEMY_UNIT_NAME3>
+
+		<IDC_ENEMY_UNIT_NAME4>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.2</Stretch_Factor>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_ENEMY_UNIT_NAME4>
+
+		<IDC_ENEMY_UNIT_NAME5>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.2</Stretch_Factor>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_ENEMY_UNIT_NAME5>
+
+		<IDC_ENEMY_UNIT_NAME6>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.2</Stretch_Factor>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_ENEMY_UNIT_NAME6>
+
+		<IDC_ENEMY_UNIT_NAME7>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.2</Stretch_Factor>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_ENEMY_UNIT_NAME7>
+
+		<IDC_ENEMY_UNIT_NAME8>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.2</Stretch_Factor>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_ENEMY_UNIT_NAME8>
+
+		<IDC_ENEMY_UNIT_NAME9>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.2</Stretch_Factor>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_ENEMY_UNIT_NAME9>
+
+		<IDC_ENEMY_UNIT_NAME10>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.2</Stretch_Factor>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_ENEMY_UNIT_NAME10>
+
+		<IDC_ENEMY_UNIT_NAME11>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.2</Stretch_Factor>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_ENEMY_UNIT_NAME11>
+
+
+
+		<IDC_PA_TEXT0>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PA_TEXT0>
+
+		<IDC_PA_TEXT1>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+		<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PA_TEXT1>
+
+		<IDC_PA_TEXT2>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PA_TEXT2>
+
+		<IDC_PA_TEXT3>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PA_TEXT3>
+
+		<IDC_PA_TEXT4>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PA_TEXT4>
+
+		<IDC_PA_TEXT5>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PA_TEXT5>
+
+		<IDC_PA_TEXT6>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+		<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PA_TEXT6>
+
+		<IDC_PA_TEXT7>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PA_TEXT7>
+
+		<IDC_PA_TEXT8>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PA_TEXT8>
+
+		<IDC_PA_TEXT9>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PA_TEXT9>
+
+		<IDC_PA_TEXT10>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PA_TEXT10>
+
+		<IDC_PA_TEXT11>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PA_TEXT11>
+
+		<IDC_PA_TEXT12>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PA_TEXT12>
+
+		<IDC_PA_TEXT13>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PA_TEXT13>
+
+		<IDC_PA_TEXT14>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PA_TEXT14>
+
+		<IDC_PA_TEXT15>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PA_TEXT15>
+
+		<IDC_PA_TEXT16>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PA_TEXT16>
+
+		<IDC_PA_TEXT17>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PA_TEXT17>
+
+		<IDC_PA_TEXT18>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PA_TEXT18>
+
+		<IDC_PA_TEXT19>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+		<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PA_TEXT19>
+
+		<IDC_PA_TEXT20>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PA_TEXT20>
+
+		<IDC_PA_TEXT21>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PA_TEXT21>
+
+		<IDC_PA_TEXT22>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PA_TEXT22>
+
+		<IDC_PA_TEXT23>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PA_TEXT23>
+
+		<IDC_PA_TEXT24>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PA_TEXT24>
+
+		<IDC_PA_TEXT25>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PA_TEXT25>
+
+		<IDC_WSTATIC0>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+		<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_WSTATIC0>
+
+		<IDC_WSTATIC1>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_WSTATIC1>
+
+		<IDC_WSTATIC2>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_WSTATIC2>
+
+		<IDC_WSTATIC3>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_WSTATIC3>
+
+		<IDC_WSTATIC4>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_WSTATIC4>
+
+
+		<IDC_PER_SP_STATIC0>
+			<Name>Arial Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_PER_SP_STATIC0>
+
+		<IDC_PER_SP_STATIC1>
+			<Name>Arial Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_PER_SP_STATIC1>
+
+		<IDC_PER_SP_STATIC2>
+			<Name>Arial Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_PER_SP_STATIC2>
+
+		<IDC_PER_SP_STATIC3>
+			<Name>Arial Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_PER_SP_STATIC3>
+
+		<IDC_PER_SP_STATIC4>
+			<Name>Arial Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_PER_SP_STATIC4>
+
+		<IDC_PER_SP_STATIC5>
+			<Name>Arial Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_PER_SP_STATIC5>
+
+		<IDC_PER_GP_STATIC0>
+			<Name>Arial Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_PER_GP_STATIC0>
+
+		<IDC_PER_GP_STATIC1>
+			<Name>Arial Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_PER_GP_STATIC1>
+
+		<IDC_PER_GP_STATIC2>
+			<Name>Arial Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_PER_GP_STATIC2>
+
+		<IDC_PER_GP_STATIC3>
+			<Name>Arial Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_PER_GP_STATIC3>
+
+		<IDC_PER_GP_STATIC4>
+			<Name>Arial Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_PER_GP_STATIC4>
+
+		<IDC_PER_GP_STATIC5>
+			<Name>Arial Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_PER_GP_STATIC5>	
+
+
+		<IDC_PLAYER_NAME_0>
+			<Name>Arial Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_PLAYER_NAME_0>
+
+		<IDC_PLAYER_NAME_1>
+			<Name>Arial Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_PLAYER_NAME_1>	
+
+		<IDC_PLAYER_NAME_2>
+			<Name>Arial Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_PLAYER_NAME_2>	
+
+		<IDC_PLAYER_NAME_3>
+			<Name>Arial Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_PLAYER_NAME_3>	
+
+		<IDC_PLAYER_NAME_4>
+			<Name>Arial Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_PLAYER_NAME_4>	
+
+		<IDC_PLAYER_NAME_5>
+			<Name>Arial Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_PLAYER_NAME_5>	
+
+		<IDC_PLAYER_NAME_6>
+			<Name>Arial Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_PLAYER_NAME_6>	
+
+		<IDC_PLAYER_NAME_7>
+			<Name>Arial Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_PLAYER_NAME_7>		
+
+		<IDC_TEAM_MEMBERS_ONLY>
+			<Name>Arial Black</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>7</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_TEAM_MEMBERS_ONLY>
+
+		<IDC_GOAL_LIST>
+			<Name>Arial Black</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>10</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_GOAL_LIST>
+
+		<IDC_GAME_TYPE_LIST>
+			<Name>Arial Black</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>10</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_GAME_TYPE_LIST>
+
+		<!-- R2 Help Menu Fonts -->
+		<IDC_BUTTON_PLANETARY>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Bottom_Color>255,255,255,170</Bottom_Color>
+			<Top_Color>255,255,255,170</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_BUTTON_PLANETARY>
+
+		<IDC_BUTTON_LAND_FLEETS>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Bottom_Color>255,255,255,170</Bottom_Color>
+			<Top_Color>255,255,255,170</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_BUTTON_LAND_FLEETS>
+
+
+
+		<IDC_RETREAT_HEADER>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>12</Size>
+			<Bottom_Color>255,255,255,170</Bottom_Color>
+			<Top_Color>255,255,255,170</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_RETREAT_HEADER>
+
+		<IDC_BUTTON_SPACE_FLEETS>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Bottom_Color>255,255,255,170</Bottom_Color>
+			<Top_Color>255,255,255,170</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_BUTTON_SPACE_FLEETS>
+
+		<IDC_BUTTON_POP_CAP>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Bottom_Color>255,255,255,170</Bottom_Color>
+			<Top_Color>255,255,255,170</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_BUTTON_POP_CAP>
+
+		<IDC_BUTTON_PRODUCING>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Bottom_Color>255,255,255,170</Bottom_Color>
+			<Top_Color>255,255,255,170</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_BUTTON_PRODUCING>
+
+		<IDC_BUTTON_UPGRADES>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Bottom_Color>255,255,255,170</Bottom_Color>
+			<Top_Color>255,255,255,170</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_BUTTON_UPGRADES>
+
+		<IDC_BUTTON_HEROES>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Bottom_Color>255,255,255,170</Bottom_Color>
+			<Top_Color>255,255,255,170</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_BUTTON_HEROES>
+
+		<IDC_BUTTON_TOTAL_INCOME>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Bottom_Color>255,255,255,170</Bottom_Color>
+			<Top_Color>255,255,255,170</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_BUTTON_TOTAL_INCOME>
+
+		<IDC_HINTS>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_HINTS>
+
+		<IDC_BUTTON_BASE_CREDIT_VALUE>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Bottom_Color>255,255,255,170</Bottom_Color>
+			<Top_Color>255,255,255,170</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_BUTTON_BASE_CREDIT_VALUE>
+
+		<IDC_BUTTON_TRADE_ROUTE_INCOME>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Bottom_Color>255,255,255,170</Bottom_Color>
+			<Top_Color>255,255,255,170</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_BUTTON_TRADE_ROUTE_INCOME>
+
+		<IDC_BUTTON_MINING_FACILITY_INCOME>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Bottom_Color>255,255,255,170</Bottom_Color>
+			<Top_Color>255,255,255,170</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_BUTTON_MINING_FACILITY_INCOME>
+
+
+
+
+
+		<IDC_KEYBOARD_OPTIONS_1>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Bottom_Color>22,22,22,255</Bottom_Color>
+			<Top_Color>22,22,22,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_KEYBOARD_OPTIONS_1>
+
+		<IDC_KEYBOARD_OPTIONS_2>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Bottom_Color>22,22,22,255</Bottom_Color>
+			<Top_Color>22,22,22,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_KEYBOARD_OPTIONS_2>
+
+		<IDC_KEYBOARD_OPTIONS_3>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Bottom_Color>22,22,22,255</Bottom_Color>
+			<Top_Color>22,22,22,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_KEYBOARD_OPTIONS_3>
+
+		<IDC_KEYBOARD_OPTIONS_4>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Bottom_Color>22,22,22,255</Bottom_Color>
+			<Top_Color>22,22,22,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_KEYBOARD_OPTIONS_4>
+
+		<IDC_KEYBOARD_OPTIONS_5>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Bottom_Color>22,22,22,255</Bottom_Color>
+			<Top_Color>22,22,22,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_KEYBOARD_OPTIONS_5>
+
+		<IDC_DROID_LOG_RADIO>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Bottom_Color>0,0,0,255</Bottom_Color>
+			<Top_Color>33,37,47,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_DROID_LOG_RADIO>
+
+		<IDC_DATA_CHART_RADIO>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Bottom_Color>0,0,0,255</Bottom_Color>
+			<Top_Color>33,37,47,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_DATA_CHART_RADIO>
+
+		<IDC_TECH_TREE_RADIO>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Bottom_Color>0,0,0,255</Bottom_Color>
+			<Top_Color>33,37,47,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_TECH_TREE_RADIO>
+
+		<IDC_SUMMARY_SCREEN_RADIO>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>8</Size>
+			<Bottom_Color>0,0,0,255</Bottom_Color>
+			<Top_Color>33,37,47,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_SUMMARY_SCREEN_RADIO>
+
+		<IDC_STATIC_WEATHER>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_STATIC_WEATHER>
+
+		<IDC_STATIC_TERRAIN>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+		<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_STATIC_TERRAIN>
+
+		<IDC_STATIC_WILDLIFE>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_STATIC_WILDLIFE>
+
+		<IDC_STATIC_NATIVE>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>6</Size>
+		<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_STATIC_NATIVE>
+
+		<IDC_BATTLE_END_PLANET_STATIC>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>14</Size>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Top_Color>40,47,64,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_BATTLE_END_PLANET_STATIC>
+
+		<IDC_RADIO_BLANK>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.5</Stretch_Factor>
+			<Size>8</Size>
+			<Bottom_Color>114,125,163,255</Bottom_Color>
+			<Top_Color>114,125,163,255</Top_Color>
+			<Emboss>Yes</Emboss>
+			<Outline>No</Outline>
+		</IDC_RADIO_BLANK>
+
+		<IDC_RADIO_BLANK2>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.5</Stretch_Factor>
+			<Size>8</Size>
+			<Bottom_Color>114,125,163,255</Bottom_Color>
+			<Top_Color>114,125,163,255</Top_Color>
+			<Emboss>Yes</Emboss>
+			<Outline>No</Outline>
+		</IDC_RADIO_BLANK2>
+
+		<IDC_RADIO_BLANK3>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.5</Stretch_Factor>
+			<Size>8</Size>
+			<Bottom_Color>114,125,163,255</Bottom_Color>
+			<Top_Color>114,125,163,255</Top_Color>
+			<Emboss>Yes</Emboss>
+			<Outline>No</Outline>
+		</IDC_RADIO_BLANK3>
+		
+		<IDC_RADIO_EASY>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.5</Stretch_Factor>
+			<Size>8</Size>
+			<Bottom_Color>114,125,163,255</Bottom_Color>
+			<Top_Color>114,125,163,255</Top_Color>
+			<Emboss>Yes</Emboss>
+			<Outline>No</Outline>
+		</IDC_RADIO_EASY>
+
+		<IDC_RADIO_MEDIUM>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.5</Stretch_Factor>
+			<Size>8</Size>
+			<Bottom_Color>114,125,163,255</Bottom_Color>
+			<Top_Color>114,125,163,255</Top_Color>
+			<Emboss>Yes</Emboss>
+			<Outline>No</Outline>
+		</IDC_RADIO_MEDIUM>
+
+		<IDC_RADIO_HARD>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.5</Stretch_Factor>
+			<Size>8</Size>
+			<Bottom_Color>114,125,163,255</Bottom_Color>
+			<Top_Color>114,125,163,255</Top_Color>
+			<Emboss>Yes</Emboss>
+			<Outline>No</Outline>
+		</IDC_RADIO_HARD>
+
+		<IDC_MAIN_MENU_RESUME_GAME>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>11</Size>
+			<Top_Color>37,124,187,255</Top_Color>
+			<Bottom_Color>90,186,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_MAIN_MENU_RESUME_GAME>
+
+
+      <!--
+		<IDC_MAIN_MENU_TUTORIAL>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>9</Size>
+			<Top_Color>37,124,187,255</Top_Color>
+			<Bottom_Color>90,186,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_MAIN_MENU_TUTORIAL>
+      -->
+
+		<IDC_MULTIPLAYER_LAN_BUTTON>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>9</Size>
+			<Top_Color>253,248,212,255</Top_Color>
+			<Bottom_Color>253,248,212,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_MULTIPLAYER_LAN_BUTTON>
+
+		<IDC_MULTIPLAYER_INTERNET_BUTTON>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>9</Size>
+			<Top_Color>253,248,212,255</Top_Color>
+			<Bottom_Color>253,248,212,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_MULTIPLAYER_INTERNET_BUTTON>
+
+
+
+		<IDC_MAIN_OPTIONS_AUDIO>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>9</Size>
+			<Top_Color>253,248,212,255</Top_Color>
+			<Bottom_Color>253,248,212,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_MAIN_OPTIONS_AUDIO>
+
+		<IDC_MAIN_OPTIONS_VIDEO>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>9</Size>
+			<Top_Color>253,248,212,255</Top_Color>
+			<Bottom_Color>253,248,212,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_MAIN_OPTIONS_VIDEO>
+
+		<IDC_MAIN_OPTIONS_NETWORK>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>9</Size>
+			<Top_Color>253,248,212,255</Top_Color>
+			<Bottom_Color>253,248,212,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_MAIN_OPTIONS_NETWORK>
+
+		<IDC_MAIN_OPTIONS_KEYBOARD>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>9</Size>
+			<Top_Color>253,248,212,255</Top_Color>
+			<Bottom_Color>253,248,212,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_MAIN_OPTIONS_KEYBOARD>
+
+		<IDC_MAIN_OPTIONS_GAMEPLAY>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>9</Size>
+			<Top_Color>253,248,212,255</Top_Color>
+			<Bottom_Color>253,248,212,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_MAIN_OPTIONS_GAMEPLAY>
+
+		<IDC_OK_MAIN>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>9</Size>
+			<Top_Color>253,248,212,255</Top_Color>
+			<Bottom_Color>253,248,212,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_OK_MAIN>
+
+		<IDC_NEW_CAMPAIGN_BUTTON>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>9</Size>
+			<Top_Color>253,248,212,255</Top_Color>
+			<Bottom_Color>253,248,212,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_NEW_CAMPAIGN_BUTTON>
+
+		<IDC_CUSTOM_CAMPAIGN_BUTTON>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>9</Size>
+			<Top_Color>253,248,212,255</Top_Color>
+			<Bottom_Color>253,248,212,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_CUSTOM_CAMPAIGN_BUTTON>
+
+		<IDC_SKIRMISH_GAMES_BUTTON>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>9</Size>
+			<Top_Color>253,248,212,255</Top_Color>
+			<Bottom_Color>253,248,212,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_SKIRMISH_GAMES_BUTTON>
+
+		<IDC_BACK_BUTTON_MAIN>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>9</Size>
+			<Top_Color>253,248,212,255</Top_Color>
+			<Bottom_Color>253,248,212,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_BACK_BUTTON_MAIN>
+
+		<IDC_DIALOG_CLOSE_BUTTON>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>33,37,47,255</Top_Color>
+			<Bottom_Color>33,37,47,255</Bottom_Color>
+			<Emboss>Yes</Emboss>
+			<Outline>No</Outline>
+		</IDC_DIALOG_CLOSE_BUTTON>
+		
+		<IDC_STORY_DIALOG_CLOSE_BUTTON>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>10</Size>
+			<Top_Color>33,37,47,255</Top_Color>
+			<Bottom_Color>33,37,47,255</Bottom_Color>
+			<Emboss>Yes</Emboss>
+			<Outline>No</Outline>			
+		</IDC_STORY_DIALOG_CLOSE_BUTTON>
+
+
+		<IDC_STATIC_BIG>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>14</Size>
+		<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_STATIC_BIG>
+
+		<IDC_STATIC_MED1>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_STATIC_MED1>
+
+		<IDC_STATIC_MED2>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+		<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_STATIC_MED2>
+
+		<IDC_STATIC_MED3>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_STATIC_MED3>
+
+		<IDC_VICTORY_STATIC>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>20</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_VICTORY_STATIC>
+
+		<IDC_STATIC_OPTIONS>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.5</Stretch_Factor>
+			<Size>10</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>Yes</Emboss>
+			<Outline>No</Outline>
+		</IDC_STATIC_OPTIONS>
+
+		<IDC_STATIC_MAIN_MENU>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.5</Stretch_Factor>
+			<Size>10</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>Yes</Emboss>
+			<Outline>No</Outline>
+		</IDC_STATIC_MAIN_MENU>
+
+		<IDC_STATIC_MULTIPLAYER>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.5</Stretch_Factor>
+			<Size>9</Size>
+		<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>Yes</Emboss>
+			<Outline>No</Outline>
+		</IDC_STATIC_MULTIPLAYER>
+
+		<IDC_STATIC_IN_GAME_OPTIONS>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>14</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_STATIC_IN_GAME_OPTIONS>
+
+		<IDC_STATIC_MEDIUM>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>14</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_STATIC_MEDIUM>
+
+		<IDC_TITLE_STATIC>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>12</Size>
+		<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_TITLE_STATIC>
+
+		<IDC_TIME_STATIC>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>10</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_TIME_STATIC>
+
+		<IDC_STATIC_BOUNTY>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>10</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_STATIC_BOUNTY>
+
+		<IDC_VICTORY_LIST>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>10</Size>
+		<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_VICTORY_LIST>
+
+		<IDC_STATIC_MEDIUM2>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>14</Size>
+		<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_STATIC_MEDIUM2>
+
+		<IDC_STATIC_LOSS1>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>11</Size>
+		<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_STATIC_LOSS1>
+
+		<IDC_STATIC_LOSS2>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>11</Size>
+			<Top_Color>243,242,238,255</Top_Color>
+			<Bottom_Color>243,242,238,255</Bottom_Color>
+			<!--<Top_Color>220,193,2,255</Top_Color>
+			<Bottom_Color>220,193,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_STATIC_LOSS2>
+
+		<IDC_INTERNET_DIALOG_HEADER>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>12</Size>
+		<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_INTERNET_DIALOG_HEADER>
+
+		<IDC_DIFFICULT_HEADER>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>9</Size>
+		<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_DIFFICULT_HEADER>
+
+		<IDC_DIFFICULT_HEADER2>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_DIFFICULT_HEADER2>
+
+		<IDC_STATIC_SMALL>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>234,197,144,255</Top_Color>
+			<Bottom_Color>195,171,2,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_STATIC_SMALL>
+		
+		<IDC_TEXT_PRODUCTION_OBJECT_BUILDING>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>96,192,255,255</Top_Color>
+			<Bottom_Color>48,96,192,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_TEXT_PRODUCTION_OBJECT_BUILDING>
+		
+		<IDC_TEXT_PLANET_FLEET_COUNT>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>96,192,255,255</Top_Color>
+			<Bottom_Color>48,96,192,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_TEXT_PLANET_FLEET_COUNT>
+		
+		<IDC_TEXT_PLANET_COMPANY_COUNT>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>96,192,255,255</Top_Color>
+			<Bottom_Color>48,96,192,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_TEXT_PLANET_COMPANY_COUNT>
+		
+		<IDC_TEXT_PLANET_MAINTENANCE_OBJECT_BUILDING>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>96,192,255,255</Top_Color>
+			<Bottom_Color>48,96,192,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_TEXT_PLANET_MAINTENANCE_OBJECT_BUILDING>
+		
+		<IDC_STATIC_PLANET_NAME>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>14</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_STATIC_PLANET_NAME>
+
+		<IDC_STATIC_INTERNET_STAGING_CAPTION>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>12</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_STATIC_INTERNET_STAGING_CAPTION>
+
+		<IDC_STATIC_SKIRMISH_STAGING_CAPTION>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>12</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_STATIC_SKIRMISH_STAGING_CAPTION>
+
+		<IDC_INTERNET_SERVER_NAME_BUTTON>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+				<Bottom_Color>200,200,200,100</Bottom_Color>
+				<Top_Color>255,255,255,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_INTERNET_SERVER_NAME_BUTTON>
+
+		<IDC_DIFFICULTY1>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+				<Bottom_Color>255,255,200,100</Bottom_Color>
+				<Top_Color>255,255,200,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_DIFFICULTY1>
+
+		<IDC_DIFFICULTY2>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+				<Bottom_Color>255,255,200,100</Bottom_Color>
+				<Top_Color>255,255,200,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_DIFFICULTY2>
+
+		<IDC_DIFFICULTY3>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+				<Bottom_Color>255,255,200,100</Bottom_Color>
+				<Top_Color>255,255,200,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_DIFFICULTY3>
+
+		<IDC_INTERNET_MAP_NAME_BUTTON>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+				<Bottom_Color>200,200,200,100</Bottom_Color>
+				<Top_Color>255,255,255,255</Top_Color>
+			<Emboss>Yes</Emboss>
+			<Outline>No</Outline>
+		</IDC_INTERNET_MAP_NAME_BUTTON>
+
+		<IDC_INTERNET_PING_BUTTON>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+				<Bottom_Color>200,200,200,100</Bottom_Color>
+				<Top_Color>255,255,255,255</Top_Color>
+			<Emboss>Yes</Emboss>
+			<Outline>No</Outline>
+		</IDC_INTERNET_PING_BUTTON>
+
+		<IDC_INTERNET_GAME_TYPE_BUTTON>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+				<Bottom_Color>200,200,200,100</Bottom_Color>
+				<Top_Color>255,255,255,255</Top_Color>
+			<Emboss>Yes</Emboss>
+			<Outline>No</Outline>
+		</IDC_INTERNET_GAME_TYPE_BUTTON>
+
+		<IDC_INTERNET_PLAYERS_BUTTON>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+				<Bottom_Color>200,200,200,100</Bottom_Color>
+				<Top_Color>255,255,255,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_INTERNET_PLAYERS_BUTTON>
+
+		<IDC_STATIC_DIFFICULTY_DESCRIPTION>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>6</Size>
+		<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>			
+		</IDC_STATIC_DIFFICULTY_DESCRIPTION>
+
+		<IDC_CAMPAIGN_DIR>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>11</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>			
+		</IDC_CAMPAIGN_DIR>
+
+		<IDC_CAMPAIGN_DIR2>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>18</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>			
+		</IDC_CAMPAIGN_DIR2>
+		
+		<IDC_CAMPAIGN_FACTION>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>14</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>			
+		</IDC_CAMPAIGN_FACTION>
+
+		<IDC_CAMPAIGN_FACTION2>
+			<Name>EmpireAtWar-Bold</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.3</Stretch_Factor>
+			<Size>14</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>			
+		</IDC_CAMPAIGN_FACTION2>
+
+		<IDD_SPACE_BATTLE_LOAD_DIALOG>
+			<L_Text>
+				<Name>EmpireAtWar-Medium</Name>
+				<Size>8</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+				<Emboss>No</Emboss>
+				<Outline>No</Outline>
+			</L_Text>
+		</IDD_SPACE_BATTLE_LOAD_DIALOG>
+		
+		<IDD_LAND_BATTLE_LOAD_DIALOG>
+			<L_Text>
+				<Name>EmpireAtWar-Medium</Name>
+				<Size>8</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+				<Emboss>No</Emboss>
+				<Outline>No</Outline>
+			</L_Text>
+		</IDD_LAND_BATTLE_LOAD_DIALOG>		
+		
+		<IDD_PLANET_QUICK_REFERENCE>
+			<L_Text>
+				<Name>EmpireAtWar-Medium</Name>
+				<Size>8</Size>
+				<Top_Color>195,171,2,255</Top_Color>
+				<Bottom_Color>229,177,159,255</Bottom_Color>
+				<Outline>No</Outline>
+			</L_Text>
+		</IDD_PLANET_QUICK_REFERENCE>
+		
+		<IDC_ESRB_WARNING>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>7</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_ESRB_WARNING>
+
+		<IDC_REMEMBER_PASSWORD>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+		<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_REMEMBER_PASSWORD>
+
+		<IDC_RADIO_ACTIVE>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+			<Bottom_Color>0,0,0,255</Bottom_Color>
+			<Top_Color>33,37,47,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_RADIO_ACTIVE>
+
+		<IDC_RADIO_COMPLETED>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+			<Bottom_Color>0,0,0,255</Bottom_Color>
+			<Top_Color>33,37,47,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_RADIO_COMPLETED>
+
+		<!-- Internet dialog buttons -->
+
+		<IDC_INTERNET_EXIT_BUTTON>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+				<Bottom_Color>253,248,212,255</Bottom_Color>
+				<Top_Color>253,248,212,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_INTERNET_EXIT_BUTTON>
+
+		<IDC_INTERNET_IGNORE_PLAYER_BUTTON>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+				<Bottom_Color>253,248,212,255</Bottom_Color>
+				<Top_Color>253,248,212,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_INTERNET_IGNORE_PLAYER_BUTTON>
+
+		<IDC_INTERNET_HOME_BUTTON>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+				<Bottom_Color>253,248,212,255</Bottom_Color>
+				<Top_Color>253,248,212,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_INTERNET_HOME_BUTTON>
+
+		<IDC_INTERNET_COMMUNITY_BUTTON>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+				<Bottom_Color>253,248,212,255</Bottom_Color>
+				<Top_Color>253,248,212,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_INTERNET_COMMUNITY_BUTTON>
+
+		<IDC_INTERNET_QUICK_MATCH_BUTTON>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+				<Bottom_Color>253,248,212,255</Bottom_Color>
+				<Top_Color>253,248,212,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_INTERNET_QUICK_MATCH_BUTTON>
+
+		<IDC_INTERNET_CUSTOM_MATCH_BUTTON>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>7</Size>
+				<Bottom_Color>253,248,212,255</Bottom_Color>
+				<Top_Color>253,248,212,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_INTERNET_CUSTOM_MATCH_BUTTON>
+
+		<IDC_INTERNET_PLAYER_PROFILE_BUTTON>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+				<Bottom_Color>253,248,212,255</Bottom_Color>
+				<Top_Color>253,248,212,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_INTERNET_PLAYER_PROFILE_BUTTON>
+
+		<IDC_INTERNET_OPTIONS_BUTTON>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+				<Bottom_Color>253,248,212,255</Bottom_Color>
+				<Top_Color>253,248,212,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_INTERNET_OPTIONS_BUTTON>
+
+		<IDC_INTERNET_BUDDIES_BUTTON>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+			<Bottom_Color>253,248,212,255</Bottom_Color>
+			<Top_Color>253,248,212,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_INTERNET_BUDDIES_BUTTON>
+
+		<IDC_INTERNET_HOME_TITLE>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>14</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_INTERNET_HOME_TITLE>
+
+		<IDC_INTERNET_HOST_GAME_BUTTON>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+				<Bottom_Color>253,248,212,255</Bottom_Color>
+				<Top_Color>253,248,212,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_INTERNET_HOST_GAME_BUTTON>
+		
+		<IDC_INTERNET_JOIN_GAME_BUTTON>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+				<Bottom_Color>253,248,212,255</Bottom_Color>
+				<Top_Color>253,248,212,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_INTERNET_JOIN_GAME_BUTTON>
+
+		<IDC_GAME_TYPE_DESCRIPTION_TEXT>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+		<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_GAME_TYPE_DESCRIPTION_TEXT>
+		
+		<IDC_SELECT_OFFICIAL_MAPS>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+			<Bottom_Color>253,248,212,255</Bottom_Color>
+			<Top_Color>253,248,212,255</Top_Color>
+			<Emboss>Yes</Emboss>
+			<Outline>No</Outline>
+		</IDC_SELECT_OFFICIAL_MAPS>
+		
+		<IDC_SELECT_CUSTOM_MAPS>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+			<Bottom_Color>253,248,212,255</Bottom_Color>
+			<Top_Color>253,248,212,255</Top_Color>
+			<Emboss>Yes</Emboss>
+			<Outline>No</Outline>
+		</IDC_SELECT_CUSTOM_MAPS>
+
+		<IDC_INTERNET_DIALOG_HEADER>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>14</Size>
+		<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_INTERNET_DIALOG_HEADER>
+
+		<IDC_SELECT_CLAN_DIALOG_HEADER>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>14</Size>
+		<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_SELECT_CLAN_DIALOG_HEADER>
+
+		<IDC_CAPTION>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>10</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_CAPTION>
+
+		
+		<!-- No room for EAW font in this location. ST - 10/7/2005 11:42AM -->
+		<IDC_GAME_OPTIONS_CLIENT_DISPLAY_RIGHT>
+			<Name>Arial Unicode MS</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>7</Size>
+		<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_GAME_OPTIONS_CLIENT_DISPLAY_RIGHT>
+
+		<!-- No room for EAW font in this location. ST - 10/7/2005 11:42AM -->
+		<IDC_GAME_OPTIONS_CLIENT_DISPLAY_LEFT>
+			<Name>Arial Unicode MS</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1</Stretch_Factor>
+			<Size>7</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_GAME_OPTIONS_CLIENT_DISPLAY_LEFT>
+
+		<IDC_DEBUG_LOAD_SKIRMISH_MAP_BUTTON>
+			<Name>EmpireAtWar-Medium</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>1.5</Stretch_Factor>
+			<Size>6</Size>
+			<Bottom_Color>253,248,212,255</Bottom_Color>
+			<Top_Color>253,248,212,255</Top_Color>
+			<Emboss>Yes</Emboss>
+			<Outline>No</Outline>
+		</IDC_DEBUG_LOAD_SKIRMISH_MAP_BUTTON>
+
+		<IDC_PLAYER_PROFILE_TEXT_BOX_RIGHT>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>7</Size>
+			<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PLAYER_PROFILE_TEXT_BOX_RIGHT>
+
+		<IDC_PLAYER_PROFILE_TEXT_BOX_LEFT>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>7</Size>
+		<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PLAYER_PROFILE_TEXT_BOX_LEFT>
+
+		<IDC_REFRESH_INFO_BUTTON>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+				<Bottom_Color>253,248,212,255</Bottom_Color>
+				<Top_Color>253,248,212,255</Top_Color>
+			<Emboss>Yes</Emboss>
+			<Outline>No</Outline>
+		</IDC_REFRESH_INFO_BUTTON>
+		
+		<IDC_UPNP_DETAILS_BUTTON>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>8</Size>
+				<Bottom_Color>253,248,212,255</Bottom_Color>
+				<Top_Color>253,248,212,255</Top_Color>
+			<Emboss>Yes</Emboss>
+			<Outline>No</Outline>
+		</IDC_UPNP_DETAILS_BUTTON>
+
+	<!-- Planet Summary Screen -->
+
+		<IDC_PLANET_REFERENCE_TITLE>
+			<Name>EmpireAtWar-Bold</Name>
+			<Size>11</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PLANET_REFERENCE_TITLE>
+
+		<IDC_PLANET_STATIC2>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PLANET_STATIC2>
+
+		<IDC_STATIC_SUMMARYB>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_STATIC_SUMMARYB>
+
+		<IDC_STATIC_SUMMARYA>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_STATIC_SUMMARYA>
+
+		<IDC_STATIC_SUMMARY0>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_STATIC_SUMMARY0>
+
+		<IDC_STATIC_SUMMARY1>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_STATIC_SUMMARY1>
+
+		<IDC_PLANETS>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PLANETS>
+
+		<IDC_UNITS_STATIC>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_UNITS_STATIC>
+
+		<IDC_PRODUCE_STATIC>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PRODUCE_STATIC>
+
+		<IDC_HEROS_STATIC>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>6</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_HEROS_STATIC>
+
+
+
+		<IDC_PLANET_NAME0>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PLANET_NAME0>
+
+		<IDC_PLANET_NAME1>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PLANET_NAME1>
+
+		<IDC_PLANET_NAME2>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PLANET_NAME2>
+
+		<IDC_PLANET_NAME3>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PLANET_NAME3>
+
+		<IDC_PLANET_NAME4>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PLANET_NAME4>
+
+		<IDC_PLANET_NAME5>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PLANET_NAME5>
+
+		<IDC_PLANET_NAME6>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PLANET_NAME6>
+
+		<IDC_PLANET_NAME7>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PLANET_NAME7>
+
+		<IDC_PLANET_NAME8>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PLANET_NAME8>
+
+		<IDC_PLANET_NAME9>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PLANET_NAME9>
+
+		<IDC_SS_LEVEL_STATIC0>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_SS_LEVEL_STATIC0>
+
+		<IDC_SS_LEVEL_STATIC1>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_SS_LEVEL_STATIC1>
+
+		<IDC_SS_LEVEL_STATIC2>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_SS_LEVEL_STATIC2>
+
+		<IDC_SS_LEVEL_STATIC3>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_SS_LEVEL_STATIC3>
+
+		<IDC_SS_LEVEL_STATIC4>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_SS_LEVEL_STATIC4>
+
+		<IDC_SS_LEVEL_STATIC5>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_SS_LEVEL_STATIC5>
+
+		<IDC_SS_LEVEL_STATIC6>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_SS_LEVEL_STATIC6>
+
+		<IDC_SS_LEVEL_STATIC7>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_SS_LEVEL_STATIC7>
+
+		<IDC_GB_LEVEL_STATIC0>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_GB_LEVEL_STATIC0>
+
+		<IDC_GB_LEVEL_STATIC1>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_GB_LEVEL_STATIC1>
+
+		<IDC_GB_LEVEL_STATIC2>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_GB_LEVEL_STATIC2>
+
+		<IDC_GB_LEVEL_STATIC3>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_GB_LEVEL_STATIC3>
+
+		<IDC_GB_LEVEL_STATIC4>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_GB_LEVEL_STATIC4>
+
+		<IDC_GB_LEVEL_STATIC5>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_GB_LEVEL_STATIC5>
+
+		<IDC_GB_LEVEL_STATIC6>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_GB_LEVEL_STATIC6>
+
+		<IDC_GB_LEVEL_STATIC7>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_GB_LEVEL_STATIC7>
+
+		<IDC_NUM_SU_STATIC0>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_NUM_SU_STATIC0>
+
+		<IDC_NUM_SU_STATIC1>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_NUM_SU_STATIC1>
+
+		<IDC_NUM_SU_STATIC2>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_NUM_SU_STATIC2>
+
+		<IDC_NUM_SU_STATIC3>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_NUM_SU_STATIC3>
+
+		<IDC_NUM_SU_STATIC4>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_NUM_SU_STATIC4>
+
+		<IDC_NUM_SU_STATIC5>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_NUM_SU_STATIC5>
+
+		<IDC_NUM_SU_STATIC6>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_NUM_SU_STATIC6>
+
+		<IDC_NUM_SU_STATIC7>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_NUM_SU_STATIC7>
+
+		<IDC_NUM_GU_STATIC0>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_NUM_GU_STATIC0>
+
+		<IDC_NUM_GU_STATIC1>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_NUM_GU_STATIC1>
+
+		<IDC_NUM_GU_STATIC2>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_NUM_GU_STATIC2>
+
+		<IDC_NUM_GU_STATIC3>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_NUM_GU_STATIC3>
+
+		<IDC_NUM_GU_STATIC4>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_NUM_GU_STATIC4>
+
+		<IDC_NUM_GU_STATIC5>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_NUM_GU_STATIC5>
+
+		<IDC_NUM_GU_STATIC6>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_NUM_GU_STATIC6>
+
+		<IDC_NUM_GU_STATIC7>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_NUM_GU_STATIC7>
+
+		<IDC_CREDIT_STATIC0>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>7</Size>
+			<Top_Color>255,245,129,255</Top_Color>
+			<Bottom_Color>231,221,211,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_CREDIT_STATIC0>
+
+		<IDC_CREDIT_STATIC1>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>7</Size>
+			<Top_Color>255,245,129,255</Top_Color>
+			<Bottom_Color>231,221,211,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_CREDIT_STATIC1>
+
+		<IDC_CREDIT_STATIC2>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>7</Size>
+			<Top_Color>255,245,129,255</Top_Color>
+			<Bottom_Color>231,221,211,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_CREDIT_STATIC2>
+
+		<IDC_CREDIT_STATIC3>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>7</Size>
+			<Top_Color>255,245,129,255</Top_Color>
+			<Bottom_Color>231,221,211,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_CREDIT_STATIC3>
+
+		<IDC_CREDIT_STATIC4>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>7</Size>
+			<Top_Color>255,245,129,255</Top_Color>
+			<Bottom_Color>231,221,211,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_CREDIT_STATIC4>
+
+		<IDC_CREDIT_STATIC5>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>7</Size>
+			<Top_Color>255,245,129,255</Top_Color>
+			<Bottom_Color>231,221,211,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_CREDIT_STATIC5>
+
+		<IDC_CREDIT_STATIC6>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>7</Size>
+			<Top_Color>255,245,129,255</Top_Color>
+			<Bottom_Color>231,221,211,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_CREDIT_STATIC6>
+
+		<IDC_CREDIT_STATIC7>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>7</Size>
+			<Top_Color>255,245,129,255</Top_Color>
+			<Bottom_Color>231,221,211,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_CREDIT_STATIC7>
+
+		<IDC_PER_SP_STATIC0>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PER_SP_STATIC0>
+
+		<IDC_PER_SP_STATIC1>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PER_SP_STATIC1>
+
+		<IDC_PER_SP_STATIC2>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PER_SP_STATIC2>
+
+		<IDC_PER_SP_STATIC3>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PER_SP_STATIC3>
+
+		<IDC_PER_SP_STATIC4>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PER_SP_STATIC4>
+
+		<IDC_PER_SP_STATIC5>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PER_SP_STATIC5>
+
+		<IDC_PER_SP_STATIC6>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PER_SP_STATIC6>
+
+		<IDC_PER_SP_STATIC7>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PER_SP_STATIC7>
+
+		<IDC_PER_GP_STATIC0>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PER_GP_STATIC0>
+
+		<IDC_PER_GP_STATIC1>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PER_GP_STATIC1>
+
+		<IDC_PER_GP_STATIC2>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PER_GP_STATIC2>
+
+		<IDC_PER_GP_STATIC3>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PER_GP_STATIC3>
+
+		<IDC_PER_GP_STATIC4>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PER_GP_STATIC4>
+
+		<IDC_PER_GP_STATIC5>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PER_GP_STATIC5>
+
+		<IDC_PER_GP_STATIC6>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PER_GP_STATIC6>
+
+		<IDC_PER_GP_STATIC7>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+			<Top_Color>211,230,251,255</Top_Color>
+			<Bottom_Color>211,230,251,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PER_GP_STATIC7>
+
+		<IDC_CAMPAIGN_DESCRIPTION>
+			<Name>EmpireAtWar-Medium</Name>
+			<Size>8</Size>
+		<!--<Top_Color>195,171,2,255</Top_Color>-->
+				<Top_Color>243,242,238,255</Top_Color>
+				<Bottom_Color>243,242,238,255</Bottom_Color>
+				<!--<Bottom_Color>195,171,2,255</Bottom_Color>-->
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_CAMPAIGN_DESCRIPTION>
+
+		<IDC_PLAYER_COLOR_0>
+			<Name>Arial Unicode MS</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>.25</Stretch_Factor>
+			<Size>35</Size>
+			<Bottom_Color>33,37,47,255</Bottom_Color>
+			<Top_Color>33,37,47,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PLAYER_COLOR_0>
+
+		<IDC_PLAYER_COLOR_1>
+			<Name>Arial Unicode MS</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>0.25</Stretch_Factor>
+			<Size>35</Size>
+			<Bottom_Color>33,37,47,255</Bottom_Color>
+			<Top_Color>33,37,47,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PLAYER_COLOR_1>
+
+		<IDC_PLAYER_COLOR_2>
+			<Name>Arial Unicode MS</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>0.25</Stretch_Factor>
+			<Size>35</Size>
+			<Bottom_Color>33,37,47,255</Bottom_Color>
+			<Top_Color>33,37,47,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PLAYER_COLOR_2>
+
+		<IDC_PLAYER_COLOR_3>
+			<Name>Arial Unicode MS</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>0.25</Stretch_Factor>
+			<Size>35</Size>
+			<Bottom_Color>33,37,47,255</Bottom_Color>
+			<Top_Color>33,37,47,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PLAYER_COLOR_3>
+
+		<IDC_PLAYER_COLOR_4>
+			<Name>Arial Unicode MS</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>0.25</Stretch_Factor>
+			<Size>35</Size>
+			<Bottom_Color>33,37,47,255</Bottom_Color>
+			<Top_Color>33,37,47,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PLAYER_COLOR_4>
+
+		<IDC_PLAYER_COLOR_5>
+			<Name>Arial Unicode MS</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>0.25</Stretch_Factor>
+			<Size>35</Size>
+			<Bottom_Color>33,37,47,255</Bottom_Color>
+			<Top_Color>33,37,47,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PLAYER_COLOR_5>
+
+		<IDC_PLAYER_COLOR_6>
+			<Name>Arial Unicode MS</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>0.25</Stretch_Factor>
+			<Size>35</Size>
+			<Bottom_Color>33,37,47,255</Bottom_Color>
+			<Top_Color>33,37,47,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PLAYER_COLOR_6>
+
+		<IDC_PLAYER_COLOR_7>
+			<Name>Arial Unicode MS</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>0.25</Stretch_Factor>
+			<Size>35</Size>
+			<Bottom_Color>33,37,47,255</Bottom_Color>
+			<Top_Color>33,37,47,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PLAYER_COLOR_7>
+
+		<IDC_PLAYER_COLOR_8>
+			<Name>Arial Unicode MS</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>0.25</Stretch_Factor>
+			<Size>35</Size>
+			<Bottom_Color>33,37,47,255</Bottom_Color>
+			<Top_Color>33,37,47,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_PLAYER_COLOR_8>
+
+		<IDC_LAN_COLOR_SELECT >
+            <Name>Arial Unicode MS</Name>
+			<Character_Padding>0</Character_Padding>
+			<Stretch_Factor>0.20</Stretch_Factor>
+			<Size>30</Size>
+			<Bottom_Color>33,37,47,255</Bottom_Color>
+			<Top_Color>33,37,47,255</Top_Color>
+			<Emboss>No</Emboss>
+			<Outline>No</Outline>
+		</IDC_LAN_COLOR_SELECT>
+
+        <IDC_STATIC_LOADING>
+            <Name>EmpireAtWar-Bold</Name>
+            <Size>8</Size>
+            <Top_Color>99,73,16,255</Top_Color>
+            <Bottom_Color>99,73,16,255</Bottom_Color>
+            <Emboss>No</Emboss>
+            <Outline>No</Outline>
+        </IDC_STATIC_LOADING>
+
+		<!-- Map preview image in MP staging dialogs -->
+		<IDC_IMAGE>
+			<Name>Arial Black</Name>
+			<Character_Padding>0</Character_Padding>
+			<Size>8</Size>
+			<Top_Color>255,255,255,255</Top_Color>
+			<Bottom_Color>255,255,255,255</Bottom_Color>
+			<Emboss>No</Emboss>
+			<Outline>Yes</Outline>
+		</IDC_IMAGE>
+
+	</Fonts>
+    <Tooltips>
+        <IDC_COMBAT_EFF_TIP>
+            <TextID>TEXT_COMBAT_EFF_TOOLTIP</TextID>
+        </IDC_COMBAT_EFF_TIP>
+    </Tooltips>
+</GUIDialogs>

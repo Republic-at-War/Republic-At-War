@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+
+
+<Freefall_Data>
+
+
+
+
+	<UniqueUnit Name="Freefall">
+		<Text_ID>TEXT_UNIT_FREEFALL</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_FREEFALL</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_PIRATE_MERCENARY </Encyclopedia_Unit_Class>
+	  <Encyclopedia_Good_Against> Vulture_Droid_Fighter Munificent_Frigate CIS_Carrier </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Hammer_Class_Picket Cis_Patrol_Frigate Malevolence</Encyclopedia_Vulnerable_To>
+		<!--<Icon_Name>i_button_freefall.tga</Icon_Name>-->
+		<Icon_Name>I_BUTTON_JINKINS.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Space_Model_Name>Nv_Freefall.ALO</Space_Model_Name>
+		<Scale_Factor>0.05</Scale_Factor> <!-- From 0.2 -->
+		<Select_Box_Scale>600</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-1</Select_Box_Z_Adjust>
+		<Mouse_Collide_Override_Sphere_Radius> 50.0 </Mouse_Collide_Override_Sphere_Radius>
+
+		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Mass>0.99</Mass>
+
+		<Max_Lift>3</Max_Lift>
+		<Max_Speed>4.8</Max_Speed>
+		<Min_Speed>3.5</Min_Speed>
+		<Max_Rate_Of_Turn>2.0</Max_Rate_Of_Turn>
+		<Max_Thrust>1.0</Max_Thrust>
+		<Max_Rate_Of_Roll>2.8</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>70</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>500.0</Begin_Turn_Towards_Distance>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.6</Hyperspace_Speed>
+		<Maintenance_Cost>0.1</Maintenance_Cost>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Shield_Points>800</Shield_Points> <!-- From 650 -->
+		<Tactical_Health>1800</Tactical_Health> <!-- From 800 -->
+		<Shield_Refresh_Rate>40</Shield_Refresh_Rate>
+		<Energy_Capacity>9999</Energy_Capacity>
+		<Energy_Refresh_Rate>9999</Energy_Refresh_Rate>
+		<Ship_Class>bomber</Ship_Class>
+		<Armor_Type> Armor_Hero_Transport </Armor_Type>
+    <Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+                
+		<Formation_Priority>2</Formation_Priority>
+		<Size_Value>8</Size_Value>
+		<Is_Escort>no</Is_Escort>
+		<Is_Bomber>yes</Is_Bomber>
+		<Damage>5</Damage>
+		<Squadron_Capacity>0</Squadron_Capacity>
+		<Number_per_Squadron>1</Number_per_Squadron>
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, UNIT_AI, DAMAGE_TRACKING, REVEAL, NEBULA </SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+		<Land_FOW_Reveal_Range>130.0</Land_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range>600.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>500.0</Targeting_Max_Attack_Distance>
+
+		<HardPoints>
+			HP_FREEFALL_LASER_00,
+			HP_FREEFALL_LASER_01,
+			HP_FREEFALL_TORP_00,
+			HP_FREEFALL_TORP_01
+		</HardPoints>
+
+   	<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Autoresolve_Health>350</Autoresolve_Health>
+		<Build_Cost_Credits>300</Build_Cost_Credits>
+		<Build_Time_Seconds>15</Build_Time_Seconds>
+		<Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+    
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Defender</SFXEvent_Build_Complete>
+		
+		<SFXEvent_Select>Unit_Select_Tie_Defender</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Tie_Defender</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Tie_Defender</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Tie_Defender</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Tie_Defender</SFXEvent_Guard>
+		<SFXEvent_Move_Into_Nebula> Unit_Nebula_Tie_Defender </SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_Laser_Tie_Defender </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_Missile_Tie_Defender </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_Torp_Tie_Defender </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_Ion_Tie_Defender </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_Shields_Tie_Defender </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_Engines_Tie_Defender </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Ambient_Moving> Unit_Freefall_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 10 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Freefall_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Death_SFXEvent_Start_Die>Unit_Y_Wing_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Death_Explosions>Small_Explosion_Space</Death_Explosions>
+		<Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
+
+		<Guard_Chase_Range>2000.0</Guard_Chase_Range> <!-- Added -->
+		<Idle_Chase_Range>1000.0</Idle_Chase_Range> <!-- Added -->
+				
+		<CategoryMask> Bomber | SpaceHero | AntiCapital</CategoryMask>
+		<Property_Flags> SmallShip </Property_Flags>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Air_Vehicle_Turret_Target> Yes </Air_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<Min_Speed_Fraction_For_Turn>0.6</Min_Speed_Fraction_For_Turn>
+		<Custom_Footprint_Radius> 15.0 </Custom_Footprint_Radius>
+		<MovementClass> Space </MovementClass>
+		<Out_Of_Combat_Defense_Adjustment>-1.0</Out_Of_Combat_Defense_Adjustment>
+		<Minimum_Follow_Distance>50.0</Minimum_Follow_Distance>
+		
+		<AI_Combat_Power>1500</AI_Combat_Power>
+		<Collision_Box_Modifier>2.0</Collision_Box_Modifier>
+		<Targeting_Priority_Set>Bomber</Targeting_Priority_Set>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		
+		<Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+		<Spin_Away_On_Death_Chance>0.2</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Time>2.0f</Spin_Away_On_Death_Time>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space</Spin_Away_On_Death_Explosion>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_Y_Wing_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<Strafe_Distance>500.0</Strafe_Distance>
+		
+			<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>3500</Tactical_Build_Cost_Multiplayer> <!-- From 1800 -->
+		<Tactical_Build_Time_Seconds>35</Tactical_Build_Time_Seconds> <!-- From 40 -->
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		
+		<Population_Value>1</Population_Value>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<GUI_Activated_Ability_Name> Freefall_Sensor_Jamming </GUI_Activated_Ability_Name> 
+				<Recharge_Seconds>35.0</Recharge_Seconds> 
+				<Expiration_Seconds>30.0</Expiration_Seconds>
+				<Effective_Radius>300.0</Effective_Radius> 
+         <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+			</Unit_Ability>
+			
+			<Unit_Ability>
+                <Type>BUZZ_DROIDS</Type>
+                <GUI_Activated_Ability_Name>Combat_Drones</GUI_Activated_Ability_Name> 
+                <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+                <Recharge_Seconds>80</Recharge_Seconds>
+                 <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_COMBAT_DRONES_NAME</Alternate_Name_Text>
+                <Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_COMABT_DRONES_DESCRIPTION</Alternate_Description_Text>
+                <Alternate_Icon_Name>I_SA_COMBAT_DRONES.tga</Alternate_Icon_Name>
+                <SFXEvent_Target_Ability/> 
+				<!-- Make this double the Chase_Radius in the special ability-->
+                <Area_Effect_Decal_Distance> 800.0 </Area_Effect_Decal_Distance>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+
+			<Sensor_Jamming_Ability Name="Freefall_Sensor_Jamming">
+				<Activation_Style> User_Input </Activation_Style>
+                <Owner_Particle_Effect>Sensor_Jamming_Effect_Skipray</Owner_Particle_Effect>
+                <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+			</Sensor_Jamming_Ability>
+			
+			 <Buzz_Droids_Ability Name="Combat_Drones">
+                <Activation_Style> User_Input </Activation_Style>
+                <Activation_Min_Range> 5 </Activation_Min_Range>
+                <Activation_Max_Range> 600 </Activation_Max_Range>
+				<!-- If you change Chase_Radius update Area_Effect_Decal_Distance in the unit ability -->
+                <Chase_Radius>2000</Chase_Radius>
+                <Damage_Radius> 500 </Damage_Radius>
+                <Enemy_Damage_Per_Second> 10 </Enemy_Damage_Per_Second> <!-- From 30 -->
+                <Own_Damage_Per_Second> 0.8 </Own_Damage_Per_Second>
+                <Activation_Time_In_Seconds> 1 </Activation_Time_In_Seconds>
+                <Activate_SFX/>
+                <Object_Type>Drones</Object_Type>
+                <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+            </Buzz_Droids_Ability>
+
+		</Abilities>
+
+	</UniqueUnit>
+
+
+	
+
+
+
+
+
+
+
+</Freefall_Data>

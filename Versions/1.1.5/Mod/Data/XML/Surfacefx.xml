@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- NOTE!!!!   The "name" of the SurfaceFX comes from SurfaceFXTriggerType.xml
+				To create a new SurfaceFX, first add new trigger in SurfaceFXTriggerType.xml, 
+				and then define it here. -->
+
+
+<SurfaceEffects>
+
+	<SurfaceFX name="Infantry_Terrain_Modifier">
+		
+		<Surface_Settings name="default">
+			<Dynamic_Track_Name>NONE</Dynamic_Track_Name>
+		</Surface_Settings>
+		
+		<Surface_Settings name="good_ground">
+			<Defense_Mod>0.5</Defense_Mod> <!-- 50% taken damage reduction -->
+			<Damage_Mod>1.0</Damage_Mod>	<!-- 100% caused damage increase -->
+         <Status_Icon_Name>i_surface_good.tga</Status_Icon_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="high_ground">
+			<FOW_Reveal_Range_Mod>0.25</FOW_Reveal_Range_Mod> <!-- 25% farther view -->
+			<Fire_Range_Mod>0.25</Fire_Range_Mod>	<!-- 25% farther shot range -->
+         <Status_Icon_Name>i_surface_high.tga</Status_Icon_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="slow_ground">
+         <Speed_Mod>-0.5</Speed_Mod>
+         <Status_Icon_Name>i_surface_slow.tga</Status_Icon_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="water">
+         <Speed_Mod>-0.5</Speed_Mod>
+         <Status_Icon_Name>i_surface_slow.tga</Status_Icon_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="mud">
+         <Speed_Mod>-0.5</Speed_Mod>
+         <Status_Icon_Name>i_surface_slow.tga</Status_Icon_Name>
+		</Surface_Settings>
+		
+		<Surface_Settings name="damage_ground">
+         <Terrain_Damage>10</Terrain_Damage>
+         <Terrain_Damage_Delay>1.0</Terrain_Damage_Delay>
+         <Status_Icon_Name>i_surface_damage.tga</Status_Icon_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="lava">
+         <Terrain_Damage>10</Terrain_Damage>
+         <Terrain_Damage_Delay>1.0</Terrain_Damage_Delay>
+         <Status_Icon_Name>i_surface_damage.tga</Status_Icon_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="infantry_ground">
+         <Status_Icon_Name>i_surface_infantry.tga</Status_Icon_Name>
+		</Surface_Settings>
+	</SurfaceFX>
+	
+
+	<SurfaceFX name="Vehicle_Terrain_Modifier">
+		
+		<Surface_Settings name="default">
+			<Dynamic_Track_Name>NONE</Dynamic_Track_Name>
+		</Surface_Settings>
+		
+		<Surface_Settings name="high_ground">
+			<FOW_Reveal_Range_Mod>0.25</FOW_Reveal_Range_Mod> <!-- 25% farther view -->
+			<Fire_Range_Mod>0.25</Fire_Range_Mod>	<!-- 25% farther shot range -->
+         <Status_Icon_Name>i_surface_high.tga</Status_Icon_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="slow_ground">
+         <Speed_Mod>-0.5</Speed_Mod>
+         <Status_Icon_Name>i_surface_slow.tga</Status_Icon_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="water">
+         <Speed_Mod>-0.5</Speed_Mod>
+         <Status_Icon_Name>i_surface_slow.tga</Status_Icon_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="mud">
+         <Speed_Mod>-0.5</Speed_Mod>
+         <Status_Icon_Name>i_surface_slow.tga</Status_Icon_Name>
+		</Surface_Settings>
+		
+		<Surface_Settings name="damage_ground">
+         <Terrain_Damage>10</Terrain_Damage>
+         <Terrain_Damage_Delay>1.0</Terrain_Damage_Delay>
+         <Status_Icon_Name>i_surface_damage.tga</Status_Icon_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="lava">
+         <Terrain_Damage>10</Terrain_Damage>
+         <Terrain_Damage_Delay>1.0</Terrain_Damage_Delay>
+         <Status_Icon_Name>i_surface_damage.tga</Status_Icon_Name>
+		</Surface_Settings>
+	</SurfaceFX>
+	
+
+	<SurfaceFX name="Infantry_Only_Ground">
+		
+		<Surface_Settings name="default">
+			<Dynamic_Track_Name>NONE</Dynamic_Track_Name>
+		</Surface_Settings>
+		
+		<Surface_Settings name="infantry_ground">
+         <Status_Icon_Name>i_surface_infantry.tga</Status_Icon_Name>
+		</Surface_Settings>
+   </SurfaceFX>
+
+	<SurfaceFX name="Good_Ground">
+		
+		<Surface_Settings name="default">
+			<Dynamic_Track_Name>NONE</Dynamic_Track_Name>
+		</Surface_Settings>
+		
+		
+		<Surface_Settings name="good_ground">
+			<Defense_Mod>0.5</Defense_Mod> <!-- 50% taken damage reduction -->
+			<Damage_Mod>1.0</Damage_Mod>	<!-- 100% caused damage increase -->
+         <Status_Icon_Name>i_surface_good.tga</Status_Icon_Name>
+		</Surface_Settings>
+   </SurfaceFX>
+
+	<SurfaceFX name="High_Ground">
+		
+		<Surface_Settings name="default">
+			<Dynamic_Track_Name>NONE</Dynamic_Track_Name>
+		</Surface_Settings>
+		
+		<Surface_Settings name="high_ground">
+			<FOW_Reveal_Range_Mod>0.25</FOW_Reveal_Range_Mod> <!-- 25% farther view -->
+			<Fire_Range_Mod>0.25</Fire_Range_Mod>	<!-- 25% farther shot range -->
+         <Status_Icon_Name>i_surface_high.tga</Status_Icon_Name>
+		</Surface_Settings>
+	</SurfaceFX>
+	
+
+	<SurfaceFX name="Slow_Ground">
+		
+		<Surface_Settings name="default">
+			<Dynamic_Track_Name>NONE</Dynamic_Track_Name>
+		</Surface_Settings>
+		
+		<Surface_Settings name="slow_ground">
+         <Speed_Mod>-0.5</Speed_Mod>
+         <Status_Icon_Name>i_surface_slow.tga</Status_Icon_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="water">
+         <Speed_Mod>-0.5</Speed_Mod>
+         <Status_Icon_Name>i_surface_slow.tga</Status_Icon_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="mud">
+         <Speed_Mod>-0.5</Speed_Mod>
+         <Status_Icon_Name>i_surface_slow.tga</Status_Icon_Name>
+		</Surface_Settings>
+	</SurfaceFX>
+	
+
+	<SurfaceFX name="Damage_Ground">
+		
+		<Surface_Settings name="default">
+			<Dynamic_Track_Name>NONE</Dynamic_Track_Name>
+		</Surface_Settings>
+		
+		<Surface_Settings name="damage_ground">
+         <Terrain_Damage>10</Terrain_Damage>
+         <Terrain_Damage_Delay>1.0</Terrain_Damage_Delay>
+         <Status_Icon_Name>i_surface_damage.tga</Status_Icon_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="lava">
+         <Terrain_Damage>10</Terrain_Damage>
+         <Terrain_Damage_Delay>1.0</Terrain_Damage_Delay>
+         <Status_Icon_Name>i_surface_damage.tga</Status_Icon_Name>
+		</Surface_Settings>
+	</SurfaceFX>
+	
+
+	<SurfaceFX name="Generic_Footprint">
+		<Surface_Settings name="default">
+			<Dynamic_Track_Name>Footprint_Bump</Dynamic_Track_Name>
+			</Surface_Settings>
+
+		<Surface_Settings name="concrete">
+			<Dynamic_Track_Name>NONE</Dynamic_Track_Name>
+			</Surface_Settings>
+
+		<Surface_Settings name="water">
+			<Particle_Name>Splash_Wake_Continuous</Particle_Name>
+			<Particle_Min_Energy>0.0</Particle_Min_Energy>	
+		</Surface_Settings>
+	</SurfaceFX>
+	
+	<SurfaceFX name="EXPLOSION_SCORCH_MARK_TINY">
+		<Surface_Settings name="default">
+			<Decal_Name>EXPLOSION_SCORCH_TINY</Decal_Name>
+			<SoundFX_Name>NONE</SoundFX_Name>
+		</Surface_Settings>
+		
+		<Surface_Settings name="water">
+			<Decal_Name>NONE</Decal_Name>
+			<SoundFX_Name>NONE</SoundFX_Name>
+		</Surface_Settings>
+	</SurfaceFX>
+
+	<SurfaceFX name="EXPLOSION_SCORCH_MARK_SMALL">
+		<Surface_Settings name="default">
+			<Decal_Name>EXPLOSION_SCORCH_SMALL</Decal_Name>
+			<SoundFX_Name>NONE</SoundFX_Name>
+		</Surface_Settings>
+		
+		<Surface_Settings name="water">
+			<Decal_Name>NONE</Decal_Name>
+			<SoundFX_Name>NONE</SoundFX_Name>
+		</Surface_Settings>
+		
+	</SurfaceFX>
+
+	<SurfaceFX name="EXPLOSION_SCORCH_MARK_MEDIUM">
+		<Surface_Settings name="default">
+			<Decal_Name>EXPLOSION_SCORCH_MED</Decal_Name>
+			<SoundFX_Name>NONE</SoundFX_Name>
+			
+			<Surface_Settings name="water">
+			<Decal_Name>NONE</Decal_Name>
+			<SoundFX_Name>NONE</SoundFX_Name>
+		</Surface_Settings>
+		
+		</Surface_Settings>
+	</SurfaceFX>
+
+	<SurfaceFX name="EXPLOSION_SCORCH_MARK_LARGE">
+		<Surface_Settings name="default">
+			<Decal_Name>EXPLOSION_SCORCH_LARGE</Decal_Name>
+			<SoundFX_Name>NONE</SoundFX_Name>
+			
+			<Surface_Settings name="water">
+			<Decal_Name>NONE</Decal_Name>
+			<SoundFX_Name>NONE</SoundFX_Name>
+		</Surface_Settings>
+		
+		</Surface_Settings>
+	</SurfaceFX>
+
+	<SurfaceFX name="EXPLOSION_SCORCH_MARK_HUGE">
+		<Surface_Settings name="default">
+			<Decal_Name>EXPLOSION_SCORCH_HUGE</Decal_Name>
+			<SoundFX_Name>NONE</SoundFX_Name>
+			
+			<Surface_Settings name="water">
+			<Decal_Name>NONE</Decal_Name>
+			<SoundFX_Name>NONE</SoundFX_Name>
+		</Surface_Settings>
+		
+		</Surface_Settings>
+	</SurfaceFX>
+
+	<SurfaceFX name="EXPLOSION_SCORCH_MARK_MASSIVE">
+		<Surface_Settings name="default">
+			<Decal_Name>EXPLOSION_SCORCH_MASSIVE</Decal_Name>
+			<SoundFX_Name>NONE</SoundFX_Name>
+			
+			<Surface_Settings name="water">
+			<Decal_Name>NONE</Decal_Name>
+			<SoundFX_Name>NONE</SoundFX_Name>
+		</Surface_Settings>
+		
+		</Surface_Settings>
+	</SurfaceFX>
+
+	<SurfaceFX name="EXPLOSION_SCORCH_MARK_MASSIVE_DARK">
+		<Surface_Settings name="default">
+			<Decal_Name>EXPLOSION_SCORCH_MASSIVE_DARK</Decal_Name>
+			<SoundFX_Name>NONE</SoundFX_Name>
+			
+			<Surface_Settings name="water">
+			<Decal_Name>NONE</Decal_Name>
+			<SoundFX_Name>NONE</SoundFX_Name>
+		</Surface_Settings>
+		
+		</Surface_Settings>
+	</SurfaceFX>
+
+
+
+
+	<SurfaceFX name="Generic_Track">
+		<Surface_Settings name="default">
+			<Dynamic_Track_Name>Track_Bump</Dynamic_Track_Name>
+			<Dynamic_Track_Left_Bone>Tread_L</Dynamic_Track_Left_Bone>
+			<Dynamic_Track_Right_Bone>Tread_R</Dynamic_Track_Right_Bone>
+		</Surface_Settings>
+
+		<Surface_Settings name="concrete">
+			<Dynamic_Track_Name>NONE</Dynamic_Track_Name>
+			<Dynamic_Track_Left_Bone>Tread_L</Dynamic_Track_Left_Bone>
+			<Dynamic_Track_Right_Bone>Tread_R</Dynamic_Track_Right_Bone>
+		</Surface_Settings>
+
+		<Surface_Settings name="water">
+			<Particle_Name>Splash_Wake</Particle_Name>
+			<Particle_Min_Energy>0.2</Particle_Min_Energy>	
+			<!-- MBL 01.03.2006 BUG FIX - Never start a position-based 3D SFX loop without killing it. We should avoid this altogether for now. -->
+			<!-- <SoundFX_Name> Unit_Tracked_Moving_Water_Engine_Loop </SoundFX_Name> -->
+		</Surface_Settings>
+	</SurfaceFX>
+
+	<SurfaceFX name="Generic_Track_Half">
+		<Surface_Settings name="default">
+			<Dynamic_Track_Name>Track_Bump_Half</Dynamic_Track_Name>
+			<Dynamic_Track_Left_Bone>Tread_L</Dynamic_Track_Left_Bone>
+			<Dynamic_Track_Right_Bone>Tread_R</Dynamic_Track_Right_Bone>
+		</Surface_Settings>
+
+		<Surface_Settings name="concrete">
+			<Dynamic_Track_Name>NONE</Dynamic_Track_Name>
+			<Dynamic_Track_Left_Bone>Tread_L</Dynamic_Track_Left_Bone>
+			<Dynamic_Track_Right_Bone>Tread_R</Dynamic_Track_Right_Bone>
+		</Surface_Settings>
+
+		<Surface_Settings name="water">
+			<Particle_Name>Splash_Wake</Particle_Name>
+			<Particle_Min_Energy>0.2</Particle_Min_Energy>	
+			<!-- MBL 01.03.2006 BUG FIX - Never start a position-based 3D SFX loop without killing it. We should avoid this altogether for now. -->
+			<!-- <SoundFX_Name> Unit_Tracked_Moving_Water_Engine_Loop </SoundFX_Name> -->
+		</Surface_Settings>
+	</SurfaceFX>
+	
+	
+
+	<SurfaceFX name="R2D2_Footprint">
+		<Surface_Settings name="default">
+			<Dynamic_Track_Name>R2D2_Tracks</Dynamic_Track_Name>
+			</Surface_Settings>
+
+		<Surface_Settings name="concrete">
+			<Dynamic_Track_Name>NONE</Dynamic_Track_Name>
+			</Surface_Settings>
+
+		<Surface_Settings name="water">
+			<Particle_Name>Splash_Wake_Continuous</Particle_Name>
+			<Particle_Min_Energy>0.0</Particle_Min_Energy>	
+		</Surface_Settings>
+	</SurfaceFX>
+
+
+	<SurfaceFX name="AT_AT_Footprint">
+		<Surface_Settings name="default">
+			<Particle_Name>AT_AT_FootPuff_Dirt</Particle_Name>	
+			<Decal_Name>AT_AT_Footprint_Dirt</Decal_Name>
+			<SoundFX_Name>Unit_Anim_AT_AT_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+		
+		<Surface_Settings name="dirt">
+			<Particle_Name>AT_AT_FootPuff_Dirt</Particle_Name>	
+			<Decal_Name>AT_AT_Footprint_Dirt</Decal_Name>
+			<SoundFX_Name>Unit_Anim_AT_AT_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="grass">
+			<Particle_Name>AT_AT_FootPuff_Grass</Particle_Name>	
+			<Decal_Name>AT_AT_Footprint_Grass</Decal_Name>
+			<SoundFX_Name>Unit_Anim_AT_AT_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+		
+		<Surface_Settings name="snow">
+			<Particle_Name>AT_AT_FootPuff_Snow</Particle_Name>	
+			<Decal_Name>AT_AT_Footprint_Snow</Decal_Name>
+			<SoundFX_Name>Unit_Anim_AT_AT_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+		
+		<Surface_Settings name="concrete">
+			<Particle_Name>AT_AT_FootPuff_Snow</Particle_Name>	
+			<Decal_Name>none</Decal_Name>
+			<SoundFX_Name>Unit_Anim_AT_AT_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+		
+		<Surface_Settings name="water">
+			<Particle_Name>AT_AT_FootPuff_Water</Particle_Name>	
+			<SoundFX_Name>Unit_Anim_AT_AT_Water_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+		
+	</SurfaceFX>
+
+	<SurfaceFX name="Rancor_Footprint">
+		<Surface_Settings name="default">
+			<Particle_Name>AT_AT_FootPuff_Dirt</Particle_Name>	
+			<Decal_Name>Rancor_Footprint_dirt</Decal_Name>
+			<SoundFX_Name>NONE</SoundFX_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="concrete">
+			<Particle_Name>AT_AT_FootPuff_Dirt</Particle_Name>
+			<Decal_Name>NONE</Decal_Name>	
+			<SoundFX_Name>NONE</SoundFX_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="water">
+			<Particle_Name>Splash_Wake</Particle_Name>
+			<Particle_Min_Energy>0.2</Particle_Min_Energy>	
+		</Surface_Settings>
+	</SurfaceFX>
+
+	<SurfaceFX name="ATAA_Footprint_Right">
+		<Surface_Settings name="default">
+			<Particle_Name>AT_AA_FootPuff_Default</Particle_Name>	
+			<Decal_Name>AT-AA_Footprint_dirt_right</Decal_Name>
+			<SoundFX_Name>Unit_Anim_SPMAT_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="concrete">
+			<Particle_Name>AT_AA_FootPuff_Default</Particle_Name>
+			<Decal_Name>NONE</Decal_Name>	
+			<SoundFX_Name>Unit_Anim_SPMAT_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="water">
+			<Particle_Name>Splash_Wake</Particle_Name>
+			<Particle_Min_Energy>0.2</Particle_Min_Energy>
+			<SoundFX_Name>Unit_Anim_SPMAT_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+	</SurfaceFX>
+
+	<SurfaceFX name="ATAA_Footprint_Left">
+		<Surface_Settings name="default">
+			<Particle_Name>AT_AA_FootPuff_Default</Particle_Name>	
+			<Decal_Name>AT-AA_Footprint_dirt_left</Decal_Name>
+			<SoundFX_Name>Unit_Anim_SPMAT_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="concrete">
+			<Particle_Name>AT_AA_FootPuff_Default</Particle_Name>
+			<Decal_Name>NONE</Decal_Name>	
+			<SoundFX_Name>Unit_Anim_SPMAT_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="water">
+			<Particle_Name>Splash_Wake</Particle_Name>
+			<Particle_Min_Energy>0.2</Particle_Min_Energy> 
+			<SoundFX_Name>Unit_Anim_SPMAT_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+	</SurfaceFX>
+
+	<SurfaceFX name="Pod_Walker_Footprint">
+		<Surface_Settings name="default">
+			<Particle_Name>AT_AA_FootPuff_Default</Particle_Name>	
+			<Decal_Name>Pod_Walker_Footprint_dirt</Decal_Name>
+			<SoundFX_Name>Unit_Anim_SPMAT_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="concrete">
+			<Particle_Name>AT_AA_FootPuff_Default</Particle_Name>
+			<Decal_Name>NONE</Decal_Name>	
+			<SoundFX_Name>Unit_Anim_SPMAT_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="water">
+			<Particle_Name>Splash_Wake</Particle_Name>
+			<Particle_Min_Energy>0.2</Particle_Min_Energy> 
+			<SoundFX_Name>Unit_Anim_SPMAT_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+	</SurfaceFX>
+
+	<SurfaceFX name="AT-ST_Footprint">
+		<Surface_Settings name="default">
+			<Particle_Name>AT_AA_FootPuff_Default</Particle_Name>	
+			<Decal_Name>AT-ST_Footprint_dirt</Decal_Name>
+			<SoundFX_Name>Unit_Anim_AT_ST_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="concrete">
+			<Particle_Name>AT_AA_FootPuff_Default</Particle_Name>
+			<Decal_Name>NONE</Decal_Name>	
+			<SoundFX_Name>Unit_Anim_AT_ST_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="water">
+			<Particle_Name>Splash_Wake</Particle_Name>
+			<Particle_Min_Energy>0.2</Particle_Min_Energy>
+			<SoundFX_Name>Unit_Anim_AT_ST_Water_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+	</SurfaceFX>
+
+  <SurfaceFX name="AT_RT_Footprint">
+		<Surface_Settings name="default">
+			<Particle_Name>AT_AA_FootPuff_Default</Particle_Name>	
+			<Decal_Name>AT-ST_Footprint_dirt</Decal_Name>
+			<SoundFX_Name>Unit_Anim_AT_ST_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="concrete">
+			<Particle_Name>AT_AA_FootPuff_Default</Particle_Name>
+			<Decal_Name>NONE</Decal_Name>	
+			<SoundFX_Name>Unit_Anim_AT_ST_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="water">
+			<Particle_Name>Splash_Wake</Particle_Name>
+			<Particle_Min_Energy>0.2</Particle_Min_Energy>
+			<SoundFX_Name>Unit_Anim_AT_ST_Water_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+	</SurfaceFX>
+
+<SurfaceFX name="AT_PT_Footprint">
+		<Surface_Settings name="default">
+			<Particle_Name>AT_AA_FootPuff_Default</Particle_Name>	
+			<Decal_Name>AT-ST_Footprint_dirt</Decal_Name>
+				<SoundFX_Name>Unit_Anim_SPMAT_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="concrete">
+			<Particle_Name>AT_AA_FootPuff_Default</Particle_Name>
+			<Decal_Name>NONE</Decal_Name>	
+				<SoundFX_Name>Unit_Anim_SPMAT_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="water">
+			<Particle_Name>Splash_Wake</Particle_Name>
+			<Particle_Min_Energy>0.2</Particle_Min_Energy>
+				<SoundFX_Name>Unit_Anim_SPMAT_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+	</SurfaceFX>
+ 
+
+	<SurfaceFX name="SPMAT_Footprint">
+		<Surface_Settings name="default">
+			<Particle_Name>AT_AA_FootPuff_Default</Particle_Name>	
+			<Decal_Name>SPMAT_Footprint_dirt</Decal_Name>
+			<SoundFX_Name>Unit_Anim_SPMAT_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="concrete">
+			<Particle_Name>AT_AA_FootPuff_Default</Particle_Name>
+			<Decal_Name>NONE</Decal_Name>	
+			<SoundFX_Name>Unit_Anim_SPMAT_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="water">
+			<Particle_Name>Splash_Wake</Particle_Name>
+			<Particle_Min_Energy>0.2</Particle_Min_Energy> 
+			<SoundFX_Name>Unit_Anim_SPMAT_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+	</SurfaceFX>
+
+	<SurfaceFX name="DYNAMIC_TRACK_DEFAULT">
+		<Surface_Settings name="default">
+		<Dynamic_Track_Name>Default</Dynamic_Track_Name>
+		</Surface_Settings>
+		
+		<Surface_Settings name="grass">
+		<Dynamic_Track_Name>Track_Grass</Dynamic_Track_Name>
+		</Surface_Settings>
+		
+		<Surface_Settings name="dirt">
+		<Dynamic_Track_Name>Track_Dirt</Dynamic_Track_Name>
+		</Surface_Settings>
+	</SurfaceFX>
+
+
+	<SurfaceFX name="DYNAMIC_TRACK_WITH_EMITTER">
+		<Surface_Settings name="default">
+		<Dynamic_Track_Name>Default</Dynamic_Track_Name>
+		<Particle_Name>Continuous_Test_Particle</Particle_Name>
+		<Attach_To_SurfaceFX_Mesh>True</Attach_To_SurfaceFX_Mesh>
+		</Surface_Settings>
+		
+		<Surface_Settings name="grass">
+		<Dynamic_Track_Name>Track_Grass</Dynamic_Track_Name>
+		</Surface_Settings>
+		
+		<Surface_Settings name="dirt">
+		<Dynamic_Track_Name>Track_Dirt</Dynamic_Track_Name>
+		</Surface_Settings>
+	</SurfaceFX>
+	
+
+	<SurfaceFX name="INFANTRY_FOOT_PLANT">
+		<Surface_Settings name="default">
+        <SoundFX_Name>Unit_Anim_Dirt_Infantry_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+			
+		<Surface_Settings name="snow">
+        <SoundFX_Name>Unit_Anim_Snow_Infantry_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+
+        <Surface_Settings name="grass">
+        <SoundFX_Name>Unit_Anim_Grass_Infantry_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+
+        <Surface_Settings name="dirt">
+        <SoundFX_Name>Unit_Anim_Dirt_Infantry_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+
+        <Surface_Settings name="water">
+        <SoundFX_Name>Unit_Anim_Water_Infantry_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+
+		
+		<Surface_Settings name="concrete">
+        <SoundFX_Name>Unit_Anim_Concrete_Infantry_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+	</SurfaceFX>
+
+	<SurfaceFX name="GENERIC_IMPACT">
+        <Surface_Settings name="default">
+        <SoundFX_Name>Unit_Anim_Infantry_Death_Dirt</SoundFX_Name>
+        </Surface_Settings>
+
+		<Surface_Settings name="snow">
+        <SoundFX_Name>Unit_Anim_Infantry_Death_Snow</SoundFX_Name>
+		</Surface_Settings>
+
+        <Surface_Settings name="grass">
+        <SoundFX_Name>Unit_Anim_Infantry_Death_Grass</SoundFX_Name>
+		</Surface_Settings>
+
+        <Surface_Settings name="dirt">
+        <SoundFX_Name>Unit_Anim_Infantry_Death_Dirt</SoundFX_Name>
+		</Surface_Settings>
+
+        <Surface_Settings name="water">
+        <SoundFX_Name>Unit_Anim_Infantry_Death_Water</SoundFX_Name>
+		</Surface_Settings>
+
+		
+		<Surface_Settings name="concrete">
+        <SoundFX_Name>Unit_Anim_Infantry_Death_Concrete</SoundFX_Name>
+		</Surface_Settings>
+	</SurfaceFX>
+
+	<SurfaceFX name="TROOPER_IMPACT">
+        <Surface_Settings name="default">
+        <SoundFX_Name>Unit_Anim_Infantry_Death_Dirt</SoundFX_Name>
+        </Surface_Settings>
+
+		<Surface_Settings name="snow">
+        <SoundFX_Name>Unit_Anim_Infantry_Death_Snow</SoundFX_Name>
+		</Surface_Settings>
+
+        <Surface_Settings name="grass">
+        <SoundFX_Name>Unit_Anim_Infantry_Death_Grass</SoundFX_Name>
+		</Surface_Settings>
+
+        <Surface_Settings name="dirt">
+        <SoundFX_Name>Unit_Anim_Infantry_Death_Dirt</SoundFX_Name>
+		</Surface_Settings>
+
+        <Surface_Settings name="water">
+        <SoundFX_Name>Unit_Anim_Infantry_Death_Water</SoundFX_Name>
+		</Surface_Settings>
+
+		
+		<Surface_Settings name="concrete">
+        <SoundFX_Name>Unit_Anim_Infantry_Death_Concrete</SoundFX_Name>
+		</Surface_Settings>
+	</SurfaceFX>
+
+	<SurfaceFX name="PROJECTILE">
+        <Surface_Settings name="default">
+		<Particle_Name>Projectile_Dirt_Collide</Particle_Name> 
+		<SoundFX_Name>Unit_Projectile_Vehicle_Ricochet</SoundFX_Name>
+        </Surface_Settings>
+
+		<Surface_Settings name="water">
+		<Particle_Name>Splash_Bullet</Particle_Name>	
+		</Surface_Settings>
+
+		<Surface_Settings name="lava">
+		<Particle_Name>Lava_Bubbles</Particle_Name>	
+		</Surface_Settings>
+
+		<Surface_Settings name="ice">
+		<Particle_Name>Splash_Wake_Ice</Particle_Name>	
+		</Surface_Settings>
+	</SurfaceFX>
+
+
+	<SurfaceFX name="PROJECTILE_INFANTRY">
+        <Surface_Settings name="default">
+		<Particle_Name>Projectile_Dirt_Collide</Particle_Name> 
+		<SoundFX_Name>Unit_Projectile_Infantry_Ricochet</SoundFX_Name>
+        </Surface_Settings>
+
+		<Surface_Settings name="water">
+		<Particle_Name>Splash_Bullet</Particle_Name>	
+		</Surface_Settings>
+
+		<Surface_Settings name="lava">
+		<Particle_Name>Lava_Bubbles</Particle_Name>	
+		</Surface_Settings>
+
+		<Surface_Settings name="ice">
+		<Particle_Name>Small_Explosion_Space_Empire</Particle_Name>	
+		</Surface_Settings>
+	</SurfaceFX>
+	
+		
+	<SurfaceFX name="Hover">
+		<Surface_Settings name="default">
+		<Particle_Name>Hover_Particles</Particle_Name>
+		<Particle_Min_Energy>0.2</Particle_Min_Energy>	
+  		</Surface_Settings>
+
+		<Surface_Settings name="water">
+		<Particle_Name>Splash_Wake</Particle_Name>
+		<Particle_Min_Energy>0.2</Particle_Min_Energy>	
+		</Surface_Settings>
+
+		<Surface_Settings name="lava">
+		<Particle_Name>Splash_Wake_Lava</Particle_Name>	
+		<Particle_Min_Energy>0.2</Particle_Min_Energy>	
+		</Surface_Settings>
+
+		<Surface_Settings name="ice">
+		<Particle_Name>Splash_Wake_Ice</Particle_Name>	
+		<Particle_Min_Energy>0.2</Particle_Min_Energy>	
+		</Surface_Settings>
+	</SurfaceFX>
+
+	<!-- THIS SURFACE FX DOES NOT DO ANYTHING.  PLEASE REMOVE IT. -->
+	<SurfaceFX name="Hover_No_Particles">
+		<Surface_Settings name="default">
+		<Particle_Name>NONE</Particle_Name>
+		<Particle_Min_Energy>0.2</Particle_Min_Energy>	
+  		</Surface_Settings>
+
+	</SurfaceFX>
+	
+	<SurfaceFX name="AT_TE_Footprint">
+		<Surface_Settings name="default">
+			<Particle_Name>AT_TE_FootPuff_Dirt</Particle_Name>	
+			<Decal_Name>AT_AT_Footprint_Dirt</Decal_Name>
+			<SoundFX_Name>Unit_Anim_AT_TE_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+		
+		<Surface_Settings name="dirt">
+			<Particle_Name>AT_AT_FootPuff_Dirt</Particle_Name>	
+			<Decal_Name>AT_AT_Footprint_Dirt</Decal_Name>
+			<SoundFX_Name>Unit_Anim_AT_TE_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+
+		<Surface_Settings name="grass">
+			<Particle_Name>AT_AT_FootPuff_Grass</Particle_Name>	
+			<Decal_Name>AT_AT_Footprint_Grass</Decal_Name>
+			<SoundFX_Name>Unit_Anim_AT_TE_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+		
+		<Surface_Settings name="snow">
+			<Particle_Name>AT_AT_FootPuff_Snow</Particle_Name>	
+			<Decal_Name>AT_AT_Footprint_Snow</Decal_Name>
+			<SoundFX_Name>Unit_Anim_AT_TE_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+		
+		<Surface_Settings name="concrete">
+			<Particle_Name>AT_AT_FootPuff_Snow</Particle_Name>	
+			<Decal_Name>none</Decal_Name>
+			<SoundFX_Name>Unit_Anim_AT_TE_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+		
+		<Surface_Settings name="water">
+			<Particle_Name>AT_AT_FootPuff_Water</Particle_Name>	
+			<SoundFX_Name>Unit_Anim_AT_AT_Water_Foot_Plant</SoundFX_Name>
+		</Surface_Settings>
+		
+	</SurfaceFX>
+
+</SurfaceEffects>
+

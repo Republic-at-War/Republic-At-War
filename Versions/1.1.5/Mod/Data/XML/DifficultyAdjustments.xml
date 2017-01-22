@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<Difficulty_Adjustments>
+
+	<Difficulty_Adjustment Name="Easy_Default">
+		<Credit_Multiplier>2.0</Credit_Multiplier> <!-- From 3 -->
+		<Galactic_AI_Contrast_Multiplier>1.0</Galactic_AI_Contrast_Multiplier> <!-- From 1.15 -->
+		<Space_AI_Contrast_Multiplier>1.0</Space_AI_Contrast_Multiplier> <!-- From 1.15 -->
+		<Land_AI_Contrast_Multiplier>1.0</Land_AI_Contrast_Multiplier> <!-- From 1.15 -->
+		<Galactic_Build_Time_Multiplier>0.6</Galactic_Build_Time_Multiplier>
+		<Space_Build_Time_Multiplier>0.9</Space_Build_Time_Multiplier>
+		<Land_Build_Time_Multiplier>0.9</Land_Build_Time_Multiplier>
+		<Damage_Multiplier>1.0</Damage_Multiplier>
+		<Health_Multiplier>1.0</Health_Multiplier>
+		<Shield_Multiplier>1.0</Shield_Multiplier>
+		<Galactic_AI_Goal_Cycle_Sleep_Duration>0.0</Galactic_AI_Goal_Cycle_Sleep_Duration>
+		<Space_AI_Goal_Cycle_Sleep_Duration>15.0</Space_AI_Goal_Cycle_Sleep_Duration>
+		<Land_AI_Goal_Cycle_Sleep_Duration>15.0</Land_AI_Goal_Cycle_Sleep_Duration>
+		<Bribe_Cost_Multiplier>0.25</Bribe_Cost_Multiplier>
+	</Difficulty_Adjustment>
+	
+	<Difficulty_Adjustment Name="Normal_Default">
+		<Credit_Multiplier>4.0</Credit_Multiplier> <!-- From 6 -->
+		<Galactic_AI_Contrast_Multiplier>1.15</Galactic_AI_Contrast_Multiplier>
+		<Space_AI_Contrast_Multiplier>1.15</Space_AI_Contrast_Multiplier>
+		<Land_AI_Contrast_Multiplier>1.15</Land_AI_Contrast_Multiplier>
+		<Galactic_Build_Time_Multiplier>0.6</Galactic_Build_Time_Multiplier>
+		<Space_Build_Time_Multiplier>0.9</Space_Build_Time_Multiplier>
+		<Land_Build_Time_Multiplier>0.9</Land_Build_Time_Multiplier>
+		<Damage_Multiplier>1.0</Damage_Multiplier>
+		<Health_Multiplier>1.0</Health_Multiplier>
+		<Shield_Multiplier>1.0</Shield_Multiplier>
+		<Galactic_AI_Goal_Cycle_Sleep_Duration>0.0</Galactic_AI_Goal_Cycle_Sleep_Duration>
+		<Space_AI_Goal_Cycle_Sleep_Duration>0.0</Space_AI_Goal_Cycle_Sleep_Duration>
+		<Land_AI_Goal_Cycle_Sleep_Duration>0.0</Land_AI_Goal_Cycle_Sleep_Duration>
+		<Bribe_Cost_Multiplier>0.25</Bribe_Cost_Multiplier>
+	</Difficulty_Adjustment>
+	
+	<Difficulty_Adjustment Name="Hard_Default">
+		<Credit_Multiplier>5.0</Credit_Multiplier> <!-- From 10 -->
+		<Galactic_AI_Contrast_Multiplier>1.65</Galactic_AI_Contrast_Multiplier>
+		<Space_AI_Contrast_Multiplier>1.50</Space_AI_Contrast_Multiplier>
+		<Land_AI_Contrast_Multiplier>1.50</Land_AI_Contrast_Multiplier>
+		<Galactic_Build_Time_Multiplier>0.6</Galactic_Build_Time_Multiplier>
+		<Space_Build_Time_Multiplier>0.9</Space_Build_Time_Multiplier>
+		<Land_Build_Time_Multiplier>0.9</Land_Build_Time_Multiplier>
+		<Damage_Multiplier>1.2</Damage_Multiplier> <!-- From 1.4 -->
+		<Health_Multiplier>1.0</Health_Multiplier>
+		<Shield_Multiplier>1.0</Shield_Multiplier>
+		<Galactic_AI_Goal_Cycle_Sleep_Duration>0.0</Galactic_AI_Goal_Cycle_Sleep_Duration>
+		<Space_AI_Goal_Cycle_Sleep_Duration>0.0</Space_AI_Goal_Cycle_Sleep_Duration>
+		<Land_AI_Goal_Cycle_Sleep_Duration>0.0</Land_AI_Goal_Cycle_Sleep_Duration>
+		<Bribe_Cost_Multiplier>0.25</Bribe_Cost_Multiplier>
+	</Difficulty_Adjustment>		
+
+</Difficulty_Adjustments>

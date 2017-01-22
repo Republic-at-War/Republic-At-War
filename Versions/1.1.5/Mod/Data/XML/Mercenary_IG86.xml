@@ -1,0 +1,523 @@
+<?xml version="1.0"?>
+<IG86_Files>
+
+
+	<!-- MAIN IG-86 -->
+
+
+	<GroundInfantry Name="IG-86">
+		<LOD_Bias>5</LOD_Bias>
+		<Text_ID>TEXT_UNIT_IG86</Text_ID>
+		<Encyclopedia_Good_Against> Clone_Trooper_P1 Battledroids </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Destroyer_Droid AT_PT UC_Rebel_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text> TEXT_TOOLTIP_IG86 </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DROID </Encyclopedia_Unit_Class>
+		<Land_Model_Name>NI_IG86.alo</Land_Model_Name>
+		<Icon_Name>I_BUTTON_IG86.tga</Icon_Name>
+		<Scale_Factor>1.7</Scale_Factor>
+
+		<GalacticBehavior> SELECTABLE  </GalacticBehavior>
+		<LandBehavior> SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, UNIT_AI, GARRISON_UNIT, ABILITY_COUNTDOWN,ION_STUN_EFFECT, STUNNABLE </LandBehavior>
+
+		<Uses_Multiple_Locomotors> Yes </Uses_Multiple_Locomotors>
+		<Hover_Offset>16.0</Hover_Offset>
+		<Primary_Locomotor_Name>WALK_LOCOMOTOR</Primary_Locomotor_Name>
+
+		<Garrison_Category> Infantry </Garrison_Category>
+		<SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<CanCellStack>yes</CanCellStack>
+		<Mass>1.0</Mass>
+		<GUI_Bracket_Width>5</GUI_Bracket_Width>
+		<GUI_Bracket_Height>0</GUI_Bracket_Height>
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+		<Movement_Animation_Speed> 0.8 </Movement_Animation_Speed>
+		<Max_Speed> 1 </Max_Speed>
+		<Alternate_Max_Speed> 2.5 </Alternate_Max_Speed>
+		<Max_Rate_Of_Turn> 20.0 </Max_Rate_Of_Turn>
+		<Alternate_Max_Rate_Of_Turn> 6.0 </Alternate_Max_Rate_Of_Turn>
+		<Custom_Soft_Footprint_Radius> 6.5 </Custom_Soft_Footprint_Radius>
+		<Custom_Hard_XExtent> 5.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 5.0 </Custom_Hard_YExtent>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing>
+		<MinimumPushReturnDistance> 10 </MinimumPushReturnDistance>
+		<Min_Speed> .1 </Min_Speed>
+		<OverrideAcceleration> .1 </OverrideAcceleration>
+		<OverrideDeceleration> .1 </OverrideDeceleration>
+		<Max_Lift> .6 </Max_Lift>
+		
+		<Type>Walk</Type>
+		<Deploys>No</Deploys>
+		<Affiliation>Rebel</Affiliation>
+		<Size_Value>10</Size_Value>
+		<Sensor_Range>20</Sensor_Range>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>200</Tactical_Health>
+				
+		<Autoresolve_Health>200</Autoresolve_Health>
+		<Damage>60</Damage>
+		<Stealth_Capable>No</Stealth_Capable>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Armor_Type> Armor_Hero </Armor_Type>
+
+		<Projectile_Types>Proj_Hand_Pulse_Cannon_IG86</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>4</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+
+		<Land_FOW_Reveal_Range>250.0</Land_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+		<Targeting_Max_Attack_Distance>200.0</Targeting_Max_Attack_Distance>
+		<Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+
+		<Targeting_Fire_Inaccuracy> Infantry, 10.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 10.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 10.0 </Targeting_Fire_Inaccuracy>
+		
+		<Death_Explosions>Small_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_AT_ST_Death_SFX</Death_SFXEvent_Start_Die>
+        <Remove_Upon_Death>true</Remove_Upon_Death>
+		
+		<SFXEvent_Select>Unit_Select_IG88</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_IG88</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_IG88</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_IG88</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_IG88</SFXEvent_Guard>
+		<SFXEvent_Fire>Unit_Storm_Trooper_Fire</SFXEvent_Fire>
+		<SFXEvent_Group_Move>Unit_Group_Move_IG88</SFXEvent_Group_Move>
+		<SFXEvent_Group_Attack>Unit_Group_Attack_IG88</SFXEvent_Group_Attack>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_IG88 </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_IG88 </SFXEvent_Health_Critical_Warning>
+		
+
+		<CategoryMask> LandHero | SpaceHero </CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+		<MovementClass>Infantry</MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+		<Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+		
+		<Lua_Script>ObjectScript_IG88</Lua_Script>
+		
+		<Select_Box_Scale>27</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+	
+
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<AI_Combat_Power>500</AI_Combat_Power>
+		<Idle_Chase_Range>100.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		
+		
+
+		<Occlusion_Silhouette_Enabled>0</Occlusion_Silhouette_Enabled>
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
+		<Target_Stealth_Units>Yes</Target_Stealth_Units>
+		
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+
+        	<Unit_Ability>
+				<Type>STICKY_BOMB</Type>
+				<Recharge_Seconds>30.0f </Recharge_Seconds>
+				<GUI_Activated_Ability_Name> IG86_Grenade_Attack </GUI_Activated_Ability_Name>
+			</Unit_Ability>
+		
+
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+					
+			<Redirect_Blaster_Ability Name="IG86_Redirect_Blaster">
+				<Initially_Enabled> Yes </Initially_Enabled>		
+				<Activation_Style>Take_Damage</Activation_Style>
+				<!-- Redirection chance is rolled first. If failed, we roll block chance. If failed, we take the damage. -->
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.20</Block_Chance>
+				<Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 10.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<!-- We can block/redirect shots from the following units types: -->
+				<Applicable_Unit_Categories>Infantry | LandHero | Vehicle | Air | Structure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+						
+			<Grenade_Attack_Ability Name="IG86_Grenade_Attack"> 
+				<Activation_Style> User_Input </Activation_Style> <!-- Was Special_Attack -->
+				<!-- We need to be within this distance of the clicked target to consider throwing the grenade -->
+				<Activation_Min_Range>5.0</Activation_Min_Range>
+				<Activation_Max_Range>75.0</Activation_Max_Range>
+				<Requires_Direct_Player_Command> No </Requires_Direct_Player_Command> <!-- Was NO -->
+				<Grenade_Type>Proj_Sticky_Bomb</Grenade_Type>
+				<Grenade_Toss_Anim>BOMBTOSS</Grenade_Toss_Anim>
+				<Grenade_Spawn_Frame>12.0</Grenade_Spawn_Frame>
+				<Grenade_Spawn_Bone>MuzzleA_01</Grenade_Spawn_Bone>
+				<Grenade_Explode_Timer_In_Secs>8.0</Grenade_Explode_Timer_In_Secs>
+				<!-- Percentage chance to activate given a certain number of valid targets in range. -->
+				<!-- First number in the pair is the number of valid targets, second is the chance to activate. -->
+				<Activation_Chance>0,0.0, 1,1.0, 5,1.0, 500,1.0</Activation_Chance>
+				<!-- We only consider the following unit types "valid targets": -->
+				<Applicable_Unit_Categories>Vehicle | Structure</Applicable_Unit_Categories>
+				<!-- <Applicable_Unit_Types /> -->
+			</Grenade_Attack_Ability>
+	
+
+		</Abilities>
+		
+	</GroundInfantry>
+	
+	 <GroundInfantry Name="Spawned_IG86">
+		<Variant_Of_Existing_Type>IG-86</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_IG86</Text_ID>
+		<GalacticBehavior> SELECTABLE  </GalacticBehavior>
+		<LandBehavior> SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, UNIT_AI, GARRISON_UNIT, ABILITY_COUNTDOWN,ION_STUN_EFFECT, STUNNABLE </LandBehavior>
+		<Victory_Relevant>no</Victory_Relevant>
+		<Is_Squashable> Yes </Is_Squashable>
+		<Space_Layer> None </Space_Layer>
+			</GroundInfantry>
+	
+
+<GroundInfantry Name="IG-86_Rep">
+		<LOD_Bias>5</LOD_Bias>
+		<Text_ID>TEXT_UNIT_IG86</Text_ID>
+		<Encyclopedia_Good_Against> Clone_Trooper_P1 Battledroids </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Destroyer_Droid AT_PT UC_Rebel_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text> TEXT_TOOLTIP_IG86 </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DROID </Encyclopedia_Unit_Class>
+		<Land_Model_Name>NI_IG86.alo</Land_Model_Name>
+		<Icon_Name>I_BUTTON_IG86.tga</Icon_Name>
+		<Scale_Factor>1.7</Scale_Factor>
+
+		<GalacticBehavior> SELECTABLE  </GalacticBehavior>
+		<LandBehavior> SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, UNIT_AI, GARRISON_UNIT, ABILITY_COUNTDOWN,ION_STUN_EFFECT, STUNNABLE </LandBehavior>
+
+		<Uses_Multiple_Locomotors> Yes </Uses_Multiple_Locomotors>
+		<Hover_Offset>16.0</Hover_Offset>
+		<Primary_Locomotor_Name>WALK_LOCOMOTOR</Primary_Locomotor_Name>
+
+		<Garrison_Category> Infantry </Garrison_Category>
+		<SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<CanCellStack>yes</CanCellStack>
+		<Mass>1.0</Mass>
+		<GUI_Bracket_Width>5</GUI_Bracket_Width>
+		<GUI_Bracket_Height>0</GUI_Bracket_Height>
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+		<Movement_Animation_Speed> 0.8 </Movement_Animation_Speed>
+		<Max_Speed> 1 </Max_Speed>
+		<Alternate_Max_Speed> 2.5 </Alternate_Max_Speed>
+		<Max_Rate_Of_Turn> 20.0 </Max_Rate_Of_Turn>
+		<Alternate_Max_Rate_Of_Turn> 6.0 </Alternate_Max_Rate_Of_Turn>
+		<Custom_Soft_Footprint_Radius> 6.5 </Custom_Soft_Footprint_Radius>
+		<Custom_Hard_XExtent> 5.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 5.0 </Custom_Hard_YExtent>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .5 </FormationSpacing>
+		<MinimumPushReturnDistance> 10 </MinimumPushReturnDistance>
+		<Min_Speed> .1 </Min_Speed>
+		<OverrideAcceleration> .1 </OverrideAcceleration>
+		<OverrideDeceleration> .1 </OverrideDeceleration>
+		<Max_Lift> .6 </Max_Lift>
+		
+		<Type>Walk</Type>
+		<Deploys>No</Deploys>
+		<Affiliation>Empire</Affiliation>
+		<Size_Value>10</Size_Value>
+		<Sensor_Range>20</Sensor_Range>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>200</Tactical_Health>
+				
+		<Autoresolve_Health>200</Autoresolve_Health>
+		<Damage>60</Damage>
+		<Stealth_Capable>No</Stealth_Capable>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Armor_Type> Armor_Hero </Armor_Type>
+
+		<Projectile_Types>Proj_Hand_Pulse_Cannon_IG86</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>4</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+
+		<Land_FOW_Reveal_Range>250.0</Land_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+		<Targeting_Max_Attack_Distance>200.0</Targeting_Max_Attack_Distance>
+		<Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+
+		<Targeting_Fire_Inaccuracy> Infantry, 10.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 10.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 10.0 </Targeting_Fire_Inaccuracy>
+		
+		<Death_Explosions>Small_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_AT_ST_Death_SFX</Death_SFXEvent_Start_Die>
+        <Remove_Upon_Death>true</Remove_Upon_Death>
+		
+		<SFXEvent_Select>Unit_Select_IG88</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_IG88</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_IG88</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_IG88</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_IG88</SFXEvent_Guard>
+		<SFXEvent_Fire>Unit_Storm_Trooper_Fire</SFXEvent_Fire>
+		<SFXEvent_Group_Move>Unit_Group_Move_IG88</SFXEvent_Group_Move>
+		<SFXEvent_Group_Attack>Unit_Group_Attack_IG88</SFXEvent_Group_Attack>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_IG88 </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_IG88 </SFXEvent_Health_Critical_Warning>
+		
+
+		<CategoryMask> LandHero | SpaceHero </CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+		<MovementClass>Infantry</MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+		<Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+		
+		<Lua_Script>ObjectScript_IG88</Lua_Script>
+		
+		<Select_Box_Scale>27</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+	
+
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<AI_Combat_Power>500</AI_Combat_Power>
+		<Idle_Chase_Range>100.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+		
+		
+
+		<Occlusion_Silhouette_Enabled>0</Occlusion_Silhouette_Enabled>
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
+		<Target_Stealth_Units>Yes</Target_Stealth_Units>
+		
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+
+        	<Unit_Ability>
+				<Type>STICKY_BOMB</Type>
+				<Recharge_Seconds>30.0f </Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Infiltrator_Grenade_Attack </GUI_Activated_Ability_Name>
+			</Unit_Ability>
+		
+
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+					
+			<Redirect_Blaster_Ability Name="IG86_Redirect_Blaster">
+				<Initially_Enabled> Yes </Initially_Enabled>		
+				<Activation_Style>Take_Damage</Activation_Style>
+				<!-- Redirection chance is rolled first. If failed, we roll block chance. If failed, we take the damage. -->
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.20</Block_Chance>
+				<Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 10.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<!-- We can block/redirect shots from the following units types: -->
+				<Applicable_Unit_Categories>Infantry | LandHero | Vehicle | Air | Structure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+			
+			<Grenade_Attack_Ability Name="IG86_Grenade_Attack"> 
+				<Activation_Style> User_Input </Activation_Style> <!-- Was Special_Attack -->
+				<!-- We need to be within this distance of the clicked target to consider throwing the grenade -->
+				<Activation_Min_Range>5.0</Activation_Min_Range>
+				<Activation_Max_Range>75.0</Activation_Max_Range>
+				<Requires_Direct_Player_Command> No </Requires_Direct_Player_Command> <!-- Was NO -->
+				<Grenade_Type>Proj_Sticky_Bomb</Grenade_Type>
+				<Grenade_Toss_Anim>BOMBTOSS</Grenade_Toss_Anim>
+				<Grenade_Spawn_Frame>12.0</Grenade_Spawn_Frame>
+				<Grenade_Spawn_Bone>MuzzleA_01</Grenade_Spawn_Bone>
+				<Grenade_Explode_Timer_In_Secs>8.0</Grenade_Explode_Timer_In_Secs>
+				<!-- Percentage chance to activate given a certain number of valid targets in range. -->
+				<!-- First number in the pair is the number of valid targets, second is the chance to activate. -->
+				<Activation_Chance>0,0.0, 1,1.0, 5,1.0, 500,1.0</Activation_Chance>
+				<!-- We only consider the following unit types "valid targets": -->
+				<Applicable_Unit_Categories>Vehicle | Structure</Applicable_Unit_Categories>
+				<!-- <Applicable_Unit_Types /> -->
+			</Grenade_Attack_Ability>
+
+		</Abilities>
+		
+	</GroundInfantry>
+
+	
+
+
+
+	<GroundCompany Name="IG86_Squad">
+		<LOD_Bias>5</LOD_Bias>
+		<Text_ID>TEXT_UNIT_IG86</Text_ID>
+		<Encyclopedia_Good_Against> Clone_Trooper_P1 Battledroids </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Destroyer_Droid AT_PT UC_Rebel_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text> TEXT_TOOLTIP_IG86 </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DROID </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_IG86.tga</Icon_Name>
+		
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>80</Damage>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>3</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>Skirmish_Ground_Cis_Droid_Center</Required_Special_Structures>
+		<Required_Planets />
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+			
+		<Company_Transport_Unit>Merc_Infantry_Droid_Shuttle</Company_Transport_Unit>
+    <Max_Squad_Size> 2 </Max_Squad_Size>
+		<Company_Units>IG-86, IG-86</Company_Units> <!-- From 4 to 2 -->
+		
+		<Is_Stealth_Company>Yes</Is_Stealth_Company>
+		<Available_In_Skirmish>yes</Available_In_Skirmish>
+		<Can_Be_Only_One>true</Can_Be_Only_One>
+
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
+		<CategoryMask> LandHero | SpaceHero </CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+		<Population_Value>1</Population_Value>
+
+		<SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_IG88</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Select_IG88</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_IG88</SFXEvent_Fleet_Move>
+		
+			<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>450</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>8</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>--> 
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+		
+		 	<Unit_Ability>
+				<Type>STICKY_BOMB</Type>
+				<Recharge_Seconds>30.0f </Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Infiltrator_Grenade_Attack </GUI_Activated_Ability_Name>
+			</Unit_Ability>
+		
+		</Unit_Abilities_Data>
+		
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+
+
+
+	</GroundCompany>
+
+
+	
+
+
+<GroundCompany Name="IG86_Squad_Rep">
+		<LOD_Bias>5</LOD_Bias>
+		<Text_ID>TEXT_UNIT_IG86</Text_ID>
+		<Encyclopedia_Good_Against> Clone_Trooper_P1 Battledroids </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Destroyer_Droid AT_PT UC_Rebel_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text> TEXT_TOOLTIP_IG86 </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DROID </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_IG86.tga</Icon_Name>
+		
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>80</Damage>
+		<Affiliation>Empire</Affiliation>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>3</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>Skirmish_Ground_Republic_Merc_Hq</Required_Special_Structures>
+		<Required_Planets />
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+			
+		<Company_Transport_Unit>Merc_Infantry_Droid_Shuttle_Rep</Company_Transport_Unit>
+    <Max_Squad_Size> 1 </Max_Squad_Size>
+		<Company_Units>IG-86, IG-86</Company_Units> <!-- From 4 to 2 -->
+		
+		<Is_Stealth_Company>Yes</Is_Stealth_Company>
+		<Available_In_Skirmish>yes</Available_In_Skirmish>
+		<Can_Be_Only_One>true</Can_Be_Only_One>
+
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
+		<CategoryMask> LandHero | SpaceHero </CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+		<Population_Value>1</Population_Value>
+
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_IG88</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Select_IG88</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_IG88</SFXEvent_Fleet_Move>
+		
+			<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>450</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>8</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>--> 
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+		
+		 	<Unit_Ability>
+				<Type>STICKY_BOMB</Type>
+				<Recharge_Seconds>30.0f </Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Infiltrator_Grenade_Attack </GUI_Activated_Ability_Name>
+			</Unit_Ability>
+		
+		</Unit_Abilities_Data>
+		
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+
+
+
+	</GroundCompany>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</IG86_Files>

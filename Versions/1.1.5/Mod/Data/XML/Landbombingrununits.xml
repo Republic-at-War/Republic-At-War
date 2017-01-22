@@ -1,0 +1,315 @@
+<?xml version="1.0" ?>
+<!-- example of using wind disturbance
+      <LandBehavior>WALK_LOCOMOTOR,TARGETING,IDLE,WEAPON,TURRET,POWERED,REVEAL,HIDE_WHEN_FOGGED, WIND_DISTURBANCE</LandBehavior>
+	  <Wind_Disturbance_Radius>50</Wind_Disturbance_Radius>
+	  <Wind_Disturbance_Strength>10</Wind_Disturbance_Strength>
+	  <Wind_Disturbance_Sphere_Alpha>0.4</Wind_Disturbance_Sphere_Alpha>
+	  -->
+ 
+<LandBombingRunUnits>
+
+	<LandBombingUnit Name="NTB_Bombing_Run">
+		<Text_ID>TEXT_UNIT_NTB_630</Text_ID>
+		<Land_Model_Name>ReV_ntb630.ALO</Land_Model_Name>
+		<Icon_Name>I_BUTTON_NTB630.tga</Icon_Name>
+		<Mass>0.985</Mass>
+		<Autoresolve_Health>40.0</Autoresolve_Health>
+		
+		<Max_Speed>6.0</Max_Speed>
+		<Max_Rate_Of_Turn>2.0</Max_Rate_Of_Turn>
+		<Max_Thrust>0.2</Max_Thrust>
+		<Max_Rate_Of_Roll>10.0</Max_Rate_Of_Roll>
+		<Max_Lift>3.0</Max_Lift>
+		<Bank_Turn_Angle>45</Bank_Turn_Angle>
+		<Behavior>POWERED</Behavior>
+		<LandBehavior> LANDBOMBER_LOCOMOTOR, SHIELDED, POWERED, AMBIENT_SFX,UNIT_AI, TARGETING, WEAPON </LandBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Select_Box_Scale>450</Select_Box_Scale>
+		<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
+		<Scale_Factor>0.4</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Type>Fly</Type>
+		<Deploys>No</Deploys>
+		<Affiliation>Empire</Affiliation>
+		<Size_Value>15</Size_Value>
+
+
+		<Armor_Type> Armor_Speeder </Armor_Type>
+		<Damage>25</Damage>
+		<Shield_Points>50</Shield_Points>
+		<Tactical_Health>50</Tactical_Health>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
+
+		<SFXEvent_Fire>Unit_Y_Wing_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_ntb630</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_ntb630</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_ntb630</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_ntb630</SFXEvent_Guard>
+		<SFXEvent_Ambient_Moving> Unit_Y_Wing_Fly_By_Land </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 1 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Bomb_Run_Select_Target> Unit_Target_Land_NTB630 </SFXEvent_Bomb_Run_Select_Target>
+		<SFXEvent_Bomb_Run_Incoming> Unit_Target_Land_NTB630 </SFXEvent_Bomb_Run_Incoming>
+
+		<Ranged_Target_Z_Adjust>0.0</Ranged_Target_Z_Adjust>
+		<Fires_Forward> Yes </Fires_Forward> <!-- This must be YES in order to fire missiles without concern of the firing cone in Calculate_Projectile_Facing() -->
+		<Turret_Rotate_Extent_Degrees>20</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>20</Turret_Elevate_Extent_Degrees>
+		<Land_FOW_Reveal_Range>0.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>500.0</Targeting_Max_Attack_Distance>
+
+		<!-- Note: If switch back to the Y-Wing missile, the missile in incorredly defined as a BOMB and will not work! -->
+		<Projectile_Types> Y_Wing_Bombing_Run_Bomb </Projectile_Types>
+
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>0.20</Projectile_Fire_Recharge_Seconds>
+
+		<Damage_Hit_Particles>Rebel_Bombing_Run_Explosion_Land</Damage_Hit_Particles>
+		<Shield_Hit_Particles>Projectile_Shield_Absorb_Small</Shield_Hit_Particles>
+		<Damaged_Smoke_Asset_Name>P_Smoke_Small02.alo</Damaged_Smoke_Asset_Name>
+		<Death_Explosions>Medium_Explosion_Land</Death_Explosions>
+		<CategoryMask> Air </CategoryMask>
+		<AI_Combat_Power>150</AI_Combat_Power>
+		<MovementClass> BombingRun </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>20.0, 20.0</Blob_Shadow_Scale>
+		<!-- Generic_Shadow -->
+		<Blob_Shadow_Material_Name></Blob_Shadow_Material_Name>
+		<Air_Vehicle_Turret_Target> Yes </Air_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		
+		<Space_Layer> Capital </Space_Layer>
+		<Layer_Z_Adjust>100.0</Layer_Z_Adjust>
+		<Min_Speed>2.0</Min_Speed>
+		<!-- 250.0 -->
+		<Hover_Offset>100.0</Hover_Offset>
+		<Prepare_Strafe_Height>250.0</Prepare_Strafe_Height>
+		<MaxFacingLookAheadFrames>30.0</MaxFacingLookAheadFrames>
+		<Idle_Chase_Range>145.0</Idle_Chase_Range>
+		<Guard_Chase_Range>400.0</Guard_Chase_Range>
+		<Score_Cost_Credits> 700</Score_Cost_Credits>
+		
+		<Death_Explosions>Small_Explosion_Space</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Y_Wing_Death_SFX</Death_SFXEvent_Start_Die>
+		
+		<Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+		<Spin_Away_On_Death_Chance>0.2</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Time>2.0f</Spin_Away_On_Death_Time>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space</Spin_Away_On_Death_Explosion>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_Y_Wing_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</LandBombingUnit>
+	
+	
+	<LandBombingUnit Name="Droid_Bomber_Bombing_Run">
+		<Text_ID>TEXT_UNIT_TIE_BOMBER</Text_ID>
+		<Land_Model_Name>EV_TIEBOMBER.ALO</Land_Model_Name>
+		<Mass>0.985</Mass>
+		<Autoresolve_Health>40.0</Autoresolve_Health>
+		<Max_Speed>6.0</Max_Speed>
+		<Max_Rate_Of_Turn>3.0</Max_Rate_Of_Turn>
+		<Max_Thrust>0.2</Max_Thrust>
+		<Max_Rate_Of_Roll>10.0</Max_Rate_Of_Roll>
+		<Max_Lift>2.0</Max_Lift>
+		<Bank_Turn_Angle>50</Bank_Turn_Angle>
+		<Behavior>POWERED</Behavior>
+		<LandBehavior> LANDBOMBER_LOCOMOTOR, SHIELDED, POWERED, AMBIENT_SFX,UNIT_AI, TARGETING, WEAPON </LandBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Select_Box_Scale>43</Select_Box_Scale>
+		<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Type>Fly</Type>
+		<Deploys>No</Deploys>
+		<Affiliation>Rebel</Affiliation>
+		<Size_Value>15</Size_Value>
+
+		<No_Colorization_Color> 75, 75, 75, 255 </No_Colorization_Color>
+
+		<Armor_Type> Armor_Speeder </Armor_Type>
+		<Damage>25</Damage>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>100</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
+
+		<SFXEvent_Fire>Unit_TIE_Bomber_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_TIE_Bomber</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_TIE_Bomber</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_TIE_Bomber</SFXEvent_Attack>
+		<SFXEvent_Select>Unit_Select_TIE_Bomber</SFXEvent_Select>
+		<SFXEvent_Guard>Unit_Guard_TIE_Bomber</SFXEvent_Guard>
+		<SFXEvent_Hardpoint>Unit_Hardpoint_TIE_Bomber</SFXEvent_Hardpoint>
+		<XSFXEvent_Ambient_Loop>Unit_TIE_Fighter_Engine_Loop</XSFXEvent_Ambient_Loop>
+		<SFXEvent_Ambient_Moving> Unit_TIE_Bomber_Fly_By_Land </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 1 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Bomb_Run_Select_Target> Unit_Select_Tie_Bomber </SFXEvent_Bomb_Run_Select_Target>
+		<SFXEvent_Bomb_Run_Incoming> Unit_Bombing_Run_Tie_Bomber </SFXEvent_Bomb_Run_Incoming>
+
+		<Ranged_Target_Z_Adjust>0.0</Ranged_Target_Z_Adjust>
+		<Fires_Forward>no</Fires_Forward>
+		<Turret_Rotate_Extent_Degrees>20</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>20</Turret_Elevate_Extent_Degrees>
+		<Land_FOW_Reveal_Range>0.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>500.0</Targeting_Max_Attack_Distance>
+
+		<Projectile_Types> TIE_Bomber_Bombing_Run_Bomb </Projectile_Types>
+
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>0.20</Projectile_Fire_Recharge_Seconds>
+
+		<Damage_Hit_Particles>Empire_Bombing_Run_Explosion_Land</Damage_Hit_Particles>
+		<Shield_Hit_Particles>Projectile_Shield_Absorb_Small</Shield_Hit_Particles>
+		<Damaged_Smoke_Asset_Name>P_Smoke_Small02.alo</Damaged_Smoke_Asset_Name>
+		<Death_Explosions>Medium_Explosion_Land</Death_Explosions>
+		<Icon_Name>i_button_tie_bomber.tga</Icon_Name>
+		<CategoryMask> Air </CategoryMask>
+		<AI_Combat_Power>150</AI_Combat_Power>
+		<MovementClass> BombingRun </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>20.0, 20.0</Blob_Shadow_Scale>
+		<!-- Generic_Shadow -->
+		<Blob_Shadow_Material_Name></Blob_Shadow_Material_Name>
+		<Air_Vehicle_Turret_Target> Yes </Air_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		
+		<Space_Layer> Capital </Space_Layer>
+		<Layer_Z_Adjust>100.0</Layer_Z_Adjust>
+		<Min_Speed>2.0</Min_Speed>
+		<!-- 250.0 -->
+		<Hover_Offset>100.0</Hover_Offset>
+		<Prepare_Strafe_Height>250.0</Prepare_Strafe_Height>
+		<MaxFacingLookAheadFrames>30.0</MaxFacingLookAheadFrames>
+		<Idle_Chase_Range>145.0</Idle_Chase_Range>
+		<Guard_Chase_Range>400.0</Guard_Chase_Range>
+		<Score_Cost_Credits> 370</Score_Cost_Credits>
+		
+		<Death_Explosions>Small_Explosion_Space_Empire</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_TIE_Fighter_Death_SFX</Death_SFXEvent_Start_Die>
+		
+		<Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+		<Spin_Away_On_Death_Chance>0.4</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Time>1.0f</Spin_Away_On_Death_Time>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space_Empire</Spin_Away_On_Death_Explosion>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_TIE_Fighter_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		
+	</LandBombingUnit>	
+
+
+	<LandBombingUnit Name="Skipray_Bombing_Run">
+		<Text_ID>TEXT_UNIT_SKIPRAY</Text_ID>
+		<Land_Model_Name>UV_SKIPRAY.ALO</Land_Model_Name>
+		<Mass>0.985</Mass>
+		<Autoresolve_Health>40.0</Autoresolve_Health>
+		<Max_Speed>6.0</Max_Speed>
+		<Max_Rate_Of_Turn>3.0</Max_Rate_Of_Turn>
+		<Max_Thrust>0.2</Max_Thrust>
+		<Max_Rate_Of_Roll>10.0</Max_Rate_Of_Roll>
+		<Max_Lift>2.0</Max_Lift>
+		<Bank_Turn_Angle>50</Bank_Turn_Angle>
+		<Behavior>POWERED</Behavior>
+		<LandBehavior> LANDBOMBER_LOCOMOTOR, SHIELDED, POWERED, AMBIENT_SFX,UNIT_AI, TARGETING, WEAPON </LandBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Select_Box_Scale>43</Select_Box_Scale>
+		<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Type>Fly</Type>
+		<Deploys>No</Deploys>
+		<Affiliation>Underworld</Affiliation>
+		<Size_Value>15</Size_Value>
+
+		<No_Colorization_Color> 75, 75, 75, 255 </No_Colorization_Color>
+
+		<Armor_Type> Armor_Speeder </Armor_Type>
+		<Damage>25</Damage>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>100</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
+
+		<SFXEvent_Fire>Unit_Star_Viper_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Skipray</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Skipray</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_Skipray</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Skipray</SFXEvent_Guard>
+		<SFXEvent_Ambient_Moving> Unit_Y_Wing_Fly_By_Land </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 1 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Bomb_Run_Select_Target> Unit_Select_Skipray </SFXEvent_Bomb_Run_Select_Target>
+		<SFXEvent_Bomb_Run_Incoming>Unit_Attack_Skipray</SFXEvent_Bomb_Run_Incoming>
+
+		<Ranged_Target_Z_Adjust>0.0</Ranged_Target_Z_Adjust>
+		<Fires_Forward>no</Fires_Forward>
+		<Turret_Rotate_Extent_Degrees>20</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>20</Turret_Elevate_Extent_Degrees>
+		<Land_FOW_Reveal_Range>0.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>500.0</Targeting_Max_Attack_Distance>
+
+		<Projectile_Types> Skipray_Bombing_Run_Bomb </Projectile_Types>
+
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>0.20</Projectile_Fire_Recharge_Seconds>
+
+		<Damage_Hit_Particles>Empire_Bombing_Run_Explosion_Land</Damage_Hit_Particles>
+		<Shield_Hit_Particles>Projectile_Shield_Absorb_Small</Shield_Hit_Particles>
+		<Damaged_Smoke_Asset_Name>P_Smoke_Small02.alo</Damaged_Smoke_Asset_Name>
+		<Death_Explosions>Medium_Explosion_Land</Death_Explosions>
+		<Icon_Name>i_button_skipray.tga</Icon_Name>
+		<CategoryMask> Air </CategoryMask>
+		<AI_Combat_Power>150</AI_Combat_Power>
+		<MovementClass> BombingRun </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>20.0, 20.0</Blob_Shadow_Scale>
+		<!-- Generic_Shadow -->
+		<Blob_Shadow_Material_Name></Blob_Shadow_Material_Name>
+		<Air_Vehicle_Turret_Target> Yes </Air_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		
+		<Space_Layer> Capital </Space_Layer>
+		<Layer_Z_Adjust>100.0</Layer_Z_Adjust>
+		<Min_Speed>2.0</Min_Speed>
+		<!-- 250.0 -->
+		<Hover_Offset>100.0</Hover_Offset>
+		<Prepare_Strafe_Height>250.0</Prepare_Strafe_Height>
+		<MaxFacingLookAheadFrames>30.0</MaxFacingLookAheadFrames>
+		<Idle_Chase_Range>145.0</Idle_Chase_Range>
+		<Guard_Chase_Range>400.0</Guard_Chase_Range>
+		<Score_Cost_Credits> 370</Score_Cost_Credits>
+		
+		<Death_Explosions>Small_Explosion_Space_Empire</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_TIE_Fighter_Death_SFX</Death_SFXEvent_Start_Die>
+		
+		<Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+		<Spin_Away_On_Death_Chance>0.4</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Time>1.0f</Spin_Away_On_Death_Time>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space_Empire</Spin_Away_On_Death_Explosion>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_TIE_Fighter_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		
+	</LandBombingUnit>	
+
+
+
+</LandBombingRunUnits>

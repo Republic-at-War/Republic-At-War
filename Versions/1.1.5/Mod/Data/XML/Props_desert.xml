@@ -1,0 +1,1076 @@
+<?xml version="1.0" ?>
+<Props_Desert>
+
+	<Prop_Desert Name="Desert_Sketto_Spawn">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ROCKCLSTR02.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<LandBehavior> SPAWN_INDIGENOUS_UNITS </LandBehavior>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> Medium Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 15.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 14.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 2.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> -2.0 </Custom_Hard_YExtent_Offset>
+		
+		<Spawned_Indigenous_Units_Type>Desert_Sketto</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>5</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>No</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>80.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>0.9f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>0</Max_Distance_From_Spawner>
+
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Is_Indigenous_Unit_Corruptible>False</Is_Indigenous_Unit_Corruptible>
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Rock_Cluster_02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ROCKCLSTR02.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> Medium Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 15.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 14.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 2.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> -2.0 </Custom_Hard_YExtent_Offset>
+		
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>40.0, 40.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Rock_Shadow</Blob_Shadow_Material_Name>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Rock_Cluster_02big">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ROCKCLSTR02.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> Medium Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 15.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 14.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 2.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> -2.0 </Custom_Hard_YExtent_Offset>
+		
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>40.0, 40.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Rock_Shadow</Blob_Shadow_Material_Name>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Rock_Cluster_02_Reflection">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ROCKCLSTR02.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Space_Layer> Land </Space_Layer>	
+		<!-- <UnitCollisionClass> Medium Obstacle </UnitCollisionClass>	-->
+		<Custom_Hard_XExtent> 15.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 14.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 2.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> -2.0 </Custom_Hard_YExtent_Offset>
+				
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>40.0, 40.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Rock_Shadow</Blob_Shadow_Material_Name>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Rock_Cluster_03">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ROCKCLSTR03.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>30.0, 30.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Rock_Shadow</Blob_Shadow_Material_Name>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Rock_Cluster_03big">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ROCKCLSTR03.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>30.0, 30.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Rock_Shadow</Blob_Shadow_Material_Name>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Rock_Cluster_03_Reflection">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ROCKCLSTR03.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>30.0, 30.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Rock_Shadow</Blob_Shadow_Material_Name>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Rock_Slide_00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ROCKSlide00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<!-- <LandBehavior>LAND_OBSTACLE</LandBehavior> -->
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>30.0, 30.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Rock_Shadow</Blob_Shadow_Material_Name>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Rock_Slide_00big">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_ROCKSlide00.ALO</Land_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<!-- <LandBehavior>LAND_OBSTACLE</LandBehavior> -->
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>30.0, 30.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Rock_Shadow</Blob_Shadow_Material_Name>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_MoistureCollector">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Prop_MoistCollect.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Tatooine_Bush00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Bush_Tat00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>99</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>30.0, 30.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Tatooine_Bush01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Bush_Tat01.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>99</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>20.0, 20.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Tatooine_Bush02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Bush_Tat02.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>99</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>20.0, 20.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Tatooine_Bush00_utapau">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Bush_Tat00.ALO</Land_Model_Name>
+		<Scale_Factor>20</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>99</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>30.0, 30.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Tatooine_Bush01_utapau">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Bush_Tat01.ALO</Land_Model_Name>
+		<Scale_Factor>20</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>99</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>20.0, 20.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Tatooine_Bush02_utapau">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Bush_Tat02.ALO</Land_Model_Name>
+		<Scale_Factor>20</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>99</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>20.0, 20.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Tatooine_Bush03_utapau">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LeafBush00.ALO</Land_Model_Name>
+		<Scale_Factor>20</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>99</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>20.0, 20.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Tatooine_Tree00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Tat00.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>99</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>25.0, 25.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Tatooine_Tree00_Cluster">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Tat00_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>99</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>25.0, 25.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Tatooine_Tree_Alien_Big">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Alien_02_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>25.0, 25.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Tatooine_Tree_Alien_Big_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Alien_NS02_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>25.0, 25.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Tatooine_Tree_Alien_Sml">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Alien_02_HI.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>25.0, 25.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Tatooine_RockForm00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tat_RockForm00.ALO</Land_Model_Name>
+		<Behavior>SPACE_OBSTACLE, LAND_OBSTACLE</Behavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<!-- <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Obstacle_Radius> 60 </Space_Obstacle_Radius> -->
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Tatooine_RockForm01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tat_RockForm01.ALO</Land_Model_Name>
+		<!-- <LandBehavior>LAND_OBSTACLE</LandBehavior> -->
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<!-- <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Obstacle_Radius> 60 </Space_Obstacle_Radius> -->
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Tatooine_RockForm02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tat_RockForm02.ALO</Land_Model_Name>
+		<!-- <LandBehavior>LAND_OBSTACLE</LandBehavior> -->
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<!-- <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Obstacle_Radius> 60 </Space_Obstacle_Radius> -->
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Tatooine_RockForm00_big">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tat_RockForm00.ALO</Land_Model_Name>
+		<Scale_Factor>3</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Tatooine_RockForm01_big">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tat_RockForm01.ALO</Land_Model_Name>
+		<Scale_Factor>3</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Tatooine_RockForm02_big">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tat_RockForm02.ALO</Land_Model_Name>
+		<Scale_Factor>3</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Geonosis_RockForm01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Geonosis_RockForm00.ALO</Land_Model_Name>
+		<!-- <LandBehavior>LAND_OBSTACLE</LandBehavior> -->
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Obstacle_Radius> 60 </Space_Obstacle_Radius>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+<Prop_Desert Name="Prop_Geonosis_RockForm03">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Geonosis_RockForm00.ALO</Land_Model_Name>
+		<!-- <LandBehavior>LAND_OBSTACLE</LandBehavior> -->
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Obstacle_Radius> 60 </Space_Obstacle_Radius>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+<Prop_Desert Name="Prop_Geonosis_RockForm04">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Geonosis_RockForm00.ALO</Land_Model_Name>
+		<!-- <LandBehavior>LAND_OBSTACLE</LandBehavior> -->
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Obstacle_Radius> 60 </Space_Obstacle_Radius>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+<Prop_Desert Name="Prop_Geonosis_RockForm05">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Geonosis_RockForm00.ALO</Land_Model_Name>
+		<!-- <LandBehavior>LAND_OBSTACLE</LandBehavior> -->
+		<Scale_Factor>4.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Obstacle_Radius> 60 </Space_Obstacle_Radius>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Geonosis_RockForm02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Geo_RockForm01.ALO</Land_Model_Name>
+		<!-- <LandBehavior>LAND_OBSTACLE</LandBehavior> -->
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Obstacle_Radius> 60 </Space_Obstacle_Radius>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+<Prop_Desert Name="Prop_Geonosis_RockForm06">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Geo_RockForm01.ALO</Land_Model_Name>
+		<!-- <LandBehavior>LAND_OBSTACLE</LandBehavior> -->
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Obstacle_Radius> 60 </Space_Obstacle_Radius>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+<Prop_Desert Name="Prop_Geonosis_RockForm07">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Geo_RockForm01.ALO</Land_Model_Name>
+		<!-- <LandBehavior>LAND_OBSTACLE</LandBehavior> -->
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Obstacle_Radius> 60 </Space_Obstacle_Radius>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+<Prop_Desert Name="Prop_Geonosis_RockForm08">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Geo_RockForm01.ALO</Land_Model_Name>
+		<!-- <LandBehavior>LAND_OBSTACLE</LandBehavior> -->
+		<Scale_Factor>4.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Obstacle_Radius> 60 </Space_Obstacle_Radius>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+	<Prop_Desert Name="Civilian House Desert">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>nb_dch.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_SandStorm00">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_SandStorm00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Tatooine_KraytSkeleton">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_KraytDragonSkull.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Tatooine_KraytSkeletonRibs">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_KraytDragonribs.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Tatooine_KraytSkeletonTail">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_KraytDragontail.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Prop_Desert>
+	
+	<Prop_Desert Name="Prop_Desert_Civilian_House_B">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_DESERT</Text_ID>
+		<Land_Model_Name>nb_dch_b.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Desert_Civilian_House_C">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_DESERT</Text_ID>
+		<Land_Model_Name>nb_dch_c.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		
+		<Obstacle_Width>40.0</Obstacle_Width>
+		<Obstacle_Height>100.0</Obstacle_Height>
+		<Obstacle_X_Offset>-20.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-50.0</Obstacle_Y_Offset>
+		
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Saleucami_Palm_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Seluca.ALO</Land_Model_Name>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Saleucami_Palm_B">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Seluca.ALO</Land_Model_Name>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Saleucami_Palm_C">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tree_Seluca.ALO</Land_Model_Name>
+		<Scale_Factor>4.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Desert>
+	
+	<Prop_Desert Name="Prop_Saleucami_Palm_A_Cluster_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TreePalm_NS_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>2.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Desert>
+	
+	<Prop_Desert Name="Prop_Saleucami_Palm_B_Cluster_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TreePalm_NS_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Desert>
+	
+	<Prop_Desert Name="Prop_Saleucami_Palm_C_Cluster_NoShadow">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_TreePalm_NS_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>4.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Prop_Desert>
+	
+	<Prop_Desert Name="Prop_Rock_Asteroid_Huge">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_asteroid03.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Rock_Asteroid_Big">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_asteroid01.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Rock_Asteroid_Medium">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_asteroid00.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Rock_Asteroid_Small">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_asteroid02.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Utapau_Ribs">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_KraytDragonribs.ALO</Land_Model_Name>
+		<Scale_Factor>5.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Saleucami_BulbRock">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Seluca_Rock.ALO</Land_Model_Name>
+		<!-- <LandBehavior>LAND_OBSTACLE</LandBehavior> -->
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<!-- <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Obstacle_Radius> 60 </Space_Obstacle_Radius> -->
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Saleucami_BulbRock_sml">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Seluca_Rock.ALO</Land_Model_Name>
+		<!-- <LandBehavior>LAND_OBSTACLE</LandBehavior> -->
+		<Scale_Factor>0.7</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<!-- <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Obstacle_Radius> 60 </Space_Obstacle_Radius> -->
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Utapau_Hole">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Utapau_Hole.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Utapau_Hole_Small">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Utapau_Hole.ALO</Land_Model_Name>
+		<Scale_Factor>.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+	
+		<Prop_Desert Name="Prop_Utapau_Hole_Small_1">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Utapau_Hole.ALO</Land_Model_Name>
+		<Scale_Factor>.4</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+	
+	<Prop_Desert Name="Prop_Utapau_Hole_Small_2">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Utapau_Hole.ALO</Land_Model_Name>
+		<Scale_Factor>.3</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Prop_Desert>
+
+<Prop_Desert Name="Prop_Tatooine_RockForm03">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tat_RockForm02.ALO</Land_Model_Name>
+		<LandBehavior>SPACE_OBSTACLE</LandBehavior>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Obstacle_Radius> 60 </Space_Obstacle_Radius>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+	</Prop_Desert>
+	
+	<Prop_Desert Name="Prop_Tatooine_RockForm001">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Tat_RockForm01.ALO</Land_Model_Name>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Obstacle_Radius> 60 </Space_Obstacle_Radius>
+		<Space_Layer> Capital | Frigate | Corvette </Space_Layer>
+
+	</Prop_Desert>
+	
+	<Prop_Desert Name="Prop_Trash_01">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_SpaceJunk_Med.alo</Land_Model_Name>
+		<LandBehavior>IDLE, UNIT_AI</LandBehavior>
+		<Scale_Factor>0.3</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+		
+
+	</Prop_Desert>
+	
+	<Prop_Desert Name="Prop_Trash_02">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_SpaceJunk.alo</Land_Model_Name>
+		<LandBehavior>IDLE, UNIT_AI</LandBehavior>
+		<Scale_Factor>5.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		
+
+	</Prop_Desert>
+	
+		<Prop_Desert Name="Prop_Building_Cantina">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_CANTINATAT.ALO</Land_Model_Name>
+		<LandBehavior>SPACE_OBSTACLE, IDLE, UNIT_AI, LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		
+
+	</Prop_Desert>
+	
+		<Prop_Desert Name="Prop_Building_Civilian_House_A">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>nb_dch.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Prop_Desert>
+	
+		<Prop_Desert Name="Prop_Building_Civilian_House_B">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_DESERT</Text_ID>
+		<Land_Model_Name>nb_dch_b.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Desert>
+
+	<Prop_Desert Name="Prop_Building_Civilian_House_C">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_DESERT</Text_ID>
+		<Land_Model_Name>nb_dch_c.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		
+		<Obstacle_Width>40.0</Obstacle_Width>
+		<Obstacle_Height>100.0</Obstacle_Height>
+		<Obstacle_X_Offset>-20.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-50.0</Obstacle_Y_Offset>
+		
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Desert>
+	
+		<Prop_Desert Name="Prop_Building_Arena">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_DESERT</Text_ID>
+		<Land_Model_Name>nb_grandarena.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>3.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		
+		<Obstacle_Width>40.0</Obstacle_Width>
+		<Obstacle_Height>100.0</Obstacle_Height>
+		<Obstacle_X_Offset>-20.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-50.0</Obstacle_Y_Offset>
+		
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Prop_Desert>
+	
+		<Prop_Desert Name="Prop_Building_1">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_DESERT</Text_ID>
+		<Land_Model_Name>W_tatooine_building_1.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>5.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+			<Is_Decoration>No</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+	</Prop_Desert>
+		
+		<Prop_Desert Name="Prop_Building_2">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_DESERT</Text_ID>
+		<Land_Model_Name>W_tatooine_building_2.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>5.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+			<Is_Decoration>No</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+	</Prop_Desert>
+		
+		<Prop_Desert Name="Prop_Building_3">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_DESERT</Text_ID>
+		<Land_Model_Name>W_tatooine_building_3.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>5.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+			<Is_Decoration>No</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+	</Prop_Desert>
+		
+	 <Prop_Desert Name="Prop_Building_4">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_DESERT</Text_ID>
+		<Land_Model_Name>W_tatooine_building_4.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>5.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+			<Is_Decoration>No</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+	</Prop_Desert>
+		
+		 <Prop_Desert Name="Prop_Building_5">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_DESERT</Text_ID>
+		<Land_Model_Name>W_tatooine_building_5.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>5.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+			<Is_Decoration>No</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+	</Prop_Desert>
+		
+		 <Prop_Desert Name="Prop_Building_6">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_DESERT</Text_ID>
+		<Land_Model_Name>W_tatooine_building_6.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>5.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+			<Is_Decoration>No</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+	</Prop_Desert>
+	
+	 <Prop_Desert Name="Prop_Building_7">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_DESERT</Text_ID>
+		<Land_Model_Name>W_tatooine_building_7.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>5.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+			<Is_Decoration>No</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+	</Prop_Desert>
+		
+		 <Prop_Desert Name="Prop_Building_8">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_DESERT</Text_ID>
+		<Land_Model_Name>W_tatooine_building_8.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>5.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+			<Is_Decoration>No</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+	</Prop_Desert>
+		
+		 <Prop_Desert Name="Prop_Building_9">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_DESERT</Text_ID>
+		<Land_Model_Name>W_tatooine_building_9.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>5.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+			<Is_Decoration>No</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+	</Prop_Desert>
+		
+		 <Prop_Desert Name="Prop_Building_Detail_Antenna">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_DESERT</Text_ID>
+		<Land_Model_Name>W_tatooine_antenna.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>4.3</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+			<Is_Decoration>No</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+	</Prop_Desert>
+		
+		<Prop_Desert Name="Prop_Building_10">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_DESERT</Text_ID>
+		<Land_Model_Name>w_hutt_spawnbuilding.alo</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+			<Is_Decoration>No</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+	</Prop_Desert>
+	
+	<Prop_Desert Name="Prop_Building_11">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_DESERT</Text_ID>
+		<Land_Model_Name>W_tatooine_building_10.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>3.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+			<Is_Decoration>No</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+	</Prop_Desert>
+	
+	<Prop_Desert Name="Prop_Building_12">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_DESERT</Text_ID>
+		<Land_Model_Name>W_tatooine_building_11.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+			<Is_Decoration>No</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+	</Prop_Desert>
+	
+	<Prop_Desert Name="Prop_Building_13">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_DESERT</Text_ID>
+		<Land_Model_Name>W_tatooine_building_12.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+			<Is_Decoration>No</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+	</Prop_Desert>
+	
+	<Prop_Desert Name="Prop_Building_14">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_DESERT</Text_ID>
+		<Land_Model_Name>W_tatooine_building_13.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>0.7</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+			<Is_Decoration>No</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+	</Prop_Desert>
+		
+			<Prop_Desert Name="Prop_Building_Starport">
+		<Text_ID>TEXT_STRUCTURE_CIVILIAN_DESERT</Text_ID>
+		<Land_Model_Name>W_tatooine_Starport</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>5.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+			<Is_Decoration>No</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+	</Prop_Desert>
+		
+		<Prop_Desert Name="Prop_Building_Detail_MoistureCollector">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Prop_MoistCollect.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+	</Prop_Desert>
+
+<Prop_Desert Name="Prop_Building_Detail_MoistureCollector_lrg">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Prop_MoistCollect.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>2.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+	</Prop_Desert>
+
+</Props_Desert>
