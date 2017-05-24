@@ -1,11 +1,11 @@
 <FileContainer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Version>1.1.5</Version>
   <File>
-    <Name>GAMECONSTANTS.XML</Name>
-    <TargetPath>\Data\XML\GAMECONSTANTS.XML\</TargetPath>
+    <Name>GAMECONSTANTS.xml</Name>
+    <TargetPath>\Data\XML\GAMECONSTANTS.xml\</TargetPath>
     <TargetType>Ai</TargetType>
-    <Hash>4306d0c45d103cd11ff6743d1c3d9366</Hash>
-    <SourcePath>\1.1.5\Ai\Data\XML\GAMECONSTANTS.XML\</SourcePath>
+    <Hash>b0818f73031b7150a839bb83e7aa6187</Hash>
+    <SourcePath>\1.1.5\Ai\Data\XML\GAMECONSTANTS.xml\</SourcePath>
   </File>
   <File>
     <Name>OuterRimSiegesHints.xml</Name>
@@ -141,25 +141,11 @@
     <SourcePath>\1.1.5\Ai\Data\XML\AI\Templates\BasicRebelTemplates.xml\</SourcePath>
   </File>
   <File>
-    <Name>CloneWarsHints.xml</Name>
-    <TargetPath>\Data\XML\AI\GalacticMarkup\CloneWarsHints.xml\</TargetPath>
-    <TargetType>Ai</TargetType>
-    <Hash>b3c0870ad02a25c4d9bfd3ea91d8ff48</Hash>
-    <SourcePath>\1.1.5\Ai\Data\XML\AI\GalacticMarkup\CloneWarsHints.xml\</SourcePath>
-  </File>
-  <File>
-    <Name>GRAPHICDETAILS.XML</Name>
-    <TargetPath>\Data\XML\GRAPHICDETAILS.XML\</TargetPath>
+    <Name>GRAPHICDETAILS.xml</Name>
+    <TargetPath>\Data\XML\GRAPHICDETAILS.xml\</TargetPath>
     <TargetType>Ai</TargetType>
     <Hash>4d7e140887fc1dd52f47790a6e20b5c5</Hash>
-    <SourcePath>\1.1.5\Ai\Data\XML\GRAPHICDETAILS.XML\</SourcePath>
-  </File>
-  <File>
-    <Name>DefaultGalacticHints.xml</Name>
-    <TargetPath>\Data\XML\AI\GalacticMarkup\DefaultGalacticHints.xml\</TargetPath>
-    <TargetType>Ai</TargetType>
-    <Hash>6b783e006cee1254da6e2e8195285d9e</Hash>
-    <SourcePath>\1.1.5\Ai\Data\XML\AI\GalacticMarkup\DefaultGalacticHints.xml\</SourcePath>
+    <SourcePath>\1.1.5\Ai\Data\XML\GRAPHICDETAILS.xml\</SourcePath>
   </File>
   <File>
     <Name>CoreAssaultHints.xml</Name>
@@ -169,11 +155,32 @@
     <SourcePath>\1.1.5\Ai\Data\XML\AI\GalacticMarkup\CoreAssaultHints.xml\</SourcePath>
   </File>
   <File>
+    <Name>DefaultGalacticHints.xml</Name>
+    <TargetPath>\Data\XML\AI\GalacticMarkup\DefaultGalacticHints.xml\</TargetPath>
+    <TargetType>Ai</TargetType>
+    <Hash>6b783e006cee1254da6e2e8195285d9e</Hash>
+    <SourcePath>\1.1.5\Ai\Data\XML\AI\GalacticMarkup\DefaultGalacticHints.xml\</SourcePath>
+  </File>
+  <File>
+    <Name>CloneWarsHints.xml</Name>
+    <TargetPath>\Data\XML\AI\GalacticMarkup\CloneWarsHints.xml\</TargetPath>
+    <TargetType>Ai</TargetType>
+    <Hash>b3c0870ad02a25c4d9bfd3ea91d8ff48</Hash>
+    <SourcePath>\1.1.5\Ai\Data\XML\AI\GalacticMarkup\CloneWarsHints.xml\</SourcePath>
+  </File>
+  <File>
     <Name>BuildBaseComponentAdvancedVehicleFactory.lua</Name>
     <TargetPath>\Data\Scripts\AI\BuildBaseComponentAdvancedVehicleFactory.lua\</TargetPath>
     <TargetType>Ai</TargetType>
     <Hash>793e61dd045a2345a349025e0555b3a8</Hash>
     <SourcePath>\1.1.5\Ai\Data\Scripts\AI\BuildBaseComponentAdvancedVehicleFactory.lua\</SourcePath>
+  </File>
+  <File>
+    <Name>BuildEconomicStructurePlan.lua</Name>
+    <TargetPath>\Data\Scripts\AI\BuildEconomicStructurePlan.lua\</TargetPath>
+    <TargetType>Ai</TargetType>
+    <Hash>34a9c347d330089aa0bafe04bffaef39</Hash>
+    <SourcePath>\1.1.5\Ai\Data\Scripts\AI\BuildEconomicStructurePlan.lua\</SourcePath>
   </File>
   <File>
     <Name>BuildGroundForcesPlan.lua</Name>
@@ -223,13 +230,6 @@
     <TargetType>Ai</TargetType>
     <Hash>d4750a64937c2742927ca0dc5fcfbedb</Hash>
     <SourcePath>\1.1.5\Ai\Data\Scripts\AI\BuildWeaponStructurePlan.lua\</SourcePath>
-  </File>
-  <File>
-    <Name>Conquer_Capital_Planet_Plan.lua</Name>
-    <TargetPath>\Data\Scripts\AI\Conquer_Capital_Planet_Plan.lua\</TargetPath>
-    <TargetType>Ai</TargetType>
-    <Hash>24b76214a1cddf8cdbfde077911f1cb4</Hash>
-    <SourcePath>\1.1.5\Ai\Data\Scripts\AI\Conquer_Capital_Planet_Plan.lua\</SourcePath>
   </File>
   <File>
     <Name>Conquer_Capital_Planet_Plan.lua.bak</Name>
@@ -1184,18 +1184,11 @@
     <SourcePath>\1.1.5\Ai\Data\Scripts\Story\Story_Sandbox_21U_Empire.lua\</SourcePath>
   </File>
   <File>
-    <Name>BuildEconomicStructurePlan.lua</Name>
-    <TargetPath>\Data\Scripts\AI\BuildEconomicStructurePlan.lua\</TargetPath>
+    <Name>BuildBaseComponentOfficerAcademy.lua</Name>
+    <TargetPath>\Data\Scripts\AI\BuildBaseComponentOfficerAcademy.lua\</TargetPath>
     <TargetType>Ai</TargetType>
-    <Hash>34a9c347d330089aa0bafe04bffaef39</Hash>
-    <SourcePath>\1.1.5\Ai\Data\Scripts\AI\BuildEconomicStructurePlan.lua\</SourcePath>
-  </File>
-  <File>
-    <Name>BuildGroundDefensiveStructurePlan.lua</Name>
-    <TargetPath>\Data\Scripts\AI\BuildGroundDefensiveStructurePlan.lua\</TargetPath>
-    <TargetType>Ai</TargetType>
-    <Hash>66b439adf19fe421a23fc4af5444860a</Hash>
-    <SourcePath>\1.1.5\Ai\Data\Scripts\AI\BuildGroundDefensiveStructurePlan.lua\</SourcePath>
+    <Hash>6730e5ab9a8eeba1ef6fd445aeacdf3f</Hash>
+    <SourcePath>\1.1.5\Ai\Data\Scripts\AI\BuildBaseComponentOfficerAcademy.lua\</SourcePath>
   </File>
   <File>
     <Name>BuildBaseComponentResearchFacility.lua</Name>
@@ -1205,11 +1198,18 @@
     <SourcePath>\1.1.5\Ai\Data\Scripts\AI\BuildBaseComponentResearchFacility.lua\</SourcePath>
   </File>
   <File>
-    <Name>BuildBaseComponentOfficerAcademy.lua</Name>
-    <TargetPath>\Data\Scripts\AI\BuildBaseComponentOfficerAcademy.lua\</TargetPath>
+    <Name>Conquer_Capital_Planet_Plan.lua</Name>
+    <TargetPath>\Data\Scripts\AI\Conquer_Capital_Planet_Plan.lua\</TargetPath>
     <TargetType>Ai</TargetType>
-    <Hash>6730e5ab9a8eeba1ef6fd445aeacdf3f</Hash>
-    <SourcePath>\1.1.5\Ai\Data\Scripts\AI\BuildBaseComponentOfficerAcademy.lua\</SourcePath>
+    <Hash>24b76214a1cddf8cdbfde077911f1cb4</Hash>
+    <SourcePath>\1.1.5\Ai\Data\Scripts\AI\Conquer_Capital_Planet_Plan.lua\</SourcePath>
+  </File>
+  <File>
+    <Name>BuildGroundDefensiveStructurePlan.lua</Name>
+    <TargetPath>\Data\Scripts\AI\BuildGroundDefensiveStructurePlan.lua\</TargetPath>
+    <TargetType>Ai</TargetType>
+    <Hash>66b439adf19fe421a23fc4af5444860a</Hash>
+    <SourcePath>\1.1.5\Ai\Data\Scripts\AI\BuildGroundDefensiveStructurePlan.lua\</SourcePath>
   </File>
   <File>
     <Name>_mp_land_alderaan.ted</Name>
@@ -1219,11 +1219,11 @@
     <SourcePath>\1.1.5\Ai\Data\CustomMaps\_mp_land_alderaan.ted\</SourcePath>
   </File>
   <File>
-    <Name>_mp_land_dagobah.ted</Name>
-    <TargetPath>\Data\CustomMaps\_mp_land_dagobah.ted\</TargetPath>
+    <Name>_mp_land_corellia.ted</Name>
+    <TargetPath>\Data\CustomMaps\_mp_land_corellia.ted\</TargetPath>
     <TargetType>Ai</TargetType>
-    <Hash>3d8ae2a395abc408d32ff7bc17db444c</Hash>
-    <SourcePath>\1.1.5\Ai\Data\CustomMaps\_mp_land_dagobah.ted\</SourcePath>
+    <Hash>b94aa67494e27ece89c28376bd39468e</Hash>
+    <SourcePath>\1.1.5\Ai\Data\CustomMaps\_mp_land_corellia.ted\</SourcePath>
   </File>
   <File>
     <Name>_mp_land_dantooine.ted</Name>
@@ -1513,20 +1513,6 @@
     <SourcePath>\1.1.5\Ai\Data\CustomMaps\_mp_space_yavin.ted\</SourcePath>
   </File>
   <File>
-    <Name>_mp_land_christophsis.ted</Name>
-    <TargetPath>\Data\CustomMaps\_mp_land_christophsis.ted\</TargetPath>
-    <TargetType>Ai</TargetType>
-    <Hash>0b13f8c2c1b9795c262fbdc1c3e540e9</Hash>
-    <SourcePath>\1.1.5\Ai\Data\CustomMaps\_mp_land_christophsis.ted\</SourcePath>
-  </File>
-  <File>
-    <Name>_mp_land_corellia.ted</Name>
-    <TargetPath>\Data\CustomMaps\_mp_land_corellia.ted\</TargetPath>
-    <TargetType>Ai</TargetType>
-    <Hash>b94aa67494e27ece89c28376bd39468e</Hash>
-    <SourcePath>\1.1.5\Ai\Data\CustomMaps\_mp_land_corellia.ted\</SourcePath>
-  </File>
-  <File>
     <Name>_mp_land_bespin.ted</Name>
     <TargetPath>\Data\CustomMaps\_mp_land_bespin.ted\</TargetPath>
     <TargetType>Ai</TargetType>
@@ -1534,11 +1520,25 @@
     <SourcePath>\1.1.5\Ai\Data\CustomMaps\_mp_land_bespin.ted\</SourcePath>
   </File>
   <File>
+    <Name>_mp_land_dagobah.ted</Name>
+    <TargetPath>\Data\CustomMaps\_mp_land_dagobah.ted\</TargetPath>
+    <TargetType>Ai</TargetType>
+    <Hash>3d8ae2a395abc408d32ff7bc17db444c</Hash>
+    <SourcePath>\1.1.5\Ai\Data\CustomMaps\_mp_land_dagobah.ted\</SourcePath>
+  </File>
+  <File>
     <Name>_mp_land_bothawui.ted</Name>
     <TargetPath>\Data\CustomMaps\_mp_land_bothawui.ted\</TargetPath>
     <TargetType>Ai</TargetType>
     <Hash>804640387b269481e40c022c261e76e0</Hash>
     <SourcePath>\1.1.5\Ai\Data\CustomMaps\_mp_land_bothawui.ted\</SourcePath>
+  </File>
+  <File>
+    <Name>_mp_land_christophsis.ted</Name>
+    <TargetPath>\Data\CustomMaps\_mp_land_christophsis.ted\</TargetPath>
+    <TargetType>Ai</TargetType>
+    <Hash>0b13f8c2c1b9795c262fbdc1c3e540e9</Hash>
+    <SourcePath>\1.1.5\Ai\Data\CustomMaps\_mp_land_christophsis.ted\</SourcePath>
   </File>
   <File>
     <Name>Commander Appo.ico</Name>
@@ -1966,6 +1966,13 @@
     <TargetType>Mod</TargetType>
     <Hash>7f6b6d096c1fbdd612f9bba36d40d039</Hash>
     <SourcePath>\1.1.5\Mod\Data\Art\Maps\_land_planet_sluis_van_02.ted\</SourcePath>
+  </File>
+  <File>
+    <Name>_land_planet_sullust_02.ted</Name>
+    <TargetPath>\Data\Art\Maps\_land_planet_sullust_02.ted\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>7f2ed0637151f03563e72a36162b9f95</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Maps\_land_planet_sullust_02.ted\</SourcePath>
   </File>
   <File>
     <Name>_land_planet_taris_02.ted</Name>
@@ -4199,13 +4206,6 @@
     <TargetType>Mod</TargetType>
     <Hash>81f62cc7b960bc55c4cc4abae55df2d7</Hash>
     <SourcePath>\1.1.5\Mod\Data\Art\Models\I_SeB_Station_level_05.ALO\</SourcePath>
-  </File>
-  <File>
-    <Name>I_tactical_controls.alo</Name>
-    <TargetPath>\Data\Art\Models\I_tactical_controls.alo\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>02f5f4e9c56e8a54fce8deb4f2e58e89</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Models\I_tactical_controls.alo\</SourcePath>
   </File>
   <File>
     <Name>I_tactical_controls_idle_00.ala</Name>
@@ -7792,6 +7792,13 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Models\PE_pirate_speeder.ALO\</SourcePath>
   </File>
   <File>
+    <Name>Pe_plokoon_delta.ALO</Name>
+    <TargetPath>\Data\Art\Models\Pe_plokoon_delta.ALO\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>2c096415a3df11e19ac96fae1b84a906</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Models\Pe_plokoon_delta.ALO\</SourcePath>
+  </File>
+  <File>
     <Name>PE_Providence.ALO</Name>
     <TargetPath>\Data\Art\Models\PE_Providence.ALO\</TargetPath>
     <TargetType>Mod</TargetType>
@@ -9575,13 +9582,6 @@
     <TargetType>Mod</TargetType>
     <Hash>986c5c8ba22144369a8e43353d93570f</Hash>
     <SourcePath>\1.1.5\Mod\Data\Art\Models\REI_327_attackidle_01.ala\</SourcePath>
-  </File>
-  <File>
-    <Name>REI_327_attack_00.ala</Name>
-    <TargetPath>\Data\Art\Models\REI_327_attack_00.ala\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>053b4c7457d164fa8a5657138927fcbf</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Models\REI_327_attack_00.ala\</SourcePath>
   </File>
   <File>
     <Name>REI_327_attack_01.ala</Name>
@@ -20336,6 +20336,13 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Models\ReV_centax_frigate_d_die_00.ala\</SourcePath>
   </File>
   <File>
+    <Name>ReV_cr20.ALO</Name>
+    <TargetPath>\Data\Art\Models\ReV_cr20.ALO\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>90702c210cf4420a87a350eade49b943</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Models\ReV_cr20.ALO\</SourcePath>
+  </File>
+  <File>
     <Name>ReV_cr20_land_00.ala</Name>
     <TargetPath>\Data\Art\Models\ReV_cr20_land_00.ala\</TargetPath>
     <TargetType>Mod</TargetType>
@@ -22121,11 +22128,11 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Models\SeI_battledroid_FW_DIE_00.ala\</SourcePath>
   </File>
   <File>
-    <Name>SeI_battledroid_FW_DIE_01.ala</Name>
-    <TargetPath>\Data\Art\Models\SeI_battledroid_FW_DIE_01.ala\</TargetPath>
+    <Name>SeI_battledroid_FW_DIE_02.ala</Name>
+    <TargetPath>\Data\Art\Models\SeI_battledroid_FW_DIE_02.ala\</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>e613401cb0bfa69a6f9e2c6d9e8d0d25</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Models\SeI_battledroid_FW_DIE_01.ala\</SourcePath>
+    <Hash>bdc0d58ffcc4644e7baab5a26c6f38e2</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Models\SeI_battledroid_FW_DIE_02.ala\</SourcePath>
   </File>
   <File>
     <Name>SeI_battledroid_IDLE_00.ala</Name>
@@ -23022,6 +23029,13 @@
     <TargetType>Mod</TargetType>
     <Hash>11713b59699645c3a82d33906b85d47e</Hash>
     <SourcePath>\1.1.5\Mod\Data\Art\Models\SeI_grievous_walkmove_00.ala\</SourcePath>
+  </File>
+  <File>
+    <Name>SeI_Jango_Fett.ALO</Name>
+    <TargetPath>\Data\Art\Models\SeI_Jango_Fett.ALO\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>d78f16e9868543c2c6deed91ab5fd0eb</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Models\SeI_Jango_Fett.ALO\</SourcePath>
   </File>
   <File>
     <Name>SeI_Jango_Fett_attackidle_00.ala</Name>
@@ -24816,6 +24830,13 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Models\W_cato_building_f.ALO\</SourcePath>
   </File>
   <File>
+    <Name>W_cato_e.ALO</Name>
+    <TargetPath>\Data\Art\Models\W_cato_e.ALO\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>a465e3ace5c705217451238900c96ad1</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Models\W_cato_e.ALO\</SourcePath>
+  </File>
+  <File>
     <Name>W_cato_lamp.ALO</Name>
     <TargetPath>\Data\Art\Models\W_cato_lamp.ALO\</TargetPath>
     <TargetType>Mod</TargetType>
@@ -25712,6 +25733,13 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Models\W_Mygeeto_Wall_D.ALO\</SourcePath>
   </File>
   <File>
+    <Name>W_naboo_civ_building_A.ALO</Name>
+    <TargetPath>\Data\Art\Models\W_naboo_civ_building_A.ALO\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>cde2fbfd845f5344f27c6750960524c8</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Models\W_naboo_civ_building_A.ALO\</SourcePath>
+  </File>
+  <File>
     <Name>W_naboo_civ_building_B.ALO</Name>
     <TargetPath>\Data\Art\Models\W_naboo_civ_building_B.ALO\</TargetPath>
     <TargetType>Mod</TargetType>
@@ -26580,13 +26608,6 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Models\W_planet_carida_high_idle_00.ala\</SourcePath>
   </File>
   <File>
-    <Name>W_planet_carida_low.alo</Name>
-    <TargetPath>\Data\Art\Models\W_planet_carida_low.alo\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>de4e79787a61426ec103e33367a86ce2</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Models\W_planet_carida_low.alo\</SourcePath>
-  </File>
-  <File>
     <Name>W_planet_carida_low_idle_00.ala</Name>
     <TargetPath>\Data\Art\Models\W_planet_carida_low_idle_00.ala\</TargetPath>
     <TargetType>Mod</TargetType>
@@ -26606,6 +26627,13 @@
     <TargetType>Mod</TargetType>
     <Hash>c68b2e701bb8268d2a4d3aab69f24323</Hash>
     <SourcePath>\1.1.5\Mod\Data\Art\Models\W_planet_cato_neimoidia_high_idle_00.ala\</SourcePath>
+  </File>
+  <File>
+    <Name>W_planet_cato_neimoidia_low.alo</Name>
+    <TargetPath>\Data\Art\Models\W_planet_cato_neimoidia_low.alo\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>7bf4cacb85d15ba61377f38c30db9613</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Models\W_planet_cato_neimoidia_low.alo\</SourcePath>
   </File>
   <File>
     <Name>W_planet_cato_neimoidia_low_idle_00.ala</Name>
@@ -28400,6 +28428,13 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Models\W_urban_ped_bridge_short.ALO\</SourcePath>
   </File>
   <File>
+    <Name>W_Urban_Streetlight.ALO</Name>
+    <TargetPath>\Data\Art\Models\W_Urban_Streetlight.ALO\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>c7248f19458f3d2badea0985d7bcef1a</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Models\W_Urban_Streetlight.ALO\</SourcePath>
+  </File>
+  <File>
     <Name>capt_holo2.bik</Name>
     <TargetPath>\Data\Art\Movies\Binked\capt_holo2.bik\</TargetPath>
     <TargetType>Mod</TargetType>
@@ -29294,6 +29329,13 @@
     <TargetType>Mod</TargetType>
     <Hash>698505ca8a8db7ba8dcb0e2ceab90b25</Hash>
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\Av_flash_speeder.dds\</SourcePath>
+  </File>
+  <File>
+    <Name>Av_flash_speeder_b.dds</Name>
+    <TargetPath>\Data\Art\Textures\Av_flash_speeder_b.dds\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>0252605eee8c065c9c3409df5f826c4e</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\Av_flash_speeder_b.dds\</SourcePath>
   </File>
   <File>
     <Name>Av_flash_speeder_windscreen.dds</Name>
@@ -30192,6 +30234,13 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\Nb_engineering_platform_crane_d2.dds\</SourcePath>
   </File>
   <File>
+    <Name>Nb_engineering_platform_crane_d3.dds</Name>
+    <TargetPath>\Data\Art\Textures\Nb_engineering_platform_crane_d3.dds\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>57f495df52c0b680026f680a23fb3343</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\Nb_engineering_platform_crane_d3.dds\</SourcePath>
+  </File>
+  <File>
     <Name>Nb_engineering_platform_crane_parts.dds</Name>
     <TargetPath>\Data\Art\Textures\Nb_engineering_platform_crane_parts.dds\</TargetPath>
     <TargetType>Mod</TargetType>
@@ -31039,13 +31088,6 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\NV_Freighter_07.dds\</SourcePath>
   </File>
   <File>
-    <Name>NV_Freighter_08.dds</Name>
-    <TargetPath>\Data\Art\Textures\NV_Freighter_08.dds\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>5ba26dceed6d3779c775440022393e65</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\NV_Freighter_08.dds\</SourcePath>
-  </File>
-  <File>
     <Name>NV_Freighter_08_B.dds</Name>
     <TargetPath>\Data\Art\Textures\NV_Freighter_08_B.dds\</TargetPath>
     <TargetType>Mod</TargetType>
@@ -31086,6 +31128,13 @@
     <TargetType>Mod</TargetType>
     <Hash>a22e1c14b08f329097b5447228f65717</Hash>
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\NV_Freighter_11.dds\</SourcePath>
+  </File>
+  <File>
+    <Name>NV_Freighter_11_B.dds</Name>
+    <TargetPath>\Data\Art\Textures\NV_Freighter_11_B.dds\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>a750cdb4f1ec1386a229e4e1b7488a0b</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\NV_Freighter_11_B.dds\</SourcePath>
   </File>
   <File>
     <Name>NV_Freighter_12.dds</Name>
@@ -31984,6 +32033,20 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\REI_arc_trooper_pauldron.dds\</SourcePath>
   </File>
   <File>
+    <Name>REI_arc_westarm5.dds</Name>
+    <TargetPath>\Data\Art\Textures\REI_arc_westarm5.dds\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>7b3c4e3eca50f8a7fa4c9a60b9b72aed</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\REI_arc_westarm5.dds\</SourcePath>
+  </File>
+  <File>
+    <Name>REI_arc_z6.dds</Name>
+    <TargetPath>\Data\Art\Textures\REI_arc_z6.dds\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>2cd1651094170a73984c7fef26813663</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\REI_arc_z6.dds\</SourcePath>
+  </File>
+  <File>
     <Name>ReI_arf_troopstuff.dds</Name>
     <TargetPath>\Data\Art\Textures\ReI_arf_troopstuff.dds\</TargetPath>
     <TargetType>Mod</TargetType>
@@ -32878,6 +32941,13 @@
     <TargetType>Mod</TargetType>
     <Hash>e4df32d78edfed55d6d0aabd2d20c7ab</Hash>
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\ReI_shaakro.dds\</SourcePath>
+  </File>
+  <File>
+    <Name>ReI_shaakti_belt.dds</Name>
+    <TargetPath>\Data\Art\Textures\ReI_shaakti_belt.dds\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>24429250a2c56ba89634b3c30fe59130</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\ReI_shaakti_belt.dds\</SourcePath>
   </File>
   <File>
     <Name>ReI_shaaktor.dds</Name>
@@ -33776,6 +33846,13 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\SeB_Droid_Center_alt2.dds\</SourcePath>
   </File>
   <File>
+    <Name>SeB_Droid_Center_B.dds</Name>
+    <TargetPath>\Data\Art\Textures\SeB_Droid_Center_B.dds\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>e503de73dc62da9606a8e502c721d677</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\SeB_Droid_Center_B.dds\</SourcePath>
+  </File>
+  <File>
     <Name>SeB_flak_gun.dds</Name>
     <TargetPath>\Data\Art\Textures\SeB_flak_gun.dds\</TargetPath>
     <TargetType>Mod</TargetType>
@@ -34595,13 +34672,6 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\SeV_munificent_b.dds\</SourcePath>
   </File>
   <File>
-    <Name>SeV_munificent_lights.dds</Name>
-    <TargetPath>\Data\Art\Textures\SeV_munificent_lights.dds\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>b242dd262c85bd31f7820483ce1537d8</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\SeV_munificent_lights.dds\</SourcePath>
-  </File>
-  <File>
     <Name>SeV_nantex.dds</Name>
     <TargetPath>\Data\Art\Textures\SeV_nantex.dds\</TargetPath>
     <TargetType>Mod</TargetType>
@@ -34670,6 +34740,13 @@
     <TargetType>Mod</TargetType>
     <Hash>76eb64b425c700d43a6b5db3bd3fa8b0</Hash>
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\SeV_picket.dds\</SourcePath>
+  </File>
+  <File>
+    <Name>SeV_picket_b.dds</Name>
+    <TargetPath>\Data\Art\Textures\SeV_picket_b.dds\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>dd27f4a7a2b74b450fc831fa8ea30791</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\SeV_picket_b.dds\</SourcePath>
   </File>
   <File>
     <Name>Sev_providence.dds</Name>
@@ -35568,6 +35645,13 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_cloudcity_base_b.dds\</SourcePath>
   </File>
   <File>
+    <Name>w_clouds02.dds</Name>
+    <TargetPath>\Data\Art\Textures\w_clouds02.dds\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>5c33bc70a1d899e567db88ae0de28c63</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\w_clouds02.dds\</SourcePath>
+  </File>
+  <File>
     <Name>w_clouds02_b.dds</Name>
     <TargetPath>\Data\Art\Textures\w_clouds02_b.dds\</TargetPath>
     <TargetType>Mod</TargetType>
@@ -36462,6 +36546,13 @@
     <TargetType>Mod</TargetType>
     <Hash>798662930a0dc5a1110c75f9a1634089</Hash>
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_junk_plate_b_b.dds\</SourcePath>
+  </File>
+  <File>
+    <Name>W_junk_ship_girder.dds</Name>
+    <TargetPath>\Data\Art\Textures\W_junk_ship_girder.dds\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>b6e61850d43e9314e6bc935c4dd5ff9a</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_junk_ship_girder.dds\</SourcePath>
   </File>
   <File>
     <Name>W_junk_ship_girder_b.dds</Name>
@@ -37360,6 +37451,13 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_ord_mantell_chem_tank.dds\</SourcePath>
   </File>
   <File>
+    <Name>W_ord_mantell_chem_tank_b.dds</Name>
+    <TargetPath>\Data\Art\Textures\W_ord_mantell_chem_tank_b.dds\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>936619adf1191ae49581cc293c7c9187</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_ord_mantell_chem_tank_b.dds\</SourcePath>
+  </File>
+  <File>
     <Name>W_ord_mantell_corvette.dds</Name>
     <TargetPath>\Data\Art\Textures\W_ord_mantell_corvette.dds\</TargetPath>
     <TargetType>Mod</TargetType>
@@ -38256,6 +38354,13 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_planet_gasred.dds\</SourcePath>
   </File>
   <File>
+    <Name>W_planet_gas_antarr.dds</Name>
+    <TargetPath>\Data\Art\Textures\W_planet_gas_antarr.dds\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>6bb8651829cfe71b9588eb9f566753ef</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_planet_gas_antarr.dds\</SourcePath>
+  </File>
+  <File>
     <Name>W_planet_gas_low_bc.dds</Name>
     <TargetPath>\Data\Art\Textures\W_planet_gas_low_bc.dds\</TargetPath>
     <TargetType>Mod</TargetType>
@@ -39047,13 +39152,6 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_power_coupling_power2.dds\</SourcePath>
   </File>
   <File>
-    <Name>W_raxus_junk.dds</Name>
-    <TargetPath>\Data\Art\Textures\W_raxus_junk.dds\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>eeeaa912551ffdc9a655f800ea73054c</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_raxus_junk.dds\</SourcePath>
-  </File>
-  <File>
     <Name>W_raxus_junk_bc.dds</Name>
     <TargetPath>\Data\Art\Textures\W_raxus_junk_bc.dds\</TargetPath>
     <TargetType>Mod</TargetType>
@@ -39150,6 +39248,20 @@
     <TargetType>Mod</TargetType>
     <Hash>fb5d9433608101ba68fccb3a8e52b077</Hash>
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_Silo_bc.dds\</SourcePath>
+  </File>
+  <File>
+    <Name>W_Silo_d3.dds</Name>
+    <TargetPath>\Data\Art\Textures\W_Silo_d3.dds\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>fec7a96e04a5192754bd519ce69a2e6d</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_Silo_d3.dds\</SourcePath>
+  </File>
+  <File>
+    <Name>W_sith_column.dds</Name>
+    <TargetPath>\Data\Art\Textures\W_sith_column.dds\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>4a22518fbacacac17eb57f52592b07af</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_sith_column.dds\</SourcePath>
   </File>
   <File>
     <Name>W_sith_column_b.dds</Name>
@@ -39936,13 +40048,6 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_tatooine_bldg03.dds.dds\</SourcePath>
   </File>
   <File>
-    <Name>W_tatooine_bldg03_1.dds</Name>
-    <TargetPath>\Data\Art\Textures\W_tatooine_bldg03_1.dds\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>8026b5c0bd78ed840da8df37f87967e9</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_tatooine_bldg03_1.dds\</SourcePath>
-  </File>
-  <File>
     <Name>W_tatooine_bldg03_1_b.dds</Name>
     <TargetPath>\Data\Art\Textures\W_tatooine_bldg03_1_b.dds\</TargetPath>
     <TargetType>Mod</TargetType>
@@ -40046,6 +40151,20 @@
     <TargetType>Mod</TargetType>
     <Hash>163b0fa4b8f59204485690271ff40895</Hash>
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_tatooine_starport_trim_horizontal.dds\</SourcePath>
+  </File>
+  <File>
+    <Name>W_tatooine_starport_trim_horizontal_b.dds</Name>
+    <TargetPath>\Data\Art\Textures\W_tatooine_starport_trim_horizontal_b.dds\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>b50f5980f9c9033bfd1890f7af9f45a9</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_tatooine_starport_trim_horizontal_b.dds\</SourcePath>
+  </File>
+  <File>
+    <Name>W_tatooine_starport_trim_vertical.dds</Name>
+    <TargetPath>\Data\Art\Textures\W_tatooine_starport_trim_vertical.dds\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>6a2a52f3137981abd975e26f0f730b69</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_tatooine_starport_trim_vertical.dds\</SourcePath>
   </File>
   <File>
     <Name>W_tatooine_starport_trim_vertical_b.dds</Name>
@@ -40944,6 +41063,13 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_uplinkfacility_d1.dds\</SourcePath>
   </File>
   <File>
+    <Name>W_uplinkfacility_d2.dds</Name>
+    <TargetPath>\Data\Art\Textures\W_uplinkfacility_d2.dds\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>cdd81e62dd5d4e80a783cce93b216107</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_uplinkfacility_d2.dds\</SourcePath>
+  </File>
+  <File>
     <Name>W_uplinkfacility_d3.dds</Name>
     <TargetPath>\Data\Art\Textures\W_uplinkfacility_d3.dds\</TargetPath>
     <TargetType>Mod</TargetType>
@@ -41840,6 +41966,13 @@
     <SourcePath>\1.1.5\Mod\Data\Art\Textures\_space_planet_taris_01.dds\</SourcePath>
   </File>
   <File>
+    <Name>_space_planet_tatooine_01.dds</Name>
+    <TargetPath>\Data\Art\Textures\_space_planet_tatooine_01.dds\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>109cfdb42fb593ddd3f80e621a9c289f</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\_space_planet_tatooine_01.dds\</SourcePath>
+  </File>
+  <File>
     <Name>_space_planet_thewheel.dds</Name>
     <TargetPath>\Data\Art\Textures\_space_planet_thewheel.dds\</TargetPath>
     <TargetType>Mod</TargetType>
@@ -42734,6 +42867,13 @@
     <TargetType>Mod</TargetType>
     <Hash>3844c064a315e84e82f485591a9cb3e6</Hash>
     <SourcePath>\1.1.5\Mod\Data\Audio\Asajj_attack_2.wav\</SourcePath>
+  </File>
+  <File>
+    <Name>Asajj_attack_3.wav</Name>
+    <TargetPath>\Data\Audio\Asajj_attack_3.wav\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>6571ebfd712e6b54f2e9d7a0ea4ace3b</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\Asajj_attack_3.wav\</SourcePath>
   </File>
   <File>
     <Name>Asajj_attack_4.wav</Name>
@@ -44528,6 +44668,13 @@
     <SourcePath>\1.1.5\Mod\Data\Audio\boss_roger.wav\</SourcePath>
   </File>
   <File>
+    <Name>Boss_roger_that.wav</Name>
+    <TargetPath>\Data\Audio\Boss_roger_that.wav\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>ed28551071da0dfe46cedba45a5ca5f7</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\Boss_roger_that.wav\</SourcePath>
+  </File>
+  <File>
     <Name>boss_seeking_target.wav</Name>
     <TargetPath>\Data\Audio\boss_seeking_target.wav\</TargetPath>
     <TargetType>Mod</TargetType>
@@ -46320,6 +46467,13 @@
     <SourcePath>\1.1.5\Mod\Data\Audio\Clone_fighter_enemy_low08.wav\</SourcePath>
   </File>
   <File>
+    <Name>Clone_fighter_enemy_low09.wav</Name>
+    <TargetPath>\Data\Audio\Clone_fighter_enemy_low09.wav\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>277182926d559f5e3172ca4c19cfcc8e</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\Clone_fighter_enemy_low09.wav\</SourcePath>
+  </File>
+  <File>
     <Name>Clone_fighter_enemy_low10.wav</Name>
     <TargetPath>\Data\Audio\Clone_fighter_enemy_low10.wav\</TargetPath>
     <TargetType>Mod</TargetType>
@@ -47060,13 +47214,6 @@
     <TargetType>Mod</TargetType>
     <Hash>9a15a4f5787f2d55ee2b4a6ce567de37</Hash>
     <SourcePath>\1.1.5\Mod\Data\Audio\Clone_ship_attack14.wav\</SourcePath>
-  </File>
-  <File>
-    <Name>Clone_ship_attack15.wav</Name>
-    <TargetPath>\Data\Audio\Clone_ship_attack15.wav\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>4f1e72f322abab37a0087b66b3b23919</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\Clone_ship_attack15.wav\</SourcePath>
   </File>
   <File>
     <Name>Clone_ship_attack16.wav</Name>
@@ -48110,6 +48257,13 @@
     <TargetType>Mod</TargetType>
     <Hash>1ed03c36b0096605ac8c70a7a8cb0e13</Hash>
     <SourcePath>\1.1.5\Mod\Data\Audio\Crab_move1.wav\</SourcePath>
+  </File>
+  <File>
+    <Name>Crab_move2.wav</Name>
+    <TargetPath>\Data\Audio\Crab_move2.wav\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>fb601ecda24ef07a40918651c64447fd</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\Crab_move2.wav\</SourcePath>
   </File>
   <File>
     <Name>Crab_select1.wav</Name>
@@ -49904,6 +50058,13 @@
     <SourcePath>\1.1.5\Mod\Data\Audio\Kitfisto_move2.wav\</SourcePath>
   </File>
   <File>
+    <Name>Kitfisto_move3.wav</Name>
+    <TargetPath>\Data\Audio\Kitfisto_move3.wav\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>5011e0af640c5d7fe03050b5eb86f523</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\Kitfisto_move3.wav\</SourcePath>
+  </File>
+  <File>
     <Name>Kitfisto_move4.wav</Name>
     <TargetPath>\Data\Audio\Kitfisto_move4.wav\</TargetPath>
     <TargetType>Mod</TargetType>
@@ -51694,6 +51855,13 @@
     <TargetType>Mod</TargetType>
     <Hash>00608d1b393da6e63c060323210dd1e5</Hash>
     <SourcePath>\1.1.5\Mod\Data\Audio\obiwan_move00.wav\</SourcePath>
+  </File>
+  <File>
+    <Name>obiwan_move01.wav</Name>
+    <TargetPath>\Data\Audio\obiwan_move01.wav\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>dc8a74867783081c56e4f4af27e079f7</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\obiwan_move01.wav\</SourcePath>
   </File>
   <File>
     <Name>obiwan_move02.wav</Name>
@@ -53488,6 +53656,13 @@
     <SourcePath>\1.1.5\Mod\Data\Audio\Vulture_select1.wav\</SourcePath>
   </File>
   <File>
+    <Name>Vulture_select2.wav</Name>
+    <TargetPath>\Data\Audio\Vulture_select2.wav\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>a19c7832d9295fb1ca189522a4cb29fc</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\Vulture_select2.wav\</SourcePath>
+  </File>
+  <File>
     <Name>Vulture_select3.wav</Name>
     <TargetPath>\Data\Audio\Vulture_select3.wav\</TargetPath>
     <TargetType>Mod</TargetType>
@@ -54209,13 +54384,6 @@
     <SourcePath>\1.1.5\Mod\Data\Audio\Music\ROTS_Palpatines_Teachings.mp3\</SourcePath>
   </File>
   <File>
-    <Name>ROTS_The_Birth_Of_The_Twins_And_Padme.mp3</Name>
-    <TargetPath>\Data\Audio\Music\ROTS_The_Birth_Of_The_Twins_And_Padme.mp3\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>7108d7225644fd2c4da0e23195d6ad34</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\Music\ROTS_The_Birth_Of_The_Twins_And_Padme.mp3\</SourcePath>
-  </File>
-  <File>
     <Name>ROTS_The_Immolation_Scene.mp3</Name>
     <TargetPath>\Data\Audio\Music\ROTS_The_Immolation_Scene.mp3\</TargetPath>
     <TargetType>Mod</TargetType>
@@ -54382,6 +54550,20 @@
     <TargetType>Mod</TargetType>
     <Hash>e74c08113d5113971859a19b3decfd87</Hash>
     <SourcePath>\1.1.5\Mod\Data\Audio\Music\urban_ambient1.mp3\</SourcePath>
+  </File>
+  <File>
+    <Name>urban_ambient2.mp3</Name>
+    <TargetPath>\Data\Audio\Music\urban_ambient2.mp3\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>b271580813cd3f84551476c3d4a08b92</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\Music\urban_ambient2.mp3\</SourcePath>
+  </File>
+  <File>
+    <Name>urban_ambient3.mp3</Name>
+    <TargetPath>\Data\Audio\Music\urban_ambient3.mp3\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>176a36072fca20c41b61135d6e331c75</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\Music\urban_ambient3.mp3\</SourcePath>
   </File>
   <File>
     <Name>urban_ambient4.mp3</Name>
@@ -55098,13 +55280,6 @@
     <SourcePath>\1.1.5\Mod\Data\XML\Groundcompaniesrebel.xml\</SourcePath>
   </File>
   <File>
-    <Name>Groundindigenous.xml</Name>
-    <TargetPath>\Data\XML\Groundindigenous.xml\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>6b37d6636e5479399a3eb842aced9a1f</Hash>
-    <SourcePath>\1.1.5\Mod\Data\XML\Groundindigenous.xml\</SourcePath>
-  </File>
-  <File>
     <Name>Groundinfantry.xml</Name>
     <TargetPath>\Data\XML\Groundinfantry.xml\</TargetPath>
     <TargetType>Mod</TargetType>
@@ -55278,6 +55453,13 @@
     <TargetType>Mod</TargetType>
     <Hash>5a8a1a0558bdadcc5347273ab749066e</Hash>
     <SourcePath>\1.1.5\Mod\Data\XML\Particles.xml\</SourcePath>
+  </File>
+  <File>
+    <Name>Planets.xml</Name>
+    <TargetPath>\Data\XML\Planets.xml\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>3d4617a99289bddf4abc98b743378fbd</Hash>
+    <SourcePath>\1.1.5\Mod\Data\XML\Planets.xml\</SourcePath>
   </File>
   <File>
     <Name>Projectiles.xml</Name>
@@ -56176,6 +56358,13 @@
     <SourcePath>\1.1.5\Mod\Data\XML\Units_land_cis_enforcer_tank.xml\</SourcePath>
   </File>
   <File>
+    <Name>Units_land_cis_field_commander.xml</Name>
+    <TargetPath>\Data\XML\Units_land_cis_field_commander.xml\</TargetPath>
+    <TargetType>Mod</TargetType>
+    <Hash>b5ae34df93668b6008a79ef40ba5f2d9</Hash>
+    <SourcePath>\1.1.5\Mod\Data\XML\Units_land_cis_field_commander.xml\</SourcePath>
+  </File>
+  <File>
     <Name>Units_land_cis_hag.xml</Name>
     <TargetPath>\Data\XML\Units_land_cis_hag.xml\</TargetPath>
     <TargetType>Mod</TargetType>
@@ -56834,102 +57023,11 @@
     <SourcePath>\1.1.5\Mod\Data\XML\Enum\Surfacefxtriggertype.xml\</SourcePath>
   </File>
   <File>
-    <Name>Units_land_cis_field_commander.xml</Name>
-    <TargetPath>\Data\XML\Units_land_cis_field_commander.xml\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>b5ae34df93668b6008a79ef40ba5f2d9</Hash>
-    <SourcePath>\1.1.5\Mod\Data\XML\Units_land_cis_field_commander.xml\</SourcePath>
-  </File>
-  <File>
     <Name>Lucrehulk.txt</Name>
     <TargetPath>\Data\Lucrehulk.txt\</TargetPath>
     <TargetType>Mod</TargetType>
     <Hash>2adf5554ec4ec5a1f7e2c6a151e70111</Hash>
     <SourcePath>\1.1.5\Mod\Data\Lucrehulk.txt\</SourcePath>
-  </File>
-  <File>
-    <Name>Dreadnaught_Cruiser.txt</Name>
-    <TargetPath>\Data\Dreadnaught_Cruiser.txt\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>e734a7152ec9d1b452669f1c2480794b</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Dreadnaught_Cruiser.txt\</SourcePath>
-  </File>
-  <File>
-    <Name>_land_planet_sullust_02.ted</Name>
-    <TargetPath>\Data\Art\Maps\_land_planet_sullust_02.ted\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>7f2ed0637151f03563e72a36162b9f95</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Maps\_land_planet_sullust_02.ted\</SourcePath>
-  </File>
-  <File>
-    <Name>Clone_fighter_enemy_low09.wav</Name>
-    <TargetPath>\Data\Audio\Clone_fighter_enemy_low09.wav\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>277182926d559f5e3172ca4c19cfcc8e</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\Clone_fighter_enemy_low09.wav\</SourcePath>
-  </File>
-  <File>
-    <Name>obiwan_move01.wav</Name>
-    <TargetPath>\Data\Audio\obiwan_move01.wav\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>dc8a74867783081c56e4f4af27e079f7</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\obiwan_move01.wav\</SourcePath>
-  </File>
-  <File>
-    <Name>Planets.xml</Name>
-    <TargetPath>\Data\XML\Planets.xml\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>3d4617a99289bddf4abc98b743378fbd</Hash>
-    <SourcePath>\1.1.5\Mod\Data\XML\Planets.xml\</SourcePath>
-  </File>
-  <File>
-    <Name>Asajj_attack_3.wav</Name>
-    <TargetPath>\Data\Audio\Asajj_attack_3.wav\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>6571ebfd712e6b54f2e9d7a0ea4ace3b</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\Asajj_attack_3.wav\</SourcePath>
-  </File>
-  <File>
-    <Name>urban_ambient2.mp3</Name>
-    <TargetPath>\Data\Audio\Music\urban_ambient2.mp3\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>b271580813cd3f84551476c3d4a08b92</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\Music\urban_ambient2.mp3\</SourcePath>
-  </File>
-  <File>
-    <Name>Kitfisto_move3.wav</Name>
-    <TargetPath>\Data\Audio\Kitfisto_move3.wav\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>5011e0af640c5d7fe03050b5eb86f523</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\Kitfisto_move3.wav\</SourcePath>
-  </File>
-  <File>
-    <Name>SeV_picket_b.dds</Name>
-    <TargetPath>\Data\Art\Textures\SeV_picket_b.dds\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>dd27f4a7a2b74b450fc831fa8ea30791</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\SeV_picket_b.dds\</SourcePath>
-  </File>
-  <File>
-    <Name>_space_planet_tatooine_01.dds</Name>
-    <TargetPath>\Data\Art\Textures\_space_planet_tatooine_01.dds\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>109cfdb42fb593ddd3f80e621a9c289f</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\_space_planet_tatooine_01.dds\</SourcePath>
-  </File>
-  <File>
-    <Name>W_tatooine_starport_trim_horizontal_b.dds</Name>
-    <TargetPath>\Data\Art\Textures\W_tatooine_starport_trim_horizontal_b.dds\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>b50f5980f9c9033bfd1890f7af9f45a9</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_tatooine_starport_trim_horizontal_b.dds\</SourcePath>
-  </File>
-  <File>
-    <Name>urban_ambient3.mp3</Name>
-    <TargetPath>\Data\Audio\Music\urban_ambient3.mp3\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>176a36072fca20c41b61135d6e331c75</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\Music\urban_ambient3.mp3\</SourcePath>
   </File>
   <File>
     <Name>Acclamator.txt</Name>
@@ -56939,186 +57037,88 @@
     <SourcePath>\1.1.5\Mod\Data\Acclamator.txt\</SourcePath>
   </File>
   <File>
-    <Name>Boss_roger_that.wav</Name>
-    <TargetPath>\Data\Audio\Boss_roger_that.wav\</TargetPath>
+    <Name>Dreadnaught_Cruiser.txt</Name>
+    <TargetPath>\Data\Dreadnaught_Cruiser.txt\</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>ed28551071da0dfe46cedba45a5ca5f7</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\Boss_roger_that.wav\</SourcePath>
+    <Hash>e734a7152ec9d1b452669f1c2480794b</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Dreadnaught_Cruiser.txt\</SourcePath>
   </File>
   <File>
-    <Name>W_sith_column.dds</Name>
-    <TargetPath>\Data\Art\Textures\W_sith_column.dds\</TargetPath>
+    <Name>REI_327_attack_00.ala</Name>
+    <TargetPath>\Data\Art\Models\REI_327_attack_00.ala\</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>4a22518fbacacac17eb57f52592b07af</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_sith_column.dds\</SourcePath>
+    <Hash>053b4c7457d164fa8a5657138927fcbf</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Models\REI_327_attack_00.ala\</SourcePath>
   </File>
   <File>
-    <Name>W_tatooine_starport_trim_vertical.dds</Name>
-    <TargetPath>\Data\Art\Textures\W_tatooine_starport_trim_vertical.dds\</TargetPath>
+    <Name>SeI_battledroid_FW_DIE_01.ala</Name>
+    <TargetPath>\Data\Art\Models\SeI_battledroid_FW_DIE_01.ala\</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>6a2a52f3137981abd975e26f0f730b69</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_tatooine_starport_trim_vertical.dds\</SourcePath>
+    <Hash>e613401cb0bfa69a6f9e2c6d9e8d0d25</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Models\SeI_battledroid_FW_DIE_01.ala\</SourcePath>
   </File>
   <File>
-    <Name>Crab_move2.wav</Name>
-    <TargetPath>\Data\Audio\Crab_move2.wav\</TargetPath>
+    <Name>I_tactical_controls.alo</Name>
+    <TargetPath>\Data\Art\Models\I_tactical_controls.alo\</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>fb601ecda24ef07a40918651c64447fd</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\Crab_move2.wav\</SourcePath>
+    <Hash>02f5f4e9c56e8a54fce8deb4f2e58e89</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Models\I_tactical_controls.alo\</SourcePath>
   </File>
   <File>
-    <Name>W_Silo_d3.dds</Name>
-    <TargetPath>\Data\Art\Textures\W_Silo_d3.dds\</TargetPath>
+    <Name>W_planet_carida_low.alo</Name>
+    <TargetPath>\Data\Art\Models\W_planet_carida_low.alo\</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>fec7a96e04a5192754bd519ce69a2e6d</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_Silo_d3.dds\</SourcePath>
+    <Hash>de4e79787a61426ec103e33367a86ce2</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Models\W_planet_carida_low.alo\</SourcePath>
   </File>
   <File>
-    <Name>REI_arc_westarm5.dds</Name>
-    <TargetPath>\Data\Art\Textures\REI_arc_westarm5.dds\</TargetPath>
+    <Name>NV_Freighter_08.dds</Name>
+    <TargetPath>\Data\Art\Textures\NV_Freighter_08.dds\</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>7b3c4e3eca50f8a7fa4c9a60b9b72aed</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\REI_arc_westarm5.dds\</SourcePath>
+    <Hash>5ba26dceed6d3779c775440022393e65</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\NV_Freighter_08.dds\</SourcePath>
   </File>
   <File>
-    <Name>REI_arc_z6.dds</Name>
-    <TargetPath>\Data\Art\Textures\REI_arc_z6.dds\</TargetPath>
+    <Name>W_tatooine_bldg03_1.dds</Name>
+    <TargetPath>\Data\Art\Textures\W_tatooine_bldg03_1.dds\</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>2cd1651094170a73984c7fef26813663</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\REI_arc_z6.dds\</SourcePath>
+    <Hash>8026b5c0bd78ed840da8df37f87967e9</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_tatooine_bldg03_1.dds\</SourcePath>
   </File>
   <File>
-    <Name>W_uplinkfacility_d2.dds</Name>
-    <TargetPath>\Data\Art\Textures\W_uplinkfacility_d2.dds\</TargetPath>
+    <Name>Clone_ship_attack15.wav</Name>
+    <TargetPath>\Data\Audio\Clone_ship_attack15.wav\</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>cdd81e62dd5d4e80a783cce93b216107</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_uplinkfacility_d2.dds\</SourcePath>
+    <Hash>4f1e72f322abab37a0087b66b3b23919</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\Clone_ship_attack15.wav\</SourcePath>
   </File>
   <File>
-    <Name>W_planet_gas_antarr.dds</Name>
-    <TargetPath>\Data\Art\Textures\W_planet_gas_antarr.dds\</TargetPath>
+    <Name>SeV_munificent_lights.dds</Name>
+    <TargetPath>\Data\Art\Textures\SeV_munificent_lights.dds\</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>6bb8651829cfe71b9588eb9f566753ef</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_planet_gas_antarr.dds\</SourcePath>
+    <Hash>b242dd262c85bd31f7820483ce1537d8</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\SeV_munificent_lights.dds\</SourcePath>
   </File>
   <File>
-    <Name>W_junk_ship_girder.dds</Name>
-    <TargetPath>\Data\Art\Textures\W_junk_ship_girder.dds\</TargetPath>
+    <Name>Groundindigenous.xml</Name>
+    <TargetPath>\Data\XML\Groundindigenous.xml\</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>b6e61850d43e9314e6bc935c4dd5ff9a</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_junk_ship_girder.dds\</SourcePath>
+    <Hash>6b37d6636e5479399a3eb842aced9a1f</Hash>
+    <SourcePath>\1.1.5\Mod\Data\XML\Groundindigenous.xml\</SourcePath>
   </File>
   <File>
-    <Name>NV_Freighter_11_B.dds</Name>
-    <TargetPath>\Data\Art\Textures\NV_Freighter_11_B.dds\</TargetPath>
+    <Name>W_raxus_junk.dds</Name>
+    <TargetPath>\Data\Art\Textures\W_raxus_junk.dds\</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>a750cdb4f1ec1386a229e4e1b7488a0b</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\NV_Freighter_11_B.dds\</SourcePath>
+    <Hash>eeeaa912551ffdc9a655f800ea73054c</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_raxus_junk.dds\</SourcePath>
   </File>
   <File>
-    <Name>ReI_shaakti_belt.dds</Name>
-    <TargetPath>\Data\Art\Textures\ReI_shaakti_belt.dds\</TargetPath>
+    <Name>ROTS_The_Birth_Of_The_Twins_And_Padme.mp3</Name>
+    <TargetPath>\Data\Audio\Music\ROTS_The_Birth_Of_The_Twins_And_Padme.mp3\</TargetPath>
     <TargetType>Mod</TargetType>
-    <Hash>24429250a2c56ba89634b3c30fe59130</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\ReI_shaakti_belt.dds\</SourcePath>
-  </File>
-  <File>
-    <Name>SeI_battledroid_FW_DIE_02.ala</Name>
-    <TargetPath>\Data\Art\Models\SeI_battledroid_FW_DIE_02.ala\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>bdc0d58ffcc4644e7baab5a26c6f38e2</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Models\SeI_battledroid_FW_DIE_02.ala\</SourcePath>
-  </File>
-  <File>
-    <Name>W_Urban_Streetlight.ALO</Name>
-    <TargetPath>\Data\Art\Models\W_Urban_Streetlight.ALO\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>c7248f19458f3d2badea0985d7bcef1a</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Models\W_Urban_Streetlight.ALO\</SourcePath>
-  </File>
-  <File>
-    <Name>Pe_plokoon_delta.ALO</Name>
-    <TargetPath>\Data\Art\Models\Pe_plokoon_delta.ALO\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>2c096415a3df11e19ac96fae1b84a906</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Models\Pe_plokoon_delta.ALO\</SourcePath>
-  </File>
-  <File>
-    <Name>W_planet_cato_neimoidia_low.alo</Name>
-    <TargetPath>\Data\Art\Models\W_planet_cato_neimoidia_low.alo\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>7bf4cacb85d15ba61377f38c30db9613</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Models\W_planet_cato_neimoidia_low.alo\</SourcePath>
-  </File>
-  <File>
-    <Name>W_cato_e.ALO</Name>
-    <TargetPath>\Data\Art\Models\W_cato_e.ALO\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>a465e3ace5c705217451238900c96ad1</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Models\W_cato_e.ALO\</SourcePath>
-  </File>
-  <File>
-    <Name>Nb_engineering_platform_crane_d3.dds</Name>
-    <TargetPath>\Data\Art\Textures\Nb_engineering_platform_crane_d3.dds\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>57f495df52c0b680026f680a23fb3343</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\Nb_engineering_platform_crane_d3.dds\</SourcePath>
-  </File>
-  <File>
-    <Name>Av_flash_speeder_b.dds</Name>
-    <TargetPath>\Data\Art\Textures\Av_flash_speeder_b.dds\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>0252605eee8c065c9c3409df5f826c4e</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\Av_flash_speeder_b.dds\</SourcePath>
-  </File>
-  <File>
-    <Name>w_clouds02.dds</Name>
-    <TargetPath>\Data\Art\Textures\w_clouds02.dds\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>5c33bc70a1d899e567db88ae0de28c63</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\w_clouds02.dds\</SourcePath>
-  </File>
-  <File>
-    <Name>SeI_Jango_Fett.ALO</Name>
-    <TargetPath>\Data\Art\Models\SeI_Jango_Fett.ALO\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>d78f16e9868543c2c6deed91ab5fd0eb</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Models\SeI_Jango_Fett.ALO\</SourcePath>
-  </File>
-  <File>
-    <Name>Vulture_select2.wav</Name>
-    <TargetPath>\Data\Audio\Vulture_select2.wav\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>a19c7832d9295fb1ca189522a4cb29fc</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Audio\Vulture_select2.wav\</SourcePath>
-  </File>
-  <File>
-    <Name>ReV_cr20.ALO</Name>
-    <TargetPath>\Data\Art\Models\ReV_cr20.ALO\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>90702c210cf4420a87a350eade49b943</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Models\ReV_cr20.ALO\</SourcePath>
-  </File>
-  <File>
-    <Name>W_naboo_civ_building_A.ALO</Name>
-    <TargetPath>\Data\Art\Models\W_naboo_civ_building_A.ALO\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>cde2fbfd845f5344f27c6750960524c8</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Models\W_naboo_civ_building_A.ALO\</SourcePath>
-  </File>
-  <File>
-    <Name>W_ord_mantell_chem_tank_b.dds</Name>
-    <TargetPath>\Data\Art\Textures\W_ord_mantell_chem_tank_b.dds\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>936619adf1191ae49581cc293c7c9187</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\W_ord_mantell_chem_tank_b.dds\</SourcePath>
-  </File>
-  <File>
-    <Name>SeB_Droid_Center_B.dds</Name>
-    <TargetPath>\Data\Art\Textures\SeB_Droid_Center_B.dds\</TargetPath>
-    <TargetType>Mod</TargetType>
-    <Hash>e503de73dc62da9606a8e502c721d677</Hash>
-    <SourcePath>\1.1.5\Mod\Data\Art\Textures\SeB_Droid_Center_B.dds\</SourcePath>
+    <Hash>7108d7225644fd2c4da0e23195d6ad34</Hash>
+    <SourcePath>\1.1.5\Mod\Data\Audio\Music\ROTS_The_Birth_Of_The_Twins_And_Padme.mp3\</SourcePath>
   </File>
   <File>
     <Name>EnglishSpeech.meg</Name>
