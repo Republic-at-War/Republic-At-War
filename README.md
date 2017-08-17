@@ -1,5 +1,5 @@
 # Republic-At-War
-##About this Repository
+## About this Repository
 This is the official repository of the mod "Republic at War" for the game "Star Wars Empire at War - Forces of Corruption". 
 
 All the code of the current and previeous versions (from 1.1.5) will be published here in addition to the full mod, 
